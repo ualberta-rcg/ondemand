@@ -1,5 +1,5 @@
 FROM rockylinux/rockylinux:8
-LABEL maintainer="tdockendorf@osc.edu; johrstrom@osc.edu"
+LABEL maintainer="khoja1@ualberta.ca"
 
 ARG VERSION=latest
 ARG CONCURRENCY=4
