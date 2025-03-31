@@ -1,0 +1,36 @@
+name: Create Slurm Extras such as JupyterHub + Munge
+
+on:
+  push:
+    branches:
+      - ondemand
+
+jobs:
+  build-dockerfile-push:
+    name: Build a Customized Docker Image of a Slurm Extra
+    runs-on: ubuntu-latest 
+
+    env:
+      DOCKER_REPO: ${{ vars.CONTAINER_IMAGE }}
+      GITHUB_REF_NAME: ${{ github.ref_name }}   
+      
+    steps:
+      - name: 🛠️ Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🔍 Verify Directory for Branch
+        run: |
+          if [ ! -d "./${GITHUB_REF_NAME}" ]; then
+            echo "Directory ./${GITHUB_REF_NAME} does not exist for branch ${GITHUB_REF_NAME}."
+            exit 1
+          fi
+
+      - name: 🐳 Build Docker Image
+        run: |
+          docker build -t $DOCKER_REPO:$GITHUB_REF_NAME ./$GITHUB_REF_NAME
+
+      - name: 🚀 Push Docker Image
+        run: |
+          echo "${{ secrets.DOCKER_HUB_TOKEN }}" | docker login -u "${{ secrets.DOCKER_HUB_USER }}" --password-stdin
+          docker tag $DOCKER_REPO:$GITHUB_REF_NAME $DOCKER_REPO:$GITHUB_REF_NAME
+          docker push $DOCKER_REPO:$GITHUB_REF_NAME
