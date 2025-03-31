@@ -18,16 +18,9 @@ jobs:
       - name: 🛠️ Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🔍 Verify Directory for Branch
-        run: |
-          if [ ! -d "./${GITHUB_REF_NAME}" ]; then
-            echo "Directory ./${GITHUB_REF_NAME} does not exist for branch ${GITHUB_REF_NAME}."
-            exit 1
-          fi
-
       - name: 🐳 Build Docker Image
         run: |
-          docker build -t $DOCKER_REPO:$GITHUB_REF_NAME ./$GITHUB_REF_NAME
+          docker build -t $DOCKER_REPO:$GITHUB_REF_NAME ./
 
       - name: 🚀 Push Docker Image
         run: |
