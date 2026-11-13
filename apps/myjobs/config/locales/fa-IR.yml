@@ -29,7 +29,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-fa_IR:
+fa-IR:
   jobcomposer:
     skip_navigation: "پرش از پیمایش"
     # Site specific translations
