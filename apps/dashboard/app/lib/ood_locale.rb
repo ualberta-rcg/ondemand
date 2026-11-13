@@ -3,8 +3,10 @@
 # Utilities for normalizing Open OnDemand locale identifiers between Rails I18n
 # symbols (which may use POSIX underscores, e.g. :ja_JP) and RFC 5646 / BCP 47
 # language tags (e.g. "ja-JP", "fr-CA") required by HTML `lang`, HTTP headers,
-# cookies, and browser `Intl` APIs.
+# cookies, and browser `Intl` APIs, as well as resolving the per-request locale.
 module OodLocale
+  COOKIE_KEY = :ood_locale
+
   module_function
 
   # Convert a locale symbol or string into canonical BCP 47 subtag casing
@@ -82,5 +84,72 @@ module OodLocale
     end
 
     nil
+  end
+
+  # Locales in `I18n.available_locales` that provide `dashboard` translations
+  # (excluding gem-only locales such as `dotiw`'s `:de`).
+  def dashboard_locales
+    I18n.available_locales.select do |loc|
+      I18n.t('dashboard', locale: loc, fallback: false, raise: true).is_a?(Hash)
+    rescue I18n::MissingTranslationData, I18n::InvalidLocale
+      false
+    end
+  end
+
+  # Site default locale normalized against available dashboard locales.
+  def default_locale(allowed: dashboard_locales)
+    normalize(::Configuration.locale, allowed: allowed) ||
+      normalize(I18n.default_locale, allowed: allowed) ||
+      :en
+  end
+
+  # Admin-enabled locales filtered to those with dashboard translations.
+  def supported_locales
+    allowed = dashboard_locales
+    configured = Array(::Configuration.supported_locales).filter_map do |entry|
+      normalize(entry, allowed: allowed)
+    end.uniq
+
+    configured.empty? ? [default_locale(allowed: allowed)] : configured
+  end
+
+  # Resolve the active locale for a request using the shared OOD contract:
+  # 1. Saved user preference (~/.config/ondemand/settings.yml)
+  # 2. Same-origin ood_locale cookie
+  # 3. Browser Accept-Language negotiation (when >1 locale is enabled)
+  # 4. Site default (Configuration.locale / I18n.default_locale)
+  def resolve(user_locale: nil, cookie_locale: nil, accept_language: nil)
+    supported = supported_locales
+
+    candidate = normalize(user_locale, allowed: supported)
+    candidate ||= normalize(cookie_locale, allowed: supported)
+    candidate ||= negotiate_accept_language(accept_language, supported: supported) if supported.size > 1
+    candidate || default_locale(allowed: dashboard_locales)
+  end
+
+  # Cookie hash publishing the active BCP 47 locale tag across same-origin OOD apps.
+  def cookie_options(locale, ssl: false, persistent: false)
+    opts = {
+      value:     to_bcp47(locale),
+      path:      '/',
+      same_site: :lax,
+      secure:    ssl
+    }
+    opts[:expires] = 1.year.from_now if persistent
+    opts
+  end
+
+  # Native display name for `locale` without falling back to English.
+  def locale_name(locale)
+    I18n.t('dashboard.locale_name', locale: locale, fallback: false, raise: true)
+  rescue I18n::MissingTranslationData, I18n::InvalidLocale
+    to_bcp47(locale)
+  end
+
+  # Selectable locale tuples `[native_name, locale_code, bcp47_tag]`.
+  def options_for_select
+    supported_locales.map do |loc|
+      [locale_name(loc), loc.to_s, to_bcp47(loc)]
+    end
   end
 end

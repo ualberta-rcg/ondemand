@@ -42,4 +42,54 @@ class OodLocaleTest < ActiveSupport::TestCase
     assert_includes I18n.available_locales, :'ja-JP'
     assert_equal I18n.t('dashboard.active_jobs', locale: :ja_JP), I18n.t('dashboard.active_jobs', locale: :'ja-JP')
   end
+
+  test 'dashboard_locales includes shipped OOD locales and excludes gem-only locales' do
+    locales = OodLocale.dashboard_locales
+    assert_includes locales, :en
+    assert_includes locales, :'en-CA'
+    assert_includes locales, :'fr-CA'
+    assert_includes locales, :ja_JP
+    assert_includes locales, :'zh-CN'
+    refute_includes locales, :de
+  end
+
+  test 'supported_locales filters out unsupported and gem-only locales' do
+    Configuration.stubs(:supported_locales).returns([:en, :de, :klingon, :'fr-CA', :'ja-JP'])
+    assert_equal [:en, :'fr-CA', :ja_JP], OodLocale.supported_locales
+  end
+
+  test 'resolve follows user_locale -> cookie_locale -> accept_language -> default_locale precedence' do
+    Configuration.stubs(:locale).returns(:en)
+    Configuration.stubs(:supported_locales).returns([:en, :'en-CA', :'fr-CA', :ja_JP])
+
+    assert_equal :ja_JP, OodLocale.resolve(
+      user_locale:     'ja-JP',
+      cookie_locale:   'fr-CA',
+      accept_language: 'en-CA,en;q=0.9'
+    )
+
+    assert_equal :'fr-CA', OodLocale.resolve(
+      user_locale:     nil,
+      cookie_locale:   'fr-CA',
+      accept_language: 'en-CA,en;q=0.9'
+    )
+
+    assert_equal :'en-CA', OodLocale.resolve(
+      user_locale:     nil,
+      cookie_locale:   nil,
+      accept_language: 'en-CA,en;q=0.9'
+    )
+
+    assert_equal :en, OodLocale.resolve(
+      user_locale:     'klingon',
+      cookie_locale:   'de',
+      accept_language: 'es-ES'
+    )
+  end
+
+  test 'locale_name returns native language name without English fallback' do
+    assert_equal 'English', OodLocale.locale_name(:en)
+    assert_equal 'Français (Canada)', OodLocale.locale_name(:'fr-CA')
+    assert_equal '日本語', OodLocale.locale_name(:ja_JP)
+  end
 end

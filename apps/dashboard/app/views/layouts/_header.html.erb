@@ -27,10 +27,12 @@
           <% if @help_bar.empty? %>
             <%= render partial: 'layouts/nav/develop_dropdown' %>
             <%= render partial: 'layouts/nav/help_dropdown' %>
+            <%= render partial: 'layouts/nav/locale_switcher' %>
             <%= render partial: 'layouts/nav/user' %>
             <%= render partial: 'layouts/nav/log_out' %>
           <% else %>
             <%= render partial: 'layouts/nav/custom_navigation', locals: { navigation: @help_bar, menu_alignment: 'dropdown-menu-end' }%>
+            <%= render partial: 'layouts/nav/locale_switcher' unless @help_bar.any? { |item| item.respond_to?(:partial_path) && item.partial_path == 'layouts/nav/locale_switcher' } %>
           <% end %>
         </ul>
       </div>

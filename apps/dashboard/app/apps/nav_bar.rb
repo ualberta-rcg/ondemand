@@ -20,6 +20,8 @@ class NavBar
           end
         elsif nav_item[:profile]
           extend_link(nav_profile(nav_item))
+        elsif nav_item[:locale]
+          extend_link(nav_locale(nav_item))
         elsif !nav_item[:page].blank?
           extend_link(nav_page(nav_item))
         end
@@ -41,7 +43,7 @@ class NavBar
     group_title = ''
     apps = menu_items.map do |item|
       if item.is_a?(String)
-        static_link = STATIC_LINKS.fetch(item.downcase.to_sym, nil)
+        static_link = static_link_for(item)
         if static_link
           next static_link.categorize(category: menu_title, subcategory: group_title)
         end
@@ -54,6 +56,8 @@ class NavBar
         nav_apps(item, menu_title, group_title)
       elsif item[:profile]
         nav_profile(item, menu_title, group_title)
+      elsif item[:locale]
+        nav_locale(item, menu_title, group_title)
       elsif item[:page]
         nav_page(item, menu_title, group_title)
       else
@@ -93,6 +97,17 @@ class NavBar
     OodAppLink.new(profile_data).categorize(category: category, subcategory: subcategory)
   end
 
+  def self.nav_locale(item, category='', subcategory='')
+    locale = item.fetch(:locale).to_s
+    locale_data = item.clone
+    locale_data[:title] = item.fetch(:title, OodLocale.locale_name(locale))
+    locale_data[:url] = Rails.application.routes.url_helpers.settings_path('settings[locale]' => locale, 'back' => 'true')
+    locale_data[:icon_uri] = item.fetch(:icon, URI('fas://globe'))
+    locale_data[:data] = { method: 'post' }
+    locale_data[:new_tab] = item.fetch(:new_tab, false)
+    OodAppLink.new(locale_data).categorize(category: category, subcategory: subcategory)
+  end
+
   def self.nav_page(item, category='', subcategory='')
     page_code = item.fetch(:page)
     page_data = item.clone
@@ -121,7 +136,7 @@ class NavBar
       return NavItemDecorator.new(OodAppGroup.new, static_template)
     end
 
-    static_link = STATIC_LINKS.fetch(token.downcase.to_sym, nil)
+    static_link = static_link_for(token)
     if static_link
       return extend_link(static_link.categorize)
     end
@@ -198,9 +213,32 @@ class NavBar
     hash[['sessions', 'my_interactive_sessions', 'my interactive sessions']] = 'layouts/nav/sessions'
     hash[['develop']] = 'layouts/nav/develop_dropdown'
     hash[['help']] = 'layouts/nav/help_dropdown'
+    hash[['locale', 'language', 'locale_switcher']] = 'layouts/nav/locale_switcher'
     hash[['log_out', 'logout', 'log out']] = 'layouts/nav/log_out'
     hash[['user']] = 'layouts/nav/user'
   end.freeze
+
+  STATIC_LINK_I18N = MultikeyHash.new.tap do |hash|
+    hash[['all_apps', 'all apps']] = 'dashboard.nav_all_apps'
+    hash[['sessions', 'my_interactive_sessions', 'my interactive sessions']] = 'dashboard.nav_sessions'
+    hash[['support_ticket', 'support ticket', 'support']] = 'dashboard.nav_help_support_ticket'
+    hash[['docs']] = 'dashboard.nav_develop_docs'
+    hash[['products_dev', 'products dev']] = 'dashboard.nav_develop_my_sandbox_apps_dev'
+    hash[['products_usr', 'products usr']] = 'dashboard.nav_develop_my_sandbox_apps_prod'
+    hash[['log_out', 'logout', 'log out']] = 'dashboard.nav_logout'
+    hash[['restart']] = 'dashboard.nav_restart_server'
+  end.freeze
+
+  def self.static_link_for(token)
+    key = token.to_s.downcase.to_sym
+    template_link = STATIC_LINKS.fetch(key, nil)
+    return nil unless template_link
+
+    i18n_key = STATIC_LINK_I18N[key]
+    return template_link unless i18n_key
+
+    OodAppLink.new(template_link.to_h.merge(title: I18n.t(i18n_key)))
+  end
 
   url_helpers =  Rails.application.routes.url_helpers
   STATIC_LINKS = MultikeyHash.new.tap do |hash|

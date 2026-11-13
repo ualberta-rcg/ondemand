@@ -265,6 +265,7 @@ fa-IR:
     jobs_workflows_not_supported: گردش‌های کاری توسط زمانبند پیکربندی‌شده پشتیبانی نمی‌شوند.
     launch: راه‌اندازی
     load_report: گزارش بارگیری + %{node}
+    locale_name: فارسی
     logo_alt_text: به Open OnDemand خوش آمدید
     maximum: بیشینه
     mem_report: گزارش حافظه + %{node}
@@ -296,6 +297,7 @@ fa-IR:
     nav_help_support_ticket: ارسال درخواست پشتیبانی
     nav_help_title: راهنما
     nav_help_two_factor: پیکربندی احراز هویت دومرحله‌ای
+    nav_language: زبان
     nav_limit_caption: نمایش %{subset_count} از %{total_count}
     nav_logout: خروج
     nav_restart_server: راه‌اندازی مجدد وب‌سرور
