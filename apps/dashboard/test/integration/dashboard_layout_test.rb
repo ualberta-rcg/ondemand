@@ -33,6 +33,17 @@ class DashboardLayoutTest < ActionDispatch::IntegrationTest
     get '/'
 
     assert_select 'div.row', 0
+    assert_select 'html[lang="en"]'
+  end
+
+  test 'html lang attribute emits valid BCP 47 tag for underscore locales' do
+    stub_user_configuration({ dashboard_layout: {} })
+
+    I18n.with_locale(:ja_JP) do
+      get '/'
+      assert_response :success
+      assert_select 'html[lang="ja-JP"]'
+    end
   end
 
   test 'default MOTD renders when MOTD_PATH is unset' do
