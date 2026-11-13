@@ -1,3 +1,5 @@
+import { oodLocale } from './i18n';
+
 export function fetchNsfAccessJson(url, { cacheControl = true } = {}) {
   const fetchOptions = {};
   if (cacheControl) {
@@ -77,7 +79,8 @@ function itemHeader(item, opts) {
   button.dataset.bsToggle = 'collapse';
   button.dataset.bsTarget = `#${bodyId}`;
 
-  const date = new Date(opts.getDate(item)).toDateString();
+  const dateObj = new Date(opts.getDate(item));
+  const date = isNaN(dateObj.getTime()) ? '' : dateObj.toLocaleDateString(oodLocale(), { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
   button.textContent = `${opts.getTitle(item)} - ${date}`;
 
   button.setAttribute('aria-expanded', false);

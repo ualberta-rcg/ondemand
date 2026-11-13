@@ -1,5 +1,6 @@
 import { debounce } from 'lodash';
 import { hide, show } from './utils.js';
+import { t } from './i18n.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('[data-name]').forEach(card => {
@@ -97,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const text = target.textContent;
       navigator.clipboard.writeText(text)
         .then(() => {
-          button.textContent = 'Copied!';
-          setTimeout(() => button.textContent = 'Copy', 2000);
+          button.textContent = t('module_browser.copied');
+          setTimeout(() => button.textContent = t('module_browser.copy'), 2000);
         })
         .catch(err => {
           console.error('Clipboard write failed:', err);
@@ -154,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update visible module count
     const resultsCountElem = document.getElementById('module_results_count');
     if (resultsCountElem) {
-      resultsCountElem.textContent = `Showing ${resultsCount} results`;
+      resultsCountElem.textContent = t('module_browser.showing_results', { count: resultsCount });
     }
   }
 

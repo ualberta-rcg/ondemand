@@ -6,6 +6,7 @@
 
 import { setInnerHTML } from './utils';
 import { OODAlertError } from './alert';
+import { t } from './i18n';
 
 export function replaceHTML(id, html) {
   const ele = document.getElementById(id);
@@ -43,7 +44,7 @@ export function pollAndReplace(url, delay, id, callback, continuePolling = () =>
       if(response.status == 200) {
         return Promise.resolve(response);
       } else if(response.status == 401) {
-        return Promise.reject("This page cannot update because you are no longer authenticated. Please refresh the page to log back in.")
+        return Promise.reject(t('turbo_shim.unauthenticated'))
       } else {
         return Promise.reject(response.text());
       }
@@ -88,7 +89,7 @@ export function pollAndReplace(url, delay, id, callback, continuePolling = () =>
       if (typeof err == 'string') {
         OODAlertError(err);
       } else {
-        OODAlertError('This page has encountered an unexpected error. Please refresh the page.');
+        OODAlertError(t('turbo_shim.unexpected_error'));
       }
       console.log(err);
     });

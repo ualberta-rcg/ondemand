@@ -1,4 +1,6 @@
 
+import { t } from './i18n';
+
 export function OODAlertError(message) {
   OODAlert(message, 'danger');
 }
@@ -54,7 +56,7 @@ function closeButton() {
 
   const span = document.createElement('span');
   span.classList.add('sr-only');
-  span.innerText = 'Close';
+  span.innerText = t('common.close');
 
   button.appendChild(span);
 

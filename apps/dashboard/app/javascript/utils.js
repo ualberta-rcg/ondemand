@@ -1,4 +1,5 @@
 import {analyticsPath} from "./config";
+import { t } from "./i18n";
 
 export function cssBadgeForState(state){
   switch (state) {
@@ -55,13 +56,13 @@ export function today() {
 export function pageSpin() {
   const ele = document.getElementById('full_page_spinner');
   ele.classList.remove('d-none');
-  ariaNotify('Loading.');
+  ariaNotify(t('utils.loading'));
 }
 
 export function stopPageSpin() {
   const ele = document.getElementById('full_page_spinner');
   ele.classList.add('d-none');
-  ariaNotify('Loading complete.');
+  ariaNotify(t('utils.loading_complete'));
 }
 
 // The next three functions use #full-page-spinner, and are used more widely
@@ -108,8 +109,7 @@ export function openLinkInJs(event) {
   if(window.open(href) == null) {
     // link was not opened in new window, so display error msg to user
     const html = document.getElementById('js-alert-danger-template').innerHTML;
-    const msg = "This link is configured to open in a new window, but it doesn't seem to have opened. " +
-          "Please disable your popup blocker for this page and try again.";
+    const msg = t('utils.popup_blocked');
 
     // replace message in alert and add to main div of layout
     const mainDiv = document.querySelectorAll('div[role="main"]')[0];

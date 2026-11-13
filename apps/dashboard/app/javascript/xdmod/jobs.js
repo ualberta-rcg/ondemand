@@ -1,6 +1,7 @@
 'use strict';
 
 import {reportErrorForAnalytics} from '../utils';
+import { t } from '../i18n';
 
 export function jobsPanel(context, helpers){
   const div = document.createElement('div');
@@ -24,7 +25,7 @@ function card(context, helpers) {
 function cardHeader(helpers) {
   const div = document.createElement('div');
   div.classList.add('card-header');
-  div.innerHTML = `<a href="${helpers.xdmod_url()}" class="float-end">Open XDMoD <span class="fa fa-external-link-square-alt"></span></a>
+  div.innerHTML = `<a href="${helpers.xdmod_url()}" class="float-end">${t('xdmod.open_xdmod')} <span class="fa fa-external-link-square-alt"></span></a>
                    <h3>${helpers.title()} - ${helpers.date_range()}</h3>`;
 
   return div;
@@ -44,7 +45,7 @@ function errorBody(error, helpers) {
   const div = simpleCardBody();
   
   const content = `<div class="alert alert-danger mb-0">
-                      ${error} Please ensure you are <a href="${helpers.xdmod_url()}">logged into Open XDMoD first</a>, and then try again.
+                      ${t('xdmod.ensure_logged_in_html', { error: error, url: helpers.xdmod_url() })}
                     </div>`;
   div.innerHTML = content;
   return div;
@@ -52,7 +53,7 @@ function errorBody(error, helpers) {
 
 function loadingBody() {
   const div = simpleCardBody();
-  div.innerHTML = '<p class="card-text">LOADING...</p>';
+  div.innerHTML = `<p class="card-text">${t('xdmod.loading_caps')}</p>`;
 
   return div;
 }
@@ -94,12 +95,12 @@ function table(context, helpers) {
 
   const thead = document.createElement('thead');
   // Empty th to accommodate for the job analytics button
-  thead.innerHTML = '<tr> \
-                      <th class="sr-only">Analytics Toggle</th> \
-                      <th class="id">ID</th> \
-                      <th class="name">Name</th> \
-                      <th class="date">Date</th> \
-                    </tr>';
+  thead.innerHTML = `<tr>
+                      <th class="sr-only">${t('xdmod.analytics_toggle')}</th>
+                      <th class="id">${t('xdmod.column_id')}</th>
+                      <th class="name">${t('xdmod.column_name')}</th>
+                      <th class="date">${t('xdmod.column_date')}</th>
+                    </tr>`;
 
   const tbody = document.createElement('tbody');
   tbody.append(...tableRows(context, helpers));
@@ -135,7 +136,7 @@ function tableRows(context, helpers) {
     // Job analytics collapse icons
     const td0 = document.createElement('td');
     const button = document.createElement('button');
-    button.title = `Click to expand analytics information on job ${job.local_job_id} above this table.`;
+    button.title = t('xdmod.expand_analytics_title', { id: job.local_job_id });
     button.setAttribute('data-bs-toggle', 'collapse');
     button.setAttribute('data-bs-target', `#${detailsPanelId()}`);
     button.setAttribute('aria-expanded', 'false');
@@ -187,7 +188,7 @@ function linkSpan(){
 function noDataRow() {
   const td = document.createElement('td');
   td.setAttribute('colspan', '7');
-  td.innerHTML = 'No data available.';
+  td.innerHTML = t('xdmod.no_data');
 
   const tr = document.createElement('tr');
   tr.append(td);
@@ -217,9 +218,9 @@ function renderJobAnalytics(analyticsData, jobData, containerId, helpers) {
   const walltimeEfficiency = dataByKey['Walltime Accuracy']?.value || jobData.walltime_accuracy;
   const div = document.createElement('div');
   div.classList.add('job-analytics-content');
-  div.innerHTML = `<span><strong>CPU:</strong> ${helpers.efficiency_label(cpuEfficiency, false)}</span>
-                   <span><strong>Mem:</strong> ${helpers.efficiency_label(memEfficiency, true)}</span>
-                   <span><strong>Walltime:</strong> ${helpers.efficiency_label(walltimeEfficiency, false)}</span>`;
+  div.innerHTML = `<span><strong>${t('xdmod.metric_cpu')}:</strong> ${helpers.efficiency_label(cpuEfficiency, false)}</span>
+                   <span><strong>${t('xdmod.metric_mem')}:</strong> ${helpers.efficiency_label(memEfficiency, true)}</span>
+                   <span><strong>${t('xdmod.metric_walltime')}:</strong> ${helpers.efficiency_label(walltimeEfficiency, false)}</span>`;
 
   document.getElementById(containerId).replaceChildren(div);
 }

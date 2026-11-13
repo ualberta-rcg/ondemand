@@ -1,15 +1,17 @@
 'use strict';
 
+import { t } from './i18n';
+
 const id = 'product_cli_modal';
 const spinnerId = `${id}_spinner`;
 const headerId = `${id}_header`;
 const buttonId = `${id}_button`;
-const closeButton = `<button id="${buttonId}" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
 function modalHeader(title = null) {
   if(title === null || title === undefined) {
-    title = 'no action';
+    title = t('products.no_action');
   }
+  const closeButton = `<button id="${buttonId}" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="${t('common.close')}"></button>`;
 
   return `<div class="modal-header">
             <span class="h5 modal-title">${title}</span>
@@ -44,10 +46,10 @@ function updateModal(event){
 
   xhr.onloadend = function() {
     $(`#${spinnerId}`).replaceWith(`
-      <button class="btn-close float-end" data-bs-dismiss="modal">&times;</button>
+      <button class="btn-close float-end" data-bs-dismiss="modal" aria-label="${t('common.close')}">&times;</button>
     `);
     if (this.status != 200) {
-      $(`#${id} .product-cli-body`).html(`${header}A fatal error has occurred`);
+      $(`#${id} .product-cli-body`).html(`${header}${t('products.fatal_error')}`);
     };
   };
 

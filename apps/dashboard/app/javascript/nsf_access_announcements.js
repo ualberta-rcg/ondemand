@@ -1,5 +1,6 @@
 import { nsfAccessAnnouncementsUrl } from './config';
 import { fetchNsfAccessJson, mountNsfAccessAccordion } from './nsf_access_widget';
+import { t } from './i18n';
 
 document.addEventListener('DOMContentLoaded', () => {
   listAnnouncements();
@@ -20,7 +21,7 @@ function listAnnouncements() {
         getLink: (announcement) => {
           const url = announcement['url'];
           if(url !== undefined && url !== "") {
-            return { href: url, text: 'Read more' };
+            return { href: url, text: t('nsf_access.read_more') };
           }
 
           return null;
