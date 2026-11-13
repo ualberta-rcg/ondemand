@@ -107,6 +107,7 @@ class ConfigurationSingleton
       :rclone_extra_config            => nil,
       :default_profile                => nil,
       :plugins_directory              => '/etc/ood/config/plugins',
+      :locales_root                   => '/etc/ood/config/locales',
       :dashboard_docs_url             => nil,
       :dashboard_help_custom_url      => nil,
       :dashboard_passwd_url           => nil,
@@ -348,11 +349,27 @@ class ConfigurationSingleton
   end
 
   def locale
-    (ENV['OOD_LOCALE'] || 'en').to_sym
+    (ENV['OOD_LOCALE'] || config.fetch(:locale, 'en')).to_sym
   end
 
-  def locales_root
-    Pathname.new(ENV['OOD_LOCALES_ROOT'] || "/etc/ood/config/locales")
+  # Locales that users are allowed to choose from in the language switcher.
+  # Accepts a YAML Array or colon/comma-separated String of locale codes or
+  # locale file paths via OOD_SUPPORTED_LOCALES or ondemand.d `supported_locales`.
+  # Defaults to `[locale]` so the language switcher is opt-in.
+  def supported_locales
+    raw = ENV['OOD_SUPPORTED_LOCALES'] || config.fetch(:supported_locales, nil)
+    entries = if raw.nil?
+                [locale]
+              else
+                Array.wrap(raw).flat_map { |v| v.to_s.strip.split(/[:,]/) }
+              end
+
+    parsed = entries.filter_map do |entry|
+      stem = File.basename(entry.to_s.strip, '.*')
+      stem.to_sym unless stem.empty?
+    end.uniq
+
+    parsed.empty? ? [locale] : parsed
   end
 
   # Set the global configuration directory

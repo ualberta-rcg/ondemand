@@ -1,0 +1,27 @@
+<% if OodLocale.supported_locales.size > 1 %>
+<li class="nav-item dropdown" role="none" id="locale-switcher">
+  <a href="#" title="<%= t('dashboard.nav_language') %>" aria-label="<%= t('dashboard.nav_language') %>"
+    class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+    role="menuitem">
+    <i class="fas fa-globe" aria-hidden="true"></i><span class="d-md-none d-xxl-inline"> <%= t('dashboard.nav_language') %></span><span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu <%= local_assigns.fetch(:menu_alignment, 'dropdown-menu-end') %>" role="menu">
+    <% OodLocale.options_for_select.each do |name, loc, bcp47| %>
+      <% active = (loc.to_sym == I18n.locale.to_sym) %>
+      <li role="none">
+        <%= link_to settings_path('settings[locale]' => loc, 'back' => 'true'),
+                    class: "dropdown-item d-flex align-items-center#{' active' if active}",
+                    title: name,
+                    lang: bcp47,
+                    role: 'menuitem',
+                    aria: (active ? { current: 'true' } : {}),
+                    data: { method: 'post' } do %>
+          <i class="fas <%= active ? 'fa-check' : 'fa-fw' %> fa-fw me-1" aria-hidden="true"></i>
+          <span><%= name %></span>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</li>
+<% end %>

@@ -592,6 +592,7 @@ class NavBarTest < ActiveSupport::TestCase
         'sessions', 'my_interactive_sessions', 'my interactive sessions',
         'develop',
         'help',
+        'locale', 'language', 'locale_switcher',
         'log_out', 'logout', 'log out',
         'user'].include?(name.to_s)
     end
@@ -644,6 +645,22 @@ class NavBarTest < ActiveSupport::TestCase
     assert_equal "layouts/nav/group",  result.partial_path
     assert_equal "",  result.title
     assert_equal 0,  result.apps.size
+  end
+
+  test "NavBar static links dynamically translate titles for active locale" do
+    en_item = I18n.with_locale(:en) { NavBar.items(['restart']).first }
+    fr_item = I18n.with_locale(:'fr-CA') { NavBar.items(['restart']).first }
+
+    assert_equal I18n.t('dashboard.nav_restart_server', locale: :en), en_item.title
+    assert_equal I18n.t('dashboard.nav_restart_server', locale: :'fr-CA'), fr_item.title
+    refute_equal en_item.title, fr_item.title
+  end
+
+  test "NavBar.items supports custom locale link items with back=true" do
+    result = NavBar.items([{ locale: 'fr-CA' }])
+    assert_equal 1, result.size
+    assert_equal 'Français (Canada)', result[0].title
+    assert_equal Rails.application.routes.url_helpers.settings_path('settings[locale]' => 'fr-CA', 'back' => 'true'), result[0].url
   end
 
 end

@@ -1435,4 +1435,45 @@ class ConfigurationSingletonTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test "should have default locale and locales_root" do
+    with_modified_env(no_config_env.merge(OOD_LOCALE: nil, OOD_LOCALES_ROOT: nil, OOD_SUPPORTED_LOCALES: nil)) do
+      cfg = ConfigurationSingleton.new
+      assert_equal :en, cfg.locale
+      assert_equal '/etc/ood/config/locales', cfg.locales_root
+      assert_equal [:en], cfg.supported_locales
+    end
+  end
+
+  test "can configure locale, locales_root, and supported_locales through ondemand.d and env" do
+    Dir.mktmpdir do |dir|
+      File.write(
+        "#{dir}/config.yml",
+        {
+          'locale'            => 'en-CA',
+          'locales_root'      => '/locales/from/file',
+          'supported_locales' => ['en-CA', 'fr-CA']
+        }.to_yaml
+      )
+
+      with_modified_env(OOD_CONFIG_D_DIRECTORY: dir.to_s, OOD_LOCALE: nil, OOD_LOCALES_ROOT: nil, OOD_SUPPORTED_LOCALES: nil) do
+        cfg = ConfigurationSingleton.new
+        assert_equal :'en-CA', cfg.locale
+        assert_equal '/locales/from/file', cfg.locales_root
+        assert_equal [:'en-CA', :'fr-CA'], cfg.supported_locales
+      end
+
+      with_modified_env(
+        OOD_CONFIG_D_DIRECTORY: dir.to_s,
+        OOD_LOCALE:             'fr-CA',
+        OOD_LOCALES_ROOT:       '/locales/from/env',
+        OOD_SUPPORTED_LOCALES:  '/etc/ood/config/locales/en.yml:/etc/ood/config/locales/ja_JP.yml:fr-CA'
+      ) do
+        cfg = ConfigurationSingleton.new
+        assert_equal :'fr-CA', cfg.locale
+        assert_equal '/locales/from/env', cfg.locales_root
+        assert_equal [:en, :ja_JP, :'fr-CA'], cfg.supported_locales
+      end
+    end
+  end
 end
