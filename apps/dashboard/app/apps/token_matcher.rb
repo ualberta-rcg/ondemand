@@ -51,11 +51,13 @@ class TokenMatcher
   end
 
   def same_category?(app)
-    token[:category].to_s == app.category
+    expected = token[:category].to_s
+    expected == app.category || (app.respond_to?(:default_category) && expected == app.default_category)
   end
 
   def same_subcategory?(app)
-    token[:subcategory].to_s == app.subcategory
+    expected = token[:subcategory].to_s
+    expected == app.subcategory || (app.respond_to?(:default_subcategory) && expected == app.default_subcategory)
   end
 
   def same_type?(app)

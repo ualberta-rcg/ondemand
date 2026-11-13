@@ -22,12 +22,12 @@ module SmartAttributes
       # @param fmt [String, nil] formatting of form label
       # @return [String] form label
       def label(fmt: nil)
-        str = opts[:label] || case fmt
-                              when 'slurm'
-                                I18n.t('dashboard.smart_attributes.partition')
-                              else
-                                I18n.t('dashboard.smart_attributes.queue')
-                              end
+        str = localized_opt(:label) || case fmt
+                                       when 'slurm'
+                                         I18n.t('dashboard.smart_attributes.partition')
+                                       else
+                                         I18n.t('dashboard.smart_attributes.queue')
+                                       end
         str.to_s
       end
 

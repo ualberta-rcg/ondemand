@@ -1,0 +1,5 @@
+---
+en-CA:
+  manifest:
+    name: Shell
+    description: Open OnDemand web-based terminal

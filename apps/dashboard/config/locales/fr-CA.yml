@@ -161,11 +161,23 @@ fr-CA:
     breadcrumbs_support_ticket: Billet de soutien
     browser_warning: OnDemand nécessite une version plus récente de votre navigateur. Les navigateurs pris en charge incluent Edge, Firefox 19+, Chrome 34+ et Safari 8+.
     cancel: Annuler
+    categories:
+      apps: Applications
+      clusters: Grappes
+      desktops: Bureaux
+      external_apps: Applications externes
+      files: Fichiers
+      gateway_apps: Applications passerelles
+      guis: Interfaces graphiques
+      interactive_apps: Applications interactives
+      jobs: Tâches
+      servers: Serveurs
+      virtual_desktop_interface: Interface de bureau virtuel
     clear: Effacer
     close: Fermer
     close_alert: Fermer cette alerte.
     close_notice: Fermer cet avis.
-    cluster: Regrouper
+    cluster: Grappe
     copy: Copier
     cpu_report: Rapport du processeur + %{node}
     custom_pages:

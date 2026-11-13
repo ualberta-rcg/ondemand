@@ -161,6 +161,18 @@ en-CA:
     breadcrumbs_support_ticket: Support Ticket
     browser_warning: OnDemand requires a newer version of the browser you are using. Current browser requirements include IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
     cancel: Cancel
+    categories:
+      apps: Apps
+      clusters: Clusters
+      desktops: Desktops
+      external_apps: External Apps
+      files: Files
+      gateway_apps: Gateway Apps
+      guis: GUIs
+      interactive_apps: Interactive Apps
+      jobs: Jobs
+      servers: Servers
+      virtual_desktop_interface: Virtual Desktop Interface
     clear: Clear
     close: Close
     close_alert: Close this alert.

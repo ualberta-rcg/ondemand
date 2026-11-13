@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'localized_value'
+
 module SmartAttributes
   # This is the base class that all other, more specific, Attributes
   # should subclass.
@@ -75,20 +77,20 @@ module SmartAttributes
     # @param fmt [String, nil] formatting of form label
     # @return [String] form label
     def label(fmt: nil)
-      (opts[:label] || id.titleize).to_s
+      (localized_opt(:label) || id.titleize).to_s
     end
 
     # Header to render before this attribute
     # @return [String] header text
     def header
-      opts[:header].to_s
+      localized_opt(:header).to_s
     end
 
     # Help text for this attribute
     # @param fmt [String, nil] formatting of help text
     # @return [String] help text
     def help(fmt: nil)
-      opts[:help].to_s
+      localized_opt(:help).to_s
     end
 
     def help_html(fmt: nil)
@@ -170,11 +172,13 @@ module SmartAttributes
     #
     # It's basically calling opts with some keys updated for convenience.
     def options_to_serialize(fmt: nil)
-      opts.merge({
-                   label:    label(fmt: fmt),
-                   help:     help_html(fmt: fmt),
-                   required: required
-                 }).compact
+      serialized = opts.merge({
+                                label:    label(fmt: fmt),
+                                help:     help_html(fmt: fmt),
+                                required: required
+                              })
+      serialized[:header] = header if opts.key?(:header)
+      serialized.compact
     end
 
     # Array of choices for select fields used to build <option> tags
@@ -182,8 +186,7 @@ module SmartAttributes
     def select_choices(hide_excludable: true)
       opts.fetch(:options, []).to_a.reject do |option_data|
         if hide_excludable
-          option = option_data.is_a?(Array) ? option_data.first : option_data
-          exclude_select_choices.include?(option)
+          excluded_select_choice?(option_data)
         else
           false
         end
@@ -192,7 +195,15 @@ module SmartAttributes
         # and let nils fall through and get caught in validate!
         case entry
         when Array
-          entry
+          if LocalizedValue.locale_hash?(entry.first)
+            if entry.size == 1
+              [LocalizedValue.resolve(entry.first), LocalizedValue.resolve(entry.first, locale: :en)]
+            else
+              [LocalizedValue.resolve(entry.first), *entry[1..]]
+            end
+          else
+            entry
+          end
         when String, Symbol
           [entry.to_s, entry.to_s]
         end
@@ -229,6 +240,22 @@ module SmartAttributes
 
     private
 
+    def localized_opt(key)
+      LocalizedValue.resolve_optional(opts[key])
+    end
+
+    def excluded_select_choice?(option_data)
+      option = option_data.is_a?(Array) ? option_data.first : option_data
+      return true if exclude_select_choices.include?(option)
+
+      if LocalizedValue.locale_hash?(option)
+        return true if exclude_select_choices.include?(LocalizedValue.resolve(option))
+        return true if exclude_select_choices.include?(LocalizedValue.resolve(option, locale: :en))
+      end
+
+      option_data.is_a?(Array) && option_data.size > 1 && exclude_select_choices.include?(option_data.second)
+    end
+
     # Array of reserved keys for options that are used as methods in this class
     # for the value of these options, the methods in this class should be used,
     # instead of the underlying option
@@ -236,7 +263,7 @@ module SmartAttributes
     def reserved_keys
       [
         :widget, :fixed, :hide_when_empty, :options, :html_options, :checked_value, :unchecked_value,
-        :required, :label, :help, :cacheable
+        :required, :label, :help, :header, :cacheable
       ]
     end
   end

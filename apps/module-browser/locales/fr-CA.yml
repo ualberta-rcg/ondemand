@@ -1,0 +1,6 @@
+---
+fr-CA:
+  manifest:
+    name: Explorateur de modules
+    description: Parcourir les modules disponibles sur les grappes et consulter leurs
+      détails.

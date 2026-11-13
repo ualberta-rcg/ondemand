@@ -26,7 +26,7 @@ module SmartAttributes
 
       def label(*)
         # (opts[:label] || 'Log Location').to_s
-        (opts[:label] || I18n.t('dashboard.auto_log_location_title')).to_s
+        (localized_opt(:label) || I18n.t('dashboard.auto_log_location_title')).to_s
       end
 
       # Submission hash describing how to submit this attribute

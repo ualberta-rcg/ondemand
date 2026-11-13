@@ -23,12 +23,13 @@ module SmartAttributes
 
         def original_label
           default_base = I18n.t('dashboard.smart_attributes.environment_variable')
-          return default_base if !@opts[:label] || opts[:label].to_s.match?(/Environment Variable|#{Regexp.escape(default_base)}/)
-          @opts[:label].to_s
+          resolved = localized_opt(:label)
+          return default_base if !resolved || resolved.to_s.match?(/Environment Variable|#{Regexp.escape(default_base)}/)
+          resolved.to_s
         end
 
         def label(*)
-          (opts[:label] || I18n.t('dashboard.smart_attributes.environment_variable_key', key: @key)).to_s
+          (localized_opt(:label) || I18n.t('dashboard.smart_attributes.environment_variable_key', key: @key)).to_s
         end
 
         def field_options(fmt: nil)

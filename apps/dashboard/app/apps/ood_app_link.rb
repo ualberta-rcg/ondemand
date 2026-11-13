@@ -7,15 +7,15 @@ class OodAppLink
   def initialize(config = {})
     config = config.to_h.compact.symbolize_keys
 
-    @title       = config.fetch(:title, '').to_s
-    @subtitle    = config.fetch(:subtitle, '').to_s
-    @description = config.fetch(:description, '').to_s
-    @url         = config.fetch(:url, '').to_s
+    @title       = LocalizedValue.resolve(config.fetch(:title, ''))
+    @subtitle    = LocalizedValue.resolve(config.fetch(:subtitle, ''))
+    @description = LocalizedValue.resolve(config.fetch(:description, ''))
+    @url         = LocalizedValue.resolve(config.fetch(:url, ''))
     @icon_uri    = URI(config.fetch(:icon_uri, 'fas://cog').to_s)
-    @caption     = config.fetch(:caption, nil)
+    @caption     = LocalizedValue.resolve_optional(config.fetch(:caption, nil))
     @new_tab     = config.fetch(:new_tab, true)
     @data        = config.fetch(:data, {}).to_h
-    @tile        = config.fetch(:tile, {}).to_h.deep_symbolize_keys
+    @tile        = LocalizedValue.resolve_tile_hash(config.fetch(:tile, {})).to_h.deep_symbolize_keys
   end
 
   def new_tab?
@@ -39,8 +39,8 @@ class OodAppLink
 
     def initialize(link, category: '', subcategory: '', show_in_menu: false)
       super(link)
-      @category = category
-      @subcategory = subcategory
+      @category = LocalizedValue.resolve(category)
+      @subcategory = LocalizedValue.resolve(subcategory)
       @show_in_menu = show_in_menu
     end
 

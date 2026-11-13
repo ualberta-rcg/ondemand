@@ -6,7 +6,7 @@
     render(
       partial: "batch_connect/shared/app_list",
       locals: {
-        title: app_group.title,
+        title: app_group.localized_title,
         apps: app_group.apps,
         current_url: local_assigns[:current_url],
         group_by: :category,
@@ -21,7 +21,7 @@
     render(
       partial: "batch_connect/shared/app_list",
       locals: {
-        title: apps_menu_group.title,
+        title: apps_menu_group.localized_title,
         apps: apps_menu_group.apps,
         current_url: local_assigns[:current_url],
         sort: apps_menu_group.sort,
@@ -34,7 +34,7 @@
       render(
           partial: "batch_connect/shared/app_list",
           locals: {
-            title: app_group.title,
+            title: app_group.localized_title,
             apps: app_group.apps,
             current_url: local_assigns[:current_url]
           }
@@ -48,7 +48,7 @@
     render(
         partial: "batch_connect/shared/app_list",
         locals: {
-          title: "#{app_group.title}" + t('dashboard.batch_connect_sandbox'),
+          title: "#{app_group.localized_title}" + t('dashboard.batch_connect_sandbox'),
           apps: app_group.apps,
           current_url: local_assigns[:current_url],
           style: "sandbox-apps-header"

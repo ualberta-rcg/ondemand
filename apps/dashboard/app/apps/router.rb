@@ -29,7 +29,7 @@ class Router
   # @return [FeaturedApp]
   def self.pinned_apps(tokens, all_apps)
     @pinned_apps ||= {}
-    tokens_key = ActiveSupport::Cache.expand_cache_key(tokens)
+    tokens_key = ActiveSupport::Cache.expand_cache_key([tokens, I18n.locale])
     return @pinned_apps[tokens_key] if @pinned_apps.key?(tokens_key)
 
     @pinned_apps[tokens_key] = tokens.to_a.each_with_object([]) do |token, pinned_apps|
