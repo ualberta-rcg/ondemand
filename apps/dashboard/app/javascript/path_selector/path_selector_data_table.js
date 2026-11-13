@@ -75,7 +75,7 @@ export class PathSelectorTable {
       columns: [
         {
           data: 'type',
-          render: (data, _type, _row, _meta) => data == 'd' ? '<span title="directory" class="fa fa-folder gold"><span class="sr-only">directory</span></span>' : '<span title="file" class="fa fa-file black"><span class="sr-only">file</span></span>'
+          render: (data, _type, _row, _meta) => data == 'd' ? `<span title="${t('files.directory')}" class="fa fa-folder gold"><span class="sr-only">${t('files.directory')}</span></span>` : `<span title="${t('files.file')}" class="fa fa-file black"><span class="sr-only">${t('files.file')}</span></span>`
         },
         {
             name: 'name',
@@ -104,7 +104,7 @@ export class PathSelectorTable {
     try {
       $(this.tableWrapper()).hide();
       show(`${this.tableId}_spinner`);
-      ariaNotify('Loading directory contents');
+      ariaNotify(t('path_selector.loading_directory'));
       const response = await fetch(url, { headers: { 'Accept': 'application/json' }, cache: 'no-store' });
       const data = await this.dataFromJsonResponse(response);
       if (requestId !== this._reloadRequestId) {
@@ -118,7 +118,7 @@ export class PathSelectorTable {
       this.setLastVisited(data.path);
       this._table.draw();
       this.resetTable();
-      ariaNotify('Directory loaded with ' + data.files.length + ' items');
+      ariaNotify(t('path_selector.directory_loaded', { count: data.files.length }));
     } catch (err) {
       if (requestId !== this._reloadRequestId) {
         return;
@@ -129,7 +129,7 @@ export class PathSelectorTable {
         const msg = err.message;	    
         var prefix = '';
         if (msg.match('ALLOWLIST_PATH')) {
-          prefix = 'Permission denied: ';
+          prefix = t('path_selector.permission_denied_prefix');
         }
         $('#forbidden-warning').removeClass('d-none')
           .text(`${prefix}${msg}`)
@@ -271,7 +271,7 @@ export class PathSelectorTable {
         regex = RegExp(this.filePattern);
       }
     } catch {
-      OODAlertError("The regular expression provided for this path selector did not compile");
+      OODAlertError(t('path_selector.invalid_regex'));
     }
 
     const filteredFiles = data.files.filter((file) => {

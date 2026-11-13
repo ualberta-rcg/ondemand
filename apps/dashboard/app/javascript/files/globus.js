@@ -1,3 +1,5 @@
+import { t } from '../i18n.js';
+
 var globus_endpoints;
 
 $(document).ready(function() {
@@ -42,10 +44,10 @@ export function updateGlobusLink(directory, link, wrapper) {
   let info = getEndpointInfo(directory);
   if (info) {
     link.removeClass("disabled");
-    wrapper.prop("title", "Open the current directory with Globus");
+    wrapper.prop("title", t('files.globus_open'));
   } 
   else {
     link.addClass("disabled");
-    wrapper.prop("title", "No Globus endpoint associated with this directory");
+    wrapper.prop("title", t('files.globus_unavailable'));
   }
 }

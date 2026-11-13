@@ -279,11 +279,82 @@ en:
         filter_label: 'Filter:'
         invalid_date: Invalid Date
         rows_selected:
-          one: 1 row selected
+          one: "%{count} row selected"
           other: "%{count} rows selected"
         showing_filtered_rows: Showing %{display} of %{total} rows
         showing_rows: Showing %{display} rows
         status_summary: "%{showing} - %{selected}"
+      editor:
+        save_error: "An error occurred attempting to save this file!\n%{error}"
+        unsaved_changes: You have unsaved changes!
+      files:
+        action_delete: Delete
+        action_download: Download
+        action_edit: Edit
+        action_rename: Rename
+        action_view: View
+        actions: Actions
+        cannot_navigate_file: Cannot navigate to a file.
+        change_directory: Change Directory
+        clipboard_description_html: "Copy or move the files below from <code>%{from}</code> to the current directory:"
+        contents_of_directory: Contents of directory %{path}
+        copied_path: Copied path to clipboard!
+        copy: Copy
+        create_directory_error: "Error occurred when attempting to create new directory: %{error}"
+        create_file_error: "Error occurred when attempting to create new file: %{error}"
+        delete_confirm_text: "Are you sure you want to delete the files: %{files}"
+        delete_multiple_title: Delete %{count} selected files?
+        delete_single_title: Delete %{name}?
+        deleting_files: "Deleting files...: "
+        directory: directory
+        directory_name_label: Directory name
+        download_error: "Error while downloading: %{error}"
+        duplicate_files_warning: Duplicate files identified. Uploading these files will overwrite existing content.
+        file: file
+        filename_invalid_chars: Filename cannot include / or ..
+        filename_label: Filename
+        globus_open: Open the current directory with Globus
+        globus_unavailable: No Globus endpoint associated with this directory
+        illegal_slash_in_filename: Illegal character (/) not allowed in filename.
+        move: Move
+        navigated_to: navigated to %{path}
+        new_directory_title: New Directory
+        new_file_title: New File
+        path_label: Path
+        poll_status_error: Operation may not have happened. Failed to retrieve file operation status.
+        preparing_download_dir: "preparing to download directory: %{name}"
+        provide_absolute_pathname: Provide an absolute pathname
+        provide_directory_name: Provide a directory name that does not have / in it
+        provide_non_empty_filename: Provide a non-empty filename.
+        provide_rename_filename: Provide a filename to rename this to
+        rename_title: Rename
+        see_details: See details
+        select_row: Select row
+        select_to_copy_move: Select a file, files, or directory to copy or move. You have selected none.
+        select_to_delete: Select a file, files, or directory to delete. You have selected none.
+        select_to_download: Select a file, files, or directory to download. You have selected none.
+        select_to_send: Select at least one file or directory to send.
+        send_failed: Failed to send file information.
+        sent_successfully: Selected file information sent successfully.
+        show_dotfiles: Show Dotfiles
+        show_owner_mode: Show Owner/Mode
+        summary_copy_files: copy files
+        summary_move_files: move files
+        summary_remove_files: remove files
+        summary_rename_file: rename file
+        token_missing_expired: Application token is missing or expired. Start again
+        transfer_error: "Error occurred when attempting to %{summary}: %{error}"
+        upload_and_overwrite: Upload and Overwrite
+        upload_count:
+          one: Upload %{count} file
+          other: Upload %{count} files
+        upload_new_files: Upload New Files
+        uppy_empty_dir_note: Empty directories will be included in the upload only when a directory upload is initiated via drag and drop. This is because the File and Directory Entries API is available only on a drop event, not during an input change event.
+      path_selector:
+        directory_loaded: Directory loaded with %{count} items
+        invalid_regex: The regular expression provided for this path selector did not compile
+        loading_directory: Loading directory contents
+        permission_denied_prefix: "Permission denied: "
     launch: Launch
     load_report: Load Report + %{node}
     logo_alt_text: Welcome to Open OnDemand

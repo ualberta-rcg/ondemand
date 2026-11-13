@@ -4,6 +4,7 @@ import {EVENTNAME as SWAL_EVENTNAME} from './sweet_alert.js';
 import _ from 'lodash';
 import { transfersPath, csrfToken } from '../config.js';
 import { OODAlertError } from '../alert';
+import { t } from '../i18n.js';
 
 export {EVENTNAME};
 
@@ -175,7 +176,7 @@ jQuery(function() {
 
   $(CONTENTID).on(EVENTNAME.download, function (e, options) {
     if(options.selection.length == 0) {
-      OODAlertError('Select a file, files, or directory to download. You have selected none.');
+      OODAlertError(t('files.select_to_download'));
     } else {
       fileOps.download(options.selection);
     }
@@ -183,7 +184,7 @@ jQuery(function() {
 
   $(CONTENTID).on(EVENTNAME.deletePrompt, function (e, options) {
     if(options.files.length == 0) {
-      OODAlertError('Select a file, files, or directory to delete. You have selected none.');
+      OODAlertError(t('files.select_to_delete'));
     } else {
       fileOps.deletePrompt(options.files);
     }
@@ -245,9 +246,9 @@ class FileOps {
     const eventData = {
       action: 'changeDirectory',
       'inputOptions': {
-        title: 'Change Directory',
+        title: t('files.change_directory'),
         input: 'text',
-        inputLabel: 'Path',
+        inputLabel: t('files.path_label'),
         inputValue:  history.state.currentDirectory,
         inputAttributes: {
           spellcheck: 'false',
@@ -256,7 +257,7 @@ class FileOps {
         inputValidator: (value) => {
           if (! value || ! value.startsWith('/')) {
             // TODO: validate filenames against listing
-            return 'Provide an absolute pathname'
+            return t('files.provide_absolute_pathname')
           }
         }
       }
@@ -271,8 +272,10 @@ class FileOps {
       action: EVENTNAME.deleteFile,
       files: files,
       'inputOptions': {
-        title: files.length == 1 ? `Delete ${files[0]}?` : `Delete ${files.length} selected files?`,
-        text: 'Are you sure you want to delete the files: ' + files.join(', '),
+        title: files.length == 1
+          ? t('files.delete_single_title', { name: files[0] })
+          : t('files.delete_multiple_title', { count: files.length }),
+        text: t('files.delete_confirm_text', { files: files.join(', ') }),
         showCancelButton: true,
       }
     };
@@ -283,13 +286,13 @@ class FileOps {
 
   
   removeFiles(files) {
-    this.transferFiles(files, "rm", "remove files", history.state.currentFilesystem)
+    this.transferFiles(files, "rm", t('files.summary_remove_files'), history.state.currentFilesystem)
   } 
 
   renameFile(fileName, newFileName) {
     let files = {};
     files[`${history.state.currentDirectory}/${fileName}`] = `${history.state.currentDirectory}/${newFileName}`;
-    this.transferFiles(files, "mv", "rename file", history.state.currentFilesystem, history.state.currentFilesystem)
+    this.transferFiles(files, "mv", t('files.summary_rename_file'), history.state.currentFilesystem, history.state.currentFilesystem)
   }
 
   renameFilePrompt(fileName) {
@@ -297,9 +300,9 @@ class FileOps {
       action: EVENTNAME.renameFile,
       files: fileName,
       'inputOptions': {
-        title: 'Rename',
+        title: t('files.rename_title'),
         input: 'text',
-        inputLabel: 'Filename',
+        inputLabel: t('files.filename_label'),
         inputValue: fileName,
         inputAttributes: {
           spellcheck: 'false',
@@ -308,9 +311,9 @@ class FileOps {
         inputValidator: (value) => {
           if (! value) {
             // TODO: validate filenames against listing
-            return 'Provide a filename to rename this to';
+            return t('files.provide_rename_filename');
           } else if (value.includes('/') || value.includes('..')) {
-           return 'Filename cannot include / or ..';
+           return t('files.filename_invalid_chars');
           }
         }
       }
@@ -327,18 +330,18 @@ class FileOps {
     const eventData = {
       action: EVENTNAME.createFile,
       'inputOptions': {
-        title: 'New File',
+        title: t('files.new_file_title'),
         input: 'text',
-        inputLabel: 'Filename',
+        inputLabel: t('files.filename_label'),
         showCancelButton: true,
         inputValidator: (value) => {
           if (!value) {
             // TODO: validate filenames against listing
-            return 'Provide a non-empty filename.'
+            return t('files.provide_non_empty_filename')
           }
           else if (value.includes("/")) {
             // TODO: validate filenames against listing
-            return 'Illegal character (/) not allowed in filename.'
+            return t('files.illegal_slash_in_filename')
           }
         }
       }
@@ -356,7 +359,7 @@ class FileOps {
         myFileOp.reloadTable();
       })
       .catch(function (e) {
-        OODAlertError(`Error occurred when attempting to create new file: ${e.message}`);
+        OODAlertError(t('files.create_file_error', { error: e.message }));
       });
   }
 
@@ -365,14 +368,14 @@ class FileOps {
     const eventData = {
       action: EVENTNAME.createDirectory,
       'inputOptions': {
-        title: 'New Directory',
+        title: t('files.new_directory_title'),
         input: 'text',
-        inputLabel: 'Directory name',
+        inputLabel: t('files.directory_name_label'),
         showCancelButton: true,
         inputValidator: (value) => {
           if (!value || value.includes("/")) {
             // TODO: validate filenames against listing
-            return 'Provide a directory name that does not have / in it'
+            return t('files.provide_directory_name')
           }
         }
       }
@@ -390,7 +393,7 @@ class FileOps {
         myFileOp.reloadTable();
       })
       .catch(function (e) {
-        OODAlertError(`Error occurred when attempting to create new directory: ${e.message}`);
+        OODAlertError(t('files.create_directory_error', { error: e.message }));
       });
   }
 
@@ -408,7 +411,7 @@ class FileOps {
     let filename = $($.parseHTML(file.name)).text(),
         canDownloadReq = `${history.state.currentDirectoryUrl}/${encodeURIComponent(filename)}?can_download=${Date.now().toString()}`
 
-    this.showSwalLoading('preparing to download directory: ' + file.name);
+    this.showSwalLoading(t('files.preparing_download_dir', { name: file.name }));
   
     fetch(canDownloadReq, {
         method: 'GET',
@@ -424,12 +427,12 @@ class FileOps {
           this.downloadFile(file)
         } else {
           this.doneLoading();
-          OODAlertError(`Error while downloading: ${data.error_message}`);
+          OODAlertError(t('files.download_error', { error: data.error_message }));
         }
       })
       .catch(e => {
         this.doneLoading();
-        OODAlertError(`Error while downloading: ${e.message}`);
+        OODAlertError(t('files.download_error', { error: e.message }));
       })
   }
   
@@ -474,7 +477,7 @@ class FileOps {
     
   
   delete(files) {
-    this.showSwalLoading('Deleting files...: ');
+    this.showSwalLoading(t('files.deleting_files'));
 
     this.removeFiles(files.map(f => [history.state.currentDirectory, f].join('/')), csrfToken() );
   }
@@ -522,7 +525,7 @@ class FileOps {
     .then(() => this.doneLoading())
     .catch(e => {
       this.doneLoading();
-      OODAlertError(`Error occurred when attempting to ${summary}: ${e.message}`);
+      OODAlertError(t('files.transfer_error', { summary: summary, error: e.message }));
     })
   }
   
@@ -549,13 +552,13 @@ class FileOps {
         html += `
           <div id="${data.id}" class="alert alert-danger alert-dismissible fade show" role="alert">
             <b><i class="fas fa-exclamation-triangle"></i> ${data.error_summary}</b>
-            <button class="btn btn-outline-dark btn-sm ms-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${data.id}-error-report" aria-expanded="false" aria-controls="${data.id}-error-report">See details</button>
+            <button class="btn btn-outline-dark btn-sm ms-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${data.id}-error-report" aria-expanded="false" aria-controls="${data.id}-error-report">${t('files.see_details')}</button>
             <div id="${data.id}-error-report" class="collapse">
               <div class="mt-3 card">
                 <pre class="card-body">${data.error_message}</pre>
               </div>
              </div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="${t('common.close')}"></button>
           </div>
         `;
       } else {
@@ -599,7 +602,7 @@ class FileOps {
       }
     }).fail(function() {
       if (that._failures >= 3) {
-        OODAlertError('Operation may not have happened. Failed to retrieve file operation status.');
+        OODAlertError(t('files.poll_status_error'));
       } else {
         setTimeout(function(){
           that._failures++;
@@ -617,11 +620,11 @@ class FileOps {
   } 
 
   move(files, token, from_fs, to_fs) {
-    this.transferFiles(files, 'mv', 'move files', from_fs, to_fs);
+    this.transferFiles(files, 'mv', t('files.summary_move_files'), from_fs, to_fs);
   }
 
   copy(files, token, from_fs, to_fs) {
-    this.transferFiles(files, 'cp', 'copy files', from_fs, to_fs);
+    this.transferFiles(files, 'cp', t('files.summary_copy_files'), from_fs, to_fs);
   }
 
   doneLoading() {

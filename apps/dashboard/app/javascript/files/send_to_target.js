@@ -1,5 +1,6 @@
 import { CONTENTID } from './data_table.js';
 import { OODAlertError, OODAlertSuccess } from '../alert';
+import { t } from '../i18n';
 
 const TOKEN_KEY = 'files_select_target_token';
 
@@ -40,7 +41,7 @@ function handleSendToTarget(button, endpoint, expirationMinutes) {
 
   if (!targetToken) {
     disableButton(button);
-    OODAlertError('Application token is missing or expired. Start again');
+    OODAlertError(t('files.token_missing_expired'));
     return;
   }
 
@@ -48,7 +49,7 @@ function handleSendToTarget(button, endpoint, expirationMinutes) {
   const selection = table.rows({ selected: true }).data().toArray();
 
   if (selection.length === 0) {
-    OODAlertError('Select at least one file or directory to send.');
+    OODAlertError(t('files.select_to_send'));
     return;
   }
 
@@ -69,10 +70,10 @@ function handleSendToTarget(button, endpoint, expirationMinutes) {
           throw new Error();
         }
 
-        OODAlertSuccess('Selected file information sent successfully.');
+        OODAlertSuccess(t('files.sent_successfully'));
       })
       .catch(() => {
-        OODAlertError('Failed to send file information.');
+        OODAlertError(t('files.send_failed'));
       })
       .finally(() => {
         button.removeAttribute('disabled');
