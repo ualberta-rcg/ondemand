@@ -1,5 +1,6 @@
 'use strict';
 import { ariaNotify } from './utils'
+import { t } from './i18n'
 // these are initialized in makeChangeHandlers
 var idPrefix = undefined;
 var shortNameRex = undefined;
@@ -231,7 +232,7 @@ function updateLabel(changeId, changeElement, key) {
   const contentToSet = labelContent === undefined ? defaultLabel : labelContent;
   const originalInfo = getWidgetInfo(changeId);
   $(`label[for="${changeId}"]`)[0].innerHTML = contentToSet;
-  ariaStream(`Changed label on ${originalInfo} to new label ${contentToSet}`);
+  ariaStream(t('dynamic_forms.changed_label', { widget: originalInfo, label: contentToSet }));
 }
 
 function addLabelHandler(optionId, option, key, configValue) {
@@ -371,7 +372,7 @@ function captureDefaultHelp(changeId) {
     $(helpElement).appendTo($(small).appendTo($(wrapper_id).children()[0]));
   }
   $(helpElement).text(contentToSet);
-  ariaStream(`Changed help text on ${getWidgetInfo(changeId)} to ${contentToSet}`);
+  ariaStream(t('dynamic_forms.changed_help', { widget: getWidgetInfo(changeId), help: contentToSet }));
 }
 
 /**
@@ -501,7 +502,7 @@ function setValue(event, changeId) {
     }
 
     const elementInfo = getWidgetInfo(changeId);
-    ariaStream(`Set ${elementInfo} to value ${changeVal}`);
+    ariaStream(t('dynamic_forms.set_value', { widget: elementInfo, value: changeVal }));
     element.dispatchEvent(new Event('change', { bubbles: true }));
   }
 }
@@ -602,10 +603,10 @@ function updateVisibility(event, changeId) {
   
   if((hide === false) || (hide === undefined && !initializing && !defaultHidden)) {
     toggleItemVisible(changeId, true);
-    ariaStream(`Revealed form item ${elementInfo}`);
+    ariaStream(t('dynamic_forms.revealed_item', { widget: elementInfo }));
   } else if ((hide === true) || (hide === undefined && !initializing && defaultHidden)) {
     toggleItemVisible(changeId, false);
-    ariaStream(`Hid form item ${elementInfo}`);
+    ariaStream(t('dynamic_forms.hid_item', { widget: elementInfo }));
   }
 }
 
@@ -639,28 +640,25 @@ function valueFromEvent(event) {
     max: parseInt(changeElement.attr('max')),
   };
 
-  var ariaMsg = 'Set ';
-  var ariaMsgLength = ariaMsg.length;
-  [ 'max', 'min' ].forEach((dim) => {
-    if(mm && mm[dim] !== undefined) {
-      changeElement.attr(dim, mm[dim]);
-      if (ariaMsg.length > ariaMsgLength){
-        ariaMsg += ' and ';
-      }
-      ariaMsg += `${dim}imum limit to ${mm[dim]}`;
-    }
-  });
+  const parts = [];
+  if (mm && mm.max !== undefined) {
+    changeElement.attr('max', mm.max);
+    parts.push(t('dynamic_forms.maximum_limit', { value: mm.max }));
+  }
+  if (mm && mm.min !== undefined) {
+    changeElement.attr('min', mm.min);
+    parts.push(t('dynamic_forms.minimum_limit', { value: mm.min }));
+  }
 
   const val = clamp(parseInt(changeElement.val()), prev, mm)
   if (val !== undefined) {
     changeElement.attr('value', val);
     changeElement.val(val);
-    ariaMsg += ` and set current value to ${val}`;
+    parts.push(t('dynamic_forms.current_value', { value: val }));
   }
 
-  if (ariaMsg.length > ariaMsgLength){
-    ariaMsg += ` for ${getWidgetInfo(changeId)}`;
-    ariaStream(ariaMsg);
+  if (parts.length > 0){
+    ariaStream(t('dynamic_forms.set_limits', { details: parts.join(t('dynamic_forms.and_separator')), widget: getWidgetInfo(changeId) }));
   }
 }
 
@@ -973,16 +971,20 @@ function sharedToggleOptionsFor(_event, targetId, optionForType) {
 
     const targetInfo = getWidgetInfo(targetId);
     if(hide) {
-      if(option.selected) {
+      const wasSelected = option.selected;
+      if(wasSelected) {
         option.selected = false;
         hideSelectedValue = option.textContent;
       }
-      var prefix = option.selected ? 'Selected' : '';
-      ariaStream(`${prefix} option ${option.value} disabled for ${targetInfo}`);
+      ariaStream(
+        wasSelected
+          ? t('dynamic_forms.selected_option_disabled', { value: option.value, widget: targetInfo })
+          : t('dynamic_forms.option_disabled', { value: option.value, widget: targetInfo })
+      );
       option.style.display = 'none';
       option.disabled = true;
     } else {
-      ariaStream(`Option ${option.value} enabled for ${targetInfo}`);
+      ariaStream(t('dynamic_forms.option_enabled', { value: option.value, widget: targetInfo }));
       option.style.display = '';
       option.disabled = false;
     }
@@ -1030,7 +1032,9 @@ function getWidgetInfo(id){
   const label = $(`label[for="${id}"]`);
   const labelText = label.length ? label.text().trim() : null;
 
-  return `${type} with ${labelText ? ` label ${labelText}` : 'no label'}`;
+  return labelText
+    ? t('dynamic_forms.widget_with_label', { type: type, label: labelText })
+    : t('dynamic_forms.widget_no_label', { type: type });
 }
 
 function getWidgetType(id){

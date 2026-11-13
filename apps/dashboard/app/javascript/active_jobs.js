@@ -90,12 +90,12 @@ function fetch_job_data(tr, row, options) {
     fetch(jobDataUrl, { headers: {
         'Accpet': 'application/json',
       }})
-      .then(response => response.ok ? Promise.resolve(response) : Promise.reject(new Error('Failed to load job details.')))
+      .then(response => response.ok ? Promise.resolve(response) : Promise.reject(new Error(t('active_jobs.load_details_failed'))))
       .then(response => response.json())
       .then(response => {
         const ele = document.getElementById('job_details');
         ele.innerHTML = response.html_extended_data_table;
-        ariaNotify("Job details list loaded.");
+        ariaNotify(t('active_jobs.details_loaded'));
       })
       .catch(error => OODAlertError(error));
 }
@@ -129,13 +129,13 @@ function fetch_table_data(table, options){
     }
   }).fail(function(errorReport){
     if(errorReport.statusCode != null){
-      show_errors(["Request for jobs failed with status code: " + errorReport.statusCode]);
+      show_errors([t('active_jobs.request_failed_status', { status: errorReport.statusCode })]);
     }
     else{
       //FIXME: this error appears even when the above 404 occurs, for example
       // that is because a 404 response for json request returns a plain text response
       // and parsing that as json fails
-       show_errors(["Request for jobs failed due to body parsing error."])
+       show_errors([t('active_jobs.request_failed_parse')])
     }
 
     table.processing(false);
@@ -145,12 +145,29 @@ function fetch_table_data(table, options){
 
 function status_label(status){
   const labelClass = cssBadgeForState(status);
-  var label = "Undetermined"
+  var label;
 
-  if(status === "queued_held") {
-    label = "Hold";
-  } else {
-    label = capitalizeFirstLetter(status);
+  switch (status) {
+    case "queued_held":
+      label = t('active_jobs.status_hold');
+      break;
+    case "queued":
+      label = t('active_jobs.status_queued');
+      break;
+    case "running":
+      label = t('active_jobs.status_running');
+      break;
+    case "suspended":
+      label = t('active_jobs.status_suspended');
+      break;
+    case "completed":
+      label = t('active_jobs.status_completed');
+      break;
+    case "undetermined":
+      label = t('active_jobs.status_undetermined');
+      break;
+    default:
+      label = status ? capitalizeFirstLetter(status) : t('active_jobs.status_undetermined');
   }
 
   return `<span class="badge ${labelClass}">${escapeHtml(label)}</span>`;
@@ -199,7 +216,8 @@ function create_datatable(options){
                 "searchable":       false,
                 render: function (data, type, row, meta) {
                   let { cluster_title, jobname, } = row
-                  return `<button class="details-control fa fa-plus btn btn-default" aria-expanded="false" aria-label="Toggle visibility of job ${escapeHtml(jobname)} on ${cluster_title}"></button>`;
+                  const toggleAria = escapeHtml(t('active_jobs.toggle_details_aria', { name: jobname, cluster: cluster_title }));
+                  return `<button class="details-control fa fa-plus btn btn-default" aria-expanded="false" aria-label="${toggleAria}"></button>`;
                 },
             },
             {
@@ -279,14 +297,16 @@ function create_datatable(options){
                     const support_url = new URL(support_path, document.location);
                     support_url.searchParams.set("job_id", pbsid);
                     support_url.searchParams.set("cluster", cluster);
+                    const supportAria = escapeHtml(t('active_jobs.support_ticket_aria', { id: pbsid }));
+                    const supportTitle = escapeHtml(t('active_jobs.support_ticket_title'));
                     support_ticket = `
                         <a
                           class="btn btn-primary btn-xs"
                           href="${escapeHtml(support_url.toString())}"
                           aria-labeled-by"title"
-                          aria-label="Submit support ticket for job with ID ${pbsid}"
+                          aria-label="${supportAria}"
                           data-toggle="tooltip"
-                          title="Submit Support Ticket"
+                          title="${supportTitle}"
                         >
                           <i class='fas fa-medkit fa-fw' aria-hidden='true'></i>
                         </a>
@@ -298,17 +318,20 @@ function create_datatable(options){
                     // This will be empty when support ticket is disabled.
                     return `<div>${support_ticket}</div>`;
                   } else {
+                    const deleteConfirm = escapeHtml(t('active_jobs.delete_confirm', { name: jobname, id: pbsid }));
+                    const deleteAria = escapeHtml(t('active_jobs.delete_aria', { name: jobname, id: pbsid }));
+                    const deleteTitle = escapeHtml(t('active_jobs.delete_title'));
                     return `
                       <div>
                         <a
                           class="btn btn-danger btn-xs"
                           data-method="delete"
-                          data-confirm="Are you sure you want to delete ${escapeHtml(jobname)} - ${pbsid}"
+                          data-confirm="${deleteConfirm}"
                           href="${escapeHtml(delete_path)}"
                           aria-labeled-by"title"
-                          aria-label="Delete job ${escapeHtml(jobname)} with ID ${pbsid}"
+                          aria-label="${deleteAria}"
                           data-toggle="tooltip"
-                          title="Delete Job"
+                          title="${deleteTitle}"
                         >
                           <i class='fas fa-trash-alt fa-fw' aria-hidden='true'></i>
                         </a>
@@ -321,7 +344,7 @@ function create_datatable(options){
         ]
     }).on( 'error.dt', function ( e, settings, techNote, message ) {
         // Event is fired when there's an error loading or parsing the datatable.
-        show_errors(['There was an error getting data from the remote server.']);
+        show_errors([t('active_jobs.remote_server_error')]);
     } );
 
     // Override the Datatables default error message functionality

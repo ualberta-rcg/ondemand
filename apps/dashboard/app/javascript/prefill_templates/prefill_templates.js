@@ -1,5 +1,7 @@
 'use strict';
 
+import { t } from '../i18n';
+
 const bcPrefix = 'batch_connect_session_context';
 const templateSelectId = 'batch_connect_session_prefill_template';
 
@@ -36,7 +38,9 @@ export function prefillTemplatesHandler() {
       if (element.is('select') && value !== '') {
         // Ensure that the option exists
         if (element.find(`option[value="${value}"]`).length == 0) {
-          errorMsg += `Invalid value: "${value}" for the field "${key}".<br>`;
+          const safeVal = String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+          const safeKey = String(key).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+          errorMsg += t('batch_connect.invalid_prefill_value_html', { value: safeVal, field: safeKey });
           continue;
         }
       }

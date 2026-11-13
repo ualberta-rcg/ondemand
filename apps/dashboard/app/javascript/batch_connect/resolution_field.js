@@ -1,4 +1,5 @@
 import { ariaNotify } from "../utils";
+import { t } from "../i18n";
 
 export function updateResolutions() {
       $('[data-widget-type="resolution_field"]').each(function(_index, wrapper) {
@@ -34,7 +35,7 @@ export function updateResolutions() {
         setX(defaultX);
         setY(defaultY);
         if (announce)
-          ariaNotify(`Resolution reset to ${defaultX} by ${defaultY} pixels.`);
+          ariaNotify(t('batch_connect.resolution_reset', { width: defaultX, height: defaultY }));
       };
 
       // Set defaults if not already set

@@ -268,6 +268,32 @@ en:
     jobs_workflows: Workflows
     jobs_workflows_not_supported: Workflows are not supported by the configured scheduler.
     js:
+      active_jobs:
+        delete_aria: Delete job %{name} with ID %{id}
+        delete_confirm: Are you sure you want to delete %{name} - %{id}
+        delete_title: Delete Job
+        details_loaded: Job details list loaded.
+        load_details_failed: Failed to load job details.
+        remote_server_error: There was an error getting data from the remote server.
+        request_failed_parse: Request for jobs failed due to body parsing error.
+        request_failed_status: "Request for jobs failed with status code: %{status}"
+        status_completed: Completed
+        status_hold: Hold
+        status_queued: Queued
+        status_running: Running
+        status_suspended: Suspended
+        status_undetermined: Undetermined
+        support_ticket_aria: Submit support ticket for job with ID %{id}
+        support_ticket_title: Submit Support Ticket
+        toggle_details_aria: Toggle visibility of job %{name} on %{cluster}
+      batch_connect:
+        allow_notifications: Please allow notification permissions in your browser to enable session alerts.
+        invalid_prefill_value_html: 'Invalid value: "%{value}" for the field "%{field}".<br>'
+        notification_permission_error: 'Error requesting notification permission:'
+        resolution_reset: Resolution reset to %{width} by %{height} pixels.
+        session_expires_warning: "Warning: %{title} (%{job_id}) expires in ~%{minutes} minutes!"
+        session_status_aria: "%{title} is now %{status}."
+        session_status_push: "%{title} (%{job_id}) is now %{status}."
       common:
         cancel: Cancel
         close: Close
@@ -284,6 +310,22 @@ en:
         showing_filtered_rows: Showing %{display} of %{total} rows
         showing_rows: Showing %{display} rows
         status_summary: "%{showing} - %{selected}"
+      dynamic_forms:
+        and_separator: " and "
+        changed_help: Changed help text on %{widget} to %{help}
+        changed_label: Changed label on %{widget} to new label %{label}
+        current_value: set current value to %{value}
+        hid_item: Hid form item %{widget}
+        maximum_limit: maximum limit to %{value}
+        minimum_limit: minimum limit to %{value}
+        option_disabled: Option %{value} disabled for %{widget}
+        option_enabled: Option %{value} enabled for %{widget}
+        revealed_item: Revealed form item %{widget}
+        selected_option_disabled: Selected option %{value} disabled for %{widget}
+        set_limits: Set %{details} for %{widget}
+        set_value: Set %{widget} to value %{value}
+        widget_no_label: "%{type} with no label"
+        widget_with_label: "%{type} with label %{label}"
       editor:
         save_error: "An error occurred attempting to save this file!\n%{error}"
         unsaved_changes: You have unsaved changes!

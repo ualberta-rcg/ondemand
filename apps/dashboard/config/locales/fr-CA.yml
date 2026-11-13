@@ -268,6 +268,32 @@ fr-CA:
     jobs_workflows: Flux de travail
     jobs_workflows_not_supported: Les flux de travail ne sont pas pris en charge par le planificateur configuré.
     js:
+      active_jobs:
+        delete_aria: Supprimer la tâche %{name} avec l'identifiant %{id}
+        delete_confirm: Êtes-vous sûr de vouloir supprimer %{name} - %{id}
+        delete_title: Supprimer la tâche
+        details_loaded: Liste des détails de la tâche chargée.
+        load_details_failed: Échec du chargement des détails de la tâche.
+        remote_server_error: Une erreur s'est produite lors de la récupération des données depuis le serveur distant.
+        request_failed_parse: La requête des tâches a échoué en raison d'une erreur d'analyse de la réponse.
+        request_failed_status: "La requête des tâches a échoué avec le code d'état : %{status}"
+        status_completed: Terminée
+        status_hold: En retenue
+        status_queued: En file d'attente
+        status_running: En cours
+        status_suspended: Suspendue
+        status_undetermined: Indéterminé
+        support_ticket_aria: Soumettre un billet de soutien pour la tâche ayant l'identifiant %{id}
+        support_ticket_title: Soumettre un billet de soutien
+        toggle_details_aria: Afficher ou masquer les détails de la tâche %{name} sur %{cluster}
+      batch_connect:
+        allow_notifications: Veuillez autoriser les notifications dans votre navigateur pour activer les alertes de session.
+        invalid_prefill_value_html: 'Valeur non valide : « %{value} » pour le champ « %{field} ».<br>'
+        notification_permission_error: "Erreur lors de la demande d'autorisation de notification :"
+        resolution_reset: Résolution réinitialisée à %{width} par %{height} pixels.
+        session_expires_warning: "Avertissement : %{title} (%{job_id}) expire dans ~%{minutes} minutes !"
+        session_status_aria: "%{title} est maintenant à l'état %{status}."
+        session_status_push: "%{title} (%{job_id}) est maintenant à l'état %{status}."
       common:
         cancel: Annuler
         close: Fermer
@@ -284,6 +310,22 @@ fr-CA:
         showing_filtered_rows: Affichage de %{display} sur %{total} lignes
         showing_rows: Affichage de %{display} lignes
         status_summary: "%{showing} - %{selected}"
+      dynamic_forms:
+        and_separator: " et "
+        changed_help: Texte d'aide de %{widget} remplacé par %{help}
+        changed_label: Libellé de %{widget} remplacé par %{label}
+        current_value: valeur actuelle définie à %{value}
+        hid_item: Élément de formulaire %{widget} masqué
+        maximum_limit: limite maximale à %{value}
+        minimum_limit: limite minimale à %{value}
+        option_disabled: Option %{value} désactivée pour %{widget}
+        option_enabled: Option %{value} activée pour %{widget}
+        revealed_item: Élément de formulaire %{widget} affiché
+        selected_option_disabled: Option sélectionnée %{value} désactivée pour %{widget}
+        set_limits: Définition de %{details} pour %{widget}
+        set_value: Valeur de %{widget} définie à %{value}
+        widget_no_label: "%{type} sans libellé"
+        widget_with_label: "%{type} avec le libellé %{label}"
       editor:
         save_error: "Une erreur s'est produite lors de l'enregistrement de ce fichier !\n%{error}"
         unsaved_changes: Vous avez des modifications non enregistrées !
