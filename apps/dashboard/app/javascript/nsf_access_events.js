@@ -1,5 +1,6 @@
 import { nsfAccessEventsUrl } from './config';
 import { fetchNsfAccessJson, mountNsfAccessAccordion } from './nsf_access_widget';
+import { t } from './i18n';
 
 document.addEventListener('DOMContentLoaded', () => {
   listEvents();
@@ -20,7 +21,7 @@ function listEvents() {
         getLink: (event) => {
           const registration = event['registration'];
           if(registration !== undefined && registration !== "") {
-            return { href: registration, text: 'Register for this event' };
+            return { href: registration, text: t('nsf_access.register_event') };
           }
 
           return null;

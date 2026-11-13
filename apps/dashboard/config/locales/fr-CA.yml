@@ -399,11 +399,9 @@ fr-CA:
           other: Téléverser %{count} fichiers
         upload_new_files: Téléverser les nouveaux fichiers
         uppy_empty_dir_note: Les répertoires vides ne seront inclus dans le téléversement que lorsqu'un téléversement de répertoire est lancé par glisser-déposer, car l'API File and Directory Entries n'est disponible que lors d'un événement de dépôt.
-      path_selector:
-        directory_loaded: Répertoire chargé avec %{count} éléments
-        invalid_regex: L'expression régulière fournie pour ce sélecteur de chemin n'a pas pu être compilée
-        loading_directory: Chargement du contenu du répertoire
-        permission_denied_prefix: "Permission refusée : "
+      icon_picker:
+        icon_selected: "icône %{icon} sélectionnée"
+        icon_sr: "icône %{name}"
       launcher_edit:
         account_help: Le compte avec lequel la tâche sera soumise.
         account_label: Compte
@@ -424,8 +422,43 @@ fr-CA:
         nodes_label: Nœuds
         queues_help: La file d'attente à laquelle la tâche sera soumise.
         queues_label: Files d'attente
+      module_browser:
+        copied: Copié !
+        copy: Copier
+        showing_results:
+          one: Affichage de %{count} résultat
+          other: Affichage de %{count} résultats
+      nsf_access:
+        affected_resources: "Ressources touchées : %{resources}"
+        read_more: Lire la suite
+        register_event: S'inscrire à cet événement
+      path_selector:
+        directory_loaded: Répertoire chargé avec %{count} éléments
+        invalid_regex: L'expression régulière fournie pour ce sélecteur de chemin n'a pas pu être compilée
+        loading_directory: Chargement du contenu du répertoire
+        permission_denied_prefix: "Permission refusée : "
+      popovers:
+        ihpc_content: Une session HPC interactive vous donne un accès dédié à un ou plusieurs nœuds de la grappe. Elle ressemble à une session par lots interactive avec un bureau accessible sur le nœud principal. Utilisez-la pour les tâches exigeantes comme les calculs de longue durée ou lorsque vous avez besoin de ressources dédiées.
+        vdi_content: Une interface VDI (bureau virtuel) vous donne un accès graphique à un nœud partagé. Il s'agit de l'équivalent graphique d'un nœud de connexion. Utilisez-la pour les tâches légères comme consulter des fichiers, soumettre des tâches et effectuer des visualisations.
+      products:
+        fatal_error: Une erreur fatale s'est produite
+        no_action: aucune action
       projects:
         undetermined_size: Taille indéterminée
+      support_ticket:
+        delete_attachment: Supprimer la pièce jointe
+        no_file_selected: Aucun fichier sélectionné
+        selected_file: "Fichier sélectionné : %{name} (%{size})."
+        size_bytes: "%{size} octets"
+        size_kb: "%{size} Ko"
+        size_mb: "%{size} Mo"
+      turbo_shim:
+        unauthenticated: Cette page ne peut pas être mise à jour car votre session a expiré. Veuillez actualiser la page pour vous reconnecter.
+        unexpected_error: Une erreur inattendue s'est produite sur cette page. Veuillez actualiser la page.
+      utils:
+        loading: Chargement.
+        loading_complete: Chargement terminé.
+        popup_blocked: Ce lien est configuré pour s'ouvrir dans une nouvelle fenêtre, mais celle-ci ne semble pas s'être ouverte. Veuillez désactiver le bloqueur de fenêtres contextuelles pour cette page et réessayer.
       workflows:
         begin_from_launcher: Démarrer le flux de travail depuis le lanceur %{title}
         bidirectional_not_allowed: Les connexions bidirectionnelles ne sont pas autorisées.
@@ -437,6 +470,38 @@ fr-CA:
         no_empty_cells: Aucune cellule vide disponible dans la grille !
         save_failed: Échec de l'enregistrement du flux de travail. Consultez la console pour plus de détails.
         select_launcher: Veuillez sélectionner un lanceur
+      xdmod:
+        analytics_toggle: Afficher ou masquer l'analytique
+        column_date: Date
+        column_id: ID
+        column_name: Nom
+        date_range: "%{from} au %{to}"
+        efficiency_report: "Rapport d'efficacité — %{unit}"
+        ensure_logged_in_html: '%{error} Veuillez vous assurer d''être <a href="%{url}">d''abord connecté à Open XDMoD</a>, puis réessayez.'
+        expand_analytics_title: Cliquez pour afficher les données analytiques de la tâche %{id} au-dessus de ce tableau.
+        fetch_user_failed: La récupération des renseignements sur l'utilisateur actuel auprès d'Open XDMoD a échoué
+        idp_redirect_failed: "Échec de connexion : la redirection IDP a échoué"
+        iframe_error: L'iFrame de connexion XDMoD à l'URL %{url} a envoyé un message d'erreur avec l'information %{info}
+        inefficient_of_total_html: '<span class="text-danger">%{bad} %{unit} inefficaces </span> &frasl; %{total} %{unit} au total'
+        invalid_job_data: Les données de tâche renvoyées par la requête ne sont pas valides.
+        loading_caps: CHARGEMENT...
+        login_page_load_failed: "Échec de connexion : impossible de charger la page de connexion XDMoD"
+        login_timeout: "Échec de connexion : délai d'attente dépassé lors de la connexion"
+        metric_cpu: CPU
+        metric_mem: Mémoire
+        metric_walltime: Temps réel
+        no_data: Aucune donnée disponible.
+        not_available: S/O
+        open_xdmod: Ouvrir XDMoD
+        percent_efficient: "%{percent} % efficace"
+        percent_efficient_aria: pourcentage d'efficacité
+        percent_inefficient: "%{percent} % inefficace"
+        percent_inefficient_aria: pourcentage d'inefficacité
+        recently_completed_jobs: Tâches récemment terminées
+        unit_core_hours: heures-cœurs
+        unit_core_hours_title: Heures-cœurs
+        unit_jobs: tâches
+        unit_jobs_title: Tâches
     launch: Lancer
     load_report: Rapport de chargement + %{node}
     locale_name: Français (Canada)

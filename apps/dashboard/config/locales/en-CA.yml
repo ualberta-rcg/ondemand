@@ -399,11 +399,9 @@ en-CA:
           other: Upload %{count} files
         upload_new_files: Upload New Files
         uppy_empty_dir_note: Empty directories will be included in the upload only when a directory upload is initiated via drag and drop. This is because the File and Directory Entries API is available only on a drop event, not during an input change event.
-      path_selector:
-        directory_loaded: Directory loaded with %{count} items
-        invalid_regex: The regular expression provided for this path selector did not compile
-        loading_directory: Loading directory contents
-        permission_denied_prefix: "Permission denied: "
+      icon_picker:
+        icon_selected: "%{icon} icon selected"
+        icon_sr: "%{name} icon"
       launcher_edit:
         account_help: The account the job will be submitted with.
         account_label: Account
@@ -424,8 +422,43 @@ en-CA:
         nodes_label: Nodes
         queues_help: Which queue the job will submit too.
         queues_label: Queues
+      module_browser:
+        copied: Copied!
+        copy: Copy
+        showing_results:
+          one: Showing %{count} result
+          other: Showing %{count} results
+      nsf_access:
+        affected_resources: "Affected Resources: %{resources}"
+        read_more: Read more
+        register_event: Register for this event
+      path_selector:
+        directory_loaded: Directory loaded with %{count} items
+        invalid_regex: The regular expression provided for this path selector did not compile
+        loading_directory: Loading directory contents
+        permission_denied_prefix: "Permission denied: "
+      popovers:
+        ihpc_content: An Interactive HPC session gives you dedicated access to one or more nodes on the cluster. This is similar to an interactive batch session with an accessible desktop on the primary node. Use this for heavyweight jobs such as long-running compute tasks or where you need dedicated resources.
+        vdi_content: A VDI (Virtual Desktop Interface) gives you desktop access to a shared node. This is the graphical version of a login node. Use this for lightweight tasks like accessing & viewing files, submitting jobs, and for visualizations.
+      products:
+        fatal_error: A fatal error has occurred
+        no_action: no action
       projects:
         undetermined_size: Undetermined Size
+      support_ticket:
+        delete_attachment: Delete attachment
+        no_file_selected: No file selected
+        selected_file: "Selected file: %{name} (%{size})."
+        size_bytes: "%{size}bytes"
+        size_kb: "%{size}KB"
+        size_mb: "%{size}MB"
+      turbo_shim:
+        unauthenticated: This page cannot update because you are no longer authenticated. Please refresh the page to log back in.
+        unexpected_error: This page has encountered an unexpected error. Please refresh the page.
+      utils:
+        loading: Loading.
+        loading_complete: Loading complete.
+        popup_blocked: This link is configured to open in a new window, but it doesn't seem to have opened. Please disable your popup blocker for this page and try again.
       workflows:
         begin_from_launcher: Begin workflow from launcher %{title}
         bidirectional_not_allowed: Bidirectional edges are not allowed.
@@ -437,6 +470,38 @@ en-CA:
         no_empty_cells: No empty grid cells available!
         save_failed: Failed to save workflow. Check console for details.
         select_launcher: Please select a launcher
+      xdmod:
+        analytics_toggle: Analytics Toggle
+        column_date: Date
+        column_id: ID
+        column_name: Name
+        date_range: "%{from} to %{to}"
+        efficiency_report: "%{unit} Efficiency Report"
+        ensure_logged_in_html: '%{error} Please ensure you are <a href="%{url}">logged into Open XDMoD first</a>, and then try again.'
+        expand_analytics_title: Click to expand analytics information on job %{id} above this table.
+        fetch_user_failed: Attempting to fetch current user info from Open XDMoD failed
+        idp_redirect_failed: "Login failed: IDP redirect failed"
+        iframe_error: XDMoD Login iFrame at URL %{url} posted error message with info %{info}
+        inefficient_of_total_html: '<span class="text-danger">%{bad} inefficient %{unit} </span> &frasl; %{total} total %{unit}'
+        invalid_job_data: Job data returned by request is invalid.
+        loading_caps: LOADING...
+        login_page_load_failed: "Login failed: Failed to load XDMoD login page"
+        login_timeout: "Login failed: Timeout waiting for login to complete"
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Walltime
+        no_data: No data available.
+        not_available: N/A
+        open_xdmod: Open XDMoD
+        percent_efficient: "%{percent}% efficient"
+        percent_efficient_aria: percent efficient
+        percent_inefficient: "%{percent}% inefficient"
+        percent_inefficient_aria: percent inefficient
+        recently_completed_jobs: Recently Completed Jobs
+        unit_core_hours: core hours
+        unit_core_hours_title: Core Hours
+        unit_jobs: jobs
+        unit_jobs_title: Jobs
     launch: Launch
     load_report: Load Report + %{node}
     locale_name: English (Canada)

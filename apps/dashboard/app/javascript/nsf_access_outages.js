@@ -1,5 +1,6 @@
 import { nsfAccessCurrentOutagesUrl, nsfAccessFutureOutagesUrl } from './config';
 import { fetchNsfAccessJson, mountNsfAccessAccordion } from './nsf_access_widget';
+import { t } from './i18n';
 
 document.addEventListener('DOMContentLoaded', () => {
   listOutages();
@@ -54,7 +55,7 @@ function outageBodyHtml(outage) {
 
   if(resources.length > 0) {
     const resourceIds = resources.map((resource) => resource['ResourceID']).join(', ');
-    html += `<p class="ps-4">Affected Resources: ${resourceIds}</p>`;
+    html += `<p class="ps-4">${t('nsf_access.affected_resources', { resources: resourceIds })}</p>`;
   }
 
   return html;

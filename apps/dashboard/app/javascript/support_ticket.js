@@ -1,5 +1,7 @@
 'use strict';
 
+import { t } from './i18n';
+
 jQuery(function (){
     let attachmentIdCounter = 0;
 
@@ -9,11 +11,11 @@ jQuery(function (){
 
     function fileSizeToString(number) {
         if(number < 1024) {
-            return number + "bytes";
+            return t('support_ticket.size_bytes', { size: number });
         } else if(number >= 1024 && number < 1048576) {
-            return (number/1024).toFixed(1) + "KB";
+            return t('support_ticket.size_kb', { size: (number/1024).toFixed(1) });
         } else if(number >= 1048576) {
-            return (number/1048576).toFixed(1) + "MB";
+            return t('support_ticket.size_mb', { size: (number/1048576).toFixed(1) });
         }
     }
 
@@ -66,7 +68,7 @@ jQuery(function (){
         }
 
         const fileInputId = event.currentTarget.id;
-        $(`label[for='${fileInputId}']`).text(`Selected file: ${fileInfo.name} (${fileSizeToString(fileInfo.size)}).`);
+        $(`label[for='${fileInputId}']`).text(t('support_ticket.selected_file', { name: fileInfo.name, size: fileSizeToString(fileInfo.size) }));
     }
 
     function createAttachmentElement(attachmentPlacementCallback) {
@@ -75,8 +77,8 @@ jQuery(function (){
         const newAttachment =
         `<div class="attachment-input" id="${newAttachmentContainerId}">
            <div class="form-control attachment-input-content">
-              <label class="attachment-file-label" for="${newFileInputId}">No file selected</label>
-              <span class="attachment-delete" data-bs-toggle="attachment-delete" data-attachment-container="${newAttachmentContainerId}" title="Delete attachment"><i class="fas fa-trash-alt"></i></span>
+              <label class="attachment-file-label" for="${newFileInputId}">${t('support_ticket.no_file_selected')}</label>
+              <span class="attachment-delete" data-bs-toggle="attachment-delete" data-attachment-container="${newAttachmentContainerId}" title="${t('support_ticket.delete_attachment')}"><i class="fas fa-trash-alt"></i></span>
            </div>
            <input class="form-control"  type="file" name="support_ticket[attachments][]" id="${newFileInputId}">
         </div>`;

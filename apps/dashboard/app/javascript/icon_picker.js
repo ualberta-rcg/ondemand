@@ -2,6 +2,7 @@
 
 import ALL_ICONS from './icons';
 import { ariaNotify } from './utils';
+import { t } from './i18n';
 
 const ICON_SHOW_ID = "product_icon"
 const ICON_SELECT_ID = "product_icon_select"
@@ -15,7 +16,7 @@ function listItem(name) {
               class="btn btn-outline-dark"
               tabindex='0'
           >
-            <span class="sr-only">${name} icon</span>
+            <span class="sr-only">${t('icon_picker.icon_sr', { name: name })}</span>
             <i class="fas fa-${name} fa-fw"></i>
           </li>`;
 }
@@ -32,7 +33,7 @@ function iconFromId(id) {
 function picked(event) {
   const icon = iconFromId(event.currentTarget.id);
   updateIcon(icon);
-  ariaNotify(`${icon} icon selected`)
+  ariaNotify(t('icon_picker.icon_selected', { icon: icon }));
   showAllIcons();
 }
 
