@@ -8,6 +8,7 @@
   <title><%= content_for?(:title) ? yield(:title) : "Dashboard - #{@user_configuration.dashboard_title}" %></title>
   <%= favicon %>
 
+  <%= render partial: 'layouts/i18n' %>
   <%= javascript_include_tag 'application', nonce: true %>
   <% custom_javascript_paths.each do |custom_file_config| %>
     <script src="<%= custom_file_config[:src] %>" type="<%= custom_file_config[:type] %>" nonce="<%= content_security_policy_nonce %>"></script>
