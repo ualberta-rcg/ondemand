@@ -151,11 +151,23 @@ fr-CA:
     breadcrumbs_my_sessions: Mes sessions interactives
     breadcrumbs_support_ticket: Billet de soutien
     cancel: Annuler
+    categories:
+      apps: Applications
+      clusters: Grappes
+      desktops: Bureaux
+      external_apps: Applications externes
+      files: Fichiers
+      gateway_apps: Applications passerelles
+      guis: Interfaces graphiques
+      interactive_apps: Applications interactives
+      jobs: Tâches
+      servers: Serveurs
+      virtual_desktop_interface: Interface de bureau virtuel
     clear: Effacer
     close: Fermer
     close_alert: Fermer cette alerte.
     close_notice: Fermer cet avis.
-    cluster: Regrouper
+    cluster: Grappe
     cpu_report: Rapport du processeur + %{node}
     custom_pages:
       invalid: 'Code de page invalide : %{page}. Cette page n’a pas été configurée'

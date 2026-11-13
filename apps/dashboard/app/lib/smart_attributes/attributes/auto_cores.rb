@@ -27,7 +27,7 @@ module SmartAttributes
         end
   
         def label(*)
-          (opts[:label] || I18n.t('dashboard.smart_attributes.cores')).to_s
+          (localized_opt(:label) || I18n.t('dashboard.smart_attributes.cores')).to_s
         end
   
         # Submission hash describing how to submit this attribute

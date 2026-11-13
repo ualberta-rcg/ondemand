@@ -91,7 +91,7 @@ module BatchConnect
     # Title for the batch connect app
     # @return [String] title of app
     def title
-      form_config.fetch(:title, default_title)
+      localized_form_field(:title, fallback: default_title)
     end
 
     # Default title for the batch connect app
@@ -105,7 +105,7 @@ module BatchConnect
     # Description for the batch connect app
     # @return [String] description of app
     def description
-      form_config.fetch(:description, default_description)
+      localized_form_field(:description, fallback: default_description)
     end
 
     # Default description for the batch connect app
@@ -119,19 +119,30 @@ module BatchConnect
     end
 
     def caption
-      form_config.fetch(:caption, super)
+      localized_form_field(:caption, fallback: super)
     end
 
     def tile
-      super.merge(form_config.fetch(:tile, {}))
+      merged = super.merge(form_config.fetch(:tile, {}))
+      i18n_tile = app_form_translations[:tile]
+      merged = merged.deep_symbolize_keys.merge(i18n_tile) if i18n_tile.is_a?(Hash)
+      merged.empty? ? {} : LocalizedValue.resolve_tile_hash(merged)
     end
 
     def category
-      form_config.fetch(:category, super)
+      localized_form_field(:category, fallback: super)
+    end
+
+    def default_category
+      localized_form_field(:category, fallback: super, locale: :en)
     end
 
     def subcategory
-      form_config.fetch(:subcategory, super)
+      localized_form_field(:subcategory, fallback: super)
+    end
+
+    def default_subcategory
+      localized_form_field(:subcategory, fallback: super, locale: :en)
     end
 
     def metadata
@@ -140,7 +151,7 @@ module BatchConnect
     end
 
     def form_header
-      form_config.fetch(:form_header, '')
+      localized_form_field(:form_header, fallback: '')
     end
 
     def ssh_allow?
@@ -252,10 +263,11 @@ module BatchConnect
     end
 
     def attributes
-      @attributes ||= begin
+      @attributes_by_locale ||= {}
+      @attributes_by_locale[I18n.locale.to_s] ||= begin
         return [] unless valid?
 
-        local_attribs = form_config.fetch(:attributes, {})
+        local_attribs = form_config.fetch(:attributes, {}).deep_dup
         attrib_list   = form_layout.flatten
         add_cluster_widget(local_attribs, attrib_list)
 
@@ -268,6 +280,8 @@ module BatchConnect
           # Hide resolution if not using native vnc clients
           if attribute_id.to_s == 'bc_vnc_resolution' && !ENV['ENABLE_NATIVE_VNC']
             attribute_opts = { value: nil, fixed: true }
+          else
+            attribute_opts = apply_app_attribute_translations(attribute_id, attribute_opts)
           end
 
           SmartAttributes::AttributeFactory.build(attribute_id, attribute_opts)
@@ -503,6 +517,64 @@ module BatchConnect
                                  widget: 'hidden_field'
                                }.merge(defined_cluster_attr)
                              end
+    end
+
+    def localized_form_field(field, fallback:, locale: I18n.locale)
+      i18n_val = app_form_translations(locale: locale)[field]
+      return LocalizedValue.resolve(i18n_val, locale: locale) unless i18n_val.nil?
+
+      return LocalizedValue.resolve(form_config[field], locale: locale) if form_config.key?(field)
+
+      fallback
+    end
+
+    def app_form_translations(locale: I18n.locale)
+      app_root = router&.path
+      return {} unless app_root
+
+      @app_form_translations_by_locale ||= {}
+      key = locale.to_s
+      @app_form_translations_by_locale[key] ||= begin
+        catalog = LocalizedValue.app_translations(app_root, locale: locale)
+        base_form = catalog[:form].is_a?(Hash) ? catalog[:form] : {}
+        if sub_app && base_form[:sub_apps].is_a?(Hash)
+          sub_form = base_form[:sub_apps][sub_app.to_sym]
+          base_form = base_form.deep_merge(sub_form) if sub_form.is_a?(Hash)
+        end
+        base_form
+      end
+    end
+
+    def apply_app_attribute_translations(attribute_id, attribute_opts)
+      attr_i18n = app_form_translations.dig(:attributes, attribute_id.to_sym)
+      return attribute_opts unless attr_i18n.is_a?(Hash)
+
+      merged = attribute_opts.dup
+      [:label, :help, :header].each do |field|
+        merged[field] = attr_i18n[field] unless attr_i18n[field].nil?
+      end
+
+      if attr_i18n[:options].is_a?(Hash) && merged[:options].is_a?(Array)
+        opt_labels = attr_i18n[:options]
+        merged[:options] = merged[:options].map do |entry|
+          case entry
+          when Array
+            val_key = (entry.size > 1 ? entry[1] : entry[0]).to_s.to_sym
+            if opt_labels.key?(val_key)
+              entry.size > 1 ? [opt_labels[val_key].to_s, *entry[1..]] : [opt_labels[val_key].to_s, entry[0].to_s]
+            else
+              entry
+            end
+          when String, Symbol
+            val_key = entry.to_sym
+            opt_labels.key?(val_key) ? [opt_labels[val_key].to_s, entry.to_s] : entry
+          else
+            entry
+          end
+        end
+      end
+
+      merged
     end
   end
 end

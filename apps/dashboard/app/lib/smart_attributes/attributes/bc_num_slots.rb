@@ -33,14 +33,14 @@ module SmartAttributes
       # @param fmt [String, nil] formatting of form label
       # @return [String] form label
       def label(fmt: nil)
-        str = opts[:label] || case fmt
-                              when 'lsf'
-                                I18n.t('dashboard.smart_attributes.num_processors')
-                              when 'pbspro'
-                                I18n.t('dashboard.smart_attributes.num_cpus_single_node')
-                              else
-                                I18n.t('dashboard.smart_attributes.num_nodes')
-                              end
+        str = localized_opt(:label) || case fmt
+                                       when 'lsf'
+                                         I18n.t('dashboard.smart_attributes.num_processors')
+                                       when 'pbspro'
+                                         I18n.t('dashboard.smart_attributes.num_cpus_single_node')
+                                       else
+                                         I18n.t('dashboard.smart_attributes.num_nodes')
+                                       end
         str.to_s
       end
 

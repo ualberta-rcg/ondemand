@@ -151,6 +151,18 @@ en:
     breadcrumbs_my_sessions: My Interactive Sessions
     breadcrumbs_support_ticket: Support Ticket
     cancel: Cancel
+    categories:
+      apps: Apps
+      clusters: Clusters
+      desktops: Desktops
+      external_apps: External Apps
+      files: Files
+      gateway_apps: Gateway Apps
+      guis: GUIs
+      interactive_apps: Interactive Apps
+      jobs: Jobs
+      servers: Servers
+      virtual_desktop_interface: Virtual Desktop Interface
     clear: Clear
     close: Close
     close_alert: Close this alert.

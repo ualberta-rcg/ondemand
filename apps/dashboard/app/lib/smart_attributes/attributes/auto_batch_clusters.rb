@@ -32,7 +32,7 @@ module SmartAttributes
       end
 
       def label(*)
-        (opts[:label] || I18n.t('dashboard.smart_attributes.cluster')).to_s
+        (localized_opt(:label) || I18n.t('dashboard.smart_attributes.cluster')).to_s
       end
     end
   end

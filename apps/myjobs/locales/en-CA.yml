@@ -1,0 +1,5 @@
+---
+en-CA:
+  manifest:
+    name: Job Composer
+    description: Job Composer allows the creation and submission of batch jobs

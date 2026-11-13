@@ -39,7 +39,7 @@ category: OSC
   def self.load(yaml_path)
     if File.exist? yaml_path
       File.open(yaml_path) do |content|
-        Manifest.new(YAML.safe_load(content))
+        Manifest.new(YAML.safe_load(content)).tap { |m| m.send(:manifest_path=, yaml_path) }
       end
     else
       MissingManifest.new(yaml_path)
@@ -57,20 +57,20 @@ category: OSC
   end
 
   # @param [Hash, Manifest] opts A hash of the options in the manifest.
-  # @option opts [String] :name The name of the application.
-  # @option opts [String] :description The description of the application.
-  # @option opts [String] :category The category of the application.
-  # @option opts [String] :subcategory The subcategory of the application.
+  # @option opts [String, Hash] :name The name of the application.
+  # @option opts [String, Hash] :description The description of the application.
+  # @option opts [String, Hash] :category The category of the application.
+  # @option opts [String, Hash] :subcategory The subcategory of the application.
   # @option opts [String] :icon The icon used on the dashboard, optionally a Font Awesome tag.
   # @option opts [String] :role Dashboard categorization.
-  # @option opts [String] :url An optional redirect URL.
+  # @option opts [String, Hash] :url An optional redirect URL.
   # @option opts [Hash]   :metadata An optional hash of key value pairs.
   # @option opts [Hash]   :tile An optional hash of key value pairs.
   def initialize(opts)
     raise InvalidContentError unless opts&.respond_to?(:to_h)
 
     @manifest_options = opts.to_h.with_indifferent_access.select do |method, _val|
-      respond_to?(method)
+      respond_to?(method) && !%w[default_category default_subcategory].include?(method.to_s)
     end
   end
 
@@ -78,14 +78,14 @@ category: OSC
   #
   # @return [String] name as string
   def name
-    @manifest_options[:name] || ''
+    manifest_field(:name)
   end
 
   # The description of the application
   #
   # @return [String] description as string
   def description
-    @manifest_options[:description] || ''
+    manifest_field(:description)
   end
 
   # The icon used on the dashboard, optionally a Font Awesome tag
@@ -99,21 +99,31 @@ category: OSC
   #
   # @return [String] url as string
   def url
-    @manifest_options[:url] || ''
+    manifest_field(:url)
   end
 
   # Return the app category
   #
   # @return [String] category as string
   def category
-    @manifest_options[:category] || ''
+    manifest_field(:category)
+  end
+
+  # Canonical default-locale category used for cross-locale token/nav matching
+  def default_category
+    manifest_field(:category, locale: :en)
   end
 
   # Return the app subcategory
   #
   # @return [String] subcategory as string
   def subcategory
-    @manifest_options[:subcategory] || ''
+    manifest_field(:subcategory)
+  end
+
+  # Canonical default-locale subcategory used for cross-locale token/nav matching
+  def default_subcategory
+    manifest_field(:subcategory, locale: :en)
   end
 
   # Return the app role
@@ -141,14 +151,17 @@ category: OSC
   #
   #  @return [String] caption as string
   def caption
-    @manifest_options[:caption].to_s
+    manifest_field(:caption)
   end
 
   # Return the app's tile data. Used to render the pinned app tile
   #
   #  @return [Hash] icon as hash
   def tile
-    @manifest_options[:tile] || {}
+    base_tile = (@manifest_options[:tile] || {}).to_h
+    i18n_tile = app_manifest_translations[:tile]
+    merged = i18n_tile.is_a?(Hash) ? base_tile.deep_symbolize_keys.merge(i18n_tile) : base_tile
+    merged.empty? ? {} : LocalizedValue.resolve_tile_hash(merged)
   end
 
   # Manifest objects are valid
@@ -189,8 +202,35 @@ category: OSC
   def merge(opts)
     raise InvalidContentError unless opts&.respond_to?(:to_h)
 
-    Manifest.new(@manifest_options.merge(opts.to_h))
+    Manifest.new(@manifest_options.merge(opts.to_h)).tap { |m| m.send(:manifest_path=, @manifest_path) }
   end
+
+  private
+
+  def manifest_path=(yaml_path)
+    @manifest_path = yaml_path ? Pathname.new(yaml_path.to_s) : nil
+    @app_root = @manifest_path&.dirname
+  end
+
+  def manifest_field(field, locale: I18n.locale)
+    i18n_val = app_manifest_translations(locale: locale)[field]
+    return LocalizedValue.resolve(i18n_val, locale: locale) unless i18n_val.nil?
+
+    LocalizedValue.resolve(@manifest_options[field], locale: locale)
+  end
+
+  def app_manifest_translations(locale: I18n.locale)
+    return {} unless @app_root
+
+    @app_manifest_translations_by_locale ||= {}
+    key = locale.to_s
+    @app_manifest_translations_by_locale[key] ||= begin
+      catalog = LocalizedValue.app_translations(@app_root, locale: locale)
+      catalog[:manifest].is_a?(Hash) ? catalog[:manifest] : {}
+    end
+  end
+
+  public
 
   # Creates a hash of the object's current state.
   #

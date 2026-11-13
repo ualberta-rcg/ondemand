@@ -22,11 +22,11 @@ module SmartAttributes
       # @param fmt [String, nil] formatting of form label
       # @return [String] form label
       def label(fmt: nil)
-        (opts[:label] || I18n.t('dashboard.smart_attributes.vnc_resolution_label')).to_s
+        (localized_opt(:label) || I18n.t('dashboard.smart_attributes.vnc_resolution_label')).to_s
       end
 
       def help(fmt: nil)
-        (opts[:help] || I18n.t('dashboard.smart_attributes.vnc_resolution_help')).to_s
+        (localized_opt(:help) || I18n.t('dashboard.smart_attributes.vnc_resolution_help')).to_s
       end
 
       # Submission hash describing how to submit this attribute

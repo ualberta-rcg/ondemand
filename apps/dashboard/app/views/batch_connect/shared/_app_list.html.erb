@@ -23,9 +23,9 @@
     <%=
       content_tag(
         "p",
-        app_group.title,
+        app_group.localized_title,
         class: "list-group-item mb-0 header border-0"
-      ) unless app_group.title.blank?
+      ) unless app_group.localized_title.blank?
     %>
     <%=
       render(

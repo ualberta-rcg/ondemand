@@ -1,0 +1,6 @@
+---
+fr-CA:
+  manifest:
+    name: Compositeur de tâches
+    description: Le compositeur de tâches permet de créer et de soumettre des tâches
+      en lot

@@ -200,12 +200,24 @@ class OodApp
     end
   end
 
+  def default_category
+    if (! router.category.empty?) && manifest.default_category.empty?
+      router.category
+    else
+      manifest.default_category
+    end
+  end
+
   def caption
     manifest.caption.empty? ? router.caption : manifest.caption
   end
 
   def subcategory
     manifest.subcategory
+  end
+
+  def default_subcategory
+    manifest.default_subcategory
   end
 
   def role
