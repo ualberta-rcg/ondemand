@@ -40,6 +40,7 @@ jobs:
         run: |
           cd apps/dashboard
           bundle exec i18n-tasks translate-missing
+          bundle exec i18n-tasks check-consistent-interpolations
         env:
           GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
 
