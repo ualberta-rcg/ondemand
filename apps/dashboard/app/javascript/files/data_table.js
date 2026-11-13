@@ -4,6 +4,8 @@ import { downloadEnabled } from '../config.js';
 export { CONTENTID, EVENTNAME };
 import { OODAlertError } from '../alert.js';
 import { toHumanSize, ariaNotify, customizeTableHeaders } from '../utils.js';
+import { oodLocale, t } from '../i18n.js';
+import { dataTablesLanguage } from '../datatables_i18n.js';
 
 const EVENTNAME = {
     getJsonResponse: 'getJsonResponse',
@@ -194,10 +196,10 @@ class DataTable {
             }
         }).DataTable({
             autoWidth: false,
-            language: {
-                search: 'Filter:',
+            language: dataTablesLanguage({
+                search: t('datatables.filter_label', { defaultValue: 'Filter:' }),
                 infoFiltered: ""
-            },
+            }),
             order: [[1, "asc"], [2, "asc"]],
             rowId: 'id',
             paging: false,
@@ -248,7 +250,8 @@ class DataTable {
                             let date = new Date(data * 1000)
 
                             // Return formatted date "3/23/2021 10:52:28 AM EDT"
-                            return isNaN(data) ? 'Invalid Date' : `${date.toLocaleDateString()} ${date.toLocaleTimeString(undefined, { timeZoneName: 'short' })}`
+                            const loc = oodLocale();
+                            return isNaN(data) ? t('datatables.invalid_date', { defaultValue: 'Invalid Date' }) : `${date.toLocaleDateString(loc)} ${date.toLocaleTimeString(loc, { timeZoneName: 'short' })}`
                         }
                         else {
                             return data;
@@ -548,9 +551,14 @@ class DataTable {
         let api = this._table;
         let rows = api.rows({ selected: true }).flatten().length,
             page_info = api.page.info(),
-            msg = page_info.recordsTotal == page_info.recordsDisplay ? `Showing ${page_info.recordsDisplay} rows` : `Showing ${page_info.recordsDisplay} of ${page_info.recordsTotal} rows`;
+            msg = page_info.recordsTotal == page_info.recordsDisplay
+              ? t('datatables.showing_rows', { display: page_info.recordsDisplay, defaultValue: `Showing ${page_info.recordsDisplay} rows` })
+              : t('datatables.showing_filtered_rows', { display: page_info.recordsDisplay, total: page_info.recordsTotal, defaultValue: `Showing ${page_info.recordsDisplay} of ${page_info.recordsTotal} rows` }),
+            selectedMsg = t('datatables.rows_selected', { count: rows, defaultValue: `${rows} rows selected` });
 
-        $('#directory-contents_info').html(`${msg} - ${rows} rows selected`);
+        $('#directory-contents_info').text(
+          t('datatables.status_summary', { showing: msg, selected: selectedMsg, defaultValue: `${msg} - ${selectedMsg}` })
+        );
     }
 
     goto(url, pushState = true, show_processing_indicator = true) {

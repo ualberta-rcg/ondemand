@@ -79,6 +79,12 @@ search:
     - app/assets/fonts
     - app/assets/videos
     - app/assets/builds
+  scanners:
+    - ['I18n::Tasks::Scanners::PatternWithScopeScanner', exclude: ['app/javascript', 'app/javascript/**']]
+    - ['I18n::Tasks::Scanners::RubyScanner', only: ['*.rb']]
+    - ['I18n::Tasks::Scanners::PatternMapper',
+       only: ['app/javascript/**/*.js'],
+       patterns: [['\bt\(\s*%{key}', 'dashboard.js.%{key}']]]
 
   ## Alternatively, the only files or `File.fnmatch patterns` to search in `paths`:
   ## If specified, this settings takes priority over `exclude`, but `exclude` still applies.

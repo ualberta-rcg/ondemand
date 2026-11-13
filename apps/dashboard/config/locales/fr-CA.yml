@@ -274,6 +274,16 @@ fr-CA:
         error: Erreur
         loading: Chargement...
         ok: OK
+      datatables:
+        all: Tous
+        filter_label: 'Filtrer :'
+        invalid_date: Date invalide
+        rows_selected:
+          one: 1 ligne sélectionnée
+          other: "%{count} lignes sélectionnées"
+        showing_filtered_rows: Affichage de %{display} sur %{total} lignes
+        showing_rows: Affichage de %{display} lignes
+        status_summary: "%{showing} - %{selected}"
     launch: Lancer
     load_report: Rapport de chargement + %{node}
     logo_alt_text: Bienvenue dans Open OnDemand

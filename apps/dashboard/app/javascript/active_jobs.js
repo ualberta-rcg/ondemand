@@ -4,6 +4,8 @@ import oboe from 'oboe';
 import { supportPath } from './config.js';
 import { cssBadgeForState, capitalizeFirstLetter, ariaNotify, customizeTableHeaders } from './utils.js'
 import { OODAlertError } from './alert.js';
+import { t } from './i18n.js';
+import { dataTablesLanguage } from './datatables_i18n.js';
 
 window.fetch_table_data = fetch_table_data;
 window.create_datatable = create_datatable;
@@ -163,13 +165,13 @@ function create_datatable(options){
     $("#" + filter_id).addClass("active");
     var table = $('#job_status_table').DataTable({
         autoWidth: true,            // Automatically calculate column width
-        "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ], // Manually set size of particular columns
+        "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, t('datatables.all', { defaultValue: 'All' })] ], // Manually set size of particular columns
         "bStateSave": true,         // Save user selected table state
         "aaSorting": [],            // Turn off auto sort.
         "pageLength": 50,           // Set the number of rows
-        "oLanguage": {
-            "sSearch": "Filter: "
-        },
+        language: dataTablesLanguage({
+            search: `${t('datatables.filter_label', { defaultValue: 'Filter:' })} `
+        }),
         "fnInitComplete":           function( oSettings ) {
                                         for ( var i=0, iLen=oSettings.aoData.length ; i<iLen ; i++ )
                                         {

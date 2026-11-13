@@ -2,6 +2,7 @@ import _ from 'lodash';
 import {xdmodUrl, analyticsPath} from './config';
 import {today, startOfYear, thirtyDaysAgo, reportErrorForAnalytics} from './utils';
 import { jobsPanel } from './xdmod/jobs';
+import { oodLocale } from './i18n';
 
 const jobsPageLimit = 10;
 
@@ -19,8 +20,8 @@ const jobHelpers = {
   xdmod_url: function(){
     return xdmodUrl();
   },
-  start_time: function(){ return new Date(this.start_time_ts*1000).toLocaleString(); },
-  end_time: function(){ return new Date(this.end_time_ts*1000).toLocaleString(); },
+  start_time: function(){ return new Date(this.start_time_ts*1000).toLocaleString(oodLocale()); },
+  end_time: function(){ return new Date(this.end_time_ts*1000).toLocaleString(oodLocale()); },
   //FIXME: would be nice to use 1 representation of walltime across all of OnDemand
   // but this is in hours and minutes
   walltime: function(){
