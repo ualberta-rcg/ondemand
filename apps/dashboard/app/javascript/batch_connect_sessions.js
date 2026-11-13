@@ -7,6 +7,7 @@ import {
   notificationsEnabled, getNotifiedSessionIds, storeNotifiedSessionIds, 
   pruneNotifiedSessionIds, setupNotificationToggle,
 } from './batch_connect/bc_notifications';
+import { t } from './i18n';
 
 const selectedConnectionTabs = new Map();
 
@@ -78,9 +79,9 @@ function checkStatusChanges(sessions, notifiedSessionIds) {
 
     if (session.status !== currentStatus) {
       session.status = currentStatus;
-      ariaNotify(`${sessionTitle} is now ${currentStatus}.`);
+      ariaNotify(t('batch_connect.session_status_aria', { title: sessionTitle, status: currentStatus }));
       if (notificationsOn) {
-        pushNotify(`${sessionTitle} (${jobId}) is now ${currentStatus}.`, {
+        pushNotify(t('batch_connect.session_status_push', { title: sessionTitle, job_id: jobId, status: currentStatus }), {
           tag: `session-${sessionId}`,
         });
       }
@@ -91,7 +92,7 @@ function checkStatusChanges(sessions, notifiedSessionIds) {
 
     const minutesRemaining = parseInt(card.dataset.minutesRemaining, 10) || 0;
     if (notificationsOn && withinWarnLimit(minutesRemaining, expWarnThreshold) && !session.expNotified) {
-      pushNotify(`Warning: ${sessionTitle} (${jobId}) expires in ~${minutesRemaining} minutes!`, {
+      pushNotify(t('batch_connect.session_expires_warning', { title: sessionTitle, job_id: jobId, minutes: minutesRemaining }), {
         tag: `session-${sessionId}`,
       });
       session.expNotified = true;
