@@ -1,5 +1,7 @@
 import { OODAlertError } from '../alert';
 import { ariaNotify, customizeTableHeaders, hide, show } from "../utils";
+import { t } from '../i18n';
+import { dataTablesLanguage } from '../datatables_i18n';
 
 export class PathSelectorTable {
   _table = null;
@@ -42,9 +44,9 @@ export class PathSelectorTable {
   initDataTable() {
     this._table = $(`#${this.tableId}`).DataTable({
       autoWidth: false,
-      language: {
-        search: 'Filter:',
-      },
+      language: dataTablesLanguage({
+        search: t('datatables.filter_label', { defaultValue: 'Filter:' }),
+      }),
       order: [[0, "asc"], [1, "asc"]],
       rowId: 'id',
       paging: false,

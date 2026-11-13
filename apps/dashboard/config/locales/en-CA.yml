@@ -275,6 +275,16 @@ en-CA:
         error: Error
         loading: Loading...
         ok: OK
+      datatables:
+        all: All
+        filter_label: 'Filter:'
+        invalid_date: Invalid Date
+        rows_selected:
+          one: 1 row selected
+          other: "%{count} rows selected"
+        showing_filtered_rows: Showing %{display} of %{total} rows
+        showing_rows: Showing %{display} rows
+        status_summary: "%{showing} - %{selected}"
     launch: Launch
     load_report: Load Report + %{node}
     locale_name: English (Canada)

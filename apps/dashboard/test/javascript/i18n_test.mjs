@@ -8,6 +8,7 @@ import {
   formatNumber,
   formatDateTime,
 } from '../../app/javascript/i18n.js';
+import { dataTablesLanguage } from '../../app/javascript/datatables_i18n.js';
 
 test('oodLocale normalizes underscore locale tags to canonical BCP 47', () => {
   setI18nCatalog({ locale: 'ja_JP', translations: {} });
@@ -108,5 +109,27 @@ test('formatNumber and formatDateTime honor oodLocale()', () => {
   assert.match(formatNumber(1234567), /1,234,567/);
   const formattedDate = formatDateTime(new Date('2026-05-01T12:00:00Z'), { timeZone: 'UTC' });
   assert.ok(formattedDate.length > 0);
+  resetI18nCatalog();
+});
+
+test('dataTablesLanguage bundles offline language packs for fr-CA, ja-JP, zh-CN, fa-IR, and en-CA', () => {
+  setI18nCatalog({ locale: 'fr-CA', translations: {} });
+  const frPack = dataTablesLanguage({ search: 'Filtrer :', infoFiltered: '' });
+  assert.equal(frPack.search, 'Filtrer :');
+  assert.equal(frPack.infoFiltered, '');
+  assert.equal(frPack.aria.paginate.next, 'Suivante');
+
+  const jaPack = dataTablesLanguage({}, 'ja_JP');
+  assert.ok(jaPack.search && jaPack.search.length > 0);
+
+  const zhPack = dataTablesLanguage({}, 'zh-CN');
+  assert.ok(zhPack.search && zhPack.search.length > 0);
+
+  const faPack = dataTablesLanguage({}, 'fa-IR');
+  assert.ok(faPack.search && faPack.search.length > 0);
+
+  const enPack = dataTablesLanguage({ search: 'Filter:' }, 'en-CA');
+  assert.deepEqual(enPack, { search: 'Filter:' });
+
   resetI18nCatalog();
 });
