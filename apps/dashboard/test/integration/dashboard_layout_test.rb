@@ -42,10 +42,25 @@ class DashboardLayoutTest < ActionDispatch::IntegrationTest
   test 'html lang attribute emits valid BCP 47 tag for underscore locales' do
     stub_user_configuration({ dashboard_layout: {} })
 
+    Configuration.stubs(:locale).returns(:ja_JP)
     I18n.with_locale(:ja_JP) do
       get '/'
       assert_response :success
       assert_select 'html[lang="ja-JP"]'
+      i18n_script = css_select('script#ood_i18n[type="application/json"]').first
+      assert_not_nil i18n_script
+      payload = JSON.parse(i18n_script.text)
+      assert_equal 'ja-JP', payload['locale']
+      assert_equal 'Cancel', payload.dig('translations', 'common', 'cancel')
+    end
+
+    Configuration.stubs(:locale).returns(:'fr-CA')
+    I18n.with_locale(:'fr-CA') do
+      get '/'
+      assert_response :success
+      payload = JSON.parse(css_select('script#ood_i18n').first.text)
+      assert_equal 'fr-CA', payload['locale']
+      assert_equal 'Annuler', payload.dig('translations', 'common', 'cancel')
     end
   end
 
