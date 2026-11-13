@@ -24,6 +24,8 @@ fr-CA:
     all_apps_table_sub_category_column: Sous-catégorie
     all_clusters: Tous les groupes
     announcements_dismissible_button: OK
+    announcements_parse_error: Erreur lors de l'analyse de l'annonce.
+    announcements_render_error: Impossible d'afficher l'annonce « %{name} » en raison d'une erreur
     announcements_required_button: Accepter
     apps_setup_failure_html: |
       <h2>Un problème est survenu lors de l'initialisation de vos données pour cette application.</h2>
@@ -47,6 +49,9 @@ fr-CA:
     balance_no_warnings: Aucun projet n'est dans la zone d'alerte de solde de %{threshold} jours.
     balance_reload_message_html: 'Rechargez la page pour voir le solde mis à jour. Les soldes sont mis à jour quotidiennement.<br>Dernière mise à jour : %{last_update}'
     balance_warning_prefix_html: "%{units_balance} avertissement pour"
+    batch_connect_active_sessions_aria: Sessions actives
+    batch_connect_app_version: 'version : %{version}'
+    batch_connect_apps_menu_aria: Menu des applications interactives
     batch_connect_apps_menu_title: Applications interactives
     batch_connect_form_attr_cache_error: Impossible d'utiliser les valeurs en cache, utilisation des valeurs par défaut. (%{error_message})
     batch_connect_form_choose_template_name: Choisir un nom de modèle
@@ -80,6 +85,7 @@ fr-CA:
     batch_connect_sessions_cancel_confirm: Êtes-vous sûr ?
     batch_connect_sessions_cancel_full_title: Annuler la session %{title}
     batch_connect_sessions_cancel_title: Annuler
+    batch_connect_sessions_connection_render_error: Impossible d'afficher le bouton de connexion depuis view.html.erb en raison de l'erreur « %{error} »
     batch_connect_sessions_data_html: |
       Les données de session %{title} pour cette session sont accessibles
       sous %{data_link_tag}.
@@ -94,7 +100,9 @@ fr-CA:
       la variable d'environnement OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Échec du staging du modèle avec l’erreur suivante :'
     batch_connect_sessions_errors_submission: 'Échec de la soumission de la session avec l’erreur suivante :'
+    batch_connect_sessions_native_vnc_tab: Instructions natives
     batch_connect_sessions_novnc_launch: Lancer %{app_title}
+    batch_connect_sessions_novnc_tab: Connexion noVNC
     batch_connect_sessions_novnc_view_only: Vue seule (Lien partageable)
     batch_connect_sessions_path_selector_forbidden_error: Vous n'avez pas la permission de sélectionner ce répertoire ou fichier.
     batch_connect_sessions_relaunch_full_title: Relancer la session %{title}
@@ -140,16 +148,19 @@ fr-CA:
       saved_message: Paramètres %{settings_name} enregistrés
       settings_values_label: Valeurs
       title: Paramètres enregistrés
+    breadcrumb_aria: Fil d'Ariane
     breadcrumbs_all_apps: Toutes les applications
     breadcrumbs_home: Accueil
     breadcrumbs_my_sessions: Mes sessions interactives
     breadcrumbs_support_ticket: Billet de soutien
+    browser_warning: OnDemand nécessite une version plus récente de votre navigateur. Les navigateurs pris en charge incluent Edge, Firefox 19+, Chrome 34+ et Safari 8+.
     cancel: Annuler
     clear: Effacer
     close: Fermer
     close_alert: Fermer cette alerte.
     close_notice: Fermer cet avis.
     cluster: Regrouper
+    copy: Copier
     cpu_report: Rapport du processeur + %{node}
     custom_pages:
       invalid: 'Code de page invalide : %{page}. Cette page n’a pas été configurée'
@@ -160,9 +171,28 @@ fr-CA:
     development_apps_caption: Application bac à sable
     directory: Répertoire
     edit: Modifier
+    editor_default: Par défaut
+    editor_font_size: Taille de police
+    editor_key_bindings: Raccourcis clavier
+    editor_theme: Thème
+    editor_theme_bright: Clair
+    editor_theme_dark: Sombre
+    editor_wrap: Retour à la ligne
+    error_details: 'Détails :'
+    error_internal_body_html: Veuillez réessayer dans quelques instants. Si cette erreur persiste, veuillez <a href="%{support_url}">contacter le soutien technique</a>.
+    error_internal_title: Erreur interne du serveur
+    error_not_found_body: La page que vous recherchez n'existe pas.
+    error_not_found_title: Page introuvable
+    favorites: Favoris
     file: Fichier
+    file_editor: Éditeur de fichiers
     file_quotas: Quotas de fichiers
     files: Fichiers
+    files_change_directory: Changer de répertoire
+    files_contents_of_directory: Contenu du répertoire %{path}
+    files_copy_move: Copier/Déplacer
+    files_copy_path: Copier le chemin
+    files_directory_contents_aria: Contenu du répertoire
     files_directory_download_error_modal_title: Répertoire trop volumineux à télécharger
     files_directory_download_unauthorized: Vous ne pouvez télécharger qu’un répertoire au format zip si vous y avez les droits de lecture et d’exécution
     files_directory_size_calculation_error: Délai dépassé lors de la détermination de la taille du répertoire.
@@ -170,10 +200,22 @@ fr-CA:
     files_directory_size_unknown: 'Erreur avec le code de sortie %{exit_code} lors de la détermination de la taille du répertoire : %{error}'
     files_directory_too_large: Le répertoire est trop volumineux pour être téléchargé en zip. Il doit faire moins de %{download_directory_size_limit} octets.
     files_doesnt_exist: "%{path} n'existe pas."
+    files_download: Télécharger
     files_download_not_enabled: Le téléchargement de fichiers n’est pas activé sur ce serveur.
     files_download_zip: Télécharger en zip
+    files_exceeds_editor_limit: '%{path} dépasse la taille maximale de l''éditeur (%{limit}). Veuillez télécharger le fichier pour le modifier ou le consulter localement.'
     files_file_too_large: Le fichier est trop volumineux pour être téléchargé. Les téléchargements de fichiers doivent être inférieurs à %{download_file_size_limit} octets.
+    files_go_up_directory: Remonter d'un répertoire
+    files_modified_at: Modifié le
+    files_modify_aria: Modifier les fichiers
+    files_new_directory: Nouveau répertoire
+    files_new_file: Nouveau fichier
+    files_not_editable: '%{path} n''est pas un fichier modifiable'
     files_not_readable: Vous n'avez pas les autorisations suffisantes pour lire '%{path}'.
+    files_open_in_files_app: Ouvrir dans l'application Fichiers
+    files_open_in_globus: Ouvrir dans Globus
+    files_path_breadcrumbs_aria: Chemin de navigation
+    files_refresh: Actualiser
     files_remote_dir_not_created: Répertoire %{path} non créé
     files_remote_disabled: Le support de fichiers distants n’est pas activé
     files_remote_empty_dir_unsupported: Les répertoires vides ne sont pas pris en charge à distance
@@ -182,17 +224,27 @@ fr-CA:
     files_shell: Ouvrir dans le terminal
     files_shell_dropdown: Sélectionner le cluster à ouvrir dans le terminal
     files_title: Navigation de fichiers
+    files_upload: Téléverser
+    footer_contribute: Contribuer sur GitHub
+    footer_license: Avis de licence logicielle
+    footer_open_source: Logiciel libre.
+    footer_powered_by: Propulsé par Open OnDemand
+    footer_version: 'Version d''OnDemand : %{version}'
     home_directory: Répertoire Personnel
     id: IDENTIFIANT
     import: Importer
     job: Travail
     job_info: Informations sur le travail
+    jobs_back_to_projects: Retour aux projets
+    jobs_clear_form_fields: Effacer les champs du formulaire
+    jobs_completed_jobs: Tâches terminées
     jobs_create_blank_project: Créer un nouveau projet
     jobs_create_blank_workflow: Nouveau flux de travail
     jobs_create_template_project: Créer un nouveau projet à partir d’un modèle
     jobs_import_shared_project: Importer un projet partagé
     jobs_launchers: Lancements
     jobs_launchers_add_select_option: Ajouter l'option sélectionnée %{name}
+    jobs_launchers_cannot_find: Impossible de trouver le lanceur %{id}
     jobs_launchers_clone: Cloner le lanceur %{name}
     jobs_launchers_created: Lancement créé avec succès !
     jobs_launchers_default_created: Un « hello_world.sh » a aussi été ajouté à ce projet.
@@ -216,7 +268,12 @@ fr-CA:
     jobs_launchers_submit_launcher_title: Lancer le script avec des valeurs mises en cache ou par défaut pour le lanceur %{name}
     jobs_launchers_submitted: Travail %{job_id} soumis avec succès.
     jobs_launchers_updated: Manifest du lancement mis à jour !
+    jobs_native_dependency: . La tâche dépend de l'identifiant de tâche%{dependency}
+    jobs_native_reason: ' en raison de « %{reason} »'
+    jobs_native_state: L'état actuel de la tâche est « %{state} »
     jobs_new_launcher: Nouveau lancement
+    jobs_new_project: Nouveau projet
+    jobs_project_cannot_find: 'Impossible de trouver le projet : %{project_id}'
     jobs_project_created: Projet créé avec succès !
     jobs_project_delete_label: Supprimer le projet %{name}
     jobs_project_delete_project_confirmation: Supprimer tout le contenu du répertoire du projet ?
@@ -235,6 +292,8 @@ fr-CA:
     jobs_project_job_deleted: Travail %{job_id} supprimé avec succès
     jobs_project_job_not_deleted: Impossible de supprimer le travail %{job_id}
     jobs_project_job_stopped: Travail %{job_id} arrêté avec succès
+    jobs_project_list_aria: Liste des projets
+    jobs_project_manager: Gestionnaire de projets
     jobs_project_manifest_updated: Manifest du projet mis à jour !
     jobs_project_name_placeholder: Nom du projet
     jobs_project_name_validation: Le nom du projet ne peut contenir que des lettres, chiffres, tirets, soulignés et espaces
@@ -246,15 +305,26 @@ fr-CA:
     jobs_project_select_directory: Sélectionner le répertoire du projet
     jobs_project_setgid_help: Laisser l'option setgid cochée garantit que les fichiers du projet sont créés avec le groupe sélectionné. N'affecte pas les projets dans votre répertoire personnel.
     jobs_project_validation_error: Requête invalide. Veuillez vérifier les erreurs ci-dessous
+    jobs_return_to_projects: Retourner à la page des projets
+    jobs_save_project_title: Enregistrer le projet
     jobs_select_directory_placeholder: Cliquez sur le projet ci-dessous pour l'importer sur votre page d'accueil (optionnel)
     jobs_toggle_details: Cliquez pour afficher ou masquer les détails du travail %{job_id}
+    jobs_workflow_add_launcher: Ajouter un lanceur
+    jobs_workflow_canvas_aria: canevas
     jobs_workflow_clone: Cloner le flux de travail %{name}
+    jobs_workflow_connect_launchers: Connecter les lanceurs
     jobs_workflow_created: Flux de travail créé avec succès !
     jobs_workflow_delete_confirmation: Supprimer tous les contenus du flux de travail ?
+    jobs_workflow_delete_edge: Supprimer le lien
+    jobs_workflow_delete_edge_title: Supprimer le lien sélectionné (Suppr/Retour arrière)
+    jobs_workflow_delete_launcher: Supprimer le lanceur
+    jobs_workflow_delete_launcher_title: Supprimer le lanceur sélectionné (Suppr/Retour arrière)
     jobs_workflow_delete_title: Supprimer le flux de travail %{name}
     jobs_workflow_deleted: Flux de travail supprimé avec succès !
     jobs_workflow_description_placeholder: Description du flux de travail
     jobs_workflow_edit_settings: Modifier les paramètres pour le flux de travail %{name}
+    jobs_workflow_editing: 'Modification : %{name}'
+    jobs_workflow_enable_sync_key: Activer OOD_WORKFLOW_SYNC_KEY
     jobs_workflow_failed: Le flux de travail a échoué avec l'erreur %{error}
     jobs_workflow_help: Cliquez sur le titre pour sélectionner et faire glisser. Connectez en cliquant sur deux lanceurs avec 'Connecter les lanceurs' sélectionné.
     jobs_workflow_manifest_updated: Manifeste du flux de travail mis à jour !
@@ -262,22 +332,44 @@ fr-CA:
     jobs_workflow_name_placeholder: Nom du flux de travail
     jobs_workflow_name_validation: Le nom du flux de travail ne peut contenir que des lettres, des chiffres, des tirets, des traits de soulignement et des espaces
     jobs_workflow_not_found: Impossible de trouver le flux de travail %{workflow_id}
+    jobs_workflow_pick_launchers: Choisir les lanceurs
     jobs_workflow_show_graph: Ouvrir le flux de travail %{name} dans l'éditeur de graphique
     jobs_workflow_submitted: Flux de travail soumis avec succès !
     jobs_workflow_sync_key_help: Lorsqu'il est activé, chaque lanceur dans ce flux de travail reçoit la même variable d'environnement <code>OOD_WORKFLOW_SYNC_KEY</code> (un jeton aléatoire unique à chaque exécution de flux de travail). Utile pour générer des noms de fichiers synchronisés, des fichiers de verrouillage ou des identifiants partagés entre les tâches dépendantes.
+    jobs_workflow_synchronization: Synchronisation
+    jobs_workflow_toolbar_aria: barre d'outils
+    jobs_workflow_zoom_controls: Commandes de zoom
+    jobs_workflow_zoom_in: Zoom avant
+    jobs_workflow_zoom_out: Zoom arrière
+    jobs_workflow_zoom_reset: Réinitialiser le zoom
     jobs_workflows: Flux de travail
     jobs_workflows_not_supported: Les flux de travail ne sont pas pris en charge par le planificateur configuré.
     launch: Lancer
     load_report: Rapport de chargement + %{node}
+    loading: Chargement...
+    loading_short: Chargement
     logo_alt_text: Bienvenue dans Open OnDemand
+    logout_body_html: <strong>Vous devez fermer complètement votre navigateur</strong> pour terminer la déconnexion. Si vous êtes toujours connecté après avoir rouvert votre navigateur, veuillez effacer vos témoins (cookies). Sur un Chromebook ou une Chromebox, vous devrez redémarrer votre appareil pour quitter complètement le navigateur et vous déconnecter.
+    logout_tip_html: '<strong>Conseil : Utiliser une fenêtre de « navigation privée »</strong> avec OnDemand est une excellente façon d''assurer une déconnexion automatique, puisque fermer la fenêtre supprimera tous les témoins et renseignements de session associés.'
+    logout_title: Vous n'êtes pas encore déconnecté
     maximum: Maximum
     mem_report: Rapport de mémoire + %{node}
     minimum: Minimum
     mode: Mode
+    module_browser_available_modules: 'Modules disponibles :'
+    module_browser_copy_aria: Copier la commande de chargement pour %{name}
+    module_browser_dependencies: 'Dépendances :'
     module_browser_last_updated: 'Dernière mise à jour : %{last_updated}'
+    module_browser_load_command: 'Commande de chargement :'
+    module_browser_search_label: Rechercher des modules
+    module_browser_search_placeholder: Rechercher par nom de module...
+    module_browser_select_version: (sélectionner une version)
+    module_browser_showing_results: Affichage de %{count} résultats
     module_browser_title: Navigateur de modules
+    module_browser_versions: Versions
     motd_default_md: 'Le développement d''Open OnDemand est soutenu par la National Science Foundation (NSF) grâce aux subventions n° 1534949 et n° 1835725. Pour en savoir plus ou participer : - Discours (https://discourse.openondemand.org/) - Dépôt Open OnDemand (https://github.com/OSC/ondemand) - Dépôt ood-core (https://github.com/OSC/ood_core) - Documentation (https://osc.github.io/ood-documentation/latest/).'
     motd_erb_render_error: 'Le MOTD n’a pas été analysé ou rendu correctement : %{error_message}'
+    motd_no_messages: Il n'y a aucun nouveau message.
     motd_title: Message du jour
     name: Nom
     nav_all_apps: Toutes les applications
@@ -294,11 +386,14 @@ fr-CA:
     nav_help_two_factor: Configurer l’authentification à deux facteurs
     nav_limit_caption: affichage de %{subset_count} sur %{total_count}
     nav_logout: Déconnexion
+    nav_main_menu: Menu principal
     nav_restart_server: Redémarrer le serveur web
     nav_sessions: Mes sessions interactives
+    nav_toggle_navigation: Basculer la navigation
     nav_user: Connecté en tant que %{username}
     network_report: Rapport réseau + %{node}
     node: Noeud
+    none: Aucun
     not_grouped: Autres applications
     nsf_access_announcements: Annonces NSF ACCESS
     nsf_access_events: Événements d'accès NSF
@@ -307,15 +402,35 @@ fr-CA:
     opens_in_new_tab: s'ouvre dans un nouvel onglet
     output_location: 'Emplacement de sortie :'
     owner: Propriétaire
+    page_actions_aria: Actions de la page
     page_title: "%{page} - %{site}"
     page_title_with_dir: "%{page} - %{site} - %{dir}"
+    path_selector_breadcrumb_aria: Fil d'Ariane — %{title}
+    path_selector_caption: Choisissez un fichier ou un répertoire à utiliser dans le formulaire.
     path_selector_default_popup_title: Sélectionnez votre répertoire de travail
     path_selector_home: accueil
     path_selector_parent_directory: répertoire parent
+    permissions_created: L'autorisation a été créée avec succès.
+    permissions_destroyed: L'autorisation a été supprimée avec succès.
+    permissions_group_title: Autorisations de groupe
+    permissions_user_title: Autorisations d'utilisateur
     pinned_apps_caption_html: Un sous-ensemble en vedette de <a href="%{all_apps_url}">toutes les applications disponibles</a>
     pinned_apps_category: Applications
     pinned_apps_title: Applications épinglées
+    products_created: Le produit a été créé avec succès.
     products_manifest_save_error: Impossible d'enregistrer le manifeste de l'application dans %{path}
+    products_ssh_key_created: La clé SSH a été créée avec succès.
+    products_ssh_key_exists: La clé SSH existe déjà
+    products_ssh_key_failed: 'Échec de la création de la clé SSH : %{error}'
+    products_type_batch_connect: Application Batch Connect
+    products_type_passenger: Application Passenger
+    products_type_passenger_meteor: Application Passenger Meteor
+    products_type_passenger_node: Application Passenger Node
+    products_type_passenger_rack: Application Passenger Rack
+    products_type_passenger_rails: Application Passenger Rails
+    products_type_passenger_rails_sqlite: Application Passenger Rails avec base de données SQLite
+    products_type_passenger_wsgi: Application Passenger WSGI
+    products_updated: Le produit a été mis à jour avec succès.
     project: Projet
     project_balances: Soldes de projet
     project_directory: Répertoire du projet
@@ -340,6 +455,8 @@ fr-CA:
     root: Racine
     save: Enregistrer
     saved_settings_title: Paramètres enregistrés
+    select: Sélectionner
+    select_all: Tout sélectionner
     select_path: Sélectionner le chemin
     select_path_for: "%{element} chemin de sélection\n"
     settings_invalid_request: Paramètres soumis invalides
@@ -363,6 +480,15 @@ fr-CA:
     soft_tabs: Tabulations souples
     soft_tabs_info: Les tabulations souples sont des espaces dans le fichier au lieu de véritables caractères de tabulation.
     status: Statut
+    status_completed: Terminée
+    status_held: Retenue
+    status_hold: En retenue
+    status_queued: En file d'attente
+    status_running: En cours d'exécution
+    status_starting: Démarrage
+    status_suspend: Suspendue
+    status_suspended: Suspendue
+    status_undetermined: Indéterminé
     submit: Soumettre
     submit_args: 'Soumettre les arguments :'
     support_ticket:
@@ -385,8 +511,24 @@ fr-CA:
         size:
           attachments_js: 'Taille max de la pièce jointe : %{max}. Taille du fichier sélectionné : %{size}'
       validation_error: Requête invalide. Veuillez revoir les messages d’erreur ci-dessous
+    support_ticket_add_attachment: Ajouter une pièce jointe
+    support_ticket_attachments_help: Cliquez sur la zone pour joindre un fichier. Des captures d'écran ou d'autres fichiers peuvent aider à résoudre votre problème.
     system_apps_caption: Application système installée
+    system_status_available: '%{name} disponibles : %{count}'
+    system_status_cluster_title: État de la grappe %{title}
+    system_status_gpus: GPU
+    system_status_in_use: '%{percent} utilisé'
+    system_status_jobs_queued: Tâches en file d'attente
+    system_status_jobs_queued_count: '%{count} tâches en file d''attente'
+    system_status_jobs_running: Tâches en cours
+    system_status_jobs_running_count: '%{count} tâches en cours'
+    system_status_nodes: Nœuds
+    system_status_not_slurm: Les renseignements sur la grappe ne sont pas disponibles avec %{scheduler}. Actuellement, seules les grappes Slurm sont prises en charge.
+    system_status_processors: Processeurs
+    toggle_notifications: Activer/désactiver les notifications
+    toggle_push_notifications: Activer/désactiver les notifications poussées
     type: Type
+    undefined_title: Titre non défini
     unknown: Inconnu
     uppy: Uppy
     user: Utilisateur

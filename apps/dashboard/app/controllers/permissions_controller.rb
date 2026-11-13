@@ -31,7 +31,7 @@ class PermissionsController < ApplicationController
     respond_to do |format|
       if @permission.save
         format.html do
-          redirect_to product_url(@product.name, type: @type), notice: 'Permission was successfully created.'
+          redirect_to product_url(@product.name, type: @type), notice: I18n.t('dashboard.permissions_created')
         end
         format.json { render :show, status: :created, location: @permission }
       else
@@ -52,7 +52,7 @@ class PermissionsController < ApplicationController
     @permission.destroy
     respond_to do |format|
       format.html do
-        redirect_to product_url(@product.name, type: @type), notice: 'Permission was successfully destroyed.'
+        redirect_to product_url(@product.name, type: @type), notice: I18n.t('dashboard.permissions_destroyed')
       end
       format.json { head :no_content }
     end

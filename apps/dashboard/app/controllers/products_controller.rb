@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.create_from_git_remote(reset_git: params[:reset_git] == "1")
-        format.html { redirect_to product_url(@product.name, type: @type), notice: 'Product was successfully created.' }
+        format.html { redirect_to product_url(@product.name, type: @type), notice: I18n.t('dashboard.products_created') }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new_from_git_remote }
@@ -66,7 +66,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to product_url(@product.name, type: @type), notice: 'Product was successfully updated.' }
+        format.html { redirect_to product_url(@product.name, type: @type), notice: I18n.t('dashboard.products_updated') }
         format.json { render :show, status: :ok, location: @product }
       else
         flash.now[:alert] = @product.errors.full_messages.to_sentence
@@ -87,16 +87,16 @@ class ProductsController < ApplicationController
       o, s = Open3.capture2e("ssh-keygen", "-t", "rsa", "-b", "4096", "-N", "", "-f", "#{ENV['HOME']}/.ssh/id_rsa")
       success = s.success?
     else
-      o = "SSH key already exists"
+      o = I18n.t('dashboard.products_ssh_key_exists')
       success = false
     end
 
     respond_to do |format|
       if success
-        format.html { redirect_to products_url(type: @type), notice: 'SSH key was successfully created.' }
+        format.html { redirect_to products_url(type: @type), notice: I18n.t('dashboard.products_ssh_key_created') }
         format.json { head :no_content }
       else
-        format.html { redirect_to products_url(type: @type), alert: "SSH key failed to be created: #{o}"  }
+        format.html { redirect_to products_url(type: @type), alert: I18n.t('dashboard.products_ssh_key_failed', error: o) }
         format.json { render json: o, status: :internal_server_error }
       end
     end

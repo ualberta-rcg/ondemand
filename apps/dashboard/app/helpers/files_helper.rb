@@ -26,7 +26,7 @@ module FilesHelper
     end
   end
 
-  def files_button(path, text = "Open in files app")
+  def files_button(path, text = I18n.t('dashboard.files_open_in_files_app'))
     link_to(
       text,
       files_path(fs: 'fs', filepath: path),

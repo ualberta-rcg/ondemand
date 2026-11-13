@@ -11,8 +11,8 @@ module BatchConnect::SessionsHelper
       else
         if session.vnc?
           views = []
-          views << { title: "noVNC Connection",    partial: "novnc",      locals: { connect: session.connect, app_title: session.title } }
-          views << { title: "Native Instructions", partial: "native_vnc", locals: { connect: session.connect } } if ENV["ENABLE_NATIVE_VNC"]
+          views << { title: I18n.t('dashboard.batch_connect_sessions_novnc_tab'),      partial: "novnc",      locals: { connect: session.connect, app_title: session.title } }
+          views << { title: I18n.t('dashboard.batch_connect_sessions_native_vnc_tab'), partial: "native_vnc", locals: { connect: session.connect } } if ENV["ENABLE_NATIVE_VNC"]
         else
           views = { partial: "missing_connection" }
         end
@@ -59,19 +59,19 @@ module BatchConnect::SessionsHelper
 
   def status(session)
     if session.starting?
-      "Starting"
+      I18n.t('dashboard.status_starting')
     elsif session.running?
-      "Running"
+      I18n.t('dashboard.status_running')
     elsif session.queued?
-      "Queued"
+      I18n.t('dashboard.status_queued')
     elsif session.held?
-      "Held"
+      I18n.t('dashboard.status_held')
     elsif session.suspended?
-      "Suspended"
+      I18n.t('dashboard.status_suspended')
     elsif session.completed?
-      "Completed"
+      I18n.t('dashboard.status_completed')
     else
-      "Undetermined"
+      I18n.t('dashboard.status_undetermined')
     end
   end
 

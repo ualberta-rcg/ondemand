@@ -3,11 +3,11 @@ module ProductsHelper
 
   def products_title(type)
     if type == :dev
-      t('dashboard.nav_develop_my_sandbox_apps_dev')
+      I18n.t('dashboard.nav_develop_my_sandbox_apps_dev')
     elsif type == :usr
-      t('dashboard.nav_develop_my_sandbox_apps_prod')
+      I18n.t('dashboard.nav_develop_my_sandbox_apps_prod')
     else
-      "Undefined Title"
+      I18n.t('dashboard.undefined_title')
     end
   end
 
@@ -16,26 +16,26 @@ module ProductsHelper
       if app.passenger_rack_app?
         if app.passenger_rails_app?
           if app.passenger_railsdb_app?
-            "Passenger Rails App with SQLite database"
+            I18n.t('dashboard.products_type_passenger_rails_sqlite')
           else
-            "Passenger Rails App"
+            I18n.t('dashboard.products_type_passenger_rails')
           end
         else
-          "Passenger Rack App"
+          I18n.t('dashboard.products_type_passenger_rack')
         end
       elsif app.passenger_nodejs_app?
-        "Passenger Node App"
+        I18n.t('dashboard.products_type_passenger_node')
       elsif app.passenger_python_app?
-        "Passenger WSGI App"
+        I18n.t('dashboard.products_type_passenger_wsgi')
       elsif app.passenger_meteor_app?
-        "Passenger Meteor App"
+        I18n.t('dashboard.products_type_passenger_meteor')
       else
-        "Passenger App"
+        I18n.t('dashboard.products_type_passenger')
       end
     elsif app.batch_connect_app?
-      "Batch Connect App"
+      I18n.t('dashboard.products_type_batch_connect')
     else
-      "Unknown"
+      I18n.t('dashboard.unknown')
     end
   end
 
