@@ -33,6 +33,9 @@ class DashboardLayoutTest < ActionDispatch::IntegrationTest
     get '/'
 
     assert_select 'div.row', 0
+    uppy_json = JSON.parse(css_select('#ood_config').first['data-uppy-locale'])
+    assert_kind_of Hash, uppy_json
+    assert_equal 'Cancel', uppy_json.dig('strings', 'cancel')
   end
 
   test 'default MOTD renders when MOTD_PATH is unset' do

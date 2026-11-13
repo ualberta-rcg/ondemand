@@ -4,7 +4,7 @@
   data-download-enabled="<%= Configuration.download_enabled? %>"
   data-transfers-path="<%= transfers_path(format: "json") if respond_to?(:transfers_path) %>"
   data-root-path="<%= root_path %>"
-  data-uppy-locale="<%= I18n.t('dashboard.uppy', :default => {}).to_json %>"
+  data-uppy-locale="<%= i18n_deep_subtree('dashboard.uppy').to_json %>"
   data-bc-dynamic-js="<%= Configuration.bc_dynamic_js? %>"
   data-xdmod-url="<%= Configuration.xdmod_host %>"
   data-nsf-access-events-url="<%= Configuration.nsf_access_events_url %>"
