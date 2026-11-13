@@ -389,7 +389,51 @@ fr-CA:
     system_apps_caption: Application système installée
     type: Type
     unknown: Inconnu
-    uppy: Uppy
+    uppy:
+      strings:
+        addMore: Ajouter plus
+        addMoreFiles: Ajouter d'autres fichiers
+        addingMoreFiles: Ajout d'autres fichiers
+        back: Retour
+        browseFiles: parcourir les fichiers
+        browseFolders: parcourir les dossiers
+        cancel: Annuler
+        cancelUpload: Annuler le téléversement
+        closeModal: Fermer la fenêtre
+        complete: Terminé
+        dashboardTitle: Téléverseur de fichiers
+        dashboardWindowTitle: Fenêtre de téléversement de fichiers (Appuyez sur Échap pour fermer)
+        done: Terminé
+        dropHint: Déposez vos fichiers ici
+        dropPasteBoth: 'Déposez vos fichiers ici, %{browseFiles} ou %{browseFolders}'
+        dropPasteFiles: 'Déposez vos fichiers ici ou %{browseFiles}'
+        dropPasteFolders: 'Déposez vos fichiers ici ou %{browseFolders}'
+        editFile: Modifier le fichier
+        editing: 'Modification de %{file}'
+        emptyFolderAdded: Aucun fichier n'a été ajouté depuis le dossier vide
+        error: Erreur
+        exceedsSize: '%{file} dépasse la taille maximale permise de %{size}'
+        failedToUpload: 'Échec du téléversement de %{file}'
+        folderAlreadyAdded: 'Le dossier « %{folder} » a déjà été ajouté'
+        myDevice: Mon appareil
+        noDuplicates: "Impossible d'ajouter le fichier en double « %{fileName} », il existe déjà"
+        pause: Pause
+        pauseUpload: Mettre le téléversement en pause
+        paused: En pause
+        removeFile: Retirer le fichier
+        resume: Reprendre
+        resumeUpload: Reprendre le téléversement
+        retry: Réessayer
+        retryUpload: Réessayer le téléversement
+        save: Enregistrer
+        saveChanges: Enregistrer les modifications
+        showErrorDetails: Afficher les détails de l'erreur
+        upload: Téléverser
+        uploadComplete: Téléversement terminé
+        uploadFailed: Échec du téléversement
+        uploadPaused: Téléversement en pause
+        uploading: Téléversement en cours
+        xTimeLeft: '%{time} restant'
     user: Utilisateur
     user_configuration:
       support_ticket_error: support_ticket est mal configuré. Les sections « email » ou « rt_api » sont requises dans le YAML de configuration.

@@ -394,7 +394,6 @@ fa-IR:
     system_apps_caption: برنامه نصب‌شده سامانه
     type: نوع
     unknown: نامشخص
-    uppy: Uppy
     user: کاربر
     user_configuration:
       support_ticket_error: پیکربندی support_ticket نادرست است. یک پیاده‌سازی backend در فایل پیکربندی YAML اضافه کنید.
