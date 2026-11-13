@@ -13,8 +13,8 @@
 
     <%= render partial: "edit_form_job_attrs", locals: { f: f } %>
 
-    <%= f.submit 'Save', class: 'btn btn-primary' %>
-    <%= f.button 'Reset', type: :reset, class: 'btn btn-default' %>
+    <%= f.submit t('jobcomposer.save'), class: 'btn btn-primary' %>
+    <%= f.button t('jobcomposer.reset'), type: :reset, class: 'btn btn-default' %>
 
-    <%= link_to 'Back', workflows_path, class: 'btn btn-default' %>
+    <%= link_to t('jobcomposer.back'), workflows_path, class: 'btn btn-default' %>
 <% end %>

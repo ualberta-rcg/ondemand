@@ -1,4 +1,5 @@
 require 'pathname'
+require 'yaml'
 require 'dotenv'
 
 # Job Composer app specific configuration singleton definition
@@ -110,12 +111,35 @@ class ConfigurationSingleton
     (ENV['OOD_ALLOWLIST_PATH'] || ENV['WHITELIST_PATH'] || "").split(':')
   end
 
+  def ood_portal
+    ENV['OOD_PORTAL'] || 'ondemand'
+  end
+
+  def user_settings_file
+    default_path = (rails_env == 'test' && ENV['OOD_USER_SETTINGS_FILE'].nil?) ? nil : "~/.config/#{ood_portal}/settings.yml"
+    raw = ENV['OOD_USER_SETTINGS_FILE'] || default_path
+    return nil if raw.nil? || raw.to_s.strip.empty?
+
+    Pathname.new(raw).expand_path
+  rescue ArgumentError
+    nil
+  end
+
+  def config_directory
+    Pathname.new(ENV['OOD_CONFIG_D_DIRECTORY'] || '/etc/ood/config/ondemand.d')
+  end
+
   def locale
-    (ENV['OOD_LOCALE'] || I18n.default_locale).to_sym
+    (ENV['OOD_LOCALE'] || ondemand_config[:locale] || :en).to_sym
   end
 
   def locales_root
-    Pathname.new(ENV['OOD_LOCALES_ROOT'] || "/etc/ood/config/locales")
+    Pathname.new(ENV['OOD_LOCALES_ROOT'] || ondemand_config[:locales_root] || '/etc/ood/config/locales')
+  end
+
+  def supported_locales
+    env_list = ENV['OOD_SUPPORTED_LOCALES']&.split(',')&.map(&:strip)&.reject(&:empty?)
+    Array(env_list || ondemand_config[:supported_locales]).map(&:to_s)
   end
 
   # Permit sites to disable Markdown rendering of Template notes
@@ -194,5 +218,17 @@ class ConfigurationSingleton
   # @return [Boolean] false for falsy value, true for everything else
   def to_bool(value)
     ! FALSE_VALUES.include?(value)
+  end
+
+  def ondemand_config
+    return {} unless ENV['OOD_CONFIG_D_DIRECTORY'].present? || load_external_config?
+    return {} unless config_directory.directory? && config_directory.readable?
+
+    Dir.glob(config_directory.join('*.{yml,yaml}')).sort.each_with_object({}) do |file, acc|
+      loaded = YAML.safe_load_file(file, aliases: true)
+      acc.merge!(loaded.transform_keys(&:to_sym)) if loaded.is_a?(Hash)
+    rescue StandardError
+      next
+    end
   end
 end

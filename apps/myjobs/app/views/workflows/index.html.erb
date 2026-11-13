@@ -1,5 +1,5 @@
 <div class="page-header" xmlns="http://www.w3.org/1999/html">
-  <h2>Jobs</h2>
+  <h2><%= t('jobcomposer.nav_jobs') %></h2>
 </div>
 
 <% if OODClusters.any? %>
@@ -9,23 +9,23 @@
         <div class="panel-body">
           <div class="btn-group open">
             <button type="button" id="new_job_button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Job <span class="caret"></span>
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <%= t('jobcomposer.new_job') %> <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
               <% if @default_template.exist? %>
-              <li><a data-method="post" data-toggle="tooltip" title="Create a new job from the default template" href="<%= create_default_path %>">From Default Template</a></li>
+              <li><a data-method="post" data-toggle="tooltip" title="<%= t('jobcomposer.from_default_template_title') %>" href="<%= create_default_path %>"><%= t('jobcomposer.from_default_template') %></a></li>
               <% end %>
               <% if @templates.any? %>
-              <li><a href="<%= new_workflow_path %>" data-toggle="tooltip" title="Create a new job from a template you choose">From Template</a></li>
+              <li><a href="<%= new_workflow_path %>" data-toggle="tooltip" title="<%= t('jobcomposer.from_template_title') %>"><%= t('jobcomposer.from_template') %></a></li>
               <% end %>
-              <li><a href="<%= new_from_path_path %>">From Specified Path</a></li>
+              <li><a href="<%= new_from_path_path %>"><%= t('jobcomposer.from_specified_path') %></a></li>
               <li role="separator" class="divider"></li>
-              <li><a id="copy_button" data-toggle="tooltip" title="Copy the selected job" data-method="post" disabled>From Selected Job</a></li>
+              <li><a id="copy_button" data-toggle="tooltip" title="<%= t('jobcomposer.from_selected_job_title') %>" data-method="post" disabled><%= t('jobcomposer.from_selected_job') %></a></li>
             </ul>
           </div>
 
-          <a class="pull-right btn btn-default btn-sm btn-templates" id="template_button" data-toggle="tooltip" title="Create template from selected job" data-method="get" role="button" disabled>
-            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="hidden-xs hidden-md"> Create Template</span>
+          <a class="pull-right btn btn-default btn-sm btn-templates" id="template_button" data-toggle="tooltip" title="<%= t('jobcomposer.create_template_from_job_title') %>" data-method="get" role="button" disabled>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="hidden-xs hidden-md"> <%= t('jobcomposer.create_template') %></span>
           </a>
         </div>
       </div>
@@ -37,28 +37,28 @@
   <div class="col-md-7" id="joyride_start">
     <div id="job-list-view" class="panel panel-default">
       <div class="panel-body">
-        <a class="btn btn-default btn-sm btn-primary" id="open_dir_button" target="_blank" data-toggle="tooltip" title="Open Directory in File Manager" role="button" disabled>
-          <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><span class="hidden-xs"> Edit Files</span>
+        <a class="btn btn-default btn-sm btn-primary" id="open_dir_button" target="_blank" data-toggle="tooltip" title="<%= t('jobcomposer.open_dir_in_file_manager') %>" role="button" disabled>
+          <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><span class="hidden-xs"> <%= t('jobcomposer.edit_files') %></span>
         </a>
         <!-- <a class="btn btn-default btn-sm" id="view_button" data-toggle="tooltip" title="View Job" role="button" data-method="get" disabled><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a> -->
-        <a class="btn btn-default btn-sm btn-primary" id="edit_button" data-toggle="tooltip" title="Specify Job Host and Script" role="button" data-method="get" disabled>
-          <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><span class="hidden-xs">  Job Options</span>
+        <a class="btn btn-default btn-sm btn-primary" id="edit_button" data-toggle="tooltip" title="<%= t('jobcomposer.specify_job_host_and_script') %>" role="button" data-method="get" disabled>
+          <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><span class="hidden-xs">  <%= t('jobcomposer.options_title') %></span>
         </a>
-        <a class="btn btn-default btn-sm btn-primary" id="terminal_button" target="_blank" data-toggle="tooltip" title="Open Selected Job in the Terminal" role="button" disabled>
-          <span class="glyphicon glyphicon-console" aria-hidden="true"></span><span class="hidden-xs"> Open Terminal</span>
+        <a class="btn btn-default btn-sm btn-primary" id="terminal_button" target="_blank" data-toggle="tooltip" title="<%= t('jobcomposer.open_selected_job_in_terminal') %>" role="button" disabled>
+          <span class="glyphicon glyphicon-console" aria-hidden="true"></span><span class="hidden-xs"> <%= t('jobcomposer.open_terminal') %></span>
         </a>
-        <a class="btn btn-success btn-sm" id="submit_button" data-toggle="tooltip" title="Submit Job" role="button" data-method="get" disabled>
-          <span class="glyphicon glyphicon-play" aria-hidden="true"></span><span class="hidden-xs hidden-md">  Submit</span>
+        <a class="btn btn-success btn-sm" id="submit_button" data-toggle="tooltip" title="<%= t('jobcomposer.submit_job_title') %>" role="button" data-method="get" disabled>
+          <span class="glyphicon glyphicon-play" aria-hidden="true"></span><span class="hidden-xs hidden-md">  <%= t('jobcomposer.submit') %></span>
         </a>
-        <a class="btn btn-default btn-sm btn-warning" id="stop_button" data-toggle="tooltip" title="Stop Job" role="button" data-method="get" disabled>
-          <span class="glyphicon glyphicon-stop" aria-hidden="true"></span><span class="hidden-xs hidden-md">  Stop</span>
+        <a class="btn btn-default btn-sm btn-warning" id="stop_button" data-toggle="tooltip" title="<%= t('jobcomposer.stop_job_title') %>" role="button" data-method="get" disabled>
+          <span class="glyphicon glyphicon-stop" aria-hidden="true"></span><span class="hidden-xs hidden-md">  <%= t('jobcomposer.stop') %></span>
         </a>
-        <a class="btn btn-default btn-sm noanimate" id="loading_button" title="Loading Job Information" role="button">
+        <a class="btn btn-default btn-sm noanimate" id="loading_button" title="<%= t('jobcomposer.loading_job_info') %>" role="button">
           <span class="glyphicon glyphicon-repeat fast-right-spinner" aria-hidden="true"></span>
-          <span class="hidden-xs hidden-md">  Loading</span>
+          <span class="hidden-xs hidden-md">  <%= t('jobcomposer.loading') %></span>
         </a>
-        <a class="btn btn-danger btn-sm pull-right" id="destroy_button" data-toggle="tooltip" title="Delete Job" data-method="get" data-confirm="Are you sure?" role="button" disabled>
-          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="hidden-xs hidden-md"> Delete</span>
+        <a class="btn btn-danger btn-sm pull-right" id="destroy_button" data-toggle="tooltip" title="<%= t('jobcomposer.delete_job_title') %>" data-method="get" data-confirm="<%= t('jobcomposer.confirm_delete') %>" role="button" disabled>
+          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="hidden-xs hidden-md"> <%= t('jobcomposer.delete') %></span>
         </a>
       </div>
 
@@ -66,11 +66,11 @@
         <table id="job-list-table" class="table data-table" style="width:100%; table-layout: fixed;">
           <thead>
           <tr>
-            <th>Created</th>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Cluster</th>
-            <th>Status</th>
+            <th><%= t('jobcomposer.table_created') %></th>
+            <th><%= t('jobcomposer.options_name_title') %></th>
+            <th><%= t('jobcomposer.table_id') %></th>
+            <th><%= t('jobcomposer.options_cluster_title') %></th>
+            <th><%= t('jobcomposer.table_status') %></th>
             <!-- FILE_SIZE_FEATURE
             <th>Size</th>
             -->
@@ -87,7 +87,7 @@
                 <td>
                   <% if workflow.xdmod_url_available? %>
                     <%= link_to(workflow.xdmod_url, target: "_blank")  do %>
-                      <%= workflow.pbsid %> - <%= content_tag :i, nil, style: "display: inline", class: "fa fa-external-link-square-alt" %>&nbsp;Open&nbsp;XDMoD
+                      <%= workflow.pbsid %> - <%= content_tag :i, nil, style: "display: inline", class: "fa fa-external-link-square-alt" %>&nbsp;<%= t('jobcomposer.open_xdmod') %>
                     <% end %>
 
                     <%= content_tag :p, xdmod_url_warning_message(workflow), class: "bg-warning" if xdmod_url_warning_message(workflow) %>
@@ -111,55 +111,55 @@
   <div class="col-md-5" id="job-details-container" aria-live="polite">
     <div class="panel panel-default" id="job-details-panel" hidden>
       <div class="panel-heading">
-        <h3 class="panel-title">Job Details</h3>
+        <h3 class="panel-title"><%= t('jobcomposer.job_details') %></h3>
       </div>
       <div class="panel-body">
         <h4 id="job-details-id"></h4>
         <p id="job-details-xdmod-warning" class="bg-warning"></p>
-        <p>Job Name: <h4 class="wrap-line"><strong><span id="job-details-name"></span></strong></h4></p>
+        <p><%= t('jobcomposer.job_name_label') %> <h4 class="wrap-line"><strong><span id="job-details-name"></span></strong></h4></p>
         <div id="job-details-submit-to">
-          <p>Submit to:</p>
+          <p><%= t('jobcomposer.submit_to_label') %></p>
           <input type="text" class="form-control" id="job-details-server" disabled>
-          <p class="help-block-submit-to"><i>Cluster is not valid! Edit <a href="#" id="edit-job-options-script-link">Job Options</a> to select a valid cluster.</i></p>
+          <p class="help-block-submit-to"><i><%= t('jobcomposer.invalid_cluster_html') %></i></p>
         </div>
         <p></p>
-        <p>Account:</p>
+        <p><%= t('jobcomposer.account_label') %></p>
         <p id="job-details-account"></p>
-        <p>Job Array Request:</p>
+        <p><%= t('jobcomposer.job_array_request_label') %></p>
         <input type="text" class="form-control" id="job-details-job-array-request" disabled>
       </div>
 
       <div class="panel-body">
         <div id="script-details-view">
-          <p>Script location:</p>
+          <p><%= t('jobcomposer.script_location_label') %></p>
           <pre id="job-details-staged-dir"></pre>
-          <p class="help-block-dir"><i>Job Directory is missing!</i></p>
+          <p class="help-block-dir"><i><%= t('jobcomposer.job_directory_missing') %></i></p>
         </div>
         <div id="script-details-name-view">
-          <p>Script name:</p>
+          <p><%= t('jobcomposer.script_name_label') %></p>
           <pre id="job-details-script-name" disabled></pre>
-          <p class="help-block-script"><i>Script is not valid! Edit <a href="#" id="edit-job-options-link">Job Options</a> to select a valid script.</i></p>
+          <p class="help-block-script"><i><%= t('jobcomposer.invalid_script_html') %></i></p>
         </div>
       </div>
 
       <div id="job-details-view" class="panel-body folder-content-view">
-        <p>Folder Contents:</p>
+        <p><%= t('jobcomposer.folder_contents_label') %></p>
         <span id="job-details-staged-dir-contents"></span>
       </div>
     </div>
 
     <div class="panel panel-default" id="script-details-panel" hidden>
       <div class="panel-heading">
-        <h3 class="panel-title">Submit Script</h3>
+        <h3 class="panel-title"><%= t('jobcomposer.submit_script_title') %></h3>
       </div>
       <div id="script-text-panel" class="panel-body">
         <h4 id="script-name"></h4>
-        <p>Script contents:</p>
+        <p><%= t('jobcomposer.script_contents_label') %></p>
         <pre id="script-text-data"></pre>
         <p>
-          <a class="btn btn-info btn-sm" style="margin: 5px" id="open-editor-button" target="_blank" data-toggle="tooltip" title="Open Directory in File Editor" role="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Open Editor</a>
-          <a class="btn btn-primary btn-sm pull-right" style="margin: 5px" id="open-script-dir-button" target="_blank" data-toggle="tooltip" title="Open Directory in File Manager" role="button"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Open Dir</a>
-          <a class="btn btn-default btn-sm pull-right" style="margin: 5px" id="open-terminal-dir-button" target="_blank" data-toggle="tooltip" title="Open Directory in Terminal" role="button"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> Open Terminal</a>
+          <a class="btn btn-info btn-sm" style="margin: 5px" id="open-editor-button" target="_blank" data-toggle="tooltip" title="<%= t('jobcomposer.open_dir_in_editor') %>" role="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <%= t('jobcomposer.open_editor') %></a>
+          <a class="btn btn-primary btn-sm pull-right" style="margin: 5px" id="open-script-dir-button" target="_blank" data-toggle="tooltip" title="<%= t('jobcomposer.open_dir_in_file_manager') %>" role="button"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> <%= t('jobcomposer.open_dir') %></a>
+          <a class="btn btn-default btn-sm pull-right" style="margin: 5px" id="open-terminal-dir-button" target="_blank" data-toggle="tooltip" title="<%= t('jobcomposer.open_dir_in_terminal') %>" role="button"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> <%= t('jobcomposer.open_terminal') %></a>
         </p>
       </div>
     </div>

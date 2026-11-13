@@ -38,14 +38,14 @@ class TemplatesController < ApplicationController
 
       data_location = OodAppkit.dataroot.join('templates').join(@template.name.parameterize.underscore)
 
-      if data_location.exist? then @template.errors.add(:name, "must be unique.") end
-      unless template_location.exist? then @template.errors.add(:path, "does not exist.") end
+      if data_location.exist? then @template.errors.add(:name, I18n.t('jobcomposer.template_error_name_unique')) end
+      unless template_location.exist? then @template.errors.add(:path, I18n.t('jobcomposer.template_error_path_missing')) end
 
       # validate path we are copying from. safe_path is a boolean, error contains the error string if false
       copy_safe, error = Filesystem.new.validate_path_is_copy_safe(template_location.to_s)
       @template.errors.add(:path, error) unless copy_safe
 
-      if template_location.file? then @template.errors.add(:path, "must point to a directory.") end
+      if template_location.file? then @template.errors.add(:path, I18n.t('jobcomposer.template_error_path_directory')) end
 
       if @template.errors.empty?
         FileUtils.mkdir_p(data_location)
@@ -72,7 +72,7 @@ class TemplatesController < ApplicationController
         format.html { redirect_to new_workflow_path }
         format.json { render action: 'show', status: :created, location: @template }
       else
-        format.html { render action: 'new', notice: "error creating template" }
+        format.html { render action: 'new', notice: I18n.t('jobcomposer.template_create_error') }
         format.json { render json: @template.errors, status: :unprocessable_entity }
       end
     end

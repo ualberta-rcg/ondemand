@@ -7,8 +7,7 @@ class WorkflowsController < ApplicationController
   # GET /workflows.json
   def index
     if OODClusters.none?
-      msg = 'There are no configured hosts that allow you to submit jobs. Please contact your system administrator.'
-      flash.now[:alert] = msg
+      flash.now[:alert] = I18n.t('jobcomposer.no_clusters_alert')
     end
 
     @default_template = Template.default
@@ -52,7 +51,7 @@ class WorkflowsController < ApplicationController
     respond_to do |format|
       if @workflow.save
         session[:selected_id] = @workflow.id
-        format.html { redirect_to workflows_url, notice: 'Job was successfully created.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_created') }
         format.json { render :show, status: :created, location: @workflow }
       else
         format.html { render :new }
@@ -69,7 +68,7 @@ class WorkflowsController < ApplicationController
 
     respond_to do |format|
       if @workflow.save
-        format.html { redirect_to workflows_url, notice: 'Job was successfully created.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_created') }
         format.json { render :show, status: :created, location: @workflow }
       else
         format.html { render :new }
@@ -96,7 +95,7 @@ class WorkflowsController < ApplicationController
 
     respond_to do |format|
       if @workflow.errors.empty? && @workflow.save
-        format.html { redirect_to workflows_url, notice: 'Job was successfully created.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_created') }
         format.json { render :show, status: :created, location: @workflow }
       else
         format.html { render :new_from_path }
@@ -113,7 +112,7 @@ class WorkflowsController < ApplicationController
     respond_to do |format|
       if @workflow.update(workflow_params)
         session[:selected_id] = @workflow.id
-        format.html { redirect_to workflows_path, notice: 'Job was successfully updated.' }
+        format.html { redirect_to workflows_path, notice: I18n.t('jobcomposer.job_updated') }
         format.json { render :show, status: :ok, location: @workflow }
       else
         format.html { render :edit }
@@ -131,15 +130,15 @@ class WorkflowsController < ApplicationController
 
     respond_to do |format|
       if !@workflow.submitted?
-        format.html { redirect_to workflows_url, alert: 'Job has not been submitted.' }
+        format.html { redirect_to workflows_url, alert: I18n.t('jobcomposer.job_not_submitted') }
         format.json { head :no_content }
       elsif @workflow.stop
-        format.html { redirect_to workflows_url, notice: 'Job was successfully stopped.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_stopped') }
         format.js   { render :show }
         format.json { head :no_content }
       else
         @errors = @workflow.errors
-        format.html { redirect_to workflows_url, alert: "Job failed to be stopped: #{@workflow.errors.to_a}" }
+        format.html { redirect_to workflows_url, alert: I18n.t('jobcomposer.job_stop_failed', errors: @workflow.errors.to_a) }
         format.json { render json: @workflow.errors, status: :internal_server_error }
       end
     end
@@ -152,10 +151,10 @@ class WorkflowsController < ApplicationController
 
     respond_to do |format|
       if @workflow.destroy
-        format.html { redirect_to workflows_url, notice: 'Job was successfully destroyed.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_destroyed') }
         format.json { head :no_content }
       else
-        format.html { redirect_to workflows_url, alert: "Job failed to be destroyed: #{@workflow.errors.to_a}" }
+        format.html { redirect_to workflows_url, alert: I18n.t('jobcomposer.job_destroy_failed', errors: @workflow.errors.to_a) }
         format.json { render json: @workflow.errors, status: :internal_server_error }
       end
     end
@@ -173,16 +172,16 @@ class WorkflowsController < ApplicationController
     respond_to do |format|
       if @workflow.submitted?
         session[:selected_id] = @workflow.id
-        format.html { redirect_to workflows_url, alert: 'Job has already been submitted.' }
+        format.html { redirect_to workflows_url, alert: I18n.t('jobcomposer.job_already_submitted') }
         format.json { head :no_content }
       elsif @workflow.submit
         session[:selected_id] = @workflow.id
-        format.html { redirect_to workflows_url, notice: 'Job was successfully submitted.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_submitted') }
         format.json { head :no_content }
       else
         # FIXME: instead of alert with html, better to have alert and alert_error_output on flash
         format.html do
-          flash = { alert: 'Failed to submit batch job:', alert_error: @workflow.errors.to_a.join("\n") }
+          flash = { alert: I18n.t('jobcomposer.job_submit_failed'), alert_error: @workflow.errors.to_a.join("\n") }
           redirect_to(workflows_url, flash: flash)
         end
         format.json { render json: @workflow.errors, status: :internal_server_error }
@@ -199,10 +198,10 @@ class WorkflowsController < ApplicationController
     respond_to do |format|
       if @workflow.errors.empty? && @workflow.save
         session[:selected_id] = @workflow.id
-        format.html { redirect_to workflows_url, notice: 'Job was successfully copied.' }
+        format.html { redirect_to workflows_url, notice: I18n.t('jobcomposer.job_copied') }
         format.json { render :show, status: :created, location: @workflow }
       else
-        format.html { redirect_to workflows_url, alert: "Job failed to be copied: #{@workflow.errors.to_a}" }
+        format.html { redirect_to workflows_url, alert: I18n.t('jobcomposer.job_copy_failed', errors: @workflow.errors.to_a) }
         format.json { render json: @workflow.errors, status: :unprocessable_entity }
       end
     end

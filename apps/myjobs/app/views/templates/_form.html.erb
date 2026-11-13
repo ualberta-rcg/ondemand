@@ -14,7 +14,7 @@
     </script>
 
     <div id="error_explanation">
-      <h4><%= pluralize(@template.errors.count, "error") %> prohibited this template from being saved:</h4>
+      <h4><%= t('jobcomposer.template_errors_heading', count: @template.errors.count) %></h4>
       <ul>
         <% @template.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -27,10 +27,10 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="field">
-        <%= f.text_field :path, label: "Path (the template will be created by copying files from this source path)", :id => "path_field" %>
+        <%= f.text_field :path, label: t('jobcomposer.template_path_label'), :id => "path_field" %>
       </div>
       <div>
-        <p class="small">&bull; If left blank, a default job script will be added to your new template.</p>
+        <p class="small">&bull; <%= t('jobcomposer.template_path_blank_help') %></p>
       </div>
     </div>
   </div>
@@ -41,7 +41,7 @@
         <%= f.text_field :name, :id => "name_field" %>
       </div>
       <div class="field">
-        <%= f.select :host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: "Cluster:" }, { selected: @template.host, class: "selectpicker", id: "server picker", required: true } %>
+        <%= f.select :host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: t('jobcomposer.cluster_label') }, { selected: @template.host, class: "selectpicker", id: "server picker", required: true } %>
       </div>
       <div class="field">
         <%= f.text_area :notes, :id => "notes_field" %>
@@ -50,8 +50,8 @@
 
         <%= f.hidden_field :script, { value: @template.script } %>
 
-        <%= f.submit "Save", :id => "save_button" %>
-        <%= link_to "Cancel", :new_workflow, :class => "btn btn-default" %>
+        <%= f.submit t('jobcomposer.save'), :id => "save_button" %>
+        <%= link_to t('jobcomposer.cancel'), :new_workflow, :class => "btn btn-default" %>
       </div>
     </div>
   </div>
