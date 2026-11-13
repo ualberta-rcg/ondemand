@@ -396,7 +396,51 @@ en-CA:
     system_apps_caption: System Installed App
     type: Type
     unknown: Unknown
-    uppy: Uppy
+    uppy:
+      strings:
+        addMore: Add more
+        addMoreFiles: Add more files
+        addingMoreFiles: Adding more files
+        back: Back
+        browseFiles: browse files
+        browseFolders: browse folders
+        cancel: Cancel
+        cancelUpload: Cancel upload
+        closeModal: Close Modal
+        complete: Complete
+        dashboardTitle: File Uploader
+        dashboardWindowTitle: File Uploader Window (Press escape to close)
+        done: Done
+        dropHint: Drop your files here
+        dropPasteBoth: 'Drop files here, %{browseFiles} or %{browseFolders}'
+        dropPasteFiles: 'Drop files here or %{browseFiles}'
+        dropPasteFolders: 'Drop files here or %{browseFolders}'
+        editFile: Edit file
+        editing: 'Editing %{file}'
+        emptyFolderAdded: No files were added from empty folder
+        error: Error
+        exceedsSize: '%{file} exceeds maximum allowed size of %{size}'
+        failedToUpload: 'Failed to upload %{file}'
+        folderAlreadyAdded: 'The folder "%{folder}" was already added'
+        myDevice: My Device
+        noDuplicates: "Cannot add the duplicate file '%{fileName}', it already exists"
+        pause: Pause
+        pauseUpload: Pause upload
+        paused: Paused
+        removeFile: Remove file
+        resume: Resume
+        resumeUpload: Resume upload
+        retry: Retry
+        retryUpload: Retry upload
+        save: Save
+        saveChanges: Save changes
+        showErrorDetails: Show error details
+        upload: Upload
+        uploadComplete: Upload complete
+        uploadFailed: Upload failed
+        uploadPaused: Upload paused
+        uploading: Uploading
+        xTimeLeft: '%{time} left'
     user: User
     user_configuration:
       support_ticket_error: support_ticket is misconfigured. "email" or "rt_api" sections are required in the configuration YAML.

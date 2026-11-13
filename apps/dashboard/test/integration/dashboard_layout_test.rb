@@ -34,6 +34,9 @@ class DashboardLayoutTest < ActionDispatch::IntegrationTest
 
     assert_select 'div.row', 0
     assert_select 'html[lang="en"]'
+    uppy_json = JSON.parse(css_select('#ood_config').first['data-uppy-locale'])
+    assert_kind_of Hash, uppy_json
+    assert_equal 'Cancel', uppy_json.dig('strings', 'cancel')
   end
 
   test 'html lang attribute emits valid BCP 47 tag for underscore locales' do

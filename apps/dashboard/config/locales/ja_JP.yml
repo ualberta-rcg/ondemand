@@ -393,7 +393,6 @@ ja_JP:
     system_apps_caption: システムにインストールされたアプリ
     type: タイプ
     unknown: 不明
-    uppy: Uppy
     user: ユーザー
     user_configuration:
       support_ticket_error: support_ticketが誤って構成されています。設定YAMLにバックエンド実装を追加してください。
