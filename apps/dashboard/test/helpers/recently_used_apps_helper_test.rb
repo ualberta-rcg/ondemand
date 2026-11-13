@@ -111,10 +111,19 @@ class RecentlyUsedAppsHelperTest < ActionView::TestCase
 
   test 'recently_used_apps_cached should should call Rails.cache with a block' do
     BatchConnect::Session.stubs({ cache_root: stub({ children: [] }) })
-    Rails.cache.expects(:fetch).with('recently_used_apps', expires_in: 1.hour).with_block_given.returns([])
+    Rails.cache.expects(:fetch).with("recently_used_apps_#{I18n.locale}", expires_in: 1.hour).with_block_given.returns([])
     result = recently_used_apps
 
     assert_equal [], result
+  end
+
+  test 'recently_used_apps caches separately per I18n.locale' do
+    BatchConnect::Session.stubs({ cache_root: stub({ children: [] }) })
+    Rails.cache.expects(:fetch).with('recently_used_apps_en', expires_in: 1.hour).returns([:en_app])
+    Rails.cache.expects(:fetch).with('recently_used_apps_fr-CA', expires_in: 1.hour).returns([:fr_app])
+
+    assert_equal [:en_app], I18n.with_locale(:en) { recently_used_apps }
+    assert_equal [:fr_app], I18n.with_locale(:'fr-CA') { recently_used_apps }
   end
 
   def create_cache_files(files)

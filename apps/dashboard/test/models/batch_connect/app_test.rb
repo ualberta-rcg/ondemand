@@ -392,4 +392,22 @@ class BatchConnect::AppTest < ActiveSupport::TestCase
       assert_equal expected_opts, app.submit_opts(app.build_session_context)
     end
   end
+
+  test 'from_token caches BatchConnect::App instances separately per locale' do
+    Dir.mktmpdir do |dir|
+      app_dir = Pathname.new(dir).join('localized_app')
+      app_dir.mkdir
+      app_dir.join('form.yml.erb').write("---\ntitle: \"Title-<%= I18n.locale %>\"\ncluster: 'oakley'\n")
+
+      SysRouter.stubs(:base_path).returns(Pathname.new(dir))
+      mem_cache = ActiveSupport::Cache::MemoryStore.new
+      Rails.stubs(:cache).returns(mem_cache)
+
+      en_app = I18n.with_locale(:en) { BatchConnect::App.from_token('sys/localized_app') }
+      fr_app = I18n.with_locale(:'fr-CA') { BatchConnect::App.from_token('sys/localized_app') }
+
+      assert_equal 'Title-en', en_app.title
+      assert_equal 'Title-fr-CA', fr_app.title
+    end
+  end
 end

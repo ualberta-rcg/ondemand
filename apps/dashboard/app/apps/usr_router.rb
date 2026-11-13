@@ -48,7 +48,7 @@ class UsrRouter
   # @param owner [String] username of user to get apps for
   # @return [Array<OodApp>] all apps owner has shared that user has access to
   def self.apps(owner: OodSupport::Process.user.name)
-    Rails.cache.fetch("usr_apps_#{owner}", expires_in: 6.hours) do
+    Rails.cache.fetch("usr_apps_#{owner}_#{I18n.locale}", expires_in: 6.hours) do
       target = base_path(owner: owner)
       if target.directory? && target.executable? && target.readable?
         target.children.map do |d|

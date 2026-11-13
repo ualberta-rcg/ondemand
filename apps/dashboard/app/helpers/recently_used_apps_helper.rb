@@ -4,7 +4,7 @@
 module RecentlyUsedAppsHelper
   # Returns the cached value for recently used apps
   def recently_used_apps
-    Rails.cache.fetch('recently_used_apps', expires_in: 1.hour) do
+    Rails.cache.fetch("recently_used_apps_#{I18n.locale}", expires_in: 1.hour) do
       load_recently_used_apps
     rescue StandardError => e
       msg = "Cannot load recently used apps from '#{BatchConnect::Session.cache_root}' because of error #{e}"
