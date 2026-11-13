@@ -1,6 +1,7 @@
 import { rootPath } from './config.js';
 import { replaceHTML } from './turbo_shim';
 import { toHumanSize } from './utils.js';
+import { t } from './i18n.js';
 
 jQuery(function() {
   $('[data-job-poller="true"]').each((_index, ele) => {
@@ -100,7 +101,7 @@ function moveCompletedPanel(id, newHTML) {
 }
 
 function updateProjectSize(element) {
-  const UNDETERMINED = 'Undetermined Size';
+  const UNDETERMINED = t('projects.undetermined_size');
   const $container = $(element);
 
   const projectPath = $container.data('url');

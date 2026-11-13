@@ -1,40 +1,44 @@
 'use strict';
 
+import { t } from './i18n.js';
+
 let newFieldTemplate = undefined;
 
-const newFieldData = {
-  bc_num_hours: {
-    label: "Hours",
-    help: "How long the job can run for.",
-  },
-  auto_queues: {
-    label: "Queues",
-    help: "Which queue the job will submit too.",
-  }, 
-  auto_accounts: {
-    label: "Account",
-    help: "The account the job will be submitted with."
-  },
-  auto_job_name: {
-    label: "Job Name",
-    help: "The name the job will have."
-  },
-  auto_log_location: {
-    label: "Log Location",
-    help: "The destination of the job's log output."
-  },
-  bc_num_nodes: {
-    label: "Nodes",
-    help: "How many nodes the job will run on."
-  },
-  auto_environment_variable: {
-    label: 'Environment Variable',
-    help: 'Add an environment variable.'
-  },
-  auto_cores: {
-    label: 'Cores',
-    help: 'How many cores the job will run on.'
-  }
+function getNewFieldData() {
+  return {
+    bc_num_hours: {
+      label: t('launcher_edit.hours_label'),
+      help: t('launcher_edit.hours_help'),
+    },
+    auto_queues: {
+      label: t('launcher_edit.queues_label'),
+      help: t('launcher_edit.queues_help'),
+    },
+    auto_accounts: {
+      label: t('launcher_edit.account_label'),
+      help: t('launcher_edit.account_help'),
+    },
+    auto_job_name: {
+      label: t('launcher_edit.job_name_label'),
+      help: t('launcher_edit.job_name_help'),
+    },
+    auto_log_location: {
+      label: t('launcher_edit.log_location_label'),
+      help: t('launcher_edit.log_location_help'),
+    },
+    bc_num_nodes: {
+      label: t('launcher_edit.nodes_label'),
+      help: t('launcher_edit.nodes_help'),
+    },
+    auto_environment_variable: {
+      label: t('launcher_edit.env_var_label'),
+      help: t('launcher_edit.env_var_help'),
+    },
+    auto_cores: {
+      label: t('launcher_edit.cores_label'),
+      help: t('launcher_edit.cores_help'),
+    }
+  };
 }
 
 function addNewFieldButton() {
@@ -43,18 +47,19 @@ function addNewFieldButton() {
 
 function enableNewFieldButton() {
   const newFieldButton = addNewFieldButton();
-  for(let newField in newFieldData) {
+  const fieldData = getNewFieldData();
+  for(let newField in fieldData) {
     const field = document.getElementById(`launcher_${newField}`);
     if(field === null) {
       // There is at least one field to be added.
       // Enabled add button.
-      newFieldButton.text('Add new option');
+      newFieldButton.text(t('launcher_edit.add_new_option'));
       newFieldButton.attr('disabled', false);
       return;
     }
   }
 
-  newFieldButton.text('No more options');
+  newFieldButton.text(t('launcher_edit.no_more_options'));
 }
 
 function addNewField(_event) {
@@ -77,14 +82,15 @@ function addNewField(_event) {
 }
 
 function updateNewFieldOptions(selectMenu) {
-  for(let newField in newFieldData) {
+  const fieldData = getNewFieldData();
+  for(let newField in fieldData) {
     const field = document.getElementById(`launcher_${newField}`);
 
     // if the field doesn't already exist, it's an option for a new field.
     if(field === null) {
       const option = document.createElement("option");
       option.value = newField;
-      option.text = newFieldData[newField].label;
+      option.text = fieldData[newField].label;
 
       selectMenu.add(option);
     }
@@ -92,7 +98,8 @@ function updateNewFieldOptions(selectMenu) {
 }
 
 function addHelpTextForOption(event) {
-  const helpText = newFieldData[event.target.value].help;
+  const fieldData = getNewFieldData();
+  const helpText = fieldData[event.target.value].help;
   const inProgressField = event.target.closest('[data-in-progress-field]');
 
   const helpTextDiv = inProgressField.querySelector('[data-new-field-help]');
@@ -176,9 +183,10 @@ function updateAutoEnvironmentVariable(event) {
   input_field.id = idString;
   input_field.name = nameString;
 
-  if (labelString.match(/Environment(&#32;|\s)Variable/)) {
+  const defaultEnvLabel = t('launcher_edit.env_var_label');
+  if (labelString.match(/Environment(&#32;|\s)Variable/) || labelString.includes(defaultEnvLabel)) {
     const label_field = formItemPreview.querySelector('label');
-    label_field.innerHTML = `Environment Variable: ${aev_name}`;
+    label_field.textContent = t('launcher_edit.env_var_key', { name: aev_name });
   }
 
   // Update the checkbox so that environment variables can be fixed when created
