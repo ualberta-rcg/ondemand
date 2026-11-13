@@ -1,53 +1,133 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
+---
 en:
   jobcomposer:
-    skip_navigation: "Skip Navigation"
+    account_label: 'Account:'
+    back: Back
+    cancel: Cancel
+    close: Close
+    cluster_label: 'Cluster:'
+    confirm_delete: Are you sure?
+    confirm_delete_template: Are you certain you want to delete this?
+    copy_template: Copy Template
+    create_from_path_title: Create a new job from a path
+    create_new_heading_html: Create New "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Create New Job
+    create_template: Create Template
+    create_template_from_job_title: Create template from selected job
+    delete: Delete
+    delete_job_title: Delete Job
     deprecation_warning_html: The Job Composer is deprecated and will be removed in Open OnDemand 5.0. Please transfer your jobs and templates to the <a href="%{projects_path}">Project Manager</a>.
-    # Site specific translations
-    options_account_help:  "Account is an optional field. If not set, the account may be auto-set by the submit filter."
+    edit: Edit
+    edit_files: Edit Files
+    folder_contents_label: 'Folder Contents:'
+    from_default_template: From Default Template
+    from_default_template_title: Create a new job from the default template
+    from_selected_job: From Selected Job
+    from_selected_job_title: Copy the selected job
+    from_specified_path: From Specified Path
+    from_template: From Template
+    from_template_title: Create a new job from a template you choose
+    invalid_cluster_html: Cluster is not valid! Edit <a href="#" id="edit-job-options-script-link">Job Options</a> to select a valid cluster.
+    invalid_script_html: Script is not valid! Edit <a href="#" id="edit-job-options-link">Job Options</a> to select a valid script.
+    job_already_submitted: Job has already been submitted.
+    job_array_request_label: 'Job Array Request:'
+    job_attributes_heading_html: Job Attributes <strong>(Optional)</strong>
+    job_copied: Job was successfully copied.
+    job_copy_failed: 'Job failed to be copied: %{errors}'
+    job_created: Job was successfully created.
+    job_destroy_failed: 'Job failed to be destroyed: %{errors}'
+    job_destroyed: Job was successfully destroyed.
+    job_details: Job Details
+    job_directory_missing: Job Directory is missing!
+    job_name_label: 'Job Name:'
+    job_not_submitted: Job has not been submitted.
+    job_stop_failed: 'Job failed to be stopped: %{errors}'
+    job_stopped: Job was successfully stopped.
+    job_submit_failed: 'Failed to submit batch job:'
+    job_submitted: Job was successfully submitted.
+    job_updated: Job was successfully updated.
+    loading: Loading
+    loading_job_info: Loading Job Information
+    nav_help: Help
+    nav_jobs: Jobs
+    nav_menu_aria: Job Composer Menu
+    nav_templates: Templates
+    new_job: New Job
+    new_template: New Template
+    new_template_title: Create a new template
+    no_clusters_alert: There are no configured hosts that allow you to submit jobs. Please contact your system administrator.
+    open_dir: Open Dir
+    open_dir_in_editor: Open Directory in File Editor
+    open_dir_in_file_manager: Open Directory in File Manager
+    open_dir_in_terminal: Open Directory in Terminal
+    open_editor: Open Editor
+    open_selected_job_in_terminal: Open Selected Job in the Terminal
+    open_selected_template_in_terminal: Open Selected Template in the Terminal
+    open_template_dir_in_file_manager: Open Template Directory in File Manager
+    open_terminal: Open Terminal
+    open_xdmod: Open XDMoD
+    options_account_help: Account is an optional field. If not set, the account may be auto-set by the submit filter.
+    options_account_title: Account
+    options_array_help: Job arrays are optional. e.g. 1-10
+    options_array_help_with_clusters: 'Job arrays are optional. OnDemand does not currently support job arrays for the clusters(s): %{cluster_list}.
 
-    # General translations
-    options_account_title: "Account"
-    options_array_help: "Job arrays are optional. e.g. 1-10"
-    options_array_help_with_clusters: |
-      Job arrays are optional. OnDemand does not currently support job arrays for the clusters(s): %{cluster_list}.
-    options_array_title: "Job array specification"
-    options_cluster_title: "Cluster"
-    options_errors: "Please fix the errors below."
-    options_name_title: "Name"
-    options_script_title: "Specify job script"
-    options_script_help: "Files larger than 65KB are omitted for the job script field"
-    options_title: "Job Options"
-    options_copy_environment: "Copy environment"
-    xdmod_url_warning_message: "This job may not appear in Open XDMoD until 24 hours after the completion of the job."
+      '
+    options_array_title: Job array specification
+    options_cluster_title: Cluster
+    options_copy_environment: Copy environment
+    options_errors: Please fix the errors below.
+    options_name_title: Name
+    options_script_help: Files larger than 65KB are omitted for the job script field
+    options_script_title: Specify job script
+    options_title: Job Options
+    other_valid_files: Other valid file(s)
+    page_title: Job Composer - %{site}
+    path_to_source_heading_html: Path to source <strong>(Required)</strong>
+    reset: Reset
+    reset_template_fields_title: Reset fields to template default
+    save: Save
+    script_contents_label: 'Script contents:'
+    script_location_label: 'Script location:'
+    script_name_form_label: 'Script Name:'
+    script_name_label: 'Script name:'
+    select_cluster_prompt: Select a cluster...
+    select_template_option: -- select a template --
+    selected_template_details: Selected Template Details
+    show: Show
+    show_batch_host_label: 'Batch host:'
+    show_dir_contents_label: 'Directory Contents:'
+    show_name_label: 'Name:'
+    show_staged_dir_label: 'Staged Dir:'
+    showing_job_title: Showing Job
+    skip_navigation: Skip Navigation
+    source_path_help: Enter the path to a directory on the file system. The contents of this path will be copied to a new workflow.
+    source_path_label: Source path
+    specify_job_host_and_script: Specify Job Host and Script
+    stop: Stop
+    stop_job_title: Stop Job
+    submit: Submit
+    submit_job_title: Submit Job
+    submit_script_title: Submit Script
+    submit_to_label: 'Submit to:'
+    suggested_files: Suggested file(s)
+    table_created: Created
+    table_id: ID
+    table_source: Source
+    table_status: Status
+    template_create_error: error creating template
+    template_error_name_unique: must be unique.
+    template_error_path_directory: must point to a directory.
+    template_error_path_missing: does not exist.
+    template_errors_heading:
+      one: '%{count} error prohibited this template from being saved:'
+      other: '%{count} errors prohibited this template from being saved:'
+    template_label: 'Template:'
+    template_location_label: 'Template location:'
+    template_path_blank_help: If left blank, a default job script will be added to your new template.
+    template_path_label: Path (the template will be created by copying files from this source path)
+    templates_subtitle: To create a new job, select a template to copy, fill out the form to the right, and click "Create New Job".
+    title: Job Composer
+    toggle_navigation: Toggle navigation
+    view_files: View Files
+    xdmod_url_warning_message: This job may not appear in Open XDMoD until 24 hours after the completion of the job.
     xdmod_url_warning_message_seconds_after_job_completion: 86400

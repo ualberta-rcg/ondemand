@@ -1,11 +1,11 @@
 <%# Uses rails_bootstrap_form gem. API at: https://github.com/bootstrap-ruby/rails-bootstrap-forms %>
 <%= bootstrap_form_for(workflow) do |f| %>
-  <%= f.alert_message "Please fix the errors below." %>
+  <%= f.alert_message t('jobcomposer.options_errors') %>
 
   <div class="form-group">
-    <label class="control-label">Template:</label>
+    <label class="control-label"><%= t('jobcomposer.template_label') %></label>
     <select class="form-control selectpicker" id="new_job_template_selectpicker">
-      <option disabled selected value> -- select a template -- </option>
+      <option disabled selected value> <%= t('jobcomposer.select_template_option') %> </option>
       <% @templates.each do |template| %>
           <option value="<%= template.to_json %>"><%= template.name %> -- <%= template.notes || template.path %></option>
       <% end %>
@@ -14,14 +14,14 @@
 
   <%= f.text_field :name, required: true, id: 'name_field' %>
 
-  <%= f.select :batch_host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: "Cluster:" }, { class: "selectpicker", id: "batch_host_select", required: true } %>
+  <%= f.select :batch_host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: t('jobcomposer.cluster_label') }, { class: "selectpicker", id: "batch_host_select", required: true } %>
   <%= f.text_field :script_path, required: true, id: "script_path_field" %>
 
-  <%= f.submit 'Save', class: 'btn btn-primary' %>
-  <%= f.button 'Reset', type: :reset, class: 'btn btn-default' %>
+  <%= f.submit t('jobcomposer.save'), class: 'btn btn-primary' %>
+  <%= f.button t('jobcomposer.reset'), type: :reset, class: 'btn btn-default' %>
 
-  <%= link_to 'Back', workflows_path, class: 'btn btn-default' %>
-  <%= link_to 'Show', workflow, class: 'btn btn-primary' unless workflow.new_record? %>
+  <%= link_to t('jobcomposer.back'), workflows_path, class: 'btn btn-default' %>
+  <%= link_to t('jobcomposer.show'), workflow, class: 'btn btn-primary' unless workflow.new_record? %>
 
-  <%= link_to '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Template'.html_safe, new_template_path, { class: 'btn btn-default pull-right', title: "Create a new template", 'data-toggle': 'tooltip', role: 'button' } %>
+  <%= link_to "<span class=\"glyphicon glyphicon-plus\" aria-hidden=\"true\"></span> #{ERB::Util.html_escape(t('jobcomposer.new_template'))}".html_safe, new_template_path, { class: 'btn btn-default pull-right', title: t('jobcomposer.new_template_title'), 'data-toggle': 'tooltip', role: 'button' } %>
 <% end %>

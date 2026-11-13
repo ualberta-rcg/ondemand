@@ -1,34 +1,34 @@
 <%# Uses rails_bootstrap_form gem. API at: https://github.com/bootstrap-ruby/rails-bootstrap-forms %>
 
 <%= bootstrap_form_for(workflow, url: create_from_path_path) do |f| %>
-    <%= f.alert_message "Please fix the errors below." %>
+    <%= f.alert_message t('jobcomposer.options_errors') %>
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        Path to source <strong>(Required)</strong>
+        <%= t('jobcomposer.path_to_source_heading_html') %>
       </div>
       <div class="panel-body">
-        <%= f.text_field :staging_template_dir, label: "Source path", required: true, help: "Enter the path to a directory on the file system. The contents of this path will be copied to a new workflow." %>
+        <%= f.text_field :staging_template_dir, label: t('jobcomposer.source_path_label'), required: true, help: t('jobcomposer.source_path_help') %>
       </div>
     </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        Job Attributes <strong>(Optional)</strong>
+        <%= t('jobcomposer.job_attributes_heading_html') %>
       </div>
       <div class="panel-body">
         <%= f.text_field :name %>
 
         <%= f.text_field :script_name %>
 
-        <%= f.select :batch_host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: "Cluster:", :include_blank => true }, { class: "selectpicker", id: "batch_host_select" } %>
+        <%= f.select :batch_host, OODClusters.map { |cluster| [ "#{cluster.title}", cluster.id ] }, { label: t('jobcomposer.cluster_label'), :include_blank => true }, { class: "selectpicker", id: "batch_host_select" } %>
 
-        <%= f.text_field :account, help: "Account is an optional field. If not set, the account may be auto-set by the submit filter." %>
+        <%= f.text_field :account, help: t('jobcomposer.options_account_help') %>
       </div>
     </div>
 
-    <%= f.submit 'Save', class: 'btn btn-primary' %>
-    <%= f.button 'Reset', type: :reset, class: 'btn btn-default' %>
+    <%= f.submit t('jobcomposer.save'), class: 'btn btn-primary' %>
+    <%= f.button t('jobcomposer.reset'), type: :reset, class: 'btn btn-default' %>
 
-    <%= link_to 'Back', workflows_path, class: 'btn btn-default' %>
+    <%= link_to t('jobcomposer.back'), workflows_path, class: 'btn btn-default' %>
 <% end %>

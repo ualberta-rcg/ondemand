@@ -1,0 +1,133 @@
+---
+fr-CA:
+  jobcomposer:
+    account_label: 'Compte :'
+    back: Retour
+    cancel: Annuler
+    close: Fermer
+    cluster_label: 'Grappe :'
+    confirm_delete: Êtes-vous certain?
+    confirm_delete_template: Êtes-vous certain de vouloir supprimer cet élément?
+    copy_template: Copier le modèle
+    create_from_path_title: Créer une nouvelle tâche à partir d'un chemin
+    create_new_heading_html: Créer « <span class="wrap-line" id="script-name-label">%{name}</span> »
+    create_new_job: Créer une nouvelle tâche
+    create_template: Créer un modèle
+    create_template_from_job_title: Créer un modèle à partir de la tâche sélectionnée
+    delete: Supprimer
+    delete_job_title: Supprimer la tâche
+    deprecation_warning_html: Le Compositeur de tâches est obsolète et sera retiré dans Open OnDemand 5.0. Veuillez transférer vos tâches et vos modèles vers le <a href="%{projects_path}">Gestionnaire de projets</a>.
+    edit: Modifier
+    edit_files: Modifier les fichiers
+    folder_contents_label: 'Contenu du dossier :'
+    from_default_template: À partir du modèle par défaut
+    from_default_template_title: Créer une nouvelle tâche à partir du modèle par défaut
+    from_selected_job: À partir de la tâche sélectionnée
+    from_selected_job_title: Copier la tâche sélectionnée
+    from_specified_path: À partir d'un chemin spécifié
+    from_template: À partir d'un modèle
+    from_template_title: Créer une nouvelle tâche à partir d'un modèle choisi
+    invalid_cluster_html: La grappe n'est pas valide! Modifiez les <a href="#" id="edit-job-options-script-link">Options de tâche</a> pour sélectionner une grappe valide.
+    invalid_script_html: Le script n'est pas valide! Modifiez les <a href="#" id="edit-job-options-link">Options de tâche</a> pour sélectionner un script valide.
+    job_already_submitted: La tâche a déjà été soumise.
+    job_array_request_label: 'Demande de tableau de tâches :'
+    job_attributes_heading_html: Attributs de la tâche <strong>(Facultatif)</strong>
+    job_copied: La tâche a été copiée avec succès.
+    job_copy_failed: 'Échec de la copie de la tâche : %{errors}'
+    job_created: La tâche a été créée avec succès.
+    job_destroy_failed: 'Échec de la suppression de la tâche : %{errors}'
+    job_destroyed: La tâche a été supprimée avec succès.
+    job_details: Détails de la tâche
+    job_directory_missing: Le répertoire de la tâche est introuvable!
+    job_name_label: 'Nom de la tâche :'
+    job_not_submitted: La tâche n'a pas été soumise.
+    job_stop_failed: 'Échec de l''arrêt de la tâche : %{errors}'
+    job_stopped: La tâche a été arrêtée avec succès.
+    job_submit_failed: 'Échec de la soumission de la tâche par lots :'
+    job_submitted: La tâche a été soumise avec succès.
+    job_updated: La tâche a été mise à jour avec succès.
+    loading: Chargement
+    loading_job_info: Chargement des renseignements sur la tâche
+    nav_help: Aide
+    nav_jobs: Tâches
+    nav_menu_aria: Menu du Compositeur de tâches
+    nav_templates: Modèles
+    new_job: Nouvelle tâche
+    new_template: Nouveau modèle
+    new_template_title: Créer un nouveau modèle
+    no_clusters_alert: Aucun hôte configuré ne vous permet de soumettre des tâches. Veuillez communiquer avec votre administrateur système.
+    open_dir: Ouvrir le rép.
+    open_dir_in_editor: Ouvrir dans l'éditeur de fichiers
+    open_dir_in_file_manager: Ouvrir le répertoire dans le gestionnaire de fichiers
+    open_dir_in_terminal: Ouvrir le répertoire dans le terminal
+    open_editor: Ouvrir l'éditeur
+    open_selected_job_in_terminal: Ouvrir la tâche sélectionnée dans le terminal
+    open_selected_template_in_terminal: Ouvrir le modèle sélectionné dans le terminal
+    open_template_dir_in_file_manager: Ouvrir le répertoire du modèle dans le gestionnaire de fichiers
+    open_terminal: Ouvrir le terminal
+    open_xdmod: Ouvrir XDMoD
+    options_account_help: Le compte est un champ facultatif. S'il n'est pas défini, il peut être attribué automatiquement par le filtre de soumission.
+    options_account_title: Compte
+    options_array_help: Les tableaux de tâches sont facultatifs, p. ex. 1-10
+    options_array_help_with_clusters: 'Les tableaux de tâches sont facultatifs. OnDemand ne prend pas encore en charge les tableaux de tâches pour les grappes : %{cluster_list}.
+
+      '
+    options_array_title: Spécification du tableau de tâches
+    options_cluster_title: Grappe
+    options_copy_environment: Copier l'environnement
+    options_errors: Veuillez corriger les erreurs ci-dessous.
+    options_name_title: Nom
+    options_script_help: Les fichiers de plus de 65 Ko sont omis du champ de script de tâche
+    options_script_title: Spécifier le script de tâche
+    options_title: Options de tâche
+    other_valid_files: Autre(s) fichier(s) valide(s)
+    page_title: Compositeur de tâches - %{site}
+    path_to_source_heading_html: Chemin vers la source <strong>(Obligatoire)</strong>
+    reset: Réinitialiser
+    reset_template_fields_title: Réinitialiser les champs aux valeurs par défaut du modèle
+    save: Enregistrer
+    script_contents_label: 'Contenu du script :'
+    script_location_label: 'Emplacement du script :'
+    script_name_form_label: 'Nom du script :'
+    script_name_label: 'Nom du script :'
+    select_cluster_prompt: Sélectionner une grappe...
+    select_template_option: -- sélectionner un modèle --
+    selected_template_details: Détails du modèle sélectionné
+    show: Afficher
+    show_batch_host_label: 'Grappe de soumission :'
+    show_dir_contents_label: 'Contenu du répertoire :'
+    show_name_label: 'Nom :'
+    show_staged_dir_label: 'Répertoire préparé :'
+    showing_job_title: Détails de la tâche
+    skip_navigation: Passer la navigation
+    source_path_help: Entrez le chemin d'un répertoire sur le système de fichiers. Son contenu sera copié dans une nouvelle tâche.
+    source_path_label: Chemin source
+    specify_job_host_and_script: Spécifier la grappe et le script de la tâche
+    stop: Arrêter
+    stop_job_title: Arrêter la tâche
+    submit: Soumettre
+    submit_job_title: Soumettre la tâche
+    submit_script_title: Script de soumission
+    submit_to_label: 'Soumettre à :'
+    suggested_files: Fichier(s) suggéré(s)
+    table_created: Créée le
+    table_id: ID
+    table_source: Source
+    table_status: État
+    template_create_error: erreur lors de la création du modèle
+    template_error_name_unique: doit être unique.
+    template_error_path_directory: doit pointer vers un répertoire.
+    template_error_path_missing: n'existe pas.
+    template_errors_heading:
+      one: '%{count} erreur a empêché l''enregistrement de ce modèle :'
+      other: '%{count} erreurs ont empêché l''enregistrement de ce modèle :'
+    template_label: 'Modèle :'
+    template_location_label: 'Emplacement du modèle :'
+    template_path_blank_help: Si laissé vide, un script de tâche par défaut sera ajouté à votre nouveau modèle.
+    template_path_label: Chemin (le modèle sera créé en copiant les fichiers de ce chemin source)
+    templates_subtitle: Pour créer une nouvelle tâche, sélectionnez un modèle à copier, remplissez le formulaire à droite, puis cliquez sur « Créer une nouvelle tâche ».
+    title: Compositeur de tâches
+    toggle_navigation: Basculer la navigation
+    view_files: Voir les fichiers
+    xdmod_url_warning_message: Cette tâche pourrait n'apparaître dans Open XDMoD que 24 heures après sa fin.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400
