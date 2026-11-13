@@ -25,7 +25,7 @@ module BatchConnect
       # @param token [String] the token
       # @return [App] generated object
       def from_token(token)
-        Rails.cache.fetch(["batch_connect_app", token].join("/"), expires_in: 6.hours) do
+        Rails.cache.fetch(['batch_connect_app', I18n.locale, token].join('/'), expires_in: 6.hours) do
           type, *app = token.split('/')
           case type
           when 'dev'

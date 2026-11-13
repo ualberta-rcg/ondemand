@@ -1,12 +1,18 @@
 # The router class for all development apps.
 class DevRouter
-  attr_reader :name, :owner, :caption, :category
+  attr_reader :name, :owner
 
   def initialize(name, owner=OodSupport::Process.user.name)
     @name = name.to_s
     @owner = owner
-    @caption = I18n.t('dashboard.development_apps_caption')
-    @category = "Sandbox Apps"
+  end
+
+  def caption
+    I18n.t('dashboard.development_apps_caption')
+  end
+
+  def category
+    I18n.t('dashboard.development_apps_category')
   end
 
   # Get array of apps for specified owner
@@ -14,7 +20,7 @@ class DevRouter
   # @param owner [String] username of user to get apps for
   # @return [Array<OodApp>] all apps owner has access to in sandbox
   def self.apps(owner: OodSupport::Process.user.name)
-    Rails.cache.fetch('dev_apps', expires_in: 6.hours) do
+    Rails.cache.fetch("dev_apps_#{I18n.locale}", expires_in: 6.hours) do
       target = base_path(owner: owner)
       if target.directory? && target.executable? && target.readable?
         target.children.map do |d|
