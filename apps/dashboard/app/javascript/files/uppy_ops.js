@@ -6,6 +6,7 @@ import _ from 'lodash';
 import {CONTENTID, EVENTNAME as DATATABLE_EVENTNAME} from './data_table.js';
 import { maxFileSize, csrfToken, uppyLocale } from '../config.js';
 import { fileOps } from './file_ops.js';
+import { t } from '../i18n.js';
 
 let uppy = null;
 
@@ -95,7 +96,7 @@ jQuery(function() {
     closeAfterFinish: true,
     allowMultipleUploads: false,
     onRequestCloseModal: () => closeAndResetUppyModal(uppy),
-    note: 'Empty directories will be included in the upload only when a directory upload is initiated via drag and drop. This is because the File and Directory Entries API is available only on a drop event, not during an input change event.'
+    note: t('files.uppy_empty_dir_note')
   });
 
   uppy.use(XHRUpload, {
@@ -295,14 +296,14 @@ function addOverwriteButton() {
   const uploadBtn = document.querySelector(uploadBtnSelector);
   const safeBtn = uploadBtn.cloneNode();
   safeBtn.id = safeBtnId;
-  safeBtn.textContent = 'Upload New Files';
+  safeBtn.textContent = t('files.upload_new_files');
   safeBtn.addEventListener('click', safeUpload);
   uploadBtn.classList.add('mx-3', 'uppy-StatusBar-actionBtn--upload-danger');
-  uploadBtn.textContent = 'Upload and Overwrite';
+  uploadBtn.textContent = t('files.upload_and_overwrite');
 
   const warning = document.createElement('span');
   warning.classList.add('text-danger', 'lh-base')
-  warning.textContent = 'Duplicate files identified. Uploading these files will overwrite existing content.'
+  warning.textContent = t('files.duplicate_files_warning')
   
   const actionsWrapper = document.querySelector('div.uppy-StatusBar-actions');
   actionsWrapper.prepend(safeBtn);
@@ -323,7 +324,7 @@ function updateUppyCount() {
   const uploadBtn = document.querySelector(uploadBtnSelector);
   if(document.getElementById(safeBtnId) === null && uploadBtn !== null) {
     const count = uppy.getFiles().length;
-    uploadBtn.textContent = `Upload ${count} file${(count == 1) ? '': 's'}`; 
+    uploadBtn.textContent = t('files.upload_count', { count: count }); 
   }
 }
 

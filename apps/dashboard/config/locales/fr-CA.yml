@@ -286,11 +286,82 @@ fr-CA:
         filter_label: 'Filtrer :'
         invalid_date: Date invalide
         rows_selected:
-          one: 1 ligne sélectionnée
+          one: "%{count} ligne sélectionnée"
           other: "%{count} lignes sélectionnées"
         showing_filtered_rows: Affichage de %{display} sur %{total} lignes
         showing_rows: Affichage de %{display} lignes
         status_summary: "%{showing} - %{selected}"
+      editor:
+        save_error: "Une erreur s'est produite lors de l'enregistrement de ce fichier !\n%{error}"
+        unsaved_changes: Vous avez des modifications non enregistrées !
+      files:
+        action_delete: Supprimer
+        action_download: Télécharger
+        action_edit: Modifier
+        action_rename: Renommer
+        action_view: Afficher
+        actions: Actions
+        cannot_navigate_file: Impossible de naviguer vers un fichier.
+        change_directory: Changer de répertoire
+        clipboard_description_html: "Copier ou déplacer les fichiers ci-dessous depuis <code>%{from}</code> vers le répertoire courant :"
+        contents_of_directory: Contenu du répertoire %{path}
+        copied_path: Chemin copié dans le presse-papiers !
+        copy: Copier
+        create_directory_error: "Une erreur s'est produite lors de la création du nouveau répertoire : %{error}"
+        create_file_error: "Une erreur s'est produite lors de la création du nouveau fichier : %{error}"
+        delete_confirm_text: "Êtes-vous sûr de vouloir supprimer les fichiers : %{files}"
+        delete_multiple_title: Supprimer %{count} fichiers sélectionnés ?
+        delete_single_title: Supprimer %{name} ?
+        deleting_files: "Suppression des fichiers... : "
+        directory: répertoire
+        directory_name_label: Nom du répertoire
+        download_error: "Erreur lors du téléchargement : %{error}"
+        duplicate_files_warning: Fichiers en double détectés. Le téléversement de ces fichiers écrasera le contenu existant.
+        file: fichier
+        filename_invalid_chars: Le nom de fichier ne peut pas contenir / ou ..
+        filename_label: Nom de fichier
+        globus_open: Ouvrir le répertoire courant avec Globus
+        globus_unavailable: Aucun point de terminaison Globus associé à ce répertoire
+        illegal_slash_in_filename: Caractère illégal (/) non autorisé dans le nom de fichier.
+        move: Déplacer
+        navigated_to: navigation vers %{path}
+        new_directory_title: Nouveau répertoire
+        new_file_title: Nouveau fichier
+        path_label: Chemin
+        poll_status_error: L'opération n'a peut-être pas abouti. Impossible de récupérer l'état de l'opération sur les fichiers.
+        preparing_download_dir: "préparation du téléchargement du répertoire : %{name}"
+        provide_absolute_pathname: Fournissez un chemin absolu
+        provide_directory_name: Fournissez un nom de répertoire sans caractère /
+        provide_non_empty_filename: Fournissez un nom de fichier non vide.
+        provide_rename_filename: Fournissez un nouveau nom de fichier
+        rename_title: Renommer
+        see_details: Voir les détails
+        select_row: Sélectionner la ligne
+        select_to_copy_move: Sélectionnez un ou plusieurs fichiers ou un répertoire à copier ou déplacer. Vous n'en avez sélectionné aucun.
+        select_to_delete: Sélectionnez un ou plusieurs fichiers ou un répertoire à supprimer. Vous n'en avez sélectionné aucun.
+        select_to_download: Sélectionnez un ou plusieurs fichiers ou un répertoire à télécharger. Vous n'en avez sélectionné aucun.
+        select_to_send: Sélectionnez au moins un fichier ou un répertoire à envoyer.
+        send_failed: Échec de l'envoi des informations sur les fichiers.
+        sent_successfully: Les informations sur les fichiers sélectionnés ont été envoyées avec succès.
+        show_dotfiles: Afficher les fichiers cachés
+        show_owner_mode: Afficher propriétaire/permissions
+        summary_copy_files: copier les fichiers
+        summary_move_files: déplacer les fichiers
+        summary_remove_files: supprimer les fichiers
+        summary_rename_file: renommer le fichier
+        token_missing_expired: Le jeton d'application est manquant ou expiré. Veuillez recommencer
+        transfer_error: "Une erreur s'est produite lors de la tentative de %{summary} : %{error}"
+        upload_and_overwrite: Téléverser et écraser
+        upload_count:
+          one: Téléverser %{count} fichier
+          other: Téléverser %{count} fichiers
+        upload_new_files: Téléverser les nouveaux fichiers
+        uppy_empty_dir_note: Les répertoires vides ne seront inclus dans le téléversement que lorsqu'un téléversement de répertoire est lancé par glisser-déposer, car l'API File and Directory Entries n'est disponible que lors d'un événement de dépôt.
+      path_selector:
+        directory_loaded: Répertoire chargé avec %{count} éléments
+        invalid_regex: L'expression régulière fournie pour ce sélecteur de chemin n'a pas pu être compilée
+        loading_directory: Chargement du contenu du répertoire
+        permission_denied_prefix: "Permission refusée : "
     launch: Lancer
     load_report: Rapport de chargement + %{node}
     locale_name: Français (Canada)

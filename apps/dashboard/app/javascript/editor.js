@@ -1,6 +1,7 @@
 'use strict';
 
 import ace from 'ace-code/esm-resolver';
+import { t } from './i18n';
 
 const KEY_PREFIX = "ood_editor_store_";
 
@@ -90,7 +91,7 @@ jQuery(function () {
 
       window.onbeforeunload = function (e) {
         if (!editor.session.getUndoManager().isClean()) {
-          return 'You have unsaved changes!';
+          return t('editor.unsaved_changes');
         } else {
           // return nothing
         };
@@ -186,7 +187,7 @@ jQuery(function () {
             if (error === undefined) {
               error = '';
             }
-            alert(`An error occurred attempting to save this file!\n${error}`);
+            alert(t('editor.save_error', { error: error }));
             toggleSaveSpinner();
           }
         });

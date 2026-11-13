@@ -232,10 +232,10 @@ class DataTable {
                     orderable: false,
                     defaultContent: '<input type="checkbox">',
                     render: (data, type, row, meta) => {
-                        return `<input type='checkbox' class='file-select' data-dl-url='${row.download_url}' aria-label="Select row">`;
+                        return `<input type='checkbox' class='file-select' data-dl-url='${row.download_url}' aria-label="${t('files.select_row')}">`;
                     }
                 },
-                { data: 'type', render: (data, type, row, meta) => data == 'd' ? '<span title="directory" class="fa fa-folder" style="color: gold"><span class="sr-only">directory</span></span>' : '<span title="file" class="fa fa-file" style="color: lightgrey"><span class="sr-only">file</span></span>' }, // type
+                { data: 'type', render: (data, type, row, meta) => data == 'd' ? `<span title="${t('files.directory')}" class="fa fa-folder" style="color: gold"><span class="sr-only">${t('files.directory')}</span></span>` : `<span title="${t('files.file')}" class="fa fa-file" style="color: lightgrey"><span class="sr-only">${t('files.file')}</span></span>` }, // type
                 { name: 'name', data: 'name', className: 'text-break', render: (data, type, row, meta) => this.renderNameColumn(data, type, row, meta) }, // name
                 { name: 'actions', orderable: false, searchable: false, data: null, render: (data, type, row, meta) => this.actionsBtnTemplate({ row_index: meta.row, file: row.type != 'd', data: row }) },
                 {
@@ -274,8 +274,8 @@ class DataTable {
             ]
         });
 
-        $('div.dt-search').prepend(`<label style="margin-right: 20px" for="show-dotfiles"><input type="checkbox" id="show-dotfiles" class="vertical-align-middle" ${this.getShowDotFiles() ? 'checked' : ''}> Show Dotfiles</label>`)
-        $('div.dt-search').prepend(`<label style="margin-right: 14px" for="show-owner-mode"><input type="checkbox" id="show-owner-mode" class="vertical-align-middle" ${this.getShowOwnerMode() ? 'checked' : ''}> Show Owner/Mode</label>`)
+        $('div.dt-search').prepend(`<label style="margin-right: 20px" for="show-dotfiles"><input type="checkbox" id="show-dotfiles" class="vertical-align-middle" ${this.getShowDotFiles() ? 'checked' : ''}> ${t('files.show_dotfiles')}</label>`)
+        $('div.dt-search').prepend(`<label style="margin-right: 14px" for="show-owner-mode"><input type="checkbox" id="show-owner-mode" class="vertical-align-middle" ${this.getShowOwnerMode() ? 'checked' : ''}> ${t('files.show_owner_mode')}</label>`)
 
         this.updateGlobus();
     }
@@ -315,8 +315,8 @@ class DataTable {
                 $('#select_all').click();
             }
 
-            $(`${CONTENTID}_caption`).text(`Contents of directory ${data.path}`);
-            ariaNotify(`navigated to ${data.path}`);
+            $(`${CONTENTID}_caption`).text(t('files.contents_of_directory', { path: data.path }));
+            ariaNotify(t('files.navigated_to', { path: data.path }));
             if (data.page_title) {
                 document.title = data.page_title;
             }
@@ -399,7 +399,7 @@ class DataTable {
                     if(disposition === null) {
                         return response;
                     } else {
-                        throw new Error("Cannot navigate to a file.");
+                        throw new Error(t('files.cannot_navigate_file'));
                     }
                 })
                 .then(response => response.json())
@@ -477,7 +477,7 @@ class DataTable {
         button.setAttribute('data-bs-toggle', 'dropdown');
         button.setAttribute('aria-haspopup', 'true');
         button.setAttribute('aria-expanded', 'false');
-        button.setAttribute('title', 'Actions');
+        button.setAttribute('title', t('files.actions'));
 
         // Create the icon inside the button
         const icon = document.createElement('span');
@@ -497,7 +497,7 @@ class DataTable {
                 dropdownMenu.appendChild(this.actionsDropdownItem(
                     ['view-file'],
                     rowIndex,
-                    '<i class="fas fa-eye" aria-hidden="true"></i> View',
+                    `<i class="fas fa-eye" aria-hidden="true"></i> ${t('files.action_view')}`,
                     data.url,
                 ));
             }
@@ -506,7 +506,7 @@ class DataTable {
                 dropdownMenu.appendChild(this.actionsDropdownItem(
                     ['edit-file'],
                     rowIndex,
-                    '<i class="fas fa-edit" aria-hidden="true"></i> Edit',
+                    `<i class="fas fa-edit" aria-hidden="true"></i> ${t('files.action_edit')}`,
                     data.edit_url,
                 ));
             }
@@ -516,7 +516,7 @@ class DataTable {
         dropdownMenu.appendChild(this.actionsDropdownItem(
             ['rename-file'],
             rowIndex,
-            '<i class="fas fa-font" aria-hidden="true"></i> Rename',
+            `<i class="fas fa-font" aria-hidden="true"></i> ${t('files.action_rename')}`,
         ));
 
         // Create Download option if it's enabled and the URL exists
@@ -524,7 +524,7 @@ class DataTable {
             dropdownMenu.appendChild(this.actionsDropdownItem(
                 ['download-file'],
                 rowIndex,
-                '<i class="fas fa-download" aria-hidden="true"></i> Download',
+                `<i class="fas fa-download" aria-hidden="true"></i> ${t('files.action_download')}`,
                 data.download_url,
             ));
         }
@@ -536,7 +536,7 @@ class DataTable {
         dropdownMenu.appendChild(this.actionsDropdownItem(
             ['delete-file', 'text-danger'],
             rowIndex,
-            '<i class="fas fa-trash" aria-hidden="true"></i> Delete',
+            `<i class="fas fa-trash" aria-hidden="true"></i> ${t('files.action_delete')}`,
         ));
 
         // Append the dropdown menu to the button group
