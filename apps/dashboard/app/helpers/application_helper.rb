@@ -100,17 +100,17 @@ module ApplicationHelper
   def status_text(status)
     case status
     when 'completed'
-      'Completed'
+      I18n.t('dashboard.status_completed')
     when 'running'
-      'Running'
+      I18n.t('dashboard.status_running')
     when 'queued'
-      'Queued'
+      I18n.t('dashboard.status_queued')
     when 'queued_held'
-      'Hold'
+      I18n.t('dashboard.status_hold')
     when 'suspended'
-      'Suspend'
+      I18n.t('dashboard.status_suspend')
     else
-      'Undetermined'
+      I18n.t('dashboard.status_undetermined')
     end
   end
 

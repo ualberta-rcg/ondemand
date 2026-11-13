@@ -93,7 +93,7 @@ class LaunchersController < ApplicationController
 
   def find_launcher
     @launcher = Launcher.find(show_launcher_params[:id], @project.directory)
-    redirect_to(project_path(@project.id), alert: "Cannot find launcher #{show_launcher_params[:id]}") if @launcher.nil?
+    redirect_to(project_path(@project.id), alert: I18n.t('dashboard.jobs_launchers_cannot_find', id: show_launcher_params[:id])) if @launcher.nil?
   end
 
   def create_launcher_params
@@ -121,6 +121,6 @@ class LaunchersController < ApplicationController
 
   def find_project
     @project = Project.find(show_launcher_params[:project_id])
-    redirect_to(projects_path, alert: "Cannot find project: #{show_launcher_params[:project_id]}") if @project.nil?
+    redirect_to(projects_path, alert: I18n.t('dashboard.jobs_project_cannot_find', project_id: show_launcher_params[:project_id])) if @project.nil?
   end
 end

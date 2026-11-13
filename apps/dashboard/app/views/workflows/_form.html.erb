@@ -18,12 +18,12 @@
       <div class='card-body'>
         <% launcher_error = @workflow.errors.select{|e| e.attribute.to_s == 'launcher_ids' }.first %>
         <div class="field">
-          <strong>Pick Launchers</strong><br>
+          <strong><%= t('dashboard.jobs_workflow_pick_launchers') %></strong><br>
           <div class="p-3 <%= launcher_error.nil? ? '' : 'border border-danger rounded is-invalid'%>">
           <div class="form-check">
             <%= check_box_tag "select_all_launchers", "", false,
                   id: "select_all_launchers", class: "form-check-input" %>
-            <%= label_tag "select_all_launchers", "Select All", class: "form-check-label" %>
+            <%= label_tag "select_all_launchers", t('dashboard.select_all'), class: "form-check-label" %>
           </div>
 
           <% @launchers.each do |launcher| %>
@@ -42,7 +42,7 @@
           <% end %>
 
           <div class="field mt-3">
-            <strong>Synchronization</strong><br>
+            <strong><%= t('dashboard.jobs_workflow_synchronization') %></strong><br>
             <div class="form-check form-switch mt-2">
               <%= hidden_field_tag "workflow[sync_key_enabled]", "0" %>
               <%= check_box_tag "workflow[sync_key_enabled]", "1",
@@ -50,7 +50,7 @@
                                 id: "workflow_sync_key_enabled",
                                 class: "form-check-input" %>
               <%= label_tag "workflow_sync_key_enabled",
-                            "Enable OOD_WORKFLOW_SYNC_KEY #{form_label_tooltip(I18n.t('dashboard.jobs_workflow_sync_key_help'))}".html_safe,
+                            "#{t('dashboard.jobs_workflow_enable_sync_key')} #{form_label_tooltip(I18n.t('dashboard.jobs_workflow_sync_key_help'))}".html_safe,
                             class: "form-check-label" %>
             </div>
           </div>
@@ -61,7 +61,7 @@
 </div>
 <br>
 <p>
-  <%= form.submit I18n.t('dashboard.save'), class: 'btn btn-primary', title: 'Save project' %>
-  <%= form.button I18n.t('dashboard.reset'), type: :reset, class: 'btn btn-default', title: 'Clear form fields' %>
-  <%= link_to I18n.t('dashboard.back'), project_path(params[:project_id]), class: 'btn btn-default', title: 'Return to projects page' %>
+  <%= form.submit I18n.t('dashboard.save'), class: 'btn btn-primary', title: t('dashboard.jobs_save_project_title') %>
+  <%= form.button I18n.t('dashboard.reset'), type: :reset, class: 'btn btn-default', title: t('dashboard.jobs_clear_form_fields') %>
+  <%= link_to I18n.t('dashboard.back'), project_path(params[:project_id]), class: 'btn btn-default', title: t('dashboard.jobs_return_to_projects') %>
 </p>

@@ -1,11 +1,11 @@
 <%= javascript_include_tag('projects_index', nonce: true, type: 'module') %>
 
 <div class='page-header text-center'>
-  <h1>Project Manager</h1>
+  <h1><%= t('dashboard.jobs_project_manager') %></h1>
 </div>
 
 <div class="row mt-3">
-  <div class="col-md-8 col-lg-9 order-2 order-md-1" role="region" aria-label="Project list">
+  <div class="col-md-8 col-lg-9 order-2 order-md-1" role="region" aria-label="<%= t('dashboard.jobs_project_list_aria') %>">
     <div class="row">
       <% @projects.each do |project| %>
         <div id="<%= project.id %>" class="project-card">

@@ -4,7 +4,11 @@ content_for :head do
 end
 
 content_for :title do
-  "File Editor - #{@user_configuration.dashboard_title}" + (@path.nil? ? "" : " - #{@path.basename.to_s}")
+  if @path.nil?
+    t('dashboard.page_title', page: t('dashboard.file_editor'), site: @user_configuration.dashboard_title)
+  else
+    t('dashboard.page_title_with_dir', page: t('dashboard.file_editor'), site: @user_configuration.dashboard_title, dir: @path.basename.to_s)
+  end
 end
 %>
 

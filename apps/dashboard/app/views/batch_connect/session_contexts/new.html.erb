@@ -92,7 +92,7 @@ locals: {
       <%- end -%>
     </div>
     <% unless @app.version.nil? %>
-      <p id="app_version" class="text-muted mt-3 mb-0"><small>version: <%= @app.version %></small></p>
+      <p id="app_version" class="text-muted mt-3 mb-0"><small><%= t('dashboard.batch_connect_app_version', version: @app.version) %></small></p>
     <% end %>
   </div><!-- /.col-md-6 -->
 </div><!-- /.row -->

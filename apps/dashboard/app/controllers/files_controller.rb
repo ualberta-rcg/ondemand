@@ -200,9 +200,9 @@ class FilesController < ApplicationController
     editor_max = [::Configuration.file_editor_max_size, ::Configuration.download_file_max].min
 
     if !@path.editable?
-      redirect_back(fallback_location: root_path, alert: "#{@path} is not an editable file")
+      redirect_back(fallback_location: root_path, alert: I18n.t('dashboard.files_not_editable', path: @path))
     elsif @path.size > editor_max
-      redirect_back(fallback_location: root_path, alert: "#{@path} exceeds editor limit of #{number_to_human_size(editor_max)}. Please download the file to edit or view it locally.")
+      redirect_back(fallback_location: root_path, alert: I18n.t('dashboard.files_exceeds_editor_limit', path: @path, limit: number_to_human_size(editor_max)))
     else
       @content = @path.read
       render :edit, status: status, layout: 'editor'

@@ -102,9 +102,9 @@ class ApplicationController < ActionController::Base
               source.to_s
             end
 
-          headline = "Could not render announcement '#{short_name}' because of error"
+          headline = I18n.t('dashboard.announcements_render_error', name: short_name)
           details = [a.error_class.presence, a.error_message.presence].compact.join(': ')
-          details = a.message.presence || a.msg.presence || 'Error parsing announcement.' if details.blank?
+          details = a.message.presence || a.msg.presence || I18n.t('dashboard.announcements_parse_error') if details.blank?
 
           helpers.content_tag(:div) do
             helpers.safe_join(

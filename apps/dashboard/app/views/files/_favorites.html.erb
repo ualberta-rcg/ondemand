@@ -1,7 +1,7 @@
 <div id="clipboard" class="sticky-top">
 </div>
 
-<ul id="favorites" class="nav nav-pills flex-column" role="region" aria-label="Favorites">
+<ul id="favorites" class="nav nav-pills flex-column" role="region" aria-label="<%= t('dashboard.favorites') %>">
   <li role="presentation" class="nav-item">
     <%= link_to files_path(Dir.home), class: "nav-link d bg-light text-break" do %>
       <%= fa_icon "home", classes: '' %>

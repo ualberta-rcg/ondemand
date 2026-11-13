@@ -24,17 +24,17 @@ module ProjectsHelper
   def native_message(native)
     state = native[:state] || native[:job_state]
     state = state.to_s.strip
-    msg = "Current job state is '#{state}'"
+    msg = I18n.t('dashboard.jobs_native_state', state: state)
 
     reason = native[:reason] || native[:comment]
     reason = reason.to_s.strip
-    msg += " because of '#{reason}'" if reason.present? && reason != 'None'
+    msg += I18n.t('dashboard.jobs_native_reason', reason: reason) if reason.present? && reason != 'None'
 
     dependency = native[:dependency] || native[:depend]
     dependency = dependency.to_s.strip
     if dependency.present? && dependency != '(null)'
       dependency = truncate(dependency.gsub('afterok:', ' '), length: 50)
-      msg += ". Job depends on job-id#{dependency}"
+      msg += I18n.t('dashboard.jobs_native_dependency', dependency: dependency)
     end
 
     msg += '.'

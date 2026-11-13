@@ -5,15 +5,15 @@
         image_tag(
           "OpenOnDemand_powered_by_RGB.svg",
           class: "footer-logo",
-          alt: "Powered by Open OnDemand",
+          alt: t('dashboard.footer_powered_by'),
           height: "40px",
         )
       %>
     <% end %>
     <div class="text-muted small mt-1">
-      Open source software.
-      <%= link_to "Contribute on GitHub", "https://github.com/OSC/ondemand", class: "text-decoration-underline" %>
+      <%= t('dashboard.footer_open_source') %>
+      <%= link_to t('dashboard.footer_contribute'), "https://github.com/OSC/ondemand", class: "text-decoration-underline" %>
     </div>
   </div>
-  <span id="ood_version">OnDemand version: <%= Configuration.ood_version %><br><a href="https://openondemand.org/licensing">Software License Notice</a></span>
+  <span id="ood_version"><%= t('dashboard.footer_version', version: Configuration.ood_version) %><br><a href="https://openondemand.org/licensing"><%= t('dashboard.footer_license') %></a></span>
 </footer>

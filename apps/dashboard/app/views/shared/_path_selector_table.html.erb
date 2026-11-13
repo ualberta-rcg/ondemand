@@ -26,7 +26,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div class="modal-title h5" id="modal-path-selector-title"><%= popup_title %></div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="<%= t('dashboard.close') %>"></button>
       </div>
       <div class="modal-body">
       
@@ -35,7 +35,7 @@
           <% if favorites %>
             <div class="col-sm-5">
               <div class="panel panel-default">
-                <div class="panel-heading">Favorites</div>
+                <div class="panel-heading"><%= t('dashboard.favorites') %></div>
                 <div id="favorites" class="list-group text-nowrap">
                   <% homedir = FavoritePath.new(Dir.home, title:I18n.t('dashboard.home_directory')) %>
                   <%= render(partial: 'batch_connect/session_contexts/favorites', collection: favorites.unshift(homedir), as: :path) %>
@@ -45,7 +45,7 @@
           <% end %>
 
             <div class="<%= favorites ? 'col-sm-7' : 'col-sm-12' %>">
-              <nav aria-label="<%= "#{popup_title} Breadcrumb" %>">
+              <nav aria-label="<%= t('dashboard.path_selector_breadcrumb_aria', title: popup_title) %>">
                 <ol id="<%= breadcrumb_id %>" class="breadcrumb breadcrumb-no-delimiter rounded">
                 </ol>
               </nav>
@@ -56,15 +56,15 @@
 
               <div class="d-flex justify-content-center" id="<%= table_id %>_spinner">
                 <div class="loading-icon spinner-border rem-5" role="status">
-                  <span class="sr-only" aria-live="polite">Loading...</span> 
+                  <span class="sr-only" aria-live="polite"><%= t('dashboard.loading') %></span> 
                 </div>
               </div>
               <table class="table table-hover table-condensed d-table w-100" id="<%= table_id %>">
-                <caption>Choose a file or directory to use in the form.</caption>
+                <caption><%= t('dashboard.path_selector_caption') %></caption>
                 <thead>
                   <tr>
-                    <th>Type<span aria-hidden="true"></span></th>
-                    <th>Name<span aria-hidden="true"></span></th>
+                    <th><%= t('dashboard.type') %><span aria-hidden="true"></span></th>
+                    <th><%= t('dashboard.name') %><span aria-hidden="true"></span></th>
                   </tr>
                 </thead>
                 <tbody>
