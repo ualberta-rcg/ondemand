@@ -355,6 +355,39 @@ en-CA:
         invalid_regex: The regular expression provided for this path selector did not compile
         loading_directory: Loading directory contents
         permission_denied_prefix: "Permission denied: "
+      launcher_edit:
+        account_help: The account the job will be submitted with.
+        account_label: Account
+        add_new_option: Add new option
+        cores_help: How many cores the job will run on.
+        cores_label: Cores
+        env_var_help: Add an environment variable.
+        env_var_key: "Environment Variable: %{name}"
+        env_var_label: Environment Variable
+        hours_help: How long the job can run for.
+        hours_label: Hours
+        job_name_help: The name the job will have.
+        job_name_label: Job Name
+        log_location_help: The destination of the job's log output.
+        log_location_label: Log Location
+        no_more_options: No more options
+        nodes_help: How many nodes the job will run on.
+        nodes_label: Nodes
+        queues_help: Which queue the job will submit too.
+        queues_label: Queues
+      projects:
+        undetermined_size: Undetermined Size
+      workflows:
+        begin_from_launcher: Begin workflow from launcher %{title}
+        bidirectional_not_allowed: Bidirectional edges are not allowed.
+        cyclic_dependency: Adding this edge will create a cyclic dependency among the launchers.
+        edge_aria_label: Edge from %{from} to %{to}
+        launcher_aria_label: "Launcher: %{title}"
+        launcher_exists: Launcher already exists, please select a different launcher
+        load_launcher_failed: Failed to load launcher HTML. Please try again.
+        no_empty_cells: No empty grid cells available!
+        save_failed: Failed to save workflow. Check console for details.
+        select_launcher: Please select a launcher
     launch: Launch
     load_report: Load Report + %{node}
     logo_alt_text: Welcome to Open OnDemand

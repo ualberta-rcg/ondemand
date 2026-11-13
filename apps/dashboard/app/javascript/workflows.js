@@ -1,5 +1,6 @@
 import { DAG } from './dag.js';
 import { rootPath } from './config.js';
+import { t } from './i18n.js';
 
 /*
  * Helper Classes to support Drag and Drop UI 
@@ -69,7 +70,7 @@ class WorkflowState {
       }
     } catch (err) {
       console.error('Error saving workflow:', err);
-      alert('Failed to save workflow. Check console for details.');
+      alert(t('workflows.save_failed'));
     }
   }
 
@@ -299,6 +300,7 @@ class JobPoller {
 
     const closeBtn = document.createElement('button');
     closeBtn.className = 'job-info-close';
+    closeBtn.setAttribute('aria-label', t('common.close'));
     closeBtn.textContent = '×';
     closeBtn.addEventListener('click', () => overlay.remove());
 
@@ -595,7 +597,7 @@ class DragController {
         if (!occupied) return { row: r, col: c };
       }
     }
-    alert('No empty grid cells available!');
+    alert(t('workflows.no_empty_cells'));
     return null;
   }
 
@@ -653,14 +655,14 @@ class DragController {
 
     const reverseEdge = edges.find(e => e.fromBox.id === toId && e.toBox.id === fromId);
     if (reverseEdge) {
-      alert('Bidirectional edges are not allowed.');
+      alert(t('workflows.bidirectional_not_allowed'));
       return;
     }
 
     dag.addEdge(fromId, toId);
     if (dag.hasCycle()) {
       dag.removeEdge(fromId, toId);
-      alert('Adding this edge will create a cyclic dependency among the launchers.');
+      alert(t('workflows.cyclic_dependency'));
       return;
     }
 
@@ -675,7 +677,7 @@ class DragController {
     line.classList.add('edge');
     line.setAttribute('tabindex', '0');
     line.setAttribute('role', 'button');
-    line.setAttribute('aria-label', `Edge from ${fromTitle} to ${toTitle}`);
+    line.setAttribute('aria-label', t('workflows.edge_aria_label', { from: fromTitle, to: toTitle }));
     edgesSvg.appendChild(line);
 
     line.addEventListener('keydown', (e) => {
@@ -713,16 +715,18 @@ class DragController {
       $.get(url, function(html) {
         const $launcher = $(`
           <div class='launcher-box' id='launcher_${id}' data-row='${row}' data-col='${col}'
-               tabindex='0' role='group' aria-label='Launcher: ${title}'>
+               tabindex='0' role='group'>
             <div class='row'>
-              <div class='col launcher-title-grab'>${title}</div>
+              <div class='col launcher-title-grab'></div>
             </div>
             ${html}
           </div>
         `);
+        $launcher.attr('aria-label', t('workflows.launcher_aria_label', { title: title }));
+        $launcher.find('.launcher-title-grab').text(title);
 
         $launcher.find('button.launcher-button[id^="launch_"]')
-          .attr('aria-label', `Begin workflow from launcher ${title}`);
+          .attr('aria-label', t('workflows.begin_from_launcher', { title: title }));
 
         edgesSvg ? edgesSvg.before($launcher[0]) : $('#stage').append($launcher);
 
@@ -772,7 +776,7 @@ class DragController {
 
         resolve();
       }).fail(function() {
-        alert('Failed to load launcher HTML. Please try again.');
+        alert(t('workflows.load_launcher_failed'));
         reject();
       });
     });
@@ -822,9 +826,9 @@ class DragController {
 
     try {
       const launcherId = selectedLauncher.value;
-      if (!launcherId) return alert('Please select a launcher');
+      if (!launcherId) return alert(t('workflows.select_launcher'));
       const launcherExists = document.getElementById(`launcher_${launcherId}`);
-      if (launcherExists) return alert('Launcher already exists, please select a different launcher');
+      if (launcherExists) return alert(t('workflows.launcher_exists'));
 
       const title = selectedLauncher.options[selectedLauncher.selectedIndex].text;
       const spawn = gridSpawn();

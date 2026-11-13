@@ -355,6 +355,39 @@ fr-CA:
         invalid_regex: L'expression régulière fournie pour ce sélecteur de chemin n'a pas pu être compilée
         loading_directory: Chargement du contenu du répertoire
         permission_denied_prefix: "Permission refusée : "
+      launcher_edit:
+        account_help: Le compte avec lequel la tâche sera soumise.
+        account_label: Compte
+        add_new_option: Ajouter une nouvelle option
+        cores_help: Le nombre de cœurs sur lesquels la tâche s'exécutera.
+        cores_label: Cœurs
+        env_var_help: Ajouter une variable d'environnement.
+        env_var_key: "Variable d'environnement : %{name}"
+        env_var_label: Variable d'environnement
+        hours_help: La durée maximale d'exécution de la tâche.
+        hours_label: Heures
+        job_name_help: Le nom attribué à la tâche.
+        job_name_label: Nom de la tâche
+        log_location_help: L'emplacement du fichier journal de la tâche.
+        log_location_label: Emplacement du journal
+        no_more_options: Plus d'options disponibles
+        nodes_help: Le nombre de nœuds sur lesquels la tâche s'exécutera.
+        nodes_label: Nœuds
+        queues_help: La file d'attente à laquelle la tâche sera soumise.
+        queues_label: Files d'attente
+      projects:
+        undetermined_size: Taille indéterminée
+      workflows:
+        begin_from_launcher: Démarrer le flux de travail depuis le lanceur %{title}
+        bidirectional_not_allowed: Les connexions bidirectionnelles ne sont pas autorisées.
+        cyclic_dependency: L'ajout de cette connexion créera une dépendance cyclique entre les lanceurs.
+        edge_aria_label: Connexion de %{from} vers %{to}
+        launcher_aria_label: "Lanceur : %{title}"
+        launcher_exists: Ce lanceur existe déjà, veuillez en sélectionner un autre
+        load_launcher_failed: Échec du chargement du HTML du lanceur. Veuillez réessayer.
+        no_empty_cells: Aucune cellule vide disponible dans la grille !
+        save_failed: Échec de l'enregistrement du flux de travail. Consultez la console pour plus de détails.
+        select_launcher: Veuillez sélectionner un lanceur
     launch: Lancer
     load_report: Rapport de chargement + %{node}
     logo_alt_text: Bienvenue dans Open OnDemand
