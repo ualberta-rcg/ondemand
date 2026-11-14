@@ -92,7 +92,7 @@ class AppLocaleSync
 
   def extract_app_source(app_dir)
     dir = Pathname.new(app_dir.to_s)
-    data = {}
+    data = extract_existing_en_source(dir)
 
     manifest_path = dir.join('manifest.yml')
     if manifest_path.file?
@@ -103,13 +103,13 @@ class AppLocaleSync
           val = raw_manifest[field] || raw_manifest[field.to_sym]
           manifest_out[field] = val.to_s if val.is_a?(String) && !val.strip.empty?
         end
-        data['manifest'] = manifest_out unless manifest_out.empty?
+        data['manifest'] = (data['manifest'] || {}).merge(manifest_out) unless manifest_out.empty?
       end
     end
 
     raw_form = load_raw_form_config(dir)
     if raw_form.is_a?(Hash)
-      form_out = {}
+      form_out = (data['form'] || {}).dup
       %w[title description].each do |field|
         val = raw_form[field] || raw_form[field.to_sym]
         form_out[field] = val.to_s if val.is_a?(String) && !val.strip.empty?
@@ -117,14 +117,17 @@ class AppLocaleSync
 
       attrs_raw = raw_form['attributes'] || raw_form[:attributes]
       if attrs_raw.is_a?(Hash)
-        attrs_out = {}
+        attrs_out = (form_out['attributes'] || {}).dup
         attrs_raw.each do |attr_id, attr_cfg|
           next unless attr_cfg.is_a?(Hash)
 
           widget = (attr_cfg['widget'] || attr_cfg[:widget]).to_s
-          next if widget == 'hidden_field'
+          if widget == 'hidden_field'
+            attrs_out.delete(attr_id.to_s)
+            next
+          end
 
-          entry = {}
+          entry = (attrs_out[attr_id.to_s] || {}).dup
           %w[label help header].each do |f|
             val = attr_cfg[f] || attr_cfg[f.to_sym]
             entry[f] = val.to_s if val.is_a?(String) && !val.strip.empty?
@@ -133,7 +136,7 @@ class AppLocaleSync
           opts = attr_cfg['options'] || attr_cfg[:options]
           if opts.is_a?(Array)
             opts_map = extract_translatable_options(opts)
-            entry['options'] = opts_map unless opts_map.empty?
+            entry['options'] = (entry['options'] || {}).merge(opts_map) unless opts_map.empty?
           end
 
           attrs_out[attr_id.to_s] = entry unless entry.empty?
@@ -148,6 +151,56 @@ class AppLocaleSync
   end
 
   private
+
+  def extract_existing_en_source(dir)
+    en_file = dir.join('locales', 'en.yml')
+    return {} unless en_file.file?
+
+    en_data = deep_stringify(load_existing_catalog(en_file, 'en'))
+    return {} unless en_data.is_a?(Hash)
+
+    out = {}
+    if en_data['manifest'].is_a?(Hash)
+      manifest_out = en_data['manifest'].slice('name', 'description', 'caption').select do |_k, v|
+        v.is_a?(String) && !v.strip.empty?
+      end
+      out['manifest'] = manifest_out unless manifest_out.empty?
+    end
+
+    if en_data['form'].is_a?(Hash)
+      form_out = en_data['form'].slice('title', 'description').select do |_k, v|
+        v.is_a?(String) && !v.strip.empty?
+      end
+
+      if en_data['form']['attributes'].is_a?(Hash)
+        attrs_out = {}
+        en_data['form']['attributes'].each do |attr_id, attr_cfg|
+          next unless attr_cfg.is_a?(Hash)
+
+          entry = attr_cfg.slice('label', 'help', 'header').select do |_k, v|
+            v.is_a?(String) && !v.strip.empty?
+          end
+          if attr_cfg['options'].is_a?(Hash)
+            opts_map = attr_cfg['options'].each_with_object({}) do |(ok, ov), acc|
+              s = ov.to_s
+              next if s.strip.empty? || s.match?(NON_PROSE_OPTION_REGEX)
+
+              acc[ok.to_s] = s
+            end
+            entry['options'] = opts_map unless opts_map.empty?
+          end
+          attrs_out[attr_id.to_s] = entry unless entry.empty?
+        end
+        form_out['attributes'] = attrs_out unless attrs_out.empty?
+      end
+
+      out['form'] = form_out unless form_out.empty?
+    end
+
+    out
+  rescue StandardError
+    {}
+  end
 
   def load_raw_form_config(dir)
     if defined?(BatchConnect::App) && defined?(PathRouter) &&
@@ -272,7 +325,7 @@ class AppLocaleSync
     matched_key, = en_map.find { |_k, v| v.is_a?(String) && !v.include?('%{') && v.casecmp?(cleaned) }
     return nil unless matched_key
 
-    loc_val = I18n.t("dashboard.smart_attributes.#{matched_key}", locale: sym_loc, default: nil)
+    loc_val = I18n.t("dashboard.smart_attributes.#{matched_key}", locale: sym_loc, fallback: false, default: nil)
     loc_val.presence
   end
 
