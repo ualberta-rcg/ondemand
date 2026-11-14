@@ -13,14 +13,48 @@ require 'uri'
 class OodLocaleConverter
   TOKEN_PREFIX = '__OODTOK'
   TOKEN_SUFFIX = '__'
+  DEFAULT_TRANSLATE_ENV = 'translate.env'
+
+  def self.load_translate_env(path = nil)
+    env_file = path.presence || ENV['OOD_TRANSLATE_ENV_FILE'].presence || default_translate_env_path
+    return {} unless env_file && File.file?(env_file) && File.readable?(env_file)
+
+    if defined?(Dotenv)
+      Dotenv.parse(env_file)
+    else
+      parse_simple_env(env_file)
+    end
+  rescue StandardError
+    {}
+  end
+
+  def self.default_translate_env_path
+    cfg_dir = defined?(Configuration) && Configuration.respond_to?(:config_directory) ? Configuration.config_directory.to_s : '/etc/ood/config'
+    File.join(cfg_dir, DEFAULT_TRANSLATE_ENV)
+  end
+
+  def self.parse_simple_env(file)
+    File.readlines(file, chomp: true).each_with_object({}) do |line, acc|
+      stripped = line.strip
+      next if stripped.empty? || stripped.start_with?('#')
+
+      stripped = stripped.sub(/\Aexport\s+/, '')
+      key, val = stripped.split('=', 2)
+      next unless key && val
+
+      acc[key.strip] = val.strip.gsub(/\A['"]|['"]\z/, '')
+    end
+  end
 
   def initialize(
-    google_api_key: ENV['GOOGLE_TRANSLATE_API_KEY'],
-    translate_url:  ENV['OOD_TRANSLATE_URL'],
-    translator:     nil
+    google_api_key: nil,
+    translate_url:  nil,
+    translator:     nil,
+    env_file:       nil
   )
-    @google_api_key = google_api_key.to_s.strip
-    @translate_url  = translate_url.to_s.strip
+    file_vars = (google_api_key.nil? && translate_url.nil? && translator.nil?) ? self.class.load_translate_env(env_file) : {}
+    @google_api_key = (google_api_key.nil? ? (ENV['GOOGLE_TRANSLATE_API_KEY'] || file_vars['GOOGLE_TRANSLATE_API_KEY']) : google_api_key).to_s.strip
+    @translate_url  = (translate_url.nil? ? (ENV['OOD_TRANSLATE_URL'] || file_vars['OOD_TRANSLATE_URL']) : translate_url).to_s.strip
     @translator     = translator
   end
 
@@ -51,7 +85,24 @@ class OodLocaleConverter
     working.gsub!(/<%[\s\S]*?%>/) { |m| stash.call(m) }
     # 3. Inline code spans (`...`)
     working.gsub!(/`[^`\n]+`/) { |m| stash.call(m) }
-    # 4. Markdown links `[label](url)`: translate prose `label`, protect `(url)`
+    # 4. Markdown reference link definitions (`[ref]: https://...`) + `[ref]` usages
+    ref_ids = []
+    working.gsub!(/^(\s*\[([^\[\]\n]+)\]:\s*\S+[^\n]*)/) do
+      full_def = Regexp.last_match(1)
+      ref_ids << Regexp.last_match(2)
+      stash.call(full_def)
+    end
+    ref_ids.uniq.each do |ref_id|
+      working.gsub!(/\[#{Regexp.escape(ref_id)}\](?![\(\[:])/) do
+        translated_label = translate_protected_segment(ref_id, target_locale: target_locale, source_locale: source_locale)
+        if translated_label == ref_id
+          stash.call("[#{ref_id}]")
+        else
+          stash.call("[#{translated_label}][#{ref_id}]")
+        end
+      end
+    end
+    # 5. Markdown inline links `[label](url)`: translate prose `label`, protect `(url)`
     working.gsub!(/\[([^\[\]\n]+)\](\([^\)\s]+(?:\s+"[^"]*")?\))/) do
       label = Regexp.last_match(1)
       url_part = Regexp.last_match(2)
@@ -62,9 +113,9 @@ class OodLocaleConverter
         stash.call("[#{translated_label}]#{url_part}")
       end
     end
-    # 5. HTML tags (<tag ...>)
+    # 6. HTML tags (<tag ...>)
     working.gsub!(/<\/?[a-zA-Z][^>\n]*>/) { |m| stash.call(m) }
-    # 6. Rails I18n placeholders (%{var}) and raw URLs
+    # 7. Rails I18n placeholders (%{var}) and raw URLs
     working.gsub!(/%\{[a-zA-Z0-9_]+\}/) { |m| stash.call(m) }
     working.gsub!(%r{https?://[^\s<>)\]]+}) { |m| stash.call(m) }
 
@@ -184,7 +235,8 @@ class OodLocaleConverter
       format: 'text'
     }
     res = post_json(uri, payload)
-    res&.dig('data', 'translations', 0, 'translatedText')
+    raw = res&.dig('data', 'translations', 0, 'translatedText')
+    raw ? CGI.unescapeHTML(raw) : nil
   end
 
   def translate_via_endpoint(text, target_locale:, source_locale:)

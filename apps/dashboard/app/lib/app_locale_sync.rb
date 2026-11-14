@@ -24,7 +24,9 @@ class AppLocaleSync
     app_dirs = if root.join('manifest.yml').file?
                  [root]
                else
-                 root.children.select { |child| child.directory? && child.join('manifest.yml').file? }.sort
+                 root.children.select do |child|
+                   child.directory? && child.basename.to_s != 'dashboard' && child.join('manifest.yml').file?
+                 end.sort
                end
 
     app_dirs.map do |app_dir|

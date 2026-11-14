@@ -94,4 +94,26 @@ class OodLocaleConverterTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test 'preserves Markdown reference-style link definitions and loads translate.env when readable' do
+    md_ref = <<~MD
+      Launch [JupyterLab] at [Research Center].
+
+      [JupyterLab]: https://jupyter.org/
+      [Research Center]: https://example.edu/
+    MD
+
+    out = @converter.convert_text(md_ref, target_locale: 'ja-JP')
+    assert_includes out, '[[ja-JP] Research Center][Research Center]'
+    assert_includes out, '[Research Center]: https://example.edu/'
+
+    Dir.mktmpdir do |dir|
+      env_file = File.join(dir, 'translate.env')
+      File.write(env_file, "GOOGLE_TRANSLATE_API_KEY=\"test-dummy-key-from-file\"\n")
+      with_modified_env({ 'GOOGLE_TRANSLATE_API_KEY' => nil, 'OOD_TRANSLATE_URL' => nil }) do
+        conv = OodLocaleConverter.new(env_file: env_file)
+        assert conv.available?
+      end
+    end
+  end
 end
