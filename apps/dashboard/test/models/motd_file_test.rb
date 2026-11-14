@@ -65,4 +65,49 @@ class MotdFileTest < ActiveSupport::TestCase
     end
   end
 
+  test 'resolves per-language sibling MOTD files and falls back to base motd' do
+    Dir.mktmpdir do |dir|
+      base = File.join(dir, 'motd')
+      fr   = File.join(dir, 'motd.fr-CA')
+      File.write(base, 'Welcome to the cluster')
+      File.write(fr, 'Bienvenue sur la grappe')
+
+      assert_equal 'Welcome to the cluster', MotdFile.new(base, locale: :en).content
+      assert_equal 'Bienvenue sur la grappe', MotdFile.new(base, locale: :'fr-CA').content
+      assert_equal 'Bienvenue sur la grappe', MotdFile.new(base, locale: :fr).content
+      assert_equal 'Welcome to the cluster', MotdFile.new(base, locale: :ja_JP).content
+    end
+  end
+
+  test 'resolves extension-preserving and directory-style localized MOTD files across formats' do
+    Dir.mktmpdir do |dir|
+      md_base = File.join(dir, 'motd.md')
+      md_fr   = File.join(dir, 'motd.fr-CA.md')
+      File.write(md_base, '# English Heading')
+      File.write(md_fr, '# Titre français')
+
+      with_modified_env({ 'MOTD_FORMAT' => 'markdown' }) do
+        formatter = MotdFile.new(md_base, locale: :'fr-CA').formatter
+        assert_instance_of MotdFormatter::Markdown, formatter
+        assert_match(/Titre français/, formatter.content)
+      end
+
+      sub_dir = File.join(dir, 'motd_dir')
+      Dir.mkdir(sub_dir)
+      File.write(File.join(sub_dir, 'motd'), 'Default dir MOTD')
+      File.write(File.join(sub_dir, 'fr-CA'), 'MOTD répertoire français')
+
+      assert_equal 'Default dir MOTD', MotdFile.new(sub_dir, locale: :en).content
+      assert_equal 'MOTD répertoire français', MotdFile.new(sub_dir, locale: :'fr-CA').content
+    end
+  end
+
+  test 'title supports localized motd_title configuration map' do
+    Configuration.stubs(:config).returns({ motd_title: { en: 'Cluster News', 'fr-CA': 'Nouvelles de la grappe' } })
+    with_modified_env({ 'MOTD_TITLE' => nil }) do
+      assert_equal 'Cluster News', MotdFile.new(nil, locale: :en).title
+      assert_equal 'Nouvelles de la grappe', MotdFile.new(nil, locale: :'fr-CA').title
+    end
+  end
+
 end
