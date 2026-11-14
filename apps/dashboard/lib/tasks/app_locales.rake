@@ -14,7 +14,8 @@ namespace :ood do
                       I18n.available_locales.map(&:to_s)
                     end
 
-      written = AppLocaleSync.new.sync_apps(apps_dir, locales: locales)
+      overwrite = ActiveModel::Type::Boolean.new.cast(ENV['OVERWRITE']) || false
+      written = AppLocaleSync.new.sync_apps(apps_dir, locales: locales, overwrite: overwrite)
       puts "Synced app locale files (#{written.flatten.size}):"
       written.flatten.each { |f| puts "  - #{f}" }
     end
@@ -32,8 +33,9 @@ namespace :ood do
                       I18n.available_locales.map(&:to_s)
                     end
 
+      force = ActiveModel::Type::Boolean.new.cast(ENV['FORCE']) || false
       converter = OodLocaleConverter.new
-      written = AppLocaleSync.new(converter: converter).sync_motd(motd_path, locales: locales, format: format)
+      written = AppLocaleSync.new(converter: converter).sync_motd(motd_path, locales: locales, format: format, force: force)
       puts "Synced MOTD locale files (#{written.size}):"
       written.each { |f| puts "  - #{f}" }
       if written.empty? && !converter.available?
