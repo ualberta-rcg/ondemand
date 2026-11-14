@@ -29,8 +29,11 @@ class OodLocaleConverter
   end
 
   def self.default_translate_env_path
-    cfg_dir = defined?(Configuration) && Configuration.respond_to?(:config_directory) ? Configuration.config_directory.to_s : '/etc/ood/config'
-    File.join(cfg_dir, DEFAULT_TRANSLATE_ENV)
+    candidates = []
+    candidates << File.join(Configuration.config_root.to_s, DEFAULT_TRANSLATE_ENV) if defined?(Configuration) && Configuration.respond_to?(:config_root)
+    candidates << File.join(Configuration.config_directory.to_s, DEFAULT_TRANSLATE_ENV) if defined?(Configuration) && Configuration.respond_to?(:config_directory)
+    candidates << "/etc/ood/config/#{DEFAULT_TRANSLATE_ENV}"
+    candidates.uniq.find { |p| File.file?(p) && File.readable?(p) } || candidates.first
   end
 
   def self.parse_simple_env(file)
