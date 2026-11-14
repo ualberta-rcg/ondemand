@@ -19,7 +19,35 @@ export class Localizer {
         this.dictionary = undefined;
     }
 
-    // Configure suitable language based on user preferences
+    // Read same-origin Open OnDemand `ood_locale` cookie when present
+    _oodCookieLocale() {
+        if (typeof document === 'undefined' || typeof document.cookie !== 'string' || !document.cookie) {
+            return null;
+        }
+        const pairs = document.cookie.split(';');
+        for (let i = 0; i < pairs.length; i++) {
+            const idx = pairs[i].indexOf('=');
+            if (idx <= 0) {
+                continue;
+            }
+            const key = pairs[i].slice(0, idx).trim();
+            if (key !== 'ood_locale') {
+                continue;
+            }
+            const raw = pairs[i].slice(idx + 1).trim();
+            if (!raw) {
+                return null;
+            }
+            try {
+                return decodeURIComponent(raw);
+            } catch (_err) {
+                return raw;
+            }
+        }
+        return null;
+    }
+
+    // Configure suitable language based on Open OnDemand cookie or browser preferences
     setup(supportedLanguages) {
         this.language = 'en'; // Default: US English
 
@@ -27,12 +55,18 @@ export class Localizer {
          * Navigator.languages only available in Chrome (32+) and FireFox (32+)
          * Fall back to navigator.language for other browsers
          */
-        let userLanguages;
-        if (typeof window.navigator.languages == 'object') {
-            userLanguages = window.navigator.languages;
-        } else {
-            userLanguages = [navigator.language || navigator.userLanguage];
+        let browserLanguages = [];
+        if (typeof window !== 'undefined' && window.navigator) {
+            if (typeof window.navigator.languages == 'object' && window.navigator.languages !== null) {
+                browserLanguages = Array.from(window.navigator.languages);
+            } else if (window.navigator.language || window.navigator.userLanguage) {
+                browserLanguages = [window.navigator.language || window.navigator.userLanguage];
+            }
         }
+
+        const cookieLocale = this._oodCookieLocale();
+        const userLanguages = (cookieLocale ? [cookieLocale].concat(browserLanguages) : browserLanguages)
+            .filter(Boolean);
 
         for (let i = 0;i < userLanguages.length;i++) {
             const userLang = userLanguages[i]
@@ -40,13 +74,7 @@ export class Localizer {
                 .replace("_", "-")
                 .split("-");
 
-            // Built-in default?
-            if ((userLang[0] === 'en') &&
-                ((userLang[1] === undefined) || (userLang[1] === 'us'))) {
-                return;
-            }
-
-            // First pass: perfect match
+            // First pass: perfect match (language + region)
             for (let j = 0; j < supportedLanguages.length; j++) {
                 const supLang = supportedLanguages[j]
                     .toLowerCase()
@@ -64,7 +92,12 @@ export class Localizer {
                 return;
             }
 
-            // Second pass: fallback
+            // Built-in default for English variants (en, en-US, en-CA, etc.) when no regional pack matched
+            if (userLang[0] === 'en') {
+                return;
+            }
+
+            // Second pass: primary-language fallback (e.g. fr-CA -> fr, ja-JP -> ja)
             for (let j = 0;j < supportedLanguages.length;j++) {
                 const supLang = supportedLanguages[j]
                     .toLowerCase()

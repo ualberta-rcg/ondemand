@@ -114,4 +114,66 @@ class AppLocaleSyncTest < ActiveSupport::TestCase
       assert_equal 2, call_count
     end
   end
+
+  test 'merges shared keys from locales/en.yml and invokes converter when smart_attributes lacks target locale' do
+    Dir.mktmpdir do |dir|
+      File.write(
+        File.join(dir, 'manifest.yml'),
+        <<~YAML
+          ---
+          name: Notebook App
+          category: Interactive Apps
+        YAML
+      )
+      File.write(
+        File.join(dir, 'form.yml'),
+        <<~YAML
+          ---
+          cluster: '*'
+          form:
+            - bc_num_hours
+          attributes:
+            bc_num_hours:
+              widget: number_field
+              label: Number of hours
+        YAML
+      )
+
+      locales_dir = File.join(dir, 'locales')
+      Dir.mkdir(locales_dir)
+      File.write(
+        File.join(locales_dir, 'en.yml'),
+        YAML.dump(
+          'en' => {
+            'form' => {
+              'attributes' => {
+                'bc_email_on_started' => {
+                  'label' => 'I would like to receive an email when the session starts',
+                  'help'  => 'Shared template email help.'
+                }
+              }
+            }
+          }
+        )
+      )
+
+      converter = OodLocaleConverter.new(
+        google_api_key: '',
+        translate_url:  '',
+        translator:     ->(txt, loc, _src) { "[#{loc}] #{txt}" }
+      )
+      sync = AppLocaleSync.new(converter: converter)
+      sync.sync_app(dir, locales: %w[ja-JP])
+
+      ja_data = YAML.safe_load(File.read(File.join(locales_dir, 'ja-JP.yml')))['ja-JP']
+      # ja_JP lacks dashboard.smart_attributes in base OOD, so local_dict_lookup must NOT
+      # return the :en fallback string and must delegate to @converter instead
+      assert_equal '[ja-JP] Number of hours',
+                   ja_data.dig('form', 'attributes', 'bc_num_hours', 'label')
+      assert_equal '[ja-JP] I would like to receive an email when the session starts',
+                   ja_data.dig('form', 'attributes', 'bc_email_on_started', 'label')
+      assert_equal '[ja-JP] Shared template email help.',
+                   ja_data.dig('form', 'attributes', 'bc_email_on_started', 'help')
+    end
+  end
 end
