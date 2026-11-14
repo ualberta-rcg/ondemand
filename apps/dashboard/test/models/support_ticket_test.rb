@@ -144,4 +144,22 @@ class SupportTicketTest < ActiveSupport::TestCase
     assert_equal 100, target.restrictions[:max_items]
   end
 
+  test 'default field labels, dashboard_title, and standard HPC categories localize in fr-CA' do
+    I18n.with_locale(:'fr-CA') do
+      target = SupportTicket.from_config({})
+      labels = target.attributes.each_with_object({}) { |a, h| h[a.id] = a.label }
+      assert_equal "Nom d'utilisateur", labels['username']
+      assert_equal 'Courriel', labels['email']
+      assert_equal 'Objet', labels['subject']
+      assert_equal 'Pièces jointes', labels['attachments']
+
+      Configuration.stubs(:config).returns({ dashboard_title: { en: 'HPC Portal', 'fr-CA': 'Portail CHP' } })
+      assert_equal 'Portail CHP', UserConfiguration.new.dashboard_title
+
+      assert_equal 'Bio-informatique', LocalizedValue.translate_category('Bioinformatics')
+      assert_equal 'Bureau', LocalizedValue.translate_category('Desktop')
+      assert_equal 'Visualisation', LocalizedValue.translate_category('Visualization')
+    end
+  end
+
 end

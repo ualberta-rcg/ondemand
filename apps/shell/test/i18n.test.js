@@ -85,8 +85,8 @@ describe('Shell i18n utilities', () => {
   });
 
   test('interpolates placeholders and falls back cleanly to English for missing keys', () => {
-    expect(i18n.t('fr-CA', 'host_label', { host: 'eureka-login2' })).toBe('Hôte : eureka-login2');
-    expect(i18n.t('fr-CA', 'page_title', { siteTitle: 'Eureka' })).toBe('Terminal - Eureka');
+    expect(i18n.t('fr-CA', 'host_label', { host: 'owens.osc.edu' })).toBe('Hôte : owens.osc.edu');
+    expect(i18n.t('fr-CA', 'page_title', { siteTitle: 'Open OnDemand' })).toBe('Terminal - Open OnDemand');
 
     const partialCatalogs = {
       en: { greeting: 'Hello %{name}', only_en: 'Fallback works' },

@@ -73,23 +73,28 @@ class SupportTicket
   def self.default_opts
     {
       username: {
+        label: I18n.t('dashboard.support_ticket.fields.username'),
         required: true,
         readonly: true,
       },
       email: {
+        label: I18n.t('dashboard.support_ticket.fields.email'),
         widget: "email_field",
         required: true,
       },
       cc: {
+        label: I18n.t('dashboard.support_ticket.fields.cc'),
         widget: "email_field",
       },
       subject: {
+        label: I18n.t('dashboard.support_ticket.fields.subject'),
         required: true,
       },
       session_id: {
         widget: "hidden_field",
       },
       session_description: {
+        label: I18n.t('dashboard.support_ticket.fields.session_description'),
         hide_when_empty: true,
         disabled: true,
       },
@@ -100,13 +105,16 @@ class SupportTicket
         widget: "hidden_field",
       },
       job_description: {
+        label: I18n.t('dashboard.support_ticket.fields.job_description'),
         hide_when_empty: true,
         disabled: true,
       },
       attachments: {
+        label: I18n.t('dashboard.support_ticket.fields.attachments'),
         widget: "file_attachments",
       },
       description: {
+        label: I18n.t('dashboard.support_ticket.fields.description'),
         widget: "text_area",
         required: true,
         rows: 10,

@@ -3,7 +3,7 @@
 # helper for the support ticket pages, email, and request tracker content.
 module SupportTicketHelper
   def support_ticket_description_text
-    @user_configuration.support_ticket[:description]
+    LocalizedValue.resolve_optional(@user_configuration.support_ticket[:description])
   end
 
   def filter_session_parameters(session_info)

@@ -24,16 +24,24 @@ module LocalizedValue
 
   # Explicit i18n-tasks usage hints for dynamic `dashboard.categories.<slug>` lookups:
   # i18n-tasks-use t('dashboard.categories.apps')
+  # i18n-tasks-use t('dashboard.categories.bioinformatics')
   # i18n-tasks-use t('dashboard.categories.clusters')
+  # i18n-tasks-use t('dashboard.categories.data_science')
+  # i18n-tasks-use t('dashboard.categories.desktop')
   # i18n-tasks-use t('dashboard.categories.desktops')
+  # i18n-tasks-use t('dashboard.categories.development')
   # i18n-tasks-use t('dashboard.categories.external_apps')
   # i18n-tasks-use t('dashboard.categories.files')
   # i18n-tasks-use t('dashboard.categories.gateway_apps')
   # i18n-tasks-use t('dashboard.categories.guis')
   # i18n-tasks-use t('dashboard.categories.interactive_apps')
   # i18n-tasks-use t('dashboard.categories.jobs')
+  # i18n-tasks-use t('dashboard.categories.machine_learning')
+  # i18n-tasks-use t('dashboard.categories.mathematics')
   # i18n-tasks-use t('dashboard.categories.servers')
+  # i18n-tasks-use t('dashboard.categories.utilities')
   # i18n-tasks-use t('dashboard.categories.virtual_desktop_interface')
+  # i18n-tasks-use t('dashboard.categories.visualization')
 
   module_function
 

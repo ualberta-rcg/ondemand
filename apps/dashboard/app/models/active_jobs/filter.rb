@@ -1,16 +1,28 @@
 module ActiveJobs
   # Utility class to be able to filter the activejobs by some dimension.
   class Filter
-    attr_accessor :title, :filter_id, :filter_block
+    # i18n-tasks-use t('dashboard.active_jobs_filter_all')
+    # i18n-tasks-use t('dashboard.active_jobs_filter_user')
+
+    attr_writer :title
+    attr_accessor :title_key, :filter_id, :filter_block
 
     class << self
       attr_accessor :list
     end
 
-    def initialize(title: nil, filter_id: nil, &filter_block)
+    def initialize(title: nil, title_key: nil, filter_id: nil, &filter_block)
       @title = title
+      @title_key = title_key
       @filter_id = filter_id
       @filter_block = filter_block
+    end
+
+    def title
+      return LocalizedValue.resolve(@title) if LocalizedValue.locale_hash?(@title)
+      return @title if @title.present?
+
+      @title_key ? I18n.t(@title_key) : nil
     end
 
     # Apply the current filtering proc to an array of jobs.
@@ -46,14 +58,14 @@ module ActiveJobs
     # }
 
     def self.all_filter
-      Filter.new(title: "All Jobs", filter_id: "all")
+      Filter.new(title_key: 'dashboard.active_jobs_filter_all', filter_id: "all")
     end
 
     # Add a filter by user option.
     #   The actual filtering for the particular user is handled in the controller
     #   via the user_where_owner optimization in ood_core.
     def self.user_filter
-      Filter.new(title: "Your Jobs", filter_id: "user")
+      Filter.new(title_key: 'dashboard.active_jobs_filter_user', filter_id: "user")
     end
 
     # Maintains a list of Filter objects.

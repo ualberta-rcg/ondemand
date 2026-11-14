@@ -12,6 +12,72 @@ en:
     actions: Actions
     active_jobs: Active Jobs
     active_jobs_close_details: Close extended details panel.
+    active_jobs_detail:
+      account: Account
+      array_job_id: Array Job Id
+      array_task_id: Array Task Id
+      cluster: Cluster
+      cluster_id: Cluster Id
+      comment: Comment
+      cpu_time: CPU Time
+      cpu_used: CPU Used
+      current_working_directory: Current Working Directory
+      end_time: End Time
+      exec_host: Exec Host
+      finish_time: Finish Time
+      from_host: From Host
+      gres: GRES
+      group_list: Group List
+      job_account: Job Account
+      job_checkpoint_attr: Job Checkpoint Attr
+      job_checkpoint_interval: Job Checkpoint Interval
+      job_deadline: Job Deadline
+      job_exec_file: Job Exec File
+      job_execution_time: Job Execution Time
+      job_gid: Job GID
+      job_group: Job Group
+      job_id: Job Id
+      job_name: Job Name
+      job_priority: Job Priority
+      job_restart: Job Restart
+      job_script_file: Job Script File
+      job_script_size: Job Script Size
+      job_share: Job Share
+      job_type: Job Type
+      job_uid: Job UID
+      job_verify: Job Verify
+      job_version: Job Version
+      mem: Mem
+      memory: Memory
+      node_count: Node Count
+      node_list: Node List
+      nodes: Nodes
+      none: None
+      notifications: Notifications
+      partition: Partition
+      pbs_id: PBS Id
+      pids: PIDs
+      ppn: PPN
+      project_name: Project Name
+      queue: Queue
+      reason: Reason
+      reserve: Reserve
+      select: Select
+      start_time: Start Time
+      state: State
+      status: Status
+      submission_time: Submission Time
+      swap: Swap
+      time_limit: Time Limit
+      time_used: Time Used
+      total_cpus: Total CPUs
+      total_nodes: Total Nodes
+      user: User
+      virtual_memory: Virtual Memory
+      walltime: Walltime
+      walltime_used: Walltime Used
+    active_jobs_filter_all: All Jobs
+    active_jobs_filter_user: Your Jobs
     active_jobs_ganlia_CPU: Ganglia image for CPU.
     active_jobs_ganlia_load: Ganglia image for system load averages.
     active_jobs_ganlia_mem: Ganglia image for Memory usage.
@@ -163,16 +229,24 @@ en:
     cancel: Cancel
     categories:
       apps: Apps
+      bioinformatics: Bioinformatics
       clusters: Clusters
+      data_science: Data Science
+      desktop: Desktop
       desktops: Desktops
+      development: Development
       external_apps: External Apps
       files: Files
       gateway_apps: Gateway Apps
       guis: GUIs
       interactive_apps: Interactive Apps
       jobs: Jobs
+      machine_learning: Machine Learning
+      mathematics: Mathematics
       servers: Servers
+      utilities: Utilities
       virtual_desktop_interface: Virtual Desktop Interface
+      visualization: Visualization
     clear: Clear
     close: Close
     close_alert: Close this alert.
@@ -677,6 +751,11 @@ en:
     pinned_apps_category: Apps
     pinned_apps_title: Pinned Apps
     products_created: Product was successfully created.
+    products_git_commit_hint_html: Please commit any changes or add necessary files to <code>.gitignore</code>
+    products_git_staged: Staged
+    products_git_status: Git Status
+    products_git_unstaged: Unstaged
+    products_git_untracked: Untracked
     products_manifest_save_error: Cannot save app manifest to %{path}
     products_ssh_key_created: SSH key was successfully created.
     products_ssh_key_exists: SSH key already exists
@@ -774,6 +853,15 @@ en:
     submit_args: 'Submit Args:'
     support_ticket:
       creation_success: 'Support ticket email sent to: %{to}'
+      fields:
+        attachments: Attachments
+        cc: CC
+        description: Description
+        email: Email
+        job_description: Job Description
+        session_description: Session Description
+        subject: Subject
+        username: Username
       generic_error: 'There was an error processing your request: %{error}'
       header: Support Ticket
       rt:
