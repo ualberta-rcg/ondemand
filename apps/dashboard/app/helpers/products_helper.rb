@@ -47,8 +47,16 @@ module ProductsHelper
     total     = unstaged + staged + untracked
 
     version   = product.version
+    popover_lines = [
+      "<strong>#{ERB::Util.html_escape(I18n.t('dashboard.products_git_staged'))}:</strong> #{staged}",
+      "<strong>#{ERB::Util.html_escape(I18n.t('dashboard.products_git_unstaged'))}:</strong> #{unstaged}",
+      "<strong>#{ERB::Util.html_escape(I18n.t('dashboard.products_git_untracked'))}:</strong> #{untracked}"
+    ]
+    popover_lines << I18n.t('dashboard.products_git_commit_hint_html') if total != 0
+    popover_content = popover_lines.join('<br>').gsub('"', '&quot;')
+    popover_title = ERB::Util.html_escape(I18n.t('dashboard.products_git_status'))
 
-    html = %Q(<span data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Git Status" data-content="<strong>Staged:</strong> #{staged}<br><strong>Unstaged:</strong> #{unstaged}<br><strong>Untracked:</strong> #{untracked}#{"<br>Please commit any changes or add necessary files to <code>.gitignore</code>" if total != 0}" data-html="true">)
+    html = %Q(<span data-toggle="popover" data-bs-toggle="popover" data-trigger="hover" data-bs-trigger="hover" data-placement="bottom" data-bs-placement="bottom" title="#{popover_title}" data-content="#{popover_content}" data-bs-content="#{popover_content}" data-html="true" data-bs-html="true">)
     html += %Q(<small>[#{version} S:#{staged} U:#{unstaged} ?:#{untracked}]</small> )
     if total == 0
       html += %Q(<span class="text-success">#{fa_icon('check')}</span>)

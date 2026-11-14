@@ -67,27 +67,27 @@ module ActiveJobs
     def extended_data_torque(info)
       return unless info.native
       attributes = []
-      attributes.push Attribute.new "Cluster", self.cluster_title
-      attributes.push Attribute.new "PBS Id", self.pbsid
-      attributes.push Attribute.new "Job Name", self.jobname
-      attributes.push Attribute.new "User", self.username
-      attributes.push Attribute.new "Account", self.account
-      attributes.push Attribute.new "Submission Time", safe_parse_time(info.submission_time) if info.submission_time
-      attributes.push Attribute.new "Walltime", (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
-      attributes.push Attribute.new "Walltime Used", self.walltime_used
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster'), self.cluster_title
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.pbs_id'), self.pbsid
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_name'), self.jobname
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.user'), self.username
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.account'), self.account
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.submission_time'), safe_parse_time(info.submission_time) if info.submission_time
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime'), (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime_used'), self.walltime_used
       node_count = info.native.fetch(:Resource_List, {})[:nodect].to_i
-      attributes.push Attribute.new "Node Count", node_count
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_count'), node_count
       ppn = info.native.fetch(:Resource_List, {})[:nodes].to_s.split("ppn=").second || '0'
-      attributes.push Attribute.new "Node List", self.nodes.join(", ") unless self.nodes.blank?
-      attributes.push Attribute.new "PPN", ppn
-      attributes.push Attribute.new "Total CPUs", ppn.to_i * node_count.to_i
-      attributes.push Attribute.new "CPU Time", info.native.fetch(:resources_used, {})[:cput].presence || '0'
-      attributes.push Attribute.new "Memory", info.native.fetch(:resources_used, {})[:mem].presence || "0 b"
-      attributes.push Attribute.new "Virtual Memory", info.native.fetch(:resources_used, {})[:vmem].presence || "0 b"
-      attributes.push Attribute.new "Comment", info.native[:comment] if info.native[:comment]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_list'), self.nodes.join(", ") unless self.nodes.blank?
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.ppn'), ppn
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.total_cpus'), ppn.to_i * node_count.to_i
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cpu_time'), info.native.fetch(:resources_used, {})[:cput].presence || '0'
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.memory'), info.native.fetch(:resources_used, {})[:mem].presence || "0 b"
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.virtual_memory'), info.native.fetch(:resources_used, {})[:vmem].presence || "0 b"
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.comment'), info.native[:comment] if info.native[:comment]
       self.native_attribs = attributes
 
-      self.submit_args = info.native[:submit_args].presence || "None"
+      self.submit_args = info.native[:submit_args].presence || I18n.t('dashboard.active_jobs_detail.none')
       self.output_path = info.native[:Output_Path].to_s.split(":").second || info.native[:Output_Path]
 
       output_pathname = Pathname.new(self.output_path).dirname
@@ -106,26 +106,26 @@ module ActiveJobs
     def extended_data_slurm(info)
       return unless info.native
       attributes = []
-      attributes.push Attribute.new "Cluster", self.cluster_title
-      attributes.push Attribute.new "Job Id", self.pbsid
-      attributes.push Attribute.new "Array Job Id", info.native[:array_job_id]
-      attributes.push Attribute.new "Array Task Id", info.native[:array_task_id]
-      attributes.push Attribute.new "Job Name", self.jobname
-      attributes.push Attribute.new "User", self.username
-      attributes.push Attribute.new "Account", self.account
-      attributes.push Attribute.new "Partition", self.queue
-      attributes.push Attribute.new "State", info.native[:state]
-      attributes.push Attribute.new "Reason", info.native[:reason]
-      attributes.push Attribute.new "Total Nodes", info.native[:nodes]
-      attributes.push Attribute.new "Node List", self.nodes.join(", ") unless self.nodes.blank?
-      attributes.push Attribute.new "Total CPUs", info.native[:cpus]
-      attributes.push Attribute.new "Time Limit", (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
-      attributes.push Attribute.new "Time Used", self.walltime_used
-      attributes.push Attribute.new "Submission Time", safe_parse_time(info.submission_time) if info.submission_time
-      attributes.push Attribute.new "Start Time", safe_parse_time(info.native[:start_time])
-      attributes.push Attribute.new "End Time", safe_parse_time(info.native[:end_time])
-      attributes.push Attribute.new "Memory", info.native[:min_memory]
-      attributes.push Attribute.new "GRES", info.native[:gres].gsub(/gres:/, "") unless ['', 'N/A'].include?(info.native[:gres].to_s)
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster'), self.cluster_title
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_id'), self.pbsid
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.array_job_id'), info.native[:array_job_id]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.array_task_id'), info.native[:array_task_id]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_name'), self.jobname
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.user'), self.username
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.account'), self.account
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.partition'), self.queue
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.state'), info.native[:state]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.reason'), info.native[:reason]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.total_nodes'), info.native[:nodes]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_list'), self.nodes.join(", ") unless self.nodes.blank?
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.total_cpus'), info.native[:cpus]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.time_limit'), (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.time_used'), self.walltime_used
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.submission_time'), safe_parse_time(info.submission_time) if info.submission_time
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.start_time'), safe_parse_time(info.native[:start_time])
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.end_time'), safe_parse_time(info.native[:end_time])
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.memory'), info.native[:min_memory]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.gres'), info.native[:gres].gsub(/gres:/, "") unless ['', 'N/A'].include?(info.native[:gres].to_s)
       self.native_attribs = attributes
 
       self.submit_args = nil
@@ -147,23 +147,23 @@ module ActiveJobs
     def extended_data_lsf(info)
       return unless info.native
       attributes = []
-      attributes.push Attribute.new "Job Id", self.pbsid
-      attributes.push Attribute.new "User", self.username
-      attributes.push Attribute.new "Queue", self.queue
-      attributes.push Attribute.new "Cluster", self.cluster_title
-      attributes.push Attribute.new "From Host", info.native[:from_host]
-      attributes.push Attribute.new "Exec Host", info.native[:exec_host]
-      attributes.push Attribute.new "Job Name", self.jobname
-      attributes.push Attribute.new "Submission Time", safe_parse_time(info.submission_time) if info.submission_time
-      attributes.push Attribute.new "Project Name", info.native[:project]
-      attributes.push Attribute.new "Walltime", (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
-      attributes.push Attribute.new "CPU Used", info.native[:cpu_used]
-      attributes.push Attribute.new "Mem", info.native[:mem]
-      attributes.push Attribute.new "Swap", info.native[:swap]
-      attributes.push Attribute.new "PIDs", info.native[:pids]
-      attributes.push Attribute.new "Node List", self.nodes.join(", ") unless self.nodes.blank?
-      attributes.push Attribute.new "Start Time", info.native[:start_time]
-      attributes.push Attribute.new "Finish Time", info.native[:finish_time]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_id'), self.pbsid
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.user'), self.username
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.queue'), self.queue
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster'), self.cluster_title
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.from_host'), info.native[:from_host]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.exec_host'), info.native[:exec_host]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_name'), self.jobname
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.submission_time'), safe_parse_time(info.submission_time) if info.submission_time
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.project_name'), info.native[:project]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime'), (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cpu_used'), info.native[:cpu_used]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.mem'), info.native[:mem]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.swap'), info.native[:swap]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.pids'), info.native[:pids]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_list'), self.nodes.join(", ") unless self.nodes.blank?
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.start_time'), info.native[:start_time]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.finish_time'), info.native[:finish_time]
 
       self.native_attribs = attributes
 
@@ -181,30 +181,30 @@ module ActiveJobs
       return unless info.native
 
       attributes = []
-      attributes.push Attribute.new "Cluster", self.cluster_title
-      attributes.push Attribute.new "PBS Id", self.pbsid
-      attributes.push Attribute.new "Job Name", self.jobname
-      attributes.push Attribute.new "User", self.username
-      attributes.push Attribute.new "Account", self.account if info.accounting_id
-      attributes.push Attribute.new "Submission Time", safe_parse_time(info.submission_time) if info.submission_time
-      attributes.push Attribute.new "Group List", info.native[:group_list] if info.native[:group_list]
-      attributes.push Attribute.new "Walltime", (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster'), self.cluster_title
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.pbs_id'), self.pbsid
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_name'), self.jobname
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.user'), self.username
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.account'), self.account if info.accounting_id
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.submission_time'), safe_parse_time(info.submission_time) if info.submission_time
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.group_list'), info.native[:group_list] if info.native[:group_list]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime'), (info.wallclock_limit ? pretty_time(info.wallclock_limit) : "00:00:00")
       walltime_used = info.wallclock_time || 0
-      attributes.push Attribute.new "Walltime Used", self.walltime_used
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime_used'), self.walltime_used
       node_count = info.native.fetch(:Resource_List, {})[:nodect].to_i
-      attributes.push Attribute.new "Node Count", node_count.to_s
-      attributes.push Attribute.new "Node List", self.nodes.join(", ") unless self.nodes.blank?
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_count'), node_count.to_s
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.node_list'), self.nodes.join(", ") unless self.nodes.blank?
       total_procs = info.native[:Resource_List][:ncpus].presence || '0'
-      attributes.push Attribute.new "Total CPUs", total_procs
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.total_cpus'), total_procs
       cput = info.native.fetch(:resources_used, {})[:cput].presence || 0
-      attributes.push Attribute.new "CPU Time", pretty_time(cput.to_i)
-      attributes.push Attribute.new "Memory", info.native.fetch(:resources_used, {})[:mem].presence || "0 b"
-      attributes.push Attribute.new "Virtual Memory", info.native.fetch(:resources_used, {})[:vmem].presence || "0 b"
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cpu_time'), pretty_time(cput.to_i)
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.memory'), info.native.fetch(:resources_used, {})[:mem].presence || "0 b"
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.virtual_memory'), info.native.fetch(:resources_used, {})[:vmem].presence || "0 b"
       select = info.native.fetch(:Resource_List, {})[:select].presence
-      attributes.push Attribute.new "Select", select if select
-      attributes.push Attribute.new "Comment", info.native[:comment] || ''
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.select'), select if select
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.comment'), info.native[:comment] || ''
       self.native_attribs = attributes
-      self.submit_args = info.native[:Submit_arguments].presence || "None"
+      self.submit_args = info.native[:Submit_arguments].presence || I18n.t('dashboard.active_jobs_detail.none')
       self.output_path = info.native[:Output_Path].to_s.split(":").second || info.native[:Output_Path]
 
       output_pathname = Pathname.new(self.output_path).dirname
@@ -222,38 +222,38 @@ module ActiveJobs
     def extended_data_sge(info)
       return unless info.native
       attributes = []
-      attributes.push Attribute.new "Cluster", self.cluster_title
-      attributes.push Attribute.new "Cluster Id", self.cluster
-      attributes.push Attribute.new "Job Id", self.pbsid
-      attributes.push Attribute.new "Job Name", self.jobname
-      attributes.push Attribute.new "User", self.username
-      attributes.push Attribute.new "Account", self.account
-      attributes.push Attribute.new "Queue", self.queue
-      attributes.push Attribute.new "Start Time", self.starttime
-      attributes.push Attribute.new "Walltime Used", self.walltime_used
-      attributes.push Attribute.new "Status", self.status
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster'), self.cluster_title
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.cluster_id'), self.cluster
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_id'), self.pbsid
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.job_name'), self.jobname
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.user'), self.username
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.account'), self.account
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.queue'), self.queue
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.start_time'), self.starttime
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.walltime_used'), self.walltime_used
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.status'), self.status
 
       {
-        "Job Version" => :JB_version,
-        "Job Exec File" => :JB_exec_file,
-        "Job Script File" => :JB_script_file,
-        "Job Script Size" => :JB_script_size,
-        "Job Execution Time" => :JB_execution_time,
-        "Job Deadline" => :JB_deadline,
-        "Job UID" => :JB_uid,
-        "Job Group" => :JB_group,
-        "Job GID" => :JB_gid,
-        "Job Account" => :JB_account,
-        "Current Working Directory" => :JB_cwd,
-        "Notifications" => :JB_notify,
-        "Job Type" => :JB_type,
-        "Reserve" => :JB_reserve,
-        "Job Priority" => :JB_priority,
-        "Job Share" => :JB_jobshare,
-        "Job Verify" => :JB_verify,
-        "Job Checkpoint Attr" => :JB_checkpoint_attr,
-        "Job Checkpoint Interval" => :JB_checkpoint_interval,
-        "Job Restart" => :JB_restart
+        I18n.t('dashboard.active_jobs_detail.job_version') => :JB_version,
+        I18n.t('dashboard.active_jobs_detail.job_exec_file') => :JB_exec_file,
+        I18n.t('dashboard.active_jobs_detail.job_script_file') => :JB_script_file,
+        I18n.t('dashboard.active_jobs_detail.job_script_size') => :JB_script_size,
+        I18n.t('dashboard.active_jobs_detail.job_execution_time') => :JB_execution_time,
+        I18n.t('dashboard.active_jobs_detail.job_deadline') => :JB_deadline,
+        I18n.t('dashboard.active_jobs_detail.job_uid') => :JB_uid,
+        I18n.t('dashboard.active_jobs_detail.job_group') => :JB_group,
+        I18n.t('dashboard.active_jobs_detail.job_gid') => :JB_gid,
+        I18n.t('dashboard.active_jobs_detail.job_account') => :JB_account,
+        I18n.t('dashboard.active_jobs_detail.current_working_directory') => :JB_cwd,
+        I18n.t('dashboard.active_jobs_detail.notifications') => :JB_notify,
+        I18n.t('dashboard.active_jobs_detail.job_type') => :JB_type,
+        I18n.t('dashboard.active_jobs_detail.reserve') => :JB_reserve,
+        I18n.t('dashboard.active_jobs_detail.job_priority') => :JB_priority,
+        I18n.t('dashboard.active_jobs_detail.job_share') => :JB_jobshare,
+        I18n.t('dashboard.active_jobs_detail.job_verify') => :JB_verify,
+        I18n.t('dashboard.active_jobs_detail.job_checkpoint_attr') => :JB_checkpoint_attr,
+        I18n.t('dashboard.active_jobs_detail.job_checkpoint_interval') => :JB_checkpoint_interval,
+        I18n.t('dashboard.active_jobs_detail.job_restart') => :JB_restart
       }.each do |k,v|
         attributes.push Attribute.new k, info.native[v] if info.native[v]
       end
@@ -278,10 +278,10 @@ module ActiveJobs
     def extended_data_fujitsu_tcs(info)
       return unless info.native
       attributes = []
-      attributes.push Attribute.new "Nodes", info.native[:NODES]
-      attributes.push Attribute.new "Time Limit", pretty_time(info.wallclock_limit)
-      attributes.push Attribute.new "Submission Time", safe_parse_time(info.submission_time) if info.submission_time
-      attributes.push Attribute.new "Start Time", info.native[:START_DATE]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.nodes'), info.native[:NODES]
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.time_limit'), pretty_time(info.wallclock_limit)
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.submission_time'), safe_parse_time(info.submission_time) if info.submission_time
+      attributes.push Attribute.new I18n.t('dashboard.active_jobs_detail.start_time'), info.native[:START_DATE]
       self.native_attribs = attributes
 
       output_pathname = Pathname.new(info.native[:STD]).dirname

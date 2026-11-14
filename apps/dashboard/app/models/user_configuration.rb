@@ -185,7 +185,8 @@ class UserConfiguration
                                                     ENV[key]
                                                   end.compact.first)
         end
-        environment_value.nil? ? fetch(property.name, property.default_value) : environment_value
+        raw = environment_value.nil? ? fetch(property.name, property.default_value) : environment_value
+        LocalizedValue.locale_hash?(raw) ? LocalizedValue.resolve(raw) : raw
       end
     end
   end

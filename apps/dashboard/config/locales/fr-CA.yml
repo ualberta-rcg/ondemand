@@ -10,8 +10,74 @@ fr-CA:
   dashboard:
     account: Compte
     actions: Actes
-    active_jobs: Offres d'emploi actives
+    active_jobs: Tâches actives
     active_jobs_close_details: Fermer le panneau de détails étendus.
+    active_jobs_detail:
+      account: Compte
+      array_job_id: ID de tâche tableau
+      array_task_id: ID d'élément du tableau
+      cluster: Grappe
+      cluster_id: ID de grappe
+      comment: Commentaire
+      cpu_time: Temps CPU
+      cpu_used: CPU utilisé
+      current_working_directory: Répertoire de travail courant
+      end_time: Heure de fin
+      exec_host: Hôte d'exécution
+      finish_time: Heure de terminaison
+      from_host: Hôte d'origine
+      gres: GRES
+      group_list: Liste des groupes
+      job_account: Compte de la tâche
+      job_checkpoint_attr: Attribut de point de reprise
+      job_checkpoint_interval: Intervalle de point de reprise
+      job_deadline: Échéance de la tâche
+      job_exec_file: Fichier exécutable de la tâche
+      job_execution_time: Heure d'exécution de la tâche
+      job_gid: GID de la tâche
+      job_group: Groupe de la tâche
+      job_id: ID de la tâche
+      job_name: Nom de la tâche
+      job_priority: Priorité de la tâche
+      job_restart: Redémarrage de la tâche
+      job_script_file: Fichier de script de la tâche
+      job_script_size: Taille du script de la tâche
+      job_share: Part de la tâche
+      job_type: Type de tâche
+      job_uid: UID de la tâche
+      job_verify: Vérification de la tâche
+      job_version: Version de la tâche
+      mem: Mém.
+      memory: Mémoire
+      node_count: Nombre de nœuds
+      node_list: Liste des nœuds
+      nodes: Nœuds
+      none: Aucun
+      notifications: Notifications
+      partition: Partition
+      pbs_id: ID PBS
+      pids: PID
+      ppn: PPN
+      project_name: Nom du projet
+      queue: File d'attente
+      reason: Raison
+      reserve: Réservation
+      select: Sélection
+      start_time: Heure de début
+      state: État
+      status: Statut
+      submission_time: Heure de soumission
+      swap: Échange (Swap)
+      time_limit: Limite de temps
+      time_used: Temps utilisé
+      total_cpus: Total des processeurs
+      total_nodes: Total des nœuds
+      user: Utilisateur
+      virtual_memory: Mémoire virtuelle
+      walltime: Temps réel maximal
+      walltime_used: Temps réel utilisé
+    active_jobs_filter_all: Toutes les tâches
+    active_jobs_filter_user: Vos tâches
     active_jobs_ganlia_CPU: Image des ganglions pour le processeur.
     active_jobs_ganlia_load: Image Ganglia pour les moyennes de charge système.
     active_jobs_ganlia_mem: Image des ganglions pour l'utilisation de la mémoire.
@@ -22,7 +88,7 @@ fr-CA:
     all_apps_table_app_column: Nom
     all_apps_table_category_column: Catégorie
     all_apps_table_sub_category_column: Sous-catégorie
-    all_clusters: Tous les groupes
+    all_clusters: Toutes les grappes
     announcements_dismissible_button: OK
     announcements_parse_error: Erreur lors de l'analyse de l'annonce.
     announcements_render_error: Impossible d'afficher l'annonce « %{name} » en raison d'une erreur
@@ -163,16 +229,24 @@ fr-CA:
     cancel: Annuler
     categories:
       apps: Applications
+      bioinformatics: Bio-informatique
       clusters: Grappes
+      data_science: Science des données
+      desktop: Bureau
       desktops: Bureaux
+      development: Développement
       external_apps: Applications externes
       files: Fichiers
       gateway_apps: Applications passerelles
       guis: Interfaces graphiques
       interactive_apps: Applications interactives
       jobs: Tâches
+      machine_learning: Apprentissage automatique
+      mathematics: Mathématiques
       servers: Serveurs
+      utilities: Utilitaires
       virtual_desktop_interface: Interface de bureau virtuel
+      visualization: Visualisation
     clear: Effacer
     close: Fermer
     close_alert: Fermer cette alerte.
@@ -667,6 +741,11 @@ fr-CA:
     pinned_apps_category: Applications
     pinned_apps_title: Applications épinglées
     products_created: Le produit a été créé avec succès.
+    products_git_commit_hint_html: Veuillez valider vos modifications ou ajouter les fichiers nécessaires à <code>.gitignore</code>
+    products_git_staged: Indexés
+    products_git_status: État Git
+    products_git_unstaged: Non indexés
+    products_git_untracked: Non suivis
     products_manifest_save_error: Impossible d'enregistrer le manifeste de l'application dans %{path}
     products_ssh_key_created: La clé SSH a été créée avec succès.
     products_ssh_key_exists: La clé SSH existe déjà
@@ -764,6 +843,15 @@ fr-CA:
     submit_args: 'Soumettre les arguments :'
     support_ticket:
       creation_success: 'Courriel de billet de soutien envoyé à : %{to}'
+      fields:
+        attachments: Pièces jointes
+        cc: CC
+        description: Description
+        email: Courriel
+        job_description: Description de la tâche
+        session_description: Description de la session
+        subject: Objet
+        username: Nom d'utilisateur
       generic_error: 'Erreur lors du traitement de votre requête : %{error}'
       header: Billet de soutien
       rt:

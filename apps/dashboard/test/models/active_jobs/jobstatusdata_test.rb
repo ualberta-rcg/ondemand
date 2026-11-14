@@ -233,4 +233,20 @@ class ActiveJobs::JobstatusdataTest < ActiveSupport::TestCase
 
     assert_equal '00:00:00', job.native_attribs.find { |a| a.name == 'Walltime' }.value
   end
+
+  test 'ActiveJobs filters and extended job detail labels localize dynamically in fr-CA' do
+    assert_equal ['Your Jobs', 'All Jobs'], ActiveJobs::Filter.list.map(&:title)
+
+    I18n.with_locale(:'fr-CA') do
+      assert_equal ['Vos tâches', 'Toutes les tâches'], ActiveJobs::Filter.list.map(&:title)
+
+      info = slurm_info(submission_time: Time.local(2025, 6, 1, 10, 0, 0))
+      job = build_jobstatusdata(info, 'slurm')
+      names = job.native_attribs.map(&:name)
+      assert_includes names, 'ID de la tâche'
+      assert_includes names, 'Nom de la tâche'
+      assert_includes names, 'Heure de soumission'
+      assert_includes names, 'Total des processeurs'
+    end
+  end
 end

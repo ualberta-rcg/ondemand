@@ -28,10 +28,10 @@ class DashboardErbI18nTest < ActionView::TestCase
   end
 
   test 'SystemStatusHelper localizes cluster status strings in fr-CA' do
-    cluster = stub(title: 'Eureka')
+    cluster = stub(title: 'Owens')
     adapter = Object.new
     I18n.with_locale(:'fr-CA') do
-      assert_equal 'État de la grappe Eureka', title(cluster)
+      assert_equal 'État de la grappe Owens', title(cluster)
       res = not_slurm_hash(adapter)
       assert_includes res[:message], 'Object'
       assert_includes res[:message], 'Slurm'
