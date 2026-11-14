@@ -555,19 +555,26 @@ module BatchConnect
       end
 
       if attr_i18n[:options].is_a?(Hash) && merged[:options].is_a?(Array)
-        opt_labels = attr_i18n[:options]
+        opt_labels = attr_i18n[:options].each_with_object({}) do |(k, v), acc|
+          acc[k.to_s] = v.to_s unless v.nil?
+        end
         merged[:options] = merged[:options].map do |entry|
           case entry
           when Array
-            val_key = (entry.size > 1 ? entry[1] : entry[0]).to_s.to_sym
+            has_explicit_val = entry.size > 1 && !entry[1].is_a?(Hash)
+            val_key = (has_explicit_val ? entry[1] : entry[0]).to_s
             if opt_labels.key?(val_key)
-              entry.size > 1 ? [opt_labels[val_key].to_s, *entry[1..]] : [opt_labels[val_key].to_s, entry[0].to_s]
+              if has_explicit_val
+                [opt_labels[val_key], *entry[1..]]
+              else
+                [opt_labels[val_key], entry[0].to_s, *entry[1..]]
+              end
             else
               entry
             end
-          when String, Symbol
-            val_key = entry.to_sym
-            opt_labels.key?(val_key) ? [opt_labels[val_key].to_s, entry.to_s] : entry
+          when String, Symbol, Numeric
+            val_key = entry.to_s
+            opt_labels.key?(val_key) ? [opt_labels[val_key], entry.to_s] : entry
           else
             entry
           end
