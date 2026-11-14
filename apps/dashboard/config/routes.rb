@@ -80,6 +80,7 @@ Rails.application.routes.draw do
     end
   end
   get 'errors/not_found'
+  get 'errors/unprocessable_entity'
   get 'errors/internal_server_error'
   get 'dashboard/index'
   get 'logout' => 'dashboard#logout'
@@ -124,6 +125,7 @@ Rails.application.routes.draw do
   get '/system-status', to: 'system_status#index', as: 'system_status' if Configuration.can_access_system_status?
 
   post 'settings', :to => 'settings#update'
+  get 'settings', :to => 'settings#show', :as => nil
 
   # Experimental Feature
   # Allows widget partials to be rendered without any page furniture.
@@ -142,6 +144,7 @@ Rails.application.routes.draw do
   get '/custom/:page_code', to: 'custom_pages#index', as: :custom_pages
 
   match '/404', :to => 'errors#not_found', :via => :all
+  match '/422', :to => 'errors#unprocessable_entity', :via => :all
   match '/500', :to => 'errors#internal_server_error', :via => :all
 
   get 'module-browser' => 'module_browser#index', :as => 'module_browser'
