@@ -797,7 +797,10 @@ en:
     select_all: Select All
     select_path: Select Path
     select_path_for: "%{element} select path\n"
+    settings_csrf_expired: Your session security token expired. Please try your action again.
     settings_invalid_request: Invalid settings submitted
+    settings_unprocessable_body_html: Your session may have expired or the change you wanted was rejected. Please <a href="%{dashboard_url}">return to the Dashboard</a> and try again.
+    settings_unprocessable_title: Session Expired or Change Rejected
     settings_updated: Settings updated
     shared_apps_caption: Shared by %{owner_title} (%{owner})
     shared_apps_caption_short: Shared by %{owner}

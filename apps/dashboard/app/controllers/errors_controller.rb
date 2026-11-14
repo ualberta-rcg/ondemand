@@ -1,5 +1,7 @@
 # The controller for error responses.
 class ErrorsController < ApplicationController
+  skip_forgery_protection
+
   # https://mattbrictson.com/dynamic-rails-error-pages
   #
   # to test in development, comment out this line in
@@ -13,6 +15,13 @@ class ErrorsController < ApplicationController
     respond_to do |format|
       format.html { render status: :not_found }
       format.json { render nothing: true, status: :not_found }
+    end
+  end
+
+  def unprocessable_entity
+    respond_to do |format|
+      format.html { render status: :unprocessable_entity }
+      format.all { head :unprocessable_entity }
     end
   end
 

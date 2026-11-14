@@ -787,7 +787,10 @@ fr-CA:
     select_all: Tout sélectionner
     select_path: Sélectionner le chemin
     select_path_for: "%{element} chemin de sélection\n"
+    settings_csrf_expired: Le jeton de sécurité de votre session a expiré. Veuillez réessayer votre action.
     settings_invalid_request: Paramètres soumis invalides
+    settings_unprocessable_body_html: Votre session a peut-être expiré ou la modification demandée a été refusée. Veuillez <a href="%{dashboard_url}">retourner au tableau de bord</a> et réessayer.
+    settings_unprocessable_title: Session expirée ou modification refusée
     settings_updated: Paramètres mis à jour
     shared_apps_caption: Partagé par %{owner_title} (%{owner})
     shared_apps_caption_short: Partagé par %{owner}

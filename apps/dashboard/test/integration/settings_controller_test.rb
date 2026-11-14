@@ -138,8 +138,46 @@ class SettingsControllerTest < ActionDispatch::IntegrationTest
       assert_equal :en, I18n.locale
 
       post settings_path, params: { settings: { locale: 'ja-JP' } }, headers: @headers
-      assert_equal 'ja_JP', TestUserSettings.new.user_settings[:locale]
+      assert_equal 'ja-JP', TestUserSettings.new.user_settings[:locale]
       assert_equal 'ja-JP', cookies['ood_locale']
+
+      post settings_path, params: { settings: { locale: 'ja_JP' } }, headers: @headers
+      assert_equal 'ja-JP', TestUserSettings.new.user_settings[:locale]
+      assert_equal 'ja-JP', cookies['ood_locale']
+    end
+  end
+
+  test 'GET /settings redirects safely to root without mutating settings' do
+    Dir.mktmpdir do |temp_data_dir|
+      Configuration.stubs(:user_settings_file).returns("#{temp_data_dir}/settings.yml")
+      Configuration.stubs(:supported_locales).returns([:en, :'fr-CA'])
+
+      get '/settings', params: { settings: { locale: 'fr-CA' }, back: 'true' }
+      assert_response :redirect
+      assert_redirected_to root_url
+      assert_empty TestUserSettings.new.user_settings
+    end
+  end
+
+  test 'POST /settings with expired CSRF token resets session and redirects HTML safely without mutating settings' do
+    Dir.mktmpdir do |temp_data_dir|
+      Configuration.stubs(:user_settings_file).returns("#{temp_data_dir}/settings.yml")
+      Configuration.stubs(:supported_locales).returns([:en, :'fr-CA'])
+
+      post settings_path,
+           params:  { settings: { locale: 'fr-CA' }, back: 'true' },
+           headers: { 'X-CSRF-Token' => 'stale-or-mismatched-token', 'HTTP_REFERER' => '/apps/index' }
+
+      assert_response :redirect
+      assert_redirected_to '/apps/index'
+      assert_equal I18n.t('dashboard.settings_csrf_expired'), flash[:alert]
+      assert_empty TestUserSettings.new.user_settings
+
+      post settings_path,
+           params:  { settings: { locale: 'fr-CA' } },
+           headers: { 'X-CSRF-Token' => 'stale-or-mismatched-token', 'Accept' => 'application/json' }
+      assert_response :unprocessable_entity
+      assert_empty TestUserSettings.new.user_settings
     end
   end
 
