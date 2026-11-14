@@ -201,6 +201,11 @@ class SettingsControllerTest < ActionDispatch::IntegrationTest
     locale_links = @response.body.scan(/settings%5Blocale%5D=([a-zA-Z_\-]+)/).flatten
     assert_equal %w[en en-CA fr-CA ja_JP], locale_links.sort
     refute_includes locale_links, 'de'
+    assert_match(/locale-dropdown-menu/, @response.body)
+    assert_match(/<span>EN-CA<\/span>/, @response.body)
+    assert_match(/<span>FR-CA<\/span>/, @response.body)
+    assert_match(/<span>JA-JP<\/span>/, @response.body)
+    assert_match(/title="Français \(Canada\)"/, @response.body)
   end
 
   class TestUserSettings

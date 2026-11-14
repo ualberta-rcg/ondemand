@@ -146,10 +146,23 @@ module OodLocale
     to_bcp47(locale)
   end
 
+  # Compact uppercase abbreviation for navbar / compact UI selectors
+  # (e.g. :en -> "EN", :'en-CA' -> "EN-CA", :'fr-CA' -> "FR-CA", :ja_JP -> "JA-JP").
+  def short_label(locale = I18n.locale)
+    to_bcp47(locale).upcase
+  end
+
   # Selectable locale tuples `[native_name, locale_code, bcp47_tag]`.
   def options_for_select
     supported_locales.map do |loc|
       [locale_name(loc), loc.to_s, to_bcp47(loc)]
+    end
+  end
+
+  # Compact selectable locale tuples `[short_label, native_name, locale_code, bcp47_tag]`.
+  def short_options_for_select
+    supported_locales.map do |loc|
+      [short_label(loc), locale_name(loc), loc.to_s, to_bcp47(loc)]
     end
   end
 end

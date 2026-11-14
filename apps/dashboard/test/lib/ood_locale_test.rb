@@ -92,4 +92,20 @@ class OodLocaleTest < ActiveSupport::TestCase
     assert_equal 'Français (Canada)', OodLocale.locale_name(:'fr-CA')
     assert_equal '日本語', OodLocale.locale_name(:ja_JP)
   end
+
+  test 'short_label and short_options_for_select return compact uppercase codes with native titles' do
+    assert_equal 'EN', OodLocale.short_label(:en)
+    assert_equal 'EN-CA', OodLocale.short_label(:'en-CA')
+    assert_equal 'FR-CA', OodLocale.short_label('fr_ca')
+    assert_equal 'JA-JP', OodLocale.short_label(:ja_JP)
+
+    Configuration.stubs(:supported_locales).returns([:'en-CA', :'fr-CA'])
+    assert_equal(
+      [
+        ['EN-CA', 'English (Canada)', 'en-CA', 'en-CA'],
+        ['FR-CA', 'Français (Canada)', 'fr-CA', 'fr-CA']
+      ],
+      OodLocale.short_options_for_select
+    )
+  end
 end
