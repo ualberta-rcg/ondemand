@@ -151,7 +151,16 @@ el-GR:
     batch_connect_sessions_error_invalid_job_name_html: Εάν η υποβολή αυτής της εργασίας απέτυχε λόγω μη έγκυρου ονόματος εργασίας, ζητήστε από τον διαχειριστή σας να ρυθμίσει το OnDemand ώστε να ορίσει τη μεταβλητή περιβάλλοντος OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Η δημιουργία του προτύπου σε στάδιο απέτυχε με το ακόλουθο σφάλμα:'
     batch_connect_sessions_errors_submission: 'Η υποβολή της συνεδρίας απέτυχε με το ακόλουθο σφάλμα:'
+    batch_connect_sessions_native_vnc_connect_client_html: Ανοίξτε έναν VNC client και συνδεθείτε με %{target} μέσα στον client
+    batch_connect_sessions_native_vnc_download_viewer_html: Κατέβασε οποιοδήποτε πρόγραμμα προβολής VNC, το %{realvnc_link} είναι μια καλή επιλογή.
+    batch_connect_sessions_native_vnc_mac_code: 'Χρησιμοποιήστε τον παρακάτω κώδικα για να δημιουργήσετε τη σύνδεση VNC:'
+    batch_connect_sessions_native_vnc_open_terminal: Άνοιγμα παραθύρου τερματικού
+    batch_connect_sessions_native_vnc_password: 'Χρησιμοποιήστε τον κωδικό πρόσβασης VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Αντιγράψτε/επικολλήστε στο τερματικό σας για να δημιουργήσετε τη σήραγγα SSH:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Αντιγράψτε/επικολλήστε στο τερματικό σας και αντικαταστήστε το %{ssh_host} με έναν έγκυρο διακομιστή σύνδεσης HPC για να δημιουργήσετε τη σήραγγα SSH:'
     batch_connect_sessions_native_vnc_tab: Εγγενείς οδηγίες
+    batch_connect_sessions_native_vnc_unsupported: Προς το παρόν, δεν υποστηρίζουμε τεκμηρίωση για τη σύνδεση σε μια συνεδρία VNC με εγγενή πελάτη για το λειτουργικό σας σύστημα.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Για τερματικά στα Windows μπορείτε να χρησιμοποιήσετε: τις διανομές %{powershell_link}, %{putty_link} και %{wsl_link}'
     batch_connect_sessions_novnc_compression: Συμπίεση
     batch_connect_sessions_novnc_compression_help: 1 (χαμηλή) έως 9 (υψηλή)
     batch_connect_sessions_novnc_launch: Εκκίνηση %{app_title}

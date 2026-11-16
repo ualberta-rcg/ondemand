@@ -153,7 +153,16 @@ fa-IR:
       '
     batch_connect_sessions_errors_staging: 'آماده‌سازی الگو با خطای زیر ناموفق بود:'
     batch_connect_sessions_errors_submission: 'ارسال نشست با خطای زیر ناموفق بود:'
+    batch_connect_sessions_native_vnc_connect_client_html: یک کلاینت VNC باز کنید و به %{target} درون کلاینت متصل شوید.
+    batch_connect_sessions_native_vnc_download_viewer_html: هر نرم‌افزار VNC viewer را دانلود کنید، %{realvnc_link} گزینه خوبی است.
+    batch_connect_sessions_native_vnc_mac_code: 'برای ایجاد اتصال VNC از کد زیر استفاده کنید:'
+    batch_connect_sessions_native_vnc_open_terminal: یک پنجره ترمینال باز کنید
+    batch_connect_sessions_native_vnc_password: 'از رمز عبور VNC استفاده کنید:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'برای ایجاد تونل SSH، در ترمینال خود کپی/پیست کنید:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'در ترمینال خود کپی/پیست کنید و %{ssh_host} را با یک سرور ورود معتبر HPC جایگزین کنید تا تونل SSH برقرار شود:'
     batch_connect_sessions_native_vnc_tab: دستورالعمل‌های بومی
+    batch_connect_sessions_native_vnc_unsupported: ما در حال حاضر از مستندات مربوط به اتصال به یک جلسه VNC با یک کلاینت بومی برای سیستم عامل شما پشتیبانی نمی‌کنیم.
+    batch_connect_sessions_native_vnc_windows_terminals_html: برای ترمینال‌ها در ویندوز می‌توانید از توزیع‌های %{powershell_link}، %{putty_link} و %{wsl_link} استفاده کنید.
     batch_connect_sessions_novnc_compression: فشرده سازی
     batch_connect_sessions_novnc_compression_help: ۱ (کم) تا ۹ (زیاد)
     batch_connect_sessions_novnc_launch: راه‌اندازی %{app_title}

@@ -171,7 +171,16 @@ sl-SI:
     batch_connect_sessions_error_invalid_job_name_html: Če oddaja tega opravila ni uspela zaradi neveljavnega imena opravila, prosimo, prosite skrbnika, da konfigurira OnDemand tako, da nastavi okoljsko spremenljivko OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Predloge ni bilo mogoče pripraviti, prišlo je do naslednje napake:'
     batch_connect_sessions_errors_submission: 'Seje ni bilo mogoče poslati zaradi naslednje napake:'
+    batch_connect_sessions_native_vnc_connect_client_html: Odprite odjemalca VNC in se v njem povežite z %{target}
+    batch_connect_sessions_native_vnc_download_viewer_html: Prenesite kateri koli pregledovalnik VNC, %{realvnc_link} je dobra možnost.
+    batch_connect_sessions_native_vnc_mac_code: 'Za vzpostavitev VNC povezave uporabite spodnjo kodo:'
+    batch_connect_sessions_native_vnc_open_terminal: Odprite okno terminala
+    batch_connect_sessions_native_vnc_password: 'Uporabite geslo VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Kopirajte/prilepite v terminal, da vzpostavite SSH tunel:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopirajte/prilepite v terminal in zamenjajte %{ssh_host} z veljavnim prijavnim strežnikom HPC, da vzpostavite tunel SSH:'
     batch_connect_sessions_native_vnc_tab: Izvorna navodila
+    batch_connect_sessions_native_vnc_unsupported: Trenutno ne podpiramo dokumentacije za povezovanje s sejo VNC z izvornim odjemalcem za vaš operacijski sistem.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Za terminale v sistemu Windows lahko uporabite: distribucije %{powershell_link}, %{putty_link} in %{wsl_link}'
     batch_connect_sessions_novnc_compression: Kompresija
     batch_connect_sessions_novnc_compression_help: od 1 (nizko) do 9 (visoko)
     batch_connect_sessions_novnc_launch: Zaženi %{app_title}

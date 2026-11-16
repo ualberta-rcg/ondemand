@@ -173,7 +173,16 @@ fi-FI:
     batch_connect_sessions_error_invalid_job_name_html: Jos tämän työn lähettäminen epäonnistui virheellisen työnimen vuoksi, pyydä järjestelmänvalvojaa määrittämään OnDemand asettamaan ympäristömuuttuja OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Mallipohjan valmistelu epäonnistui seuraavan virheen vuoksi:'
     batch_connect_sessions_errors_submission: 'Istunnon lähettäminen epäonnistui seuraavan virheen vuoksi:'
+    batch_connect_sessions_native_vnc_connect_client_html: Avaa VNC-asiakasohjelma ja muodosta yhteys %{target}-ohjelmaan asiakkaan sisällä.
+    batch_connect_sessions_native_vnc_download_viewer_html: Lataa mikä tahansa VNC-katseluohjelma, %{realvnc_link} on hyvä vaihtoehto.
+    batch_connect_sessions_native_vnc_mac_code: 'Käytä alla olevaa koodia VNC-yhteyden muodostamiseen:'
+    batch_connect_sessions_native_vnc_open_terminal: Avaa pääteikkuna
+    batch_connect_sessions_native_vnc_password: 'Käytä VNC-salasanaa:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Kopioi/liitä terminaalissasi SSH-tunnelin muodostamiseksi:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopioi/liitä terminaalissasi ja korvaa %{ssh_host} kelvollisella HPC-kirjautumispalvelimella muodostaaksesi SSH-tunnelin:'
     batch_connect_sessions_native_vnc_tab: Natiiviohjeet
+    batch_connect_sessions_native_vnc_unsupported: Emme tällä hetkellä tue dokumentaatiota VNC-istuntoon yhdistämisestä käyttöjärjestelmäsi natiivilla asiakasohjelmalla.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Windows-päätteissä voit käyttää seuraavia jakeluita: %{powershell_link}, %{putty_link} ja %{wsl_link}'
     batch_connect_sessions_novnc_compression: Puristus
     batch_connect_sessions_novnc_compression_help: 1 (matala) - 9 (korkea)
     batch_connect_sessions_novnc_launch: Käynnistä %{app_title}

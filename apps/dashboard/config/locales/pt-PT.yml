@@ -197,7 +197,16 @@ pt-PT:
       '
     batch_connect_sessions_errors_staging: 'Falha ao preparar o modelo com o seguinte erro:'
     batch_connect_sessions_errors_submission: 'Falha no envio da sessão. Ocorreu o seguinte erro:'
+    batch_connect_sessions_native_vnc_connect_client_html: Abra um cliente VNC e ligue-se a %{target} dentro do cliente.
+    batch_connect_sessions_native_vnc_download_viewer_html: Descarregue qualquer visualizador VNC; %{realvnc_link} é uma boa opção.
+    batch_connect_sessions_native_vnc_mac_code: 'Utilize o código abaixo para estabelecer a ligação VNC:'
+    batch_connect_sessions_native_vnc_open_terminal: Abra uma janela de terminal.
+    batch_connect_sessions_native_vnc_password: 'Utilize a senha VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Copie e cole no seu terminal para estabelecer o túnel SSH:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Copie e cole no seu terminal e substitua %{ssh_host} por um servidor de login HPC válido para estabelecer o túnel SSH:'
     batch_connect_sessions_native_vnc_tab: Instruções Nativas
+    batch_connect_sessions_native_vnc_unsupported: Atualmente não suportamos a documentação para a ligação a uma sessão VNC com um cliente nativo do seu sistema operativo.
+    batch_connect_sessions_native_vnc_windows_terminals_html: Para terminais no Windows, pode utilizar as distribuições %{powershell_link}, %{putty_link} e %{wsl_link}.
     batch_connect_sessions_novnc_compression: Compressão
     batch_connect_sessions_novnc_compression_help: 1 (baixo) a 9 (alto)
     batch_connect_sessions_novnc_launch: Lançamento %{app_title}

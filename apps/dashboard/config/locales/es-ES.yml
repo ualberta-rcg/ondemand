@@ -181,7 +181,16 @@ es-ES:
     batch_connect_sessions_error_invalid_job_name_html: Si este trabajo no se pudo enviar debido a un nombre de trabajo no válido, solicite a su administrador que configure OnDemand para establecer la variable de entorno OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'No se pudo preparar la plantilla con el siguiente error:'
     batch_connect_sessions_errors_submission: 'No se pudo enviar la sesión con el siguiente error:'
+    batch_connect_sessions_native_vnc_connect_client_html: Abra un cliente VNC y conéctese a %{target} dentro del cliente.
+    batch_connect_sessions_native_vnc_download_viewer_html: Descarga cualquier visor VNC; %{realvnc_link} es una buena opción.
+    batch_connect_sessions_native_vnc_mac_code: 'Utilice el siguiente código para establecer la conexión VNC:'
+    batch_connect_sessions_native_vnc_open_terminal: Abra una ventana de terminal
+    batch_connect_sessions_native_vnc_password: 'Utilice la contraseña de VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Copia y pega en tu terminal para establecer el túnel SSH:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Copia y pega en tu terminal y reemplaza %{ssh_host} con un servidor de inicio de sesión HPC válido para establecer el túnel SSH:'
     batch_connect_sessions_native_vnc_tab: Instrucciones nativas
+    batch_connect_sessions_native_vnc_unsupported: Actualmente no ofrecemos documentación para conectarse a una sesión VNC con un cliente nativo para su sistema operativo.
+    batch_connect_sessions_native_vnc_windows_terminals_html: Para terminales en Windows puede utilizar las distribuciones %{powershell_link}, %{putty_link} y %{wsl_link}.
     batch_connect_sessions_novnc_compression: Compresión
     batch_connect_sessions_novnc_compression_help: 1 (bajo) a 9 (alto)
     batch_connect_sessions_novnc_launch: Lanzamiento %{app_title}

@@ -14,6 +14,5 @@
   <%= render partial: 'batch_connect/sessions/connections/native_vnc_linux', :locals => { :connect => connect, :localport => localport } %>
 
 <% else %>
-  We do not currently support documentation for connecting to a VNC session
-  with a native client for your operating system.
+  <%= t('dashboard.batch_connect_sessions_native_vnc_unsupported') %>
 <% end %>

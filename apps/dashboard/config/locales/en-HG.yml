@@ -159,7 +159,16 @@ en-HG:
       '
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit voyage with the following error:'
+    batch_connect_sessions_native_vnc_connect_client_html: Open a Sub-Etha VNC visor and lock onto %{target} inside the client
+    batch_connect_sessions_native_vnc_download_viewer_html: Acquire any Sub-Etha VNC visor — %{realvnc_link} is Mostly Harmless.
+    batch_connect_sessions_native_vnc_mac_code: 'Transmit the incantation below to open the Sub-Etha VNC link:'
+    batch_connect_sessions_native_vnc_open_terminal: Open a Sub-Etha terminal console (Don't Panic!)
+    batch_connect_sessions_native_vnc_password: 'Enter the Vogon VNC passkey:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Copy/paste into your Sub-Etha console to open the hyperspace SSH tunnel:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Copy/paste into your console and replace %{ssh_host} with a valid Starship login relay to open the hyperspace SSH tunnel:'
     batch_connect_sessions_native_vnc_tab: Sub-Etha VNC Coordinates
+    batch_connect_sessions_native_vnc_unsupported: The Guide has no entry yet for connecting a native VNC visor from your planetary operating system.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'For Earth-Windows consoles you may use: %{powershell_link}, %{putty_link} and %{wsl_link} distributions'
     batch_connect_sessions_novnc_compression: Sub-Etha Compression
     batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Engage %{app_title}
