@@ -1,5 +1,5 @@
 {
-  "page_title": "Kest - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Shelli menüü",
   "host_label": "Host: %{host}",
   "initial_directory": "Esialgne kataloog: %{dir}",

@@ -1,7 +1,7 @@
 ---
 hr-HR:
   manifest:
-    name: Stolno računalo
+    name: Interaktivna radna površina
     description: Ova će aplikacija pokrenuti interaktivnu radnu površinu na jednom ili više računalnih čvorova. Imat ćete puni pristup resursima koje ti čvorovi pružaju. To je analogno interaktivnom batch zadatku.
   form:
     attributes:

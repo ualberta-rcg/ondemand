@@ -1,5 +1,5 @@
 {
-  "page_title": "シェル - %{siteTitle}",
+  "page_title": "シェル端末 - %{siteTitle}",
   "menu_aria": "シェルメニュー",
   "host_label": "ホスト: %{host}",
   "initial_directory": "初期ディレクトリ: %{dir}",

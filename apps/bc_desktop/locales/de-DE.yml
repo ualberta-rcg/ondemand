@@ -1,7 +1,7 @@
 ---
 de-DE:
   manifest:
-    name: Desktop
+    name: Interaktiver Desktop
     description: 'Diese App startet einen interaktiven Desktop auf einem oder mehreren Rechenknoten. Sie
 
       haben vollen Zugriff auf die Ressourcen dieser Knoten. Dies ist vergleichbar mit

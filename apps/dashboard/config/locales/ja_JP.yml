@@ -10,7 +10,7 @@ ja_JP:
   dashboard:
     account: アカウント
     actions: 行動
-    active_jobs: 募集中の求人
+    active_jobs: 実行中のジョブ
     active_jobs_close_details: 詳細パネルを閉じる。
     active_jobs_detail:
       account: アカウント
@@ -245,8 +245,8 @@ ja_JP:
       files: ファイル
       gateway_apps: ゲートウェイアプリ
       guis: GUI
-      interactive_apps: インタラクティブアプリ
-      jobs: 求人情報
+      interactive_apps: 対話型アプリ
+      jobs: ジョブ
       machine_learning: 機械学習
       mathematics: 数学
       servers: サーバー
@@ -399,7 +399,7 @@ ja_JP:
     jobs_project_job_not_deleted: ジョブ%{job_id}を削除できません。
     jobs_project_job_stopped: ジョブ%{job_id}が正常に停止されました。
     jobs_project_list_aria: プロジェクト一覧
-    jobs_project_manager: プロジェクトマネージャー
+    jobs_project_manager: プロジェクト管理
     jobs_project_manifest_updated: プロジェクトマニフェストが更新されました！
     jobs_project_name_placeholder: プロジェクト名
     jobs_project_name_validation: プロジェクト名には文字、数字、ダッシュ、アンダースコア、スペースのみを含めることができます。
@@ -705,7 +705,7 @@ ja_JP:
     module_browser_search_placeholder: モジュール名で検索...
     module_browser_select_version: （バージョンを選択）
     module_browser_showing_results: '%{count} の結果を表示しています'
-    module_browser_title: モジュールブラウザ
+    module_browser_title: モジュールブラウザー
     module_browser_versions: バージョン
     motd_default_md: "Open OnDemand の開発は、[米国国立科学財団](https://www.nsf.gov/)\nの助成金番号 [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) および\n[1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) によって支援されています。\n 詳細を確認したり、参加したりするには、以下をご覧ください。\n - [Discourse](https://discourse.openondemand.org/)\n- [Open OnDemand リポジトリ](https://github.com/OSC/ondemand)\n- [ood-core リポジトリ](https://github.com/OSC/ood_core)\n- [ドキュメント](https://osc.github.io/ood-documentation/latest/)\n"
     motd_erb_render_error: 'MOTD が正しく解析またはレンダリングされませんでした: %{error_message}'

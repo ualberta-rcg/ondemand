@@ -10,7 +10,7 @@ ro-RO:
   dashboard:
     account: Cont
     actions: Acțiuni
-    active_jobs: Locuri de muncă active
+    active_jobs: Joburi active
     active_jobs_close_details: Închideți panoul cu detalii extinse.
     active_jobs_detail:
       account: Cont
@@ -248,17 +248,17 @@ ro-RO:
     categories:
       apps: Aplicații
       bioinformatics: Bioinformatică
-      clusters: Clusterele
+      clusters: Clustere
       data_science: Știința datelor
       desktop: Desktop
-      desktops: Desktopuri
+      desktops: Desktop
       development: Dezvoltare
       external_apps: Aplicații externe
       files: Fișiere
       gateway_apps: Aplicații Gateway
       guis: Interfețe grafice
       interactive_apps: Aplicații interactive
-      jobs: Locuri de muncă
+      jobs: Joburi
       machine_learning: Învățare automată
       mathematics: Matematică
       servers: Servere
@@ -411,7 +411,7 @@ ro-RO:
     jobs_project_job_not_deleted: Nu se poate șterge jobul %{job_id}
     jobs_project_job_stopped: Lucrul a fost oprit cu succes %{job_id}
     jobs_project_list_aria: Lista de proiecte
-    jobs_project_manager: Manager de proiect
+    jobs_project_manager: Manager de proiecte
     jobs_project_manifest_updated: Manifestul proiectului a fost actualizat!
     jobs_project_name_placeholder: Numele proiectului
     jobs_project_name_validation: Numele proiectului poate conține doar litere, cifre, cratime, sublinieri și spații
@@ -716,7 +716,7 @@ ro-RO:
     module_browser_search_placeholder: Căutare după numele modulului...
     module_browser_select_version: (selectați versiunea)
     module_browser_showing_results: Se afișează rezultatele %{count}
-    module_browser_title: Navigator de module
+    module_browser_title: Explorator de module
     module_browser_versions: Versiuni
     motd_default_md: 'Dezvoltarea Open OnDemand este susținută prin intermediul [Fundației Naționale pentru Știință](https://www.nsf.gov/)
 

@@ -242,7 +242,7 @@ hr-HR:
       title: Spremljene postavke
     breadcrumb_aria: Putna mrvica
     breadcrumbs_all_apps: Sve aplikacije
-    breadcrumbs_home: Dom
+    breadcrumbs_home: Početna
     breadcrumbs_my_sessions: Moje interaktivne sesije
     breadcrumbs_support_ticket: Zahtjev za podršku
     browser_warning: OnDemand zahtijeva noviju verziju preglednika koji koristite. Trenutni zahtjevi preglednika uključuju IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
@@ -252,8 +252,8 @@ hr-HR:
       bioinformatics: Bioinformatika
       clusters: Klasteri
       data_science: Znanost o podacima
-      desktop: Stolno računalo
-      desktops: Stolna računala
+      desktop: Radna površina
+      desktops: Radna površina
       development: Razvoj
       external_apps: Vanjske aplikacije
       files: Datoteke
@@ -413,7 +413,7 @@ hr-HR:
     jobs_project_job_not_deleted: Nije moguće izbrisati zadatak %{job_id}
     jobs_project_job_stopped: Uspješno zaustavljen zadatak %{job_id}
     jobs_project_list_aria: Popis projekata
-    jobs_project_manager: Voditelj projekta
+    jobs_project_manager: Upravitelj projekata
     jobs_project_manifest_updated: Manifest projekta ažuriran!
     jobs_project_name_placeholder: Naziv projekta
     jobs_project_name_validation: Naziv projekta može sadržavati samo slova, brojke, crtice, podcrte i razmake

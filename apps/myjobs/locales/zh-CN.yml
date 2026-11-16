@@ -1,5 +1,5 @@
 ---
 zh-CN:
   manifest:
-    name: 作业编写器
+    name: 作业编排器
     description: 作业编辑器允许创建和提交批处理作业

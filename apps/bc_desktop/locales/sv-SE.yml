@@ -1,7 +1,7 @@
 ---
 sv-SE:
   manifest:
-    name: Skrivbord
+    name: Interaktivt skrivbord
     description: 'Den här appen startar ett interaktivt skrivbord på en eller flera beräkningsnoder. Du
 
       kommer att ha fullständig åtkomst till de resurser som dessa noder tillhandahåller. Detta är analogt

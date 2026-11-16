@@ -10,7 +10,7 @@ pt-PT:
   dashboard:
     account: Conta
     actions: Ações
-    active_jobs: Empregos ativos
+    active_jobs: Tarefas ativas
     active_jobs_close_details: Fechar painel de detalhes expandidos.
     active_jobs_detail:
       account: Conta
@@ -273,7 +273,7 @@ pt-PT:
       title: Configurações guardadas
     breadcrumb_aria: Migalhas de pão
     breadcrumbs_all_apps: Todos os aplicativos
-    breadcrumbs_home: Casa
+    breadcrumbs_home: Início
     breadcrumbs_my_sessions: As Minhas Sessões Interativas
     breadcrumbs_support_ticket: Ticket de suporte
     browser_warning: O OnDemand requer uma versão mais recente do browser que está a utilizar. Os requisitos atuais do browser incluem o IE Edge, Firefox 19+, Chrome 34+ e Safari 8+.
@@ -281,17 +281,17 @@ pt-PT:
     categories:
       apps: Aplicativos
       bioinformatics: Bioinformática
-      clusters: Aglomerados
+      clusters: Clusters
       data_science: Ciência de Dados
-      desktop: Área de trabalho
-      desktops: Computadores
+      desktop: Ambiente de trabalho
+      desktops: Ambiente de trabalho
       development: Desenvolvimento
       external_apps: Aplicativos externos
-      files: Arquivos
+      files: Ficheiros
       gateway_apps: Aplicações de gateway
       guis: GUIs
-      interactive_apps: Aplicativos interativos
-      jobs: Empregos
+      interactive_apps: Aplicações interativas
+      jobs: Tarefas
       machine_learning: Aprendizagem de máquina
       mathematics: Matemática
       servers: Servidores
@@ -335,7 +335,7 @@ pt-PT:
     file: Ficheiro
     file_editor: Editor de Ficheiros
     file_quotas: Cotas de Arquivos
-    files: Arquivos
+    files: Ficheiros
     files_change_directory: Alterar diretório
     files_contents_of_directory: Conteúdo do diretório %{path}
     files_copy_move: Copiar/Mover
@@ -444,7 +444,7 @@ pt-PT:
     jobs_project_job_not_deleted: Não é possível eliminar a tarefa %{job_id}
     jobs_project_job_stopped: Tarefa %{job_id} terminada com sucesso
     jobs_project_list_aria: Lista de projetos
-    jobs_project_manager: Gestor de projeto
+    jobs_project_manager: Gestor de projetos
     jobs_project_manifest_updated: Manifesto do projeto atualizado!
     jobs_project_name_placeholder: Nome do projeto
     jobs_project_name_validation: O nome do projeto pode conter apenas letras, dígitos, hífens, sublinhados e espaços.
@@ -749,7 +749,7 @@ pt-PT:
     module_browser_search_placeholder: Pesquisar por nome do módulo...
     module_browser_select_version: (selecione a versão)
     module_browser_showing_results: A apresentar resultados de %{count}
-    module_browser_title: Navegador de módulos
+    module_browser_title: Explorador de módulos
     module_browser_versions: Versões
     motd_default_md: 'O desenvolvimento do Open OnDemand é financiado pela [National Science Foundation](https://www.nsf.gov/)
 

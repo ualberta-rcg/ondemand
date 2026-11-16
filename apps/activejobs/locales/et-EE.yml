@@ -1,5 +1,5 @@
 ---
 et-EE:
   manifest:
-    name: Aktiivsed töökohad
+    name: Aktiivsed tööd
     description: Vaadake töid, mis hetkel töötavad saadaolevates klastrites, mis on konfigureeritud OnDemand jaoks.

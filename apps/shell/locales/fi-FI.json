@@ -1,5 +1,5 @@
 {
-  "page_title": "Kuori - %{siteTitle}",
+  "page_title": "Pääte (Shell) - %{siteTitle}",
   "menu_aria": "Shell-valikko",
   "host_label": "Isäntä: %{host}",
   "initial_directory": "Alkuperäinen hakemisto: %{dir}",

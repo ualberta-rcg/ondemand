@@ -1,5 +1,5 @@
 ---
 fi-FI:
   manifest:
-    name: Moduulien selain
+    name: Moduuliselain
     description: Selaa klustereiden moduuleja saadaksesi yksityiskohtaista tietoa moduuleista.

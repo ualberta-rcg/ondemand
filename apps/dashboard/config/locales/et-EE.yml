@@ -10,7 +10,7 @@ et-EE:
   dashboard:
     account: Konto
     actions: Toimingud
-    active_jobs: Aktiivsed töökohad
+    active_jobs: Aktiivsed tööd
     active_jobs_close_details: Sulge laiendatud detailide paneel.
     active_jobs_detail:
       account: Konto
@@ -246,15 +246,15 @@ et-EE:
       bioinformatics: Bioinformaatika
       clusters: Klastrid
       data_science: Andmeteadus
-      desktop: Lauaarvuti
-      desktops: Lauaarvutid
+      desktop: Töölaud
+      desktops: Töölaud
       development: Areng
       external_apps: Välised rakendused
       files: Failid
       gateway_apps: Gateway rakendused
       guis: GUI-d
       interactive_apps: Interaktiivsed rakendused
-      jobs: Töökohad
+      jobs: Tööd
       machine_learning: Masinõpe
       mathematics: Matemaatika
       servers: Serverid
@@ -407,7 +407,7 @@ et-EE:
     jobs_project_job_not_deleted: Tööd %{job_id} ei saa kustutada
     jobs_project_job_stopped: Töö %{job_id} edukalt peatatud
     jobs_project_list_aria: Projektide nimekiri
-    jobs_project_manager: Projektijuht
+    jobs_project_manager: Projektihaldur
     jobs_project_manifest_updated: Projekti manifest uuendatud!
     jobs_project_name_placeholder: Projekti nimi
     jobs_project_name_validation: Projekti nimi võib sisaldada ainult tähti, numbreid, kriipse, alakriipse ja tühikuid

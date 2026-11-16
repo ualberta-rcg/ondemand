@@ -10,7 +10,7 @@ nl-NL:
   dashboard:
     account: Rekening
     actions: Acties
-    active_jobs: Actieve vacatures
+    active_jobs: Actieve taken
     active_jobs_close_details: Sluit het paneel met uitgebreide details.
     active_jobs_detail:
       account: Rekening
@@ -244,7 +244,7 @@ nl-NL:
       title: Opgeslagen instellingen
     breadcrumb_aria: Paneermeel
     breadcrumbs_all_apps: Alle apps
-    breadcrumbs_home: Thuis
+    breadcrumbs_home: Startpagina
     breadcrumbs_my_sessions: Mijn interactieve sessies
     breadcrumbs_support_ticket: Ondersteuningsticket
     browser_warning: 'Voor OnDemand is een recentere versie van uw browser vereist. De volgende browsers worden momenteel ondersteund: IE Edge, Firefox 19+, Chrome 34+ en Safari 8+.'
@@ -254,15 +254,15 @@ nl-NL:
       bioinformatics: Bio-informatica
       clusters: Clusters
       data_science: Datawetenschap
-      desktop: bureaublad
-      desktops: Desktops
+      desktop: Bureaublad
+      desktops: Bureaublad
       development: Ontwikkeling
       external_apps: Externe apps
       files: Bestanden
       gateway_apps: Gateway-apps
       guis: GUI's
-      interactive_apps: Interactieve apps
-      jobs: Banen
+      interactive_apps: Interactieve applicaties
+      jobs: Taken
       machine_learning: Machine learning
       mathematics: Wiskunde
       servers: Servers
@@ -415,7 +415,7 @@ nl-NL:
     jobs_project_job_not_deleted: Kan taak %{job_id} niet verwijderen
     jobs_project_job_stopped: Taak %{job_id} succesvol gestopt
     jobs_project_list_aria: Projectenlijst
-    jobs_project_manager: Projectmanager
+    jobs_project_manager: Projectbeheer
     jobs_project_manifest_updated: Projectmanifest bijgewerkt!
     jobs_project_name_placeholder: Projectnaam
     jobs_project_name_validation: De projectnaam mag alleen letters, cijfers, streepjes, underscores en spaties bevatten.

@@ -1,5 +1,5 @@
 {
-  "page_title": "Héj - %{siteTitle}",
+  "page_title": "Terminál (Shell) - %{siteTitle}",
   "menu_aria": "Héj menü",
   "host_label": "Gazdagép: %{host}",
   "initial_directory": "Kezdőkönyvtár: %{dir}",

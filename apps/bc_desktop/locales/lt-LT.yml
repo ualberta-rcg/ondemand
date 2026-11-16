@@ -1,7 +1,7 @@
 ---
 lt-LT:
   manifest:
-    name: Darbalaukis
+    name: Interaktyvus darbalaukis
     description: Ši programa paleis interaktyvų darbalaukį viename ar keliuose skaičiavimo mazguose. Jūs turėsite visišką prieigą prie šių mazgų teikiamų išteklių. Tai analogiška interaktyviam paketiniam darbui.
   form:
     attributes:

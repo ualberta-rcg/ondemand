@@ -208,7 +208,7 @@ sv-SE:
       title: Sparade inställningar
     breadcrumb_aria: Brödsmulor
     breadcrumbs_all_apps: Alla appar
-    breadcrumbs_home: Hem
+    breadcrumbs_home: Startsida
     breadcrumbs_my_sessions: Mina interaktiva sessioner
     breadcrumbs_support_ticket: Supportärende
     browser_warning: OnDemand kräver en nyare version av webbläsaren du använder. Nuvarande webbläsarkrav inkluderar IE Edge, Firefox 19+, Chrome 34+ och Safari 8+.
@@ -219,13 +219,13 @@ sv-SE:
       clusters: Kluster
       data_science: Datavetenskap
       desktop: Skrivbord
-      desktops: Stationära datorer
+      desktops: Skrivbord
       development: Utveckling
       external_apps: Externa appar
       files: Filer
       gateway_apps: Gateway-appar
       guis: GUI:er
-      interactive_apps: Interaktiva appar
+      interactive_apps: Interaktiva applikationer
       jobs: Jobb
       machine_learning: Maskininlärning
       mathematics: Matematik
@@ -379,7 +379,7 @@ sv-SE:
     jobs_project_job_not_deleted: Kan inte ta bort jobbet %{job_id}
     jobs_project_job_stopped: Jobbet har avslutats %{job_id}
     jobs_project_list_aria: Projektlista
-    jobs_project_manager: Projektledare
+    jobs_project_manager: Projekthanterare
     jobs_project_manifest_updated: Projektmanifestet uppdaterat!
     jobs_project_name_placeholder: Projektnamn
     jobs_project_name_validation: Projektnamnet får endast innehålla bokstäver, siffror, bindestreck, understreck och mellanslag
@@ -684,7 +684,7 @@ sv-SE:
     module_browser_search_placeholder: Sök efter modulnamn...
     module_browser_select_version: (välj version)
     module_browser_showing_results: Visar %{count} resultat
-    module_browser_title: Modulwebbläsare
+    module_browser_title: Modulbläddrare
     module_browser_versions: Versioner
     motd_default_md: 'Utvecklingen av Open OnDemand stöds av [National Science Foundation](https://www.nsf.gov/)
 

@@ -85,16 +85,16 @@ en-CP:
     active_sessions_caption_html: <a href="%{all_sessions_url}"> view all (%{number_of_sessions})</a>
     active_sessions_title: Active netdives
     add: Add
-    all_apps_table_app_column: Name
-    all_apps_table_category_column: Category
-    all_apps_table_sub_category_column: Sub Category
+    all_apps_table_app_column: Daemon / Rig
+    all_apps_table_category_column: Deck Slot
+    all_apps_table_sub_category_column: Sub-Grid
     all_clusters: All Subnets
     announcements_dismissible_button: OK
     announcements_parse_error: Black-ICE Glitch parsing announcement.
     announcements_render_error: Could not render announcement '%{name}' because of error
     announcements_required_button: Accept
     apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
-    apps_system_apps_title: System Apps
+    apps_system_apps_title: Sys-Grid Icebreakers
     auto_log_location_title: Log Location
     back: Delta Back
     balance_additional_message: Consider requesting additional %{balanace_units}
@@ -159,37 +159,37 @@ en-CP:
       '
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit netdive with the following error:'
-    batch_connect_sessions_native_vnc_tab: Native Instructions
-    batch_connect_sessions_novnc_compression: Compression
+    batch_connect_sessions_native_vnc_tab: Direct Neural Socket (VNC)
+    batch_connect_sessions_novnc_compression: Feed Compression
     batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Spin Up %{app_title}
-    batch_connect_sessions_novnc_quality: Image Quality
+    batch_connect_sessions_novnc_quality: Kiroshi Optics Quality
     batch_connect_sessions_novnc_quality_help: 0 (low) to 9 (high)
-    batch_connect_sessions_novnc_tab: noVNC Connection
-    batch_connect_sessions_novnc_view_only: View Only (Share-able Link)
+    batch_connect_sessions_novnc_tab: Optics Feed (noVNC)
+    batch_connect_sessions_novnc_view_only: BD Ghost Link (Read-Only)
     batch_connect_sessions_path_selector_forbidden_error: You do not have permission to select that directory or file.
     batch_connect_sessions_relaunch_full_title: Relaunch %{title} Netdive
-    batch_connect_sessions_relaunch_title: Relaunch
+    batch_connect_sessions_relaunch_title: Re-Breach
     batch_connect_sessions_staged_root: staged root directory
     batch_connect_sessions_stats_core_count:
       one: '%{count} core'
       other: '%{count} cores'
-    batch_connect_sessions_stats_created_at: 'Created at:'
-    batch_connect_sessions_stats_expected_time: 'Expected start:'
+    batch_connect_sessions_stats_created_at: 'Spun Up:'
+    batch_connect_sessions_stats_expected_time: 'ETA to Breach:'
     batch_connect_sessions_stats_gpu_count:
       one: '%{count} GPU'
       other: '%{count} GPUs'
-    batch_connect_sessions_stats_host: 'Host:'
+    batch_connect_sessions_stats_host: 'Blade Node:'
     batch_connect_sessions_stats_node_count:
       one: '%{count} node'
       other: '%{count} nodes'
     batch_connect_sessions_stats_session_dir_link_title: Open netdive directory for %{session_id}
-    batch_connect_sessions_stats_session_id: 'Netdive ID:'
-    batch_connect_sessions_stats_support_ticket: Problems with this netdive?
-    batch_connect_sessions_stats_support_ticket_link_text: Send Trauma Team ping
-    batch_connect_sessions_stats_time_remaining: 'Time Remaining:'
-    batch_connect_sessions_stats_time_requested: 'Time Requested:'
-    batch_connect_sessions_stats_time_used: 'Time Used:'
+    batch_connect_sessions_stats_session_id: 'Netdive Hash:'
+    batch_connect_sessions_stats_support_ticket: Black-ICE Glitch on this Netdive?
+    batch_connect_sessions_stats_support_ticket_link_text: Ping Trauma Team
+    batch_connect_sessions_stats_time_remaining: 'Link Uptime Left:'
+    batch_connect_sessions_stats_time_requested: 'Contract Window:'
+    batch_connect_sessions_stats_time_used: 'Burned Uptime:'
     batch_connect_sessions_stats_undetermined_host: Ghost Signal
     batch_connect_sessions_status_bad: Your netdive has entered a bad state. Feel free to ping your Fixer for further information.
     batch_connect_sessions_status_blurb_cancel_failure: Failed to cancel netdive.
@@ -197,7 +197,7 @@ en-CP:
     batch_connect_sessions_status_blurb_create_success: Netdive was successfully created.
     batch_connect_sessions_status_blurb_delete_failure: Failed to delete netdive.
     batch_connect_sessions_status_blurb_delete_success: Netdive was successfully deleted.
-    batch_connect_sessions_status_completed: For debugging purposes, this card will be retained for %{days} more days
+    batch_connect_sessions_status_completed: Blackbox shard retained for %{days} more cycles for post-op forensics
     batch_connect_sessions_status_missing_connection: 'This app is missing information required to establish a connection. Specifically,
 
       the view.html.erb file is missing. Please ping your Fixer if you see this message.
@@ -238,18 +238,18 @@ en-CP:
     breadcrumbs_my_sessions: Active Netdives
     breadcrumbs_support_ticket: Trauma Team Ping
     browser_warning: OnDemand requires a newer version of the browser you are using. Current browser requirements include IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
-    cancel: Zero Out
+    cancel: Cut Neural Link
     categories:
-      apps: Apps
+      apps: Cyberware
       bioinformatics: Bioware Wetware
       clusters: Mainframe Subnets
       data_science: Datapool Analytics
       desktop: Neural Deck
-      desktops: Neural Decks
+      desktops: Neural Deck
       development: Quickhack Foundry
-      external_apps: External Apps
+      external_apps: Off-Grid Daemons
       files: Datashards
-      gateway_apps: Gateway Apps
+      gateway_apps: Netgate Relays
       guis: Kiroshi Optics
       interactive_apps: Cyberdeck Daemons
       jobs: Daemon Runs
@@ -257,10 +257,10 @@ en-CP:
       mathematics: Cryptographic Math
       servers: Netwatch Nodes
       utilities: Edgerunner Kit
-      virtual_desktop_interface: Virtual Desktop Interface
+      virtual_desktop_interface: Neural Deck Interface
       visualization: Braindance Holo
     clear: Clear
-    close: Close
+    close: Delta
     close_alert: Close this alert.
     close_notice: Close this notice.
     cluster: Subnet
@@ -270,7 +270,7 @@ en-CP:
     custom_pages:
       invalid: 'Invalid page code: %{page}. This page has not been configured'
     date: Date
-    delete: Flatline
+    delete: Zero Out
     detailed_metrics: Detailed Metrics
     details: Details
     development_apps_caption: Sandbox App
@@ -279,7 +279,7 @@ en-CP:
     development_edit_title: Edit %{title}
     development_launch_title: Spin Up %{title}
     directory: Directory
-    edit: Edit
+    edit: Mod Rig
     editor_default: Default
     editor_font_size: Font Size
     editor_key_bindings: Key Bindings
@@ -297,10 +297,10 @@ en-CP:
     file_editor: Shard Splice Editor
     file_quotas: File Quotas
     files: Datashards
-    files_change_directory: Change directory
+    files_change_directory: Jump Grid Path
     files_contents_of_directory: Contents of directory %{path}
-    files_copy_move: Copy/Move
-    files_copy_path: Copy path
+    files_copy_move: Clone / Relocate
+    files_copy_path: Copy Grid Path
     files_directory_contents_aria: Directory contents
     files_directory_download_error_modal_title: Directory too large to download
     files_directory_download_unauthorized: You can only download a file or directory that you have read and execute access to
@@ -309,37 +309,37 @@ en-CP:
     files_directory_size_unknown: 'Black-ICE Glitch with status %{exit_code} when trying to determine directory size: %{error}'
     files_directory_too_large: The directory is too large to download as a zip. The directory should be less than %{download_directory_size_limit} bytes.
     files_doesnt_exist: '%{path} does not exist.'
-    files_download: Download
+    files_download: Rip Shard
     files_download_not_enabled: Downloading files is not enabled on this server.
-    files_download_zip: Download as zip
+    files_download_zip: Rip Encrypted Bundle (.zip)
     files_exceeds_editor_limit: '%{path} exceeds editor limit of %{limit}. Please download the file to edit or view it locally.'
     files_file_too_large: The file is too large to download. File downloads should be less than %{download_file_size_limit} bytes.
-    files_go_up_directory: Go up directory
+    files_go_up_directory: Up One Subnet
     files_modified_at: Modified at
     files_modify_aria: Modify files
-    files_new_directory: New Directory
-    files_new_file: New File
+    files_new_directory: New Stash Folder
+    files_new_file: Forge Datashard
     files_not_editable: '%{path} is not an editable file'
     files_not_readable: You do not have sufficient permissions to read '%{path}'.
-    files_open_in_files_app: Open in files app
+    files_open_in_files_app: Open in Datashard Vault
     files_open_in_globus: Open in Globus
     files_path_breadcrumbs_aria: Path breadcrumbs
-    files_refresh: Refresh
+    files_refresh: Rescan Vault
     files_remote_dir_not_created: Did not create directory %{path}
     files_remote_disabled: Remote file support is not enabled
     files_remote_empty_dir_unsupported: Remote does not support empty directories
     files_remote_error_listing_remotes: 'Black-ICE Glitch listing Rclone remotes: %{error}'
     files_send_to_target_title_default: Send selected files metadata to the external application
-    files_shell: Open in Terminal
+    files_shell: Jack Into Black-ICE Console
     files_shell_dropdown: Select Subnet to Open in Terminal
-    files_title: File browsing
-    files_upload: Upload
+    files_title: Datashard Vault
+    files_upload: Upload Shards
     footer_contribute: Contribute on GitHub
     footer_license: Software License Notice
     footer_open_source: Open source software.
     footer_powered_by: Powered by Open OnDemand
     footer_version: 'OnDemand version: %{version}'
-    home_directory: Home Directory
+    home_directory: Stash Vault (Home)
     id: ID
     import: Import
     job: Daemon
@@ -405,7 +405,7 @@ en-CP:
     jobs_project_job_not_deleted: Cannot delete daemon %{job_id}
     jobs_project_job_stopped: Successfully stopped daemon %{job_id}
     jobs_project_list_aria: Project list
-    jobs_project_manager: Ops Workspace
+    jobs_project_manager: Edgerunner Ops
     jobs_project_manifest_updated: Project manifest updated!
     jobs_project_name_placeholder: Project name
     jobs_project_name_validation: Project name may only contain letters, digits, dashes, underscores, and spaces
@@ -688,7 +688,7 @@ en-CP:
         unit_core_hours_title: Core Hours
         unit_jobs: daemons
         unit_jobs_title: Daemon Runs
-    launch: Spin Up Daemon
+    launch: Breach & Execute
     load_report: Load Report + %{node}
     loading: Loading...
     loading_short: Loading
@@ -732,29 +732,29 @@ en-CP:
 
       '
     motd_erb_render_error: 'MOTD was not parsed or rendered correctly: %{error_message}'
-    motd_no_messages: There are no new messages.
-    motd_title: Message of the Day
+    motd_no_messages: Zero new screamsheets on the Net.
+    motd_title: Night City Screamsheet
     name: Name
     nav_all_apps: Full Cyberdeck Arsenal
-    nav_develop_docs: Developer Documentation
-    nav_develop_my_sandbox_apps_dev: My Sandbox Apps (Development)
-    nav_develop_my_sandbox_apps_prod: My Shared Apps (Production)
-    nav_develop_title: Develop
-    nav_help_change_password: Change HPC Password
+    nav_develop_docs: Netrunner Specs
+    nav_develop_my_sandbox_apps_dev: My Prototype Daemons (Sandbox)
+    nav_develop_my_sandbox_apps_prod: My Street-Cred Daemons (Shared)
+    nav_develop_title: Techie Foundry
+    nav_help_change_password: Swap ICE Passkey
     nav_help_custom: Nav help custom
-    nav_help_docs: Online Documentation
-    nav_help_support: Contact Support
+    nav_help_docs: Netrunner Datapool
+    nav_help_support: Trauma Team Uplink
     nav_help_support_ticket: Send Trauma Team Ping
     nav_help_title: Fixer Uplink
-    nav_help_two_factor: Configure Two-Factor Authentication
+    nav_help_two_factor: Biometric 2FA Implant
     nav_language: Lingua-Chip
-    nav_limit_caption: showing %{subset_count} of %{total_count}
+    nav_limit_caption: slotted %{subset_count} of %{total_count}
     nav_logout: Jack Out
-    nav_main_menu: Main Menu
-    nav_restart_server: Restart Web Server
+    nav_main_menu: Cyberdeck HUD
+    nav_restart_server: Flatline & Reboot PUN
     nav_sessions: Active Netdives
-    nav_toggle_navigation: Toggle navigation
-    nav_user: Logged in as %{username}
+    nav_toggle_navigation: Toggle HUD
+    nav_user: 'Jacked in: %{username}'
     network_report: Network Report + %{node}
     node: Node
     none: None
@@ -779,8 +779,8 @@ en-CP:
     permissions_destroyed: Permission was successfully destroyed.
     permissions_group_title: Group Permissions
     permissions_user_title: User Permissions
-    pinned_apps_caption_html: A featured subset of <a href="%{all_apps_url}">all available apps</a>
-    pinned_apps_category: Apps
+    pinned_apps_caption_html: Equipped quickhacks from <a href="%{all_apps_url}">your full Cyberdeck Arsenal</a>
+    pinned_apps_category: Cyberware
     pinned_apps_title: Quickhack Slots
     products_created: Product was successfully created.
     products_git_commit_hint_html: Please commit any changes or add necessary files to <code>.gitignore</code>
@@ -932,7 +932,7 @@ en-CP:
       validation_error: Invalid Request. Please review the error messages below
     support_ticket_add_attachment: Add attachment
     support_ticket_attachments_help: Click the box to attach a file. Screenshots or other files can help troubleshoot your problem.
-    system_apps_caption: System Installed App
+    system_apps_caption: Sys-Grid Icebreaker
     system_status_available: '%{name} Available: %{count}'
     system_status_cluster_title: '%{title} Subnet Status'
     system_status_gpus: GPUs
@@ -999,6 +999,6 @@ en-CP:
       support_ticket_error: support_ticket is misconfigured. Please add a backend implementation in the configuration YAML.
     welcome_html: '%{logo_img_tag}
 
-      <p class="lead">OnDemand provides an integrated, single access point for all of your HPC resources.</p>
+      <p class="lead">Jacked in, choom. One unified neural netgate for every blade, subnet, and ICE daemon on the grid.</p>
 
       '

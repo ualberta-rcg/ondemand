@@ -260,7 +260,7 @@ pl-PL:
       title: Zapisane ustawienia
     breadcrumb_aria: Ścieżka nawigacyjna
     breadcrumbs_all_apps: Wszystkie aplikacje
-    breadcrumbs_home: Dom
+    breadcrumbs_home: Strona główna
     breadcrumbs_my_sessions: Moje sesje interaktywne
     breadcrumbs_support_ticket: Bilet pomocy technicznej
     browser_warning: OnDemand wymaga nowszej wersji przeglądarki, której używasz. Aktualne wymagania przeglądarki to IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
@@ -271,14 +271,14 @@ pl-PL:
       clusters: Klastry
       data_science: Nauka o danych
       desktop: Pulpit
-      desktops: Komputery stacjonarne
+      desktops: Pulpit
       development: Rozwój
       external_apps: Aplikacje zewnętrzne
-      files: Akta
+      files: Pliki
       gateway_apps: Aplikacje bramkowe
       guis: Interfejsy graficzne
       interactive_apps: Aplikacje interaktywne
-      jobs: Praca
+      jobs: Zadania
       machine_learning: Uczenie maszynowe
       mathematics: Matematyka
       servers: Serwery
@@ -322,7 +322,7 @@ pl-PL:
     file: Plik
     file_editor: Edytor plików
     file_quotas: Limity plików
-    files: Akta
+    files: Pliki
     files_change_directory: Zmień katalog
     files_contents_of_directory: Zawartość katalogu %{path}
     files_copy_move: Kopiuj/Przenieś
@@ -431,7 +431,7 @@ pl-PL:
     jobs_project_job_not_deleted: Nie można usunąć zadania %{job_id}
     jobs_project_job_stopped: Pomyślnie zatrzymano zadanie %{job_id}
     jobs_project_list_aria: Lista projektów
-    jobs_project_manager: Kierownik projektu
+    jobs_project_manager: Menedżer projektów
     jobs_project_manifest_updated: Zaktualizowano manifest projektu!
     jobs_project_name_placeholder: Nazwa projektu
     jobs_project_name_validation: Nazwa projektu może zawierać wyłącznie litery, cyfry, myślniki, podkreślenia i spacje

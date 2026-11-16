@@ -1,5 +1,5 @@
 {
-  "page_title": "Шел - %{siteTitle}",
+  "page_title": "Терминал (Shell) - %{siteTitle}",
   "menu_aria": "Меню на обвивката",
   "host_label": "Домакин: %{host}",
   "initial_directory": "Начална директория: %{dir}",

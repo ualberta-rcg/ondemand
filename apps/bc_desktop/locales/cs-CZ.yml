@@ -1,7 +1,7 @@
 ---
 cs-CZ:
   manifest:
-    name: Počítač
+    name: Vzdálená plocha
     description: Tato aplikace spustí interaktivní plochu na jednom nebo více výpočetních uzlech. Budete mít plný přístup k prostředkům, které tyto uzly poskytují. Je to analogické s interaktivní dávkovou úlohou.
   form:
     attributes:

@@ -10,7 +10,7 @@ it-IT:
   dashboard:
     account: Account
     actions: Azioni
-    active_jobs: Offerte di lavoro attive
+    active_jobs: Job attivi
     active_jobs_close_details: Chiudi il pannello dei dettagli estesi.
     active_jobs_detail:
       account: Account
@@ -263,7 +263,7 @@ it-IT:
       title: Impostazioni salvate
     breadcrumb_aria: Pangrattato
     breadcrumbs_all_apps: Tutte le app
-    breadcrumbs_home: Casa
+    breadcrumbs_home: Pagina iniziale
     breadcrumbs_my_sessions: Le mie sessioni interattive
     breadcrumbs_support_ticket: Ticket di supporto
     browser_warning: OnDemand richiede una versione più recente del browser in uso. I browser attualmente compatibili includono Internet Explorer Edge, Firefox 19+, Chrome 34+ e Safari 8+.
@@ -274,14 +274,14 @@ it-IT:
       clusters: Cluster
       data_science: Scienza dei dati
       desktop: Desktop
-      desktops: Computer desktop
+      desktops: Desktop
       development: Sviluppo
       external_apps: Applicazioni esterne
       files: File
       gateway_apps: Applicazioni Gateway
       guis: Interfacce grafiche
       interactive_apps: Applicazioni interattive
-      jobs: Lavoro
+      jobs: Job
       machine_learning: apprendimento automatico
       mathematics: Matematica
       servers: Server
@@ -434,7 +434,7 @@ it-IT:
     jobs_project_job_not_deleted: Impossibile eliminare il lavoro %{job_id}
     jobs_project_job_stopped: Processo %{job_id} arrestato con successo.
     jobs_project_list_aria: Elenco dei progetti
-    jobs_project_manager: Responsabile del progetto
+    jobs_project_manager: Gestione progetti
     jobs_project_manifest_updated: Manifesto del progetto aggiornato!
     jobs_project_name_placeholder: Nome del progetto
     jobs_project_name_validation: Il nome del progetto può contenere solo lettere, cifre, trattini, underscore e spazi.
@@ -740,7 +740,7 @@ it-IT:
     module_browser_search_placeholder: Cerca per nome del modulo...
     module_browser_select_version: (seleziona la versione)
     module_browser_showing_results: Visualizzazione dei risultati di %{count}
-    module_browser_title: Browser dei moduli
+    module_browser_title: Esplora moduli
     module_browser_versions: Versioni
     motd_default_md: 'Lo sviluppo di Open OnDemand è supportato dalla [National Science Foundation](https://www.nsf.gov/)
 

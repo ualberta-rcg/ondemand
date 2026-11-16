@@ -10,7 +10,7 @@ lt-LT:
   dashboard:
     account: Paskyra
     actions: Veiksmai
-    active_jobs: Aktyvūs darbai
+    active_jobs: Aktyvios užduotys
     active_jobs_close_details: Uždaryti išplėstinės informacijos skydelį.
     active_jobs_detail:
       account: Paskyra
@@ -249,14 +249,14 @@ lt-LT:
       clusters: Klasteriai
       data_science: Duomenų mokslas
       desktop: Darbalaukis
-      desktops: Staliniai kompiuteriai
+      desktops: Darbalaukis
       development: Vystymasis
       external_apps: Išorinės programos
       files: Failai
       gateway_apps: Gateway programos
       guis: Grafinės sąsajos
-      interactive_apps: Interaktyvios programėlės
-      jobs: Darbai
+      interactive_apps: Interaktyvios programos
+      jobs: Užduotys
       machine_learning: Mašininis mokymasis
       mathematics: Matematika
       servers: Serveriai
@@ -409,7 +409,7 @@ lt-LT:
     jobs_project_job_not_deleted: Nepavyksta ištrinti užduoties %{job_id}
     jobs_project_job_stopped: Užduotis %{job_id} sėkmingai sustabdyta
     jobs_project_list_aria: Projektų sąrašas
-    jobs_project_manager: Projektų vadovas
+    jobs_project_manager: Projektų tvarkyklė
     jobs_project_manifest_updated: Projekto manifestas atnaujintas!
     jobs_project_name_placeholder: Projekto pavadinimas
     jobs_project_name_validation: Projekto pavadinime gali būti tik raidės, skaitmenys, brūkšneliai, pabraukimai ir tarpai

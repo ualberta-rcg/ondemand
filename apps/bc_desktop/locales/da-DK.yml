@@ -1,7 +1,7 @@
 ---
 da-DK:
   manifest:
-    name: Skrivebord
+    name: Interaktivt skrivebord
     description: Denne app starter et interaktivt skrivebord på en eller flere computernoder. Du vil have fuld adgang til de ressourcer, som disse noder leverer. Dette er analogt med et interaktivt batchjob.
   form:
     attributes:

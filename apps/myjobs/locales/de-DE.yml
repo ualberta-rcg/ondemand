@@ -1,5 +1,5 @@
 ---
 de-DE:
   manifest:
-    name: Jobkomponist
+    name: Job-Editor
     description: Job Composer ermöglicht das Erstellen und Übermitteln von Batch-Jobs.

@@ -1,7 +1,7 @@
 ---
 sk-SK:
   manifest:
-    name: Počítačová počítača
+    name: Interaktívna plocha
     description: Táto aplikácia spustí interaktívnu pracovnú plochu na jednom alebo viacerých výpočtových uzloch. Budete mať plný prístup k zdrojom, ktoré tieto uzly poskytujú. Je to analogické s interaktívnou dávkovou úlohou.
   form:
     attributes:
