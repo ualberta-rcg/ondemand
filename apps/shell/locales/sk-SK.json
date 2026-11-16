@@ -1,0 +1,18 @@
+{
+  "page_title": "Škrupina - %{siteTitle}",
+  "menu_aria": "Ponuka Shell",
+  "host_label": "Hostiteľ: %{host}",
+  "initial_directory": "Počiatočný adresár: %{dir}",
+  "themes_label": "Témy:",
+  "theme_default": "Predvolené",
+  "theme_bright": "Jasný",
+  "theme_dark": "Tmavé",
+  "fonts_label": "Fonty:",
+  "leave_page_warning": "Opustením tejto stránky ukončíte reláciu terminálu.",
+  "websocket_failed": "Nepodarilo sa nadviazať pripojenie cez websocket. Uistite sa, že používate prehliadač, ktorý podporuje pripojenia cez websocket.",
+  "connection_terminated": "Vaše pripojenie k vzdialenému serveru bolo ukončené.",
+  "auth_no_clusters": "Nie sú definované žiadne klastre.",
+  "auth_invalid_origin": "Neplatný pôvod.",
+  "auth_bad_csrf": "Nesprávny token CSRF.",
+  "auth_host_not_allowed": "Hostiteľ „%{host}“ nie je uvedený v zozname povolených položiek ani v konfiguráciách klastra."
+}

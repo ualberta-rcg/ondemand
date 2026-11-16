@@ -28,7 +28,7 @@
         <%- product.app.links_without_validation.each do |link| -%>
           <%=
             link_to(
-              "Launch #{link.title}",
+              t('dashboard.development_launch_title', title: link.title),
               link.url.to_s,
               class: "btn btn-primary",
               data: {
@@ -49,10 +49,10 @@
   <td data-order="<%= modified_time.to_i %>"><%= modified_time.strftime("%m/%d/%y") %></td>
   <td>
     <div class="d-grid gap-2">
-      <%= link_to 'Details', product_path(product.name, type: @type), class: 'btn btn-info' %>
+      <%= link_to t('dashboard.details'), product_path(product.name, type: @type), class: 'btn btn-info' %>
       <%= render(partial: 'shared/shell_button', locals: { host: ENV['OOD_DEV_SSH_HOST'], path: product.router.path.realdirpath }) %>
       <% if Configuration.can_access_files? %>
-        <%= link_to 'Files', OodAppkit.files.url(path: product.router.path.realdirpath).to_s, class: 'btn btn-default' %>
+        <%= link_to t('dashboard.files'), OodAppkit.files.url(path: product.router.path.realdirpath).to_s, class: 'btn btn-default' %>
       <% end %>
     </div>
   </td>

@@ -1,0 +1,131 @@
+---
+et-EE:
+  jobcomposer:
+    account_label: 'Konto:'
+    back: Tagasi
+    cancel: Tühista
+    close: Sule
+    cluster_label: 'Klaster:'
+    confirm_delete: Oled sa kindel?
+    confirm_delete_template: Kas oled kindel, et tahad selle kustutada?
+    copy_template: Kopeeri mall
+    create_from_path_title: Loo teekonnast uus töökoht
+    create_new_heading_html: Loo uus "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Loo uus töökoht
+    create_template: Loo mall
+    create_template_from_job_title: Loo valitud tööst mall
+    delete: Kustuta
+    delete_job_title: Kustuta töö
+    deprecation_warning_html: Tööde koostaja on aegunud ja eemaldatakse Open OnDemand 5.0-s. Palun kandke oma tööd ja mallid üle <a href="%{projects_path}">Project Manager</a>-sse.
+    edit: Redigeeri
+    edit_files: Redigeeri faile
+    folder_contents_label: 'Kausta sisu:'
+    from_default_template: Vaikimisi mallist
+    from_default_template_title: Loo uus töökoht vaikemalli põhjal
+    from_selected_job: Valitud töökohalt
+    from_selected_job_title: Kopeeri valitud töö
+    from_specified_path: Määratud teelt
+    from_template: Mallist
+    from_template_title: Looge valitud malli põhjal uus töökoht
+    invalid_cluster_html: Klaster ei ole sobiv! Muutke <a href="#" id="edit-job-options-script-link">Job Options</a>, et valida sobiv klaster.
+    invalid_script_html: Skript ei ole kehtiv! Muutke <a href="#" id="edit-job-options-link">Job Options</a>, et valida kehtiv skript.
+    job_already_submitted: Tööpakkumine on juba esitatud.
+    job_array_request_label: 'Töö massiivi taotlus:'
+    job_attributes_heading_html: Töö atribuudid <strong>(valikuline)</strong>
+    job_copied: Töö kopeerimine õnnestus.
+    job_copy_failed: 'Töö kopeerimine ebaõnnestus: %{errors}'
+    job_created: Töökoht loodi edukalt.
+    job_destroy_failed: 'Töö hävitamine ebaõnnestus: %{errors}'
+    job_destroyed: Töökoht hävitati edukalt.
+    job_details: Töö üksikasjad
+    job_directory_missing: Töökataloog puudub!
+    job_name_label: 'Töö nimi:'
+    job_not_submitted: Tööd pole esitatud.
+    job_stop_failed: 'Töö peatamine ebaõnnestus: %{errors}'
+    job_stopped: Töö peatamine õnnestus.
+    job_submit_failed: 'Pakktöö esitamine ebaõnnestus:'
+    job_submitted: Töö esitati edukalt.
+    job_updated: Töökoha värskendamine õnnestus.
+    loading: Laadimine
+    loading_job_info: Tööteabe laadimine
+    nav_help: Abi
+    nav_jobs: Töökohad
+    nav_menu_aria: Töö koostaja menüü
+    nav_templates: Mallid
+    new_job: Uus töökoht
+    new_template: Uus mall
+    new_template_title: Loo uus mall
+    no_clusters_alert: Tööde esitamist võimaldavaid hoste pole ühtegi konfigureeritud. Palun võtke ühendust oma süsteemiadministraatoriga.
+    open_dir: Ava kaust
+    open_dir_in_editor: Ava kataloog failiredaktoris
+    open_dir_in_file_manager: Ava kataloog failihalduris
+    open_dir_in_terminal: Ava kataloog terminalis
+    open_editor: Ava redaktor
+    open_selected_job_in_terminal: Ava valitud töö terminalis
+    open_selected_template_in_terminal: Ava valitud mall terminalis
+    open_template_dir_in_file_manager: Ava mallide kataloog failihalduris
+    open_terminal: Ava terminal
+    open_xdmod: Ava XDMoD
+    options_account_help: Konto on valikuline väli. Kui seda pole määratud, võib konto esitamise filtri abil automaatselt määrata.
+    options_account_title: Konto
+    options_array_help: Töömassiivid on valikulised. nt 1–10
+    options_array_help_with_clusters: 'Töömassiivid on valikulised. OnDemand ei toeta hetkel töömassiive klastri(te) jaoks: %{cluster_list}.'
+    options_array_title: Töömassiivi spetsifikatsioon
+    options_cluster_title: Klaster
+    options_copy_environment: Kopeeri keskkond
+    options_errors: Palun parandage allolevad vead.
+    options_name_title: Nimi
+    options_script_help: Tööskripti väljalt jäetakse välja failid, mis on suuremad kui 65 KB.
+    options_script_title: Määrake töö skript
+    options_title: Töövõimalused
+    other_valid_files: Muu(d) kehtiv(ad) fail(id)
+    page_title: Töö koostaja - %{site}
+    path_to_source_heading_html: Allika tee <strong>(nõutav)</strong>
+    reset: Lähtesta
+    reset_template_fields_title: Lähtesta väljad malli vaikeväärtustele
+    save: Salvesta
+    script_contents_label: 'Skripti sisu:'
+    script_location_label: 'Skripti asukoht:'
+    script_name_form_label: 'Skripti nimi:'
+    script_name_label: 'Skripti nimi:'
+    select_cluster_prompt: Vali klaster...
+    select_template_option: -- vali mall --
+    selected_template_details: Valitud malli üksikasjad
+    show: Näita
+    show_batch_host_label: 'Partii host:'
+    show_dir_contents_label: 'Kataloogi sisu:'
+    show_name_label: 'Nimi:'
+    show_staged_dir_label: 'Lavastusrežissöör:'
+    showing_job_title: Töökoha kuvamine
+    skip_navigation: Jäta navigeerimine vahele
+    source_path_help: Sisestage failisüsteemi kataloogi tee. Selle tee sisu kopeeritakse uude töövoogu.
+    source_path_label: Allika tee
+    specify_job_host_and_script: Määrake töö hosti ja skript
+    stop: Stopp
+    stop_job_title: Peata töö
+    submit: Esita
+    submit_job_title: Esita töö
+    submit_script_title: Esita skript
+    submit_to_label: 'Esita aadressile:'
+    suggested_files: Soovitatud fail(id)
+    table_created: Loodud
+    table_id: ID-kaart
+    table_source: Allikas
+    table_status: Staatus
+    template_create_error: malli loomisel tekkis viga
+    template_error_name_unique: peab olema ainulaadne.
+    template_error_path_directory: peab viitama kataloogile.
+    template_error_path_missing: ei eksisteeri.
+    template_errors_heading:
+      one: '%{count} viga keelas selle malli salvestamise:'
+      other: '%{count} vead keelasid selle malli salvestamise:'
+    template_label: 'Mall:'
+    template_location_label: 'Malli asukoht:'
+    template_path_blank_help: Kui see väli jääb tühjaks, lisatakse teie uude malli vaiketöö skript.
+    template_path_label: Tee (mall luuakse failide kopeerimise teel sellest lähteteest)
+    templates_subtitle: Uue töökoha loomiseks valige kopeeritav mall, täitke paremal asuv vorm ja klõpsake nuppu „Loo uus töökoht”.
+    title: Töö koostaja
+    toggle_navigation: Lülitusnavigatsioon
+    view_files: Kuva failid
+    xdmod_url_warning_message: See töö ei pruugi Open XDMoD-s ilmuda enne 24 tundi pärast töö valmimist.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

@@ -1,0 +1,5 @@
+---
+sk-SK:
+  manifest:
+    name: Aktívne úlohy
+    description: Zobraziť úlohy aktuálne spustené na dostupných klastroch nakonfigurovaných pre OnDemand.

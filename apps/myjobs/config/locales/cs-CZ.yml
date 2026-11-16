@@ -1,0 +1,131 @@
+---
+cs-CZ:
+  jobcomposer:
+    account_label: 'Účet:'
+    back: Zadní
+    cancel: Zrušit
+    close: Blízko
+    cluster_label: 'Klastr:'
+    confirm_delete: Jsi si jistý/á?
+    confirm_delete_template: Jste si jistý/á, že to chcete smazat?
+    copy_template: Kopírovat šablonu
+    create_from_path_title: Vytvoření nové úlohy z cesty
+    create_new_heading_html: Vytvořit nový „<span class="wrap-line" id="script-name-label">%{name}</span>“
+    create_new_job: Vytvořit novou úlohu
+    create_template: Vytvořit šablonu
+    create_template_from_job_title: Vytvořit šablonu z vybrané úlohy
+    delete: Vymazat
+    delete_job_title: Smazat úlohu
+    deprecation_warning_html: Nástroj Job Composer je zastaralý a bude v Open OnDemand 5.0 odstraněn. Přeneste prosím své úlohy a šablony do <a href="%{projects_path}">Project Manageru</a>.
+    edit: Upravit
+    edit_files: Upravit soubory
+    folder_contents_label: 'Obsah složky:'
+    from_default_template: Z výchozí šablony
+    from_default_template_title: Vytvořte novou úlohu z výchozí šablony
+    from_selected_job: Z vybrané úlohy
+    from_selected_job_title: Kopírovat vybranou úlohu
+    from_specified_path: Z určené cesty
+    from_template: Z šablony
+    from_template_title: Vytvořte novou úlohu z vámi vybrané šablony
+    invalid_cluster_html: Cluster není platný! Upravte <a href="#" id="edit-job-options-script-link">Možnosti úlohy</a> a vyberte platný cluster.
+    invalid_script_html: Skript není platný! Upravte <a href="#" id="edit-job-options-link">Možnosti úlohy</a> a vyberte platný skript.
+    job_already_submitted: Úloha již byla odeslána.
+    job_array_request_label: 'Požadavek na pole úloh:'
+    job_attributes_heading_html: Atributy úlohy <strong> (volitelné) </strong>
+    job_copied: Úloha byla úspěšně zkopírována.
+    job_copy_failed: 'Kopírování úlohy se nezdařilo: %{errors}'
+    job_created: Úloha byla úspěšně vytvořena.
+    job_destroy_failed: 'Úlohu se nepodařilo zničit: %{errors}'
+    job_destroyed: Úloha byla úspěšně zničena.
+    job_details: Podrobnosti o práci
+    job_directory_missing: Chybí adresář pracovních nabídek!
+    job_name_label: 'Název pracovní pozice:'
+    job_not_submitted: Úloha nebyla odeslána.
+    job_stop_failed: 'Úlohu se nepodařilo zastavit: %{errors}'
+    job_stopped: Úloha byla úspěšně zastavena.
+    job_submit_failed: 'Nepodařilo se odeslat dávkovou úlohu:'
+    job_submitted: Úloha byla úspěšně odeslána.
+    job_updated: Úloha byla úspěšně aktualizována.
+    loading: Načítání
+    loading_job_info: Načítání informací o úloze
+    nav_help: Pomoc
+    nav_jobs: Pracovní místa
+    nav_menu_aria: Nabídka editoru úloh
+    nav_templates: Šablony
+    new_job: Nová práce
+    new_template: Nová šablona
+    new_template_title: Vytvořit novou šablonu
+    no_clusters_alert: Nejsou nakonfigurováni žádní hostitelé, kteří by vám umožnili odesílat úlohy. Kontaktujte prosím svého správce systému.
+    open_dir: Otevřít adresář
+    open_dir_in_editor: Otevřít adresář v editoru souborů
+    open_dir_in_file_manager: Otevřít adresář ve Správci souborů
+    open_dir_in_terminal: Otevřít adresář v terminálu
+    open_editor: Otevřít editor
+    open_selected_job_in_terminal: Otevřít vybranou úlohu v terminálu
+    open_selected_template_in_terminal: Otevřít vybranou šablonu v terminálu
+    open_template_dir_in_file_manager: Otevřít adresář šablon ve Správci souborů
+    open_terminal: Otevřený terminál
+    open_xdmod: Otevřít XDMoD
+    options_account_help: Účet je volitelné pole. Pokud není nastaveno, může být účet automaticky nastaven filtrem pro odeslání.
+    options_account_title: Účet
+    options_array_help: Pole úloh jsou volitelná, např. 1–10
+    options_array_help_with_clusters: 'Pole úloh jsou volitelná. OnDemand v současné době nepodporuje pole úloh pro cluster(y): %{cluster_list}.'
+    options_array_title: Specifikace pole úloh
+    options_cluster_title: Klastr
+    options_copy_environment: Kopírovat prostředí
+    options_errors: Opravte prosím níže uvedené chyby.
+    options_name_title: Jméno
+    options_script_help: Soubory větší než 65 kB jsou v poli skriptu úlohy vynechány.
+    options_script_title: Zadejte skript úlohy
+    options_title: Možnosti práce
+    other_valid_files: Další platné soubory
+    page_title: Autor úloh - %{site}
+    path_to_source_heading_html: Cesta ke zdroji <strong> (Povinné) </strong>
+    reset: Obnovit
+    reset_template_fields_title: Obnovit pole na výchozí nastavení šablony
+    save: Uložit
+    script_contents_label: 'Obsah skriptu:'
+    script_location_label: 'Umístění skriptu:'
+    script_name_form_label: 'Název skriptu:'
+    script_name_label: 'Název skriptu:'
+    select_cluster_prompt: Vyberte klastr...
+    select_template_option: -- vyberte šablonu --
+    selected_template_details: Podrobnosti o vybrané šabloně
+    show: Show
+    show_batch_host_label: 'Hostitel dávky:'
+    show_dir_contents_label: 'Obsah adresáře:'
+    show_name_label: 'Jméno:'
+    show_staged_dir_label: 'Inscenovaná režie:'
+    showing_job_title: Zobrazení práce
+    skip_navigation: Přeskočit navigaci
+    source_path_help: Zadejte cestu k adresáři v souborovém systému. Obsah této cesty bude zkopírován do nového pracovního postupu.
+    source_path_label: Zdrojová cesta
+    specify_job_host_and_script: Zadejte hostitele úlohy a skript
+    stop: Zastávka
+    stop_job_title: Zastavit úlohu
+    submit: Předložit
+    submit_job_title: Odeslat úkol
+    submit_script_title: Odeslat skript
+    submit_to_label: 'Odeslat na:'
+    suggested_files: Navrhované soubory
+    table_created: Vytvořeno
+    table_id: Průkaz totožnosti
+    table_source: Zdroj
+    table_status: Postavení
+    template_create_error: chyba při vytváření šablony
+    template_error_name_unique: musí být jedinečný.
+    template_error_path_directory: musí ukazovat na adresář.
+    template_error_path_missing: neexistuje.
+    template_errors_heading:
+      one: 'Chyba %{count} zabránila uložení této šablony:'
+      other: 'Chyby %{count} zabránily uložení této šablony:'
+    template_label: 'Šablona:'
+    template_location_label: 'Umístění šablony:'
+    template_path_blank_help: Pokud toto pole ponecháte prázdné, bude do nové šablony přidán výchozí skript úlohy.
+    template_path_label: Cesta (šablona bude vytvořena zkopírováním souborů z této zdrojové cesty)
+    templates_subtitle: Chcete-li vytvořit novou úlohu, vyberte šablonu, kterou chcete zkopírovat, vyplňte formulář vpravo a klikněte na tlačítko „Vytvořit novou úlohu“.
+    title: Tvůrce úloh
+    toggle_navigation: Přepnout navigaci
+    view_files: Zobrazit soubory
+    xdmod_url_warning_message: Tato úloha se nemusí v Open XDMoD objevit dříve než 24 hodin po jejím dokončení.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

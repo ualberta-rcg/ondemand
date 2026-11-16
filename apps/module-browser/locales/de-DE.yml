@@ -1,0 +1,5 @@
+---
+de-DE:
+  manifest:
+    name: Modulbrowser
+    description: Durchsuchen Sie die Module auf den Clustern, um detaillierte Informationen zu den Modulen zu erhalten.

@@ -1,0 +1,20 @@
+---
+en-HG:
+  manifest:
+    name: Starship Bridge
+    description: 'This app will launch an interactive desktop on one or more compute nodes. You
+
+      will have full access to the resources these nodes provide. This is analogous
+
+      to an interactive batch computation.
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: Desktop Environment
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: MATE
+          xfce: Xfce

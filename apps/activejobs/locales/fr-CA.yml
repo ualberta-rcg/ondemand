@@ -2,5 +2,4 @@
 fr-CA:
   manifest:
     name: Tâches actives
-    description: Afficher les tâches en cours d'exécution sur les grappes configurées
-      pour OnDemand.
+    description: Afficher les tâches en cours d'exécution sur les grappes configurées pour OnDemand.

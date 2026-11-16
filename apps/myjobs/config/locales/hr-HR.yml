@@ -1,0 +1,131 @@
+---
+hr-HR:
+  jobcomposer:
+    account_label: 'Račun:'
+    back: Nazad
+    cancel: Otkazati
+    close: Zatvoriti
+    cluster_label: 'Klaster:'
+    confirm_delete: Jesi li siguran/sigurna?
+    confirm_delete_template: Jeste li sigurni da želite ovo izbrisati?
+    copy_template: Kopiraj predložak
+    create_from_path_title: Stvori novi posao iz putanje
+    create_new_heading_html: Izradi novi "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Stvori novi posao
+    create_template: Izradi predložak
+    create_template_from_job_title: Izradi predložak iz odabranog posla
+    delete: Izbrisati
+    delete_job_title: Izbriši posao
+    deprecation_warning_html: Alat za izradu zadataka je zastario i bit će uklonjen u verziji Open OnDemand 5.0. Molimo vas da prenesete svoje zadatke i predloške u <a href="%{projects_path}">Voditelja projekata</a>.
+    edit: Uredi
+    edit_files: Uredi datoteke
+    folder_contents_label: 'Sadržaj mape:'
+    from_default_template: Iz zadanog predloška
+    from_default_template_title: Izradi novi posao iz zadanog predloška
+    from_selected_job: Iz odabranog posla
+    from_selected_job_title: Kopiraj odabrani zadatak
+    from_specified_path: Iz određene putanje
+    from_template: Iz predloška
+    from_template_title: Izradite novi posao iz predloška koji odaberete
+    invalid_cluster_html: Klaster nije valjan! Uredite <a href="#" id="edit-job-options-script-link">Opcije posla</a> kako biste odabrali valjani klaster.
+    invalid_script_html: Skripta nije valjana! Uredite <a href="#" id="edit-job-options-link">Opcije posla</a> kako biste odabrali valjanu skriptu.
+    job_already_submitted: Posao je već predan.
+    job_array_request_label: 'Zahtjev za niz poslova:'
+    job_attributes_heading_html: Atributi posla <strong> (neobavezno) </strong>
+    job_copied: Posao je uspješno kopiran.
+    job_copy_failed: 'Kopiranje posla nije uspjelo: %{errors}'
+    job_created: Posao je uspješno kreiran.
+    job_destroy_failed: 'Uništavanje posla nije uspjelo: %{errors}'
+    job_destroyed: Posao je uspješno uništen.
+    job_details: Detalji posla
+    job_directory_missing: Nedostaje imenik poslova!
+    job_name_label: 'Naziv posla:'
+    job_not_submitted: Posao nije poslan.
+    job_stop_failed: 'Zaustavljanje posla nije uspjelo: %{errors}'
+    job_stopped: Posao je uspješno zaustavljen.
+    job_submit_failed: 'Slanje paketnog zadatka nije uspjelo:'
+    job_submitted: Posao je uspješno poslan.
+    job_updated: Posao je uspješno ažuriran.
+    loading: Učitavanje
+    loading_job_info: Učitavanje informacija o poslu
+    nav_help: Pomoć
+    nav_jobs: Poslovi
+    nav_menu_aria: Izbornik sastavljača zadataka
+    nav_templates: Predlošci
+    new_job: Novi posao
+    new_template: Novi predložak
+    new_template_title: Izradi novi predložak
+    no_clusters_alert: Nema konfiguriranih hostova koji vam dopuštaju slanje poslova. Obratite se administratoru sustava.
+    open_dir: Otvori direktorij
+    open_dir_in_editor: Otvori direktorij u uređivaču datoteka
+    open_dir_in_file_manager: Otvori direktorij u Upravitelju datoteka
+    open_dir_in_terminal: Otvori direktorij u terminalu
+    open_editor: Otvori uređivač
+    open_selected_job_in_terminal: Otvori odabrani zadatak u terminalu
+    open_selected_template_in_terminal: Otvori odabrani predložak u terminalu
+    open_template_dir_in_file_manager: Otvori direktorij predložaka u Upravitelju datoteka
+    open_terminal: Otvori terminal
+    open_xdmod: Otvori XDMoD
+    options_account_help: Račun je neobavezno polje. Ako nije postavljeno, filter za slanje može automatski postaviti račun.
+    options_account_title: Račun
+    options_array_help: Nizovi poslova nisu obavezni. npr. 1-10
+    options_array_help_with_clusters: 'Nizovi poslova nisu obavezni. OnDemand trenutno ne podržava nizove poslova za klaster(e): %{cluster_list}.'
+    options_array_title: Specifikacija polja poslova
+    options_cluster_title: Klaster
+    options_copy_environment: Kopiraj okruženje
+    options_errors: Molimo ispravite dolje navedene pogreške.
+    options_name_title: Ime
+    options_script_help: Datoteke veće od 65 KB izostavljaju se za polje skripte posla
+    options_script_title: Navedite skriptu posla
+    options_title: Mogućnosti posla
+    other_valid_files: Druge valjane datoteke
+    page_title: Sastavljač poslova - %{site}
+    path_to_source_heading_html: Put do izvora <strong> (obavezno)</strong>
+    reset: Resetiraj
+    reset_template_fields_title: Vrati polja na zadane vrijednosti predloška
+    save: Uštedjeti
+    script_contents_label: 'Sadržaj skripte:'
+    script_location_label: 'Lokacija skripte:'
+    script_name_form_label: 'Naziv skripte:'
+    script_name_label: 'Naziv skripte:'
+    select_cluster_prompt: Odaberite klaster...
+    select_template_option: -- odaberite predložak --
+    selected_template_details: Detalji odabranog predloška
+    show: Pokazati
+    show_batch_host_label: 'Domaćin serije:'
+    show_dir_contents_label: 'Sadržaj direktorija:'
+    show_name_label: 'Ime:'
+    show_staged_dir_label: 'Postavljena režija:'
+    showing_job_title: Prikaz posla
+    skip_navigation: Preskoči navigaciju
+    source_path_help: Unesite putanju do direktorija u datotečnom sustavu. Sadržaj ove putanje bit će kopiran u novi tijek rada.
+    source_path_label: Izvorni put
+    specify_job_host_and_script: Navedite host za zadatak i skriptu
+    stop: Stop
+    stop_job_title: Zaustavi posao
+    submit: Pošalji
+    submit_job_title: Pošalji posao
+    submit_script_title: Pošalji skriptu
+    submit_to_label: 'Pošalji na:'
+    suggested_files: Predložene datoteke
+    table_created: Izrađeno
+    table_id: ID
+    table_source: Izvor
+    table_status: Status
+    template_create_error: greška pri izradi predloška
+    template_error_name_unique: mora biti jedinstven.
+    template_error_path_directory: mora pokazivati na direktorij.
+    template_error_path_missing: ne postoji.
+    template_errors_heading:
+      one: 'Greška %{count} spriječila je spremanje ovog predloška:'
+      other: 'Pogreške %{count} spriječile su spremanje ovog predloška:'
+    template_label: 'Predložak:'
+    template_location_label: 'Lokacija predloška:'
+    template_path_blank_help: Ako se ostavi prazno, zadani skript posla bit će dodan vašem novom predlošku.
+    template_path_label: Putanja (predložak će se stvoriti kopiranjem datoteka iz ove izvorne putanje)
+    templates_subtitle: Za izradu novog posla odaberite predložak za kopiranje, ispunite obrazac s desne strane i kliknite "Stvori novi posao".
+    title: Sastavljač poslova
+    toggle_navigation: Uključi/isključi navigaciju
+    view_files: Prikaži datoteke
+    xdmod_url_warning_message: Ovaj posao se možda neće pojaviti u Open XDMoD-u do 24 sata nakon završetka posla.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

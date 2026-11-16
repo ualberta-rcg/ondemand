@@ -1,0 +1,18 @@
+{
+  "page_title": "Kest - %{siteTitle}",
+  "menu_aria": "Shelli menüü",
+  "host_label": "Host: %{host}",
+  "initial_directory": "Esialgne kataloog: %{dir}",
+  "themes_label": "Teemad:",
+  "theme_default": "Vaikimisi",
+  "theme_bright": "Hele",
+  "theme_dark": "Tume",
+  "fonts_label": "Fondid:",
+  "leave_page_warning": "Sellelt lehelt lahkumine lõpetab teie terminaliseansi.",
+  "websocket_failed": "Websocket-ühenduse loomine ebaõnnestus. Veenduge, et kasutate brauserit, mis toetab websocket-ühendusi.",
+  "connection_terminated": "Teie ühendus kaugserveriga on katkestatud.",
+  "auth_no_clusters": "Klastreid pole määratletud.",
+  "auth_invalid_origin": "Kehtetu päritolu.",
+  "auth_bad_csrf": "Vigane CSRF-token.",
+  "auth_host_not_allowed": "Hosti \"%{host}\" pole lubatud loendis ega klastri konfiguratsioonides määratud."
+}

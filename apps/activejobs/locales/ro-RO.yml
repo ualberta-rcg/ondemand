@@ -1,0 +1,5 @@
+---
+ro-RO:
+  manifest:
+    name: Locuri de muncă active
+    description: Vizualizați joburile care rulează în prezent pe clusterele disponibile configurate pentru OnDemand.

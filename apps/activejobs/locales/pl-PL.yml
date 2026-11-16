@@ -1,0 +1,5 @@
+---
+pl-PL:
+  manifest:
+    name: Aktywne zadania
+    description: Wyświetl zadania aktualnie uruchomione w dostępnych klastrach skonfigurowanych dla usługi OnDemand.

@@ -1,0 +1,5 @@
+---
+zh-CN:
+  manifest:
+    name: 模块浏览器
+    description: 浏览集群上的模块，获取有关模块的详细信息。

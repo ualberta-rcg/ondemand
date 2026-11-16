@@ -5,15 +5,28 @@ require 'test_helper'
 class LocaleSwitchingTest < ActionController::TestCase
   tests WorkflowsController
 
-  test 'partial locales fall back cleanly to English without missing translations' do
+  test 'partial locales fall back cleanly to English while shipped locales have full translations' do
+    orig_locales = I18n.available_locales
+    begin
+      I18n.backend.store_translations(:eo, jobcomposer: { options_cluster_title: 'Klastro' })
+      I18n.available_locales = (orig_locales + [:eo]).uniq
+      I18n.fallbacks.map(eo: [:en]) if I18n.respond_to?(:fallbacks)
+
+      I18n.with_locale(:eo) do
+        assert_equal 'Skip Navigation', I18n.t('jobcomposer.skip_navigation')
+        assert_equal 'Klastro', I18n.t('jobcomposer.options_cluster_title')
+      end
+    ensure
+      I18n.available_locales = orig_locales
+    end
+
     I18n.with_locale(:'zh-CN') do
-      assert_equal 'Skip Navigation', I18n.t('jobcomposer.skip_navigation')
+      refute_equal 'Skip Navigation', I18n.t('jobcomposer.skip_navigation')
       assert_equal '集群', I18n.t('jobcomposer.options_cluster_title')
     end
 
-    I18n.with_locale(:'fa-IR') do
-      assert_equal 'Job Composer', I18n.t('jobcomposer.title')
-      assert_equal 'کلاستر', I18n.t('jobcomposer.options_cluster_title')
+    I18n.with_locale(:'de-DE') do
+      refute_equal 'Job Composer', I18n.t('jobcomposer.title')
     end
   end
 

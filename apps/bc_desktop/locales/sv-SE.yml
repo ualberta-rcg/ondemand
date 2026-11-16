@@ -1,0 +1,18 @@
+---
+sv-SE:
+  manifest:
+    name: Skrivbord
+    description: 'Den här appen startar ett interaktivt skrivbord på en eller flera beräkningsnoder. Du
+
+      kommer att ha fullständig åtkomst till de resurser som dessa noder tillhandahåller. Detta är analogt
+
+      med ett interaktivt batchjobb.'
+  form:
+    attributes:
+      desktop:
+        label: Skrivbordsmiljö
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: PARA
+          xfce: Xfce

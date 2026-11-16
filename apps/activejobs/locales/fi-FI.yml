@@ -1,0 +1,5 @@
+---
+fi-FI:
+  manifest:
+    name: Aktiiviset työpaikat
+    description: Näytä työt, jotka ovat parhaillaan käynnissä OnDemand-käyttöön konfiguroiduissa käytettävissä olevissa klustereissa.

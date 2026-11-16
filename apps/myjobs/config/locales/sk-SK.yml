@@ -1,0 +1,131 @@
+---
+sk-SK:
+  jobcomposer:
+    account_label: 'Účet:'
+    back: Späť
+    cancel: Zrušiť
+    close: Zatvoriť
+    cluster_label: 'Klaster:'
+    confirm_delete: Si si istý/á?
+    confirm_delete_template: Ste si istý/á, že to chcete odstrániť?
+    copy_template: Kopírovať šablónu
+    create_from_path_title: Vytvorenie novej úlohy z cesty
+    create_new_heading_html: Vytvoriť nový „<span class="wrap-line" id="script-name-label">%{name}</span>“
+    create_new_job: Vytvoriť novú úlohu
+    create_template: Vytvoriť šablónu
+    create_template_from_job_title: Vytvoriť šablónu z vybranej úlohy
+    delete: Odstrániť
+    delete_job_title: Odstrániť úlohu
+    deprecation_warning_html: Nástroj Job Composer je zastaraný a bude odstránený v Open OnDemand 5.0. Preneste svoje úlohy a šablóny do <a href="%{projects_path}">Projektového manažéra</a>.
+    edit: Upraviť
+    edit_files: Upraviť súbory
+    folder_contents_label: 'Obsah priečinka:'
+    from_default_template: Z predvolenej šablóny
+    from_default_template_title: Vytvoriť novú úlohu z predvolenej šablóny
+    from_selected_job: Z vybranej úlohy
+    from_selected_job_title: Kopírovať vybranú úlohu
+    from_specified_path: Z určenej cesty
+    from_template: Z šablóny
+    from_template_title: Vytvorte novú úlohu z vami vybranej šablóny
+    invalid_cluster_html: Klaster nie je platný! Upravte <a href="#" id="edit-job-options-script-link">Možnosti úlohy</a> a vyberte platný klaster.
+    invalid_script_html: Skript nie je platný! Upravte <a href="#" id="edit-job-options-link">Možnosti úlohy</a> a vyberte platný skript.
+    job_already_submitted: Úloha už bola odoslaná.
+    job_array_request_label: 'Požiadavka na pole úloh:'
+    job_attributes_heading_html: Atribúty úlohy <strong> (voliteľné) </strong>
+    job_copied: Úloha bola úspešne skopírovaná.
+    job_copy_failed: 'Úlohu sa nepodarilo skopírovať: %{errors}'
+    job_created: Úloha bola úspešne vytvorená.
+    job_destroy_failed: 'Úlohu sa nepodarilo zničiť: %{errors}'
+    job_destroyed: Úloha bola úspešne zničená.
+    job_details: Podrobnosti o pracovnej ponuke
+    job_directory_missing: Chýba adresár pracovných ponúk!
+    job_name_label: 'Názov pracovnej pozície:'
+    job_not_submitted: Úloha nebola odoslaná.
+    job_stop_failed: 'Úlohu sa nepodarilo zastaviť: %{errors}'
+    job_stopped: Úloha bola úspešne zastavená.
+    job_submit_failed: 'Nepodarilo sa odoslať dávkovú úlohu:'
+    job_submitted: Úloha bola úspešne odoslaná.
+    job_updated: Úloha bola úspešne aktualizovaná.
+    loading: Načítava sa
+    loading_job_info: Načítavajú sa informácie o úlohe
+    nav_help: Pomocník
+    nav_jobs: Pracovné miesta
+    nav_menu_aria: Ponuka zostavovateľa úloh
+    nav_templates: Šablóny
+    new_job: Nová práca
+    new_template: Nová šablóna
+    new_template_title: Vytvoriť novú šablónu
+    no_clusters_alert: Nie sú nakonfigurovaní žiadni hostitelia, ktorí by vám umožnili odosielať úlohy. Kontaktujte, prosím, svojho správcu systému.
+    open_dir: Otvoriť adresár
+    open_dir_in_editor: Otvoriť adresár v editore súborov
+    open_dir_in_file_manager: Otvoriť adresár v Správcovi súborov
+    open_dir_in_terminal: Otvoriť adresár v termináli
+    open_editor: Otvoriť editor
+    open_selected_job_in_terminal: Otvoriť vybranú úlohu v termináli
+    open_selected_template_in_terminal: Otvoriť vybranú šablónu v termináli
+    open_template_dir_in_file_manager: Otvoriť adresár šablón v Správcovi súborov
+    open_terminal: Otvoriť terminál
+    open_xdmod: Otvorte XDMoD
+    options_account_help: Účet je voliteľné pole. Ak nie je nastavené, účet môže byť automaticky nastavený filtrom odoslania.
+    options_account_title: Účet
+    options_array_help: Polia úloh sú voliteľné. Napr. 1 – 10
+    options_array_help_with_clusters: 'Polia úloh sú voliteľné. OnDemand momentálne nepodporuje polia úloh pre klastre: %{cluster_list}.'
+    options_array_title: Špecifikácia poľa úloh
+    options_cluster_title: Klaster
+    options_copy_environment: Kopírovať prostredie
+    options_errors: Prosím, opravte chyby uvedené nižšie.
+    options_name_title: Meno
+    options_script_help: Súbory väčšie ako 65 kB sa v poli skriptu úlohy vynechávajú.
+    options_script_title: Zadajte skript úlohy
+    options_title: Možnosti práce
+    other_valid_files: Iné platné súbory
+    page_title: Skladateľ úloh - %{site}
+    path_to_source_heading_html: Cesta k zdroju <strong> (Povinné) </strong>
+    reset: Obnoviť
+    reset_template_fields_title: Obnoviť polia na predvolené hodnoty šablóny
+    save: Uložiť
+    script_contents_label: 'Obsah skriptu:'
+    script_location_label: 'Umiestnenie skriptu:'
+    script_name_form_label: 'Názov skriptu:'
+    script_name_label: 'Názov skriptu:'
+    select_cluster_prompt: Vyberte klaster...
+    select_template_option: -- vyberte šablónu --
+    selected_template_details: Podrobnosti o vybranej šablóne
+    show: Zobraziť
+    show_batch_host_label: 'Dávkový hostiteľ:'
+    show_dir_contents_label: 'Obsah adresára:'
+    show_name_label: 'Meno:'
+    show_staged_dir_label: 'Inscenovaná réžia:'
+    showing_job_title: Zobrazuje sa úloha
+    skip_navigation: Preskočiť navigáciu
+    source_path_help: Zadajte cestu k adresáru v súborovom systéme. Obsah tejto cesty sa skopíruje do nového pracovného postupu.
+    source_path_label: Zdrojová cesta
+    specify_job_host_and_script: Zadajte hostiteľa úlohy a skript
+    stop: Zastaviť
+    stop_job_title: Zastaviť úlohu
+    submit: Odoslať
+    submit_job_title: Odoslať úlohu
+    submit_script_title: Odoslať skript
+    submit_to_label: 'Odoslať na:'
+    suggested_files: Navrhované súbory
+    table_created: Vytvorené
+    table_id: Identifikácia
+    table_source: Zdroj
+    table_status: Stav
+    template_create_error: chyba pri vytváraní šablóny
+    template_error_name_unique: musí byť jedinečný.
+    template_error_path_directory: musí ukazovať na adresár.
+    template_error_path_missing: neexistuje.
+    template_errors_heading:
+      one: 'Chyba %{count} zabránila uloženiu tejto šablóny:'
+      other: 'Chyby %{count} zabránili uloženiu tejto šablóny:'
+    template_label: 'Šablóna:'
+    template_location_label: 'Umiestnenie šablóny:'
+    template_path_blank_help: Ak toto pole ponecháte prázdne, do novej šablóny sa pridá predvolený skript úlohy.
+    template_path_label: Cesta (šablóna sa vytvorí kopírovaním súborov z tejto zdrojovej cesty)
+    templates_subtitle: Ak chcete vytvoriť novú úlohu, vyberte šablónu, ktorú chcete skopírovať, vyplňte formulár vpravo a kliknite na tlačidlo „Vytvoriť novú úlohu“.
+    title: Skladateľ úloh
+    toggle_navigation: Prepnúť navigáciu
+    view_files: Zobraziť súbory
+    xdmod_url_warning_message: Táto úloha sa nemusí zobraziť v Open XDMoD skôr ako 24 hodín po jej dokončení.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

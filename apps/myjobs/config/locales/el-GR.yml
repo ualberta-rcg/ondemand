@@ -1,0 +1,131 @@
+---
+el-GR:
+  jobcomposer:
+    account_label: 'Λογαριασμός:'
+    back: Πίσω
+    cancel: Ματαίωση
+    close: Κοντά
+    cluster_label: 'Σύμπλεγμα:'
+    confirm_delete: Είσαι σίγουρος/η;
+    confirm_delete_template: Είστε σίγουροι ότι θέλετε να το διαγράψετε αυτό;
+    copy_template: Αντιγραφή προτύπου
+    create_from_path_title: Δημιουργήστε μια νέα εργασία από μια διαδρομή
+    create_new_heading_html: Δημιουργία νέου "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Δημιουργία νέας εργασίας
+    create_template: Δημιουργία προτύπου
+    create_template_from_job_title: Δημιουργία προτύπου από την επιλεγμένη εργασία
+    delete: Διαγράφω
+    delete_job_title: Διαγραφή εργασίας
+    deprecation_warning_html: Το Job Composer έχει καταργηθεί και θα καταργηθεί στο Open OnDemand 5.0. Μεταφέρετε τις εργασίες και τα πρότυπά σας στον <a href="%{projects_path}">Project Manager</a>.
+    edit: Εκδίδω
+    edit_files: Επεξεργασία αρχείων
+    folder_contents_label: 'Περιεχόμενα φακέλου:'
+    from_default_template: Από το προεπιλεγμένο πρότυπο
+    from_default_template_title: Δημιουργήστε μια νέα εργασία από το προεπιλεγμένο πρότυπο
+    from_selected_job: Από την επιλεγμένη εργασία
+    from_selected_job_title: Αντιγραφή της επιλεγμένης εργασίας
+    from_specified_path: Από καθορισμένη διαδρομή
+    from_template: Από το πρότυπο
+    from_template_title: Δημιουργήστε μια νέα εργασία από ένα πρότυπο που επιλέγετε
+    invalid_cluster_html: Το σύμπλεγμα δεν είναι έγκυρο! Επεξεργαστείτε το <a href="#" id="edit-job-options-script-link">Επιλογές εργασίας_OODTOK1__ για να επιλέξετε ένα έγκυρο σύμπλεγμα.
+    invalid_script_html: Το σενάριο δεν είναι έγκυρο! Επεξεργαστείτε τις <a href="#" id="edit-job-options-link">Επιλογές εργασίας_OODTOK1__ για να επιλέξετε ένα έγκυρο σενάριο.
+    job_already_submitted: Η εργασία έχει ήδη υποβληθεί.
+    job_array_request_label: 'Αίτημα πίνακα εργασίας:'
+    job_attributes_heading_html: Χαρακτηριστικά εργασίας <strong> (Προαιρετικά)</strong>
+    job_copied: Η εργασία αντιγράφηκε με επιτυχία.
+    job_copy_failed: 'Η αντιγραφή της εργασίας απέτυχε: %{errors}'
+    job_created: Η εργασία δημιουργήθηκε με επιτυχία.
+    job_destroy_failed: 'Η καταστροφή της εργασίας απέτυχε: %{errors}'
+    job_destroyed: Ο Ιώβ καταστράφηκε με επιτυχία.
+    job_details: Λεπτομέρειες εργασίας
+    job_directory_missing: Λείπει ο Κατάλογος Εργασίας!
+    job_name_label: 'Όνομα θέσης εργασίας:'
+    job_not_submitted: Η εργασία δεν έχει υποβληθεί.
+    job_stop_failed: 'Η διακοπή της εργασίας απέτυχε: %{errors}'
+    job_stopped: Η εργασία διακόπηκε με επιτυχία.
+    job_submit_failed: 'Αποτυχία υποβολής μαζικής εργασίας:'
+    job_submitted: Η εργασία υποβλήθηκε με επιτυχία.
+    job_updated: Η εργασία ενημερώθηκε με επιτυχία.
+    loading: Φόρτωση
+    loading_job_info: Φόρτωση πληροφοριών εργασίας
+    nav_help: Βοήθεια
+    nav_jobs: Θέσεις εργασίας
+    nav_menu_aria: Μενού Σύνταξης Εργασιών
+    nav_templates: Πρότυπα
+    new_job: Νέα δουλειά
+    new_template: Νέο πρότυπο
+    new_template_title: Δημιουργήστε ένα νέο πρότυπο
+    no_clusters_alert: Δεν υπάρχουν διαμορφωμένοι κεντρικοί υπολογιστές που να σας επιτρέπουν να υποβάλλετε εργασίες. Επικοινωνήστε με τον διαχειριστή του συστήματός σας.
+    open_dir: Άνοιγμα καταλόγου
+    open_dir_in_editor: Άνοιγμα καταλόγου στον επεξεργαστή αρχείων
+    open_dir_in_file_manager: Άνοιγμα καταλόγου στη Διαχείριση αρχείων
+    open_dir_in_terminal: Άνοιγμα καταλόγου στο τερματικό
+    open_editor: Άνοιγμα Επεξεργαστή
+    open_selected_job_in_terminal: Άνοιγμα επιλεγμένης εργασίας στο τερματικό
+    open_selected_template_in_terminal: Άνοιγμα επιλεγμένου προτύπου στο τερματικό
+    open_template_dir_in_file_manager: Άνοιγμα καταλόγου προτύπων στη Διαχείριση αρχείων
+    open_terminal: Άνοιγμα τερματικού
+    open_xdmod: Άνοιγμα XDMoD
+    options_account_help: Το πεδίο "Λογαριασμός" είναι προαιρετικό. Εάν δεν οριστεί, ο λογαριασμός μπορεί να οριστεί αυτόματα από το φίλτρο υποβολής.
+    options_account_title: Λογαριασμός
+    options_array_help: Οι πίνακες εργασιών είναι προαιρετικοί. π.χ. 1-10
+    options_array_help_with_clusters: 'Οι πίνακες εργασιών είναι προαιρετικοί. Το OnDemand δεν υποστηρίζει προς το παρόν πίνακες εργασιών για τα συμπλέγματα: %{cluster_list}.'
+    options_array_title: Προδιαγραφή πίνακα εργασιών
+    options_cluster_title: Σύμπλεγμα
+    options_copy_environment: Περιβάλλον αντιγραφής
+    options_errors: Διορθώστε τα παρακάτω σφάλματα.
+    options_name_title: Ονομα
+    options_script_help: Αρχεία μεγαλύτερα από 65KB παραλείπονται για το πεδίο σεναρίου εργασίας
+    options_script_title: Καθορισμός σεναρίου εργασίας
+    options_title: Επιλογές εργασίας
+    other_valid_files: Άλλα έγκυρα αρχεία
+    page_title: Σύνταξη Εργασίας - %{site}
+    path_to_source_heading_html: Διαδρομή προς την πηγή <strong>(Απαιτείται)</strong>
+    reset: Επαναφορά
+    reset_template_fields_title: Επαναφορά πεδίων στις προεπιλογές του προτύπου
+    save: Εκτός
+    script_contents_label: 'Περιεχόμενα σεναρίου:'
+    script_location_label: 'Τοποθεσία σεναρίου:'
+    script_name_form_label: 'Όνομα σεναρίου:'
+    script_name_label: 'Όνομα σεναρίου:'
+    select_cluster_prompt: Επιλέξτε ένα σύμπλεγμα...
+    select_template_option: -- επιλέξτε ένα πρότυπο --
+    selected_template_details: Λεπτομέρειες επιλεγμένου προτύπου
+    show: Επίδειξη
+    show_batch_host_label: 'Κεντρικός υπολογιστής παρτίδας:'
+    show_dir_contents_label: 'Περιεχόμενα καταλόγου:'
+    show_name_label: 'Ονομα:'
+    show_staged_dir_label: 'Σκηνοθεσία:'
+    showing_job_title: Εμφάνιση εργασίας
+    skip_navigation: Παράλειψη πλοήγησης
+    source_path_help: Εισαγάγετε τη διαδρομή προς έναν κατάλογο στο σύστημα αρχείων. Τα περιεχόμενα αυτής της διαδρομής θα αντιγραφούν σε μια νέα ροή εργασίας.
+    source_path_label: Διαδρομή πηγής
+    specify_job_host_and_script: Καθορισμός κεντρικού υπολογιστή εργασίας και σεναρίου
+    stop: Στάση
+    stop_job_title: Διακοπή εργασίας
+    submit: Υποτάσσομαι
+    submit_job_title: Υποβολή εργασίας
+    submit_script_title: Υποβολή σεναρίου
+    submit_to_label: 'Υποβολή σε:'
+    suggested_files: Προτεινόμενα αρχεία
+    table_created: Δημιουργήθηκε
+    table_id: ταυτότητα
+    table_source: Πηγή
+    table_status: Κατάσταση
+    template_create_error: σφάλμα κατά τη δημιουργία προτύπου
+    template_error_name_unique: πρέπει να είναι μοναδικό.
+    template_error_path_directory: πρέπει να δείχνει σε έναν κατάλογο.
+    template_error_path_missing: δεν υπάρχει.
+    template_errors_heading:
+      one: 'Το σφάλμα %{count} απαγόρευσε την αποθήκευση αυτού του προτύπου:'
+      other: 'Τα σφάλματα %{count} απαγόρευσαν την αποθήκευση αυτού του προτύπου:'
+    template_label: 'Περίγραμμα:'
+    template_location_label: 'Τοποθεσία προτύπου:'
+    template_path_blank_help: Εάν αφήσετε κενό, θα προστεθεί ένα προεπιλεγμένο σενάριο εργασίας στο νέο σας πρότυπο.
+    template_path_label: Διαδρομή (το πρότυπο θα δημιουργηθεί αντιγράφοντας αρχεία από αυτήν τη διαδρομή προέλευσης)
+    templates_subtitle: Για να δημιουργήσετε μια νέα εργασία, επιλέξτε ένα πρότυπο για αντιγραφή, συμπληρώστε τη φόρμα στα δεξιά και κάντε κλικ στην επιλογή "Δημιουργία νέας εργασίας".
+    title: Σύνταξη εργασιών
+    toggle_navigation: Εναλλαγή πλοήγησης
+    view_files: Προβολή αρχείων
+    xdmod_url_warning_message: Αυτή η εργασία ενδέχεται να μην εμφανιστεί στο Open XDMoD μέχρι 24 ώρες μετά την ολοκλήρωσή της.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

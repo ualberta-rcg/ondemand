@@ -1,0 +1,5 @@
+---
+it-IT:
+  manifest:
+    name: Browser dei moduli
+    description: Consulta i moduli nei cluster per informazioni dettagliate sui moduli stessi.

@@ -1,0 +1,16 @@
+---
+ro-RO:
+  manifest:
+    name: Desktop
+    description: 'Această aplicație va lansa un desktop interactiv pe unul sau mai multe noduri de calcul. Veți avea acces complet la resursele furnizate de aceste noduri. Acest lucru este analog
+
+      cu o lucrare interactivă în lot.'
+  form:
+    attributes:
+      desktop:
+        label: Mediu desktop
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: MATE
+          xfce: Xfce

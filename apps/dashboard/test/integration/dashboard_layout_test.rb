@@ -51,7 +51,7 @@ class DashboardLayoutTest < ActionDispatch::IntegrationTest
       assert_not_nil i18n_script
       payload = JSON.parse(i18n_script.text)
       assert_equal 'ja-JP', payload['locale']
-      assert_equal 'Cancel', payload.dig('translations', 'common', 'cancel')
+      assert_equal 'キャンセル', payload.dig('translations', 'common', 'cancel')
     end
 
     Configuration.stubs(:locale).returns(:'fr-CA')

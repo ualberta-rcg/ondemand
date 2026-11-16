@@ -3,10 +3,10 @@ en-CA:
   activemodel:
     errors:
       messages:
-        format: "%{attribute} format invalid or missing"
-        invalid: "%{attribute} is invalid"
-        required: "%{attribute} is required"
-        used: "%{attribute} is already used"
+        format: '%{attribute} format invalid or missing'
+        invalid: '%{attribute} is invalid'
+        required: '%{attribute} is required'
+        used: '%{attribute} is already used'
   dashboard:
     account: Account
     actions: Actions
@@ -93,28 +93,15 @@ en-CA:
     announcements_parse_error: Error parsing announcement.
     announcements_render_error: Could not render announcement '%{name}' because of error
     announcements_required_button: Accept
-    apps_setup_failure_html: |
-      <h2>A problem occurred while initializing your data for this app.</h2>
-      <p class="lead">
-        At your own risk you can still <a href="%{app_url}">open the app</a>
-        or you can just go <a href="%{home_url}">back to the dashboard</a>
-      </p>
-      <p>
-        Share this with the developer of your app:
-        The setup production script is supposed to be idempotent and is run each time
-        the user opens the app through the dashboard.</p>
-      <h4>Exception: %{exception_class}</h4>
-      <pre>%{exception_message}</pre>
-      <h4>Stack trace:</h4>
-      <pre>%{exception_trace}</pre>
-    apps_system_apps_title: System Applications
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: System Apps
     auto_log_location_title: Log Location
     back: Back
     balance_additional_message: Consider requesting additional %{balanace_units}
-    balance_message: "%{units_balance} is %{value}"
+    balance_message: '%{units_balance} is %{value}'
     balance_no_warnings: No projects are within the %{threshold} day balance warning threshold.
     balance_reload_message_html: Reload page to see updated balance. Balances are updated daily.<br>Last update was %{last_update}
-    balance_warning_prefix_html: "%{units_balance} warning for"
+    balance_warning_prefix_html: '%{units_balance} warning for'
     batch_connect_active_sessions_aria: Active Sessions
     batch_connect_app_version: 'version: %{version}'
     batch_connect_apps_menu_aria: Interactive Apps Menu
@@ -134,49 +121,68 @@ en-CA:
     batch_connect_form_save_new_template: save new settings
     batch_connect_form_save_submit: Save settings and close
     batch_connect_form_select_template: select saved settings
-    batch_connect_form_session_data_html: |
-      * The %{title} session data for this session can be accessed
-        under the %{data_link_tag}.
+    batch_connect_form_session_data_html: "* The %{title} session data for this session can be accessed\n  under the %{data_link_tag}.\n"
     batch_connect_form_template_name_label: setting name
     batch_connect_form_type_new_name: App settings name
     batch_connect_form_type_new_name_error: Please type a valid name to continue
-    batch_connect_invalid_form_array: "'form' element in form.yml is not an Array"
-    batch_connect_invalid_form_attributes: "'attributes' element in form.yml is not a Map"
-    batch_connect_missing_cluster: |
-      The cluster was never set. Either set it in form.yml.erb with `cluster` or `form.cluster` or
+    batch_connect_invalid_form_array: '''form'' element in form.yml is not an Array'
+    batch_connect_invalid_form_attributes: '''attributes'' element in form.yml is not a Map'
+    batch_connect_missing_cluster: 'The cluster was never set. Either set it in form.yml.erb with `cluster` or `form.cluster` or
+
       set `cluster` in submit.yml.erb.
+
+      '
     batch_connect_no_apps: There are no available Interactive Apps.
     batch_connect_no_sessions: You have no active sessions.
-    batch_connect_sandbox: " [Sandbox]"
+    batch_connect_sandbox: ' [Sandbox]'
     batch_connect_sessions_cancel_confirm: Are you sure?
     batch_connect_sessions_cancel_full_title: Cancel %{title} Session
     batch_connect_sessions_cancel_title: Cancel
+    batch_connect_sessions_connect_to: Connect to %{app_title}
     batch_connect_sessions_connection_render_error: Cannot render the connection button from the view.html.erb because of error '%{error}'
-    batch_connect_sessions_data_html: |
-      The %{title} session data for this session can be accessed
+    batch_connect_sessions_data_html: 'The %{title} session data for this session can be accessed
+
       under the %{data_link_tag}.
+
+      '
     batch_connect_sessions_delete_confirm: Are you sure?
     batch_connect_sessions_delete_full_title: Delete %{title} Session
     batch_connect_sessions_delete_hover: Delete Session
     batch_connect_sessions_delete_title: Delete
     batch_connect_sessions_edit_title: Edit new %{title} with this session parameters
-    batch_connect_sessions_error_invalid_job_name_html: |
-      If this job failed to submit because of an invalid job name
+    batch_connect_sessions_error_invalid_job_name_html: 'If this job failed to submit because of an invalid job name
+
       please ask your administrator to configure OnDemand to set the
+
       environment variable OOD_JOB_NAME_ILLEGAL_CHARS.
+
+      '
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit session with the following error:'
     batch_connect_sessions_native_vnc_tab: Native Instructions
+    batch_connect_sessions_novnc_compression: Compression
+    batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Launch %{app_title}
+    batch_connect_sessions_novnc_quality: Image Quality
+    batch_connect_sessions_novnc_quality_help: 0 (low) to 9 (high)
     batch_connect_sessions_novnc_tab: noVNC Connection
     batch_connect_sessions_novnc_view_only: View Only (Share-able Link)
     batch_connect_sessions_path_selector_forbidden_error: You do not have permission to select that directory or file.
     batch_connect_sessions_relaunch_full_title: Relaunch %{title} Session
     batch_connect_sessions_relaunch_title: Relaunch
     batch_connect_sessions_staged_root: staged root directory
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} core'
+      other: '%{count} cores'
     batch_connect_sessions_stats_created_at: 'Created at:'
     batch_connect_sessions_stats_expected_time: 'Expected start:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPUs'
     batch_connect_sessions_stats_host: 'Host:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} node'
+      other: '%{count} nodes'
     batch_connect_sessions_stats_session_dir_link_title: Open session directory for %{session_id}
     batch_connect_sessions_stats_session_id: 'Session ID:'
     batch_connect_sessions_stats_support_ticket: Problems with this session?
@@ -187,26 +193,32 @@ en-CA:
     batch_connect_sessions_stats_undetermined_host: Undetermined
     batch_connect_sessions_status_bad: Your session has entered a bad state. Feel free to contact support for further information.
     batch_connect_sessions_status_blurb_cancel_failure: Failed to cancel session.
-    batch_connect_sessions_status_blurb_cancel_success: Session was successfully cancelled.
+    batch_connect_sessions_status_blurb_cancel_success: Session was successfully canceled.
     batch_connect_sessions_status_blurb_create_success: Session was successfully created.
     batch_connect_sessions_status_blurb_delete_failure: Failed to delete session.
     batch_connect_sessions_status_blurb_delete_success: Session was successfully deleted.
     batch_connect_sessions_status_completed: For debugging purposes, this card will be retained for %{days} more days
-    batch_connect_sessions_status_missing_connection: |
-      This app is missing information required to establish a connection. Please
-      contact support if you see this message.
-    batch_connect_sessions_status_queued: |
-      Please be patient as your job currently sits in queue. The wait time depends
+    batch_connect_sessions_status_missing_connection: 'This app is missing information required to establish a connection. Specifically,
+
+      the view.html.erb file is missing. Please contact support if you see this message.
+
+      '
+    batch_connect_sessions_status_queued: 'Please be patient as your job currently sits in queue. The wait time depends
+
       on the number of cores as well as time requested.
-    batch_connect_sessions_status_starting: |
-      Your session is currently starting... Please be patient as this process can
+
+      '
+    batch_connect_sessions_status_starting: 'Your session is currently starting... Please be patient as this process can
+
       take a few minutes.
+
+      '
     batch_connect_sessions_word: Session
     batch_connect_validation:
-      app_not_found: "This app does not exist under the directory '%{root}'"
+      app_not_found: This app does not exist under the directory '%{root}'
       inaccessible_clusters: This app requires clusters that do not exist or you do not have access to.
-      missing_form_file: "This app does not supply a form file under the directory '%{root}'"
-      missing_sub_app_form_file: "This app does not supply a sub app form file under the directory '%{root}'"
+      missing_form_file: This app does not supply a form file under the directory '%{root}'
+      missing_sub_app_form_file: This app does not supply a sub app form file under the directory '%{root}'
       no_cluster_specified: This app does not specify any cluster.
     bc_saved_settings:
       delete_confirm: Are you sure?
@@ -216,8 +228,8 @@ en-CA:
       launch_title: Launch %{app_title} with %{settings_name} parameters
       missing_settings: Selected saved settings not found.
       no_settings_title: You have no saved settings.
-      outdated_message: "%{app_title} parameters have changed since these settings were created."
-      saved_message: "%{settings_name} settings saved"
+      outdated_message: '%{app_title} parameters have changed since these settings were created.'
+      saved_message: '%{settings_name} settings saved'
       settings_values_label: Values
       title: Saved Settings
     breadcrumb_aria: Breadcrumb
@@ -253,6 +265,7 @@ en-CA:
     close_notice: Close this notice.
     cluster: Cluster
     copy: Copy
+    copy_suffix: ' (Copy)'
     cpu_report: CPU Report + %{node}
     custom_pages:
       invalid: 'Invalid page code: %{page}. This page has not been configured'
@@ -262,6 +275,9 @@ en-CA:
     details: Details
     development_apps_caption: Sandbox App
     development_apps_category: Sandbox Apps
+    development_delete_app: Delete App
+    development_edit_title: Edit %{title}
+    development_launch_title: Launch %{title}
     directory: Directory
     edit: Edit
     editor_default: Default
@@ -276,7 +292,7 @@ en-CA:
     error_internal_title: Internal Server Error
     error_not_found_body: The page you are looking for does not exist.
     error_not_found_title: Not Found
-    favorites: Favourites
+    favorites: Favorites
     file: File
     file_editor: File Editor
     file_quotas: File Quotas
@@ -287,12 +303,12 @@ en-CA:
     files_copy_path: Copy path
     files_directory_contents_aria: Directory contents
     files_directory_download_error_modal_title: Directory too large to download
-    files_directory_download_unauthorized: You can only download a directory as zip that you have read and execute access to
+    files_directory_download_unauthorized: You can only download a file or directory that you have read and execute access to
     files_directory_size_calculation_error: Timeout while trying to determine directory size.
     files_directory_size_calculation_timeout: Timeout while trying to determine directory size.
     files_directory_size_unknown: 'Error with status %{exit_code} when trying to determine directory size: %{error}'
     files_directory_too_large: The directory is too large to download as a zip. The directory should be less than %{download_directory_size_limit} bytes.
-    files_doesnt_exist: "%{path} does not exist."
+    files_doesnt_exist: '%{path} does not exist.'
     files_download: Download
     files_download_not_enabled: Downloading files is not enabled on this server.
     files_download_zip: Download as zip
@@ -319,7 +335,7 @@ en-CA:
     files_title: File browsing
     files_upload: Upload
     footer_contribute: Contribute on GitHub
-    footer_license: Software Licence Notice
+    footer_license: Software License Notice
     footer_open_source: Open source software.
     footer_powered_by: Powered by Open OnDemand
     footer_version: 'OnDemand version: %{version}'
@@ -346,10 +362,12 @@ en-CA:
     jobs_launchers_deleted: Launcher successfully deleted!
     jobs_launchers_edit: Edit form for launcher %{name}
     jobs_launchers_edit_form_item: Edit form item %{label}
+    jobs_launchers_editing: Editing %{title}
     jobs_launchers_fixed_field: Fixed Value
     jobs_launchers_fixed_field_help: Fix current value
     jobs_launchers_max_value_label: Maximum value for number field %{label}
     jobs_launchers_min_value_label: Minimum value for number field %{label}
+    jobs_launchers_name: Launcher Name
     jobs_launchers_new_field_select: Select item to add to form
     jobs_launchers_not_found: Cannot find Launcher %{launcher_id}
     jobs_launchers_preview_form_item: Preview of form item %{label}
@@ -367,6 +385,7 @@ en-CA:
     jobs_new_launcher: New Launcher
     jobs_new_project: New Project
     jobs_project_cannot_find: 'Cannot find project: %{project_id}'
+    jobs_project_clear_form_fields: Clear form fields
     jobs_project_created: Project successfully created!
     jobs_project_delete_label: Delete project %{name}
     jobs_project_delete_project_confirmation: Delete all contents of project directory?
@@ -377,7 +396,7 @@ en-CA:
     jobs_project_directory_placeholder: Project directory absolute path
     jobs_project_edit_label: Edit project %{name}
     jobs_project_generic_error: 'There was an error processing your request: %{error}'
-    jobs_project_group_help: Make sure to choose the group that includes all intended collaborators. If this is not a collaborative project, the default group is recommended.
+    jobs_project_group_help: Make sure to choose the group that includes all intended collaborators. If this is not a collaborative project, the default group is recommended
     jobs_project_group_owner: Group
     jobs_project_imported: Project successfully imported!
     jobs_project_invalid_configuration_clusters: An HPC cluster is required. Contact your administrator to add one to the system.
@@ -394,13 +413,15 @@ en-CA:
     jobs_project_open_label: Open project %{name}
     jobs_project_remove_label: Remove project %{name}
     jobs_project_removed: Project removed from lookup!
+    jobs_project_return_to_projects: Return to projects page
     jobs_project_save_error: Cannot save manifest to %{path}
+    jobs_project_save_project_title: Save project
     jobs_project_select_directory: Select project directory
-    jobs_project_setgid_help: Leaving setgid checked ensures project files are created with the selected group. This does not affect projects in your home directory.
+    jobs_project_setgid_help: Leaving setgid checked ensures project files are created with the selected group. Does not affect projects in your home directory.
     jobs_project_validation_error: Invalid Request. Please review the errors below
     jobs_return_to_projects: Return to projects page
     jobs_save_project_title: Save project
-    jobs_select_directory_placeholder: Click on project below to import to your home page (Optional)
+    jobs_select_directory_placeholder: Click on project to import
     jobs_toggle_details: Click to toggle details for job %{job_id}
     jobs_workflow_add_launcher: Add Launcher
     jobs_workflow_canvas_aria: canvas
@@ -419,7 +440,7 @@ en-CA:
     jobs_workflow_editing: 'Editing: %{name}'
     jobs_workflow_enable_sync_key: Enable OOD_WORKFLOW_SYNC_KEY
     jobs_workflow_failed: Workflow failed with error %{error}
-    jobs_workflow_help: Click the title to select and drag. Connect by clicking two launchers with 'Connect Launchers' selected.
+    jobs_workflow_help: Click title to select and drag. Connect by clicking two launchers with 'Connect Launchers' selected
     jobs_workflow_manifest_updated: Workflow manifest updated!
     jobs_workflow_missing_launchers: select at least %{count}
     jobs_workflow_name_placeholder: Workflow name
@@ -428,7 +449,7 @@ en-CA:
     jobs_workflow_pick_launchers: Pick Launchers
     jobs_workflow_show_graph: Open workflow %{name} in graph editor
     jobs_workflow_submitted: Workflow successfully submitted!
-    jobs_workflow_sync_key_help: When enabled, every launcher in this workflow receives the same <code>OOD_WORKFLOW_SYNC_KEY</code> environment variable (a random token unique to each workflow run). This is useful for generating synchronized filenames, lock files, or shared identifiers across dependent jobs.
+    jobs_workflow_sync_key_help: When enabled, every launcher in this workflow receives the same <code>OOD_WORKFLOW_SYNC_KEY</code> environment variable (a random token unique to each workflow run). Useful for generating synchronized filenames, lock files, or shared identifiers across dependent jobs.
     jobs_workflow_synchronization: Synchronization
     jobs_workflow_toolbar_aria: toolbar
     jobs_workflow_zoom_controls: Zoom controls
@@ -446,7 +467,7 @@ en-CA:
         load_details_failed: Failed to load job details.
         remote_server_error: There was an error getting data from the remote server.
         request_failed_parse: Request for jobs failed due to body parsing error.
-        request_failed_status: "Request for jobs failed with status code: %{status}"
+        request_failed_status: 'Request for jobs failed with status code: %{status}'
         status_completed: Completed
         status_hold: Hold
         status_queued: Queued
@@ -461,9 +482,9 @@ en-CA:
         invalid_prefill_value_html: 'Invalid value: "%{value}" for the field "%{field}".<br>'
         notification_permission_error: 'Error requesting notification permission:'
         resolution_reset: Resolution reset to %{width} by %{height} pixels.
-        session_expires_warning: "Warning: %{title} (%{job_id}) expires in ~%{minutes} minutes!"
-        session_status_aria: "%{title} is now %{status}."
-        session_status_push: "%{title} (%{job_id}) is now %{status}."
+        session_expires_warning: 'Warning: %{title} (%{job_id}) expires in ~%{minutes} minutes!'
+        session_status_aria: '%{title} is now %{status}.'
+        session_status_push: '%{title} (%{job_id}) is now %{status}.'
       common:
         cancel: Cancel
         close: Close
@@ -475,13 +496,13 @@ en-CA:
         filter_label: 'Filter:'
         invalid_date: Invalid Date
         rows_selected:
-          one: "%{count} row selected"
-          other: "%{count} rows selected"
+          one: '%{count} row selected'
+          other: '%{count} rows selected'
         showing_filtered_rows: Showing %{display} of %{total} rows
         showing_rows: Showing %{display} rows
-        status_summary: "%{showing} - %{selected}"
+        status_summary: '%{showing} - %{selected}'
       dynamic_forms:
-        and_separator: " and "
+        and_separator: ' and '
         changed_help: Changed help text on %{widget} to %{help}
         changed_label: Changed label on %{widget} to new label %{label}
         current_value: set current value to %{value}
@@ -494,10 +515,12 @@ en-CA:
         selected_option_disabled: Selected option %{value} disabled for %{widget}
         set_limits: Set %{details} for %{widget}
         set_value: Set %{widget} to value %{value}
-        widget_no_label: "%{type} with no label"
-        widget_with_label: "%{type} with label %{label}"
+        widget_no_label: '%{type} with no label'
+        widget_with_label: '%{type} with label %{label}'
       editor:
-        save_error: "An error occurred attempting to save this file!\n%{error}"
+        save_error: 'An error occurred attempting to save this file!
+
+          %{error}'
         unsaved_changes: You have unsaved changes!
       files:
         action_delete: Delete
@@ -508,19 +531,19 @@ en-CA:
         actions: Actions
         cannot_navigate_file: Cannot navigate to a file.
         change_directory: Change Directory
-        clipboard_description_html: "Copy or move the files below from <code>%{from}</code> to the current directory:"
+        clipboard_description_html: 'Copy or move the files below from <code>%{from}</code> to the current directory:'
         contents_of_directory: Contents of directory %{path}
         copied_path: Copied path to clipboard!
         copy: Copy
-        create_directory_error: "Error occurred when attempting to create new directory: %{error}"
-        create_file_error: "Error occurred when attempting to create new file: %{error}"
-        delete_confirm_text: "Are you sure you want to delete the files: %{files}"
+        create_directory_error: 'Error occurred when attempting to create new directory: %{error}'
+        create_file_error: 'Error occurred when attempting to create new file: %{error}'
+        delete_confirm_text: 'Are you sure you want to delete the files: %{files}'
         delete_multiple_title: Delete %{count} selected files?
         delete_single_title: Delete %{name}?
-        deleting_files: "Deleting files...: "
+        deleting_files: 'Deleting files...: '
         directory: directory
         directory_name_label: Directory name
-        download_error: "Error while downloading: %{error}"
+        download_error: 'Error while downloading: %{error}'
         duplicate_files_warning: Duplicate files identified. Uploading these files will overwrite existing content.
         file: file
         filename_invalid_chars: Filename cannot include / or ..
@@ -534,7 +557,7 @@ en-CA:
         new_file_title: New File
         path_label: Path
         poll_status_error: Operation may not have happened. Failed to retrieve file operation status.
-        preparing_download_dir: "preparing to download directory: %{name}"
+        preparing_download_dir: 'preparing to download directory: %{name}'
         provide_absolute_pathname: Provide an absolute pathname
         provide_directory_name: Provide a directory name that does not have / in it
         provide_non_empty_filename: Provide a non-empty filename.
@@ -555,7 +578,7 @@ en-CA:
         summary_remove_files: remove files
         summary_rename_file: rename file
         token_missing_expired: Application token is missing or expired. Start again
-        transfer_error: "Error occurred when attempting to %{summary}: %{error}"
+        transfer_error: 'Error occurred when attempting to %{summary}: %{error}'
         upload_and_overwrite: Upload and Overwrite
         upload_count:
           one: Upload %{count} file
@@ -563,8 +586,8 @@ en-CA:
         upload_new_files: Upload New Files
         uppy_empty_dir_note: Empty directories will be included in the upload only when a directory upload is initiated via drag and drop. This is because the File and Directory Entries API is available only on a drop event, not during an input change event.
       icon_picker:
-        icon_selected: "%{icon} icon selected"
-        icon_sr: "%{name} icon"
+        icon_selected: '%{icon} icon selected'
+        icon_sr: '%{name} icon'
       launcher_edit:
         account_help: The account the job will be submitted with.
         account_label: Account
@@ -572,7 +595,7 @@ en-CA:
         cores_help: How many cores the job will run on.
         cores_label: Cores
         env_var_help: Add an environment variable.
-        env_var_key: "Environment Variable: %{name}"
+        env_var_key: 'Environment Variable: %{name}'
         env_var_label: Environment Variable
         hours_help: How long the job can run for.
         hours_label: Hours
@@ -592,14 +615,14 @@ en-CA:
           one: Showing %{count} result
           other: Showing %{count} results
       nsf_access:
-        affected_resources: "Affected Resources: %{resources}"
+        affected_resources: 'Affected Resources: %{resources}'
         read_more: Read more
         register_event: Register for this event
       path_selector:
         directory_loaded: Directory loaded with %{count} items
         invalid_regex: The regular expression provided for this path selector did not compile
         loading_directory: Loading directory contents
-        permission_denied_prefix: "Permission denied: "
+        permission_denied_prefix: 'Permission denied: '
       popovers:
         ihpc_content: An Interactive HPC session gives you dedicated access to one or more nodes on the cluster. This is similar to an interactive batch session with an accessible desktop on the primary node. Use this for heavyweight jobs such as long-running compute tasks or where you need dedicated resources.
         vdi_content: A VDI (Virtual Desktop Interface) gives you desktop access to a shared node. This is the graphical version of a login node. Use this for lightweight tasks like accessing & viewing files, submitting jobs, and for visualizations.
@@ -611,10 +634,10 @@ en-CA:
       support_ticket:
         delete_attachment: Delete attachment
         no_file_selected: No file selected
-        selected_file: "Selected file: %{name} (%{size})."
-        size_bytes: "%{size}bytes"
-        size_kb: "%{size}KB"
-        size_mb: "%{size}MB"
+        selected_file: 'Selected file: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
       turbo_shim:
         unauthenticated: This page cannot update because you are no longer authenticated. Please refresh the page to log back in.
         unexpected_error: This page has encountered an unexpected error. Please refresh the page.
@@ -627,7 +650,7 @@ en-CA:
         bidirectional_not_allowed: Bidirectional edges are not allowed.
         cyclic_dependency: Adding this edge will create a cyclic dependency among the launchers.
         edge_aria_label: Edge from %{from} to %{to}
-        launcher_aria_label: "Launcher: %{title}"
+        launcher_aria_label: 'Launcher: %{title}'
         launcher_exists: Launcher already exists, please select a different launcher
         load_launcher_failed: Failed to load launcher HTML. Please try again.
         no_empty_cells: No empty grid cells available!
@@ -638,27 +661,27 @@ en-CA:
         column_date: Date
         column_id: ID
         column_name: Name
-        date_range: "%{from} to %{to}"
-        efficiency_report: "%{unit} Efficiency Report"
+        date_range: '%{from} to %{to}'
+        efficiency_report: '%{unit} Efficiency Report'
         ensure_logged_in_html: '%{error} Please ensure you are <a href="%{url}">logged into Open XDMoD first</a>, and then try again.'
         expand_analytics_title: Click to expand analytics information on job %{id} above this table.
         fetch_user_failed: Attempting to fetch current user info from Open XDMoD failed
-        idp_redirect_failed: "Login failed: IDP redirect failed"
+        idp_redirect_failed: 'Login failed: IDP redirect failed'
         iframe_error: XDMoD Login iFrame at URL %{url} posted error message with info %{info}
-        inefficient_of_total_html: '<span class="text-danger">%{bad} inefficient %{unit} </span> &frasl; %{total} total %{unit}'
+        inefficient_of_total_html: <span class="text-danger">%{bad} inefficient %{unit} </span> &frasl; %{total} total %{unit}
         invalid_job_data: Job data returned by request is invalid.
         loading_caps: LOADING...
-        login_page_load_failed: "Login failed: Failed to load XDMoD login page"
-        login_timeout: "Login failed: Timeout waiting for login to complete"
+        login_page_load_failed: 'Login failed: Failed to load XDMoD login page'
+        login_timeout: 'Login failed: Timeout waiting for login to complete'
         metric_cpu: CPU
         metric_mem: Mem
         metric_walltime: Walltime
         no_data: No data available.
         not_available: N/A
         open_xdmod: Open XDMoD
-        percent_efficient: "%{percent}% efficient"
+        percent_efficient: '%{percent}% efficient'
         percent_efficient_aria: percent efficient
-        percent_inefficient: "%{percent}% inefficient"
+        percent_inefficient: '%{percent}% inefficient'
         percent_inefficient_aria: percent inefficient
         recently_completed_jobs: Recently Completed Jobs
         unit_core_hours: core hours
@@ -689,15 +712,25 @@ en-CA:
     module_browser_showing_results: Showing %{count} results
     module_browser_title: Module Browser
     module_browser_versions: Versions
-    motd_default_md: |
-      Development of Open OnDemand is supported through the [National Science Foundation](https://www.nsf.gov/)
+    motd_default_md: 'Development of Open OnDemand is supported through the [National Science Foundation](https://www.nsf.gov/)
+
       under grant numbers [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) and
+
       [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
-       Learn more or get involved:
-       - [Discourse](https://discourse.openondemand.org/)
+
+
+      Learn more or get involved:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
       - [Open OnDemand repository](https://github.com/OSC/ondemand)
+
       - [ood-core repository](https://github.com/OSC/ood_core)
+
       - [Documentation](https://osc.github.io/ood-documentation/latest/)
+
+      '
     motd_erb_render_error: 'MOTD was not parsed or rendered correctly: %{error_message}'
     motd_no_messages: There are no new messages.
     motd_title: Message of the Day
@@ -710,13 +743,13 @@ en-CA:
     nav_help_change_password: Change HPC Password
     nav_help_custom: Nav help custom
     nav_help_docs: Online Documentation
-    nav_help_support: Contact Technical Support
+    nav_help_support: Contact Support
     nav_help_support_ticket: Submit Support Ticket
     nav_help_title: Help
     nav_help_two_factor: Configure Two-Factor Authentication
     nav_language: Language
     nav_limit_caption: showing %{subset_count} of %{total_count}
-    nav_logout: Sign Out
+    nav_logout: Log Out
     nav_main_menu: Main Menu
     nav_restart_server: Restart Web Server
     nav_sessions: My Interactive Sessions
@@ -734,8 +767,9 @@ en-CA:
     output_location: 'Output Location:'
     owner: Owner
     page_actions_aria: Page actions
-    page_title: "%{page} - %{site}"
-    page_title_with_dir: "%{page} - %{site} - %{dir}"
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parameters
     path_selector_breadcrumb_aria: '%{title} Breadcrumb'
     path_selector_caption: Choose a file or directory to use in the form.
     path_selector_default_popup_title: Select Your Working Directory
@@ -771,22 +805,24 @@ en-CA:
     project_balances: Project Balances
     project_directory: Project Directory
     project_zip_error_message: 'Error creating ZIP file: %{error}'
-    project_zip_success_message: 'SUCCESS: project.zip was created in your project directory.'
+    project_zip_success_message: 'Success: project.zip has been created in your project directory.'
     queue: Queue
     quota_additional_message: Consider deleting or archiving files to free up disk space.
     quota_block: Using %{used} of quota %{available}
-    quota_block_shared: "(%{used_exclusive} are yours)"
+    quota_block_shared: (%{used_exclusive} are yours)
     quota_file: Using %{used} files of quota %{available} files
-    quota_file_shared: "(%{used_exclusive} files are yours)"
-    quota_message: "%{quota}. %{additional_message}"
+    quota_file_shared: (%{used_exclusive} files are yours)
+    quota_message: '%{quota}. %{additional_message}'
     quota_reload_message: Reload page to see updated quota. Quotas are updated every 5 minutes.
     quota_warning_prefix_html: Quota limit warning for
     recently_used_apps_title: Recently Used Apps
     remove: Remove
     reset: Reset
-    restart_msg_html: |
-      Your group membership has changed, which affects your access to apps. Your dashboard should restart automatically.
-      If it doesn't please, click: <a href="%{restart_url}">restart web server</a>.
+    restart_msg_html: 'Your group membership has changed, which affects your access to apps. Your dashboard should restart automatically.
+
+      If it doesn''t please, click: <a href="%{restart_url}">restart web server</a>.
+
+      '
     restore: Restore
     root: Root
     save: Save
@@ -794,7 +830,9 @@ en-CA:
     select: Select
     select_all: Select All
     select_path: Select Path
-    select_path_for: "%{element} select path\n"
+    select_path_for: '%{element} select path
+
+      '
     settings_csrf_expired: Your session security token expired. Please try your action again.
     settings_invalid_request: Invalid settings submitted
     settings_unprocessable_body_html: Your session may have expired or the change you wanted was rejected. Please <a href="%{dashboard_url}">return to the Dashboard</a> and try again.
@@ -803,16 +841,25 @@ en-CA:
     shared_apps_caption: Shared by %{owner_title} (%{owner})
     shared_apps_caption_short: Shared by %{owner}
     shared_apps_title: Shared Apps
-    sharing_catalog_msg_html: "<br>A subset of the apps available can be viewed on the %{catalog_link_tag}.\n"
+    sharing_catalog_msg_html: '<br>A subset of the apps available can be viewed on the %{catalog_link_tag}.
+
+      '
     sharing_catalog_title: App Catalog
-    sharing_no_shared_apps_html: "<strong>No custom shared apps available.</strong>\n"
-    sharing_support_msg_html: |
-      If you don't see the app you are looking for, please
+    sharing_no_shared_apps_html: '<strong>No custom shared apps available.</strong>
+
+      '
+    sharing_support_msg_html: 'If you don''t see the app you are looking for, please
+
       <a href="%{support_url}">contact support</a>.
-    sharing_welcome_msg_html: |
-      Cluster access applications are available from the dropdown menus in the navbar above.
+
+      '
+    sharing_welcome_msg_html: 'Cluster access applications are available from the dropdown menus in the navbar above.
+
       <br>Custom shared apps are available below.
-    shell_app_title: "%{cluster_title} Shell Access"
+
+      '
+    shell: Shell
+    shell_app_title: '%{cluster_title} Shell Access'
     show: Show
     size: Size
     skip_navigation: Skip Navigation
@@ -823,9 +870,9 @@ en-CA:
       cores: Cores
       email_on_started: I would like to receive an email when the session starts
       environment_variable: Environment Variable
-      environment_variable_key: "Environment Variable: %{key}"
+      environment_variable_key: 'Environment Variable: %{key}'
       job_name: Job Name
-      module_version: "%{module} version"
+      module_version: '%{module} version'
       num_cpus_single_node: Number of CPUs on single node
       num_hours: Number of hours
       num_nodes: Number of nodes
@@ -834,7 +881,7 @@ en-CA:
       qos: QoS
       queue: Queue
       script: Script
-      vnc_idle_help: "Exit if # seconds elapse with no VNC viewer connections"
+      vnc_idle_help: 'Exit if # seconds elapse with no VNC viewer connections'
       vnc_idle_label: Idle timeout
       vnc_resolution_help: Resolution is only used by native VNC connections
       vnc_resolution_label: Resolution
@@ -850,6 +897,7 @@ en-CA:
     status_suspend: Suspend
     status_suspended: Suspended
     status_undetermined: Undetermined
+    stop: Stop
     submit: Submit
     submit_args: 'Submit Args:'
     support_ticket:
@@ -870,6 +918,7 @@ en-CA:
       servicenow:
         attachments_failure: 'Support ticket created in ServiceNow. Number: %{number}. But unable to add the attachments.'
         creation_success: 'Support ticket created in ServiceNow. Number: %{number}'
+      submit: Submit support ticket
       title: Support Ticket
       validation:
         attachments_items: The %{id} are invalid. %{items} added, maximum number of attachments is %{max}
@@ -916,18 +965,18 @@ en-CA:
         dashboardWindowTitle: File Uploader Window (Press escape to close)
         done: Done
         dropHint: Drop your files here
-        dropPasteBoth: 'Drop files here, %{browseFiles} or %{browseFolders}'
-        dropPasteFiles: 'Drop files here or %{browseFiles}'
-        dropPasteFolders: 'Drop files here or %{browseFolders}'
+        dropPasteBoth: Drop files here, %{browseFiles} or %{browseFolders}
+        dropPasteFiles: Drop files here or %{browseFiles}
+        dropPasteFolders: Drop files here or %{browseFolders}
         editFile: Edit file
-        editing: 'Editing %{file}'
+        editing: Editing %{file}
         emptyFolderAdded: No files were added from empty folder
         error: Error
         exceedsSize: '%{file} exceeds maximum allowed size of %{size}'
-        failedToUpload: 'Failed to upload %{file}'
-        folderAlreadyAdded: 'The folder "%{folder}" was already added'
+        failedToUpload: Failed to upload %{file}
+        folderAlreadyAdded: The folder "%{folder}" was already added
         myDevice: My Device
-        noDuplicates: "Cannot add the duplicate file '%{fileName}', it already exists"
+        noDuplicates: Cannot add the duplicate file '%{fileName}', it already exists
         pause: Pause
         pauseUpload: Pause upload
         paused: Paused
@@ -947,7 +996,9 @@ en-CA:
         xTimeLeft: '%{time} left'
     user: User
     user_configuration:
-      support_ticket_error: support_ticket is misconfigured. "email" or "rt_api" sections are required in the configuration YAML.
-    welcome_html: |
-      %{logo_img_tag}
+      support_ticket_error: support_ticket is misconfigured. Please add a backend implementation in the configuration YAML.
+    welcome_html: '%{logo_img_tag}
+
       <p class="lead">OnDemand provides an integrated, single access point for all of your HPC resources.</p>
+
+      '

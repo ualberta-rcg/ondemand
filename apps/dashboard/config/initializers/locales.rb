@@ -12,6 +12,15 @@ Rails.application.config.i18n.fallbacks = [:en]
 Rails.application.config.after_initialize do
   I18n.backend.load_translations if I18n.backend.respond_to?(:load_translations)
 
+  if ::Configuration.respond_to?(:auto_generate_locales?) &&
+     ::Configuration.auto_generate_locales? &&
+     (!Rails.env.test? || ENV['OOD_AUTO_GENERATE_LOCALES'] == 'true')
+    locales_dir = Pathname.new(::Configuration.locales_root.to_s)
+    if locales_dir.directory? && locales_dir.writable?
+      AppLocaleSync.new.ensure_dashboard_locales!(output_dir: locales_dir)
+    end
+  end
+
   I18n.available_locales.dup.each do |loc|
     next unless loc.to_s.include?('_')
 

@@ -1,0 +1,131 @@
+---
+bg-BG:
+  jobcomposer:
+    account_label: 'Профил:'
+    back: Обратно
+    cancel: Отказ
+    close: Затвори
+    cluster_label: 'Клъстер:'
+    confirm_delete: Сигурен ли си?
+    confirm_delete_template: Сигурни ли сте, че искате да изтриете това?
+    copy_template: Копиране на шаблон
+    create_from_path_title: Създаване на нова задача от път
+    create_new_heading_html: Създаване на нов "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Създаване на нова работа
+    create_template: Създаване на шаблон
+    create_template_from_job_title: Създаване на шаблон от избрана задача
+    delete: Изтриване
+    delete_job_title: Изтриване на задача
+    deprecation_warning_html: Композиторът на задания е остарял и ще бъде премахнат в Open OnDemand 5.0. Моля, прехвърлете заданията и шаблоните си към <a href="%{projects_path}">Project Manager</a>.
+    edit: Редактиране
+    edit_files: Редактиране на файлове
+    folder_contents_label: 'Съдържание на папката:'
+    from_default_template: От шаблона по подразбиране
+    from_default_template_title: Създаване на нова задача от шаблона по подразбиране
+    from_selected_job: От избраната работа
+    from_selected_job_title: Копиране на избраната задача
+    from_specified_path: От посочения път
+    from_template: От шаблона
+    from_template_title: Създайте нова работа от избран от вас шаблон
+    invalid_cluster_html: Клъстерът не е валиден! Редактирайте <a href="#" id="edit-job-options-script-link">Job Options</a>, за да изберете валиден клъстер.
+    invalid_script_html: Скриптът не е валиден! Редактирайте <a href="#" id="edit-job-options-link">Job Options</a>, за да изберете валиден скрипт.
+    job_already_submitted: Работата вече е подадена.
+    job_array_request_label: 'Заявка за масив от задачи:'
+    job_attributes_heading_html: Атрибути на работата <strong> (по избор) </strong>
+    job_copied: Заданието беше успешно копирано.
+    job_copy_failed: 'Копирането на заданието не бе успешно: %{errors}'
+    job_created: Работата беше създадена успешно.
+    job_destroy_failed: 'Заданието не бе унищожено: %{errors}'
+    job_destroyed: Йов беше успешно унищожен.
+    job_details: Детайли за работата
+    job_directory_missing: Липсва справочникът за работа!
+    job_name_label: 'Име на длъжността:'
+    job_not_submitted: Работата не е подадена.
+    job_stop_failed: 'Задачата не можа да бъде спряна: %{errors}'
+    job_stopped: Заданието беше успешно спряно.
+    job_submit_failed: 'Неуспешно изпращане на пакетна задача:'
+    job_submitted: Заданието е успешно подадено.
+    job_updated: Работата беше успешно актуализирана.
+    loading: Зареждане
+    loading_job_info: Зареждане на информация за заданието
+    nav_help: Помощ
+    nav_jobs: Работа
+    nav_menu_aria: Меню за съставяне на задачи
+    nav_templates: Шаблони
+    new_job: Нова работа
+    new_template: Нов шаблон
+    new_template_title: Създаване на нов шаблон
+    no_clusters_alert: Няма конфигурирани хостове, които ви позволяват да изпращате задания. Моля, свържете се със системния си администратор.
+    open_dir: Отвори директорията
+    open_dir_in_editor: Отваряне на директория във файловия редактор
+    open_dir_in_file_manager: Отваряне на директория във файловия мениджър
+    open_dir_in_terminal: Отваряне на директория в терминал
+    open_editor: Отвори редактора
+    open_selected_job_in_terminal: Отваряне на избраната задача в терминала
+    open_selected_template_in_terminal: Отваряне на избрания шаблон в терминала
+    open_template_dir_in_file_manager: Отваряне на директорията с шаблони във файловия мениджър
+    open_terminal: Отвори терминал
+    open_xdmod: Отворете XDMoD
+    options_account_help: „Акаунт“ е незадължително поле. Ако не е зададено, акаунтът може да бъде зададен автоматично от филтъра за изпращане.
+    options_account_title: Профил
+    options_array_help: Масивите от задачи са по избор. Например 1-10
+    options_array_help_with_clusters: 'Масивите от задачи са по избор. OnDemand в момента не поддържа масиви от задачи за клъстера(ите): %{cluster_list}.'
+    options_array_title: Спецификация на масива от задачи
+    options_cluster_title: Клъстер
+    options_copy_environment: Копиране на среда
+    options_errors: Моля, поправете грешките по-долу.
+    options_name_title: Име
+    options_script_help: Файлове, по-големи от 65KB, се пропускат в полето за скрипт на заданието.
+    options_script_title: Посочете скрипта за работа
+    options_title: Опции за работа
+    other_valid_files: Други валидни файлове
+    page_title: Композитор на задания - %{site}
+    path_to_source_heading_html: Път към източника <strong> (Задължително) </strong>
+    reset: Нулиране
+    reset_template_fields_title: Възстановяване на полетата до стандартните стойности на шаблона
+    save: Запазване
+    script_contents_label: 'Съдържание на скрипта:'
+    script_location_label: 'Местоположение на скрипта:'
+    script_name_form_label: 'Име на скрипта:'
+    script_name_label: 'Име на скрипта:'
+    select_cluster_prompt: Изберете клъстер...
+    select_template_option: -- изберете шаблон --
+    selected_template_details: Детайли за избрания шаблон
+    show: Покажи
+    show_batch_host_label: 'Пакетен хост:'
+    show_dir_contents_label: 'Съдържание на директорията:'
+    show_name_label: 'Име:'
+    show_staged_dir_label: 'Постановка:'
+    showing_job_title: Показване на работа
+    skip_navigation: Пропускане на навигацията
+    source_path_help: Въведете пътя до директория във файловата система. Съдържанието на този път ще бъде копирано в нов работен процес.
+    source_path_label: Път на източника
+    specify_job_host_and_script: Посочете хост на задачата и скрипт
+    stop: Спри
+    stop_job_title: Спиране на задачата
+    submit: Изпращане
+    submit_job_title: Изпращане на работа
+    submit_script_title: Изпращане на скрипт
+    submit_to_label: 'Изпрати до:'
+    suggested_files: Предложени файлове
+    table_created: Създадено
+    table_id: Идентификационен номер
+    table_source: Източник
+    table_status: Статус
+    template_create_error: грешка при създаването на шаблон
+    template_error_name_unique: трябва да е уникален.
+    template_error_path_directory: трябва да сочи към директория.
+    template_error_path_missing: не съществува.
+    template_errors_heading:
+      one: 'Грешка %{count} забрани запазването на този шаблон:'
+      other: 'Грешки %{count} забраниха запазването на този шаблон:'
+    template_label: 'Шаблон:'
+    template_location_label: 'Местоположение на шаблона:'
+    template_path_blank_help: Ако остане празно, към новия ви шаблон ще бъде добавен скрипт за работа по подразбиране.
+    template_path_label: Път (шаблонът ще бъде създаден чрез копиране на файлове от този изходен път)
+    templates_subtitle: За да създадете нова работа, изберете шаблон за копиране, попълнете формуляра вдясно и кликнете върху „Създаване на нова работа“.
+    title: Композитор на задачи
+    toggle_navigation: Превключване на навигацията
+    view_files: Преглед на файлове
+    xdmod_url_warning_message: Тази задача може да не се появи в Open XDMoD до 24 часа след завършването ѝ.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

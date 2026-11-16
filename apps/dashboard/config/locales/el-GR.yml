@@ -1,0 +1,978 @@
+---
+el-GR:
+  activemodel:
+    errors:
+      messages:
+        format: Η μορφή %{attribute} δεν είναι έγκυρη ή λείπει
+        invalid: Το %{attribute} δεν είναι έγκυρο
+        required: Απαιτείται %{attribute}
+        used: Το %{attribute} χρησιμοποιείται ήδη
+  dashboard:
+    account: Λογαριασμός
+    actions: Ενέργειες
+    active_jobs: Ενεργές εργασίες
+    active_jobs_close_details: Κλείσιμο του εκτεταμένου πίνακα λεπτομερειών.
+    active_jobs_detail:
+      account: Λογαριασμός
+      array_job_id: Αναγνωριστικό εργασίας πίνακα
+      array_task_id: Αναγνωριστικό εργασίας πίνακα
+      cluster: Σύμπλεγμα
+      cluster_id: Αναγνωριστικό συμπλέγματος
+      comment: Σχόλιο
+      cpu_time: Χρόνος CPU
+      cpu_used: Χρησιμοποιούμενη CPU
+      current_working_directory: Τρέχων κατάλογος εργασίας
+      end_time: Ώρα λήξης
+      exec_host: Εκτελεστικός κεντρικός υπολογιστής
+      finish_time: Ώρα λήξης
+      from_host: Από τον κεντρικό υπολογιστή
+      gres: ΓΚΡΕΣ
+      group_list: Λίστα ομάδων
+      job_account: Λογαριασμός εργασίας
+      job_checkpoint_attr: Σημείο Ελέγχου Εργασίας
+      job_checkpoint_interval: Διάστημα σημείου ελέγχου εργασίας
+      job_deadline: Προθεσμία εργασίας
+      job_exec_file: Αρχείο εκτέλεσης εργασίας
+      job_execution_time: Χρόνος Εκτέλεσης Εργασίας
+      job_gid: GID εργασίας
+      job_group: Ομάδα εργασίας
+      job_id: Αναγνωριστικό εργασίας
+      job_name: Όνομα θέσης εργασίας
+      job_priority: Προτεραιότητα εργασίας
+      job_restart: Επανεκκίνηση εργασίας
+      job_script_file: Αρχείο σεναρίου εργασίας
+      job_script_size: Μέγεθος σεναρίου εργασίας
+      job_share: Κοινή χρήση εργασίας
+      job_type: Τύπος εργασίας
+      job_uid: UID εργασίας
+      job_verify: Επαλήθευση εργασίας
+      job_version: Έκδοση εργασίας
+      mem: Μνήμη
+      memory: Μνήμη
+      node_count: Αριθμός κόμβων
+      node_list: Λίστα κόμβων
+      nodes: Κόμβοι
+      none: Κανένας
+      notifications: Ειδοποιήσεις
+      partition: Χώρισμα
+      pbs_id: Αναγνωριστικό PBS
+      pids: PID
+      ppn: ΠΠΝ
+      project_name: Όνομα έργου
+      queue: Ουρά
+      reason: Λόγος
+      reserve: Απόθεμα
+      select: Επιλέγω
+      start_time: Ώρα έναρξης
+      state: Κατάσταση
+      status: Κατάσταση
+      submission_time: Ώρα Υποβολής
+      swap: Ανταλαγή
+      time_limit: Προθεσμία
+      time_used: Χρόνος που χρησιμοποιήθηκε
+      total_cpus: Σύνολο CPU
+      total_nodes: Σύνολο κόμβων
+      user: Μεταχειριζόμενος
+      virtual_memory: Εικονική Μνήμη
+      walltime: Χρόνος τοίχου
+      walltime_used: Χρόνος στον τοίχο που χρησιμοποιείται
+    active_jobs_filter_all: Όλες οι θέσεις εργασίας
+    active_jobs_filter_user: Οι δουλειές σας
+    active_jobs_ganlia_CPU: Εικόνα γαγγλίων για την CPU.
+    active_jobs_ganlia_load: Εικόνα γαγγλίων για τους μέσους όρους φορτίου συστήματος.
+    active_jobs_ganlia_mem: Εικόνα γαγγλίων για χρήση μνήμης.
+    active_jobs_ganlia_network: Εικόνα γαγγλίων για χρήση δικτύου.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> προβολή όλων (%{number_of_sessions})</a>
+    active_sessions_title: Ενεργές διαδραστικές συνεδρίες
+    add: Προσθέτω
+    all_apps_table_app_column: Ονομα
+    all_apps_table_category_column: Κατηγορία
+    all_apps_table_sub_category_column: Υποκατηγορία
+    all_clusters: Όλες οι συστάδες
+    announcements_dismissible_button: ΕΝΤΑΞΕΙ
+    announcements_parse_error: Σφάλμα κατά την ανάλυση της ανακοίνωσης.
+    announcements_render_error: Δεν ήταν δυνατή η απόδοση της ανακοίνωσης '%{name}' λόγω σφάλματος
+    announcements_required_button: Αποδέχομαι
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: Εφαρμογές συστήματος
+    auto_log_location_title: Τοποθεσία αρχείου καταγραφής
+    back: Πίσω
+    balance_additional_message: Σκεφτείτε να ζητήσετε επιπλέον %{balanace_units}
+    balance_message: '%{units_balance} είναι %{value}'
+    balance_no_warnings: Κανένα έργο δεν βρίσκεται εντός του ορίου προειδοποίησης υπολοίπου %{threshold} ημερών.
+    balance_reload_message_html: Επαναφορτώστε τη σελίδα για να δείτε το ενημερωμένο υπόλοιπο. Τα υπόλοιπα ενημερώνονται καθημερινά.<br>Η τελευταία ενημέρωση ήταν %{last_update}
+    balance_warning_prefix_html: '%{units_balance} προειδοποίηση για'
+    batch_connect_active_sessions_aria: Ενεργές συνεδρίες
+    batch_connect_app_version: 'έκδοση: %{version}'
+    batch_connect_apps_menu_aria: Μενού διαδραστικών εφαρμογών
+    batch_connect_apps_menu_title: Διαδραστικές εφαρμογές
+    batch_connect_form_attr_cache_error: Δεν είναι δυνατή η χρήση τιμών που έχουν αποθηκευτεί προηγουμένως στην προσωρινή μνήμη, χρησιμοποιούνται οι προεπιλογές. (%{error_message})
+    batch_connect_form_choose_template_name: Επιλέξτε ένα όνομα προτύπου
+    batch_connect_form_data_root: ριζικός κατάλογος δεδομένων
+    batch_connect_form_dynamic_disclaimer: Η ακόλουθη φόρμα ενδέχεται να αλλάζει δυναμικά καθώς επιλέγονται οι επιλογές. Όλες οι αλλαγές θα ανακοινώνονται και είναι αναστρέψιμες.
+    batch_connect_form_invalid: Λείπουν επιλογές στο πεδίο φόρμας %{id} από το αρχείο form.yml.
+    batch_connect_form_launch: Εκτόξευση
+    batch_connect_form_prefill: Χρήση αποθηκευμένων ρυθμίσεων
+    batch_connect_form_prefill_error: Ωχ... Κάτι δεν πάει καλά με το πρότυπό σας
+    batch_connect_form_reset_resolution: Επαναφορά ανάλυσης
+    batch_connect_form_resolution_height: Ύψος ανάλυσης (pixel)
+    batch_connect_form_resolution_width: Πλάτος ανάλυσης (pixel)
+    batch_connect_form_save: Αποθήκευση ρυθμίσεων
+    batch_connect_form_save_new_template: αποθήκευση νέων ρυθμίσεων
+    batch_connect_form_save_submit: Αποθήκευση ρυθμίσεων και κλείσιμο
+    batch_connect_form_select_template: επιλέξτε αποθηκευμένες ρυθμίσεις
+    batch_connect_form_session_data_html: '* Τα δεδομένα συνεδρίας %{title} για αυτήν την συνεδρία είναι προσβάσιμα
+
+      στο %{data_link_tag}.'
+    batch_connect_form_template_name_label: όνομα ρύθμισης
+    batch_connect_form_type_new_name: Όνομα ρυθμίσεων εφαρμογής
+    batch_connect_form_type_new_name_error: Παρακαλώ πληκτρολογήστε ένα έγκυρο όνομα για να συνεχίσετε
+    batch_connect_invalid_form_array: Το στοιχείο 'form' στο form.yml δεν είναι πίνακας
+    batch_connect_invalid_form_attributes: Το στοιχείο 'attributes' στο form.yml δεν είναι Χάρτης
+    batch_connect_missing_cluster: 'Το σύμπλεγμα δεν ορίστηκε ποτέ. Είτε ορίστε το στο form.yml.erb με `cluster` ή `form.cluster` είτε
+
+      ορίστε `cluster` στο submit.yml.erb.'
+    batch_connect_no_apps: Δεν υπάρχουν διαθέσιμες διαδραστικές εφαρμογές.
+    batch_connect_no_sessions: Δεν έχετε ενεργές συνεδρίες.
+    batch_connect_sandbox: '[Περιβάλλον δοκιμών]'
+    batch_connect_sessions_cancel_confirm: Είσαι σίγουρος/η;
+    batch_connect_sessions_cancel_full_title: Ακύρωση %{title} Συνεδρίας
+    batch_connect_sessions_cancel_title: Ματαίωση
+    batch_connect_sessions_connect_to: Σύνδεση με %{app_title}
+    batch_connect_sessions_connection_render_error: Δεν είναι δυνατή η απόδοση του κουμπιού σύνδεσης από το view.html.erb λόγω του σφάλματος '%{error}'
+    batch_connect_sessions_data_html: 'Τα δεδομένα συνεδρίας %{title} για αυτήν την συνεδρία είναι προσβάσιμα
+
+      στο %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Είσαι σίγουρος/η;
+    batch_connect_sessions_delete_full_title: Διαγραφή συνεδρίας %{title}
+    batch_connect_sessions_delete_hover: Διαγραφή συνεδρίας
+    batch_connect_sessions_delete_title: Διαγράφω
+    batch_connect_sessions_edit_title: Επεξεργασία νέου %{title} με αυτές τις παραμέτρους συνεδρίας
+    batch_connect_sessions_error_invalid_job_name_html: Εάν η υποβολή αυτής της εργασίας απέτυχε λόγω μη έγκυρου ονόματος εργασίας, ζητήστε από τον διαχειριστή σας να ρυθμίσει το OnDemand ώστε να ορίσει τη μεταβλητή περιβάλλοντος OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Η δημιουργία του προτύπου σε στάδιο απέτυχε με το ακόλουθο σφάλμα:'
+    batch_connect_sessions_errors_submission: 'Η υποβολή της συνεδρίας απέτυχε με το ακόλουθο σφάλμα:'
+    batch_connect_sessions_native_vnc_tab: Εγγενείς οδηγίες
+    batch_connect_sessions_novnc_compression: Συμπίεση
+    batch_connect_sessions_novnc_compression_help: 1 (χαμηλή) έως 9 (υψηλή)
+    batch_connect_sessions_novnc_launch: Εκκίνηση %{app_title}
+    batch_connect_sessions_novnc_quality: Ποιότητα εικόνας
+    batch_connect_sessions_novnc_quality_help: 0 (χαμηλή) έως 9 (υψηλή)
+    batch_connect_sessions_novnc_tab: Σύνδεση χωρίς VNC
+    batch_connect_sessions_novnc_view_only: Μόνο προβολή (σύνδεσμος με δυνατότητα κοινής χρήσης)
+    batch_connect_sessions_path_selector_forbidden_error: Δεν έχετε δικαίωμα επιλογής αυτού του καταλόγου ή αρχείου.
+    batch_connect_sessions_relaunch_full_title: Επανεκκίνηση συνεδρίας %{title}
+    batch_connect_sessions_relaunch_title: Επανεκκίνηση
+    batch_connect_sessions_staged_root: σταδιακός ριζικός κατάλογος
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} πυρήνας'
+      other: '%{count} πυρήνες'
+    batch_connect_sessions_stats_created_at: 'Δημιουργήθηκε στις:'
+    batch_connect_sessions_stats_expected_time: 'Αναμενόμενη έναρξη:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPUs'
+    batch_connect_sessions_stats_host: 'Πλήθος:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} κόμβος'
+      other: '%{count} κόμβοι'
+    batch_connect_sessions_stats_session_dir_link_title: Άνοιγμα καταλόγου συνεδρίας για %{session_id}
+    batch_connect_sessions_stats_session_id: 'Αναγνωριστικό περιόδου σύνδεσης:'
+    batch_connect_sessions_stats_support_ticket: Προβλήματα με αυτήν την συνεδρία;
+    batch_connect_sessions_stats_support_ticket_link_text: Υποβολή αιτήματος υποστήριξης
+    batch_connect_sessions_stats_time_remaining: 'Υπολειπόμενος χρόνος:'
+    batch_connect_sessions_stats_time_requested: 'Ζητούμενος χρόνος:'
+    batch_connect_sessions_stats_time_used: 'Χρόνος Χρήσης:'
+    batch_connect_sessions_stats_undetermined_host: Αναποφάσιστος
+    batch_connect_sessions_status_bad: Η συνεδρία σας έχει εισέλθει σε κακή κατάσταση. Μη διστάσετε να επικοινωνήσετε με την υποστήριξη για περισσότερες πληροφορίες.
+    batch_connect_sessions_status_blurb_cancel_failure: Η ακύρωση της συνεδρίας απέτυχε.
+    batch_connect_sessions_status_blurb_cancel_success: Η συνεδρία ακυρώθηκε με επιτυχία.
+    batch_connect_sessions_status_blurb_create_success: Η συνεδρία δημιουργήθηκε με επιτυχία.
+    batch_connect_sessions_status_blurb_delete_failure: Η διαγραφή της συνεδρίας απέτυχε.
+    batch_connect_sessions_status_blurb_delete_success: Η συνεδρία διαγράφηκε με επιτυχία.
+    batch_connect_sessions_status_completed: Για σκοπούς εντοπισμού σφαλμάτων, αυτή η κάρτα θα διατηρηθεί για %{days} ημέρες ακόμη
+    batch_connect_sessions_status_missing_connection: 'Σε αυτήν την εφαρμογή λείπουν οι πληροφορίες που απαιτούνται για τη δημιουργία σύνδεσης. Συγκεκριμένα,
+
+      λείπει το αρχείο view.html.erb. Επικοινωνήστε με την υποστήριξη εάν δείτε αυτό το μήνυμα.'
+    batch_connect_sessions_status_queued: Παρακαλούμε να είστε υπομονετικοί, καθώς η εργασία σας βρίσκεται αυτήν τη στιγμή σε ουρά. Ο χρόνος αναμονής εξαρτάται από τον αριθμό των πυρήνων καθώς και από τον χρόνο που ζητήθηκε.
+    batch_connect_sessions_status_starting: Η συνεδρία σας ξεκινάει αυτήν τη στιγμή... Παρακαλούμε να είστε υπομονετικοί, καθώς αυτή η διαδικασία μπορεί να διαρκέσει μερικά λεπτά.
+    batch_connect_sessions_word: Συνεδρίαση
+    batch_connect_validation:
+      app_not_found: Αυτή η εφαρμογή δεν υπάρχει στον κατάλογο '%{root}'
+      inaccessible_clusters: Αυτή η εφαρμογή απαιτεί συμπλέγματα που δεν υπάρχουν ή στα οποία δεν έχετε πρόσβαση.
+      missing_form_file: Αυτή η εφαρμογή δεν παρέχει αρχείο φόρμας στον κατάλογο '%{root}'
+      missing_sub_app_form_file: Αυτή η εφαρμογή δεν παρέχει αρχείο φόρμας δευτερεύουσας εφαρμογής στον κατάλογο '%{root}'
+      no_cluster_specified: Αυτή η εφαρμογή δεν καθορίζει κανένα σύμπλεγμα.
+    bc_saved_settings:
+      delete_confirm: Είσαι σίγουρος/η;
+      delete_title: Διαγραφή %{settings_name} αποθηκευμένων ρυθμίσεων
+      deleted_message: Οι αποθηκευμένες ρυθμίσεις %{settings_name} διαγράφηκαν.
+      edit_title: Επεξεργασία %{settings_name} αποθηκευμένων ρυθμίσεων
+      launch_title: Εκκίνηση %{app_title} με παραμέτρους %{settings_name}
+      missing_settings: Δεν βρέθηκαν οι επιλεγμένες αποθηκευμένες ρυθμίσεις.
+      no_settings_title: Δεν έχετε αποθηκευμένες ρυθμίσεις.
+      outdated_message: Οι παράμετροι %{app_title} έχουν αλλάξει από τότε που δημιουργήθηκαν αυτές οι ρυθμίσεις.
+      saved_message: Οι ρυθμίσεις %{settings_name} αποθηκεύτηκαν
+      settings_values_label: Αξίες
+      title: Αποθηκευμένες ρυθμίσεις
+    breadcrumb_aria: Ψίχουλα ψωμιού
+    breadcrumbs_all_apps: Όλες οι εφαρμογές
+    breadcrumbs_home: Σπίτι
+    breadcrumbs_my_sessions: Οι διαδραστικές μου συνεδρίες
+    breadcrumbs_support_ticket: Αίτημα υποστήριξης
+    browser_warning: Το OnDemand απαιτεί μια νεότερη έκδοση του προγράμματος περιήγησης που χρησιμοποιείτε. Οι τρέχουσες απαιτήσεις του προγράμματος περιήγησης περιλαμβάνουν IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Ματαίωση
+    categories:
+      apps: Εφαρμογές
+      bioinformatics: Βιοπληροφορική
+      clusters: Συσπειρώσεις
+      data_science: Επιστήμη Δεδομένων
+      desktop: Επιφάνεια εργασίας
+      desktops: Επιτραπέζιοι υπολογιστές
+      development: Ανάπτυξη
+      external_apps: Εξωτερικές εφαρμογές
+      files: Αρχεία
+      gateway_apps: Εφαρμογές πύλης
+      guis: Γραφικά περιβάλλοντα χρήστη (GUI)
+      interactive_apps: Διαδραστικές εφαρμογές
+      jobs: Θέσεις εργασίας
+      machine_learning: Μηχανική Μάθηση
+      mathematics: Μαθηματικά
+      servers: Διακομιστές
+      utilities: Βοηθητικά προγράμματα
+      virtual_desktop_interface: Διεπαφή εικονικής επιφάνειας εργασίας
+      visualization: Οραματισμός
+    clear: Σαφής
+    close: Κοντά
+    close_alert: Κλείστε αυτήν την ειδοποίηση.
+    close_notice: Κλείστε αυτήν την ειδοποίηση.
+    cluster: Σύμπλεγμα
+    copy: Αντίγραφο
+    copy_suffix: (Αντίγραφο)
+    cpu_report: Αναφορά CPU + %{node}
+    custom_pages:
+      invalid: 'Μη έγκυρος κωδικός σελίδας: %{page}. Αυτή η σελίδα δεν έχει διαμορφωθεί'
+    date: Ημερομηνία
+    delete: Διαγράφω
+    detailed_metrics: Λεπτομερείς μετρήσεις
+    details: Καθέκαστα
+    development_apps_caption: Εφαρμογή Sandbox
+    development_apps_category: Εφαρμογές Sandbox
+    development_delete_app: Διαγραφή εφαρμογής
+    development_edit_title: Επεξεργασία %{title}
+    development_launch_title: Εκκίνηση %{title}
+    directory: Τηλεφωνικός κατάλογος
+    edit: Εκδίδω
+    editor_default: Αθέτηση
+    editor_font_size: Μέγεθος γραμματοσειράς
+    editor_key_bindings: Συνδέσεις πλήκτρων
+    editor_theme: Θέμα
+    editor_theme_bright: Ευφυής
+    editor_theme_dark: Σκοτάδι
+    editor_wrap: Κάλυμμα
+    error_details: 'Καθέκαστα:'
+    error_internal_body_html: Δοκιμάστε ξανά σε λίγα λεπτά. Εάν εξακολουθείτε να βλέπετε αυτό το σφάλμα, επικοινωνήστε με την υποστήριξη <a href="%{support_url}">_.
+    error_internal_title: Εσωτερικό σφάλμα διακομιστή
+    error_not_found_body: Η σελίδα που αναζητάτε δεν υπάρχει.
+    error_not_found_title: Δεν βρέθηκε
+    favorites: Αγαπημένα
+    file: Αρχείο
+    file_editor: Επεξεργαστής αρχείων
+    file_quotas: Ποσοστώσεις αρχείων
+    files: Αρχεία
+    files_change_directory: Αλλαγή καταλόγου
+    files_contents_of_directory: Περιεχόμενα του καταλόγου %{path}
+    files_copy_move: Αντιγραφή/Μετακίνηση
+    files_copy_path: Αντιγραφή διαδρομής
+    files_directory_contents_aria: Περιεχόμενα καταλόγου
+    files_directory_download_error_modal_title: Ο κατάλογος είναι πολύ μεγάλος για λήψη
+    files_directory_download_unauthorized: Μπορείτε να κατεβάσετε μόνο ένα αρχείο ή κατάλογο που έχετε διαβάσει και εκτελέσει πρόσβαση σε αυτόν
+    files_directory_size_calculation_error: Λήξη χρονικού ορίου κατά την προσπάθεια προσδιορισμού του μεγέθους του καταλόγου.
+    files_directory_size_calculation_timeout: Λήξη χρονικού ορίου κατά την προσπάθεια προσδιορισμού του μεγέθους του καταλόγου.
+    files_directory_size_unknown: 'Σφάλμα με κατάσταση %{exit_code} κατά την προσπάθεια προσδιορισμού του μεγέθους του καταλόγου: %{error}'
+    files_directory_too_large: Ο κατάλογος είναι πολύ μεγάλος για λήψη ως zip. Ο κατάλογος θα πρέπει να έχει μέγεθος μικρότερο από %{download_directory_size_limit} byte.
+    files_doesnt_exist: Το %{path} δεν υπάρχει.
+    files_download: Λήψη
+    files_download_not_enabled: Η λήψη αρχείων δεν είναι ενεργοποιημένη σε αυτόν τον διακομιστή.
+    files_download_zip: Λήψη ως zip
+    files_exceeds_editor_limit: Το %{path} υπερβαίνει το όριο του προγράμματος επεξεργασίας του %{limit}. Παρακαλώ κατεβάστε το αρχείο για να το επεξεργαστείτε ή να το δείτε τοπικά.
+    files_file_too_large: Το αρχείο είναι πολύ μεγάλο για λήψη. Οι λήψεις αρχείων θα πρέπει να είναι μικρότερες από %{download_file_size_limit} byte.
+    files_go_up_directory: Μετάβαση στον επάνω κατάλογο
+    files_modified_at: Τροποποιήθηκε στις
+    files_modify_aria: Τροποποίηση αρχείων
+    files_new_directory: Νέος Κατάλογος
+    files_new_file: Νέο αρχείο
+    files_not_editable: Το %{path} δεν είναι επεξεργάσιμο αρχείο
+    files_not_readable: Δεν έχετε επαρκή δικαιώματα για να διαβάσετε το '%{path}'.
+    files_open_in_files_app: Άνοιγμα στην εφαρμογή "Αρχεία"
+    files_open_in_globus: Άνοιγμα στο Globus
+    files_path_breadcrumbs_aria: Ψίχουλα ψωμιού διαδρομής
+    files_refresh: Φρεσκάρω
+    files_remote_dir_not_created: Δεν δημιουργήθηκε ο κατάλογος %{path}
+    files_remote_disabled: Η απομακρυσμένη υποστήριξη αρχείων δεν είναι ενεργοποιημένη
+    files_remote_empty_dir_unsupported: Το τηλεχειριστήριο δεν υποστηρίζει κενούς καταλόγους
+    files_remote_error_listing_remotes: 'Σφάλμα κατά την καταχώριση των τηλεχειριστηρίων Rclone: %{error}'
+    files_send_to_target_title_default: Αποστολή μεταδεδομένων επιλεγμένων αρχείων στην εξωτερική εφαρμογή
+    files_shell: Άνοιγμα στο τερματικό
+    files_shell_dropdown: Επιλέξτε σύμπλεγμα για άνοιγμα στο τερματικό
+    files_title: Περιήγηση αρχείων
+    files_upload: Μεταφόρτωση
+    footer_contribute: Συνεισφορά στο GitHub
+    footer_license: Ειδοποίηση Άδειας Χρήσης Λογισμικού
+    footer_open_source: Λογισμικό ανοιχτού κώδικα.
+    footer_powered_by: Με την υποστήριξη του Open OnDemand
+    footer_version: 'Έκδοση κατ'' απαίτηση: %{version}'
+    home_directory: Αρχική σελίδα
+    id: ταυτότητα
+    import: Εισαγωγή
+    job: Δουλειά
+    job_info: Πληροφορίες εργασίας
+    jobs_back_to_projects: Πίσω στα Έργα
+    jobs_clear_form_fields: Εκκαθάριση πεδίων φόρμας
+    jobs_completed_jobs: Ολοκληρωμένες εργασίες
+    jobs_create_blank_project: Δημιουργήστε ένα νέο έργο
+    jobs_create_blank_workflow: Νέα ροή εργασίας
+    jobs_create_template_project: Δημιουργία νέου έργου από πρότυπο
+    jobs_import_shared_project: Εισαγωγή κοινόχρηστου έργου
+    jobs_launchers: Εκτοξευτές
+    jobs_launchers_add_select_option: Προσθήκη επιλογής %{name}
+    jobs_launchers_cannot_find: Δεν είναι δυνατή η εύρεση του προγράμματος εκκίνησης %{id}
+    jobs_launchers_clone: Κλωνοποίηση προγράμματος εκκίνησης %{name}
+    jobs_launchers_created: Η εφαρμογή εκκίνησης δημιουργήθηκε με επιτυχία!
+    jobs_launchers_default_created: Ένα αρχείο 'hello_world.sh' προστέθηκε επίσης σε αυτό το έργο.
+    jobs_launchers_delete: Διαγραφή προγράμματος εκκίνησης %{name}
+    jobs_launchers_delete_script_confirmation: Διαγραφή όλου του περιεχομένου του προγράμματος εκκίνησης;
+    jobs_launchers_deleted: Η εφαρμογή εκκίνησης διαγράφηκε με επιτυχία!
+    jobs_launchers_edit: Επεξεργασία φόρμας για τον εκκινητή %{name}
+    jobs_launchers_edit_form_item: Επεξεργασία στοιχείου φόρμας %{label}
+    jobs_launchers_editing: Επεξεργασία %{title}
+    jobs_launchers_fixed_field: Σταθερή Αξία
+    jobs_launchers_fixed_field_help: Διόρθωση τρέχουσας τιμής
+    jobs_launchers_max_value_label: Μέγιστη τιμή για το πεδίο αριθμού %{label}
+    jobs_launchers_min_value_label: Ελάχιστη τιμή για το πεδίο αριθμού %{label}
+    jobs_launchers_name: Όνομα Εκκινητή
+    jobs_launchers_new_field_select: Επιλέξτε στοιχείο για προσθήκη στη φόρμα
+    jobs_launchers_not_found: Δεν είναι δυνατή η εύρεση του Launcher %{launcher_id}
+    jobs_launchers_preview_form_item: Προεπισκόπηση στοιχείου φόρμας %{label}
+    jobs_launchers_remove_form_item: Αφαίρεση στοιχείου φόρμας %{label}
+    jobs_launchers_remove_select_option: Αφαίρεση επιλογής %{name}
+    jobs_launchers_save_form: Αποθήκευση φόρμας
+    jobs_launchers_save_form_item: Αποθήκευση αλλαγών στο στοιχείο φόρμας %{label}
+    jobs_launchers_show_form: Εμφάνιση φόρμας για τον εκκινητή %{name}
+    jobs_launchers_submit_launcher_title: Εκκίνηση σεναρίου με προσωρινά αποθηκευμένες ή προεπιλεγμένες τιμές για τον εκκινητή %{name}
+    jobs_launchers_submitted: Η εργασία %{job_id} υποβλήθηκε με επιτυχία.
+    jobs_launchers_updated: Το μανιφέστο του Launcher ενημερώθηκε!
+    jobs_native_dependency: Η εργασία εξαρτάται από το job-id%{dependency}
+    jobs_native_reason: λόγω του '%{reason}'
+    jobs_native_state: Η τρέχουσα κατάσταση της εργασίας είναι '%{state}'
+    jobs_new_launcher: Νέος Εκκινητής
+    jobs_new_project: Νέο Έργο
+    jobs_project_cannot_find: 'Δεν είναι δυνατή η εύρεση του έργου: %{project_id}'
+    jobs_project_clear_form_fields: Εκκαθάριση πεδίων φόρμας
+    jobs_project_created: Το έργο δημιουργήθηκε με επιτυχία!
+    jobs_project_delete_label: Διαγραφή έργου %{name}
+    jobs_project_delete_project_confirmation: Διαγραφή όλων των περιεχομένων του καταλόγου έργου;
+    jobs_project_deleted: Το έργο διαγράφηκε με επιτυχία!
+    jobs_project_description_placeholder: Περιγραφή έργου
+    jobs_project_directory_error: Η διαδρομή καταλόγου έργου δεν έχει οριστεί για αυτήν τη ροή εργασίας
+    jobs_project_directory_help_html: 'Αφήστε το κενό και θα δημιουργηθεί ένας νέος κατάλογος. <br />Προεπιλεγμένη τοποθεσία: %{root_directory}'
+    jobs_project_directory_placeholder: Απόλυτη διαδρομή καταλόγου έργου
+    jobs_project_edit_label: Επεξεργασία έργου %{name}
+    jobs_project_generic_error: 'Παρουσιάστηκε σφάλμα κατά την επεξεργασία του αιτήματός σας: %{error}'
+    jobs_project_group_help: Βεβαιωθείτε ότι έχετε επιλέξει την ομάδα που περιλαμβάνει όλους τους προβλεπόμενους συνεργάτες. Εάν αυτό δεν είναι ένα συνεργατικό έργο, συνιστάται η προεπιλεγμένη ομάδα.
+    jobs_project_group_owner: Ομάδα
+    jobs_project_imported: Η εισαγωγή του έργου ολοκληρώθηκε με επιτυχία!
+    jobs_project_invalid_configuration_clusters: Απαιτείται ένα σύμπλεγμα HPC. Επικοινωνήστε με τον διαχειριστή σας για να προσθέσετε ένα στο σύστημα.
+    jobs_project_invalid_configuration_scripts: Απαιτείται ένα εκτελέσιμο σενάριο για το έργο σας. Ανεβάστε ένα σενάριο χρησιμοποιώντας την εφαρμογή αρχείων.
+    jobs_project_job_deleted: Η εργασία διαγράφηκε με επιτυχία %{job_id}
+    jobs_project_job_not_deleted: Δεν είναι δυνατή η διαγραφή της εργασίας %{job_id}
+    jobs_project_job_stopped: Η εργασία %{job_id} διακόπηκε με επιτυχία
+    jobs_project_list_aria: Λίστα έργων
+    jobs_project_manager: Διευθυντής Έργου
+    jobs_project_manifest_updated: Η δήλωση έργου ενημερώθηκε!
+    jobs_project_name_placeholder: Όνομα έργου
+    jobs_project_name_validation: Το όνομα του έργου μπορεί να περιέχει μόνο γράμματα, ψηφία, παύλες, υπογράμμιση και κενά
+    jobs_project_not_found: Δεν είναι δυνατή η εύρεση του έργου %{project_id}
+    jobs_project_open_label: Ανοιχτό έργο %{name}
+    jobs_project_remove_label: Αφαίρεση έργου %{name}
+    jobs_project_removed: Το έργο αφαιρέθηκε από την αναζήτηση!
+    jobs_project_return_to_projects: Επιστροφή στη σελίδα έργων
+    jobs_project_save_error: Δεν είναι δυνατή η αποθήκευση του μανιφέστο στο %{path}
+    jobs_project_save_project_title: Αποθήκευση έργου
+    jobs_project_select_directory: Επιλογή καταλόγου έργου
+    jobs_project_setgid_help: Αν αφήσετε επιλεγμένο το setgid, διασφαλίζεται ότι τα αρχεία έργου δημιουργούνται με την επιλεγμένη ομάδα. Δεν επηρεάζει τα έργα στον αρχικό σας κατάλογο.
+    jobs_project_validation_error: Μη έγκυρο αίτημα. Ελέγξτε τα παρακάτω σφάλματα.
+    jobs_return_to_projects: Επιστροφή στη σελίδα έργων
+    jobs_save_project_title: Αποθήκευση έργου
+    jobs_select_directory_placeholder: Κάντε κλικ στο έργο για εισαγωγή
+    jobs_toggle_details: Κάντε κλικ για να ενεργοποιήσετε/απενεργοποιήσετε τις λεπτομέρειες της εργασίας %{job_id}
+    jobs_workflow_add_launcher: Προσθήκη Εκκινητή
+    jobs_workflow_canvas_aria: καμβάς
+    jobs_workflow_clone: Κλωνοποίηση ροής εργασίας %{name}
+    jobs_workflow_connect_launchers: Σύνδεση Εκτοξευτών
+    jobs_workflow_created: Η ροή εργασίας δημιουργήθηκε με επιτυχία!
+    jobs_workflow_delete_confirmation: Διαγραφή όλων των περιεχομένων της ροής εργασίας;
+    jobs_workflow_delete_edge: Διαγραφή άκρης
+    jobs_workflow_delete_edge_title: Διαγραφή επιλεγμένης άκρης (Del/Backspace)
+    jobs_workflow_delete_launcher: Διαγραφή Εκκίνησης
+    jobs_workflow_delete_launcher_title: Διαγραφή επιλεγμένου εκκινητή (Del/Backspace)
+    jobs_workflow_delete_title: Διαγραφή ροής εργασίας %{name}
+    jobs_workflow_deleted: Η ροή εργασίας διαγράφηκε με επιτυχία!
+    jobs_workflow_description_placeholder: Περιγραφή ροής εργασίας
+    jobs_workflow_edit_settings: Τροποποίηση ρυθμίσεων για τη ροή εργασίας %{name}
+    jobs_workflow_editing: 'Επεξεργασία: %{name}'
+    jobs_workflow_enable_sync_key: Ενεργοποίηση OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Η ροή εργασίας απέτυχε με σφάλμα %{error}
+    jobs_workflow_help: Κάντε κλικ στον τίτλο για να επιλέξετε και να σύρετε. Συνδεθείτε κάνοντας κλικ σε δύο εκκινητές με επιλεγμένο το "Σύνδεση Εκκινητών"
+    jobs_workflow_manifest_updated: Η δήλωση ροής εργασίας ενημερώθηκε!
+    jobs_workflow_missing_launchers: επιλέξτε τουλάχιστον %{count}
+    jobs_workflow_name_placeholder: Όνομα ροής εργασίας
+    jobs_workflow_name_validation: Το όνομα της ροής εργασίας μπορεί να περιέχει μόνο γράμματα, ψηφία, παύλες, υπογράμμιση και κενά
+    jobs_workflow_not_found: Δεν είναι δυνατή η εύρεση της ροής εργασίας %{workflow_id}
+    jobs_workflow_pick_launchers: Εκτοξευτές πικ
+    jobs_workflow_show_graph: Άνοιγμα ροής εργασίας %{name} στον επεξεργαστή γραφημάτων
+    jobs_workflow_submitted: Η ροή εργασίας υποβλήθηκε με επιτυχία!
+    jobs_workflow_sync_key_help: Όταν είναι ενεργοποιημένη, κάθε εκκινητής σε αυτήν τη ροή εργασίας λαμβάνει την ίδια μεταβλητή περιβάλλοντος <code>OOD_WORKFLOW_SYNC_KEY</code> (ένα τυχαίο διακριτικό μοναδικό για κάθε εκτέλεση ροής εργασίας). Χρήσιμο για τη δημιουργία συγχρονισμένων ονομάτων αρχείων, αρχείων κλειδώματος ή κοινόχρηστων αναγνωριστικών σε εξαρτώμενες εργασίες.
+    jobs_workflow_synchronization: Συγχρονισμός
+    jobs_workflow_toolbar_aria: γραμμή εργαλείων
+    jobs_workflow_zoom_controls: Στοιχεία ελέγχου ζουμ
+    jobs_workflow_zoom_in: Μεγέθυνση
+    jobs_workflow_zoom_out: Σμίκρυνση
+    jobs_workflow_zoom_reset: Επαναφορά ζουμ
+    jobs_workflows: Ροές εργασίας
+    jobs_workflows_not_supported: Οι ροές εργασίας δεν υποστηρίζονται από το διαμορφωμένο χρονοδιάγραμμα.
+    js:
+      active_jobs:
+        delete_aria: Διαγραφή εργασίας %{name} με αναγνωριστικό %{id}
+        delete_confirm: Είστε σίγουροι ότι θέλετε να διαγράψετε %{name} - %{id};
+        delete_title: Διαγραφή εργασίας
+        details_loaded: Η λίστα λεπτομερειών εργασίας φορτώθηκε.
+        load_details_failed: Αποτυχία φόρτωσης λεπτομερειών εργασίας.
+        remote_server_error: Παρουσιάστηκε σφάλμα κατά τη λήψη δεδομένων από τον απομακρυσμένο διακομιστή.
+        request_failed_parse: Το αίτημα για εργασίες απέτυχε λόγω σφάλματος ανάλυσης σώματος.
+        request_failed_status: 'Το αίτημα για εργασίες απέτυχε με κωδικό κατάστασης: %{status}'
+        status_completed: Ολοκληρώθηκε το
+        status_hold: Αμπάρι
+        status_queued: Σε ουρά
+        status_running: Τρέξιμο
+        status_suspended: Σε αναστολή
+        status_undetermined: Αναποφάσιστος
+        support_ticket_aria: Υποβολή αιτήματος υποστήριξης για εργασία με αναγνωριστικό %{id}
+        support_ticket_title: Υποβολή αιτήματος υποστήριξης
+        toggle_details_aria: Εναλλαγή ορατότητας της εργασίας %{name} στο %{cluster}
+      batch_connect:
+        allow_notifications: Παρακαλούμε επιτρέψτε δικαιώματα ειδοποιήσεων στο πρόγραμμα περιήγησής σας για να ενεργοποιήσετε τις ειδοποιήσεις περιόδου σύνδεσης.
+        invalid_prefill_value_html: 'Μη έγκυρη τιμή: "%{value}" για το πεδίο "%{field}".<br>'
+        notification_permission_error: 'Σφάλμα κατά την αίτηση άδειας ειδοποίησης:'
+        resolution_reset: Η ανάλυση επαναφέρθηκε σε %{width} κατά %{height} pixel.
+        session_expires_warning: 'Προειδοποίηση: %{title} (%{job_id}) λήγει σε ~%{minutes} λεπτά!'
+        session_status_aria: Ο/Η %{title} είναι τώρα %{status}.
+        session_status_push: Ο/Η %{title} (%{job_id}) είναι τώρα %{status}.
+      common:
+        cancel: Ματαίωση
+        close: Κοντά
+        error: Σφάλμα
+        loading: Φόρτωση...
+        ok: ΕΝΤΑΞΕΙ
+      datatables:
+        all: Ολοι
+        filter_label: 'Φίλτρο:'
+        invalid_date: Μη έγκυρη ημερομηνία
+        rows_selected:
+          one: Επιλέχθηκε η σειρά %{count}
+          other: Επιλέχθηκαν %{count} σειρές
+        showing_filtered_rows: Εμφάνιση %{display} από %{total} σειρές
+        showing_rows: Εμφάνιση %{display} γραμμών
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: και
+        changed_help: Άλλαξε το κείμενο βοήθειας στο %{widget} σε %{help}
+        changed_label: Άλλαξε η ετικέτα στο %{widget} στη νέα ετικέτα %{label}
+        current_value: ορίστε την τρέχουσα τιμή σε %{value}
+        hid_item: Απόκρυψη στοιχείου φόρμας %{widget}
+        maximum_limit: μέγιστο όριο σε %{value}
+        minimum_limit: ελάχιστο όριο σε %{value}
+        option_disabled: Η επιλογή %{value} απενεργοποιήθηκε για %{widget}
+        option_enabled: Η επιλογή %{value} ενεργοποιήθηκε για %{widget}
+        revealed_item: Αποκαλύφθηκε στοιχείο φόρμας %{widget}
+        selected_option_disabled: Η επιλεγμένη επιλογή %{value} απενεργοποιήθηκε για %{widget}
+        set_limits: Ορίστε %{details} για %{widget}
+        set_value: Ορίστε το %{widget} στην τιμή %{value}
+        widget_no_label: '%{type} χωρίς ετικέτα'
+        widget_with_label: '%{type} με ετικέτα %{label}'
+      editor:
+        save_error: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια αποθήκευσης αυτού του αρχείου!
+
+          %{error}'
+        unsaved_changes: Έχετε μη αποθηκευμένες αλλαγές!
+      files:
+        action_delete: Διαγράφω
+        action_download: Λήψη
+        action_edit: Εκδίδω
+        action_rename: Μετονομάζω
+        action_view: Θέα
+        actions: Ενέργειες
+        cannot_navigate_file: Δεν είναι δυνατή η πλοήγηση σε ένα αρχείο.
+        change_directory: Αλλαγή καταλόγου
+        clipboard_description_html: 'Αντιγράψτε ή μετακινήστε τα παρακάτω αρχεία από τον <code>%{from}</code> στον τρέχοντα κατάλογο:'
+        contents_of_directory: Περιεχόμενα του καταλόγου %{path}
+        copied_path: Αντιγράφηκε η διαδρομή στο πρόχειρο!
+        copy: Αντίγραφο
+        create_directory_error: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια δημιουργίας νέου καταλόγου: %{error}'
+        create_file_error: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια δημιουργίας νέου αρχείου: %{error}'
+        delete_confirm_text: 'Είστε σίγουροι ότι θέλετε να διαγράψετε τα αρχεία: %{files}'
+        delete_multiple_title: Διαγραφή %{count} επιλεγμένων αρχείων;
+        delete_single_title: Διαγραφή %{name};
+        deleting_files: 'Διαγραφή αρχείων...:'
+        directory: τηλεφωνικός κατάλογος
+        directory_name_label: Όνομα καταλόγου
+        download_error: 'Σφάλμα κατά τη λήψη: %{error}'
+        duplicate_files_warning: Εντοπίστηκαν διπλότυπα αρχεία. Η μεταφόρτωση αυτών των αρχείων θα αντικαταστήσει το υπάρχον περιεχόμενο.
+        file: αρχείο
+        filename_invalid_chars: Το όνομα αρχείου δεν μπορεί να περιλαμβάνει / ή ..
+        filename_label: Όνομα αρχείου
+        globus_open: Άνοιγμα του τρέχοντος καταλόγου με το Globus
+        globus_unavailable: Δεν υπάρχει τελικό σημείο Globus που να σχετίζεται με αυτόν τον κατάλογο
+        illegal_slash_in_filename: Δεν επιτρέπεται ο μη επιτρεπόμενος χαρακτήρας (/) στο όνομα αρχείου.
+        move: Κίνηση
+        navigated_to: πλοηγήθηκε στο %{path}
+        new_directory_title: Νέος Κατάλογος
+        new_file_title: Νέο αρχείο
+        path_label: Μονοπάτι
+        poll_status_error: Ενδέχεται να μην έχει πραγματοποιηθεί η λειτουργία. Η ανάκτηση της κατάστασης λειτουργίας του αρχείου απέτυχε.
+        preparing_download_dir: 'προετοιμασία για λήψη του καταλόγου: %{name}'
+        provide_absolute_pathname: Παρέχετε ένα απόλυτο όνομα διαδρομής
+        provide_directory_name: Δώστε ένα όνομα καταλόγου που δεν περιέχει / μέσα
+        provide_non_empty_filename: Δώστε ένα όνομα αρχείου που δεν είναι κενό.
+        provide_rename_filename: Δώστε ένα όνομα αρχείου για να το μετονομάσετε
+        rename_title: Μετονομάζω
+        see_details: Δείτε λεπτομέρειες
+        select_row: Επιλογή σειράς
+        select_to_copy_move: Επιλέξτε ένα αρχείο, αρχεία ή κατάλογο για αντιγραφή ή μετακίνηση. Δεν έχετε επιλέξει κανένα.
+        select_to_delete: Επιλέξτε ένα αρχείο, αρχεία ή κατάλογο για διαγραφή. Δεν έχετε επιλέξει κανένα.
+        select_to_download: Επιλέξτε ένα αρχείο, αρχεία ή κατάλογο για λήψη. Δεν έχετε επιλέξει κανένα.
+        select_to_send: Επιλέξτε τουλάχιστον ένα αρχείο ή κατάλογο για αποστολή.
+        send_failed: Αποτυχία αποστολής πληροφοριών αρχείου.
+        sent_successfully: Οι πληροφορίες του επιλεγμένου αρχείου στάλθηκαν με επιτυχία.
+        show_dotfiles: Εμφάνιση αρχείων κουκκίδων
+        show_owner_mode: Εμφάνιση κατόχου/λειτουργίας
+        summary_copy_files: αντιγραφή αρχείων
+        summary_move_files: μετακίνηση αρχείων
+        summary_remove_files: κατάργηση αρχείων
+        summary_rename_file: μετονομασία αρχείου
+        token_missing_expired: Το διακριτικό εφαρμογής λείπει ή έχει λήξει. Ξεκινήστε ξανά.
+        transfer_error: 'Παρουσιάστηκε σφάλμα κατά την προσπάθεια %{summary}: %{error}'
+        upload_and_overwrite: Μεταφόρτωση και αντικατάσταση
+        upload_count:
+          one: Μεταφόρτωση αρχείου %{count}
+          other: Μεταφόρτωση αρχείων %{count}
+        upload_new_files: Μεταφόρτωση νέων αρχείων
+        uppy_empty_dir_note: Οι κενοί κατάλογοι θα συμπεριληφθούν στην μεταφόρτωση μόνο όταν ξεκινήσει μια μεταφόρτωση καταλόγου μέσω μεταφοράς και απόθεσης. Αυτό συμβαίνει επειδή το API καταχωρίσεων αρχείων και καταλόγων είναι διαθέσιμο μόνο σε ένα συμβάν απόθεσης και όχι κατά τη διάρκεια ενός συμβάντος αλλαγής εισόδου.
+      icon_picker:
+        icon_selected: Επιλέχθηκε το εικονίδιο %{icon}
+        icon_sr: Εικονίδιο %{name}
+      launcher_edit:
+        account_help: Ο λογαριασμός με τον οποίο θα υποβληθεί η εργασία.
+        account_label: Λογαριασμός
+        add_new_option: Προσθήκη νέας επιλογής
+        cores_help: Σε πόσους πυρήνες θα εκτελεστεί η εργασία.
+        cores_label: Πυρήνες
+        env_var_help: Προσθέστε μια μεταβλητή περιβάλλοντος.
+        env_var_key: 'Μεταβλητή περιβάλλοντος: %{name}'
+        env_var_label: Μεταβλητή περιβάλλοντος
+        hours_help: Για πόσο καιρό μπορεί να διαρκέσει η εργασία.
+        hours_label: Ώρες
+        job_name_help: Το όνομα που θα έχει η εργασία.
+        job_name_label: Όνομα θέσης εργασίας
+        log_location_help: Ο προορισμός του αποτελέσματος του αρχείου καταγραφής της εργασίας.
+        log_location_label: Τοποθεσία αρχείου καταγραφής
+        no_more_options: Δεν υπάρχουν άλλες επιλογές
+        nodes_help: Σε πόσους κόμβους θα εκτελεστεί η εργασία.
+        nodes_label: Κόμβοι
+        queues_help: Σε ποια ουρά θα υποβληθεί και η εργασία.
+        queues_label: Ουρές
+      module_browser:
+        copied: Αντιγράφηκε!
+        copy: Αντίγραφο
+        showing_results:
+          one: Εμφάνιση αποτελέσματος %{count}
+          other: Εμφάνιση αποτελεσμάτων %{count}
+      nsf_access:
+        affected_resources: 'Πόροι που επηρεάζονται: %{resources}'
+        read_more: Διαβάστε περισσότερα
+        register_event: Εγγραφείτε για αυτήν την εκδήλωση
+      path_selector:
+        directory_loaded: Ο κατάλογος φορτώθηκε με %{count} στοιχεία
+        invalid_regex: Η κανονική έκφραση που παρέχεται για αυτόν τον επιλογέα διαδρομής δεν μεταγλωττίστηκε
+        loading_directory: Φόρτωση περιεχομένων καταλόγου
+        permission_denied_prefix: 'Η άδεια απορρίφθηκε:'
+      popovers:
+        ihpc_content: Μια διαδραστική συνεδρία HPC σάς παρέχει αποκλειστική πρόσβαση σε έναν ή περισσότερους κόμβους στο σύμπλεγμα. Αυτό είναι παρόμοιο με μια διαδραστική ομαδική συνεδρία με μια προσβάσιμη επιφάνεια εργασίας στον κύριο κόμβο. Χρησιμοποιήστε το για βαριές εργασίες, όπως υπολογιστικές εργασίες μεγάλης διάρκειας ή όπου χρειάζεστε αποκλειστικούς πόρους.
+        vdi_content: Ένα VDI (Virtual Desktop Interface - Εικονική Διεπαφή Επιφάνειας Εργασίας) σάς παρέχει πρόσβαση σε έναν κοινόχρηστο κόμβο μέσω επιφάνειας εργασίας. Αυτή είναι η γραφική έκδοση ενός κόμβου σύνδεσης. Χρησιμοποιήστε το για ελαφριές εργασίες, όπως πρόσβαση και προβολή αρχείων, υποβολή εργασιών και για οπτικοποιήσεις.
+      products:
+        fatal_error: Παρουσιάστηκε ένα μοιραίο σφάλμα
+        no_action: καμία ενέργεια
+      projects:
+        undetermined_size: Απροσδιόριστο μέγεθος
+      support_ticket:
+        delete_attachment: Διαγραφή συνημμένου
+        no_file_selected: Δεν έχει επιλεγεί αρχείο
+        selected_file: 'Επιλεγμένο αρχείο: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Αυτή η σελίδα δεν μπορεί να ενημερωθεί επειδή δεν έχετε πλέον πιστοποιηθεί. Ανανεώστε τη σελίδα για να συνδεθείτε ξανά.
+        unexpected_error: Αυτή η σελίδα αντιμετώπισε ένα μη αναμενόμενο σφάλμα. Ανανεώστε τη σελίδα.
+      utils:
+        loading: Φόρτωση.
+        loading_complete: Η φόρτωση ολοκληρώθηκε.
+        popup_blocked: Αυτός ο σύνδεσμος έχει ρυθμιστεί ώστε να ανοίγει σε νέο παράθυρο, αλλά δεν φαίνεται να έχει ανοίξει. Απενεργοποιήστε το πρόγραμμα αποκλεισμού αναδυόμενων παραθύρων για αυτήν τη σελίδα και προσπαθήστε ξανά.
+      workflows:
+        begin_from_launcher: Έναρξη ροής εργασίας από τον εκκινητή %{title}
+        bidirectional_not_allowed: Δεν επιτρέπονται αμφίδρομες ακμές.
+        cyclic_dependency: Η προσθήκη αυτού του άκρου θα δημιουργήσει μια κυκλική εξάρτηση μεταξύ των εκκινητών.
+        edge_aria_label: Άκρη από %{from} σε %{to}
+        launcher_aria_label: 'Εκκινητής: %{title}'
+        launcher_exists: Η εφαρμογή εκκίνησης υπάρχει ήδη, επιλέξτε διαφορετική εφαρμογή εκκίνησης.
+        load_launcher_failed: Αποτυχία φόρτωσης HTML προγράμματος εκκίνησης. Δοκιμάστε ξανά.
+        no_empty_cells: Δεν υπάρχουν διαθέσιμα κενά κελιά πλέγματος!
+        save_failed: Αποτυχία αποθήκευσης της ροής εργασίας. Ελέγξτε την κονσόλα για λεπτομέρειες.
+        select_launcher: Επιλέξτε ένα πρόγραμμα εκκίνησης
+      xdmod:
+        analytics_toggle: Εναλλαγή αναλυτικών στοιχείων
+        column_date: Ημερομηνία
+        column_id: ταυτότητα
+        column_name: Ονομα
+        date_range: '%{from} έως %{to}'
+        efficiency_report: '%{unit} Έκθεση Απόδοσης'
+        ensure_logged_in_html: '%{error} Βεβαιωθείτε ότι έχετε <a href="%{url}">συνδεθεί πρώτα στο Open XDMoD</a> και προσπαθήστε ξανά.'
+        expand_analytics_title: Κάντε κλικ για να αναπτύξετε τις πληροφορίες ανάλυσης για την εργασία %{id} πάνω από αυτόν τον πίνακα.
+        fetch_user_failed: Η προσπάθεια ανάκτησης των πληροφοριών του τρέχοντος χρήστη από το Open XDMoD απέτυχε
+        idp_redirect_failed: 'Η σύνδεση απέτυχε: Η ανακατεύθυνση IDP απέτυχε.'
+        iframe_error: Σύνδεση XDMoD στο iFrame στη διεύθυνση URL %{url} δημοσίευσε μήνυμα σφάλματος με πληροφορίες %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} inefficient %{unit} </span> &frasl; %{total} total %{unit}
+        invalid_job_data: Τα δεδομένα εργασίας που επιστράφηκαν μέσω αιτήματος δεν είναι έγκυρα.
+        loading_caps: ΦΟΡΤΩΣΗ...
+        login_page_load_failed: 'Αποτυχία σύνδεσης: Αποτυχία φόρτωσης της σελίδας σύνδεσης XDMoD'
+        login_timeout: 'Η σύνδεση απέτυχε: Λήξη χρονικού ορίου αναμονής για την ολοκλήρωση της σύνδεσης.'
+        metric_cpu: ΚΜΕ
+        metric_mem: Μνήμη
+        metric_walltime: Χρόνος τοίχου
+        no_data: Δεν υπάρχουν διαθέσιμα δεδομένα.
+        not_available: Δ/Υ
+        open_xdmod: Άνοιγμα XDMoD
+        percent_efficient: '%{percent}% απόδοση'
+        percent_efficient_aria: ποσοστό αποτελεσματικότητας
+        percent_inefficient: '%{percent}% αναποτελεσματικό'
+        percent_inefficient_aria: ποσοστό αναποτελεσματικότητας
+        recently_completed_jobs: Πρόσφατα ολοκληρωμένες εργασίες
+        unit_core_hours: βασικές ώρες
+        unit_core_hours_title: Βασικές Ώρες
+        unit_jobs: θέσεις εργασίας
+        unit_jobs_title: Θέσεις εργασίας
+    launch: Εκτόξευση
+    load_report: Αναφορά φόρτωσης + %{node}
+    loading: Φόρτωση...
+    loading_short: Φόρτωση
+    locale_name: Ελληνικά (Ελλάδα)
+    logo_alt_text: Καλώς ορίσατε στο Open OnDemand
+    logout_body_html: <strong>Πρέπει να κλείσετε εντελώς το πρόγραμμα περιήγησής σας</strong> για να πραγματοποιηθεί η "αποσύνδεση". Εάν μετά το άνοιγμα ξανά του προγράμματος περιήγησής σας εξακολουθείτε να είστε συνδεδεμένοι, διαγράψτε τα cookies. Εάν χρησιμοποιείτε Chromebook ή Chromebox, θα χρειαστεί να επανεκκινήσετε τη συσκευή σας για να "κλείσετε το πρόγραμμα περιήγησης" και, επομένως, να "αποσυνδεθείτε".
+    logout_tip_html: '<strong>Συμβουλή: Η χρήση ενός παραθύρου "λειτουργίας ιδιωτικής περιήγησης"</strong> κατά τη χρήση του OnDemand είναι ένας πολύ καλός τρόπος για να χειριστείτε την "αυτόματη αποσύνδεση", καθώς το κλείσιμο του παραθύρου του προγράμματος περιήγησής σας θα καταργήσει όλα τα σχετικά cookies και τις πληροφορίες περιόδου σύνδεσης.'
+    logout_title: Δεν έχετε αποσυνδεθεί ακόμη
+    maximum: Ανώτατο όριο
+    mem_report: Αναφορά μνήμης + %{node}
+    minimum: Ελάχιστο
+    mode: Τρόπος
+    module_browser_available_modules: 'Διαθέσιμες ενότητες:'
+    module_browser_copy_aria: Αντιγραφή εντολής φόρτωσης για %{name}
+    module_browser_dependencies: 'Εξαρτήσεις:'
+    module_browser_last_updated: 'Τελευταία ενημέρωση: %{last_updated}'
+    module_browser_load_command: 'Εντολή φόρτωσης:'
+    module_browser_search_label: Ενότητες αναζήτησης
+    module_browser_search_placeholder: Αναζήτηση με βάση το όνομα της ενότητας...
+    module_browser_select_version: (επιλέξτε έκδοση)
+    module_browser_showing_results: Εμφάνιση αποτελεσμάτων %{count}
+    module_browser_title: Πρόγραμμα περιήγησης λειτουργικών μονάδων
+    module_browser_versions: Εκδόσεις
+    motd_default_md: 'Η ανάπτυξη του Open OnDemand υποστηρίζεται από το [Εθνικό Ίδρυμα Επιστημών](https://www.nsf.gov/)
+
+      με τους αριθμούς επιχορήγησης [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) και
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Μάθετε περισσότερα ή συμμετάσχετε:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
+      - [Αποθετήριο Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [αποθετήριο ood-core](https://github.com/OSC/ood_core)
+
+      - [Τεκμηρίωση](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'Το MOTD δεν αναλύθηκε ή δεν αποδόθηκε σωστά: %{error_message}'
+    motd_no_messages: Δεν υπάρχουν νέα μηνύματα.
+    motd_title: Μήνυμα της Ημέρας
+    name: Ονομα
+    nav_all_apps: Όλες οι εφαρμογές
+    nav_develop_docs: Τεκμηρίωση για προγραμματιστές
+    nav_develop_my_sandbox_apps_dev: Οι εφαρμογές μου στο Sandbox (Ανάπτυξη)
+    nav_develop_my_sandbox_apps_prod: Οι κοινόχρηστες εφαρμογές μου (Παραγωγή)
+    nav_develop_title: Αναπτύσσω
+    nav_help_change_password: Αλλαγή κωδικού πρόσβασης HPC
+    nav_help_custom: Προσαρμοσμένη βοήθεια πλοήγησης
+    nav_help_docs: Ηλεκτρονική τεκμηρίωση
+    nav_help_support: Επικοινωνήστε με την Υποστήριξη
+    nav_help_support_ticket: Υποβολή αιτήματος υποστήριξης
+    nav_help_title: Βοήθεια
+    nav_help_two_factor: Ρύθμιση παραμέτρων ελέγχου ταυτότητας δύο παραγόντων
+    nav_language: Γλώσσα
+    nav_limit_caption: εμφάνιση %{subset_count} από %{total_count}
+    nav_logout: Αποσύνδεση
+    nav_main_menu: Κύριο μενού
+    nav_restart_server: Επανεκκίνηση διακομιστή ιστού
+    nav_sessions: Οι διαδραστικές μου συνεδρίες
+    nav_toggle_navigation: Εναλλαγή πλοήγησης
+    nav_user: Συνδεδεμένος ως %{username}
+    network_report: Αναφορά δικτύου + %{node}
+    node: Κόμβος
+    none: Κανένας
+    not_grouped: Άλλες εφαρμογές
+    nsf_access_announcements: Ανακοινώσεις NSF ACCESS
+    nsf_access_events: Εκδηλώσεις NSF ACCESS
+    nsf_access_outages: Διακοπές λειτουργίας NSF ACCESS
+    ok: ΕΝΤΑΞΕΙ
+    opens_in_new_tab: ανοίγει σε νέα καρτέλα
+    output_location: 'Θέση εξόδου:'
+    owner: Ιδιοκτήτης
+    page_actions_aria: Ενέργειες σελίδας
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Παράμετροι
+    path_selector_breadcrumb_aria: '%{title} Τριμμένη φρυγανιά'
+    path_selector_caption: Επιλέξτε ένα αρχείο ή έναν κατάλογο για χρήση στη φόρμα.
+    path_selector_default_popup_title: Επιλέξτε τον κατάλογο εργασίας σας
+    path_selector_home: σπίτι
+    path_selector_parent_directory: γονικός κατάλογος
+    permissions_created: Η άδεια δημιουργήθηκε με επιτυχία.
+    permissions_destroyed: Η άδεια καταστράφηκε με επιτυχία.
+    permissions_group_title: Δικαιώματα ομάδας
+    permissions_user_title: Δικαιώματα χρήστη
+    pinned_apps_caption_html: Ένα επιλεγμένο υποσύνολο <a href="%{all_apps_url}">όλων των διαθέσιμων εφαρμογών</a>
+    pinned_apps_category: Εφαρμογές
+    pinned_apps_title: Καρφιτσωμένες εφαρμογές
+    products_created: Το προϊόν δημιουργήθηκε με επιτυχία.
+    products_git_commit_hint_html: Παρακαλώ επιβεβαιώστε τυχόν αλλαγές ή προσθέστε τα απαραίτητα αρχεία στο <code>.gitignore</code>
+    products_git_staged: Σταδιακή
+    products_git_status: Κατάσταση Git
+    products_git_unstaged: Χωρίς σκηνή
+    products_git_untracked: Χωρίς παρακολούθηση
+    products_manifest_save_error: Δεν είναι δυνατή η αποθήκευση του μανιφέστο εφαρμογής στο %{path}
+    products_ssh_key_created: Το κλειδί SSH δημιουργήθηκε με επιτυχία.
+    products_ssh_key_exists: Το κλειδί SSH υπάρχει ήδη
+    products_ssh_key_failed: 'Η δημιουργία κλειδιού SSH απέτυχε: %{error}'
+    products_type_batch_connect: Εφαρμογή Batch Connect
+    products_type_passenger: Εφαρμογή επιβατών
+    products_type_passenger_meteor: Εφαρμογή Passenger Meteor
+    products_type_passenger_node: Εφαρμογή κόμβου επιβατών
+    products_type_passenger_rack: Εφαρμογή Rack Επιβατών
+    products_type_passenger_rails: Εφαρμογή Rails Passenger
+    products_type_passenger_rails_sqlite: Εφαρμογή Passenger Rails με βάση δεδομένων SQLite
+    products_type_passenger_wsgi: Εφαρμογή WSGI επιβατών
+    products_updated: Το προϊόν ενημερώθηκε με επιτυχία.
+    project: Σχέδιο
+    project_balances: Υπόλοιπα Έργου
+    project_directory: Κατάλογος Έργων
+    project_zip_error_message: 'Σφάλμα κατά τη δημιουργία του αρχείου ZIP: %{error}'
+    project_zip_success_message: 'Επιτυχία: Το project.zip δημιουργήθηκε στον κατάλογο του έργου σας.'
+    queue: Ουρά
+    quota_additional_message: Σκεφτείτε το ενδεχόμενο διαγραφής ή αρχειοθέτησης αρχείων για να ελευθερώσετε χώρο στο δίσκο.
+    quota_block: Χρησιμοποιώντας %{used} του ορίου %{available}
+    quota_block_shared: (%{used_exclusive} είναι δικά σου)
+    quota_file: Χρήση αρχείων %{used} με όριο %{available} αρχεία
+    quota_file_shared: (Τα αρχεία %{used_exclusive} είναι δικά σας)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Επαναφορτώστε τη σελίδα για να δείτε το ενημερωμένο όριο. Τα όριο ενημερώνονται κάθε 5 λεπτά.
+    quota_warning_prefix_html: Προειδοποίηση ορίου ποσόστωσης για
+    recently_used_apps_title: Πρόσφατα χρησιμοποιημένες εφαρμογές
+    remove: Αφαιρώ
+    reset: Επαναφορά
+    restart_msg_html: 'Η συμμετοχή σας στην ομάδα έχει αλλάξει, γεγονός που επηρεάζει την πρόσβασή σας στις εφαρμογές. Ο πίνακας ελέγχου σας θα πρέπει να επανεκκινηθεί αυτόματα.
+
+      Εάν δεν σας αρέσει, κάντε κλικ στο: <a href="%{restart_url}">επανεκκίνηση διακομιστή ιστού</a>.
+
+      '
+    restore: Επαναφέρω
+    root: Ρίζα
+    save: Εκτός
+    saved_settings_title: Αποθηκευμένες ρυθμίσεις
+    select: Επιλέγω
+    select_all: Επιλογή όλων
+    select_path: Επιλογή διαδρομής
+    select_path_for: '%{element} επιλογή διαδρομής
+
+      '
+    settings_csrf_expired: Το διακριτικό ασφαλείας της συνεδρίας σας έληξε. Δοκιμάστε ξανά την ενέργειά σας.
+    settings_invalid_request: Υποβλήθηκαν μη έγκυρες ρυθμίσεις
+    settings_unprocessable_body_html: Η συνεδρία σας ενδέχεται να έχει λήξει ή η αλλαγή που θέλατε να απορριφθεί. Παρακαλούμε <a href="%{dashboard_url}">επιστρέψτε στον Πίνακα Ελέγχου</a> και προσπαθήστε ξανά.
+    settings_unprocessable_title: Η συνεδρία έληξε ή η αλλαγή απορρίφθηκε
+    settings_updated: Οι ρυθμίσεις ενημερώθηκαν
+    shared_apps_caption: Κοινοποίηση από %{owner_title} (%{owner})
+    shared_apps_caption_short: Κοινοποίηση από %{owner}
+    shared_apps_title: Κοινόχρηστες εφαρμογές
+    sharing_catalog_msg_html: <br>Μπορείτε να δείτε ένα υποσύνολο των διαθέσιμων εφαρμογών στο %{catalog_link_tag}.
+    sharing_catalog_title: Κατάλογος εφαρμογών
+    sharing_no_shared_apps_html: '<strong>Δεν υπάρχουν διαθέσιμες προσαρμοσμένες κοινόχρηστες εφαρμογές.</strong>
+
+      '
+    sharing_support_msg_html: Εάν δεν βλέπετε την εφαρμογή που αναζητάτε, επικοινωνήστε με την υποστήριξη<a href="%{support_url}">.
+    sharing_welcome_msg_html: 'Οι εφαρμογές πρόσβασης σε σύμπλεγμα είναι διαθέσιμες από τα αναπτυσσόμενα μενού στην παραπάνω γραμμή πλοήγησης.
+
+      <br>Προσαρμοσμένες κοινόχρηστες εφαρμογές είναι διαθέσιμες παρακάτω.'
+    shell: Κέλυφος
+    shell_app_title: '%{cluster_title} Πρόσβαση σε κέλυφος'
+    show: Επίδειξη
+    size: Μέγεθος
+    skip_navigation: Παράλειψη πλοήγησης
+    smart_attributes:
+      account: Λογαριασμός
+      auto_modules_none: Αυτόματες ενότητες (δεν δίνεται καμία)
+      cluster: Σύμπλεγμα
+      cores: Πυρήνες
+      email_on_started: Θα ήθελα να λαμβάνω ένα email όταν ξεκινήσει η συνεδρία
+      environment_variable: Μεταβλητή περιβάλλοντος
+      environment_variable_key: 'Μεταβλητή περιβάλλοντος: %{key}'
+      job_name: Όνομα θέσης εργασίας
+      module_version: '%{module} έκδοση'
+      num_cpus_single_node: Αριθμός CPU σε έναν κόμβο
+      num_hours: Αριθμός ωρών
+      num_nodes: Αριθμός κόμβων
+      num_processors: Αριθμός επεξεργαστών
+      partition: Χώρισμα
+      qos: Ποιότητα Υπηρεσίας (QoS)
+      queue: Ουρά
+      script: Γραφή
+      vnc_idle_help: 'Έξοδος εάν περάσουν # δευτερόλεπτα χωρίς συνδέσεις προγράμματος προβολής VNC'
+      vnc_idle_label: Χρονικό όριο αδράνειας
+      vnc_resolution_help: Η ανάλυση χρησιμοποιείται μόνο από εγγενείς συνδέσεις VNC
+      vnc_resolution_label: Ψήφισμα
+    soft_tabs: Μαλακές ταμπλέτες
+    soft_tabs_info: Οι μαλακοί χαρακτήρες tab είναι κενά στο αρχείο αντί για πραγματικούς χαρακτήρες tab.
+    status: Κατάσταση
+    status_completed: Ολοκληρώθηκε το
+    status_held: Κρατήθηκε
+    status_hold: Αμπάρι
+    status_queued: Σε ουρά
+    status_running: Τρέξιμο
+    status_starting: Εκκίνηση
+    status_suspend: Αναστέλλω
+    status_suspended: Σε αναστολή
+    status_undetermined: Αναποφάσιστος
+    stop: Στάση
+    submit: Υποτάσσομαι
+    submit_args: 'Υποβολή ορισμάτων:'
+    support_ticket:
+      creation_success: 'Αποστολή email με αίτημα υποστήριξης στη διεύθυνση: %{to}'
+      fields:
+        attachments: Συνημμένα
+        cc: CC
+        description: Περιγραφή
+        email: E-mail
+        job_description: Περιγραφή θέσης εργασίας
+        session_description: Περιγραφή συνεδρίας
+        subject: Θέμα
+        username: Όνομα χρήστη
+      generic_error: 'Παρουσιάστηκε σφάλμα κατά την επεξεργασία του αιτήματός σας: %{error}'
+      header: Αίτημα υποστήριξης
+      rt:
+        creation_success: 'Δημιουργήθηκε αίτημα υποστήριξης στο σύστημα RequestTracker. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Δημιουργήθηκε αίτημα υποστήριξης στο ServiceNow. Αριθμός: %{number}. Αλλά δεν είναι δυνατή η προσθήκη των συνημμένων.'
+        creation_success: 'Δημιουργήθηκε αίτημα υποστήριξης στο ServiceNow. Αριθμός: %{number}'
+      submit: Υποβολή αιτήματος υποστήριξης
+      title: Αίτημα υποστήριξης
+      validation:
+        attachments_items: Τα %{id} δεν είναι έγκυρα. Προστέθηκε %{items}, ο μέγιστος αριθμός συνημμένων είναι %{max}
+        attachments_size: Τα %{id} δεν είναι έγκυρα. Το μέγιστο μέγεθος συνημμένου είναι %{max}
+        email: Η μορφή %{id} δεν είναι έγκυρη. Αναμενόταν μια έγκυρη διεύθυνση ηλεκτρονικού ταχυδρομείου.
+        items:
+          attachments_js: Δεν επιτρέπονται άλλα συνημμένα
+        required: Το %{id} απαιτείται
+        size:
+          attachments_js: Το μέγιστο μέγεθος συνημμένου είναι %{max}. Το επιλεγμένο μέγεθος αρχείου είναι %{size}
+      validation_error: Μη έγκυρο αίτημα. Ελέγξτε τα παρακάτω μηνύματα σφάλματος.
+    support_ticket_add_attachment: Προσθήκη συνημμένου
+    support_ticket_attachments_help: Κάντε κλικ στο πλαίσιο για να επισυνάψετε ένα αρχείο. Στιγμιότυπα οθόνης ή άλλα αρχεία μπορούν να σας βοηθήσουν να αντιμετωπίσετε το πρόβλημά σας.
+    system_apps_caption: Εφαρμογή εγκατεστημένη στο σύστημα
+    system_status_available: '%{name} Διαθέσιμο: %{count}'
+    system_status_cluster_title: '%{title} Κατάσταση συμπλέγματος'
+    system_status_gpus: GPU
+    system_status_in_use: '%{percent} σε χρήση'
+    system_status_jobs_queued: Εργασίες σε ουρά
+    system_status_jobs_queued_count: '%{count} Εργασίες σε ουρά'
+    system_status_jobs_running: Θέσεις εργασίας σε εξέλιξη
+    system_status_jobs_running_count: '%{count} Εκτελούμενες εργασίες'
+    system_status_nodes: Κόμβοι
+    system_status_not_slurm: Οι πληροφορίες συμπλέγματος δεν είναι διαθέσιμες με το %{scheduler}. Προς το παρόν, υποστηρίζονται μόνο τα συμπλέγματα Slurm.
+    system_status_processors: Επεξεργαστές
+    toggle_notifications: Εναλλαγή ειδοποιήσεων
+    toggle_push_notifications: Εναλλαγή ειδοποιήσεων push
+    type: Τύπος
+    undefined_title: Απροσδιόριστος τίτλος
+    unknown: Αγνωστος
+    uppy:
+      strings:
+        addMore: Προσθήκη περισσότερων
+        addMoreFiles: Προσθήκη περισσότερων αρχείων
+        addingMoreFiles: Προσθήκη περισσότερων αρχείων
+        back: Πίσω
+        browseFiles: περιήγηση σε αρχεία
+        browseFolders: περιήγηση σε φακέλους
+        cancel: Ματαίωση
+        cancelUpload: Ακύρωση μεταφόρτωσης
+        closeModal: Κλείσιμο Modal
+        complete: Πλήρης
+        dashboardTitle: Μεταφορτωτή αρχείων
+        dashboardWindowTitle: Παράθυρο μεταφόρτωσης αρχείων (Πατήστε escape για κλείσιμο)
+        done: Γινώμενος
+        dropHint: Αποθέστε τα αρχεία σας εδώ
+        dropPasteBoth: Αποθέστε αρχεία εδώ, %{browseFiles} ή %{browseFolders}
+        dropPasteFiles: Αποθέστε αρχεία εδώ ή %{browseFiles}
+        dropPasteFolders: Αποθέστε αρχεία εδώ ή %{browseFolders}
+        editFile: Επεξεργασία αρχείου
+        editing: Επεξεργασία %{file}
+        emptyFolderAdded: Δεν προστέθηκαν αρχεία από κενό φάκελο
+        error: Σφάλμα
+        exceedsSize: Το %{file} υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος του %{size}
+        failedToUpload: Αποτυχία μεταφόρτωσης %{file}
+        folderAlreadyAdded: Ο φάκελος "%{folder}" έχει ήδη προστεθεί
+        myDevice: Η συσκευή μου
+        noDuplicates: Δεν είναι δυνατή η προσθήκη του διπλότυπου αρχείου '%{fileName}', υπάρχει ήδη
+        pause: Παύση
+        pauseUpload: Παύση μεταφόρτωσης
+        paused: Σε παύση
+        removeFile: Κατάργηση αρχείου
+        resume: Περίληψη
+        resumeUpload: Συνέχιση μεταφόρτωσης
+        retry: Δοκιμάζω πάλι
+        retryUpload: Επανάληψη μεταφόρτωσης
+        save: Εκτός
+        saveChanges: Αποθήκευση αλλαγών
+        showErrorDetails: Εμφάνιση λεπτομερειών σφάλματος
+        upload: Μεταφόρτωση
+        uploadComplete: Η μεταφόρτωση ολοκληρώθηκε
+        uploadFailed: Η μεταφόρτωση απέτυχε.
+        uploadPaused: Η μεταφόρτωση διακόπηκε προσωρινά
+        uploading: Μεταφόρτωση
+        xTimeLeft: '%{time} έφυγε'
+    user: Μεταχειριζόμενος
+    user_configuration:
+      support_ticket_error: Το support_ticket δεν έχει ρυθμιστεί σωστά. Προσθέστε μια υλοποίηση backend στη διαμόρφωση YAML.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand παρέχει ένα ενσωματωμένο, μοναδικό σημείο πρόσβασης για όλους τους πόρους HPC σας.</p>
+
+      '

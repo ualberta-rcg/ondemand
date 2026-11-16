@@ -1,0 +1,1000 @@
+---
+et-EE:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute} vorming on sobimatu või puudub'
+        invalid: '%{attribute} on kehtetu'
+        required: '%{attribute} on kohustuslik'
+        used: '%{attribute} on juba kasutusel'
+  dashboard:
+    account: Konto
+    actions: Toimingud
+    active_jobs: Aktiivsed töökohad
+    active_jobs_close_details: Sulge laiendatud detailide paneel.
+    active_jobs_detail:
+      account: Konto
+      array_job_id: Massiivi töö ID
+      array_task_id: Massiivi ülesande ID
+      cluster: Klaster
+      cluster_id: Klastri ID
+      comment: Kommentaar
+      cpu_time: Protsessori aeg
+      cpu_used: Kasutatud protsessor
+      current_working_directory: Praegune töökataloog
+      end_time: Lõppaeg
+      exec_host: Executive Host
+      finish_time: Lõppaeg
+      from_host: Hostilt
+      gres: GRES
+      group_list: Gruppide loend
+      job_account: Töökonto
+      job_checkpoint_attr: Töö kontrollpunkti atribuut
+      job_checkpoint_interval: Töö kontrollpunkti intervall
+      job_deadline: Töö tähtaeg
+      job_exec_file: Töö käivitamise fail
+      job_execution_time: Töö täitmisaeg
+      job_gid: Töö GID
+      job_group: Töögrupp
+      job_id: Töö ID
+      job_name: Töö nimi
+      job_priority: Töö prioriteet
+      job_restart: Töö uuesti alustamine
+      job_script_file: Töö skriptifail
+      job_script_size: Tööskripti suurus
+      job_share: Töökoha jagamine
+      job_type: Töö tüüp
+      job_uid: Töö UID
+      job_verify: Töö kinnitamine
+      job_version: Töö versioon
+      mem: Mälu
+      memory: Mälu
+      node_count: Sõlmede arv
+      node_list: Sõlmede loend
+      nodes: Sõlmed
+      none: Puudub
+      notifications: Teavitused
+      partition: Partitsioon
+      pbs_id: PBS-i ID
+      pids: PID-id
+      ppn: PPN
+      project_name: Projekti nimi
+      queue: Järjekord
+      reason: Põhjus
+      reserve: Reserv
+      select: Vali
+      start_time: Algusaeg
+      state: Riik
+      status: Staatus
+      submission_time: Esitamise aeg
+      swap: Vaheta
+      time_limit: Ajapiirang
+      time_used: Kasutusaeg
+      total_cpus: Protsessorite koguarv
+      total_nodes: Sõlmede koguarv
+      user: Kasutaja
+      virtual_memory: Virtuaalmälu
+      walltime: Seinaaeg
+      walltime_used: Kasutatud seinaaeg
+    active_jobs_filter_all: Kõik töökohad
+    active_jobs_filter_user: Teie töökohad
+    active_jobs_ganlia_CPU: Ganglionide pilt protsessori jaoks.
+    active_jobs_ganlia_load: Ganglionide pilt süsteemi koormuse keskmiste jaoks.
+    active_jobs_ganlia_mem: Ganglionide pilt mälu kasutamiseks.
+    active_jobs_ganlia_network: Ganglionide pilt võrgu kasutamiseks.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> kuva kõik (%{number_of_sessions})</a>
+    active_sessions_title: Aktiivsed interaktiivsed sessioonid
+    add: Lisa
+    all_apps_table_app_column: Nimi
+    all_apps_table_category_column: Kategooria
+    all_apps_table_sub_category_column: Alamkategooria
+    all_clusters: Kõik klastrid
+    announcements_dismissible_button: Olgu
+    announcements_parse_error: Viga teadaande parsimisel.
+    announcements_render_error: Teadet '%{name}' ei saanud vea tõttu renderdada
+    announcements_required_button: Nõustu
+    apps_setup_failure_html: '<h2>Selle rakenduse andmete initsialiseerimisel ilmnes probleem.</h2>
+
+      <p class="lead">
+
+      Omal vastutusel saate ikkagi <a href="%{app_url}">rakenduse avada</a>
+
+      või võite lihtsalt <a href="%{home_url}">tagasi armatuurlauale minna</a>
+
+      </p>
+
+      <p>
+
+      Jagage seda oma rakenduse arendajaga:
+
+      Seadistusskript peaks olema idempotentne ja seda käivitatakse iga kord, kui kasutaja rakenduse armatuurlaua kaudu avab.</p>
+
+      <h4>Erand: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Stack jälg:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Süsteemirakendused
+    auto_log_location_title: Logi asukoht
+    back: Tagasi
+    balance_additional_message: Kaalu täiendava %{balanace_units} taotlemist
+    balance_message: '%{units_balance} on %{value}'
+    balance_no_warnings: Ükski projekt ei ole %{threshold} päeva saldo hoiatusläve piires.
+    balance_reload_message_html: 'Laadige leht uuesti, et näha uuendatud saldot. Saldosid uuendatakse iga päev.<br>Viimati uuendatud: %{last_update}'
+    balance_warning_prefix_html: '%{units_balance} hoiatus teema kohta'
+    batch_connect_active_sessions_aria: Aktiivsed seansid
+    batch_connect_app_version: 'versioon: %{version}'
+    batch_connect_apps_menu_aria: Interaktiivsete rakenduste menüü
+    batch_connect_apps_menu_title: Interaktiivsed rakendused
+    batch_connect_form_attr_cache_error: Eelnevalt vahemällu salvestatud väärtuste kasutamine ei õnnestunud, kasutatakse vaikeväärtusi. (%{error_message})
+    batch_connect_form_choose_template_name: Valige malli nimi
+    batch_connect_form_data_root: andmete juurkataloog
+    batch_connect_form_dynamic_disclaimer: Järgnev vorm võib valikute tegemisel dünaamiliselt muutuda. Kõik muudatused teatavaks tehakse ja need on tagasipööratavad.
+    batch_connect_form_invalid: Failil form.yml puuduvad vormiväljal %{id} valikud.
+    batch_connect_form_launch: Käivitamine
+    batch_connect_form_prefill: Kasuta salvestatud sätteid
+    batch_connect_form_prefill_error: Ups... Teie malliga on midagi valesti.
+    batch_connect_form_reset_resolution: Lähtesta resolutsioon
+    batch_connect_form_resolution_height: Eraldusvõime kõrgus (pikslites)
+    batch_connect_form_resolution_width: Resolutsioon laius (pikslites)
+    batch_connect_form_save: Salvesta sätted
+    batch_connect_form_save_new_template: salvesta uued sätted
+    batch_connect_form_save_submit: Salvesta sätted ja sulge
+    batch_connect_form_select_template: valige salvestatud sätted
+    batch_connect_form_session_data_html: '* Selle seansi %{title} seansiandmetele pääseb ligi
+
+      %{data_link_tag} alt.'
+    batch_connect_form_template_name_label: seade nimi
+    batch_connect_form_type_new_name: Rakenduse seadete nimi
+    batch_connect_form_type_new_name_error: Jätkamiseks sisestage sobiv nimi
+    batch_connect_invalid_form_array: Form.yml-faili element 'form' ei ole massiiv
+    batch_connect_invalid_form_attributes: Form.yml-i element 'attributes' ei ole Map
+    batch_connect_missing_cluster: Klastrit pole kunagi määratud. Määrake see kas form.yml.erb failis väärtusega `cluster` või `form.cluster` või määrake submit.yml.erb failis väärtuseks `cluster`.
+    batch_connect_no_apps: Interaktiivseid rakendusi pole saadaval.
+    batch_connect_no_sessions: Teil pole ühtegi aktiivset seanssi.
+    batch_connect_sandbox: '[Liivakast]'
+    batch_connect_sessions_cancel_confirm: Oled sa kindel?
+    batch_connect_sessions_cancel_full_title: Tühista %{title} seanss
+    batch_connect_sessions_cancel_title: Tühista
+    batch_connect_sessions_connect_to: Ühendu %{app_title}-ga
+    batch_connect_sessions_connection_render_error: Ühenduse nuppu ei saa failist view.html.erb renderdada vea '%{error}' tõttu.
+    batch_connect_sessions_data_html: 'Selle seansi %{title} seansiandmetele pääseb ligi
+
+      %{data_link_tag} alt.'
+    batch_connect_sessions_delete_confirm: Oled sa kindel?
+    batch_connect_sessions_delete_full_title: Kustuta %{title} seanss
+    batch_connect_sessions_delete_hover: Kustuta seanss
+    batch_connect_sessions_delete_title: Kustuta
+    batch_connect_sessions_edit_title: Redigeeri uut %{title} selle seansi parameetritega
+    batch_connect_sessions_error_invalid_job_name_html: Kui selle töö esitamine ebaõnnestus sobimatu töönime tõttu, paluge administraatoril OnDemandi konfigureerida nii, et see määraks keskkonnamuutuja OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Malli ettevalmistamine ebaõnnestus järgmise veaga:'
+    batch_connect_sessions_errors_submission: 'Seansi esitamine ebaõnnestus järgmise veaga:'
+    batch_connect_sessions_native_vnc_tab: Natiivsed juhised
+    batch_connect_sessions_novnc_compression: Kokkusurumine
+    batch_connect_sessions_novnc_compression_help: 1 (madal) kuni 9 (kõrge)
+    batch_connect_sessions_novnc_launch: Käivita %{app_title}
+    batch_connect_sessions_novnc_quality: Pildi kvaliteet
+    batch_connect_sessions_novnc_quality_help: 0 (madal) kuni 9 (kõrge)
+    batch_connect_sessions_novnc_tab: noVNC ühendus
+    batch_connect_sessions_novnc_view_only: Ainult vaatamiseks (jagatav link)
+    batch_connect_sessions_path_selector_forbidden_error: Teil pole selle kataloogi või faili valimiseks luba.
+    batch_connect_sessions_relaunch_full_title: '%{title} seansi taaskäivitamine'
+    batch_connect_sessions_relaunch_title: Taaskäivitamine
+    batch_connect_sessions_staged_root: etapiviisiline juurkataloog
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} tuum'
+      other: '%{count} südamikud'
+    batch_connect_sessions_stats_created_at: 'Loodud:'
+    batch_connect_sessions_stats_expected_time: 'Eeldatav algus:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Graafikaprotsessor'
+      other: '%{count} graafikaprotsessorid'
+    batch_connect_sessions_stats_host: 'Host:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} sõlm'
+      other: '%{count} sõlmed'
+    batch_connect_sessions_stats_session_dir_link_title: Ava seansi kataloog %{session_id} jaoks
+    batch_connect_sessions_stats_session_id: 'Seansi ID:'
+    batch_connect_sessions_stats_support_ticket: Probleemid selle seansiga?
+    batch_connect_sessions_stats_support_ticket_link_text: Esita tugipäring
+    batch_connect_sessions_stats_time_remaining: 'Järelejäänud aeg:'
+    batch_connect_sessions_stats_time_requested: 'Taotletud aeg:'
+    batch_connect_sessions_stats_time_used: 'Kasutusaeg:'
+    batch_connect_sessions_stats_undetermined_host: Määramata
+    batch_connect_sessions_status_bad: Teie seanss on halbasse olekusse sattunud. Lisateabe saamiseks võtke ühendust toega.
+    batch_connect_sessions_status_blurb_cancel_failure: Seansi tühistamine ebaõnnestus.
+    batch_connect_sessions_status_blurb_cancel_success: Seanss tühistati edukalt.
+    batch_connect_sessions_status_blurb_create_success: Seanss loodi edukalt.
+    batch_connect_sessions_status_blurb_delete_failure: Seansi kustutamine ebaõnnestus.
+    batch_connect_sessions_status_blurb_delete_success: Seanss kustutati edukalt.
+    batch_connect_sessions_status_completed: Veaotsingu eesmärgil säilitatakse seda kaarti veel %{days} päeva.
+    batch_connect_sessions_status_missing_connection: Sellel rakendusel puudub ühenduse loomiseks vajalik teave. Täpsemalt puudub fail view.html.erb. Kui näete seda teadet, võtke ühendust toega.
+    batch_connect_sessions_status_queued: Palun olge kannatlik, kuna teie töö on hetkel järjekorras. Ooteaeg sõltub nii tuumade arvust kui ka taotletud ajast.
+    batch_connect_sessions_status_starting: Teie seanss on algamas... Palun olge kannatlik, kuna see protsess võib võtta paar minutit.
+    batch_connect_sessions_word: Seanss
+    batch_connect_validation:
+      app_not_found: See rakendus ei asu kataloogis '%{root}'.
+      inaccessible_clusters: See rakendus vajab klastreid, mida pole olemas või millele teil pole juurdepääsu.
+      missing_form_file: See rakendus ei paku vormifaili kataloogi '%{root}'.
+      missing_sub_app_form_file: See rakendus ei paku kataloogis '%{root}' alamrakenduse vormifaili.
+      no_cluster_specified: See rakendus ei määra ühtegi klastrit.
+    bc_saved_settings:
+      delete_confirm: Oled sa kindel?
+      delete_title: Kustuta %{settings_name} salvestatud sätted
+      deleted_message: Salvestatud sätted %{settings_name} kustutatud.
+      edit_title: Muuda %{settings_name} salvestatud sätteid
+      launch_title: Käivita %{app_title} parameetritega %{settings_name}
+      missing_settings: Valitud salvestatud sätteid ei leitud.
+      no_settings_title: Teil pole salvestatud seadeid.
+      outdated_message: '%{app_title} parameetrid on pärast nende sätete loomist muutunud.'
+      saved_message: '%{settings_name} seaded salvestatud'
+      settings_values_label: Väärtused
+      title: Salvestatud sätted
+    breadcrumb_aria: Leivapuru
+    breadcrumbs_all_apps: Kõik rakendused
+    breadcrumbs_home: Avaleht
+    breadcrumbs_my_sessions: Minu interaktiivsed sessioonid
+    breadcrumbs_support_ticket: Tugipilet
+    browser_warning: 'OnDemand nõuab teie kasutatava brauseri uuemat versiooni. Praegused brauserinõuded on järgmised: IE Edge, Firefox 19+, Chrome 34+, Safari 8+.'
+    cancel: Tühista
+    categories:
+      apps: Rakendused
+      bioinformatics: Bioinformaatika
+      clusters: Klastrid
+      data_science: Andmeteadus
+      desktop: Lauaarvuti
+      desktops: Lauaarvutid
+      development: Areng
+      external_apps: Välised rakendused
+      files: Failid
+      gateway_apps: Gateway rakendused
+      guis: GUI-d
+      interactive_apps: Interaktiivsed rakendused
+      jobs: Töökohad
+      machine_learning: Masinõpe
+      mathematics: Matemaatika
+      servers: Serverid
+      utilities: Kommunaalteenused
+      virtual_desktop_interface: Virtuaalse töölaua liides
+      visualization: Visualiseerimine
+    clear: Selge
+    close: Sule
+    close_alert: Sulge see hoiatus.
+    close_notice: Sulge see teade.
+    cluster: Klaster
+    copy: Kopeeri
+    copy_suffix: (Koopia)
+    cpu_report: Protsessori aruanne + %{node}
+    custom_pages:
+      invalid: 'Kehtetu lehekood: %{page}. See leht pole konfigureeritud.'
+    date: Kuupäev
+    delete: Kustuta
+    detailed_metrics: Üksikasjalikud mõõdikud
+    details: Detailid
+    development_apps_caption: Liivakasti rakendus
+    development_apps_category: Liivakasti rakendused
+    development_delete_app: Kustuta rakendus
+    development_edit_title: Redigeeri %{title}
+    development_launch_title: Käivita %{title}
+    directory: Kataloog
+    edit: Redigeeri
+    editor_default: Vaikimisi
+    editor_font_size: Fondi suurus
+    editor_key_bindings: Kiirklahvid
+    editor_theme: Teema
+    editor_theme_bright: Hele
+    editor_theme_dark: Tume
+    editor_wrap: Mähi
+    error_details: 'Detailid:'
+    error_internal_body_html: Palun proovige uuesti mõne hetke pärast. Kui te seda viga jätkuvalt näete, <a href="%{support_url}">võtke ühendust toega</a>.
+    error_internal_title: Sisemine serveri viga
+    error_not_found_body: Otsitavat lehte pole olemas.
+    error_not_found_title: Ei leitud
+    favorites: Lemmikud
+    file: Fail
+    file_editor: Failiredaktor
+    file_quotas: Failikvoodid
+    files: Failid
+    files_change_directory: Muuda kataloogi
+    files_contents_of_directory: Kataloogi %{path} sisu
+    files_copy_move: Kopeeri/Teisalda
+    files_copy_path: Kopeeri tee
+    files_directory_contents_aria: Kataloogi sisu
+    files_directory_download_error_modal_title: Kataloog on allalaadimiseks liiga suur
+    files_directory_download_unauthorized: Saate alla laadida ainult faili või kataloogi, millele teil on lugemis- ja täitmisõigus.
+    files_directory_size_calculation_error: Kataloogi suuruse määramisel tekkis ajalõpp.
+    files_directory_size_calculation_timeout: Kataloogi suuruse määramisel tekkis ajalõpp.
+    files_directory_size_unknown: 'Viga olekuga %{exit_code} kataloogi suuruse määramisel: %{error}'
+    files_directory_too_large: Kataloog on zip-failina allalaadimiseks liiga suur. Kataloogi suurus peaks olema väiksem kui %{download_directory_size_limit} baiti.
+    files_doesnt_exist: '%{path} ei eksisteeri.'
+    files_download: Laadi alla
+    files_download_not_enabled: Failide allalaadimine pole sellel serveril lubatud.
+    files_download_zip: Laadi alla zip-failina
+    files_exceeds_editor_limit: '%{path} ületab redaktori limiidi %{limit}. Palun laadige fail alla, et seda redigeerida või lokaalselt vaadata.'
+    files_file_too_large: Fail on allalaadimiseks liiga suur. Faili allalaaditav maht peaks olema väiksem kui %{download_file_size_limit} baiti.
+    files_go_up_directory: Mine kataloogi üles
+    files_modified_at: Muudetud kell
+    files_modify_aria: Failide muutmine
+    files_new_directory: Uus kataloog
+    files_new_file: Uus fail
+    files_not_editable: '%{path} ei ole muudetav fail'
+    files_not_readable: Teil pole '%{path}' lugemiseks piisavalt õigusi.
+    files_open_in_files_app: Ava failide rakenduses
+    files_open_in_globus: Ava Globuses
+    files_path_breadcrumbs_aria: Tee riivsai
+    files_refresh: Värskenda
+    files_remote_dir_not_created: Ei loodud kataloogi %{path}
+    files_remote_disabled: Kaugfailide tugi pole lubatud
+    files_remote_empty_dir_unsupported: Kaugprogramm ei toeta tühje katalooge
+    files_remote_error_listing_remotes: 'Viga Rclone''i kaugjuhtimispultide loetlemisel: %{error}'
+    files_send_to_target_title_default: Saada valitud failide metaandmed välisele rakendusele
+    files_shell: Ava terminalis
+    files_shell_dropdown: Valige terminalis avamiseks klaster
+    files_title: Failide sirvimine
+    files_upload: Laadi üles
+    footer_contribute: Panusta GitHubis
+    footer_license: Tarkvaralitsentsi teatis
+    footer_open_source: Avatud lähtekoodiga tarkvara.
+    footer_powered_by: Open OnDemand toega
+    footer_version: 'Nõudmisel versioon: %{version}'
+    home_directory: Kodukataloog
+    id: ID-kaart
+    import: Import
+    job: Töö
+    job_info: Tööinfo
+    jobs_back_to_projects: Tagasi projektide juurde
+    jobs_clear_form_fields: Tühjenda vormiväljad
+    jobs_completed_jobs: Lõpetatud tööd
+    jobs_create_blank_project: Loo uus projekt
+    jobs_create_blank_workflow: Uus töövoog
+    jobs_create_template_project: Looge mallist uus projekt
+    jobs_import_shared_project: Jagatud projekti importimine
+    jobs_launchers: Käivitusprogrammid
+    jobs_launchers_add_select_option: Lisa valikuvõimalus %{name}
+    jobs_launchers_cannot_find: Käivitusprogrammi %{id} ei leitud
+    jobs_launchers_clone: Kloonide käivitaja %{name}
+    jobs_launchers_created: Käivitusprogramm loodud edukalt!
+    jobs_launchers_default_created: Sellele projektile lisati ka fail 'hello_world.sh'.
+    jobs_launchers_delete: Kustuta käivitaja %{name}
+    jobs_launchers_delete_script_confirmation: Kas kustutada kogu käivitaja sisu?
+    jobs_launchers_deleted: Käivitusprogramm edukalt kustutatud!
+    jobs_launchers_edit: Käivitusprogrammi %{name} vormi muutmine
+    jobs_launchers_edit_form_item: Muuda vormiüksust %{label}
+    jobs_launchers_editing: Redigeerimine %{title}
+    jobs_launchers_fixed_field: Fikseeritud väärtus
+    jobs_launchers_fixed_field_help: Fikseeri praegune väärtus
+    jobs_launchers_max_value_label: Arvuvälja %{label} maksimaalne väärtus
+    jobs_launchers_min_value_label: Arvuvälja %{label} minimaalne väärtus
+    jobs_launchers_name: Käivitaja nimi
+    jobs_launchers_new_field_select: Valige vormile lisatav üksus
+    jobs_launchers_not_found: Käivitajat %{launcher_id} ei leita
+    jobs_launchers_preview_form_item: Vormiüksuse %{label} eelvaade
+    jobs_launchers_remove_form_item: Eemalda vormiüksus %{label}
+    jobs_launchers_remove_select_option: Eemalda valitud suvand %{name}
+    jobs_launchers_save_form: Salvesta vorm
+    jobs_launchers_save_form_item: Salvesta muudatused vormiüksusesse %{label}
+    jobs_launchers_show_form: Näita käivitaja %{name} vormi
+    jobs_launchers_submit_launcher_title: Käivitusskripti vahemällu salvestatud või vaikeväärtustega käivitajale %{name}
+    jobs_launchers_submitted: Töö %{job_id} edukalt esitatud.
+    jobs_launchers_updated: Käivitaja manifest on uuendatud!
+    jobs_native_dependency: Töö sõltub töö ID-st%{dependency}
+    jobs_native_reason: '''%{reason}'' tõttu'
+    jobs_native_state: Praegune töö olek on '%{state}'
+    jobs_new_launcher: Uus käivitaja
+    jobs_new_project: Uus projekt
+    jobs_project_cannot_find: 'Projekti ei leitud: %{project_id}'
+    jobs_project_clear_form_fields: Tühjenda vormiväljad
+    jobs_project_created: Projekt edukalt loodud!
+    jobs_project_delete_label: Kustuta projekt %{name}
+    jobs_project_delete_project_confirmation: Kas kustutada kogu projektikataloogi sisu?
+    jobs_project_deleted: Projekt edukalt kustutatud!
+    jobs_project_description_placeholder: Projekti kirjeldus
+    jobs_project_directory_error: Selle töövoo jaoks pole projekti kataloogi teed määratud
+    jobs_project_directory_help_html: 'Jäta tühjaks ja luuakse uus kataloog. <br />Vaikimisi asukoht: %{root_directory}'
+    jobs_project_directory_placeholder: Projekti kataloogi absoluutne tee
+    jobs_project_edit_label: Redigeeri projekti %{name}
+    jobs_project_generic_error: 'Teie taotluse töötlemisel ilmnes viga: %{error}'
+    jobs_project_group_help: Veenduge, et valite grupi, mis sisaldab kõiki kavandatud kaastöötajaid. Kui see pole koostööprojekt, on soovitatav kasutada vaikegruppi.
+    jobs_project_group_owner: Grupp
+    jobs_project_imported: Projekt edukalt imporditud!
+    jobs_project_invalid_configuration_clusters: Vajalik on HPC-klaster. Selle süsteemi lisamiseks võtke ühendust oma administraatoriga.
+    jobs_project_invalid_configuration_scripts: Teie projekti jaoks on vaja käivitatavat skripti. Laadige skript üles failirakenduse abil.
+    jobs_project_job_deleted: Töö %{job_id} edukalt kustutatud
+    jobs_project_job_not_deleted: Tööd %{job_id} ei saa kustutada
+    jobs_project_job_stopped: Töö %{job_id} edukalt peatatud
+    jobs_project_list_aria: Projektide nimekiri
+    jobs_project_manager: Projektijuht
+    jobs_project_manifest_updated: Projekti manifest uuendatud!
+    jobs_project_name_placeholder: Projekti nimi
+    jobs_project_name_validation: Projekti nimi võib sisaldada ainult tähti, numbreid, kriipse, alakriipse ja tühikuid
+    jobs_project_not_found: Projekti %{project_id} ei leitud
+    jobs_project_open_label: Ava projekt %{name}
+    jobs_project_remove_label: Eemalda projekt %{name}
+    jobs_project_removed: Projekt otsingust eemaldatud!
+    jobs_project_return_to_projects: Tagasi projektide lehele
+    jobs_project_save_error: Manifesti ei saa %{path}-sse salvestada
+    jobs_project_save_project_title: Salvesta projekt
+    jobs_project_select_directory: Valige projekti kataloog
+    jobs_project_setgid_help: „setgid” märkimine tagab projektifailide loomise valitud grupiga. See ei mõjuta teie kodukataloogis olevaid projekte.
+    jobs_project_validation_error: Kehtetu päring. Palun vaadake üle allolevad vead.
+    jobs_return_to_projects: Tagasi projektide lehele
+    jobs_save_project_title: Salvesta projekt
+    jobs_select_directory_placeholder: Importimiseks klõpsake projektil
+    jobs_toggle_details: Klõpsake töö %{job_id} üksikasjade kuvamiseks
+    jobs_workflow_add_launcher: Lisa käivitaja
+    jobs_workflow_canvas_aria: lõuend
+    jobs_workflow_clone: Klooni töövoog %{name}
+    jobs_workflow_connect_launchers: Ühenda käivitajad
+    jobs_workflow_created: Töövoog edukalt loodud!
+    jobs_workflow_delete_confirmation: Kas kustutada kogu töövoo sisu?
+    jobs_workflow_delete_edge: Kustuta serv
+    jobs_workflow_delete_edge_title: Kustuta valitud serv (Del/Backspace)
+    jobs_workflow_delete_launcher: Kustuta käivitaja
+    jobs_workflow_delete_launcher_title: Kustuta valitud käivitaja (Del/Backspace)
+    jobs_workflow_delete_title: Kustuta töövoog %{name}
+    jobs_workflow_deleted: Töövoog edukalt kustutatud!
+    jobs_workflow_description_placeholder: Töövoo kirjeldus
+    jobs_workflow_edit_settings: Töövoo %{name} sätete muutmine
+    jobs_workflow_editing: 'Redigeerimine: %{name}'
+    jobs_workflow_enable_sync_key: Luba OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Töövoog nurjus veaga %{error}
+    jobs_workflow_help: Valimiseks klõpsa pealkirjal ja lohista. Ühenda, klõpsates kahel käivitajal, mille juures on valitud „Ühenda käivitajad”.
+    jobs_workflow_manifest_updated: Töövoo manifest on uuendatud!
+    jobs_workflow_missing_launchers: vali vähemalt %{count}
+    jobs_workflow_name_placeholder: Töövoo nimi
+    jobs_workflow_name_validation: Töövoo nimi võib sisaldada ainult tähti, numbreid, kriipse, alakriipse ja tühikuid
+    jobs_workflow_not_found: Töövoogu %{workflow_id} ei leitud
+    jobs_workflow_pick_launchers: Vali käivitajad
+    jobs_workflow_show_graph: Ava töövoog %{name} graafikuredaktoris
+    jobs_workflow_submitted: Töövoog edukalt esitatud!
+    jobs_workflow_sync_key_help: Kui see on lubatud, saab iga selle töövoo käivitaja sama keskkonnamuutuja <code>OOD_WORKFLOW_SYNC_KEY</code> (iga töövoo käivitamise jaoks unikaalne juhuslik märk). Kasulik sünkroniseeritud failinimede, lukustusfailide või jagatud identifikaatorite genereerimiseks sõltuvate tööde vahel.
+    jobs_workflow_synchronization: Sünkroniseerimine
+    jobs_workflow_toolbar_aria: tööriistariba
+    jobs_workflow_zoom_controls: Suumi juhtnupud
+    jobs_workflow_zoom_in: Suumi sisse
+    jobs_workflow_zoom_out: Suumi välja
+    jobs_workflow_zoom_reset: Lähtesta suum
+    jobs_workflows: Töövood
+    jobs_workflows_not_supported: Konfigureeritud ajastaja ei toeta töövooge.
+    js:
+      active_jobs:
+        delete_aria: Kustuta töö %{name} ID-ga %{id}
+        delete_confirm: Kas olete kindel, et soovite kustutada %{name} - %{id}?
+        delete_title: Kustuta töö
+        details_loaded: Töö üksikasjade loend laaditud.
+        load_details_failed: Töö üksikasjade laadimine ebaõnnestus.
+        remote_server_error: Kaugserverist andmete toomisel ilmnes tõrge.
+        request_failed_parse: Tööde päring nurjus sisu parsimisvea tõttu.
+        request_failed_status: 'Töötaotlus nurjus olekukoodiga: %{status}'
+        status_completed: Lõpetatud
+        status_hold: Hoidke
+        status_queued: Järjekorras
+        status_running: Jooksmine
+        status_suspended: Peatatud
+        status_undetermined: Määramata
+        support_ticket_aria: Esita tugiteenuse pilet töö ID-ga %{id} kohta
+        support_ticket_title: Esita tugipäring
+        toggle_details_aria: Lülitage töö %{name} nähtavus sisse/välja %{cluster}-s
+      batch_connect:
+        allow_notifications: Seansihoiatuste lubamiseks lubage oma brauseris teavitusload.
+        invalid_prefill_value_html: 'Sobimatu väärtus: "%{value}" väljal "%{field}".<br>'
+        notification_permission_error: 'Viga teavitusloa taotlemisel:'
+        resolution_reset: Resolutsioon lähtestati %{width}-le %{height} piksli võrra.
+        session_expires_warning: 'Hoiatus: %{title} (%{job_id}) aegub ~%{minutes} minuti pärast!'
+        session_status_aria: '%{title} on nüüd %{status}.'
+        session_status_push: '%{title} (%{job_id}) on nüüd %{status}.'
+      common:
+        cancel: Tühista
+        close: Sule
+        error: Viga
+        loading: Laadimine...
+        ok: Olgu
+      datatables:
+        all: Kõik
+        filter_label: 'Filter:'
+        invalid_date: Kehtetu kuupäev
+        rows_selected:
+          one: '%{count} rida valitud'
+          other: '%{count} rida valitud'
+        showing_filtered_rows: Kuvatakse %{display} rida %{total} reast
+        showing_rows: Kuvatakse %{display} rida
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ja
+        changed_help: Abitekst %{widget}-s muudeti tekstiks %{help}
+        changed_label: Silt %{widget} muudeti uueks sildiks %{label}
+        current_value: määra praegune väärtus väärtuseks %{value}
+        hid_item: Peidetud vormiüksus %{widget}
+        maximum_limit: maksimaalne piirang %{value}
+        minimum_limit: minimaalne piirang %{value}
+        option_disabled: Valik %{value} on %{widget} jaoks keelatud
+        option_enabled: Valik %{value} on lubatud %{widget} jaoks
+        revealed_item: Avatud vormiüksus %{widget}
+        selected_option_disabled: Valitud variant %{value} on %{widget} jaoks keelatud.
+        set_limits: Määra %{details} %{widget} jaoks
+        set_value: Määra %{widget} väärtuseks %{value}
+        widget_no_label: '%{type} ilma sildita'
+        widget_with_label: '%{type} sildiga %{label}'
+      editor:
+        save_error: 'Selle faili salvestamisel ilmnes viga!
+
+          %{error}'
+        unsaved_changes: Teil on salvestamata muudatusi!
+      files:
+        action_delete: Kustuta
+        action_download: Laadi alla
+        action_edit: Redigeeri
+        action_rename: Nimeta ümber
+        action_view: Vaade
+        actions: Toimingud
+        cannot_navigate_file: Failini ei saa navigeerida.
+        change_directory: Muuda kataloogi
+        clipboard_description_html: 'Kopeeri või teisalda allolevad failid kataloogist <code>%{from}</code> praegusesse kataloogi:'
+        contents_of_directory: Kataloogi %{path} sisu
+        copied_path: Tee lõikelauale kopeeritud!
+        copy: Kopeeri
+        create_directory_error: 'Uue kataloogi loomisel ilmnes viga: %{error}'
+        create_file_error: 'Uue faili loomisel ilmnes viga: %{error}'
+        delete_confirm_text: 'Kas olete kindel, et soovite failid kustutada: %{files}'
+        delete_multiple_title: Kas kustutada %{count} valitud failid?
+        delete_single_title: Kustutada %{name}?
+        deleting_files: 'Failide kustutamine...:'
+        directory: kataloog
+        directory_name_label: Kataloogi nimi
+        download_error: 'Viga allalaadimisel: %{error}'
+        duplicate_files_warning: Tuvastati duplikaatfailid. Nende failide üleslaadimine kirjutab olemasoleva sisu üle.
+        file: fail
+        filename_invalid_chars: Failinimi ei tohi sisaldada / ega ..
+        filename_label: Failinimi
+        globus_open: Ava praegune kataloog Globuse abil
+        globus_unavailable: Selle kataloogiga pole seotud ühtegi Globuse lõpp-punkti
+        illegal_slash_in_filename: Failinimes ei ole lubatud sobimatu märk (/).
+        move: Liigu
+        navigated_to: navigeeritud lehele %{path}
+        new_directory_title: Uus kataloog
+        new_file_title: Uus fail
+        path_label: Tee
+        poll_status_error: Toimingut ei pruukinud toimuda. Faili toimingu oleku hankimine ebaõnnestus.
+        preparing_download_dir: 'Valmistun alla laadima kataloogi: %{name}'
+        provide_absolute_pathname: Esitage absoluutne teekonnanimi
+        provide_directory_name: Sisestage kataloogi nimi, milles ei ole / sümbolit
+        provide_non_empty_filename: Sisestage mittetühi failinimi.
+        provide_rename_filename: Sisesta failinimi, milleks selle ümber nimetada
+        rename_title: Nimeta ümber
+        see_details: Vaata üksikasju
+        select_row: Vali rida
+        select_to_copy_move: Valige kopeerimiseks või teisaldamiseks fail, failid või kaust. Te pole ühtegi valinud.
+        select_to_delete: Valige kustutamiseks fail, failid või kaust. Te pole ühtegi valinud.
+        select_to_download: Valige allalaadimiseks fail, failid või kataloog. Te pole ühtegi valinud.
+        select_to_send: Valige saatmiseks vähemalt üks fail või kataloog.
+        send_failed: Failiteabe saatmine ebaõnnestus.
+        sent_successfully: Valitud faili teave saadeti edukalt.
+        show_dotfiles: Näita punktfaile
+        show_owner_mode: Näita omanikku/režiimi
+        summary_copy_files: kopeeri faile
+        summary_move_files: failide teisaldamine
+        summary_remove_files: failide eemaldamine
+        summary_rename_file: faili ümbernimetamine
+        token_missing_expired: Rakenduse tunnus puudub või on aegunud. Alusta uuesti.
+        transfer_error: '%{summary} katsel ilmnes viga: %{error}'
+        upload_and_overwrite: Üleslaadimine ja ülekirjutamine
+        upload_count:
+          one: Laadi üles %{count} fail
+          other: Laadi üles %{count} faili
+        upload_new_files: Laadi üles uusi faile
+        uppy_empty_dir_note: Tühjad kataloogid kaasatakse üleslaadimisse ainult siis, kui kataloogi üleslaadimine algatatakse lohistamise teel. Selle põhjuseks on asjaolu, et faili- ja kataloogikirjete API on saadaval ainult lohistamise korral, mitte sisendi muutmise korral.
+      icon_picker:
+        icon_selected: '%{icon} ikoon valitud'
+        icon_sr: '%{name} ikoon'
+      launcher_edit:
+        account_help: Konto, millega töö esitatakse.
+        account_label: Konto
+        add_new_option: Lisa uus valik
+        cores_help: Mitmel tuumal töö töötab.
+        cores_label: Südamikud
+        env_var_help: Lisa keskkonnamuutuja.
+        env_var_key: 'Keskkonnamuutuja: %{name}'
+        env_var_label: Keskkonnamuutuja
+        hours_help: Kui kaua töö võib kesta.
+        hours_label: Tunnid
+        job_name_help: Töökoha nimi.
+        job_name_label: Töö nimi
+        log_location_help: Töö logi väljundi sihtkoht.
+        log_location_label: Logi asukoht
+        no_more_options: Rohkem valikuid pole
+        nodes_help: Mitu sõlme töö käivitatakse.
+        nodes_label: Sõlmed
+        queues_help: Millise järjekorra töö samuti esitab.
+        queues_label: Järjekorrad
+      module_browser:
+        copied: Kopeeritud!
+        copy: Kopeeri
+        showing_results:
+          one: Kuvatakse %{count} tulemus
+          other: Kuvatakse %{count} tulemust
+      nsf_access:
+        affected_resources: 'Mõjutatud ressursid: %{resources}'
+        read_more: Loe edasi
+        register_event: Registreeru sellele üritusele
+      path_selector:
+        directory_loaded: Kataloog on laaditud %{count} üksusega
+        invalid_regex: Selle teekonna valija jaoks ette nähtud regulaaravaldis ei kompileerunud
+        loading_directory: Kataloogi sisu laadimine
+        permission_denied_prefix: 'Luba keelatud:'
+      popovers:
+        ihpc_content: Interaktiivne HPC-seanss annab teile spetsiaalse juurdepääsu ühele või mitmele klastri sõlmele. See sarnaneb interaktiivse partiisseansiga, millel on ligipääsetav töölaud primaarsõlmes. Kasutage seda raskete tööde, näiteks pikalt kestvate arvutusülesannete või spetsiaalsete ressursside vajamineva töö jaoks.
+        vdi_content: VDI (virtuaalne töölaualiides) annab teile töölaua kaudu juurdepääsu jagatud sõlmele. See on sisselogimissõlme graafiline versioon. Kasutage seda kergemate ülesannete jaoks, nagu failidele juurdepääs ja nende vaatamine, tööde esitamine ning visualiseerimine.
+      products:
+        fatal_error: Tekkis saatuslik viga
+        no_action: tegevust ei toimu
+      projects:
+        undetermined_size: Määramata suurus
+      support_ticket:
+        delete_attachment: Kustuta manus
+        no_file_selected: Faili pole valitud
+        selected_file: 'Valitud fail: %{name} (%{size}).'
+        size_bytes: '%{size}baiti'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Seda lehte ei saa uuendada, kuna te pole enam autentitud. Palun värskendage lehte uuesti sisselogimiseks.
+        unexpected_error: Sellel lehel ilmnes ootamatu viga. Palun värskenda lehte.
+      utils:
+        loading: Laadimine.
+        loading_complete: Laadimine on lõppenud.
+        popup_blocked: See link on konfigureeritud avanema uues aknas, aga tundub, et see ei ole avanenud. Palun keelake selle lehe hüpikakende blokeerija ja proovige uuesti.
+      workflows:
+        begin_from_launcher: Alusta töövoogu käivitajast %{title}
+        bidirectional_not_allowed: Kahesuunalised servad ei ole lubatud.
+        cyclic_dependency: Selle serva lisamine loob kanderakettide vahel tsüklilise sõltuvuse.
+        edge_aria_label: Äär %{from}-st kuni %{to}-ni
+        launcher_aria_label: 'Käivitaja: %{title}'
+        launcher_exists: Käivitusprogramm on juba olemas, palun vali teine käivitaja
+        load_launcher_failed: Käivitusprogrammi HTML-i laadimine ebaõnnestus. Proovige uuesti.
+        no_empty_cells: Tühje ruudustiku lahtreid pole saadaval!
+        save_failed: Töövoo salvestamine ebaõnnestus. Lisateabe saamiseks vaadake konsooli.
+        select_launcher: Palun vali käivitaja
+      xdmod:
+        analytics_toggle: Analüütika lüliti
+        column_date: Kuupäev
+        column_id: ID-kaart
+        column_name: Nimi
+        date_range: '%{from} kuni %{to}'
+        efficiency_report: '%{unit} Tõhususaruanne'
+        ensure_logged_in_html: '%{error} Palun veenduge, et olete <a href="%{url}">esmalt sisse logitud Open XDMoD-sse</a> ja proovige seejärel uuesti.'
+        expand_analytics_title: Klõpsake selle tabeli kohal töö %{id} analüütikateabe laiendamiseks.
+        fetch_user_failed: Praeguse kasutajainfo toomine Open XDMoD-st nurjus
+        idp_redirect_failed: 'Sisselogimine ebaõnnestus: IDP ümbersuunamine ebaõnnestus'
+        iframe_error: XDMoD sisselogimise iFrame URL-il %{url} postitas veateate infoga %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} ebaefektiivne %{unit} </span> & %{total} kokku %{unit}
+        invalid_job_data: Päringu tagastatud tööandmed on kehtetud.
+        loading_caps: LAADITAKSE...
+        login_page_load_failed: 'Sisselogimine ebaõnnestus: XDMoD sisselogimislehe laadimine ebaõnnestus'
+        login_timeout: 'Sisselogimine ebaõnnestus: sisselogimise lõpuleviimist oodates aegumiskuupäev'
+        metric_cpu: Protsessor
+        metric_mem: Mälu
+        metric_walltime: Seinaaeg
+        no_data: Andmed pole saadaval.
+        not_available: Pole kohaldatav
+        open_xdmod: Ava XDMoD
+        percent_efficient: '%{percent}% efektiivne'
+        percent_efficient_aria: efektiivne protsent
+        percent_inefficient: '%{percent}% ebaefektiivne'
+        percent_inefficient_aria: ebaefektiivse protsendi
+        recently_completed_jobs: Hiljuti lõpetatud tööd
+        unit_core_hours: põhitunnid
+        unit_core_hours_title: Põhitunnid
+        unit_jobs: töökohad
+        unit_jobs_title: Töökohad
+    launch: Käivitamine
+    load_report: Laadi aruanne + %{node}
+    loading: Laadimine...
+    loading_short: Laadimine
+    locale_name: Eesti (Eesti)
+    logo_alt_text: Tere tulemast Open OnDemandisse
+    logout_body_html: <strong>Väljalogimiseks peate oma brauseri täielikult sulgema</strong>. Kui olete pärast brauseri taasavamist endiselt sisse logitud, kustutage küpsised. Kui kasutate Chromebooki või Chromeboxi, peate brauserist väljumiseks ja seega väljalogimiseks oma seadme taaskäivitama.
+    logout_tip_html: '<strong>Vihje: OnDemand''i kasutamise ajal on "privaatse sirvimisrežiimi"</strong> akna kasutamine suurepärane viis "automaatse väljalogimise" haldamiseks, kuna brauseriakna sulgemine eemaldab kõik seotud küpsised ja seansiteabe.'
+    logout_title: Sa pole veel välja logitud
+    maximum: Maksimaalne
+    mem_report: Mäluaruanne + %{node}
+    minimum: Miinimum
+    mode: Režiim
+    module_browser_available_modules: 'Saadaval olevad moodulid:'
+    module_browser_copy_aria: Kopeeri laadimiskäsk %{name} jaoks
+    module_browser_dependencies: 'Sõltuvused:'
+    module_browser_last_updated: 'Viimati uuendatud: %{last_updated}'
+    module_browser_load_command: 'Laadimiskäsk:'
+    module_browser_search_label: Otsingumoodulid
+    module_browser_search_placeholder: Otsi mooduli nime järgi...
+    module_browser_select_version: (vali versioon)
+    module_browser_showing_results: Kuvatakse %{count} tulemust
+    module_browser_title: Moodulibrauser
+    module_browser_versions: Versioonid
+    motd_default_md: 'Open OnDemand arendamist toetab [National Science Foundation](https://www.nsf.gov/)
+
+      toetusnumbrite [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) ja
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) all.
+
+
+      Lisateave või osalemine:
+
+
+      - [Diskursus](https://discourse.openondemand.org/)
+
+      - [Open OnDemand repositoorium](https://github.com/OSC/ondemand)
+
+      - [ood-core repositoorium](https://github.com/OSC/ood_core)
+
+      - [Dokumentatsioon](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD-d ei parsitud või renderdatud õigesti: %{error_message}'
+    motd_no_messages: Uusi sõnumeid pole.
+    motd_title: Päeva sõnum
+    name: Nimi
+    nav_all_apps: Kõik rakendused
+    nav_develop_docs: Arendaja dokumentatsioon
+    nav_develop_my_sandbox_apps_dev: Minu liivakasti rakendused (arendus)
+    nav_develop_my_sandbox_apps_prod: Minu jagatud rakendused (tootmisversioon)
+    nav_develop_title: Arendada
+    nav_help_change_password: HPC parooli muutmine
+    nav_help_custom: Kohandatud navigeerimisabi
+    nav_help_docs: Veebidokumentatsioon
+    nav_help_support: Võtke ühendust klienditoega
+    nav_help_support_ticket: Esita tugipäring
+    nav_help_title: Abi
+    nav_help_two_factor: Kahefaktorilise autentimise seadistamine
+    nav_language: Keel
+    nav_limit_caption: kuvatud %{subset_count} kokku %{total_count}-st
+    nav_logout: Logi välja
+    nav_main_menu: Peamenüü
+    nav_restart_server: Taaskäivita veebiserver
+    nav_sessions: Minu interaktiivsed sessioonid
+    nav_toggle_navigation: Lülitusnavigatsioon
+    nav_user: Sisse logitud kui %{username}
+    network_report: Võrgustiku aruanne + %{node}
+    node: Sõlm
+    none: Puudub
+    not_grouped: Muud rakendused
+    nsf_access_announcements: NSF ACCESSi teadaanded
+    nsf_access_events: NSF ACCESSi üritused
+    nsf_access_outages: NSF-i juurdepääsukatkestused
+    ok: Olgu
+    opens_in_new_tab: avaneb uuel vahelehel
+    output_location: 'Väljundi asukoht:'
+    owner: Omanik
+    page_actions_aria: Lehe toimingud
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parameetrid
+    path_selector_breadcrumb_aria: '%{title} Leivapuru'
+    path_selector_caption: Valige vormil kasutamiseks fail või kataloog.
+    path_selector_default_popup_title: Valige oma töökataloog
+    path_selector_home: kodu
+    path_selector_parent_directory: ülemkataloog
+    permissions_created: Luba loodi edukalt.
+    permissions_destroyed: Luba edukalt hävitatud.
+    permissions_group_title: Grupi õigused
+    permissions_user_title: Kasutajaõigused
+    pinned_apps_caption_html: Esiletõstetud alamhulk <a href="%{all_apps_url}">kõigist saadaolevatest rakendustest</a>
+    pinned_apps_category: Rakendused
+    pinned_apps_title: Kinnitatud rakendused
+    products_created: Toode on edukalt loodud.
+    products_git_commit_hint_html: Palun kinnitage muudatused või lisage vajalikud failid faili <code>.gitignore</code>
+    products_git_staged: Lavastatud
+    products_git_status: Giti olek
+    products_git_unstaged: Lavastamata
+    products_git_untracked: Jälgimata
+    products_manifest_save_error: Rakenduse manifesti ei saa salvestada faili %{path}
+    products_ssh_key_created: SSH-võti loodi edukalt.
+    products_ssh_key_exists: SSH-võti on juba olemas
+    products_ssh_key_failed: 'SSH-võtme loomine ebaõnnestus: %{error}'
+    products_type_batch_connect: Batch Connecti rakendus
+    products_type_passenger: Reisijate rakendus
+    products_type_passenger_meteor: Reisijate Meteori rakendus
+    products_type_passenger_node: Reisijate sõlme rakendus
+    products_type_passenger_rack: Reisijate riiuli rakendus
+    products_type_passenger_rails: Reisijateliinide rakendus
+    products_type_passenger_rails_sqlite: Reisijateliinide rakendus SQLite andmebaasiga
+    products_type_passenger_wsgi: Reisijate WSGI rakendus
+    products_updated: Toodet on edukalt uuendatud.
+    project: Projekt
+    project_balances: Projekti saldod
+    project_directory: Projektikataloog
+    project_zip_error_message: 'ZIP-faili loomisel tekkis viga: %{error}'
+    project_zip_success_message: 'Edu: project.zip on teie projektikataloogi loodud.'
+    queue: Järjekord
+    quota_additional_message: Kettaruumi vabastamiseks kaalu failide kustutamist või arhiveerimist.
+    quota_block: Kasutades %{used} kvoodist %{available}
+    quota_block_shared: (%{used_exclusive} on sinu omad)
+    quota_file: Kasutades %{used} faili kvoodist %{available} faili
+    quota_file_shared: (%{used_exclusive} failid on sinu omad)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Uuendatud kvoodi nägemiseks laadige leht uuesti. Kvoote uuendatakse iga 5 minuti järel.
+    quota_warning_prefix_html: Kvoodipiirangu hoiatus kasutajale
+    recently_used_apps_title: Hiljuti kasutatud rakendused
+    remove: Eemalda
+    reset: Lähtesta
+    restart_msg_html: 'Teie grupi liikmelisus on muutunud, mis mõjutab teie juurdepääsu rakendustele. Teie armatuurlaud peaks automaatselt taaskäivitama.
+
+
+      Kui see ei õnnestu, klõpsake nuppu: <a href="%{restart_url}">taaskäivita veebiserver</a>.'
+    restore: Taasta
+    root: Juur
+    save: Salvesta
+    saved_settings_title: Salvestatud sätted
+    select: Vali
+    select_all: Vali kõik
+    select_path: Valige tee
+    select_path_for: '%{element} vali tee
+
+      '
+    settings_csrf_expired: Teie seansi turvatunnus on aegunud. Palun proovige uuesti.
+    settings_invalid_request: Esitatud on sobimatud seaded
+    settings_unprocessable_body_html: Teie seanss võib olla aegunud või soovitud muudatus lükati tagasi. Palun <a href="%{dashboard_url}">naaske armatuurlauale</a> ja proovige uuesti.
+    settings_unprocessable_title: Seanss aegunud või muudatus tagasi lükatud
+    settings_updated: Seaded on uuendatud
+    shared_apps_caption: Jagas %{owner_title} (%{owner})
+    shared_apps_caption_short: Jagatud kasutaja %{owner} poolt
+    shared_apps_title: Jagatud rakendused
+    sharing_catalog_msg_html: <br>Alamhulka saadaolevatest rakendustest saab vaadata lehel %{catalog_link_tag}.
+    sharing_catalog_title: Rakenduste kataloog
+    sharing_no_shared_apps_html: '<strong>Kohandatud jagatud rakendusi pole saadaval.</strong>
+
+      '
+    sharing_support_msg_html: 'Kui te ei leia otsitavat rakendust, võtke palun ühendust
+
+      <a href="%{support_url}">toega</a>.'
+    sharing_welcome_msg_html: 'Klastri juurdepääsu rakendused on saadaval ülaltoodud navigeerimisriba rippmenüüdest.
+
+
+      Kohandatud jagatud rakendused on saadaval allpool.'
+    shell: Kest
+    shell_app_title: '%{cluster_title} Shelli ligipääs'
+    show: Näita
+    size: Suurus
+    skip_navigation: Jäta navigeerimine vahele
+    smart_attributes:
+      account: Konto
+      auto_modules_none: Auto moodulid (pole antud)
+      cluster: Klaster
+      cores: Südamikud
+      email_on_started: Soovin saada seansi alguses e-kirja
+      environment_variable: Keskkonnamuutuja
+      environment_variable_key: 'Keskkonnamuutuja: %{key}'
+      job_name: Töö nimi
+      module_version: '%{module} versioon'
+      num_cpus_single_node: Protsessorite arv ühel sõlmel
+      num_hours: Tundide arv
+      num_nodes: Sõlmede arv
+      num_processors: Protsessorite arv
+      partition: Partitsioon
+      qos: QoS
+      queue: Järjekord
+      script: Skript
+      vnc_idle_help: 'Välju, kui # sekundi möödudes pole VNC-vaaturi ühendusi'
+      vnc_idle_label: Jõudeoleku ajalõpp
+      vnc_resolution_help: Resolutsiooni kasutavad ainult natiivsed VNC-ühendused
+      vnc_resolution_label: Resolutsioon
+    soft_tabs: Pehmed vahelehed
+    soft_tabs_info: Pehmed tabulaatorid on failis tühikud, mitte tegelikud tabulaatorimärgid.
+    status: Staatus
+    status_completed: Lõpetatud
+    status_held: Toimus
+    status_hold: Hoidke
+    status_queued: Järjekorras
+    status_running: Jooksmine
+    status_starting: Alustades
+    status_suspend: Peata
+    status_suspended: Peatatud
+    status_undetermined: Määramata
+    stop: Stopp
+    submit: Esita
+    submit_args: 'Esita argumendid:'
+    support_ticket:
+      creation_success: 'Tugipileti e-kiri saadeti aadressile: %{to}'
+      fields:
+        attachments: Manused
+        cc: Krediitkaart
+        description: Kirjeldus
+        email: E-post
+        job_description: Ametijuhend
+        session_description: Seansi kirjeldus
+        subject: Teema
+        username: Kasutajanimi
+      generic_error: 'Teie taotluse töötlemisel ilmnes viga: %{error}'
+      header: Tugipilet
+      rt:
+        creation_success: 'Tugipäring loodi RequestTrackeri süsteemis. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'ServiceNow''s loodi tugipäring. Number: %{number}. Kuid manuseid ei õnnestunud lisada.'
+        creation_success: 'ServiceNow''s loodi tugipäring. Number: %{number}'
+      submit: Esita tugipäring
+      title: Tugipilet
+      validation:
+        attachments_items: '%{id} on kehtetud. %{items} lisatud, maksimaalne manuste arv on %{max}'
+        attachments_size: '%{id} on sobimatud. Manuse maksimaalne suurus on %{max}'
+        email: Vorming %{id} on sobimatu. Oodati kehtivat e-posti aadressi.
+        items:
+          attachments_js: Rohkem manuseid pole lubatud
+        required: '%{id} on kohustuslik'
+        size:
+          attachments_js: Manuse maksimaalne suurus on %{max}. Valitud faili suurus on %{size}
+      validation_error: Kehtetu päring. Palun vaadake allolevaid veateateid.
+    support_ticket_add_attachment: Lisa manus
+    support_ticket_attachments_help: Faili lisamiseks klõpsake kastil. Ekraanipildid või muud failid võivad teie probleemi tõrkeotsingul abiks olla.
+    system_apps_caption: Süsteemi installitud rakendus
+    system_status_available: '%{name} Saadaval: %{count}'
+    system_status_cluster_title: '%{title} Klastri olek'
+    system_status_gpus: Graafikaprotsessorid
+    system_status_in_use: '%{percent} kasutusel'
+    system_status_jobs_queued: Tööd järjekorras
+    system_status_jobs_queued_count: '%{count} Tööd järjekorras'
+    system_status_jobs_running: Töötavad tööd
+    system_status_jobs_running_count: '%{count} Töötavad tööd'
+    system_status_nodes: Sõlmed
+    system_status_not_slurm: Klastri teave pole %{scheduler} puhul saadaval. Praegu toetatakse ainult Slurm-klastreid.
+    system_status_processors: Töötlejad
+    toggle_notifications: Lülita märguanded sisse/välja
+    toggle_push_notifications: Lülitage tõukemärguanded sisse/välja
+    type: Tüüp
+    undefined_title: Määratlemata pealkiri
+    unknown: Tundmatu
+    uppy:
+      strings:
+        addMore: Lisa veel
+        addMoreFiles: Lisa rohkem faile
+        addingMoreFiles: Rohkemate failide lisamine
+        back: Tagasi
+        browseFiles: sirvi faile
+        browseFolders: sirvi kaustu
+        cancel: Tühista
+        cancelUpload: Tühista üleslaadimine
+        closeModal: Sule modaalaken
+        complete: Lõpetatud
+        dashboardTitle: Failide üleslaadija
+        dashboardWindowTitle: Faili üleslaadija aken (sulgemiseks vajutage Escape'i)
+        done: Valmis
+        dropHint: Lohista oma failid siia
+        dropPasteBoth: Lohista failid siia, %{browseFiles} või %{browseFolders}
+        dropPasteFiles: Lohista failid siia või %{browseFiles}
+        dropPasteFolders: Lohista failid siia või %{browseFolders}
+        editFile: Redigeeri faili
+        editing: Redigeerimine %{file}
+        emptyFolderAdded: Tühjast kaustast ei lisatud ühtegi faili
+        error: Viga
+        exceedsSize: '%{file} ületab maksimaalselt lubatud suuruse %{size}'
+        failedToUpload: '%{file} üleslaadimine ebaõnnestus'
+        folderAlreadyAdded: Kaust "%{folder}" on juba lisatud
+        myDevice: Minu seade
+        noDuplicates: Duplikaatfaili '%{fileName}' ei saa lisada, see on juba olemas.
+        pause: Paus
+        pauseUpload: Peata üleslaadimine
+        paused: Peatatud
+        removeFile: Eemalda fail
+        resume: CV
+        resumeUpload: Jätka üleslaadimist
+        retry: Proovi uuesti
+        retryUpload: Proovi uuesti üles laadida
+        save: Salvesta
+        saveChanges: Salvesta muudatused
+        showErrorDetails: Kuva vea üksikasjad
+        upload: Laadi üles
+        uploadComplete: Üleslaadimine on lõpetatud
+        uploadFailed: Üleslaadimine ebaõnnestus
+        uploadPaused: Üleslaadimine peatatud
+        uploading: Üleslaadimine
+        xTimeLeft: '%{time} jäänud'
+    user: Kasutaja
+    user_configuration:
+      support_ticket_error: support_ticket on valesti konfigureeritud. Palun lisage YAML-i konfiguratsiooni taustsüsteemi implementatsioon.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand pakub integreeritud ja ühtset juurdepääsupunkti kõigile teie HPC ressurssidele.</p>
+
+      '

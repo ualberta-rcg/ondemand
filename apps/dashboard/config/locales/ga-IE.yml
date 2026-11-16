@@ -1,0 +1,969 @@
+---
+ga-IE:
+  activemodel:
+    errors:
+      messages:
+        format: Formáid %{attribute} neamhbhailí nó ar iarraidh
+        invalid: Tá %{attribute} neamhbhailí
+        required: Tá %{attribute} riachtanach
+        used: Tá %{attribute} in úsáid cheana féin
+  dashboard:
+    account: Cuntas
+    actions: Gníomhartha
+    active_jobs: Poist Ghníomhacha
+    active_jobs_close_details: Dún an painéal sonraí leathnaithe.
+    active_jobs_detail:
+      account: Cuntas
+      array_job_id: Aitheantas Poist Eagar
+      array_task_id: Aitheantas Tasca Eagar
+      cluster: Braisle
+      cluster_id: Aitheantas Braisle
+      comment: Trácht
+      cpu_time: Am LAP
+      cpu_used: LAP Úsáidte
+      current_working_directory: Eolaire Oibre Reatha
+      end_time: Am Deiridh
+      exec_host: Óstach Feidhmiúcháin
+      finish_time: Am Críochnaithe
+      from_host: Ó Óstach
+      gres: GRES
+      group_list: Liosta Grúpa
+      job_account: Cuntas Poist
+      job_checkpoint_attr: Seicphointe Poist Attr
+      job_checkpoint_interval: Eatramh Seiceála Poist
+      job_deadline: Spriocdháta Poist
+      job_exec_file: Comhad Forghníomhaithe Poist
+      job_execution_time: Am Forghníomhaithe Poist
+      job_gid: GID an Phoist
+      job_group: Grúpa Poist
+      job_id: Aitheantas Poist
+      job_name: Ainm an Phoist
+      job_priority: Tosaíocht Poist
+      job_restart: Atosú Poist
+      job_script_file: Comhad Script Poist
+      job_script_size: Méid Script an Phoist
+      job_share: Comhroinnt Poist
+      job_type: Cineál Poist
+      job_uid: Aitheantas Úsáideora an Phoist
+      job_verify: Fíorú Poist
+      job_version: Leagan Poist
+      mem: Cuimhne
+      memory: Cuimhne
+      node_count: Líon na Nód
+      node_list: Liosta Nód
+      nodes: Nóid
+      none: Dada
+      notifications: Fógraí
+      partition: Deighilt
+      pbs_id: Aitheantas PBS
+      pids: PIDanna
+      ppn: PPN
+      project_name: Ainm an Tionscadail
+      queue: Scuaine
+      reason: Cúis
+      reserve: Cúlchiste
+      select: Roghnaigh
+      start_time: Am Tosaigh
+      state: Stát
+      status: Stádas
+      submission_time: Am Aighneachta
+      swap: Malartú
+      time_limit: Teorainn Ama
+      time_used: Am a Úsáideadh
+      total_cpus: LAPanna iomlána
+      total_nodes: Líon Iomlán na Nóid
+      user: Úsáideoir
+      virtual_memory: Cuimhne Fhíorúil
+      walltime: Balla-am
+      walltime_used: Am Balla Úsáidte
+    active_jobs_filter_all: Gach Post
+    active_jobs_filter_user: Do Phoist
+    active_jobs_ganlia_CPU: Íomhá ganglia don LAP.
+    active_jobs_ganlia_load: Íomhá ganglia le haghaidh meánualaigh chórais.
+    active_jobs_ganlia_mem: Íomhá ganglia le haghaidh úsáid cuimhne.
+    active_jobs_ganlia_network: Íomhá ganglia le haghaidh úsáide líonra.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> féach ar fad (%{number_of_sessions})</a>
+    active_sessions_title: Seisiúin idirghníomhacha gníomhacha
+    add: Cuir leis
+    all_apps_table_app_column: Ainm
+    all_apps_table_category_column: Catagóir
+    all_apps_table_sub_category_column: Fo-chatagóir
+    all_clusters: Gach Braisle
+    announcements_dismissible_button: Ceart go leor
+    announcements_parse_error: Earráid ag parsáil an fhógra.
+    announcements_render_error: Níorbh fhéidir an fógra '%{name}' a rindreáil mar gheall ar earráid
+    announcements_required_button: Glac leis
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: Aipeanna Córais
+    auto_log_location_title: Suíomh Logála
+    back: Ar ais
+    balance_additional_message: Smaoinigh ar %{balanace_units} breise a iarraidh
+    balance_message: Is é %{units_balance} ná %{value}
+    balance_no_warnings: Níl aon tionscadal laistigh den tairseach rabhaidh iarmhéid %{threshold} lá.
+    balance_reload_message_html: Athlódáil an leathanach chun an t-iarmhéid nuashonraithe a fheiceáil. Nuashonraítear na hiarmhéideanna go laethúil.<br>Ba é %{last_update} an nuashonrú deireanach
+    balance_warning_prefix_html: rabhadh %{units_balance} le haghaidh
+    batch_connect_active_sessions_aria: Seisiúin Ghníomhacha
+    batch_connect_app_version: 'leagan: %{version}'
+    batch_connect_apps_menu_aria: Roghchlár Aipeanna Idirghníomhacha
+    batch_connect_apps_menu_title: Aipeanna Idirghníomhacha
+    batch_connect_form_attr_cache_error: Ní féidir luachanna a bhí taisceáilte roimhe seo a úsáid, úsáidtear réamhshocruithe ina ionad. (%{error_message})
+    batch_connect_form_choose_template_name: Roghnaigh ainm teimpléid
+    batch_connect_form_data_root: eolaire fréimhe sonraí
+    batch_connect_form_dynamic_disclaimer: Féadfaidh an fhoirm seo a leanas athrú go dinimiciúil de réir mar a roghnaítear roghanna. Fógrófar na hathruithe uile agus is féidir iad a aisiompú.
+    batch_connect_form_invalid: Tá roghanna ar iarraidh sa réimse foirme %{id} sa form.yml.
+    batch_connect_form_launch: Seoladh
+    batch_connect_form_prefill: Úsáid socruithe sábháilte
+    batch_connect_form_prefill_error: Úps... Tá rud éigin cearr le do theimpléad
+    batch_connect_form_reset_resolution: Athshocraigh an Rún
+    batch_connect_form_resolution_height: Airde réitigh (picteilíní)
+    batch_connect_form_resolution_width: Leithead réitigh (picteilíní)
+    batch_connect_form_save: Sábháil socruithe
+    batch_connect_form_save_new_template: sábháil socruithe nua
+    batch_connect_form_save_submit: Sábháil socruithe agus dún
+    batch_connect_form_select_template: roghnaigh socruithe sábháilte
+    batch_connect_form_session_data_html: '* Is féidir rochtain a fháil ar shonraí seisiúin %{title} don seisiún seo faoin %{data_link_tag}.'
+    batch_connect_form_template_name_label: ainm an tsuímh
+    batch_connect_form_type_new_name: Ainm socruithe an aip
+    batch_connect_form_type_new_name_error: Clóscríobh ainm bailí le do thoil chun leanúint ar aghaidh
+    batch_connect_invalid_form_array: Ní eagar é an eilimint 'form' i form.yml
+    batch_connect_invalid_form_attributes: Ní Léarscáil é an eilimint 'attributes' i form.yml
+    batch_connect_missing_cluster: Níor socraíodh an braisle riamh. Socraigh é i form.yml.erb le `cluster` nó `form.cluster` nó socraigh `cluster` i submit.yml.erb.
+    batch_connect_no_apps: Níl aon Aipeanna Idirghníomhacha ar fáil.
+    batch_connect_no_sessions: Níl aon seisiúin ghníomhacha agat.
+    batch_connect_sandbox: '[Bosca gainimh]'
+    batch_connect_sessions_cancel_confirm: An bhfuil tú cinnte?
+    batch_connect_sessions_cancel_full_title: Cealaigh Seisiún %{title}
+    batch_connect_sessions_cancel_title: Cealaigh
+    batch_connect_sessions_connect_to: Ceangail le %{app_title}
+    batch_connect_sessions_connection_render_error: Ní féidir an cnaipe ceangail a rindreáil ón view.html.erb mar gheall ar an earráid '%{error}'
+    batch_connect_sessions_data_html: Is féidir rochtain a fháil ar shonraí seisiúin %{title} don seisiún seo faoin %{data_link_tag}.
+    batch_connect_sessions_delete_confirm: An bhfuil tú cinnte?
+    batch_connect_sessions_delete_full_title: Scrios Seisiún %{title}
+    batch_connect_sessions_delete_hover: Scrios Seisiún
+    batch_connect_sessions_delete_title: Scrios
+    batch_connect_sessions_edit_title: Cuir an %{title} nua in eagar leis na paraiméadair seisiúin seo
+    batch_connect_sessions_error_invalid_job_name_html: Mura ndearnadh an post seo a chur isteach mar gheall ar ainm poist neamhbhailí, iarr ar do riarthóir OnDemand a chumrú chun an athróg timpeallachta OOD_JOB_NAME_ILLEGAL_CHARS a shocrú.
+    batch_connect_sessions_errors_staging: 'Theip ar an teimpléad a chur ar stáitse leis an earráid seo a leanas:'
+    batch_connect_sessions_errors_submission: 'Theip ar an seisiún a chur isteach leis an earráid seo a leanas:'
+    batch_connect_sessions_native_vnc_tab: Treoracha Dúchasacha
+    batch_connect_sessions_novnc_compression: Comhbhrú
+    batch_connect_sessions_novnc_compression_help: 1 (íseal) go 9 (ard)
+    batch_connect_sessions_novnc_launch: Seoladh %{app_title}
+    batch_connect_sessions_novnc_quality: Cáilíocht Íomhá
+    batch_connect_sessions_novnc_quality_help: 0 (íseal) go 9 (ard)
+    batch_connect_sessions_novnc_tab: Ceangal noVNC
+    batch_connect_sessions_novnc_view_only: Amharc Amháin (Nasc Inroinnte)
+    batch_connect_sessions_path_selector_forbidden_error: Níl cead agat an t-eolaire nó an comhad sin a roghnú.
+    batch_connect_sessions_relaunch_full_title: Athsheoladh Seisiún %{title}
+    batch_connect_sessions_relaunch_title: Athsheoladh
+    batch_connect_sessions_staged_root: eolaire fréimhe céimnithe
+    batch_connect_sessions_stats_core_count:
+      one: Croí %{count}
+      other: croíleacáin %{count}
+    batch_connect_sessions_stats_created_at: 'Cruthaithe ag:'
+    batch_connect_sessions_stats_expected_time: 'Tús ionchais:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: GPUanna %{count}
+    batch_connect_sessions_stats_host: 'Óstach:'
+    batch_connect_sessions_stats_node_count:
+      one: nód %{count}
+      other: nóid %{count}
+    batch_connect_sessions_stats_session_dir_link_title: Oscail eolaire seisiúin do %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID Seisiúin:'
+    batch_connect_sessions_stats_support_ticket: Fadhbanna leis an seisiún seo?
+    batch_connect_sessions_stats_support_ticket_link_text: Cuir ticéad tacaíochta isteach
+    batch_connect_sessions_stats_time_remaining: 'Am atá fágtha:'
+    batch_connect_sessions_stats_time_requested: 'Am Iarrtha:'
+    batch_connect_sessions_stats_time_used: 'Am a Úsáideadh:'
+    batch_connect_sessions_stats_undetermined_host: Gan chinneadh
+    batch_connect_sessions_status_bad: Tá droch-staid tagtha ar do sheisiún. Ná bíodh drogall ort teagmháil a dhéanamh leis an bhfoireann tacaíochta le haghaidh tuilleadh eolais.
+    batch_connect_sessions_status_blurb_cancel_failure: Theip ar an seisiún a chealú.
+    batch_connect_sessions_status_blurb_cancel_success: Cuireadh an seisiún ar ceal go rathúil.
+    batch_connect_sessions_status_blurb_create_success: Cruthaíodh an seisiún go rathúil.
+    batch_connect_sessions_status_blurb_delete_failure: Theip ar an seisiún a scriosadh.
+    batch_connect_sessions_status_blurb_delete_success: Scriosadh an seisiún go rathúil.
+    batch_connect_sessions_status_completed: Chun críocha dífhabhtaithe, coinneofar an cárta seo ar feadh %{days} lá eile
+    batch_connect_sessions_status_missing_connection: Tá an fhaisnéis atá riachtanach chun nasc a bhunú ar iarraidh ón aip seo. Go sonrach, tá an comhad view.html.erb ar iarraidh. Téigh i dteagmháil leis an bhfoireann tacaíochta má fheiceann tú an teachtaireacht seo.
+    batch_connect_sessions_status_queued: Bí foighneach le do thoil mar go bhfuil do phost i scuaine faoi láthair. Braitheann an t-am feithimh ar líon na gcroíleacán chomh maith leis an am a iarrtar.
+    batch_connect_sessions_status_starting: Tá do sheisiún ag tosú faoi láthair... Bí foighneach le do thoil mar d'fhéadfadh an próiseas seo cúpla nóiméad a thógáil.
+    batch_connect_sessions_word: Seisiún
+    batch_connect_validation:
+      app_not_found: Níl an aip seo ann faoin eolaire '%{root}'
+      inaccessible_clusters: Éilíonn an aip seo braislí nach bhfuil ann nó nach bhfuil rochtain agat orthu.
+      missing_form_file: Ní sholáthraíonn an aip seo comhad foirme faoin eolaire '%{root}'
+      missing_sub_app_form_file: Ní sholáthraíonn an aip seo comhad foirme fo-aipe faoin eolaire '%{root}'
+      no_cluster_specified: Ní shonraíonn an aip seo aon chnuasach.
+    bc_saved_settings:
+      delete_confirm: An bhfuil tú cinnte?
+      delete_title: Scrios socruithe sábháilte %{settings_name}
+      deleted_message: Scriosadh na socruithe sábháilte %{settings_name}.
+      edit_title: Cuir socruithe sábháilte %{settings_name} in eagar
+      launch_title: Seoladh %{app_title} le paraiméadair %{settings_name}
+      missing_settings: Níor aimsíodh na socruithe sábháilte roghnaithe.
+      no_settings_title: Níl aon socruithe sábháilte agat.
+      outdated_message: Tá athrú tagtha ar pharaiméadair %{app_title} ó cruthaíodh na socruithe seo.
+      saved_message: Socruithe %{settings_name} sábháilte
+      settings_values_label: Luachanna
+      title: Socruithe Sábháilte
+    breadcrumb_aria: Brioscaí Aráin
+    breadcrumbs_all_apps: Gach Aip
+    breadcrumbs_home: Baile
+    breadcrumbs_my_sessions: Mo Sheisiúin Idirghníomhacha
+    breadcrumbs_support_ticket: Ticéad Tacaíochta
+    browser_warning: Éilíonn OnDemand leagan níos nuaí den bhrabhsálaí atá in úsáid agat. I measc na riachtanas brabhsálaí reatha tá IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Cealaigh
+    categories:
+      apps: Aipeanna
+      bioinformatics: Bithfhaisnéisíocht
+      clusters: Braislí
+      data_science: Eolaíocht Sonraí
+      desktop: Deasc
+      desktops: Deasca
+      development: Forbairt
+      external_apps: Aipeanna Seachtracha
+      files: Comhaid
+      gateway_apps: Aipeanna Geata
+      guis: Comhéadain Ghréasáin
+      interactive_apps: Aipeanna Idirghníomhacha
+      jobs: Poist
+      machine_learning: Foghlaim Meaisín
+      mathematics: Matamaitic
+      servers: Freastalaithe
+      utilities: Fóntais
+      virtual_desktop_interface: Comhéadan Deisce Fíorúil
+      visualization: Amharcléiriú
+    clear: Glan
+    close: Dún
+    close_alert: Dún an foláireamh seo.
+    close_notice: Dún an fógra seo.
+    cluster: Braisle
+    copy: Cóipeáil
+    copy_suffix: (Cóip)
+    cpu_report: Tuarascáil LAP + %{node}
+    custom_pages:
+      invalid: 'Cód leathanaigh neamhbhailí: %{page}. Níl an leathanach seo cumraithe fós.'
+    date: Dáta
+    delete: Scrios
+    detailed_metrics: Méadrachtaí Mionsonraithe
+    details: Sonraí
+    development_apps_caption: Aip Bosca Gainimh
+    development_apps_category: Aipeanna Bosca Gainimh
+    development_delete_app: Scrios an Aip
+    development_edit_title: Cuir %{title} in Eagar
+    development_launch_title: Seoladh %{title}
+    directory: Eolaire
+    edit: Cuir in Eagar
+    editor_default: Réamhshocrú
+    editor_font_size: Méid Cló
+    editor_key_bindings: Ceangail Eochracha
+    editor_theme: Téama
+    editor_theme_bright: Geal
+    editor_theme_dark: Dorcha
+    editor_wrap: Fillte
+    error_details: 'Sonraí:'
+    error_internal_body_html: Déan iarracht arís i gceann cúpla nóiméad. Má leanann an earráid seo ort, déan <a href="%{support_url}">teagmháil leis an tacaíocht</a>.
+    error_internal_title: Earráid Inmheánach Freastalaí
+    error_not_found_body: Níl an leathanach atá á lorg agat ann.
+    error_not_found_title: Níor aimsíodh
+    favorites: Rogha na ndaoine is ansa liom
+    file: Comhad
+    file_editor: Eagarthóir Comhad
+    file_quotas: Cuótaí Comhad
+    files: Comhaid
+    files_change_directory: Athraigh an eolaire
+    files_contents_of_directory: Ábhar an eolaire %{path}
+    files_copy_move: Cóipeáil/Bog
+    files_copy_path: Cóipeáil an chonair
+    files_directory_contents_aria: Ábhar an eolaire
+    files_directory_download_error_modal_title: Eolaire rómhór le híoslódáil
+    files_directory_download_unauthorized: Ní féidir leat ach comhad nó eolaire a íoslódáil a bhfuil rochtain léite agus forghníomhaithe agat air.
+    files_directory_size_calculation_error: Teorainn ama agus iarracht á déanamh méid an eolaire a chinneadh.
+    files_directory_size_calculation_timeout: Teorainn ama agus iarracht á déanamh méid an eolaire a chinneadh.
+    files_directory_size_unknown: 'Earráid le stádas %{exit_code} agus iarracht á déanamh méid an eolaire a chinneadh: %{error}'
+    files_directory_too_large: Tá an t-eolaire rómhór le híoslódáil mar chomhad zip. Ba chóir go mbeadh an t-eolaire níos lú ná %{download_directory_size_limit} beart.
+    files_doesnt_exist: Níl %{path} ann.
+    files_download: Íoslódáil
+    files_download_not_enabled: Níl íoslódáil comhad cumasaithe ar an bhfreastalaí seo.
+    files_download_zip: Íoslódáil mar zip
+    files_exceeds_editor_limit: Tá %{path} thar theorainn an eagarthóra de %{limit}. Íoslódáil an comhad le cur in eagar nó le féachaint air go háitiúil.
+    files_file_too_large: Tá an comhad rómhór le híoslódáil. Ba chóir go mbeadh íoslódálacha comhad níos lú ná %{download_file_size_limit} beart.
+    files_go_up_directory: Téigh suas an eolaire
+    files_modified_at: Modhnaithe ag
+    files_modify_aria: Comhaid a mhodhnú
+    files_new_directory: Eolaire Nua
+    files_new_file: Comhad Nua
+    files_not_editable: Ní comhad in-eagarthóireachta é %{path}
+    files_not_readable: Níl ceadanna leordhóthanacha agat chun '%{path}' a léamh.
+    files_open_in_files_app: Oscail san aip comhad
+    files_open_in_globus: Oscail i Globus
+    files_path_breadcrumbs_aria: Blúiríní aráin cosáin
+    files_refresh: Athnuachan
+    files_remote_dir_not_created: Níor cruthaíodh an t-eolaire %{path}
+    files_remote_disabled: Níl tacaíocht comhad iargúlta cumasaithe
+    files_remote_empty_dir_unsupported: Ní thacaíonn an cianda le heolairí folamha
+    files_remote_error_listing_remotes: 'Earráid ag liostáil cianrialtáin Rclone: %{error}'
+    files_send_to_target_title_default: Seol meiteashonraí na gcomhad roghnaithe chuig an bhfeidhmchlár seachtrach
+    files_shell: Oscail sa Chríochfort
+    files_shell_dropdown: Roghnaigh Braisle le hoscailt sa Chríochfort
+    files_title: Brabhsáil comhad
+    files_upload: Uaslódáil
+    footer_contribute: Cuir leis ar GitHub
+    footer_license: Fógra Ceadúnais Bogearraí
+    footer_open_source: Bogearraí foinse oscailte.
+    footer_powered_by: Cumhachtaithe ag Open OnDemand
+    footer_version: 'Leagan Ar Éileamh: %{version}'
+    home_directory: Eolaire Baile
+    id: Aitheantas
+    import: Iompórtáil
+    job: Post
+    job_info: Eolas Poist
+    jobs_back_to_projects: Ar ais chuig Tionscadail
+    jobs_clear_form_fields: Glan réimsí foirme
+    jobs_completed_jobs: Poist Chríochnaithe
+    jobs_create_blank_project: Cruthaigh tionscadal nua
+    jobs_create_blank_workflow: Sreabhadh Oibre Nua
+    jobs_create_template_project: Cruthaigh tionscadal nua ó theimpléad
+    jobs_import_shared_project: Iompórtáil tionscadal comhroinnte
+    jobs_launchers: Lainseálaithe
+    jobs_launchers_add_select_option: Cuir rogha roghnaithe leis %{name}
+    jobs_launchers_cannot_find: Ní féidir an lainseálaí %{id} a aimsiú
+    jobs_launchers_clone: Lainseálaí clónála %{name}
+    jobs_launchers_created: Cruthaíodh an lainseálaí go rathúil!
+    jobs_launchers_default_created: Cuireadh 'hello_world.sh' leis an tionscadal seo freisin.
+    jobs_launchers_delete: Scrios an lainseálaí %{name}
+    jobs_launchers_delete_script_confirmation: Scrios gach ábhar sa lainseálaí?
+    jobs_launchers_deleted: Scriosadh an lainseálaí go rathúil!
+    jobs_launchers_edit: Cuir foirm in eagar don lainseálaí %{name}
+    jobs_launchers_edit_form_item: Cuir mír foirme in eagar %{label}
+    jobs_launchers_editing: Ag eagarthóireacht %{title}
+    jobs_launchers_fixed_field: Luach Seasta
+    jobs_launchers_fixed_field_help: Socraigh an luach reatha
+    jobs_launchers_max_value_label: Uasluach don réimse uimhreach %{label}
+    jobs_launchers_min_value_label: Íosluach don réimse uimhreach %{label}
+    jobs_launchers_name: Ainm an Lainseálaí
+    jobs_launchers_new_field_select: Roghnaigh mír le cur leis an bhfoirm
+    jobs_launchers_not_found: Ní féidir an Tosaitheoir %{launcher_id} a aimsiú
+    jobs_launchers_preview_form_item: Réamhamharc ar mhír an fhoirm %{label}
+    jobs_launchers_remove_form_item: Bain mír foirme %{label}
+    jobs_launchers_remove_select_option: Bain an rogha roghnaithe %{name}
+    jobs_launchers_save_form: Sábháil an fhoirm
+    jobs_launchers_save_form_item: Sábháil athruithe ar mhír an fhoirm %{label}
+    jobs_launchers_show_form: Taispeáin foirm don lainseálaí %{name}
+    jobs_launchers_submit_launcher_title: Seoladh an script le luachanna taisceáilte nó réamhshocraithe don lainseálaí %{name}
+    jobs_launchers_submitted: Cuireadh an post %{job_id} isteach go rathúil.
+    jobs_launchers_updated: Manifest an lainseálaí nuashonraithe!
+    jobs_native_dependency: Braitheann an post ar job-id%{dependency}
+    jobs_native_reason: mar gheall ar '%{reason}'
+    jobs_native_state: Is é '%{state}' staid reatha an phoist
+    jobs_new_launcher: Tosaitheoir Nua
+    jobs_new_project: Tionscadal Nua
+    jobs_project_cannot_find: 'Ní féidir tionscadal a aimsiú: %{project_id}'
+    jobs_project_clear_form_fields: Glan réimsí foirme
+    jobs_project_created: Cruthaíodh an tionscadal go rathúil!
+    jobs_project_delete_label: Scrios tionscadal %{name}
+    jobs_project_delete_project_confirmation: Scrios gach ábhar in eolaire an tionscadail?
+    jobs_project_deleted: Scriosadh an tionscadal go rathúil!
+    jobs_project_description_placeholder: Cur síos ar an tionscadal
+    jobs_project_directory_error: Níl cosán eolaire tionscadail socraithe don sreabhadh oibre seo
+    jobs_project_directory_help_html: 'Fág folamh é agus cruthófar eolaire nua. <br />Suíomh réamhshocraithe: %{root_directory}'
+    jobs_project_directory_placeholder: Cosán iomlán eolaire tionscadail
+    jobs_project_edit_label: Cuir tionscadal %{name} in eagar
+    jobs_project_generic_error: 'Tharla earráid agus d’iarratas á phróiseáil: %{error}'
+    jobs_project_group_help: Bí cinnte an grúpa a roghnú ina bhfuil na comhoibritheoirí beartaithe go léir. Mura tionscadal comhoibríoch é seo, moltar an grúpa réamhshocraithe.
+    jobs_project_group_owner: Grúpa
+    jobs_project_imported: Iompórtáladh an tionscadal go rathúil!
+    jobs_project_invalid_configuration_clusters: Tá braisle HPC ag teastáil. Téigh i dteagmháil le do riarthóir chun ceann a chur leis an gcóras.
+    jobs_project_invalid_configuration_scripts: Tá script inrite ag teastáil do do thionscadal. Uaslódáil script ag baint úsáide as an bhfeidhmchlár comhaid.
+    jobs_project_job_deleted: Scriosadh an post %{job_id} go rathúil
+    jobs_project_job_not_deleted: Ní féidir an post %{job_id} a scriosadh
+    jobs_project_job_stopped: Cuireadh stop leis an bpost go rathúil %{job_id}
+    jobs_project_list_aria: Liosta tionscadal
+    jobs_project_manager: Bainisteoir Tionscadail
+    jobs_project_manifest_updated: Manuscript tionscadail nuashonraithe!
+    jobs_project_name_placeholder: Ainm an tionscadail
+    jobs_project_name_validation: Ní fhéadfaidh ach litreacha, digití, fleascáin, fo-línte agus spásanna a bheith in ainm an tionscadail
+    jobs_project_not_found: Ní féidir tionscadal %{project_id} a aimsiú
+    jobs_project_open_label: Oscail tionscadal %{name}
+    jobs_project_remove_label: Bain tionscadal %{name}
+    jobs_project_removed: Tionscadal bainte den chuardach!
+    jobs_project_return_to_projects: Fill ar ais chuig leathanach na dtionscadal
+    jobs_project_save_error: Ní féidir an manifíse a shábháil chuig %{path}
+    jobs_project_save_project_title: Sábháil tionscadal
+    jobs_project_select_directory: Roghnaigh eolaire tionscadail
+    jobs_project_setgid_help: Má fhágtar setgid roghnaithe, cinntítear go gcruthófar comhaid tionscadail leis an ngrúpa roghnaithe. Ní dhéanann sé difear do thionscadail i do chomhadlann baile.
+    jobs_project_validation_error: Iarratas neamhbhailí. Athbhreithnigh na hearráidí thíos le do thoil.
+    jobs_return_to_projects: Fill ar ais chuig leathanach na dtionscadal
+    jobs_save_project_title: Sábháil tionscadal
+    jobs_select_directory_placeholder: Cliceáil ar thionscadal le hallmhairiú
+    jobs_toggle_details: Cliceáil chun sonraí poist %{job_id} a athrú
+    jobs_workflow_add_launcher: Cuir Tosaitheoir leis
+    jobs_workflow_canvas_aria: chanbhás
+    jobs_workflow_clone: Sreabhadh oibre clónála %{name}
+    jobs_workflow_connect_launchers: Ceangail Lainseálaithe
+    jobs_workflow_created: Cruthaíodh an sreabhadh oibre go rathúil!
+    jobs_workflow_delete_confirmation: Scrios gach ábhar den sreabhadh oibre?
+    jobs_workflow_delete_edge: Scrios Imeall
+    jobs_workflow_delete_edge_title: Scrios an imeall roghnaithe (Del/Backspace)
+    jobs_workflow_delete_launcher: Scrios an Tosaitheoir
+    jobs_workflow_delete_launcher_title: Scrios an lainseálaí roghnaithe (Del/Backspace)
+    jobs_workflow_delete_title: Scrios an sreabhadh oibre %{name}
+    jobs_workflow_deleted: Scriosadh an sreabhadh oibre go rathúil!
+    jobs_workflow_description_placeholder: Cur síos ar an sreabhadh oibre
+    jobs_workflow_edit_settings: Athraigh socruithe don sreabhadh oibre %{name}
+    jobs_workflow_editing: 'Ag eagarthóireacht: %{name}'
+    jobs_workflow_enable_sync_key: Cumasaigh OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Theip ar an sreabhadh oibre le hearráid %{error}
+    jobs_workflow_help: Cliceáil an teideal le roghnú agus tarraing. Ceangail trí chliceáil ar dhá lainseálaí agus 'Ceangail Lainseálaithe' roghnaithe.
+    jobs_workflow_manifest_updated: Tá an sreabh oibre nuashonraithe!
+    jobs_workflow_missing_launchers: roghnaigh %{count} ar a laghad
+    jobs_workflow_name_placeholder: Ainm an tsreafa oibre
+    jobs_workflow_name_validation: Ní fhéadfaidh ach litreacha, digití, fleascáin, fo-línte agus spásanna a bheith in ainm an tsreafa oibre
+    jobs_workflow_not_found: Ní féidir an sreabhadh oibre %{workflow_id} a aimsiú
+    jobs_workflow_pick_launchers: Roghnaigh Lainseálaithe
+    jobs_workflow_show_graph: Oscail an sreabhadh oibre %{name} san eagarthóir graif
+    jobs_workflow_submitted: Sreabhadh oibre curtha isteach go rathúil!
+    jobs_workflow_sync_key_help: Nuair a bhíonn sé cumasaithe, faigheann gach lainseálaí sa sreabhadh oibre seo an athróg chomhshaoil <code>OOD_WORKFLOW_SYNC_KEY</code> céanna (comhartha randamach atá uathúil do gach rith sreabhadh oibre). Úsáideach chun ainmneacha comhad sioncrónaithe, comhaid ghlasála, nó aitheantóirí comhroinnte a ghiniúint trasna poist spleácha.
+    jobs_workflow_synchronization: Sioncrónú
+    jobs_workflow_toolbar_aria: barra uirlisí
+    jobs_workflow_zoom_controls: Rialuithe súmála
+    jobs_workflow_zoom_in: Zúmáil isteach
+    jobs_workflow_zoom_out: Zúmáil amach
+    jobs_workflow_zoom_reset: Athshocraigh súmáil
+    jobs_workflows: Sreafaí oibre
+    jobs_workflows_not_supported: Ní thacaíonn an sceidealóir cumraithe le sreafaí oibre.
+    js:
+      active_jobs:
+        delete_aria: Scrios an post %{name} leis an ID %{id}
+        delete_confirm: An bhfuil tú cinnte gur mian leat %{name} - %{id} a scriosadh?
+        delete_title: Scrios an Post
+        details_loaded: Luchtaíodh liosta sonraí poist.
+        load_details_failed: Theip ar shonraí an phoist a lódáil.
+        remote_server_error: Tharla earráid agus sonraí á bhfáil ón bhfreastalaí cianda.
+        request_failed_parse: Theip ar iarratas ar phoist mar gheall ar earráid parsála coirp.
+        request_failed_status: 'Theip ar iarratas ar phoist leis an gcód stádais: %{status}'
+        status_completed: Críochnaithe
+        status_hold: Coinnigh
+        status_queued: Sa scuaine
+        status_running: Rith
+        status_suspended: Ar fionraí
+        status_undetermined: Gan chinneadh
+        support_ticket_aria: Cuir ticéad tacaíochta isteach don phost leis an ID %{id}
+        support_ticket_title: Cuir Ticéad Tacaíochta Isteach
+        toggle_details_aria: Infheictheacht poist %{name} a scoránaigh ar %{cluster}
+      batch_connect:
+        allow_notifications: Lig ceadanna fógraí i do bhrabhsálaí le foláirimh seisiúin a chumasú.
+        invalid_prefill_value_html: 'Luach neamhbhailí: "%{value}" don réimse "%{field}".<br>'
+        notification_permission_error: 'Earráid ag iarraidh cead fógra:'
+        resolution_reset: Athshocraíodh an taifeach go %{width} faoi %{height} picteilín.
+        session_expires_warning: 'Rabhadh: Rachaidh %{title} (%{job_id}) in éag i gceann ~%{minutes} nóiméad!'
+        session_status_aria: Is é %{title} %{status} anois.
+        session_status_push: Is é %{title} (%{job_id}) anois %{status}.
+      common:
+        cancel: Cealaigh
+        close: Dún
+        error: Earráid
+        loading: Ag lódáil...
+        ok: Ceart go leor
+      datatables:
+        all: Gach
+        filter_label: 'Scagaire:'
+        invalid_date: Dáta Neamhbhailí
+        rows_selected:
+          one: '%{count} ró roghnaithe'
+          other: '%{count} sraitheanna roghnaithe'
+        showing_filtered_rows: Ag taispeáint %{display} de %{total} sraitheanna
+        showing_rows: Ag taispeáint sraitheanna %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: agus
+        changed_help: Athraíodh an téacs cabhrach ar %{widget} go %{help}
+        changed_label: Athraíodh lipéad ar %{widget} go lipéad nua %{label}
+        current_value: socraigh an luach reatha go %{value}
+        hid_item: Mír fhoirme i bhfolach %{widget}
+        maximum_limit: uasteorainn go %{value}
+        minimum_limit: teorainn íosta go %{value}
+        option_disabled: Rogha %{value} díchumasaithe do %{widget}
+        option_enabled: Rogha %{value} cumasaithe le haghaidh %{widget}
+        revealed_item: Mír foirme nochtaithe %{widget}
+        selected_option_disabled: Rogha roghnaithe %{value} díchumasaithe do %{widget}
+        set_limits: Socraigh %{details} do %{widget}
+        set_value: Socraigh %{widget} go luach %{value}
+        widget_no_label: '%{type} gan lipéad'
+        widget_with_label: '%{type} leis an lipéad %{label}'
+      editor:
+        save_error: 'Tharla earráid agus iarracht á déanamh an comhad seo a shábháil!
+
+          %{error}'
+        unsaved_changes: Tá athruithe neamhshábháilte agat!
+      files:
+        action_delete: Scrios
+        action_download: Íoslódáil
+        action_edit: Cuir in Eagar
+        action_rename: Athainmnigh
+        action_view: Amharc
+        actions: Gníomhartha
+        cannot_navigate_file: Ní féidir nascleanúint a dhéanamh chuig comhad.
+        change_directory: Athraigh Eolaire
+        clipboard_description_html: 'Cóipeáil nó bog na comhaid thíos ó <code>%{from}</code> go dtí an eolaire reatha:'
+        contents_of_directory: Ábhar an eolaire %{path}
+        copied_path: Cosán cóipeáilte chuig an ghearrthaisce!
+        copy: Cóipeáil
+        create_directory_error: 'Tharla earráid agus iarracht á déanamh eolaire nua a chruthú: %{error}'
+        create_file_error: 'Tharla earráid agus iarracht á déanamh comhad nua a chruthú: %{error}'
+        delete_confirm_text: 'An bhfuil tú cinnte gur mian leat na comhaid seo a scriosadh: %{files}'
+        delete_multiple_title: Scrios %{count} comhaid roghnaithe?
+        delete_single_title: Scrios %{name}?
+        deleting_files: 'Ag scriosadh comhad...:'
+        directory: eolaire
+        directory_name_label: Ainm an eolaire
+        download_error: 'Earráid agus í á híoslódáil: %{error}'
+        duplicate_files_warning: Comhaid dhúblacha aitheanta. Scríobhfar an t-ábhar atá ann cheana má uaslódálfar na comhaid seo.
+        file: comhad
+        filename_invalid_chars: Ní féidir / nó . a áireamh san ainm comhaid.
+        filename_label: Ainm comhaid
+        globus_open: Oscail an t-eolaire reatha le Globus
+        globus_unavailable: Níl aon chríochphointe Globus bainteach leis an eolaire seo
+        illegal_slash_in_filename: Ní cheadaítear carachtar mídhleathach (/) in ainm comhaid.
+        move: Bog
+        navigated_to: nascleanúint chuig %{path}
+        new_directory_title: Eolaire Nua
+        new_file_title: Comhad Nua
+        path_label: Cosán
+        poll_status_error: B’fhéidir nár tharla an oibríocht. Theip ar stádas oibríochta an chomhaid a aisghabháil.
+        preparing_download_dir: 'ag ullmhú chun an t-eolaire a íoslódáil: %{name}'
+        provide_absolute_pathname: Cuir ainm conair iomlán ar fáil
+        provide_directory_name: Cuir ainm eolaire ar fáil nach bhfuil / ann
+        provide_non_empty_filename: Cuir ainm comhaid nach bhfuil folamh ar fáil.
+        provide_rename_filename: Tabhair ainm comhaid le hathainmniú
+        rename_title: Athainmnigh
+        see_details: Féach sonraí
+        select_row: Roghnaigh sraith
+        select_to_copy_move: Roghnaigh comhad, comhaid, nó eolaire le cóipeáil nó le bogadh. Níl aon cheann roghnaithe agat.
+        select_to_delete: Roghnaigh comhad, comhaid, nó eolaire le scriosadh. Níl aon cheann roghnaithe agat.
+        select_to_download: Roghnaigh comhad, comhaid, nó eolaire le híoslódáil. Níl aon cheann roghnaithe agat.
+        select_to_send: Roghnaigh comhad nó eolaire amháin ar a laghad le seoladh.
+        send_failed: Theip ar fhaisnéis an chomhaid a sheoladh.
+        sent_successfully: Seoladh an fhaisnéis chomhaid roghnaithe go rathúil.
+        show_dotfiles: Taispeáin Dotfiles
+        show_owner_mode: Taispeáin Úinéir/Mód
+        summary_copy_files: cóipeáil comhaid
+        summary_move_files: comhaid a bhogadh
+        summary_remove_files: bain comhaid
+        summary_rename_file: athainmnigh an comhad
+        token_missing_expired: Tá an comhartha feidhmchláir ar iarraidh nó imithe in éag. Tosaigh arís.
+        transfer_error: 'Tharla earráid agus iarracht á déanamh %{summary}: %{error}'
+        upload_and_overwrite: Uaslódáil agus Forscríobh
+        upload_count:
+          one: Uaslódáil comhad %{count}
+          other: Uaslódáil comhaid %{count}
+        upload_new_files: Uaslódáil Comhaid Nua
+        uppy_empty_dir_note: Ní chuirfear eolairí folamha san uaslódáil ach amháin nuair a thosófar uaslódáil eolaire trí tharraingt agus scaoil. Tá sé seo amhlaidh toisc nach bhfuil an File and Directory Entrances API ar fáil ach amháin le linn teagmhas scaoil, ní le linn teagmhas athraithe ionchuir.
+      icon_picker:
+        icon_selected: Deilbhín %{icon} roghnaithe
+        icon_sr: Deilbhín %{name}
+      launcher_edit:
+        account_help: An cuntas a chuirfear an post isteach leis.
+        account_label: Cuntas
+        add_new_option: Cuir rogha nua leis
+        cores_help: Cé mhéad croíleacán a rithfidh an post orthu.
+        cores_label: Croíleacáin
+        env_var_help: Cuir athróg timpeallachta leis.
+        env_var_key: 'Athróg Timpeallachta: %{name}'
+        env_var_label: Athróg Timpeallachta
+        hours_help: Cé chomh fada is féidir leis an bpost leanúint ar aghaidh.
+        hours_label: Uaireanta
+        job_name_help: An t-ainm a bheidh ar an bpost.
+        job_name_label: Ainm an Phoist
+        log_location_help: Ceann scríbe aschur loga an phoist.
+        log_location_label: Suíomh Logála
+        no_more_options: Gan aon roghanna eile
+        nodes_help: Cé mhéad nód a rithfidh an post orthu.
+        nodes_label: Nóid
+        queues_help: Cén scuaine a chuirfidh an post isteach freisin.
+        queues_label: Scuainí
+      module_browser:
+        copied: Cóipeáilte!
+        copy: Cóipeáil
+        showing_results:
+          one: Ag taispeáint toradh %{count}
+          other: Ag taispeáint torthaí %{count}
+      nsf_access:
+        affected_resources: 'Acmhainní a ndearnadh difear dóibh: %{resources}'
+        read_more: Léigh tuilleadh
+        register_event: Cláraigh don ócáid seo
+      path_selector:
+        directory_loaded: Eolaire luchtaithe le míreanna %{count}
+        invalid_regex: Níor tiomsaíodh an gnáthléiriú a cuireadh ar fáil don roghnóir cosáin seo
+        loading_directory: Ag luchtú ábhar an eolaire
+        permission_denied_prefix: 'Cead diúltaithe:'
+      popovers:
+        ihpc_content: Tugann seisiún HPC Idirghníomhach rochtain tiomnaithe duit ar nód amháin nó níos mó ar an mbraisle. Tá sé seo cosúil le seisiún baisce idirghníomhach le deasc inrochtana ar an bpríomhnód. Bain úsáid as seo le haghaidh poist throma amhail tascanna ríomhaireachta fada nó nuair is gá acmhainní tiomnaithe duit.
+        vdi_content: Tugann VDI (Comhéadan Deisce Fíorúil) rochtain deisce duit ar nód comhroinnte. Is é seo an leagan grafach de nód logála isteach. Bain úsáid as seo le haghaidh tascanna éadroma amhail rochtain a fháil ar chomhaid agus iad a fheiceáil, poist a chur isteach, agus le haghaidh léirshamhluithe.
+      products:
+        fatal_error: Tharla earráid mharfach
+        no_action: gan aon ghníomh
+      projects:
+        undetermined_size: Méid Neamhchinnte
+      support_ticket:
+        delete_attachment: Scrios an ceangaltán
+        no_file_selected: Níl aon chomhad roghnaithe
+        selected_file: 'Comhad roghnaithe: %{name} (%{size}).'
+        size_bytes: '%{size}beart'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Ní féidir an leathanach seo a nuashonrú mar níl tú fíordheimhnithe a thuilleadh. Athnuachan an leathanach le logáil isteach arís.
+        unexpected_error: Tharla earráid gan choinne ar an leathanach seo. Athnuachan an leathanach le do thoil.
+      utils:
+        loading: Ag luchtú.
+        loading_complete: Ag luchtú críochnaithe.
+        popup_blocked: Tá an nasc seo cumraithe le hoscailt i bhfuinneog nua, ach ní cosúil gur osclaíodh é. Díchumasaigh do bhacadóir fuinneoga aníos don leathanach seo agus déan iarracht arís.
+      workflows:
+        begin_from_launcher: Tosaigh an sreabhadh oibre ón lainseálaí %{title}
+        bidirectional_not_allowed: Ní cheadaítear imill dhéthreocha.
+        cyclic_dependency: Cruthóidh cur leis an imeall seo spleáchas timthriallach i measc na lainseálaithe.
+        edge_aria_label: Imeall ó %{from} go %{to}
+        launcher_aria_label: 'Tosaitheoir: %{title}'
+        launcher_exists: Tá an lainseálaí ann cheana féin, roghnaigh lainseálaí difriúil le do thoil.
+        load_launcher_failed: Theip ar HTML an lainseálaí a luchtú. Déan iarracht arís.
+        no_empty_cells: Níl aon chealla eangaí folamh ar fáil!
+        save_failed: Theip ar an sreabhadh oibre a shábháil. Seiceáil an consól le haghaidh sonraí.
+        select_launcher: Roghnaigh lainseálaí le do thoil
+      xdmod:
+        analytics_toggle: Toggle Analytics
+        column_date: Dáta
+        column_id: Aitheantas
+        column_name: Ainm
+        date_range: '%{from} go %{to}'
+        efficiency_report: Tuarascáil Éifeachtúlachta %{unit}
+        ensure_logged_in_html: '%{error} Cinntigh go bhfuil tú <a href="%{url}">logáilte isteach in Oscail XDMoD ar dtús</a>, agus ansin déan iarracht arís.'
+        expand_analytics_title: Cliceáil chun faisnéis anailísíochta ar phost %{id} a leathnú os cionn an tábla seo.
+        fetch_user_failed: Theip ar an iarracht eolas an úsáideora reatha a fháil ó Open XDMoD
+        idp_redirect_failed: 'Theip ar logáil isteach: Theip ar atreorú IDP'
+        iframe_error: Chuir iFrame Logála Isteach XDMoD ag URL %{url} teachtaireacht earráide leis an eolas %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} neamhéifeachtach %{unit} </span> ⁄ %{total} iomlán %{unit}
+        invalid_job_data: Tá sonraí poist a seoladh ar ais leis an iarratas neamhbhailí.
+        loading_caps: AG LÓDÁIL...
+        login_page_load_failed: 'Theip ar logáil isteach: Theip ar leathanach logála isteach XDMoD a lódáil'
+        login_timeout: 'Theip ar an logáil isteach: Am críochnaithe ag fanacht leis an logáil isteach'
+        metric_cpu: LAP
+        metric_mem: Cuimhne
+        metric_walltime: Balla-am
+        no_data: Níl aon sonraí ar fáil.
+        not_available: N/B
+        open_xdmod: Oscail XDMoD
+        percent_efficient: '%{percent}% éifeachtach'
+        percent_efficient_aria: céatadán éifeachtach
+        percent_inefficient: '%{percent}% neamhéifeachtach'
+        percent_inefficient_aria: céatadán neamhéifeachtúil
+        recently_completed_jobs: Poist a Críochnaíodh le Déanaí
+        unit_core_hours: uaireanta lárnacha
+        unit_core_hours_title: Uaireanta Croí
+        unit_jobs: poist
+        unit_jobs_title: Poist
+    launch: Seoladh
+    load_report: Luchtaigh Tuarascáil + %{node}
+    loading: Ag lódáil...
+    loading_short: Ag luchtú
+    locale_name: Gaeilge (Éire)
+    logo_alt_text: Fáilte go Oscailte Ar Éileamh
+    logout_body_html: <strong>Ní mór duit do bhrabhsálaí a scor go hiomlán</strong> chun go dtarlóidh "logáil amach". Má tá tú fós logáilte isteach tar éis duit do bhrabhsálaí a athoscailt, glan do chuid fianán le do thoil. Má tá tú ar Chromebook nó Chromebox, beidh ort do ghléas a atosú chun "an brabhsálaí a scor" agus dá bhrí sin "logáil amach".
+    logout_tip_html: '<strong>Leid: Is bealach iontach é fuinneog "mód brabhsála príobháideach"</strong> a úsáid agus OnDemand in úsáid agat chun déileáil le "logáil amach uathoibríoch", mar go mbainfear na fianáin agus an fhaisnéis seisiúin go léir a bhaineann leis nuair a dhúnann tú fuinneog do bhrabhsálaí.'
+    logout_title: Níl tú logáilte amach fós
+    maximum: Uasmhéid
+    mem_report: Tuarascáil Cuimhne + %{node}
+    minimum: Íosmhéid
+    mode: Mód
+    module_browser_available_modules: 'Modúil atá ar fáil:'
+    module_browser_copy_aria: Cóipeáil an t-ordú lódála le haghaidh %{name}
+    module_browser_dependencies: 'Spleáchais:'
+    module_browser_last_updated: 'Nuashonraithe go deireanach: %{last_updated}'
+    module_browser_load_command: 'Ordú luchtaithe:'
+    module_browser_search_label: Modúil Chuardaigh
+    module_browser_search_placeholder: Cuardaigh de réir ainm an mhodúil...
+    module_browser_select_version: (roghnaigh leagan)
+    module_browser_showing_results: Ag taispeáint torthaí %{count}
+    module_browser_title: Brabhsálaí Modúl
+    module_browser_versions: Leaganacha
+    motd_default_md: 'Tacaítear le forbairt Open OnDemand tríd an [Fondúireacht Náisiúnta Eolaíochta](https://www.nsf.gov/)
+
+      faoi uimhreacha deontais [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) agus
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Faigh tuilleadh eolais nó bí páirteach:
+
+
+      - [Dioscúrsa](https://discourse.openondemand.org/)
+
+      - [Stórlann Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [stórlann ood-core](https://github.com/OSC/ood_core)
+
+      - [Doiciméadú](https://osc.github.io/ood-documentation/latest/)
+
+
+      '
+    motd_erb_render_error: 'Níor parsáladh ná níor rindreáladh MOTD i gceart: %{error_message}'
+    motd_no_messages: Níl aon teachtaireachtaí nua ann.
+    motd_title: Teachtaireacht an Lae
+    name: Ainm
+    nav_all_apps: Gach Aip
+    nav_develop_docs: Doiciméadacht Forbróra
+    nav_develop_my_sandbox_apps_dev: Mo Aipeanna Bosca Gainimh (Forbairt)
+    nav_develop_my_sandbox_apps_prod: Mo Aipeanna Comhroinnte (Léiriúchán)
+    nav_develop_title: Forbair
+    nav_help_change_password: Athraigh Pasfhocal HPC
+    nav_help_custom: Cabhair nascleanúna saincheaptha
+    nav_help_docs: Doiciméadú Ar Líne
+    nav_help_support: Déan Teagmháil leis an Tacaíocht
+    nav_help_support_ticket: Cuir Ticéad Tacaíochta Isteach
+    nav_help_title: Cabhair
+    nav_help_two_factor: Cumraigh Fíordheimhniú Dhá Fhachtóir
+    nav_language: Teanga
+    nav_limit_caption: ag taispeáint %{subset_count} de %{total_count}
+    nav_logout: Logáil Amach
+    nav_main_menu: Príomh-Roghchlár
+    nav_restart_server: Atosaigh an Freastalaí Gréasáin
+    nav_sessions: Mo Sheisiúin Idirghníomhacha
+    nav_toggle_navigation: Nascleanúint a scoránaigh
+    nav_user: Logáilte isteach mar %{username}
+    network_report: Tuarascáil Líonra + %{node}
+    node: Nód
+    none: Dada
+    not_grouped: Aipeanna Eile
+    nsf_access_announcements: Fógraí NSF ACCESS
+    nsf_access_events: Imeachtaí NSF ACCESS
+    nsf_access_outages: Briseadh ROCHTAIN NSF
+    ok: Ceart go leor
+    opens_in_new_tab: osclaítear i gcluaisín nua
+    output_location: 'Suíomh Aschuir:'
+    owner: Úinéir
+    page_actions_aria: Gníomhartha leathanaigh
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Paraiméadair
+    path_selector_breadcrumb_aria: '%{title} Brúiteán Aráin'
+    path_selector_caption: Roghnaigh comhad nó eolaire le húsáid san fhoirm.
+    path_selector_default_popup_title: Roghnaigh d'Eolaire Oibre
+    path_selector_home: baile
+    path_selector_parent_directory: eolaire tuismitheora
+    permissions_created: Cruthaíodh an cead go rathúil.
+    permissions_destroyed: Scriosadh an cead go rathúil.
+    permissions_group_title: Ceadanna Grúpa
+    permissions_user_title: Ceadanna Úsáideora
+    pinned_apps_caption_html: Fo-thacar le feiceáil de <a href="%{all_apps_url}">gach feidhmchlár atá ar fáil</a>
+    pinned_apps_category: Aipeanna
+    pinned_apps_title: Aipeanna bioráilte
+    products_created: Cruthaíodh an táirge go rathúil.
+    products_git_commit_hint_html: Déan aon athruithe nó cuir comhaid riachtanacha le <code>.gitignore</code>
+    products_git_staged: Ar stáitse
+    products_git_status: Stádas Git
+    products_git_unstaged: Gan stáitse
+    products_git_untracked: Gan Rianú
+    products_manifest_save_error: Ní féidir maniféis an aip a shábháil chuig %{path}
+    products_ssh_key_created: Cruthaíodh eochair SSH go rathúil.
+    products_ssh_key_exists: Tá eochair SSH ann cheana féin
+    products_ssh_key_failed: 'Theip ar chruthú eochair SSH: %{error}'
+    products_type_batch_connect: Aip Ceangail Baisc
+    products_type_passenger: Aip Paisinéirí
+    products_type_passenger_meteor: Aip Meitéar Paisinéirí
+    products_type_passenger_node: Aip Nóid Paisinéirí
+    products_type_passenger_rack: Aip Raic Paisinéirí
+    products_type_passenger_rails: Aip Iarnróid Paisinéirí
+    products_type_passenger_rails_sqlite: Aip Iarnróid Paisinéirí le bunachar sonraí SQLite
+    products_type_passenger_wsgi: Aip WSGI Paisinéirí
+    products_updated: Nuashonraíodh an táirge go rathúil.
+    project: Tionscadal
+    project_balances: Iarmhéideanna Tionscadail
+    project_directory: Eolaire Tionscadail
+    project_zip_error_message: 'Earráid ag cruthú comhad ZIP: %{error}'
+    project_zip_success_message: 'Rath: cruthaíodh project.zip i d''eolaire tionscadail.'
+    queue: Scuaine
+    quota_additional_message: Smaoinigh ar chomhaid a scriosadh nó a chartlannú chun spás diosca a shaoradh.
+    quota_block: Ag baint úsáide as %{used} den chuóta %{available}
+    quota_block_shared: (Is leatsa %{used_exclusive})
+    quota_file: Ag baint úsáide as comhaid %{used} de chuóta comhaid %{available}
+    quota_file_shared: (Is leatsa na comhaid %{used_exclusive})
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Athlódáil an leathanach chun an cuóta nuashonraithe a fheiceáil. Nuashonraítear cuótaí gach 5 nóiméad.
+    quota_warning_prefix_html: Rabhadh maidir le teorainn cuóta do
+    recently_used_apps_title: Aipeanna a Úsáideadh Le Déanaí
+    remove: Bain
+    reset: Athshocraigh
+    restart_msg_html: 'Tá athrú tagtha ar bhallraíocht do ghrúpa, rud a théann i bhfeidhm ar do rochtain ar aipeanna. Ba chóir do phainéal rialaithe atosú go huathoibríoch.
+
+      Mura dteastaíonn, cliceáil: <a href="%{restart_url}">atosaigh an freastalaí gréasáin</a>.'
+    restore: Athchóirigh
+    root: Fréamh
+    save: Sábháil
+    saved_settings_title: Socruithe Sábháilte
+    select: Roghnaigh
+    select_all: Roghnaigh Uile
+    select_path: Roghnaigh Cosán
+    select_path_for: '%{element} roghnaigh cosán'
+    settings_csrf_expired: Chuaigh do chomhartha slándála seisiúin in éag. Déan iarracht arís.
+    settings_invalid_request: Socruithe neamhbhailí curtha isteach
+    settings_unprocessable_body_html: B’fhéidir go bhfuil do sheisiún imithe in éag nó gur diúltaíodh don athrú a bhí uait. <a href="%{dashboard_url}">Téigh ar ais chuig an Painéal</a> agus déan iarracht arís.
+    settings_unprocessable_title: Seisiún imithe in éag nó athrú diúltaithe
+    settings_updated: Socruithe nuashonraithe
+    shared_apps_caption: Roinnte ag %{owner_title} (%{owner})
+    shared_apps_caption_short: Roinnte ag %{owner}
+    shared_apps_title: Aipeanna Comhroinnte
+    sharing_catalog_msg_html: <br>Is féidir fo-thacar de na haipeanna atá ar fáil a fheiceáil ar an %{catalog_link_tag}.
+    sharing_catalog_title: Catalóg Aipeanna
+    sharing_no_shared_apps_html: <strong>Níl aon aipeanna comhroinnte saincheaptha ar fáil.</strong>
+    sharing_support_msg_html: Mura bhfeiceann tú an aip atá uait, déan teagmháil le tacaíocht<a href="%{support_url}">.
+    sharing_welcome_msg_html: 'Tá feidhmchláir rochtana braisle ar fáil ó na roghchláir anuas sa bharra nascleanúna thuas.
+
+
+      <br>Tá feidhmchláir chomhroinnte saincheaptha ar fáil thíos.
+
+
+      '
+    shell: Sliogán
+    shell_app_title: '%{cluster_title} Rochtain Bhlaosc'
+    show: Taispeáin
+    size: Méid
+    skip_navigation: Léim an Nascleanúint
+    smart_attributes:
+      account: Cuntas
+      auto_modules_none: Modúil uathoibríocha (níl aon cheann tugtha)
+      cluster: Braisle
+      cores: Croíleacáin
+      email_on_started: Ba mhaith liom ríomhphost a fháil nuair a thosaíonn an seisiún
+      environment_variable: Athróg Timpeallachta
+      environment_variable_key: 'Athróg Timpeallachta: %{key}'
+      job_name: Ainm an Phoist
+      module_version: Leagan %{module}
+      num_cpus_single_node: Líon na LAPanna ar nód aonair
+      num_hours: Líon na n-uaireanta
+      num_nodes: Líon na nóid
+      num_processors: Líon na bpróiseálaithe
+      partition: Deighilt
+      qos: QoS
+      queue: Scuaine
+      script: Script
+      vnc_idle_help: 'Scoir má théann # soicind thart gan aon nasc breathnóra VNC'
+      vnc_idle_label: Sos ama díomhaoin
+      vnc_resolution_help: Ní úsáidtear réiteach ach le naisc dúchasacha VNC
+      vnc_resolution_label: Rún
+    soft_tabs: Cluaisíní Boga
+    soft_tabs_info: Is spásanna sa chomhad iad tabanna boga seachas carachtair tab iarbhír.
+    status: Stádas
+    status_completed: Críochnaithe
+    status_held: Ar siúl
+    status_hold: Coinnigh
+    status_queued: Sa scuaine
+    status_running: Rith
+    status_starting: Ag tosú
+    status_suspend: Cuir ar fionraí
+    status_suspended: Ar fionraí
+    status_undetermined: Gan chinneadh
+    stop: Stop
+    submit: Cuir isteach
+    submit_args: 'Cuir Argóintí isteach:'
+    support_ticket:
+      creation_success: 'Ríomhphost ticéad tacaíochta seolta chuig: %{to}'
+      fields:
+        attachments: Ceangaltáin
+        cc: CC
+        description: Cur síos
+        email: Ríomhphost
+        job_description: Cur Síos Poist
+        session_description: Cur Síos ar an Seisiún
+        subject: Ábhar
+        username: Ainm úsáideora
+      generic_error: 'Tharla earráid agus d’iarratas á phróiseáil: %{error}'
+      header: Ticéad Tacaíochta
+      rt:
+        creation_success: 'Ticéad tacaíochta cruthaithe i gcóras RequestTracker. Aitheantas an Ticéid: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Ticéad tacaíochta cruthaithe i ServiceNow. Uimhir: %{number}. Ach ní féidir na ceangaltáin a chur leis.'
+        creation_success: 'Ticéad tacaíochta cruthaithe i ServiceNow. Uimhir: %{number}'
+      submit: Cuir ticéad tacaíochta isteach
+      title: Ticéad Tacaíochta
+      validation:
+        attachments_items: Tá na %{id} neamhbhailí. Cuireadh %{items} leis, is é %{max} an líon uasta ceangaltán.
+        attachments_size: Tá na %{id} neamhbhailí. Is é %{max} an méid uasta ceangaltáin.
+        email: Tá an fhormáid %{id} neamhbhailí. Bhíothas ag súil le seoladh ríomhphoist bailí.
+        items:
+          attachments_js: Ní cheadaítear a thuilleadh ceangaltán
+        required: Tá an %{id} riachtanach
+        size:
+          attachments_js: Is é %{max} an méid uasta ceangaltáin. Is é %{size} an méid comhaid roghnaithe.
+      validation_error: Iarratas neamhbhailí. Féach ar na teachtaireachtaí earráide thíos le do thoil.
+    support_ticket_add_attachment: Cuir ceangaltán leis
+    support_ticket_attachments_help: Cliceáil an bosca chun comhad a cheangal. Is féidir le scáileáin nó comhaid eile cabhrú le do fhadhb a réiteach.
+    system_apps_caption: Aip Suiteáilte ag an gCóras
+    system_status_available: '%{name} Ar fáil: %{count}'
+    system_status_cluster_title: Stádas an Bhraisle %{title}
+    system_status_gpus: GPUanna
+    system_status_in_use: '%{percent} in úsáid'
+    system_status_jobs_queued: Poist i gCiú
+    system_status_jobs_queued_count: '%{count} Poist i gCiú'
+    system_status_jobs_running: Poist atá ar siúl
+    system_status_jobs_running_count: '%{count} Poist ag Rith'
+    system_status_nodes: Nóid
+    system_status_not_slurm: Níl faisnéis faoi bhraislí ar fáil le %{scheduler}. Faoi láthair, ní thacaítear ach le braislí Slurm.
+    system_status_processors: Próiseálaithe
+    toggle_notifications: Fógraí a scoránaigh
+    toggle_push_notifications: Fógraí brú a scoránaigh
+    type: Cineál
+    undefined_title: Teideal Gan Sainmhíniú
+    unknown: Anaithnid
+    uppy:
+      strings:
+        addMore: Cuir níos mó leis
+        addMoreFiles: Cuir níos mó comhad leis
+        addingMoreFiles: Tuilleadh comhad á chur leis
+        back: Ar ais
+        browseFiles: brabhsáil comhaid
+        browseFolders: brabhsáil fillteáin
+        cancel: Cealaigh
+        cancelUpload: Cealaigh an uaslódáil
+        closeModal: Dún Módúil
+        complete: Críochnaithe
+        dashboardTitle: Uaslódálaí Comhad
+        dashboardWindowTitle: Fuinneog Uaslódálaí Comhad (Brúigh Escape le dúnadh)
+        done: Déanta
+        dropHint: Scaoil do chuid comhad anseo
+        dropPasteBoth: Scaoil comhaid anseo, %{browseFiles} nó %{browseFolders}
+        dropPasteFiles: Scaoil comhaid anseo nó %{browseFiles}
+        dropPasteFolders: Scaoil comhaid anseo nó %{browseFolders}
+        editFile: Cuir comhad in eagar
+        editing: Ag eagarthóireacht %{file}
+        emptyFolderAdded: Níor cuireadh aon chomhaid leis ó fhillteán folamh
+        error: Earráid
+        exceedsSize: Sáraíonn %{file} an uasmhéid ceadaithe de %{size}
+        failedToUpload: Theip ar %{file} a uaslódáil
+        folderAlreadyAdded: Cuireadh an fillteán "%{folder}" leis cheana féin
+        myDevice: Mo Ghléas
+        noDuplicates: Ní féidir an comhad dúblach '%{fileName}' a chur leis, tá sé ann cheana féin
+        pause: Sos
+        pauseUpload: Cuir sos ar an uaslódáil
+        paused: Sosaithe
+        removeFile: Bain comhad
+        resume: Atosú
+        resumeUpload: atosú uaslódáil
+        retry: Déan iarracht eile
+        retryUpload: Déan iarracht arís uaslódáil
+        save: Sábháil
+        saveChanges: Sábháil athruithe
+        showErrorDetails: Taispeáin sonraí na hearráide
+        upload: Uaslódáil
+        uploadComplete: Uaslódáil críochnaithe
+        uploadFailed: Theip ar an uaslódáil
+        uploadPaused: Uaslódáil curtha ar sos
+        uploading: Ag uaslódáil
+        xTimeLeft: '%{time} fágtha'
+    user: Úsáideoir
+    user_configuration:
+      support_ticket_error: Tá support_ticket míchumraithe. Cuir cur i bhfeidhm cúil leis an chumraíocht YAML le do thoil.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">Soláthraíonn OnDemand pointe rochtana comhtháite aonair do do chuid acmhainní ríomhaireachta ardfheidhmíochta go léir.</p>
+
+      '

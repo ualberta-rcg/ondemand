@@ -1,0 +1,18 @@
+{
+  "page_title": "Héj - %{siteTitle}",
+  "menu_aria": "Héj menü",
+  "host_label": "Gazdagép: %{host}",
+  "initial_directory": "Kezdőkönyvtár: %{dir}",
+  "themes_label": "Témák:",
+  "theme_default": "Alapértelmezett",
+  "theme_bright": "Fényes",
+  "theme_dark": "Sötét",
+  "fonts_label": "Betűtípusok:",
+  "leave_page_warning": "Az oldal elhagyásával megszakítja a terminál munkamenetét.",
+  "websocket_failed": "Nem sikerült websocket kapcsolatot létrehozni. Győződjön meg arról, hogy olyan böngészőt használ, amely támogatja a websocket kapcsolatokat.",
+  "connection_terminated": "A távoli szerverrel való kapcsolatod megszakadt.",
+  "auth_no_clusters": "Nincsenek definiált klaszterek.",
+  "auth_invalid_origin": "Érvénytelen eredet.",
+  "auth_bad_csrf": "Hibás CSRF token.",
+  "auth_host_not_allowed": "A(z) „%{host}” gazdagép nincs megadva az engedélyezőlistában vagy a fürt konfigurációjában."
+}

@@ -177,6 +177,11 @@ function supportedLocales(catalogs = CATALOGS) {
       ? ondemandCfg.supported_locales
       : [];
 
+  if (rawList.some((s) => ['regional', 'all_regional'].includes(String(s).trim().toLowerCase()))) {
+    const regional = allowed.filter((loc) => loc.includes('-') && loc.toLowerCase() !== 'en');
+    if (regional.length > 0) return regional;
+  }
+
   const normalized = Array.from(
     new Set(rawList.map((entry) => normalizeLocale(entry, allowed)).filter(Boolean))
   );

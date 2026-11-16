@@ -1,0 +1,14 @@
+---
+es-ES:
+  manifest:
+    name: De oficina
+    description: Esta aplicación iniciará un escritorio interactivo en uno o más nodos de computación. Tendrás acceso completo a los recursos que estos nodos proporcionan. Esto es similar a un trabajo por lotes interactivo.
+  form:
+    attributes:
+      desktop:
+        label: Entorno de escritorio
+        options:
+          gnome: GNOMO
+          kde: KDE
+          mate: COMPAÑERO
+          xfce: Xfce

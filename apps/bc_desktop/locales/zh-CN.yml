@@ -1,0 +1,23 @@
+---
+zh-CN:
+  manifest:
+    name: 桌面
+    description: '此应用程序将在一个或多个计算节点上启动交互式桌面。
+
+
+      您将拥有对这些节点提供的资源的完全访问权限。这类似于
+
+
+      交互式批处理作业。
+
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: 桌面环境
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: 伴侣
+          xfce: Xfce

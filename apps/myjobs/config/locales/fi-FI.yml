@@ -1,0 +1,131 @@
+---
+fi-FI:
+  jobcomposer:
+    account_label: 'Tili:'
+    back: Takaisin
+    cancel: Peruuttaa
+    close: Lähellä
+    cluster_label: 'Klusteri:'
+    confirm_delete: Oletko varma?
+    confirm_delete_template: Oletko varma, että haluat poistaa tämän?
+    copy_template: Kopioi mallipohja
+    create_from_path_title: Luo uusi työ polusta
+    create_new_heading_html: Luo uusi "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Luo uusi työpaikka
+    create_template: Luo mallipohja
+    create_template_from_job_title: Luo malli valitusta työstä
+    delete: Poistaa
+    delete_job_title: Poista työ
+    deprecation_warning_html: Työtehtävien muokkaustoiminto on vanhentunut ja se poistetaan Open OnDemand 5.0:ssa. Siirrä työsi ja mallipohjasi <a href="%{projects_path}">Project Manager</a> -projektiin.
+    edit: Muokata
+    edit_files: Muokkaa tiedostoja
+    folder_contents_label: 'Kansion sisältö:'
+    from_default_template: Oletusmallista
+    from_default_template_title: Luo uusi työ oletusmallista
+    from_selected_job: Valitusta työstä
+    from_selected_job_title: Kopioi valittu työ
+    from_specified_path: Määritetystä polusta
+    from_template: Mallipohjasta
+    from_template_title: Luo uusi työ valitsemastasi mallista
+    invalid_cluster_html: Klusteri ei ole kelvollinen! Muokkaa <a href="#" id="edit-job-options-script-link">Job Options</a> valitaksesi kelvollisen klusterin.
+    invalid_script_html: Skripti ei ole kelvollinen! Muokkaa <a href="#" id="edit-job-options-link">Job Options</a> valitaksesi kelvollisen skriptin.
+    job_already_submitted: Työ on jo lähetetty.
+    job_array_request_label: 'Työryhmän pyyntö:'
+    job_attributes_heading_html: Työominaisuudet <strong>(Valinnainen)</strong>
+    job_copied: Työ kopioitiin onnistuneesti.
+    job_copy_failed: 'Työn kopiointi epäonnistui: %{errors}'
+    job_created: Työ luotiin onnistuneesti.
+    job_destroy_failed: 'Työn tuhoaminen epäonnistui: %{errors}'
+    job_destroyed: Työpaikka tuhottiin onnistuneesti.
+    job_details: Työn tiedot
+    job_directory_missing: Työpaikkailmoitus puuttuu!
+    job_name_label: 'Työnimike:'
+    job_not_submitted: Työtehtävää ei ole lähetetty.
+    job_stop_failed: 'Työn pysäyttäminen epäonnistui: %{errors}'
+    job_stopped: Työ keskeytettiin onnistuneesti.
+    job_submit_failed: 'Erätyön lähettäminen epäonnistui:'
+    job_submitted: Työ lähetettiin onnistuneesti.
+    job_updated: Työtehtävä päivitettiin onnistuneesti.
+    loading: Ladataan
+    loading_job_info: Työtietojen lataaminen
+    nav_help: Auttaa
+    nav_jobs: Työpaikat
+    nav_menu_aria: Työn kirjoitusvalikko
+    nav_templates: Mallit
+    new_job: Uusi työpaikka
+    new_template: Uusi mallipohja
+    new_template_title: Luo uusi mallipohja
+    no_clusters_alert: Ei ole määritettyjä isäntiä, jotka sallivat töiden lähettämisen. Ota yhteyttä järjestelmänvalvojaan.
+    open_dir: Avoin hakemisto
+    open_dir_in_editor: Avaa hakemisto tiedostoeditorissa
+    open_dir_in_file_manager: Avaa hakemisto tiedostonhallinnassa
+    open_dir_in_terminal: Avaa hakemisto Päätteessä
+    open_editor: Avaa editori
+    open_selected_job_in_terminal: Avaa valittu työ päätteessä
+    open_selected_template_in_terminal: Avaa valittu mallipohja päätteessä
+    open_template_dir_in_file_manager: Avaa mallipohjahakemisto tiedostonhallinnassa
+    open_terminal: Avaa pääte
+    open_xdmod: Avaa XDMoD
+    options_account_help: Tili on valinnainen kenttä. Jos sitä ei ole määritetty, lähetyssuodatin saattaa asettaa tilin automaattisesti.
+    options_account_title: Tili
+    options_array_help: Työtaulukot ovat valinnaisia. Esim. 1–10
+    options_array_help_with_clusters: 'Työtaulukot ovat valinnaisia. OnDemand ei tällä hetkellä tue työtaulukoita klustereille: %{cluster_list}.'
+    options_array_title: Työryhmän määrittely
+    options_cluster_title: Klusteri
+    options_copy_environment: Kopioi ympäristö
+    options_errors: Korjaa alla olevat virheet.
+    options_name_title: Nimi
+    options_script_help: Yli 65 kt:n kokoisia tiedostoja ei käytetä työskriptikentässä.
+    options_script_title: Määritä työskripti
+    options_title: Työvaihtoehdot
+    other_valid_files: Muut kelvolliset tiedostot
+    page_title: Työn laatija - %{site}
+    path_to_source_heading_html: Lähteen polku <strong>(Pakollinen)</strong>
+    reset: Nollaa
+    reset_template_fields_title: Palauta kentät mallin oletusarvoihin
+    save: Tallentaa
+    script_contents_label: 'Skriptin sisältö:'
+    script_location_label: 'Skriptin sijainti:'
+    script_name_form_label: 'Skriptin nimi:'
+    script_name_label: 'Skriptin nimi:'
+    select_cluster_prompt: Valitse klusteri...
+    select_template_option: -- valitse mallipohja --
+    selected_template_details: Valitun mallin tiedot
+    show: Show
+    show_batch_host_label: 'Eräisäntä:'
+    show_dir_contents_label: 'Hakemiston sisältö:'
+    show_name_label: 'Nimi:'
+    show_staged_dir_label: 'Lavastusohjaaja:'
+    showing_job_title: Näytetään työpaikka
+    skip_navigation: Ohita navigointi
+    source_path_help: Anna tiedostojärjestelmän hakemiston polku. Polun sisältö kopioidaan uuteen työnkulkuun.
+    source_path_label: Lähdepolku
+    specify_job_host_and_script: Määritä työkone ja komentosarja
+    stop: Stop
+    stop_job_title: Lopeta työ
+    submit: Lähetä
+    submit_job_title: Lähetä työ
+    submit_script_title: Lähetä skripti
+    submit_to_label: 'Lähetä osoitteeseen:'
+    suggested_files: Ehdotettu(t) tiedosto(t)
+    table_created: Luotu
+    table_id: Henkilöllisyystodistus
+    table_source: Lähde
+    table_status: Status
+    template_create_error: virhe mallin luomisessa
+    template_error_name_unique: täytyy olla ainutlaatuinen.
+    template_error_path_directory: täytyy osoittaa hakemistoon.
+    template_error_path_missing: ei ole olemassa.
+    template_errors_heading:
+      one: '%{count} virhe esti tämän mallin tallentamisen:'
+      other: '%{count} virheet estivät tämän mallineen tallentamisen:'
+    template_label: 'Mallipohja:'
+    template_location_label: 'Mallipohjan sijainti:'
+    template_path_blank_help: Jos jätät tämän tyhjäksi, uuteen mallipohjaasi lisätään oletusarvoinen työskripti.
+    template_path_label: Polku (malli luodaan kopioimalla tiedostoja tästä lähdepolusta)
+    templates_subtitle: Luodaksesi uuden työtehtävän, valitse kopioitava malli, täytä oikealla oleva lomake ja napsauta "Luo uusi työtehtävä".
+    title: Työn laatija
+    toggle_navigation: Valikko
+    view_files: Näytä tiedostot
+    xdmod_url_warning_message: Tämä työ ei välttämättä näy Open XDMoD:ssa ennen kuin 24 tuntia työn valmistumisen jälkeen.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

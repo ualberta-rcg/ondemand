@@ -1,0 +1,5 @@
+---
+ro-RO:
+  manifest:
+    name: Compositor de locuri de muncă
+    description: Composerul de joburi permite crearea și trimiterea de joburi în lot

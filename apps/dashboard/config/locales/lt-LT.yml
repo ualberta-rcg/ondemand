@@ -1,0 +1,1008 @@
+---
+lt-LT:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute} formatas netinkamas arba jo trūksta'
+        invalid: '%{attribute} yra neteisingas'
+        required: '%{attribute} yra privalomas'
+        used: '%{attribute} jau naudojamas'
+  dashboard:
+    account: Paskyra
+    actions: Veiksmai
+    active_jobs: Aktyvūs darbai
+    active_jobs_close_details: Uždaryti išplėstinės informacijos skydelį.
+    active_jobs_detail:
+      account: Paskyra
+      array_job_id: Masyvo užduoties ID
+      array_task_id: Masyvo užduoties ID
+      cluster: Klasteris
+      cluster_id: Klasterio ID
+      comment: Komentaras
+      cpu_time: CPU laikas
+      cpu_used: Naudojamas procesorius
+      current_working_directory: Dabartinis darbo katalogas
+      end_time: Pabaigos laikas
+      exec_host: Vykdomasis šeimininkas
+      finish_time: Pabaigos laikas
+      from_host: Iš šeimininko
+      gres: GRES
+      group_list: Grupių sąrašas
+      job_account: Darbo paskyra
+      job_checkpoint_attr: Darbo kontrolinio taško attr
+      job_checkpoint_interval: Darbo kontrolinio taško intervalas
+      job_deadline: Darbo terminas
+      job_exec_file: Darbo vykdymo failas
+      job_execution_time: Darbo vykdymo laikas
+      job_gid: Darbo GID
+      job_group: Darbo grupė
+      job_id: Darbo ID
+      job_name: Pareigybės pavadinimas
+      job_priority: Darbo prioritetas
+      job_restart: Darbo iš naujo paleidimas
+      job_script_file: Darbo scenarijaus failas
+      job_script_size: Darbo scenarijaus dydis
+      job_share: Darbo pasidalijimas
+      job_type: Darbo tipas
+      job_uid: Darbo UID
+      job_verify: Darbo patikrinimas
+      job_version: Darbo versija
+      mem: Atm.
+      memory: Atmintis
+      node_count: Mazgų skaičius
+      node_list: Mazgų sąrašas
+      nodes: Mazgai
+      none: Nėra
+      notifications: Pranešimai
+      partition: Pertvara
+      pbs_id: PBS ID
+      pids: PID
+      ppn: PPN
+      project_name: Projekto pavadinimas
+      queue: Eilė
+      reason: Priežastis
+      reserve: Rezervas
+      select: Pasirinkite
+      start_time: Pradžios laikas
+      state: Valstija
+      status: Būsena
+      submission_time: Pateikimo laikas
+      swap: Sukeisti
+      time_limit: Laiko limitas
+      time_used: Naudojimo laikas
+      total_cpus: Iš viso procesorių
+      total_nodes: Iš viso mazgų
+      user: Vartotojas
+      virtual_memory: Virtuali atmintis
+      walltime: Sienų laikas
+      walltime_used: Naudotas „Walltime“
+    active_jobs_filter_all: Visi darbai
+    active_jobs_filter_user: Jūsų darbai
+    active_jobs_ganlia_CPU: Ganglijų vaizdas procesoriui.
+    active_jobs_ganlia_load: Ganglijų vaizdas, rodantis vidutinę sistemos apkrovą.
+    active_jobs_ganlia_mem: Ganglijų vaizdas atminties naudojimui.
+    active_jobs_ganlia_network: Ganglijų vaizdas tinklo naudojimui.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> peržiūrėti visus (%{number_of_sessions})</a>
+    active_sessions_title: Aktyvūs interaktyvūs užsiėmimai
+    add: Pridėti
+    all_apps_table_app_column: Vardas
+    all_apps_table_category_column: Kategorija
+    all_apps_table_sub_category_column: Subkategorija
+    all_clusters: Visi klasteriai
+    announcements_dismissible_button: Gerai
+    announcements_parse_error: Klaida analizuojant pranešimą.
+    announcements_render_error: Dėl klaidos nepavyko pateikti pranešimo „%{name}“
+    announcements_required_button: Priimti
+    apps_setup_failure_html: '<h2>Inicijuojant šios programos duomenis, įvyko problema.</h2>
+
+      <p class="lead">
+
+      Savo pačių rizika vis tiek galite <a href="%{app_url}">atidaryti programą</a>
+
+      arba galite tiesiog grįžti <a href="%{home_url}">į ataskaitų skydelį</a>
+
+      </p>
+
+      <p>
+
+      Pasidalykite tuo su savo programos kūrėju:
+
+      Sąrankos gamybinis scenarijus turėtų būti idempotentinis ir paleidžiamas kiekvieną kartą, kai vartotojas atidaro programą per ataskaitų skydelį.</p>
+
+      <h4>Išimtis: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Stack trace:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Sistemos programos
+    auto_log_location_title: Žurnalo vieta
+    back: Atgal
+    balance_additional_message: Apsvarstykite galimybę paprašyti papildomų %{balanace_units}
+    balance_message: '%{units_balance} yra %{value}'
+    balance_no_warnings: Nėra projektų, kurie neviršytų %{threshold} dienų balanso įspėjimo ribos.
+    balance_reload_message_html: 'Įkelkite puslapį iš naujo, kad pamatytumėte atnaujintą likutį. Likučiai atnaujinami kasdien.<br>Paskutinis atnaujinimas: %{last_update}'
+    balance_warning_prefix_html: '%{units_balance} įspėjimas dėl'
+    batch_connect_active_sessions_aria: Aktyvūs seansai
+    batch_connect_app_version: 'versija: %{version}'
+    batch_connect_apps_menu_aria: Interaktyvių programų meniu
+    batch_connect_apps_menu_title: Interaktyvios programėlės
+    batch_connect_form_attr_cache_error: Nepavyko naudoti anksčiau talpykloje išsaugotų reikšmių, vietoj to naudojamos numatytosios reikšmės. (%{error_message})
+    batch_connect_form_choose_template_name: Pasirinkite šablono pavadinimą
+    batch_connect_form_data_root: duomenų šakninis katalogas
+    batch_connect_form_dynamic_disclaimer: Ši forma gali keistis dinamiškai, pasirenkant parinktis. Visi pakeitimai bus paskelbti ir juos galima atšaukti.
+    batch_connect_form_invalid: Form.yml faile trūksta parinkčių %{id} formos lauke.
+    batch_connect_form_launch: Paleidimas
+    batch_connect_form_prefill: Naudoti išsaugotus nustatymus
+    batch_connect_form_prefill_error: Oi... Kažkas negerai su jūsų šablonu
+    batch_connect_form_reset_resolution: Atstatyti skiriamąją gebą
+    batch_connect_form_resolution_height: Raiška aukštis (pikseliais)
+    batch_connect_form_resolution_width: Raiška plotis (pikseliais)
+    batch_connect_form_save: Išsaugoti nustatymus
+    batch_connect_form_save_new_template: išsaugoti naujus nustatymus
+    batch_connect_form_save_submit: Išsaugoti nustatymus ir uždaryti
+    batch_connect_form_select_template: pasirinkti išsaugotus nustatymus
+    batch_connect_form_session_data_html: '* Šio seanso %{title} seanso duomenis galima pasiekti
+
+      per %{data_link_tag}.
+
+      '
+    batch_connect_form_template_name_label: nustatymo pavadinimas
+    batch_connect_form_type_new_name: Programos nustatymų pavadinimas
+    batch_connect_form_type_new_name_error: Norėdami tęsti, įveskite galiojantį vardą
+    batch_connect_invalid_form_array: „form“ elementas form.yml faile nėra masyvas
+    batch_connect_invalid_form_attributes: „form.yml“ elementas „attributes“ nėra žemėlapis
+    batch_connect_missing_cluster: Klasteris niekada nebuvo nustatytas. Arba nustatykite jį form.yml.erb faile su `cluster` arba `form.cluster`, arba nustatykite `cluster` faile submit.yml.erb.
+    batch_connect_no_apps: Nėra galimų interaktyvių programėlių.
+    batch_connect_no_sessions: Neturite aktyvių sesijų.
+    batch_connect_sandbox: '[Smėlio dėžė]'
+    batch_connect_sessions_cancel_confirm: Ar tikrai?
+    batch_connect_sessions_cancel_full_title: Atšaukti %{title} sesiją
+    batch_connect_sessions_cancel_title: Atšaukti
+    batch_connect_sessions_connect_to: Prisijungti prie %{app_title}
+    batch_connect_sessions_connection_render_error: Nepavyksta atvaizduoti ryšio mygtuko iš view.html.erb dėl klaidos '%{error}'
+    batch_connect_sessions_data_html: 'Šios sesijos %{title} sesijos duomenis galima pasiekti
+
+      per %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Ar tikrai?
+    batch_connect_sessions_delete_full_title: Ištrinti %{title} sesiją
+    batch_connect_sessions_delete_hover: Ištrinti sesiją
+    batch_connect_sessions_delete_title: Ištrinti
+    batch_connect_sessions_edit_title: Redaguoti naują %{title} su šio seanso parametrais
+    batch_connect_sessions_error_invalid_job_name_html: Jei šios užduoties nepavyko pateikti dėl neteisingo užduoties pavadinimo, paprašykite administratoriaus sukonfigūruoti „OnDemand“ taip, kad būtų nustatytas aplinkos kintamasis OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Nepavyko paruošti šablono, įvyko ši klaida:'
+    batch_connect_sessions_errors_submission: 'Nepavyko pateikti sesijos. Pateikta ši klaida:'
+    batch_connect_sessions_native_vnc_tab: Gimtosios instrukcijos
+    batch_connect_sessions_novnc_compression: Suspaudimas
+    batch_connect_sessions_novnc_compression_help: 1 (žemas) – 9 (aukštas)
+    batch_connect_sessions_novnc_launch: Paleisti %{app_title}
+    batch_connect_sessions_novnc_quality: Vaizdo kokybė
+    batch_connect_sessions_novnc_quality_help: 0 (žemas) iki 9 (aukštas)
+    batch_connect_sessions_novnc_tab: be VNC ryšio
+    batch_connect_sessions_novnc_view_only: Tik peržiūra (nuoroda, kurią galima bendrinti)
+    batch_connect_sessions_path_selector_forbidden_error: Jūs neturite leidimo pasirinkti to katalogo ar failo.
+    batch_connect_sessions_relaunch_full_title: Iš naujo paleisti %{title} sesiją
+    batch_connect_sessions_relaunch_title: Paleisti iš naujo
+    batch_connect_sessions_staged_root: etapinis šakninis katalogas
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} branduolys'
+      other: '%{count} branduoliai'
+    batch_connect_sessions_stats_created_at: 'Sukurta:'
+    batch_connect_sessions_stats_expected_time: 'Numatoma pradžia:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Grafinė plokštė'
+      other: '%{count} GPU'
+    batch_connect_sessions_stats_host: 'Šeimininkas:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} mazgas'
+      other: '%{count} mazgai'
+    batch_connect_sessions_stats_session_dir_link_title: Atidaryti sesijos katalogą %{session_id}
+    batch_connect_sessions_stats_session_id: 'Sesijos ID:'
+    batch_connect_sessions_stats_support_ticket: Problemos dėl šios sesijos?
+    batch_connect_sessions_stats_support_ticket_link_text: Pateikti pagalbos užklausą
+    batch_connect_sessions_stats_time_remaining: 'Likęs laikas:'
+    batch_connect_sessions_stats_time_requested: 'Pageidaujamas laikas:'
+    batch_connect_sessions_stats_time_used: 'Naudojimo laikas:'
+    batch_connect_sessions_stats_undetermined_host: Nenustatyta
+    batch_connect_sessions_status_bad: Jūsų sesija pateko į blogą būseną. Norėdami gauti daugiau informacijos, susisiekite su palaikymo tarnyba.
+    batch_connect_sessions_status_blurb_cancel_failure: Nepavyko atšaukti sesijos.
+    batch_connect_sessions_status_blurb_cancel_success: Sesija sėkmingai atšaukta.
+    batch_connect_sessions_status_blurb_create_success: Sesija sėkmingai sukurta.
+    batch_connect_sessions_status_blurb_delete_failure: Nepavyko ištrinti sesijos.
+    batch_connect_sessions_status_blurb_delete_success: Sesija sėkmingai ištrinta.
+    batch_connect_sessions_status_completed: Derinimo tikslais ši kortelė bus saugoma dar %{days} dienas
+    batch_connect_sessions_status_missing_connection: Šioje programėlėje trūksta informacijos, reikalingos ryšiui užmegzti. Tiksliau, trūksta failo „view.html.erb“. Jei matote šį pranešimą, susisiekite su palaikymo tarnyba.
+    batch_connect_sessions_status_queued: Būkite kantrūs, nes jūsų užduotis šiuo metu laukia eilėje. Laukimo laikas priklauso nuo branduolių skaičiaus ir prašomo laiko.
+    batch_connect_sessions_status_starting: Jūsų sesija šiuo metu prasideda... Prašome kantrybės, nes šis procesas gali užtrukti kelias minutes.
+    batch_connect_sessions_word: Seansas
+    batch_connect_validation:
+      app_not_found: Šios programėlės nėra kataloge „%{root}“
+      inaccessible_clusters: Šiai programai reikalingi klasteriai, kurių nėra arba prie kurių neturite prieigos.
+      missing_form_file: Ši programa nepateikia formos failo kataloge „%{root}“
+      missing_sub_app_form_file: Ši programa nepateikia papildomo programos formos failo kataloge „%{root}“.
+      no_cluster_specified: Ši programa nenurodo jokio klasterio.
+    bc_saved_settings:
+      delete_confirm: Ar tikrai?
+      delete_title: Ištrinti %{settings_name} išsaugotus nustatymus
+      deleted_message: Išsaugoti nustatymai %{settings_name} ištrinti.
+      edit_title: Redaguoti %{settings_name} išsaugotus nustatymus
+      launch_title: Paleiskite %{app_title} su %{settings_name} parametrais
+      missing_settings: Pasirinkti išsaugoti nustatymai nerasti.
+      no_settings_title: Neturite išsaugotų nustatymų.
+      outdated_message: '%{app_title} parametrai pasikeitė nuo šių nustatymų sukūrimo.'
+      saved_message: '%{settings_name} nustatymai išsaugoti'
+      settings_values_label: Vertybės
+      title: Išsaugoti nustatymai
+    breadcrumb_aria: Navigacijos kelias
+    breadcrumbs_all_apps: Visos programėlės
+    breadcrumbs_home: Pradžia
+    breadcrumbs_my_sessions: Mano interaktyvūs seansai
+    breadcrumbs_support_ticket: Palaikymo užklausa
+    browser_warning: '„OnDemand“ reikalinga naujesnė jūsų naudojamos naršyklės versija. Dabartiniai naršyklės reikalavimai: „IE Edge“, „Firefox 19+“, „Chrome 34+“, „Safari 8+“.'
+    cancel: Atšaukti
+    categories:
+      apps: Programėlės
+      bioinformatics: Bioinformatika
+      clusters: Klasteriai
+      data_science: Duomenų mokslas
+      desktop: Darbalaukis
+      desktops: Staliniai kompiuteriai
+      development: Vystymasis
+      external_apps: Išorinės programos
+      files: Failai
+      gateway_apps: Gateway programos
+      guis: Grafinės sąsajos
+      interactive_apps: Interaktyvios programėlės
+      jobs: Darbai
+      machine_learning: Mašininis mokymasis
+      mathematics: Matematika
+      servers: Serveriai
+      utilities: Komunalinės paslaugos
+      virtual_desktop_interface: Virtualiojo darbalaukio sąsaja
+      visualization: Vizualizacija
+    clear: Išvalyti
+    close: Uždaryti
+    close_alert: Uždaryti šį įspėjimą.
+    close_notice: Uždaryti šį pranešimą.
+    cluster: Klasteris
+    copy: Kopijuoti
+    copy_suffix: (Kopija)
+    cpu_report: CPU ataskaita + %{node}
+    custom_pages:
+      invalid: 'Neteisingas puslapio kodas: %{page}. Šis puslapis nebuvo sukonfigūruotas.'
+    date: Data
+    delete: Ištrinti
+    detailed_metrics: Išsami metrika
+    details: Išsami informacija
+    development_apps_caption: Smėlio dėžės programėlė
+    development_apps_category: Smėlio dėžės programos
+    development_delete_app: Ištrinti programėlę
+    development_edit_title: Redaguoti %{title}
+    development_launch_title: Paleisti %{title}
+    directory: Katalogas
+    edit: Redaguoti
+    editor_default: Numatytasis
+    editor_font_size: Šrifto dydis
+    editor_key_bindings: Klavišų susiejimai
+    editor_theme: Tema
+    editor_theme_bright: Ryškus
+    editor_theme_dark: Tamsu
+    editor_wrap: Apvyniojimas
+    error_details: 'Išsami informacija:'
+    error_internal_body_html: Bandykite dar kartą po kelių minučių. Jei ir toliau matysite šią klaidą, <a href="%{support_url}">susisiekite su palaikymo tarnyba</a>.
+    error_internal_title: Vidinė serverio klaida
+    error_not_found_body: Puslapio, kurio ieškote, nėra.
+    error_not_found_title: Nerasta
+    favorites: Mėgstamiausi
+    file: Failas
+    file_editor: Failų redaktorius
+    file_quotas: Failų kvotos
+    files: Failai
+    files_change_directory: Keisti katalogą
+    files_contents_of_directory: Katalogo %{path} turinys
+    files_copy_move: Kopijuoti / perkelti
+    files_copy_path: Kopijuoti kelią
+    files_directory_contents_aria: Katalogo turinys
+    files_directory_download_error_modal_title: Katalogas per didelis, kad būtų galima atsisiųsti
+    files_directory_download_unauthorized: Galite atsisiųsti tik tą failą arba katalogą, kuriam turite skaitymo ir vykdymo prieigą.
+    files_directory_size_calculation_error: Bandant nustatyti katalogo dydį, baigėsi skirtasis laikas.
+    files_directory_size_calculation_timeout: Bandant nustatyti katalogo dydį, baigėsi skirtasis laikas.
+    files_directory_size_unknown: 'Bandant nustatyti katalogo dydį, įvyko klaida su būsena %{exit_code}: %{error}'
+    files_directory_too_large: Katalogas per didelis, kad būtų galima atsisiųsti kaip ZIP failą. Katalogas turėtų būti mažesnis nei %{download_directory_size_limit} baitų.
+    files_doesnt_exist: '%{path} neegzistuoja.'
+    files_download: Atsisiųsti
+    files_download_not_enabled: Šiame serveryje failų atsisiuntimas neįgalintas.
+    files_download_zip: Atsisiųsti kaip ZIP failą
+    files_exceeds_editor_limit: '%{path} viršija redaktoriaus limitą %{limit}. Atsisiųskite failą, kad galėtumėte jį redaguoti arba peržiūrėti vietoje.'
+    files_file_too_large: Failas per didelis, kad būtų galima atsisiųsti. Atsisiunčiamų failų dydis turėtų būti mažesnis nei %{download_file_size_limit} baitų.
+    files_go_up_directory: Eiti į katalogą aukštyn
+    files_modified_at: Pakeista
+    files_modify_aria: Keisti failus
+    files_new_directory: Naujas katalogas
+    files_new_file: Naujas failas
+    files_not_editable: '%{path} nėra redaguojamas failas'
+    files_not_readable: Jūs neturite pakankamai leidimų skaityti „%{path}“.
+    files_open_in_files_app: Atidaryti failų programoje
+    files_open_in_globus: Atidaryti „Globus“
+    files_path_breadcrumbs_aria: Kelio džiūvėsėliai
+    files_refresh: Atnaujinti
+    files_remote_dir_not_created: Nesukurtas katalogas %{path}
+    files_remote_disabled: Nuotolinio failų palaikymas neįgalintas
+    files_remote_empty_dir_unsupported: Nuotolinis įrenginys nepalaiko tuščių katalogų
+    files_remote_error_listing_remotes: 'Klaida pateikiant „Rclone“ nuotolinio valdymo pultus: %{error}'
+    files_send_to_target_title_default: Siųsti pasirinktų failų metaduomenis išorinei programai
+    files_shell: Atidaryti terminale
+    files_shell_dropdown: Pasirinkite klasterį, kurį norite atidaryti terminale
+    files_title: Failų naršymas
+    files_upload: Įkelti
+    footer_contribute: Prisidėkite prie „GitHub“
+    footer_license: Programinės įrangos licencijos pranešimas
+    footer_open_source: Atvirojo kodo programinė įranga.
+    footer_powered_by: Sukurta naudojant „Open OnDemand“
+    footer_version: 'Versija pagal pareikalavimą: %{version}'
+    home_directory: Pagrindinis katalogas
+    id: ID
+    import: Importuoti
+    job: Darbas
+    job_info: Darbo informacija
+    jobs_back_to_projects: Atgal į projektus
+    jobs_clear_form_fields: Išvalyti formos laukus
+    jobs_completed_jobs: Užbaigti darbai
+    jobs_create_blank_project: Sukurti naują projektą
+    jobs_create_blank_workflow: Nauja darbo eiga
+    jobs_create_template_project: Sukurkite naują projektą iš šablono
+    jobs_import_shared_project: Bendrinamo projekto importavimas
+    jobs_launchers: Paleidimo įrenginiai
+    jobs_launchers_add_select_option: Pridėti pasirinkimo parinktį %{name}
+    jobs_launchers_cannot_find: Nepavyksta rasti paleidimo priemonės %{id}
+    jobs_launchers_clone: Klonų paleidimo priemonė %{name}
+    jobs_launchers_created: Paleidimo programa sėkmingai sukurta!
+    jobs_launchers_default_created: Prie šio projekto taip pat buvo pridėtas failas „hello_world.sh“.
+    jobs_launchers_delete: Ištrinti paleidimo priemonę %{name}
+    jobs_launchers_delete_script_confirmation: Ištrinti visą paleidimo priemonės turinį?
+    jobs_launchers_deleted: Paleidimo programa sėkmingai ištrinta!
+    jobs_launchers_edit: Redaguoti paleidimo priemonės %{name} formą
+    jobs_launchers_edit_form_item: Redaguoti formos elementą %{label}
+    jobs_launchers_editing: Redaguojama %{title}
+    jobs_launchers_fixed_field: Fiksuota vertė
+    jobs_launchers_fixed_field_help: Fiksuoti dabartinę vertę
+    jobs_launchers_max_value_label: Didžiausia skaičių lauko %{label} reikšmė
+    jobs_launchers_min_value_label: Minimali skaičių lauko %{label} reikšmė
+    jobs_launchers_name: Paleidimo priemonės pavadinimas
+    jobs_launchers_new_field_select: Pasirinkite elementą, kurį norite pridėti prie formos
+    jobs_launchers_not_found: Nepavyksta rasti paleidimo priemonės %{launcher_id}
+    jobs_launchers_preview_form_item: Formos elemento %{label} peržiūra
+    jobs_launchers_remove_form_item: Pašalinti formos elementą %{label}
+    jobs_launchers_remove_select_option: Pašalinti pasirinktą parinktį %{name}
+    jobs_launchers_save_form: Išsaugoti formą
+    jobs_launchers_save_form_item: Išsaugoti formos elemento %{label} pakeitimus
+    jobs_launchers_show_form: Rodyti paleidimo priemonės %{name} formą
+    jobs_launchers_submit_launcher_title: Paleidimo scenarijus su talpykloje išsaugotomis arba numatytosiomis paleidimo priemonės %{name} reikšmėmis
+    jobs_launchers_submitted: Sėkmingai pateiktas darbas %{job_id}.
+    jobs_launchers_updated: Paleidimo priemonės manifestas atnaujintas!
+    jobs_native_dependency: Užduotis priklauso nuo job-id%{dependency}
+    jobs_native_reason: dėl „%{reason}“
+    jobs_native_state: Dabartinė darbo būsena yra „%{state}“
+    jobs_new_launcher: Naujas paleidimo įrenginys
+    jobs_new_project: Naujas projektas
+    jobs_project_cannot_find: 'Nepavyksta rasti projekto: %{project_id}'
+    jobs_project_clear_form_fields: Išvalyti formos laukus
+    jobs_project_created: Projektas sėkmingai sukurtas!
+    jobs_project_delete_label: Ištrinti projektą %{name}
+    jobs_project_delete_project_confirmation: Ištrinti visą projekto katalogo turinį?
+    jobs_project_deleted: Projektas sėkmingai ištrintas!
+    jobs_project_description_placeholder: Projekto aprašymas
+    jobs_project_directory_error: Šiai darbo eigai nenustatytas projekto katalogo kelias
+    jobs_project_directory_help_html: 'Palikite tuščią ir bus sukurtas naujas katalogas. <br />Numatytoji vieta: %{root_directory}'
+    jobs_project_directory_placeholder: Projekto katalogo absoliutus kelias
+    jobs_project_edit_label: Redaguoti projektą %{name}
+    jobs_project_generic_error: 'Apdorojant jūsų užklausą įvyko klaida: %{error}'
+    jobs_project_group_help: Būtinai pasirinkite grupę, kurioje yra visi numatyti bendradarbiai. Jei tai nėra bendradarbiavimo projektas, rekomenduojama naudoti numatytąją grupę.
+    jobs_project_group_owner: Grupė
+    jobs_project_imported: Projektas sėkmingai importuotas!
+    jobs_project_invalid_configuration_clusters: Reikalingas HPC klasteris. Norėdami jį pridėti prie sistemos, susisiekite su administratoriumi.
+    jobs_project_invalid_configuration_scripts: Jūsų projektui reikalingas vykdomasis scenarijus. Įkelkite scenarijų naudodami failų programą.
+    jobs_project_job_deleted: Užduotis %{job_id} sėkmingai ištrinta
+    jobs_project_job_not_deleted: Nepavyksta ištrinti užduoties %{job_id}
+    jobs_project_job_stopped: Užduotis %{job_id} sėkmingai sustabdyta
+    jobs_project_list_aria: Projektų sąrašas
+    jobs_project_manager: Projektų vadovas
+    jobs_project_manifest_updated: Projekto manifestas atnaujintas!
+    jobs_project_name_placeholder: Projekto pavadinimas
+    jobs_project_name_validation: Projekto pavadinime gali būti tik raidės, skaitmenys, brūkšneliai, pabraukimai ir tarpai
+    jobs_project_not_found: Nepavyksta rasti projekto %{project_id}
+    jobs_project_open_label: Atidaryti projektą %{name}
+    jobs_project_remove_label: Pašalinti projektą %{name}
+    jobs_project_removed: Projektas pašalintas iš paieškos!
+    jobs_project_return_to_projects: Grįžti į projektų puslapį
+    jobs_project_save_error: Nepavyksta išsaugoti manifesto %{path}
+    jobs_project_save_project_title: Išsaugoti projektą
+    jobs_project_select_directory: Pasirinkite projekto katalogą
+    jobs_project_setgid_help: Palikus „setgid“ pažymėtą, užtikrinama, kad projekto failai bus sukurti su pasirinkta grupe. Tai neturi įtakos projektams jūsų namų kataloge.
+    jobs_project_validation_error: Neteisinga užklausa. Peržiūrėkite toliau pateiktas klaidas.
+    jobs_return_to_projects: Grįžti į projektų puslapį
+    jobs_save_project_title: Išsaugoti projektą
+    jobs_select_directory_placeholder: Spustelėkite projektą, kad importuotumėte
+    jobs_toggle_details: Spustelėkite, jei norite perjungti užduoties %{job_id} informaciją
+    jobs_workflow_add_launcher: Pridėti paleidimo priemonę
+    jobs_workflow_canvas_aria: drobė
+    jobs_workflow_clone: Klonuoti darbo eigą %{name}
+    jobs_workflow_connect_launchers: Prijunkite paleidimo priemones
+    jobs_workflow_created: Darbo eiga sėkmingai sukurta!
+    jobs_workflow_delete_confirmation: Ištrinti visą darbo eigos turinį?
+    jobs_workflow_delete_edge: Ištrinti kraštą
+    jobs_workflow_delete_edge_title: Ištrinti pasirinktą kraštą (Del/Backspace)
+    jobs_workflow_delete_launcher: Ištrinti paleidimo priemonę
+    jobs_workflow_delete_launcher_title: Ištrinti pasirinktą paleidimo priemonę (Del/Backspace)
+    jobs_workflow_delete_title: Ištrinti darbo eigą %{name}
+    jobs_workflow_deleted: Darbo eiga sėkmingai ištrinta!
+    jobs_workflow_description_placeholder: Darbo eigos aprašymas
+    jobs_workflow_edit_settings: Keisti darbo eigos %{name} nustatymus
+    jobs_workflow_editing: 'Redagavimas: %{name}'
+    jobs_workflow_enable_sync_key: Įjungti OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Darbo eiga nepavyko dėl klaidos %{error}
+    jobs_workflow_help: Spustelėkite pavadinimą, kad pasirinktumėte ir nuvilktumėte. Sujunkite spustelėdami du paleidimo įrenginius, kai pasirinkta „Sujungti paleidimo įrenginius“.
+    jobs_workflow_manifest_updated: Darbo eigos manifestas atnaujintas!
+    jobs_workflow_missing_launchers: pasirinkite bent %{count}
+    jobs_workflow_name_placeholder: Darbo eigos pavadinimas
+    jobs_workflow_name_validation: Darbo eigos pavadinime gali būti tik raidės, skaitmenys, brūkšneliai, pabraukimai ir tarpai
+    jobs_workflow_not_found: Nepavyksta rasti darbo eigos %{workflow_id}
+    jobs_workflow_pick_launchers: Pasirinkite paleidimo priemones
+    jobs_workflow_show_graph: Atidaryti darbo eigą %{name} grafikų redaktoriuje
+    jobs_workflow_submitted: Darbo eiga sėkmingai pateikta!
+    jobs_workflow_sync_key_help: Kai įjungta, kiekvienas šio darbo eigos paleidimo įrenginys gauna tą patį <code>OOD_WORKFLOW_SYNC_KEY</code> aplinkos kintamąjį (atsitiktinį prieigos raktą, unikalų kiekvienam darbo eigos paleidimui). Naudinga generuojant sinchronizuotus failų pavadinimus, užrakinimo failus arba bendrinamus identifikatorius tarp priklausomų užduočių.
+    jobs_workflow_synchronization: Sinchronizavimas
+    jobs_workflow_toolbar_aria: įrankių juosta
+    jobs_workflow_zoom_controls: Mastelio keitimo valdikliai
+    jobs_workflow_zoom_in: Priartinti
+    jobs_workflow_zoom_out: Atitolinti
+    jobs_workflow_zoom_reset: Atstatyti priartinimą
+    jobs_workflows: Darbo eigos
+    jobs_workflows_not_supported: Sukonfigūruotas planuoklis nepalaiko darbo eigų.
+    js:
+      active_jobs:
+        delete_aria: Ištrinti užduotį %{name} su ID %{id}
+        delete_confirm: Ar tikrai norite ištrinti %{name} - %{id}?
+        delete_title: Ištrinti užduotį
+        details_loaded: Įkeltas darbo informacijos sąrašas.
+        load_details_failed: Nepavyko įkelti darbo informacijos.
+        remote_server_error: Gaunant duomenis iš nuotolinio serverio įvyko klaida.
+        request_failed_parse: Užduočių užklausa nepavyko dėl teksto analizavimo klaidos.
+        request_failed_status: 'Užklausa dėl darbų nepavyko, būsenos kodas: %{status}'
+        status_completed: Užbaigta
+        status_hold: Laikyti
+        status_queued: Eilėje
+        status_running: Bėgimas
+        status_suspended: Sustabdyta
+        status_undetermined: Nenustatyta
+        support_ticket_aria: Pateikite pagalbos užklausą dėl darbo, kurio ID %{id}
+        support_ticket_title: Pateikti pagalbos užklausą
+        toggle_details_aria: Įjungti darbo %{name} matomumą %{cluster}
+      batch_connect:
+        allow_notifications: Norėdami įjungti seanso įspėjimus, suteikite naršyklėje leidimus gauti pranešimus.
+        invalid_prefill_value_html: 'Neteisinga reikšmė: „%{value}“ lauke „%{field}“.<br>'
+        notification_permission_error: 'Klaida prašant leidimo pranešti:'
+        resolution_reset: Raiška atstatyta į %{width} %{height} pikseliais.
+        session_expires_warning: 'Įspėjimas: %{title} (%{job_id}) galiojimo laikas baigiasi po ~%{minutes} minučių!'
+        session_status_aria: '%{title} dabar yra %{status}.'
+        session_status_push: '%{title} (%{job_id}) dabar yra %{status}.'
+      common:
+        cancel: Atšaukti
+        close: Uždaryti
+        error: Klaida
+        loading: Kraunama...
+        ok: Gerai
+      datatables:
+        all: Visi
+        filter_label: 'Filtras:'
+        invalid_date: Neteisinga data
+        rows_selected:
+          one: Pasirinkta %{count} eilutė
+          other: Pasirinkta %{count} eilučių
+        showing_filtered_rows: Rodoma %{display} iš %{total} eilučių
+        showing_rows: Rodomos %{display} eilutės
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ir
+        changed_help: Pakeistas pagalbos tekstas %{widget} į %{help}
+        changed_label: Pakeista etiketė %{widget} į naują etiketę %{label}
+        current_value: nustatyti dabartinę reikšmę į %{value}
+        hid_item: Paslėptas formos elementas %{widget}
+        maximum_limit: maksimali riba iki %{value}
+        minimum_limit: minimali riba iki %{value}
+        option_disabled: Parinktis %{value} išjungta %{widget}
+        option_enabled: Parinktis %{value} įjungta %{widget}
+        revealed_item: Atskleistas formos elementas %{widget}
+        selected_option_disabled: Pasirinkta parinktis %{value} išjungta %{widget}
+        set_limits: Nustatyti %{details} %{widget}
+        set_value: Nustatykite %{widget} į reikšmę %{value}
+        widget_no_label: '%{type} be žymės'
+        widget_with_label: '%{type} su žyme %{label}'
+      editor:
+        save_error: 'Bandant išsaugoti šį failą įvyko klaida!
+
+          %{error}'
+        unsaved_changes: Turite neišsaugotų pakeitimų!
+      files:
+        action_delete: Ištrinti
+        action_download: Atsisiųsti
+        action_edit: Redaguoti
+        action_rename: Pervardyti
+        action_view: Peržiūrėti
+        actions: Veiksmai
+        cannot_navigate_file: Nepavyksta naršyti failo.
+        change_directory: Keisti katalogą
+        clipboard_description_html: 'Nukopijuokite arba perkelkite toliau nurodytus failus iš <code>%{from}</code> į dabartinį katalogą:'
+        contents_of_directory: Katalogo %{path} turinys
+        copied_path: Nukopijuotas kelias į iškarpinę!
+        copy: Kopijuoti
+        create_directory_error: 'Bandant sukurti naują katalogą įvyko klaida: %{error}'
+        create_file_error: 'Bandant sukurti naują failą įvyko klaida: %{error}'
+        delete_confirm_text: 'Ar tikrai norite ištrinti failus: %{files}?'
+        delete_multiple_title: Ištrinti %{count} pasirinktus failus?
+        delete_single_title: Ištrinti %{name}?
+        deleting_files: 'Failų šalinimas...:'
+        directory: katalogas
+        directory_name_label: Katalogo pavadinimas
+        download_error: 'Klaida atsisiunčiant: %{error}'
+        duplicate_files_warning: Rasti pasikartojantys failai. Įkėlus šiuos failus, bus perrašytas esamas turinys.
+        file: byla
+        filename_invalid_chars: Failo pavadinime negali būti / arba ..
+        filename_label: Failo pavadinimas
+        globus_open: Atidaryti dabartinį katalogą naudojant „Globus“
+        globus_unavailable: Su šiuo katalogu nėra susieto „Globus“ galinio taško
+        illegal_slash_in_filename: Failo pavadinime neleidžiamas neleistinas simbolis (/).
+        move: Perkelti
+        navigated_to: nuvykta į %{path}
+        new_directory_title: Naujas katalogas
+        new_file_title: Naujas failas
+        path_label: Kelias
+        poll_status_error: Operacija galėjo neįvykti. Nepavyko gauti failo operacijos būsenos.
+        preparing_download_dir: 'ruošiamasi atsisiųsti katalogą: %{name}'
+        provide_absolute_pathname: Pateikite absoliutų kelio pavadinimą
+        provide_directory_name: Pateikite katalogo pavadinimą, kuriame nėra / simbolio
+        provide_non_empty_filename: Pateikite ne tuščią failo pavadinimą.
+        provide_rename_filename: Pateikite failo pavadinimą, kuriuo norite pervadinti šį failą
+        rename_title: Pervardyti
+        see_details: Žr. išsamią informaciją
+        select_row: Pasirinkite eilutę
+        select_to_copy_move: Pasirinkite failą, failus arba katalogą, kurį norite kopijuoti arba perkelti. Jūs nepasirinkote nė vieno.
+        select_to_delete: Pasirinkite failą, failus arba katalogą, kurį norite ištrinti. Jūs nepasirinkote nė vieno.
+        select_to_download: Pasirinkite failą, failus arba katalogą, kurį norite atsisiųsti. Jūs nepasirinkote nė vieno.
+        select_to_send: Pasirinkite bent vieną failą arba katalogą, kurį norite siųsti.
+        send_failed: Nepavyko išsiųsti failo informacijos.
+        sent_successfully: Pasirinkto failo informacija sėkmingai išsiųsta.
+        show_dotfiles: Rodyti taškinius failus
+        show_owner_mode: Rodyti savininką/režimą
+        summary_copy_files: kopijuoti failus
+        summary_move_files: perkelti failus
+        summary_remove_files: pašalinti failus
+        summary_rename_file: pervardyti failą
+        token_missing_expired: Trūksta programos prieigos rakto arba jis nebegalioja. Pradėkite iš naujo.
+        transfer_error: 'Bandant %{summary} įvyko klaida: %{error}'
+        upload_and_overwrite: Įkelti ir perrašyti
+        upload_count:
+          one: Įkelti %{count} failą
+          other: Įkelti %{count} failus
+        upload_new_files: Įkelti naujus failus
+        uppy_empty_dir_note: Tušti katalogai bus įtraukti į įkėlimą tik tada, kai katalogo įkėlimas bus inicijuojamas naudojant vilkimo ir numetimo funkciją. Taip yra todėl, kad failų ir katalogų įrašų API galima tik numetimo atveju, o ne įvesties keitimo metu.
+      icon_picker:
+        icon_selected: Pasirinkta piktograma %{icon}
+        icon_sr: '%{name} piktograma'
+      launcher_edit:
+        account_help: Paskyra, su kuria bus pateiktas darbas.
+        account_label: Paskyra
+        add_new_option: Pridėti naują parinktį
+        cores_help: Kiek branduolių bus naudojamas darbas.
+        cores_label: Šerdys
+        env_var_help: Pridėti aplinkos kintamąjį.
+        env_var_key: 'Aplinkos kintamasis: %{name}'
+        env_var_label: Aplinkos kintamasis
+        hours_help: Kiek laiko gali tęstis darbas.
+        hours_label: Darbo valandos
+        job_name_help: Pareigybės pavadinimas.
+        job_name_label: Pareigybės pavadinimas
+        log_location_help: Darbo žurnalo išvesties paskirties vieta.
+        log_location_label: Žurnalo vieta
+        no_more_options: Daugiau variantų nėra
+        nodes_help: Kiek mazgų bus vykdoma užduotis.
+        nodes_label: Mazgai
+        queues_help: Kurią eilę užduotis taip pat pateiks.
+        queues_label: Eilės
+      module_browser:
+        copied: Nukopijuota!
+        copy: Kopijuoti
+        showing_results:
+          one: Rodomas %{count} rezultatas
+          other: Rodomi %{count} rezultatai
+      nsf_access:
+        affected_resources: 'Paveikti ištekliai: %{resources}'
+        read_more: Skaityti daugiau
+        register_event: Registruotis į šį renginį
+      path_selector:
+        directory_loaded: Katalogas įkeltas su %{count} elementais
+        invalid_regex: Šiam kelio selektoriui pateikta reguliarioji išraiška nebuvo sukompiliuota
+        loading_directory: Įkeliamas katalogo turinys
+        permission_denied_prefix: 'Leidimas atmestas:'
+      popovers:
+        ihpc_content: Interaktyvus HPC seansas suteikia jums skirtą prieigą prie vieno ar kelių klasterio mazgų. Tai panašu į interaktyvų paketinį seansą su pasiekiamu darbalaukiu pagrindiniame mazge. Naudokite tai sunkiems darbams, pvz., ilgai trunkančioms skaičiavimo užduotims arba kai jums reikia skirtų išteklių.
+        vdi_content: VDI (virtualiojo darbalaukio sąsaja) suteikia prieigą prie bendrai naudojamo mazgo per darbalaukį. Tai yra grafinė prisijungimo mazgo versija. Naudokite ją lengvoms užduotims, tokioms kaip prieiga prie failų ir jų peržiūra, užduočių pateikimas ir vizualizacijos.
+      products:
+        fatal_error: Įvyko lemtinga klaida
+        no_action: jokių veiksmų
+      projects:
+        undetermined_size: Nenustatytas dydis
+      support_ticket:
+        delete_attachment: Ištrinti priedą
+        no_file_selected: Nepasirinktas failas
+        selected_file: 'Pasirinktas failas: %{name} (%{size}).'
+        size_bytes: '%{size}baitų'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Šio puslapio negalima atnaujinti, nes nebesate autentifikuoti. Norėdami vėl prisijungti, atnaujinkite puslapį.
+        unexpected_error: Šiame puslapyje įvyko netikėta klaida. Atnaujinkite puslapį.
+      utils:
+        loading: Kraunama.
+        loading_complete: Įkėlimas baigtas.
+        popup_blocked: Ši nuoroda sukonfigūruota taip, kad atsidarytų naujame lange, bet panašu, kad ji neatsidarė. Išjunkite iššokančiųjų langų blokatorių šiam puslapiui ir bandykite dar kartą.
+      workflows:
+        begin_from_launcher: Pradėkite darbo eigą iš paleidimo priemonės %{title}
+        bidirectional_not_allowed: Dvikrypčiai kraštai neleidžiami.
+        cyclic_dependency: Pridėjus šią ribą, tarp paleidimo priemonių bus sukurta ciklinė priklausomybė.
+        edge_aria_label: Kraštas nuo %{from} iki %{to}
+        launcher_aria_label: 'Paleidimo programa: %{title}'
+        launcher_exists: Paleidimo programa jau yra, pasirinkite kitą
+        load_launcher_failed: Nepavyko įkelti paleidimo priemonės HTML. Bandykite dar kartą.
+        no_empty_cells: Nėra tuščių tinklelio langelių!
+        save_failed: Nepavyko išsaugoti darbo eigos. Išsamesnės informacijos ieškokite konsolėje.
+        select_launcher: Pasirinkite paleidimo priemonę
+      xdmod:
+        analytics_toggle: Analizės perjungimas
+        column_date: Data
+        column_id: ID
+        column_name: Vardas
+        date_range: '%{from} iki %{to}'
+        efficiency_report: '%{unit} Efektyvumo ataskaita'
+        ensure_logged_in_html: '%{error} Pirmiausia įsitikinkite, kad esate <a href="%{url}">prisijungę prie „Open XDMoD“</a> ir bandykite dar kartą.'
+        expand_analytics_title: Spustelėkite, jei norite išskleisti %{id} užduoties analizės informaciją virš šios lentelės.
+        fetch_user_failed: Nepavyko gauti dabartinio vartotojo informacijos iš „Open XDMoD“.
+        idp_redirect_failed: 'Prisijungimas nepavyko: IDP peradresavimas nepavyko'
+        iframe_error: „XDMoD“ prisijungimo „iFrame“, esantis URL adresu %{url}, paskelbė klaidos pranešimą su informacija %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} neefektyvus %{unit} </span> &%{total} iš viso %{unit}
+        invalid_job_data: Užklausos pateikti darbo duomenys negalioja.
+        loading_caps: ĮKRAUNAMA...
+        login_page_load_failed: 'Prisijungimas nepavyko: Nepavyko įkelti XDMoD prisijungimo puslapio'
+        login_timeout: 'Prisijungimas nepavyko: baigėsi skirtasis laikas, laukiant prisijungimo pabaigos'
+        metric_cpu: CPU
+        metric_mem: Atm.
+        metric_walltime: Sienų laikas
+        no_data: Duomenų nėra.
+        not_available: N/A
+        open_xdmod: Atidaryti XDMoD
+        percent_efficient: '%{percent}% efektyvus'
+        percent_efficient_aria: efektyvumo procentas
+        percent_inefficient: '%{percent}% neefektyvus'
+        percent_inefficient_aria: neefektyvus procentas
+        recently_completed_jobs: Neseniai atlikti darbai
+        unit_core_hours: pagrindinės valandos
+        unit_core_hours_title: Pagrindinės valandos
+        unit_jobs: darbo vietų
+        unit_jobs_title: Darbai
+    launch: Paleidimas
+    load_report: Įkelti ataskaitą + %{node}
+    loading: Kraunama...
+    loading_short: Kraunama
+    locale_name: Lietuvių (Lietuva)
+    logo_alt_text: Sveiki atvykę į „Open OnDemand“
+    logout_body_html: <strong>Kad atsijungtumėte, turite visiškai uždaryti naršyklę</strong>. Jei iš naujo atidarę naršyklę vis dar esate prisijungę, išvalykite slapukus. Jei naudojate „Chromebook“ arba „Chromebox“, norėdami uždaryti naršyklę ir atsijungti, turėsite paleisti įrenginį iš naujo.
+    logout_tip_html: '<strong>Patarimas: „Privataus naršymo režimo“</strong> lango naudojimas naudojant „OnDemand“ yra puikus būdas valdyti „automatinį atsijungimą“, nes uždarius naršyklės langą bus pašalinti visi susiję slapukai ir sesijos informacija.'
+    logout_title: Jūs dar nesate atsijungę
+    maximum: Maksimalus
+    mem_report: Atminties ataskaita + %{node}
+    minimum: Minimalus
+    mode: Režimas
+    module_browser_available_modules: 'Galimi moduliai:'
+    module_browser_copy_aria: Kopijuoti įkėlimo komandą %{name}
+    module_browser_dependencies: 'Priklausomybės:'
+    module_browser_last_updated: 'Paskutinį kartą atnaujinta: %{last_updated}'
+    module_browser_load_command: 'Įkėlimo komanda:'
+    module_browser_search_label: Paieškos moduliai
+    module_browser_search_placeholder: Ieškoti pagal modulio pavadinimą...
+    module_browser_select_version: (pasirinkite versiją)
+    module_browser_showing_results: Rodomi %{count} rezultatai
+    module_browser_title: Modulių naršyklė
+    module_browser_versions: Versijos
+    motd_default_md: '„Open OnDemand“ kūrimą remia [Nacionalinis mokslo fondas](https://www.nsf.gov/)
+
+      pagal dotacijų numerius [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) ir
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Sužinokite daugiau arba įsitraukite:
+
+
+      - [Diskusija](https://discourse.openondemand.org/)
+
+      - [„Open OnDemand“ saugykla](https://github.com/OSC/ondemand)
+
+      - [„ood-core“ saugykla](https://github.com/OSC/ood_core)
+
+      - [Dokumentacija](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD nebuvo išanalizuotas arba teisingai pateiktas: %{error_message}'
+    motd_no_messages: Naujų pranešimų nėra.
+    motd_title: Dienos žinutė
+    name: Vardas
+    nav_all_apps: Visos programėlės
+    nav_develop_docs: Kūrėjo dokumentacija
+    nav_develop_my_sandbox_apps_dev: Mano „Sandbox“ programos (kūrimas)
+    nav_develop_my_sandbox_apps_prod: Mano bendrinamos programos (gamybinė versija)
+    nav_develop_title: Kurti
+    nav_help_change_password: Pakeisti HPC slaptažodį
+    nav_help_custom: Navigacijos pagalbos tinkinimas
+    nav_help_docs: Internetinė dokumentacija
+    nav_help_support: Susisiekite su palaikymo tarnyba
+    nav_help_support_ticket: Pateikti pagalbos užklausą
+    nav_help_title: Pagalba
+    nav_help_two_factor: Dviejų veiksnių autentifikavimo konfigūravimas
+    nav_language: Kalba
+    nav_limit_caption: rodoma %{subset_count} iš %{total_count}
+    nav_logout: Atsijungti
+    nav_main_menu: Pagrindinis meniu
+    nav_restart_server: Paleiskite žiniatinklio serverį iš naujo
+    nav_sessions: Mano interaktyvūs seansai
+    nav_toggle_navigation: Perjungti navigaciją
+    nav_user: Prisijungta kaip %{username}
+    network_report: Tinklo ataskaita + %{node}
+    node: Mazgas
+    none: Nėra
+    not_grouped: Kitos programėlės
+    nsf_access_announcements: NSF PRIEIGOS pranešimai
+    nsf_access_events: NSF ACCESS renginiai
+    nsf_access_outages: NSF prieigos sutrikimai
+    ok: Gerai
+    opens_in_new_tab: atsidaro naujame skirtuke
+    output_location: 'Išvesties vieta:'
+    owner: Savininkas
+    page_actions_aria: Puslapio veiksmai
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametrai
+    path_selector_breadcrumb_aria: '%{title} Navigacijos kelias'
+    path_selector_caption: Pasirinkite failą arba katalogą, kurį norite naudoti formoje.
+    path_selector_default_popup_title: Pasirinkite savo darbo katalogą
+    path_selector_home: namai
+    path_selector_parent_directory: tėvinis katalogas
+    permissions_created: Leidimas sėkmingai sukurtas.
+    permissions_destroyed: Leidimas sėkmingai sunaikintas.
+    permissions_group_title: Grupės leidimai
+    permissions_user_title: Vartotojo leidimai
+    pinned_apps_caption_html: Rekomenduojamas <a href="%{all_apps_url}">visų galimų programų</a> poaibis
+    pinned_apps_category: Programėlės
+    pinned_apps_title: Prisegtos programos
+    products_created: Produktas sėkmingai sukurtas.
+    products_git_commit_hint_html: Prašome patvirtinti bet kokius pakeitimus arba pridėti reikiamus failus į <code>.gitignore</code>
+    products_git_staged: Pastatytas
+    products_git_status: Git būsena
+    products_git_unstaged: Nescenizuotas
+    products_git_untracked: Nesekamas
+    products_manifest_save_error: Nepavyksta išsaugoti programos manifesto %{path}
+    products_ssh_key_created: SSH raktas sėkmingai sukurtas.
+    products_ssh_key_exists: SSH raktas jau yra
+    products_ssh_key_failed: 'Nepavyko sukurti SSH rakto: %{error}'
+    products_type_batch_connect: „Batch Connect“ programėlė
+    products_type_passenger: Keleivių programėlė
+    products_type_passenger_meteor: Keleivių meteorų programėlė
+    products_type_passenger_node: Keleivių mazgo programėlė
+    products_type_passenger_rack: Keleivių lentynų programėlė
+    products_type_passenger_rails: Keleivių geležinkelių programėlė
+    products_type_passenger_rails_sqlite: „Passenger Rails“ programėlė su „SQLite“ duomenų baze
+    products_type_passenger_wsgi: Keleivių WSGI programėlė
+    products_updated: Produktas sėkmingai atnaujintas.
+    project: Projektas
+    project_balances: Projekto likučiai
+    project_directory: Projektų katalogas
+    project_zip_error_message: 'Klaida kuriant ZIP failą: %{error}'
+    project_zip_success_message: 'Sėkmė: project.zip buvo sukurtas jūsų projekto kataloge.'
+    queue: Eilė
+    quota_additional_message: Apsvarstykite galimybę ištrinti arba archyvuoti failus, kad atlaisvintumėte vietos diske.
+    quota_block: Naudojama %{used} iš kvotos %{available}
+    quota_block_shared: (%{used_exclusive} yra tavo)
+    quota_file: Naudojami %{used} failai iš kvotos %{available} failų
+    quota_file_shared: (%{used_exclusive} failai yra jūsų)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Įkelkite puslapį iš naujo, kad pamatytumėte atnaujintą kvotą. Kvotos atnaujinamos kas 5 minutes.
+    quota_warning_prefix_html: Įspėjimas dėl kvotos apribojimo
+    recently_used_apps_title: Neseniai naudotos programos
+    remove: Pašalinti
+    reset: Atstatyti
+    restart_msg_html: 'Jūsų grupės narystė pasikeitė, o tai paveikė jūsų prieigą prie programų. Jūsų prietaisų skydelis turėtų būti paleistas iš naujo automatiškai.
+
+
+      Jei tai nepadeda, spustelėkite: <a href="%{restart_url}">paleisti žiniatinklio serverį iš naujo</a>.'
+    restore: Atkurti
+    root: Šaknis
+    save: Išsaugoti
+    saved_settings_title: Išsaugoti nustatymai
+    select: Pasirinkite
+    select_all: Pasirinkti viską
+    select_path: Pasirinkite kelią
+    select_path_for: '%{element} pasirinkti kelią
+
+      '
+    settings_csrf_expired: Jūsų sesijos saugos prieigos raktas nebegalioja. Bandykite dar kartą.
+    settings_invalid_request: Pateikti neteisingi nustatymai
+    settings_unprocessable_body_html: Jūsų sesija galėjo baigtis arba norimas pakeitimas buvo atmestas. Prašome <a href="%{dashboard_url}">grįžti į valdymo skydą</a> ir bandykite dar kartą.
+    settings_unprocessable_title: Sesija pasibaigė arba pakeitimas atmestas
+    settings_updated: Nustatymai atnaujinti
+    shared_apps_caption: Bendrino %{owner_title} (%{owner})
+    shared_apps_caption_short: Bendrino %{owner}
+    shared_apps_title: Bendrinamos programos
+    sharing_catalog_msg_html: '<br>Dalis prieinamų programėlių gali būti peržiūrėta %{catalog_link_tag}.
+
+      '
+    sharing_catalog_title: Programėlių katalogas
+    sharing_no_shared_apps_html: '<strong>Nėra pasiekiamų bendrinamų programėlių.</strong>
+
+      '
+    sharing_support_msg_html: 'Jei nerandate ieškomos programėlės, susisiekite su
+
+      <a href="%{support_url}">palaikymo tarnyba</a>.
+
+      '
+    sharing_welcome_msg_html: 'Klasterio prieigos programas galima pasiekti išskleidžiamuosiuose meniu naršymo juostoje viršuje.
+
+
+      <br>Pasirinktinės bendrinamos programos pasiekiamos žemiau.
+
+      '
+    shell: Korpusas
+    shell_app_title: '%{cluster_title} Prieiga prie apvalkalo'
+    show: Rodyti
+    size: Dydis
+    skip_navigation: Praleisti navigaciją
+    smart_attributes:
+      account: Paskyra
+      auto_modules_none: Automatiniai moduliai (nenurodyta)
+      cluster: Klasteris
+      cores: Šerdys
+      email_on_started: Norėčiau gauti el. laišką, kai prasidės sesija
+      environment_variable: Aplinkos kintamasis
+      environment_variable_key: 'Aplinkos kintamasis: %{key}'
+      job_name: Pareigybės pavadinimas
+      module_version: '%{module} versija'
+      num_cpus_single_node: CPU skaičius viename mazge
+      num_hours: Valandų skaičius
+      num_nodes: Mazgų skaičius
+      num_processors: Procesorių skaičius
+      partition: Pertvara
+      qos: QoS
+      queue: Eilė
+      script: Scenarijus
+      vnc_idle_help: 'Išeiti, jei praeina # sekundės be VNC peržiūros priemonės ryšio'
+      vnc_idle_label: Neveiklos skirtasis laikas
+      vnc_resolution_help: Rezoliuciją naudoja tik vietiniai VNC ryšiai
+      vnc_resolution_label: Rezoliucija
+    soft_tabs: Minkšti skirtukai
+    soft_tabs_info: Švelnūs tabuliacijos simboliai yra tarpai faile, o ne tikri tabuliacijos simboliai.
+    status: Būsena
+    status_completed: Užbaigta
+    status_held: Laikė
+    status_hold: Laikyti
+    status_queued: Eilėje
+    status_running: Bėgimas
+    status_starting: Pradžia
+    status_suspend: Sustabdyti
+    status_suspended: Sustabdyta
+    status_undetermined: Nenustatyta
+    stop: Stop
+    submit: Pateikti
+    submit_args: 'Pateikti argumentus:'
+    support_ticket:
+      creation_success: 'Palaikymo bilieto el. laiškas išsiųstas adresu: %{to}'
+      fields:
+        attachments: Priedai
+        cc: KK
+        description: Aprašymas
+        email: El. paštas
+        job_description: Darbo aprašymas
+        session_description: Sesijos aprašymas
+        subject: Tema
+        username: Vartotojo vardas
+      generic_error: 'Apdorojant jūsų užklausą įvyko klaida: %{error}'
+      header: Palaikymo užklausa
+      rt:
+        creation_success: 'Palaikymo užklausa sukurta „RequestTracker“ sistemoje. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: '„ServiceNow“ sukurtas pagalbos bilietas. Numeris: %{number}. Tačiau nepavyko pridėti priedų.'
+        creation_success: '„ServiceNow“ sukurtas pagalbos bilietas. Numeris: %{number}'
+      submit: Pateikti pagalbos užklausą
+      title: Palaikymo užklausa
+      validation:
+        attachments_items: '%{id} yra neteisingi. Pridėtas %{items}, maksimalus priedų skaičius yra %{max}'
+        attachments_size: '%{id} yra neteisingi. Didžiausias priedo dydis yra %{max}'
+        email: '%{id} formatas netinkamas. Tikėtasi galiojančio el. pašto adreso.'
+        items:
+          attachments_js: Daugiau priedų neleidžiama
+        required: '%{id} yra privalomas'
+        size:
+          attachments_js: Maksimalus priedo dydis yra %{max}. Pasirinkto failo dydis yra %{size}
+      validation_error: Neteisinga užklausa. Peržiūrėkite toliau pateiktus klaidų pranešimus.
+    support_ticket_add_attachment: Pridėti priedą
+    support_ticket_attachments_help: Spustelėkite langelį, kad pridėtumėte failą. Ekrano kopijos ar kiti failai gali padėti išspręsti problemą.
+    system_apps_caption: Sistemos įdiegta programa
+    system_status_available: '%{name} Prieinama: %{count}'
+    system_status_cluster_title: '%{title} Klasterio būsena'
+    system_status_gpus: Grafikos procesoriai
+    system_status_in_use: '%{percent} naudojamas'
+    system_status_jobs_queued: Užduotys eilėje
+    system_status_jobs_queued_count: '%{count} Užduotys eilėje'
+    system_status_jobs_running: Vykdomi darbai
+    system_status_jobs_running_count: '%{count} Vykdomi darbai'
+    system_status_nodes: Mazgai
+    system_status_not_slurm: Klasterio informacija nepasiekiama naudojant %{scheduler}. Šiuo metu palaikomi tik „Slurm“ klasteriai.
+    system_status_processors: Procesoriai
+    toggle_notifications: Perjungti pranešimus
+    toggle_push_notifications: Įjungti/išjungti tiesioginius pranešimus
+    type: Tipas
+    undefined_title: Neapibrėžtas pavadinimas
+    unknown: Nežinoma
+    uppy:
+      strings:
+        addMore: Pridėti daugiau
+        addMoreFiles: Pridėti daugiau failų
+        addingMoreFiles: Pridedama daugiau failų
+        back: Atgal
+        browseFiles: naršyti failus
+        browseFolders: naršyti aplankus
+        cancel: Atšaukti
+        cancelUpload: Atšaukti įkėlimą
+        closeModal: Uždaryti modalinį langą
+        complete: Užbaigtas
+        dashboardTitle: Failų įkėlėjas
+        dashboardWindowTitle: Failų įkėlimo langas (paspauskite „Esc“, kad uždarytumėte)
+        done: Atlikta
+        dropHint: Įmeskite failus čia
+        dropPasteBoth: Numeskite failus čia, %{browseFiles} arba %{browseFolders}
+        dropPasteFiles: Numeskite failus čia arba %{browseFiles}
+        dropPasteFolders: Numeskite failus čia arba %{browseFolders}
+        editFile: Redaguoti failą
+        editing: Redaguojama %{file}
+        emptyFolderAdded: Iš tuščio aplanko nebuvo pridėta jokių failų
+        error: Klaida
+        exceedsSize: '%{file} viršija maksimalų leistiną %{size} dydį'
+        failedToUpload: Nepavyko įkelti %{file}
+        folderAlreadyAdded: Aplankas „%{folder}“ jau buvo pridėtas
+        myDevice: Mano įrenginys
+        noDuplicates: Nepavyksta pridėti pasikartojančio failo „%{fileName}“, jis jau yra
+        pause: Pauzė
+        pauseUpload: Pristabdyti įkėlimą
+        paused: Pristabdyta
+        removeFile: Pašalinti failą
+        resume: Gyvenimo aprašymas
+        resumeUpload: Tęsti įkėlimą
+        retry: Bandyti dar kartą
+        retryUpload: Bandyti įkelti dar kartą
+        save: Išsaugoti
+        saveChanges: Išsaugoti pakeitimus
+        showErrorDetails: Rodyti klaidos informaciją
+        upload: Įkelti
+        uploadComplete: Įkėlimas baigtas
+        uploadFailed: Įkėlimas nepavyko
+        uploadPaused: Įkėlimas pristabdytas
+        uploading: Įkėlimas
+        xTimeLeft: '%{time} liko'
+    user: Vartotojas
+    user_configuration:
+      support_ticket_error: „support_ticket“ yra neteisingai sukonfigūruotas. Į YAML konfigūraciją įtraukite vidinį diegimą.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">„OnDemand“ suteikia integruotą, vieną prieigos tašką visiems jūsų HPC ištekliams.</p>
+
+      '

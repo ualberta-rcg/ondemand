@@ -1,0 +1,18 @@
+{
+  "page_title": "Školjka - %{siteTitle}",
+  "menu_aria": "Izbornik ljuske",
+  "host_label": "Domaćin: %{host}",
+  "initial_directory": "Početni direktorij: %{dir}",
+  "themes_label": "Teme:",
+  "theme_default": "Zadano",
+  "theme_bright": "Svijetlo",
+  "theme_dark": "Tamno",
+  "fonts_label": "Fontovi:",
+  "leave_page_warning": "Napuštanjem ove stranice prekinut ćete svoju terminalnu sesiju.",
+  "websocket_failed": "Nije uspjelo uspostavljanje websocket veze. Provjerite koristite li preglednik koji podržava websocket veze.",
+  "connection_terminated": "Vaša veza s udaljenim poslužiteljem je prekinuta.",
+  "auth_no_clusters": "Nisu definirani klasteri.",
+  "auth_invalid_origin": "Nevažeće porijeklo.",
+  "auth_bad_csrf": "Loš CSRF token.",
+  "auth_host_not_allowed": "Host \"%{host}\" nije naveden u popisu dopuštenih ili konfiguracijama klastera."
+}

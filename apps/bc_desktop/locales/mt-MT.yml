@@ -1,0 +1,16 @@
+---
+mt-MT:
+  manifest:
+    name: Desktop
+    description: 'Din l-app se tniedi desktop interattiv fuq nodu tal-komputazzjoni wieħed jew aktar. Int se jkollok aċċess sħiħ għar-riżorsi li jipprovdu dawn in-nodi. Dan huwa analogu
+
+      għal xogħol batch interattiv.'
+  form:
+    attributes:
+      desktop:
+        label: Ambjent tad-Desktop
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: SĦABEB
+          xfce: Xfce

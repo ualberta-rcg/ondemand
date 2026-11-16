@@ -1,0 +1,5 @@
+---
+es-ES:
+  manifest:
+    name: Empleos activos
+    description: Vea los trabajos que se están ejecutando actualmente en los clústeres disponibles configurados para OnDemand.

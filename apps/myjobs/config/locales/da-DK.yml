@@ -1,0 +1,131 @@
+---
+da-DK:
+  jobcomposer:
+    account_label: 'Konto:'
+    back: Tilbage
+    cancel: Ophæve
+    close: Tæt
+    cluster_label: 'Klynge:'
+    confirm_delete: Er du sikker?
+    confirm_delete_template: Er du sikker på, at du vil slette dette?
+    copy_template: Kopiér skabelon
+    create_from_path_title: Opret et nyt job fra en sti
+    create_new_heading_html: Opret ny "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Opret nyt job
+    create_template: Opret skabelon
+    create_template_from_job_title: Opret skabelon fra det valgte job
+    delete: Slet
+    delete_job_title: Slet job
+    deprecation_warning_html: Job Composer er udfaset og vil blive fjernet i Open OnDemand 5.0. Overfør venligst dine job og skabeloner til <a href="%{projects_path}">Project Manager</a>.
+    edit: Redigere
+    edit_files: Rediger filer
+    folder_contents_label: 'Mappeindhold:'
+    from_default_template: Fra standardskabelon
+    from_default_template_title: Opret et nyt job fra standardskabelonen
+    from_selected_job: Fra valgt job
+    from_selected_job_title: Kopiér det valgte job
+    from_specified_path: Fra den angivne sti
+    from_template: Fra skabelon
+    from_template_title: Opret et nyt job fra en skabelon, du vælger
+    invalid_cluster_html: Klyngen er ikke gyldig! Rediger <a href="#" id="edit-job-options-script-link">Jobindstillinger</a> for at vælge en gyldig klynge.
+    invalid_script_html: Scriptet er ikke gyldigt! Rediger <a href="#" id="edit-job-options-link">Jobindstillinger</a> for at vælge et gyldigt script.
+    job_already_submitted: Jobbet er allerede blevet indsendt.
+    job_array_request_label: 'Jobarray-anmodning:'
+    job_attributes_heading_html: Jobattributter <strong> (Valgfrit) </strong>
+    job_copied: Jobbet blev kopieret.
+    job_copy_failed: 'Jobbet kunne ikke kopieres: %{errors}'
+    job_created: Jobbet blev oprettet.
+    job_destroy_failed: 'Jobbet kunne ikke destrueres: %{errors}'
+    job_destroyed: Jobbet blev ødelagt.
+    job_details: Jobdetaljer
+    job_directory_missing: Jobkataloget mangler!
+    job_name_label: 'Jobnavn:'
+    job_not_submitted: Jobbet er ikke blevet indsendt.
+    job_stop_failed: 'Jobbet kunne ikke stoppes: %{errors}'
+    job_stopped: Jobbet blev stoppet.
+    job_submit_failed: 'Kunne ikke sende batchjobbet:'
+    job_submitted: Jobbet blev indsendt.
+    job_updated: Jobbet blev opdateret.
+    loading: Indlæser
+    loading_job_info: Indlæser joboplysninger
+    nav_help: Hjælp
+    nav_jobs: Job
+    nav_menu_aria: Menu for jobopretter
+    nav_templates: Skabeloner
+    new_job: Nyt job
+    new_template: Ny skabelon
+    new_template_title: Opret en ny skabelon
+    no_clusters_alert: Der er ingen konfigurerede værter, der tillader dig at indsende job. Kontakt venligst din systemadministrator.
+    open_dir: Åbn mappe
+    open_dir_in_editor: Åbn mappe i fileditoren
+    open_dir_in_file_manager: Åbn mappe i filhåndtering
+    open_dir_in_terminal: Åbn mappe i terminalen
+    open_editor: Åbn editor
+    open_selected_job_in_terminal: Åbn det valgte job i terminalen
+    open_selected_template_in_terminal: Åbn den valgte skabelon i terminalen
+    open_template_dir_in_file_manager: Åbn skabelonmappe i filhåndtering
+    open_terminal: Åbn terminalen
+    open_xdmod: Åbn XDMoD
+    options_account_help: Konto er et valgfrit felt. Hvis det ikke er angivet, kan kontoen blive angivet automatisk af indsendelsesfilteret.
+    options_account_title: Konto
+    options_array_help: Jobarrays er valgfrie. F.eks. 1-10
+    options_array_help_with_clusters: 'Jobarrays er valgfrie. OnDemand understøtter i øjeblikket ikke jobarrays for klyngen(e): %{cluster_list}.'
+    options_array_title: Specifikation af jobmatrix
+    options_cluster_title: Klynge
+    options_copy_environment: Kopiér miljø
+    options_errors: Ret venligst fejlene nedenfor.
+    options_name_title: Navn
+    options_script_help: Filer større end 65 KB er udeladt fra jobscriptfeltet
+    options_script_title: Angiv jobscript
+    options_title: Jobmuligheder
+    other_valid_files: Andre gyldige filer
+    page_title: Jobforfatter - %{site}
+    path_to_source_heading_html: Sti til kilde <strong>(Påkrævet)</strong>
+    reset: Nulstil
+    reset_template_fields_title: Nulstil felter til skabelonstandard
+    save: Spare
+    script_contents_label: 'Indhold af manuskriptet:'
+    script_location_label: 'Scriptplacering:'
+    script_name_form_label: 'Scriptnavn:'
+    script_name_label: 'Scriptnavn:'
+    select_cluster_prompt: Vælg en klynge...
+    select_template_option: -- vælg en skabelon --
+    selected_template_details: Detaljer om valgte skabeloner
+    show: Vise
+    show_batch_host_label: 'Batch-vært:'
+    show_dir_contents_label: 'Indhold i kataloget:'
+    show_name_label: 'Navn:'
+    show_staged_dir_label: 'Iscenesat instruktør:'
+    showing_job_title: Viser job
+    skip_navigation: Spring navigation over
+    source_path_help: Indtast stien til en mappe på filsystemet. Indholdet af denne sti vil blive kopieret til en ny arbejdsgang.
+    source_path_label: Kildesti
+    specify_job_host_and_script: Angiv jobvært og script
+    stop: Stop
+    stop_job_title: Stop job
+    submit: Indsend
+    submit_job_title: Send job
+    submit_script_title: Indsend script
+    submit_to_label: 'Send til:'
+    suggested_files: Foreslåede filer
+    table_created: Oprettet
+    table_id: ID
+    table_source: Kilde
+    table_status: Status
+    template_create_error: fejl ved oprettelse af skabelon
+    template_error_name_unique: skal være unik.
+    template_error_path_directory: skal pege på en mappe.
+    template_error_path_missing: findes ikke.
+    template_errors_heading:
+      one: 'Fejlen %{count} forhindrede lagring af denne skabelon:'
+      other: '%{count} fejl forhindrede denne skabelon i at blive gemt:'
+    template_label: 'Skabelon:'
+    template_location_label: 'Skabelonplacering:'
+    template_path_blank_help: Hvis feltet efterlades tomt, tilføjes et standardjobscript til din nye skabelon.
+    template_path_label: Sti (skabelonen oprettes ved at kopiere filer fra denne kildesti)
+    templates_subtitle: For at oprette et nyt job skal du vælge en skabelon, der skal kopieres, udfylde formularen til højre og klikke på "Opret nyt job".
+    title: Jobkomponist
+    toggle_navigation: Skift navigation
+    view_files: Vis filer
+    xdmod_url_warning_message: Dette job vises muligvis ikke i Open XDMoD før 24 timer efter, at jobbet er færdigt.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

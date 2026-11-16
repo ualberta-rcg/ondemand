@@ -1,0 +1,18 @@
+{
+  "page_title": "Concha - %{siteTitle}",
+  "menu_aria": "Menu Shell",
+  "host_label": "Anfitrião: %{host}",
+  "initial_directory": "Directório inicial: %{dir}",
+  "themes_label": "Temas:",
+  "theme_default": "Predefinição",
+  "theme_bright": "Luminoso",
+  "theme_dark": "Escuro",
+  "fonts_label": "Fontes:",
+  "leave_page_warning": "Ao sair desta página, a sua sessão no terminal será terminada.",
+  "websocket_failed": "Não foi possível estabelecer uma ligação WebSocket. Certifique-se de que está a utilizar um navegador compatível com ligações WebSocket.",
+  "connection_terminated": "A sua ligação com o servidor remoto foi encerrada.",
+  "auth_no_clusters": "Nenhum cluster definido.",
+  "auth_invalid_origin": "Origem inválida.",
+  "auth_bad_csrf": "Token CSRF inválido.",
+  "auth_host_not_allowed": "O host \"%{host}\" não está especificado na lista de permissões nem nas definições do cluster."
+}

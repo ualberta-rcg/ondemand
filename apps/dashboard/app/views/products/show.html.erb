@@ -11,7 +11,7 @@
   </h2>
 </div>
 
-<h3>Details</h3>
+<h3><%= t('dashboard.details') %></h3>
 
 <div class="row ood-mb-2">
   <div class="col-md-2 col-sm-2 col-xs-12">
@@ -24,7 +24,7 @@
       <%- @product.app.links_without_validation.each do |link| -%>
         <%=
           link_to(
-            "Launch #{link.title}",
+            t('dashboard.development_launch_title', title: link.title),
             link.url.to_s,
             class: "btn btn-primary",
             data: {
@@ -137,7 +137,7 @@
   <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12">
     <div class="page-header">
       <h3>
-        <%= link_to @product.readme.title, @product.readme.edit_url.to_s, title: "Edit #{@product.readme.title}" %>
+        <%= link_to @product.readme.title, @product.readme.edit_url.to_s, title: t('dashboard.development_edit_title', title: @product.readme.title) %>
       </h3>
     </div>
     <%= @product.readme.html %>
@@ -158,9 +158,9 @@
 </div>
 <% end %>
 
-<%= link_to 'Back', products_path(type: @type), class: 'btn btn-default' %>
+<%= link_to t('dashboard.back'), products_path(type: @type), class: 'btn btn-default' %>
 
-<%= button_tag 'Delete App',
+<%= button_tag t('dashboard.development_delete_app'),
   class: 'btn btn-danger float-end',
   type: 'button',
   data: {

@@ -1,0 +1,1012 @@
+---
+hr-HR:
+  activemodel:
+    errors:
+      messages:
+        format: Format %{attribute} nije važeći ili nedostaje
+        invalid: '%{attribute} nije valjan'
+        required: '%{attribute} je obavezan'
+        used: '%{attribute} se već koristi'
+  dashboard:
+    account: Račun
+    actions: Radnje
+    active_jobs: Aktivni poslovi
+    active_jobs_close_details: Zatvori proširenu ploču s detaljima.
+    active_jobs_detail:
+      account: Račun
+      array_job_id: ID zadatka niza
+      array_task_id: ID zadatka polja
+      cluster: Klaster
+      cluster_id: ID klastera
+      comment: Komentar
+      cpu_time: Vrijeme procesora
+      cpu_used: Korišteni procesor
+      current_working_directory: Trenutni radni direktorij
+      end_time: Vrijeme završetka
+      exec_host: Izvršni domaćin
+      finish_time: Vrijeme završetka
+      from_host: Od domaćina
+      gres: GRES
+      group_list: Popis grupa
+      job_account: Račun posla
+      job_checkpoint_attr: Atribut kontrolne točke posla
+      job_checkpoint_interval: Interval kontrolne točke posla
+      job_deadline: Rok za posao
+      job_exec_file: Izvršna datoteka zadatka
+      job_execution_time: Vrijeme izvršenja posla
+      job_gid: GID posla
+      job_group: Grupa poslova
+      job_id: ID posla
+      job_name: Naziv posla
+      job_priority: Prioritet posla
+      job_restart: Ponovno pokretanje posla
+      job_script_file: Datoteka skripte posla
+      job_script_size: Veličina skripte posla
+      job_share: Dijeljenje posla
+      job_type: Vrsta posla
+      job_uid: Jedinstveni identifikacijski broj posla
+      job_verify: Potvrda posla
+      job_version: Verzija posla
+      mem: Mem
+      memory: Memorija
+      node_count: Broj čvorova
+      node_list: Popis čvorova
+      nodes: Čvorovi
+      none: Ništa
+      notifications: Obavijesti
+      partition: Particija
+      pbs_id: PBS ID
+      pids: PID-ovi
+      ppn: PPN
+      project_name: Naziv projekta
+      queue: Red
+      reason: Razlog
+      reserve: Rezerva
+      select: Odaberite
+      start_time: Vrijeme početka
+      state: Stanje
+      status: Status
+      submission_time: Vrijeme podnošenja
+      swap: Zamjena
+      time_limit: Vremensko ograničenje
+      time_used: Korišteno vrijeme
+      total_cpus: Ukupan broj procesora
+      total_nodes: Ukupan broj čvorova
+      user: Korisnik
+      virtual_memory: Virtualna memorija
+      walltime: Vrijeme na zidu
+      walltime_used: Korišteno vrijeme na zidu
+    active_jobs_filter_all: Svi poslovi
+    active_jobs_filter_user: Vaši poslovi
+    active_jobs_ganlia_CPU: Slika ganglija za CPU.
+    active_jobs_ganlia_load: Slika ganglija za prosječna opterećenja sustava.
+    active_jobs_ganlia_mem: Slika ganglija za korištenje memorije.
+    active_jobs_ganlia_network: Slika ganglija za mrežnu upotrebu.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> prikaži sve (%{number_of_sessions})</a>
+    active_sessions_title: Aktivne interaktivne sesije
+    add: Dodati
+    all_apps_table_app_column: Ime
+    all_apps_table_category_column: Kategorija
+    all_apps_table_sub_category_column: Podkategorija
+    all_clusters: Svi klasteri
+    announcements_dismissible_button: U REDU
+    announcements_parse_error: Pogreška prilikom parsiranja objave.
+    announcements_render_error: Nije moguće prikazati obavijest '%{name}' zbog pogreške
+    announcements_required_button: Prihvatiti
+    apps_setup_failure_html: '<h2>Došlo je do problema prilikom inicijalizacije vaših podataka za ovu aplikaciju.</h2>
+
+      <p class="lead">
+
+      Na vlastitu odgovornost i dalje možete <a href="%{app_url}">otvoriti aplikaciju</a>
+
+      ili se jednostavno možete <a href="%{home_url}">vratiti na nadzornu ploču</a>
+
+      </p>
+
+      <p>
+
+      Podijelite ovo s razvojnim programerom svoje aplikacije: Skripta za postavljanje produkcije trebala bi biti idempotentna i pokreće se svaki put kada korisnik otvori aplikaciju putem nadzorne ploče.</p>
+
+      <h4>Iznimka: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Trag stoga:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Sistemske aplikacije
+    auto_log_location_title: Lokacija zapisnika
+    back: Nazad
+    balance_additional_message: Razmislite o zahtjevu za dodatnim %{balanace_units}
+    balance_message: '%{units_balance} je %{value}'
+    balance_no_warnings: Nijedan projekt nije unutar praga upozorenja o dnevnom stanju od %{threshold}.
+    balance_reload_message_html: Ponovno učitajte stranicu kako biste vidjeli ažurirano stanje. Stanja se ažuriraju svakodnevno.<br>Zadnje ažuriranje bilo je %{last_update}
+    balance_warning_prefix_html: '%{units_balance} upozorenje za'
+    batch_connect_active_sessions_aria: Aktivne sesije
+    batch_connect_app_version: 'verzija: %{version}'
+    batch_connect_apps_menu_aria: Izbornik interaktivnih aplikacija
+    batch_connect_apps_menu_title: Interaktivne aplikacije
+    batch_connect_form_attr_cache_error: Nije moguće koristiti prethodno spremljene vrijednosti, umjesto toga koriste se zadane vrijednosti. (%{error_message})
+    batch_connect_form_choose_template_name: Odaberite naziv predloška
+    batch_connect_form_data_root: korijenski direktorij podataka
+    batch_connect_form_dynamic_disclaimer: Sljedeći obrazac može se dinamički mijenjati kako se odabiru opcije. Sve promjene bit će objavljene i mogu se poništiti.
+    batch_connect_form_invalid: Datoteci form.yml nedostaju opcije u polju obrasca %{id}.
+    batch_connect_form_launch: Pokreni
+    batch_connect_form_prefill: Koristi spremljene postavke
+    batch_connect_form_prefill_error: Ups... Nešto nije u redu s vašim predloškom
+    batch_connect_form_reset_resolution: Poništi razlučivost
+    batch_connect_form_resolution_height: Visina rezolucije (pikseli)
+    batch_connect_form_resolution_width: Širina rezolucije (pikseli)
+    batch_connect_form_save: Spremi postavke
+    batch_connect_form_save_new_template: spremi nove postavke
+    batch_connect_form_save_submit: Spremi postavke i zatvori
+    batch_connect_form_select_template: odaberite spremljene postavke
+    batch_connect_form_session_data_html: '* Podacima sesije %{title} za ovu sesiju može se pristupiti pod %{data_link_tag}.
+
+      '
+    batch_connect_form_template_name_label: naziv postavke
+    batch_connect_form_type_new_name: Naziv postavki aplikacije
+    batch_connect_form_type_new_name_error: Molimo unesite valjano ime za nastavak
+    batch_connect_invalid_form_array: Element 'form' u form.yml nije niz
+    batch_connect_invalid_form_attributes: Element 'attributes' u form.yml nije mapa
+    batch_connect_missing_cluster: Klaster nikada nije postavljen. Ili ga postavite u form.yml.erb s `cluster` ili `form.cluster` ili postavite `cluster` u submit.yml.erb.
+    batch_connect_no_apps: Nema dostupnih interaktivnih aplikacija.
+    batch_connect_no_sessions: Nemate aktivnih sesija.
+    batch_connect_sandbox: '[Pješčanik]'
+    batch_connect_sessions_cancel_confirm: Jesi li siguran/sigurna?
+    batch_connect_sessions_cancel_full_title: Otkaži %{title} sesiju
+    batch_connect_sessions_cancel_title: Otkazati
+    batch_connect_sessions_connect_to: Poveži se s %{app_title}
+    batch_connect_sessions_connection_render_error: Gumb za povezivanje iz datoteke view.html.erb nije moguće prikazati zbog pogreške '%{error}'
+    batch_connect_sessions_data_html: 'Podacima sesije %{title} za ovu sesiju može se pristupiti
+
+      pod %{data_link_tag}.
+
+      '
+    batch_connect_sessions_delete_confirm: Jesi li siguran/sigurna?
+    batch_connect_sessions_delete_full_title: Izbriši %{title} sesiju
+    batch_connect_sessions_delete_hover: Izbriši sesiju
+    batch_connect_sessions_delete_title: Izbrisati
+    batch_connect_sessions_edit_title: Uredi novi %{title} s ovim parametrima sesije
+    batch_connect_sessions_error_invalid_job_name_html: 'Ako slanje ovog zadatka nije uspjelo zbog nevažećeg naziva zadatka,
+
+      zamolite administratora da konfigurira OnDemand i postavi
+
+      varijablu okruženja OOD_JOB_NAME_ILLEGAL_CHARS.'
+    batch_connect_sessions_errors_staging: 'Priprema predloška nije uspjela zbog sljedeće pogreške:'
+    batch_connect_sessions_errors_submission: 'Slanje sesije nije uspjelo zbog sljedeće greške:'
+    batch_connect_sessions_native_vnc_tab: Izvorne upute
+    batch_connect_sessions_novnc_compression: Kompresija
+    batch_connect_sessions_novnc_compression_help: 1 (nisko) do 9 (visoko)
+    batch_connect_sessions_novnc_launch: Pokreni %{app_title}
+    batch_connect_sessions_novnc_quality: Kvaliteta slike
+    batch_connect_sessions_novnc_quality_help: 0 (nisko) do 9 (visoko)
+    batch_connect_sessions_novnc_tab: noVNC veza
+    batch_connect_sessions_novnc_view_only: Samo za pregled (veza za dijeljenje)
+    batch_connect_sessions_path_selector_forbidden_error: Nemate dopuštenje za odabir tog direktorija ili datoteke.
+    batch_connect_sessions_relaunch_full_title: Ponovno pokretanje %{title} sesije
+    batch_connect_sessions_relaunch_title: Ponovno pokretanje
+    batch_connect_sessions_staged_root: pripremljeni korijenski direktorij
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} jezgra'
+      other: '%{count} jezgre'
+    batch_connect_sessions_stats_created_at: 'Izrađeno u:'
+    batch_connect_sessions_stats_expected_time: 'Očekivani početak:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Grafički procesor'
+      other: '%{count} Grafički procesori'
+    batch_connect_sessions_stats_host: 'Domaćin:'
+    batch_connect_sessions_stats_node_count:
+      one: Čvor %{count}
+      other: '%{count} čvorovi'
+    batch_connect_sessions_stats_session_dir_link_title: Otvori direktorij sesije za %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID sesije:'
+    batch_connect_sessions_stats_support_ticket: Problemi s ovom sesijom?
+    batch_connect_sessions_stats_support_ticket_link_text: Pošalji zahtjev za podršku
+    batch_connect_sessions_stats_time_remaining: 'Preostalo vrijeme:'
+    batch_connect_sessions_stats_time_requested: 'Zatraženo vrijeme:'
+    batch_connect_sessions_stats_time_used: 'Korišteno vrijeme:'
+    batch_connect_sessions_stats_undetermined_host: Neodređeno
+    batch_connect_sessions_status_bad: Vaša sesija je ušla u loše stanje. Slobodno se obratite podršci za više informacija.
+    batch_connect_sessions_status_blurb_cancel_failure: Nije uspjelo otkazivanje sesije.
+    batch_connect_sessions_status_blurb_cancel_success: Sesija je uspješno otkazana.
+    batch_connect_sessions_status_blurb_create_success: Sesija je uspješno kreirana.
+    batch_connect_sessions_status_blurb_delete_failure: Brisanje sesije nije uspjelo.
+    batch_connect_sessions_status_blurb_delete_success: Sesija je uspješno izbrisana.
+    batch_connect_sessions_status_completed: U svrhu otklanjanja pogrešaka, ova kartica će se čuvati još %{days} dana
+    batch_connect_sessions_status_missing_connection: 'Ovoj aplikaciji nedostaju podaci potrebni za uspostavljanje veze. Konkretno, nedostaje datoteka view.html.erb. Obratite se podršci ako vidite ovu poruku.
+
+      '
+    batch_connect_sessions_status_queued: Molimo vas za strpljenje jer vaš posao trenutno čeka u redu. Vrijeme čekanja ovisi o broju jezgri kao i o traženom vremenu.
+    batch_connect_sessions_status_starting: Vaša sesija trenutno počinje... Molimo vas za strpljenje jer ovaj postupak može potrajati nekoliko minuta.
+    batch_connect_sessions_word: Sjednica
+    batch_connect_validation:
+      app_not_found: Ova aplikacija ne postoji u direktoriju '%{root}'
+      inaccessible_clusters: Ova aplikacija zahtijeva klastere koji ne postoje ili im nemate pristup.
+      missing_form_file: Ova aplikacija ne pruža datoteku obrasca u direktoriju '%{root}'
+      missing_sub_app_form_file: Ova aplikacija ne pruža datoteku obrasca podaplikacije u direktoriju '%{root}'
+      no_cluster_specified: Ova aplikacija ne navodi nijedan klaster.
+    bc_saved_settings:
+      delete_confirm: Jesi li siguran/sigurna?
+      delete_title: Izbriši spremljene postavke %{settings_name}
+      deleted_message: Spremljene postavke %{settings_name} izbrisane.
+      edit_title: Uredi spremljene postavke %{settings_name}
+      launch_title: Pokreni %{app_title} s parametrima %{settings_name}
+      missing_settings: Odabrane spremljene postavke nisu pronađene.
+      no_settings_title: Nemate spremljenih postavki.
+      outdated_message: Parametri %{app_title} su se promijenili od kreiranja ovih postavki.
+      saved_message: Spremljene postavke %{settings_name}
+      settings_values_label: Vrijednosti
+      title: Spremljene postavke
+    breadcrumb_aria: Putna mrvica
+    breadcrumbs_all_apps: Sve aplikacije
+    breadcrumbs_home: Dom
+    breadcrumbs_my_sessions: Moje interaktivne sesije
+    breadcrumbs_support_ticket: Zahtjev za podršku
+    browser_warning: OnDemand zahtijeva noviju verziju preglednika koji koristite. Trenutni zahtjevi preglednika uključuju IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Otkazati
+    categories:
+      apps: Aplikacije
+      bioinformatics: Bioinformatika
+      clusters: Klasteri
+      data_science: Znanost o podacima
+      desktop: Stolno računalo
+      desktops: Stolna računala
+      development: Razvoj
+      external_apps: Vanjske aplikacije
+      files: Datoteke
+      gateway_apps: Aplikacije pristupnika
+      guis: GUI-ji
+      interactive_apps: Interaktivne aplikacije
+      jobs: Poslovi
+      machine_learning: Strojno učenje
+      mathematics: Matematika
+      servers: Poslužitelji
+      utilities: Komunalne usluge
+      virtual_desktop_interface: Sučelje virtualne radne površine
+      visualization: Vizualizacija
+    clear: Jasan
+    close: Zatvoriti
+    close_alert: Zatvori ovo upozorenje.
+    close_notice: Zatvorite ovu obavijest.
+    cluster: Klaster
+    copy: Kopirati
+    copy_suffix: (Kopija)
+    cpu_report: Izvješće CPU-a + %{node}
+    custom_pages:
+      invalid: 'Nevažeći kod stranice: %{page}. Ova stranica nije konfigurirana'
+    date: Datum
+    delete: Izbrisati
+    detailed_metrics: Detaljni podaci
+    details: Detalji
+    development_apps_caption: Aplikacija s otvorenim oknima
+    development_apps_category: Aplikacije za pijesak
+    development_delete_app: Izbriši aplikaciju
+    development_edit_title: Uredi %{title}
+    development_launch_title: Pokreni %{title}
+    directory: Imenik
+    edit: Uredi
+    editor_default: Zadano
+    editor_font_size: Veličina fonta
+    editor_key_bindings: Veze tipki
+    editor_theme: Tema
+    editor_theme_bright: Svijetlo
+    editor_theme_dark: Tamno
+    editor_wrap: Zamotaj
+    error_details: 'Detalji:'
+    error_internal_body_html: Pokušajte ponovno za nekoliko trenutaka. Ako se ova pogreška i dalje prikazuje, molimo vas da <a href="%{support_url}">kontaktirate podršku</a>.
+    error_internal_title: Interna pogreška poslužitelja
+    error_not_found_body: Stranica koju tražite ne postoji.
+    error_not_found_title: Nije pronađeno
+    favorites: Favoriti
+    file: Datoteka
+    file_editor: Uređivač datoteka
+    file_quotas: Kvote datoteka
+    files: Datoteke
+    files_change_directory: Promjena direktorija
+    files_contents_of_directory: Sadržaj direktorija %{path}
+    files_copy_move: Kopiraj/Premjesti
+    files_copy_path: Kopiraj put
+    files_directory_contents_aria: Sadržaj direktorija
+    files_directory_download_error_modal_title: Direktorij je prevelik za preuzimanje
+    files_directory_download_unauthorized: Možete preuzeti samo datoteku ili direktorij za koji imate pristup za čitanje i izvršavanje
+    files_directory_size_calculation_error: Isteklo je vrijeme prilikom pokušaja određivanja veličine direktorija.
+    files_directory_size_calculation_timeout: Isteklo je vrijeme prilikom pokušaja određivanja veličine direktorija.
+    files_directory_size_unknown: 'Greška sa statusom %{exit_code} pri pokušaju određivanja veličine direktorija: %{error}'
+    files_directory_too_large: Direktorij je prevelik za preuzimanje kao zip datoteke. Direktorij treba biti manji od %{download_directory_size_limit} bajtova.
+    files_doesnt_exist: '%{path} ne postoji.'
+    files_download: Preuzmi
+    files_download_not_enabled: Preuzimanje datoteka nije omogućeno na ovom poslužitelju.
+    files_download_zip: Preuzmi kao zip
+    files_exceeds_editor_limit: '%{path} premašuje ograničenje broja urednika od %{limit}. Preuzmite datoteku za lokalno uređivanje ili pregled.'
+    files_file_too_large: Datoteka je prevelika za preuzimanje. Preuzete datoteke trebaju biti manje od %{download_file_size_limit} bajtova.
+    files_go_up_directory: Idi gore u direktorij
+    files_modified_at: Izmijenjeno u
+    files_modify_aria: Izmijeni datoteke
+    files_new_directory: Novi imenik
+    files_new_file: Nova datoteka
+    files_not_editable: '%{path} nije datoteka za uređivanje'
+    files_not_readable: Nemate dovoljna dopuštenja za čitanje '%{path}'.
+    files_open_in_files_app: Otvori u aplikaciji Datoteke
+    files_open_in_globus: Otvori u Globusu
+    files_path_breadcrumbs_aria: Putne mrvice
+    files_refresh: Osvježiti
+    files_remote_dir_not_created: Nije stvoren direktorij %{path}
+    files_remote_disabled: Podrška za udaljene datoteke nije omogućena
+    files_remote_empty_dir_unsupported: Udaljeni ne podržava prazne direktorije
+    files_remote_error_listing_remotes: 'Greška pri popisu Rclone daljinskih upravljača: %{error}'
+    files_send_to_target_title_default: Pošalji metapodatke odabranih datoteka vanjskoj aplikaciji
+    files_shell: Otvori u Terminalu
+    files_shell_dropdown: Odaberite klaster za otvaranje u terminalu
+    files_title: Pregledavanje datoteka
+    files_upload: Prenesi
+    footer_contribute: Doprinesite na GitHubu
+    footer_license: Obavijest o licenci za softver
+    footer_open_source: Softver otvorenog koda.
+    footer_powered_by: Pokreće Open OnDemand
+    footer_version: 'Verzija na zahtjev: %{version}'
+    home_directory: Početna stranica
+    id: ID
+    import: Uvoz
+    job: Posao
+    job_info: Informacije o poslu
+    jobs_back_to_projects: Natrag na projekte
+    jobs_clear_form_fields: Obriši polja obrasca
+    jobs_completed_jobs: Završeni poslovi
+    jobs_create_blank_project: Izradi novi projekt
+    jobs_create_blank_workflow: Novi tijek rada
+    jobs_create_template_project: Izradite novi projekt iz predloška
+    jobs_import_shared_project: Uvoz dijeljenog projekta
+    jobs_launchers: Lanseri
+    jobs_launchers_add_select_option: Dodaj opciju odabira %{name}
+    jobs_launchers_cannot_find: Ne mogu pronaći pokretač %{id}
+    jobs_launchers_clone: Kloniraj pokretač %{name}
+    jobs_launchers_created: Pokretač uspješno kreiran!
+    jobs_launchers_default_created: U ovaj projekt je dodan i 'hello_world.sh'.
+    jobs_launchers_delete: Izbriši pokretač %{name}
+    jobs_launchers_delete_script_confirmation: Izbrisati sav sadržaj pokretača?
+    jobs_launchers_deleted: Pokretač uspješno izbrisan!
+    jobs_launchers_edit: Uredi obrazac za pokretač %{name}
+    jobs_launchers_edit_form_item: Uredi stavku obrasca %{label}
+    jobs_launchers_editing: Uređivanje %{title}
+    jobs_launchers_fixed_field: Fiksna vrijednost
+    jobs_launchers_fixed_field_help: Fiksiraj trenutnu vrijednost
+    jobs_launchers_max_value_label: Maksimalna vrijednost za polje broja %{label}
+    jobs_launchers_min_value_label: Minimalna vrijednost za polje broja %{label}
+    jobs_launchers_name: Naziv pokretača
+    jobs_launchers_new_field_select: Odaberite stavku za dodavanje u obrazac
+    jobs_launchers_not_found: Ne mogu pronaći pokretač %{launcher_id}
+    jobs_launchers_preview_form_item: Pregled stavke obrasca %{label}
+    jobs_launchers_remove_form_item: Ukloni stavku obrasca %{label}
+    jobs_launchers_remove_select_option: Ukloni opciju odabira %{name}
+    jobs_launchers_save_form: Spremi obrazac
+    jobs_launchers_save_form_item: Spremi promjene u stavku obrasca %{label}
+    jobs_launchers_show_form: Prikaži obrazac za pokretač %{name}
+    jobs_launchers_submit_launcher_title: Pokreni skriptu s predmemoriranim ili zadanim vrijednostima za pokretač %{name}
+    jobs_launchers_submitted: Uspješno poslan zadatak %{job_id}.
+    jobs_launchers_updated: Manifest pokretača ažuriran!
+    jobs_native_dependency: . Posao ovisi o job-id%{dependency}
+    jobs_native_reason: zbog '%{reason}'
+    jobs_native_state: Trenutno stanje posla je '%{state}'
+    jobs_new_launcher: Novi pokretač
+    jobs_new_project: Novi projekt
+    jobs_project_cannot_find: 'Ne mogu pronaći projekt: %{project_id}'
+    jobs_project_clear_form_fields: Obriši polja obrasca
+    jobs_project_created: Projekt uspješno kreiran!
+    jobs_project_delete_label: Izbriši projekt %{name}
+    jobs_project_delete_project_confirmation: Izbrisati sav sadržaj direktorija projekta?
+    jobs_project_deleted: Projekt uspješno izbrisan!
+    jobs_project_description_placeholder: Opis projekta
+    jobs_project_directory_error: Putanja do direktorija projekta nije postavljena za ovaj tijek rada
+    jobs_project_directory_help_html: 'Ostavite prazno i stvorit će se novi direktorij. <br />Zadana lokacija: %{root_directory}'
+    jobs_project_directory_placeholder: Apsolutna putanja direktorija projekta
+    jobs_project_edit_label: Uredi projekt %{name}
+    jobs_project_generic_error: 'Došlo je do pogreške prilikom obrade vašeg zahtjeva: %{error}'
+    jobs_project_group_help: Obavezno odaberite grupu koja uključuje sve namjeravane suradnike. Ako se ne radi o suradničkom projektu, preporučuje se zadana grupa.
+    jobs_project_group_owner: Skupina
+    jobs_project_imported: Projekt uspješno uvezen!
+    jobs_project_invalid_configuration_clusters: Potreban je HPC klaster. Obratite se administratoru da biste ga dodali u sustav.
+    jobs_project_invalid_configuration_scripts: Za vaš projekt potreban je izvršni skript. Prenesite skript pomoću aplikacije za datoteke.
+    jobs_project_job_deleted: Uspješno izbrisan zadatak %{job_id}
+    jobs_project_job_not_deleted: Nije moguće izbrisati zadatak %{job_id}
+    jobs_project_job_stopped: Uspješno zaustavljen zadatak %{job_id}
+    jobs_project_list_aria: Popis projekata
+    jobs_project_manager: Voditelj projekta
+    jobs_project_manifest_updated: Manifest projekta ažuriran!
+    jobs_project_name_placeholder: Naziv projekta
+    jobs_project_name_validation: Naziv projekta može sadržavati samo slova, brojke, crtice, podcrte i razmake
+    jobs_project_not_found: Ne mogu pronaći projekt %{project_id}
+    jobs_project_open_label: Otvori projekt %{name}
+    jobs_project_remove_label: Ukloni projekt %{name}
+    jobs_project_removed: Projekt uklonjen iz pretrage!
+    jobs_project_return_to_projects: Povratak na stranicu projekata
+    jobs_project_save_error: Nije moguće spremiti manifest u %{path}
+    jobs_project_save_project_title: Spremi projekt
+    jobs_project_select_directory: Odaberite direktorij projekta
+    jobs_project_setgid_help: Ostavljanje setgid označenim osigurava da se datoteke projekta kreiraju s odabranom grupom. Ne utječe na projekte u vašem početnom direktoriju.
+    jobs_project_validation_error: Nevažeći zahtjev. Molimo pregledajte pogreške u nastavku.
+    jobs_return_to_projects: Povratak na stranicu projekata
+    jobs_save_project_title: Spremi projekt
+    jobs_select_directory_placeholder: Kliknite na projekt za uvoz
+    jobs_toggle_details: Kliknite za prikaz detalja za posao %{job_id}
+    jobs_workflow_add_launcher: Dodaj pokretač
+    jobs_workflow_canvas_aria: platno
+    jobs_workflow_clone: Kloniraj tijek rada %{name}
+    jobs_workflow_connect_launchers: Poveži pokretače
+    jobs_workflow_created: Tijek rada uspješno kreiran!
+    jobs_workflow_delete_confirmation: Izbrisati sav sadržaj tijeka rada?
+    jobs_workflow_delete_edge: Izbriši rub
+    jobs_workflow_delete_edge_title: Izbriši odabrani rub (Del/Backspace)
+    jobs_workflow_delete_launcher: Izbriši pokretač
+    jobs_workflow_delete_launcher_title: Izbriši odabrani pokretač (Del/Backspace)
+    jobs_workflow_delete_title: Izbriši tijek rada %{name}
+    jobs_workflow_deleted: Tijek rada uspješno izbrisan!
+    jobs_workflow_description_placeholder: Opis tijeka rada
+    jobs_workflow_edit_settings: Izmijeni postavke za tijek rada %{name}
+    jobs_workflow_editing: 'Uređivanje: %{name}'
+    jobs_workflow_enable_sync_key: Omogući OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Tijek rada nije uspio s pogreškom %{error}
+    jobs_workflow_help: Kliknite naslov za odabir i povlačenje. Povežite se klikom na dva pokretača s odabranom opcijom 'Poveži pokretače'
+    jobs_workflow_manifest_updated: Manifest tijeka rada ažuriran!
+    jobs_workflow_missing_launchers: odaberi barem %{count}
+    jobs_workflow_name_placeholder: Naziv tijeka rada
+    jobs_workflow_name_validation: Naziv tijeka rada može sadržavati samo slova, brojke, crtice, podcrte i razmake
+    jobs_workflow_not_found: Nije moguće pronaći tijek rada %{workflow_id}
+    jobs_workflow_pick_launchers: Odaberite pokretače
+    jobs_workflow_show_graph: Otvori tijek rada %{name} u uređivaču grafova
+    jobs_workflow_submitted: Tijek rada uspješno poslan!
+    jobs_workflow_sync_key_help: Kada je omogućeno, svaki pokretač u ovom tijeku rada prima istu varijablu okruženja <code>OOD_WORKFLOW_SYNC_KEY</code> (slučajni token jedinstven za svako izvođenje tijeka rada). Korisno za generiranje sinkroniziranih naziva datoteka, zaključanih datoteka ili dijeljenih identifikatora u ovisnim poslovima.
+    jobs_workflow_synchronization: Sinkronizacija
+    jobs_workflow_toolbar_aria: alatna traka
+    jobs_workflow_zoom_controls: Kontrole zumiranja
+    jobs_workflow_zoom_in: Uvećaj
+    jobs_workflow_zoom_out: Smanji
+    jobs_workflow_zoom_reset: Poništi zumiranje
+    jobs_workflows: Tijekovi rada
+    jobs_workflows_not_supported: Konfigurirani planer ne podržava tijekove rada.
+    js:
+      active_jobs:
+        delete_aria: Izbriši zadatak %{name} s ID-om %{id}
+        delete_confirm: Jeste li sigurni da želite izbrisati %{name} - %{id}
+        delete_title: Izbriši posao
+        details_loaded: Popis detalja posla učitan je.
+        load_details_failed: Nije uspjelo učitavanje detalja posla.
+        remote_server_error: Došlo je do pogreške prilikom dohvaćanja podataka s udaljenog poslužitelja.
+        request_failed_parse: Zahtjev za poslovima nije uspio zbog pogreške u parsiranju tijela.
+        request_failed_status: 'Zahtjev za poslove nije uspio sa statusnim kodom: %{status}'
+        status_completed: Završeno
+        status_hold: Drži
+        status_queued: U redu čekanja
+        status_running: Trčanje
+        status_suspended: Suspendirano
+        status_undetermined: Neodređeno
+        support_ticket_aria: Pošaljite zahtjev za podršku za posao s ID-om %{id}
+        support_ticket_title: Pošalji zahtjev za podršku
+        toggle_details_aria: Uključi/isključi vidljivost posla %{name} na %{cluster}
+      batch_connect:
+        allow_notifications: Molimo vas da omogućite dopuštenja za obavijesti u svom pregledniku kako biste omogućili upozorenja o sesiji.
+        invalid_prefill_value_html: 'Nevažeća vrijednost: "%{value}" za polje "%{field}".<br>'
+        notification_permission_error: 'Pogreška pri traženju dozvole za obavijesti:'
+        resolution_reset: Rezolucija je resetirana na %{width} za %{height} piksela.
+        session_expires_warning: 'Upozorenje: %{title} (%{job_id}) istječe za ~%{minutes} minuta!'
+        session_status_aria: '%{title} sada je %{status}.'
+        session_status_push: '%{title} (%{job_id}) je sada %{status}.'
+      common:
+        cancel: Otkazati
+        close: Zatvoriti
+        error: Pogreška
+        loading: Učitavanje...
+        ok: U REDU
+      datatables:
+        all: Sve
+        filter_label: 'Filter:'
+        invalid_date: Nevažeći datum
+        rows_selected:
+          one: Odabran je redak %{count}
+          other: Odabrani %{count} retci
+        showing_filtered_rows: Prikazuju se %{display} od %{total} redaka
+        showing_rows: Prikazuju se %{display} retki
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: i
+        changed_help: Promijenjen je tekst pomoći za %{widget} u %{help}
+        changed_label: Promijenjena je oznaka na %{widget} u novu oznaku %{label}
+        current_value: postavite trenutnu vrijednost na %{value}
+        hid_item: Skrivena stavka obrasca %{widget}
+        maximum_limit: maksimalna granica do %{value}
+        minimum_limit: minimalni limit na %{value}
+        option_disabled: Opcija %{value} onemogućena za %{widget}
+        option_enabled: Opcija %{value} omogućena za %{widget}
+        revealed_item: Otkrivena stavka obrasca %{widget}
+        selected_option_disabled: Odabrana opcija %{value} onemogućena je za %{widget}
+        set_limits: Postavite %{details} za %{widget}
+        set_value: Postavi %{widget} na vrijednost %{value}
+        widget_no_label: '%{type} bez oznake'
+        widget_with_label: '%{type} s oznakom %{label}'
+      editor:
+        save_error: 'Došlo je do pogreške prilikom pokušaja spremanja ove datoteke!
+
+          %{error}'
+        unsaved_changes: Imate nespremljene promjene!
+      files:
+        action_delete: Izbrisati
+        action_download: Preuzmi
+        action_edit: Uredi
+        action_rename: Preimenovati
+        action_view: Pogled
+        actions: Radnje
+        cannot_navigate_file: Nije moguće navigirati do datoteke.
+        change_directory: Promjena direktorija
+        clipboard_description_html: 'Kopirajte ili premjestite datoteke u nastavku iz <code>%{from}</code> u trenutni direktorij:'
+        contents_of_directory: Sadržaj direktorija %{path}
+        copied_path: Putanja kopirana u međuspremnik!
+        copy: Kopirati
+        create_directory_error: 'Došlo je do pogreške prilikom pokušaja stvaranja novog direktorija: %{error}'
+        create_file_error: 'Došlo je do pogreške prilikom pokušaja stvaranja nove datoteke: %{error}'
+        delete_confirm_text: 'Jeste li sigurni da želite izbrisati datoteke: %{files}'
+        delete_multiple_title: Izbrisati %{count} odabrane datoteke?
+        delete_single_title: Izbrisati %{name}?
+        deleting_files: 'Brisanje datoteka...:'
+        directory: imenik
+        directory_name_label: Naziv direktorija
+        download_error: 'Greška prilikom preuzimanja: %{error}'
+        duplicate_files_warning: Identificirane su duplicirane datoteke. Prijenos ovih datoteka prebrisat će postojeći sadržaj.
+        file: datoteka
+        filename_invalid_chars: Naziv datoteke ne može sadržavati / ili ..
+        filename_label: Naziv datoteke
+        globus_open: Otvorite trenutni direktorij pomoću Globusa
+        globus_unavailable: Nijedan Globus krajnji uređaj nije povezan s ovim direktorijem
+        illegal_slash_in_filename: Nedozvoljeni znak (/) nije dopušten u nazivu datoteke.
+        move: Potez
+        navigated_to: navigirano do %{path}
+        new_directory_title: Novi imenik
+        new_file_title: Nova datoteka
+        path_label: Put
+        poll_status_error: Operacija se možda nije dogodila. Nije uspjelo dohvaćanje statusa operacije datoteke.
+        preparing_download_dir: 'priprema za preuzimanje direktorija: %{name}'
+        provide_absolute_pathname: Navedite apsolutni naziv putanje
+        provide_directory_name: Navedite naziv direktorija koji ne sadrži /
+        provide_non_empty_filename: Navedite naziv datoteke koji nije prazan.
+        provide_rename_filename: Navedite naziv datoteke u koji želite ovo preimenovati
+        rename_title: Preimenovati
+        see_details: Pogledajte detalje
+        select_row: Odaberite redak
+        select_to_copy_move: Odaberite datoteku, datoteke ili direktorij za kopiranje ili premještanje. Niste odabrali ništa.
+        select_to_delete: Odaberite datoteku, datoteke ili direktorij za brisanje. Niste odabrali ništa.
+        select_to_download: Odaberite datoteku, datoteke ili direktorij za preuzimanje. Niste odabrali ništa.
+        select_to_send: Odaberite barem jednu datoteku ili direktorij za slanje.
+        send_failed: Slanje informacija o datoteci nije uspjelo.
+        sent_successfully: Odabrane informacije o datoteci uspješno su poslane.
+        show_dotfiles: Prikaži Dotfiles
+        show_owner_mode: Prikaži vlasnika/način
+        summary_copy_files: kopirati datoteke
+        summary_move_files: premjesti datoteke
+        summary_remove_files: ukloni datoteke
+        summary_rename_file: preimenovati datoteku
+        token_missing_expired: Token aplikacije nedostaje ili je istekao. Počnite ponovno.
+        transfer_error: 'Došlo je do pogreške prilikom pokušaja %{summary}: %{error}'
+        upload_and_overwrite: Prenesi i prepiši
+        upload_count:
+          one: Prenesite datoteku %{count}
+          other: Prenesite %{count} datoteke
+        upload_new_files: Prenesi nove datoteke
+        uppy_empty_dir_note: Prazni direktoriji bit će uključeni u prijenos samo kada se prijenos direktorija pokrene metodom povlačenja i ispuštanja. To je zato što je API za datoteke i unose direktorija dostupan samo prilikom događaja ispuštanja, a ne tijekom događaja promjene unosa.
+      icon_picker:
+        icon_selected: Odabrana je ikona %{icon}
+        icon_sr: Ikona %{name}
+      launcher_edit:
+        account_help: Račun s kojeg će se posao poslati.
+        account_label: Račun
+        add_new_option: Dodaj novu opciju
+        cores_help: Na koliko će se jezgri posao izvršavati.
+        cores_label: Jezgre
+        env_var_help: Dodajte varijablu okruženja.
+        env_var_key: 'Varijabla okruženja: %{name}'
+        env_var_label: Varijabla okruženja
+        hours_help: Koliko dugo posao može trajati.
+        hours_label: Sati
+        job_name_help: Naziv koji će posao imati.
+        job_name_label: Naziv posla
+        log_location_help: Odredište izlaza zapisnika zadatka.
+        log_location_label: Lokacija zapisnika
+        no_more_options: Nema više opcija
+        nodes_help: Na koliko će se čvorova posao izvršavati.
+        nodes_label: Čvorovi
+        queues_help: U koji red će se posao poslati.
+        queues_label: Redovi čekanja
+      module_browser:
+        copied: Kopirano!
+        copy: Kopirati
+        showing_results:
+          one: Prikazuje se rezultat %{count}
+          other: Prikazuju se rezultati za %{count}
+      nsf_access:
+        affected_resources: 'Pogođeni resursi: %{resources}'
+        read_more: Pročitajte više
+        register_event: Prijavite se za ovaj događaj
+      path_selector:
+        directory_loaded: Direktorij učitan sa stavkama %{count}
+        invalid_regex: Regularni izraz naveden za ovaj selektor puta nije kompajliran
+        loading_directory: Učitavanje sadržaja direktorija
+        permission_denied_prefix: 'Dozvola odbijena:'
+      popovers:
+        ihpc_content: Interaktivna HPC sesija vam daje namjenski pristup jednom ili više čvorova na klasteru. To je slično interaktivnoj batch sesiji s pristupačnom radnom površinom na primarnom čvoru. Koristite ovo za zahtjevne zadatke poput dugotrajnih računalnih zadataka ili tamo gdje su vam potrebni namjenski resursi.
+        vdi_content: VDI (Virtual Desktop Interface) vam omogućuje pristup dijeljenom čvoru s radne površine. Ovo je grafička verzija čvora za prijavu. Koristite ga za jednostavne zadatke poput pristupa i pregledavanja datoteka, slanja zadataka i vizualizacija.
+      products:
+        fatal_error: Došlo je do fatalne pogreške
+        no_action: bez akcije
+      projects:
+        undetermined_size: Neodređena veličina
+      support_ticket:
+        delete_attachment: Izbriši privitak
+        no_file_selected: Nije odabrana datoteka
+        selected_file: 'Odabrana datoteka: %{name} (%{size}).'
+        size_bytes: '%{size}bajtova'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Ova se stranica ne može ažurirati jer više niste autentificirani. Osvježite stranicu da biste se ponovno prijavili.
+        unexpected_error: Došlo je do neočekivane pogreške na ovoj stranici. Osvježite stranicu.
+      utils:
+        loading: Učitavanje.
+        loading_complete: Učitavanje dovršeno.
+        popup_blocked: Ova je veza konfigurirana za otvaranje u novom prozoru, ali čini se da se nije otvorila. Onemogućite blokator skočnih prozora za ovu stranicu i pokušajte ponovno.
+      workflows:
+        begin_from_launcher: Započni tijek rada iz pokretača %{title}
+        bidirectional_not_allowed: Dvosmjerni rubovi nisu dopušteni.
+        cyclic_dependency: Dodavanje ove granice stvorit će cikličku ovisnost među pokretačima.
+        edge_aria_label: Rub od %{from} do %{to}
+        launcher_aria_label: 'Pokretač: %{title}'
+        launcher_exists: Pokretač već postoji, odaberite drugi pokretač
+        load_launcher_failed: Nije uspjelo učitavanje HTML-a pokretača. Pokušajte ponovno.
+        no_empty_cells: Nema dostupnih praznih ćelija mreže!
+        save_failed: Spremanje tijeka rada nije uspjelo. Za detalje provjerite konzolu.
+        select_launcher: Molimo odaberite pokretač
+      xdmod:
+        analytics_toggle: Preklopnik za analitiku
+        column_date: Datum
+        column_id: ID
+        column_name: Ime
+        date_range: '%{from} do %{to}'
+        efficiency_report: Izvješće o učinkovitosti %{unit}
+        ensure_logged_in_html: '%{error} Molimo vas da prvo provjerite jeste li <a href="%{url}">prijavljeni u Open XDMoD</a>, a zatim pokušajte ponovno.'
+        expand_analytics_title: Kliknite za proširenje analitičkih informacija o poslu %{id} iznad ove tablice.
+        fetch_user_failed: Pokušaj dohvaćanja podataka o trenutnom korisniku iz Open XDMoD nije uspio
+        idp_redirect_failed: 'Prijava nije uspjela: Preusmjeravanje IDP-a nije uspjelo'
+        iframe_error: XDMoD prijava iFrame na URL-u %{url} objavila je poruku o pogrešci s informacijama %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} neučinkovito %{unit} </span> リータース %{total} ukupno %{unit}
+        invalid_job_data: Podaci o poslu koje je vratio zahtjev nisu važeći.
+        loading_caps: UČITAVANJE...
+        login_page_load_failed: 'Prijava nije uspjela: Nije moguće učitati XDMoD stranicu za prijavu'
+        login_timeout: 'Prijava nije uspjela: Isteklo je vrijeme čekanja za dovršetak prijave'
+        metric_cpu: Procesor
+        metric_mem: Mem
+        metric_walltime: Vrijeme na zidu
+        no_data: Nema dostupnih podataka.
+        not_available: N/A
+        open_xdmod: Otvori XDMoD
+        percent_efficient: '%{percent}% učinkovito'
+        percent_efficient_aria: postotna učinkovitost
+        percent_inefficient: '%{percent}% neučinkovito'
+        percent_inefficient_aria: postotak neučinkovitosti
+        recently_completed_jobs: Nedavno dovršeni poslovi
+        unit_core_hours: osnovni sati
+        unit_core_hours_title: Osnovni sati
+        unit_jobs: poslovi
+        unit_jobs_title: Poslovi
+    launch: Pokreni
+    load_report: Učitaj izvješće + %{node}
+    loading: Učitavanje...
+    loading_short: Učitavanje
+    locale_name: Hrvatski (Hrvatska)
+    logo_alt_text: Dobrodošli u Open OnDemand
+    logout_body_html: <strong>Morate potpuno zatvoriti preglednik</strong> kako bi se "odjavili". Ako ste nakon ponovnog otvaranja preglednika i dalje prijavljeni, izbrišite kolačiće. Ako ste na Chromebooku ili Chromeboxu, morat ćete ponovno pokrenuti uređaj kako biste "zatvorili preglednik" i time se "odjavili".
+    logout_tip_html: '<strong>Savjet: Korištenje prozora "privatnog pregledavanja"</strong> tijekom korištenja OnDemanda izvrstan je način za rješavanje "automatske odjave", jer će zatvaranje prozora preglednika ukloniti sve povezane kolačiće i podatke o sesiji.'
+    logout_title: Još niste odjavljeni
+    maximum: Maksimalno
+    mem_report: Izvješće o memoriji + %{node}
+    minimum: Minimum
+    mode: Način rada
+    module_browser_available_modules: 'Dostupni moduli:'
+    module_browser_copy_aria: Kopiraj naredbu za učitavanje za %{name}
+    module_browser_dependencies: 'Ovisnosti:'
+    module_browser_last_updated: 'Zadnje ažuriranje: %{last_updated}'
+    module_browser_load_command: 'Naredba za učitavanje:'
+    module_browser_search_label: Moduli za pretraživanje
+    module_browser_search_placeholder: Pretraži po nazivu modula...
+    module_browser_select_version: (odaberite verziju)
+    module_browser_showing_results: Prikazuju se rezultati za %{count}
+    module_browser_title: Preglednik modula
+    module_browser_versions: Verzije
+    motd_default_md: 'Razvoj Open OnDemanda podržava [Nacionalna zaklada za znanost](https://www.nsf.gov/)
+
+      pod brojevima grantova [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) i
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Saznajte više ili se uključite:
+
+
+      - [Diskurzija](https://discourse.openondemand.org/)
+
+      - [Repozitorij Open OnDemanda](https://github.com/OSC/ondemand)
+
+      - [repozitorij ood-corea](https://github.com/OSC/ood_core)
+
+      - [Dokumentacija](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD nije ispravno analiziran ili prikazan: %{error_message}'
+    motd_no_messages: Nema novih poruka.
+    motd_title: Poruka dana
+    name: Ime
+    nav_all_apps: Sve aplikacije
+    nav_develop_docs: Dokumentacija za razvojne programere
+    nav_develop_my_sandbox_apps_dev: Moje aplikacije u sigurnosnom okruženju (razvoj)
+    nav_develop_my_sandbox_apps_prod: Moje dijeljene aplikacije (produkcija)
+    nav_develop_title: Razviti
+    nav_help_change_password: Promjena HPC lozinke
+    nav_help_custom: Prilagođena pomoć za navigaciju
+    nav_help_docs: Online dokumentacija
+    nav_help_support: Kontaktirajte podršku
+    nav_help_support_ticket: Pošalji zahtjev za podršku
+    nav_help_title: Pomoć
+    nav_help_two_factor: Konfigurirajte dvofaktorsku autentifikaciju
+    nav_language: Jezik
+    nav_limit_caption: prikazuje se %{subset_count} od %{total_count}
+    nav_logout: Odjava
+    nav_main_menu: Glavni izbornik
+    nav_restart_server: Ponovno pokrenite web poslužitelj
+    nav_sessions: Moje interaktivne sesije
+    nav_toggle_navigation: Uključi/isključi navigaciju
+    nav_user: Prijavljen kao %{username}
+    network_report: Izvješće o mreži + %{node}
+    node: Čvor
+    none: Ništa
+    not_grouped: Druge aplikacije
+    nsf_access_announcements: Obavijesti NSF ACCESS-a
+    nsf_access_events: Događaji NSF ACCESS-a
+    nsf_access_outages: Prekidi u radu NSF ACCESS-a
+    ok: U REDU
+    opens_in_new_tab: otvara se u novoj kartici
+    output_location: 'Izlazna lokacija:'
+    owner: Vlasnik
+    page_actions_aria: Radnje na stranici
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametri
+    path_selector_breadcrumb_aria: '%{title} Putna mrvica'
+    path_selector_caption: Odaberite datoteku ili direktorij koji će se koristiti u obrascu.
+    path_selector_default_popup_title: Odaberite svoj radni direktorij
+    path_selector_home: dom
+    path_selector_parent_directory: nadređeni direktorij
+    permissions_created: Dozvola je uspješno kreirana.
+    permissions_destroyed: Dozvola je uspješno uništena.
+    permissions_group_title: Grupne dozvole
+    permissions_user_title: Korisničke dozvole
+    pinned_apps_caption_html: Istaknuti podskup <a href="%{all_apps_url}">svih dostupnih aplikacija</a>
+    pinned_apps_category: Aplikacije
+    pinned_apps_title: Prikvačene aplikacije
+    products_created: Proizvod je uspješno kreiran.
+    products_git_commit_hint_html: Molimo vas da potvrdite sve promjene ili dodate potrebne datoteke u <code>.gitignore</code>
+    products_git_staged: Postavljeno
+    products_git_status: Status Gita
+    products_git_unstaged: Nepostavljeno
+    products_git_untracked: Nepraćeno
+    products_manifest_save_error: Nije moguće spremiti manifest aplikacije u %{path}
+    products_ssh_key_created: SSH ključ je uspješno kreiran.
+    products_ssh_key_exists: SSH ključ već postoji
+    products_ssh_key_failed: 'SSH ključ nije uspio stvoriti: %{error}'
+    products_type_batch_connect: Aplikacija za povezivanje u serijama
+    products_type_passenger: Aplikacija za putnike
+    products_type_passenger_meteor: Aplikacija Putnički Meteor
+    products_type_passenger_node: Aplikacija Putnički čvor
+    products_type_passenger_rack: Aplikacija za putnički prtljažnik
+    products_type_passenger_rails: Aplikacija za putničke željeznice
+    products_type_passenger_rails_sqlite: Aplikacija za putničke željeznice s SQLite bazom podataka
+    products_type_passenger_wsgi: Putnička WSGI aplikacija
+    products_updated: Proizvod je uspješno ažuriran.
+    project: Projekt
+    project_balances: Stanja projekta
+    project_directory: Direktorij projekata
+    project_zip_error_message: 'Pogreška pri stvaranju ZIP datoteke: %{error}'
+    project_zip_success_message: 'Uspjeh: project.zip je kreiran u vašem direktoriju projekta.'
+    queue: Red
+    quota_additional_message: Razmislite o brisanju ili arhiviranju datoteka kako biste oslobodili prostor na disku.
+    quota_block: Korištenje %{used} kvote %{available}
+    quota_block_shared: (%{used_exclusive} su tvoji)
+    quota_file: Korištenje %{used} datoteka kvote %{available} datoteka
+    quota_file_shared: (%{used_exclusive} datoteke su vaše)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Ponovno učitajte stranicu da biste vidjeli ažuriranu kvotu. Kvote se ažuriraju svakih 5 minuta.
+    quota_warning_prefix_html: Upozorenje o ograničenju kvote za
+    recently_used_apps_title: Nedavno korištene aplikacije
+    remove: Ukloniti
+    reset: Resetiraj
+    restart_msg_html: 'Članstvo u vašoj grupi se promijenilo, što utječe na vaš pristup aplikacijama. Vaša nadzorna ploča trebala bi se automatski ponovno pokrenuti.
+
+      Ako se to ne dogodi, kliknite: <a href="%{restart_url}">ponovno pokretanje web poslužitelja</a>.
+
+      '
+    restore: Vratiti
+    root: Korijen
+    save: Uštedjeti
+    saved_settings_title: Spremljene postavke
+    select: Odaberite
+    select_all: Odaberi sve
+    select_path: Odaberite put
+    select_path_for: '%{element} odabir putanje
+
+      '
+    settings_csrf_expired: Vaš sigurnosni token sesije istekao je. Pokušajte ponovno.
+    settings_invalid_request: Poslane nevažeće postavke
+    settings_unprocessable_body_html: Vaša je sesija možda istekla ili je promjena koju ste željeli odbijena. Molimo vas da se <a href="%{dashboard_url}">vratite na Nadzornu ploču</a> i pokušate ponovno.
+    settings_unprocessable_title: Sesija je istekla ili je promjena odbijena
+    settings_updated: Postavke su ažurirane
+    shared_apps_caption: Podijelio/la %{owner_title} (%{owner})
+    shared_apps_caption_short: Podijelio/la %{owner}
+    shared_apps_title: Dijeljene aplikacije
+    sharing_catalog_msg_html: '<br>Podskup dostupnih aplikacija može se vidjeti na %{catalog_link_tag}.
+
+      '
+    sharing_catalog_title: Katalog aplikacija
+    sharing_no_shared_apps_html: '<strong>Nema dostupnih prilagođenih dijeljenih aplikacija.</strong>
+
+      '
+    sharing_support_msg_html: 'Ako ne vidite aplikaciju koju tražite, molimo vas da
+
+      <a href="%{support_url}">kontaktirate podršku</a>.
+
+      '
+    sharing_welcome_msg_html: 'Aplikacije za pristup klasteru dostupne su iz padajućih izbornika u gornjoj navigacijskoj traci.
+
+      <br>Prilagođene dijeljene aplikacije dostupne su u nastavku.
+
+      '
+    shell: Ljuska
+    shell_app_title: '%{cluster_title} Pristup ljusci'
+    show: Pokazati
+    size: Veličina
+    skip_navigation: Preskoči navigaciju
+    smart_attributes:
+      account: Račun
+      auto_modules_none: Automatski moduli (nijedan nije naveden)
+      cluster: Klaster
+      cores: Jezgre
+      email_on_started: Želim primiti e-poštu kada sesija počne
+      environment_variable: Varijabla okruženja
+      environment_variable_key: 'Varijabla okruženja: %{key}'
+      job_name: Naziv posla
+      module_version: Verzija %{module}
+      num_cpus_single_node: Broj CPU-ova na jednom čvoru
+      num_hours: Broj sati
+      num_nodes: Broj čvorova
+      num_processors: Broj procesora
+      partition: Particija
+      qos: Kvaliteta usluge (QoS)
+      queue: Red
+      script: Skripta
+      vnc_idle_help: 'Izlaz ako prođe # sekundi bez konekcija VNC preglednika'
+      vnc_idle_label: Vremensko ograničenje neaktivnosti
+      vnc_resolution_help: Rezoluciju koriste samo izvorne VNC veze
+      vnc_resolution_label: Rezolucija
+    soft_tabs: Meki tabovi
+    soft_tabs_info: Meki tabulatori su razmaci u datoteci umjesto stvarnih znakova tabulatora.
+    status: Status
+    status_completed: Završeno
+    status_held: Održano
+    status_hold: Drži
+    status_queued: U redu čekanja
+    status_running: Trčanje
+    status_starting: Početak
+    status_suspend: Obustaviti
+    status_suspended: Suspendirano
+    status_undetermined: Neodređeno
+    stop: Stop
+    submit: Pošalji
+    submit_args: 'Pošalji argumente:'
+    support_ticket:
+      creation_success: 'E-poruka s zahtjevom za podršku poslana je na: %{to}'
+      fields:
+        attachments: Prilozi
+        cc: KK
+        description: Opis
+        email: E-pošta
+        job_description: Opis posla
+        session_description: Opis sesije
+        subject: Predmet
+        username: Korisničko ime
+      generic_error: 'Došlo je do pogreške prilikom obrade vašeg zahtjeva: %{error}'
+      header: Zahtjev za podršku
+      rt:
+        creation_success: 'Tiket za podršku kreiran u sustavu RequestTracker. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Zahtjev za podršku kreiran je u ServiceNowu. Broj: %{number}. Ali nije moguće dodati priloge.'
+        creation_success: 'Tiket za podršku kreiran u ServiceNowu. Broj: %{number}'
+      submit: Pošalji zahtjev za podršku
+      title: Zahtjev za podršku
+      validation:
+        attachments_items: '%{id} nisu valjani. Dodan je %{items}, maksimalni broj privitaka je %{max}'
+        attachments_size: '%{id} nisu valjani. Maksimalna veličina privitka je %{max}'
+        email: Format %{id} nije valjan. Očekivala se valjana adresa e-pošte.
+        items:
+          attachments_js: Više nije dopušteno prilaganje
+        required: '%{id} je obavezan'
+        size:
+          attachments_js: Maksimalna veličina privitka je %{max}. Odabrana veličina datoteke je %{size}
+      validation_error: Nevažeći zahtjev. Molimo pregledajte poruke o pogrešci u nastavku.
+    support_ticket_add_attachment: Dodaj privitak
+    support_ticket_attachments_help: Kliknite okvir za prilaganje datoteke. Snimke zaslona ili druge datoteke mogu vam pomoći u rješavanju problema.
+    system_apps_caption: Aplikacija instalirana na sustavu
+    system_status_available: '%{name} Dostupno: %{count}'
+    system_status_cluster_title: '%{title} Status klastera'
+    system_status_gpus: Grafički procesori
+    system_status_in_use: '%{percent} u upotrebi'
+    system_status_jobs_queued: Poslovi u redu čekanja
+    system_status_jobs_queued_count: '%{count} Poslovi u redu čekanja'
+    system_status_jobs_running: Poslovi koji se izvode
+    system_status_jobs_running_count: '%{count} Poslovi se izvršavaju'
+    system_status_nodes: Čvorovi
+    system_status_not_slurm: Informacije o klasterima nisu dostupne s %{scheduler}. Trenutno su podržani samo Slurm klasteri.
+    system_status_processors: Procesori
+    toggle_notifications: Uključi/isključi obavijesti
+    toggle_push_notifications: Uključi/isključi push obavijesti
+    type: Tip
+    undefined_title: Nedefinirani naslov
+    unknown: Nepoznato
+    uppy:
+      strings:
+        addMore: Dodaj još
+        addMoreFiles: Dodaj još datoteka
+        addingMoreFiles: Dodavanje više datoteka
+        back: Nazad
+        browseFiles: pregledavanje datoteka
+        browseFolders: pregledavanje mapa
+        cancel: Otkazati
+        cancelUpload: Otkaži prijenos
+        closeModal: Zatvori modalni prozor
+        complete: Završeno
+        dashboardTitle: Alat za prijenos datoteka
+        dashboardWindowTitle: Prozor za prijenos datoteka (pritisnite Escape za zatvaranje)
+        done: Gotovo
+        dropHint: Ovdje ispustite svoje datoteke
+        dropPasteBoth: Ovdje ispustite datoteke, %{browseFiles} ili %{browseFolders}
+        dropPasteFiles: Ispustite datoteke ovdje ili %{browseFiles}
+        dropPasteFolders: Ispustite datoteke ovdje ili %{browseFolders}
+        editFile: Uredi datoteku
+        editing: Uređivanje %{file}
+        emptyFolderAdded: Nije dodana nijedna datoteka iz prazne mape
+        error: Pogreška
+        exceedsSize: '%{file} premašuje maksimalnu dopuštenu veličinu %{size}'
+        failedToUpload: Nije uspjelo učitavanje %{file}
+        folderAlreadyAdded: Mapa "%{folder}" je već dodana
+        myDevice: Moj uređaj
+        noDuplicates: Nije moguće dodati dupliciranu datoteku '%{fileName}', ona već postoji
+        pause: Pauza
+        pauseUpload: Pauziraj prijenos
+        paused: Pauzirano
+        removeFile: Ukloni datoteku
+        resume: Životopis
+        resumeUpload: Nastavi prijenos
+        retry: Pokušaj ponovno
+        retryUpload: Ponovi prijenos
+        save: Uštedjeti
+        saveChanges: Spremi promjene
+        showErrorDetails: Prikaži detalje o pogrešci
+        upload: Prenesi
+        uploadComplete: Prijenos dovršen
+        uploadFailed: Prijenos nije uspio
+        uploadPaused: Prijenos pauziran
+        uploading: Prijenos
+        xTimeLeft: '%{time} lijevo'
+    user: Korisnik
+    user_configuration:
+      support_ticket_error: support_ticket je pogrešno konfiguriran. Molimo dodajte backend implementaciju u konfiguracijski YAML.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand pruža integriranu, jedinstvenu pristupnu točku za sve vaše HPC resurse.</p>
+
+      '

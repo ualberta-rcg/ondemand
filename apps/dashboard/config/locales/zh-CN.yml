@@ -3,15 +3,81 @@ zh-CN:
   activemodel:
     errors:
       messages:
-        format: "%{attribute} 格式无效或缺失"
-        invalid: "%{attribute} 无效"
-        required: "%{attribute} 是必需的"
-        used: "%{attribute} 已被使用"
+        format: '%{attribute} 格式无效或缺失'
+        invalid: '%{attribute} 无效'
+        required: '%{attribute} 是必需的'
+        used: '%{attribute} 已被使用'
   dashboard:
     account: 帐户
     actions: 行动
     active_jobs: 活跃职位
     active_jobs_close_details: 关闭扩展详细信息面板。
+    active_jobs_detail:
+      account: 帐户
+      array_job_id: 数组作业 ID
+      array_task_id: 数组任务 ID
+      cluster: 簇
+      cluster_id: 集群 ID
+      comment: 评论
+      cpu_time: CPU 时间
+      cpu_used: CPU 使用率
+      current_working_directory: 当前工作目录
+      end_time: 结束时间
+      exec_host: 执行主机
+      finish_time: 结束时间
+      from_host: 来自主机
+      gres: 格雷斯
+      group_list: 群组列表
+      job_account: 工作账户
+      job_checkpoint_attr: 工作检查点属性
+      job_checkpoint_interval: 作业检查点间隔
+      job_deadline: 工作截止日期
+      job_exec_file: 作业执行文件
+      job_execution_time: 作业执行时间
+      job_gid: 职位 GID
+      job_group: 职位组
+      job_id: 职位编号
+      job_name: 职位名称
+      job_priority: 工作优先级
+      job_restart: 工作重启
+      job_script_file: 作业脚本文件
+      job_script_size: 作业脚本大小
+      job_share: 职位共享
+      job_type: 职位类型
+      job_uid: 作业 UID
+      job_verify: 职位验证
+      job_version: 作业版本
+      mem: 记忆
+      memory: 记忆
+      node_count: 节点计数
+      node_list: 节点列表
+      nodes: 节点
+      none: 没有任何
+      notifications: 通知
+      partition: 分割
+      pbs_id: PBS ID
+      pids: PID
+      ppn: PPN
+      project_name: 项目名称
+      queue: 队列
+      reason: 原因
+      reserve: 预订
+      select: 选择
+      start_time: 开始时间
+      state: 状态
+      status: 地位
+      submission_time: 提交时间
+      swap: 交换
+      time_limit: 时限
+      time_used: 所用时间
+      total_cpus: CPU总数
+      total_nodes: 总节点数
+      user: 用户
+      virtual_memory: 虚拟内存
+      walltime: 墙时
+      walltime_used: 墙时间使用
+    active_jobs_filter_all: 所有职位
+    active_jobs_filter_user: 你的工作
     active_jobs_ganlia_CPU: CPU 的 Ganglia 镜像。
     active_jobs_ganlia_load: Ganglia 图像用于显示系统负载平均值。
     active_jobs_ganlia_mem: 用于内存使用的 Ganglia 图像。
@@ -24,28 +90,21 @@ zh-CN:
     all_apps_table_sub_category_column: 子类别
     all_clusters: 所有集群
     announcements_dismissible_button: 确定
+    announcements_parse_error: 解析公告时出错。
+    announcements_render_error: 由于错误，无法渲染公告“%{name}”。
     announcements_required_button: 接受
-    apps_setup_failure_html: |
-      <h2>初始化此应用程序的数据时出现问题。</h2>
-      <p class="lead">
-        您需自行承担<a href="%{app_url}">打开该应用程序的风险</a>
-        或者您可以前往<a href="%{home_url}">回到dashboard</a>
-      </p>
-      <p>
-        与您的应用开发者分享：
-        生产安装脚本应该是幂等的，并在用户每次通过dashboard打开应用程序时运行。</p>
-      <h4>例外： %{exception_class}</h4>
-      <pre>%{exception_message}</pre>
-      <h4>堆栈跟踪：</h4>
-      <pre>%{exception_trace}</pre>
+    apps_setup_failure_html: "<h2>初始化此应用程序的数据时出现问题。</h2>\n<p class=\"lead\">\n  您需自行承担<a href=\"%{app_url}\">打开该应用程序的风险</a>\n  或者您可以前往<a href=\"%{home_url}\">回到dashboard</a>\n</p>\n<p>\n  与您的应用开发者分享：\n  生产安装脚本应该是幂等的，并在用户每次通过dashboard打开应用程序时运行。</p>\n<h4>例外： %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>堆栈跟踪：</h4>\n<pre>%{exception_trace}</pre>\n"
     apps_system_apps_title: 系统应用
     auto_log_location_title: 日志位置
     back: 返回
     balance_additional_message: 考虑申请额外的 %{balanace_units}
-    balance_message: "%{units_balance} 是 %{value}"
+    balance_message: '%{units_balance} 是 %{value}'
     balance_no_warnings: 没有项目处于 %{threshold} 天余额警告阈值内。
     balance_reload_message_html: 重新加载页面以查看更新后的余额。 余额每天更新。<br>最后一次更新是 %{last_update}
-    balance_warning_prefix_html: "%{units_balance} 警告"
+    balance_warning_prefix_html: '%{units_balance} 警告'
+    batch_connect_active_sessions_aria: 活跃会话
+    batch_connect_app_version: 版本：%{version}
+    batch_connect_apps_menu_aria: 互动应用菜单
     batch_connect_apps_menu_title: 交互式应用
     batch_connect_form_attr_cache_error: 无法使用先前缓存的值，改为使用默认值。(%{error_message})
     batch_connect_form_choose_template_name: 选择模版名称
@@ -62,21 +121,27 @@ zh-CN:
     batch_connect_form_save_new_template: 保存为一个新模版
     batch_connect_form_save_submit: 保存设置并关闭
     batch_connect_form_select_template: 选择一个模版
-    batch_connect_form_session_data_html: "* 你可以通过%{data_link_tag}来获取会话数据%{title}。\n"
+    batch_connect_form_session_data_html: '* 你可以通过%{data_link_tag}来获取会话数据%{title}。
+
+      '
     batch_connect_form_template_name_label: 设置名称
     batch_connect_form_type_new_name: 在这里输入你的新模版名称
     batch_connect_form_type_new_name_error: 请输入一个有效的名称以继续
-    batch_connect_invalid_form_array: "'form' 元素在 form.yml 中不是数组"
-    batch_connect_invalid_form_attributes: "'attributes' 元素在 form.yml 中不是映射"
-    batch_connect_missing_cluster: |
-      集群从未设置。请在 form.yml.erb 中使用 `cluster` 或 `form.cluster` 设置，或
+    batch_connect_invalid_form_array: '''form'' 元素在 form.yml 中不是数组'
+    batch_connect_invalid_form_attributes: '''attributes'' 元素在 form.yml 中不是映射'
+    batch_connect_missing_cluster: '集群从未设置。请在 form.yml.erb 中使用 `cluster` 或 `form.cluster` 设置，或
+
       在 submit.yml.erb 中设置 `cluster`。
+
+      '
     batch_connect_no_apps: 没有可用的互动应用程序。
     batch_connect_no_sessions: 您没有可运行的会话。
-    batch_connect_sandbox: " [沙盒]"
+    batch_connect_sandbox: ' [沙盒]'
     batch_connect_sessions_cancel_confirm: 你确定吗？
     batch_connect_sessions_cancel_full_title: 取消 %{title} 会话
     batch_connect_sessions_cancel_title: 取消
+    batch_connect_sessions_connect_to: 连接到%{app_title}
+    batch_connect_sessions_connection_render_error: 由于错误“%{error}”，无法从 view.html.erb 渲染连接按钮。
     batch_connect_sessions_data_html: 你可以通过%{data_link_tag}来获取会话数据%{title}。
     batch_connect_sessions_delete_confirm: 你确定吗？
     batch_connect_sessions_delete_full_title: 删除 %{title} 会话
@@ -86,15 +151,30 @@ zh-CN:
     batch_connect_sessions_error_invalid_job_name_html: 如果由于作业名称无效而导致该作业提交失败，请要求管理员配置OnDemand来设置环境变量OOD_JOB_NAME_ILLEGAL_CHARS。
     batch_connect_sessions_errors_staging: 无法调用模板，并显示以下错误：
     batch_connect_sessions_errors_submission: 提交会话失败，出现以下错误：
+    batch_connect_sessions_native_vnc_tab: 本地指令
+    batch_connect_sessions_novnc_compression: 压缩
+    batch_connect_sessions_novnc_compression_help: 1（低）到 9（高）
     batch_connect_sessions_novnc_launch: 启动%{app_title}
+    batch_connect_sessions_novnc_quality: 图像质量
+    batch_connect_sessions_novnc_quality_help: 0（低）到 9（高）
+    batch_connect_sessions_novnc_tab: noVNC 连接
     batch_connect_sessions_novnc_view_only: 只读 (共享链接)
     batch_connect_sessions_path_selector_forbidden_error: 您没有权限选择该目录或文件。
     batch_connect_sessions_relaunch_full_title: 重新启动 %{title} 会话
     batch_connect_sessions_relaunch_title: 重新启动
     batch_connect_sessions_staged_root: 暂存根目录
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} 核心'
+      other: '%{count} 核心'
     batch_connect_sessions_stats_created_at: 创建于：
     batch_connect_sessions_stats_expected_time: '预计开始时间:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPU'
     batch_connect_sessions_stats_host: 主机：
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} 节点'
+      other: '%{count} 节点'
     batch_connect_sessions_stats_session_dir_link_title: 打开 %{session_id} 的会话目录
     batch_connect_sessions_stats_session_id: 会话ID：
     batch_connect_sessions_stats_support_ticket: 此会话有问题吗？
@@ -114,6 +194,12 @@ zh-CN:
     batch_connect_sessions_status_queued: 由于您的工作目前正在排队，请耐心等待。 等待时间取决于内核数以及请求的时间。
     batch_connect_sessions_status_starting: 您的会话目前正在启动...请耐心等待，因为此过程可能需要几分钟。
     batch_connect_sessions_word: 会话
+    batch_connect_validation:
+      app_not_found: 此应用不存在于目录“%{root}”下。
+      inaccessible_clusters: 此应用需要的集群不存在或您无权访问。
+      missing_form_file: 此应用程序未在目录“%{root}”下提供表单文件。
+      missing_sub_app_form_file: 此应用程序未在目录“%{root}”下提供子应用程序表单文件。
+      no_cluster_specified: 此应用未指定任何集群。
     bc_saved_settings:
       delete_confirm: 你确定吗？
       delete_title: 删除 %{settings_name} 保存的设置
@@ -123,19 +209,43 @@ zh-CN:
       missing_settings: 未找到所选的保存设置。
       no_settings_title: 您没有保存的设置。
       outdated_message: 自这些设置创建以来，%{app_title} 参数已更改。
-      saved_message: "%{settings_name} 设置已保存"
+      saved_message: '%{settings_name} 设置已保存'
       settings_values_label: 值
       title: 保存的设置
+    breadcrumb_aria: 面包屑
     breadcrumbs_all_apps: 所有应用
     breadcrumbs_home: 主页
     breadcrumbs_my_sessions: 我的交互会话
     breadcrumbs_support_ticket: 支持票
+    browser_warning: OnDemand 需要您使用较新版本的浏览器。目前的浏览器要求包括 IE Edge、Firefox 19+、Chrome 34+ 和 Safari 8+。
     cancel: 取消
+    categories:
+      apps: 应用
+      bioinformatics: 生物信息学
+      clusters: 集群
+      data_science: 数据科学
+      desktop: 桌面
+      desktops: 台式机
+      development: 发展
+      external_apps: 外部应用程序
+      files: 文件
+      gateway_apps: Gateway Apps
+      guis: 图形用户界面
+      interactive_apps: 互动应用
+      jobs: 工作机会
+      machine_learning: 机器学习
+      mathematics: 数学
+      servers: 服务器
+      utilities: 公用事业
+      virtual_desktop_interface: 虚拟桌面界面
+      visualization: 可视化
     clear: 清除
     close: 关闭
     close_alert: 关闭此警报。
     close_notice: 关闭此通知。
     cluster: 簇
+    copy: 复制
+    copy_suffix: ' （复制）'
     cpu_report: CPU 报告 + %{node}
     custom_pages:
       invalid: 无效的页面代码：%{page}。此页面尚未配置
@@ -144,22 +254,57 @@ zh-CN:
     detailed_metrics: 详细指标
     details: 细节
     development_apps_caption: 沙盒应用
+    development_apps_category: 沙盒应用程序
+    development_delete_app: 删除应用
+    development_edit_title: 编辑 %{title}
+    development_launch_title: 启动 %{title}
     directory: 目录
     edit: 编辑
+    editor_default: 默认
+    editor_font_size: 字体大小
+    editor_key_bindings: 按键绑定
+    editor_theme: 主题
+    editor_theme_bright: 明亮的
+    editor_theme_dark: 黑暗的
+    editor_wrap: 裹
+    error_details: 细节：
+    error_internal_body_html: Please try again in a few moments. If you continue to see this error, please <a href="%{support_url}">contact support</a>.
+    error_internal_title: 内部服务器错误
+    error_not_found_body: 您要查找的页面不存在。
+    error_not_found_title: 未找到
+    favorites: 收藏夹
     file: 文件
+    file_editor: 文件编辑器
     file_quotas: 文件配额
     files: 文件
+    files_change_directory: 更改目录
+    files_contents_of_directory: 目录 %{path} 的内容
+    files_copy_move: 复制/移动
+    files_copy_path: 复制路径
+    files_directory_contents_aria: 目录内容
     files_directory_download_error_modal_title: 目录太大，无法下载
     files_directory_download_unauthorized: 您只能下载您具有读取和执行权限的文件或目录
     files_directory_size_calculation_error: 尝试确定目录大小时超时。
     files_directory_size_calculation_timeout: 尝试确定目录大小时超时。
     files_directory_size_unknown: 尝试确定目录大小时出现状态 %{exit_code} 的错误：%{error}
     files_directory_too_large: 该目录太大，无法作为 zip 下载。目录应小于 %{download_directory_size_limit} 字节。
-    files_doesnt_exist: "%{path} 不存在。"
+    files_doesnt_exist: '%{path} 不存在。'
+    files_download: 下载
     files_download_not_enabled: 此服务器上未启用文件下载。
     files_download_zip: 下载为 zip
+    files_exceeds_editor_limit: '%{path} 超出了 %{limit} 的编辑限制。请下载文件进行编辑或在本地查看。'
     files_file_too_large: 文件太大，无法下载。文件下载应小于 %{download_file_size_limit} 字节。
+    files_go_up_directory: 返回上一级目录
+    files_modified_at: 修改于
+    files_modify_aria: 修改文件
+    files_new_directory: 新目录
+    files_new_file: 新文件
+    files_not_editable: '%{path} 不是可编辑文件'
     files_not_readable: 您没有足够的权限读取 '%{path}'。
+    files_open_in_files_app: 在“文件”应用中打开
+    files_open_in_globus: 在 Globus 中打开
+    files_path_breadcrumbs_aria: 路径面包屑
+    files_refresh: 刷新
     files_remote_dir_not_created: 未创建目录 %{path}
     files_remote_disabled: 未启用远程文件支持
     files_remote_empty_dir_unsupported: 远程不支持空目录
@@ -168,17 +313,27 @@ zh-CN:
     files_shell: 在终端中打开
     files_shell_dropdown: 选择要在终端中打开的集群
     files_title: 文件浏览
+    files_upload: 上传
+    footer_contribute: 在 GitHub 上贡献代码
+    footer_license: 软件许可声明
+    footer_open_source: 开源软件。
+    footer_powered_by: 由 Open OnDemand 提供支持
+    footer_version: 点播版本：%{version}
     home_directory: 主目录
     id: ID
     import: 导入
     job: 工作
     job_info: 作业信息
+    jobs_back_to_projects: 返回项目
+    jobs_clear_form_fields: 清除表单字段
+    jobs_completed_jobs: 已完成的工作
     jobs_create_blank_project: 创建新项目
     jobs_create_blank_workflow: 新工作流
     jobs_create_template_project: 从模板创建新项目
     jobs_import_shared_project: 导入共享项目
     jobs_launchers: 启动器
     jobs_launchers_add_select_option: 添加选择选项 %{name}
+    jobs_launchers_cannot_find: 找不到启动器 %{id}
     jobs_launchers_clone: 克隆启动器 %{name}
     jobs_launchers_created: 启动器成功创建！
     jobs_launchers_default_created: 该项目还添加了一个 'hello_world.sh'。
@@ -187,10 +342,12 @@ zh-CN:
     jobs_launchers_deleted: 启动器成功删除！
     jobs_launchers_edit: 编辑启动器 %{name} 的表单
     jobs_launchers_edit_form_item: 编辑表单项 %{label}
+    jobs_launchers_editing: 正在编辑 %{title}
     jobs_launchers_fixed_field: 固定值
     jobs_launchers_fixed_field_help: 修复当前值
     jobs_launchers_max_value_label: 数字字段 %{label} 的最大值
     jobs_launchers_min_value_label: 数字字段 %{label} 的最小值
+    jobs_launchers_name: 启动器名称
     jobs_launchers_new_field_select: 选择要添加到表单的项目
     jobs_launchers_not_found: 找不到启动器 %{launcher_id}
     jobs_launchers_preview_form_item: 表单项 %{label} 的预览
@@ -202,7 +359,13 @@ zh-CN:
     jobs_launchers_submit_launcher_title: 使用缓存或默认值启动启动器 %{name} 的脚本
     jobs_launchers_submitted: 成功提交作业 %{job_id}。
     jobs_launchers_updated: 启动器清单已更新！
+    jobs_native_dependency: . 工作取决于 job-id%{dependency}
+    jobs_native_reason: 因为“%{reason}”
+    jobs_native_state: 当前作业状态为'%{state}'
     jobs_new_launcher: 新启动器
+    jobs_new_project: 新项目
+    jobs_project_cannot_find: 找不到项目：%{project_id}
+    jobs_project_clear_form_fields: 清除表单字段
     jobs_project_created: 项目成功创建！
     jobs_project_delete_label: 删除项目 %{name}
     jobs_project_delete_project_confirmation: 是否删除项目目录的所有内容？
@@ -221,6 +384,8 @@ zh-CN:
     jobs_project_job_deleted: 成功删除作业 %{job_id}
     jobs_project_job_not_deleted: 无法删除作业 %{job_id}
     jobs_project_job_stopped: 成功停止作业 %{job_id}
+    jobs_project_list_aria: 项目列表
+    jobs_project_manager: 专案经理
     jobs_project_manifest_updated: 项目清单已更新！
     jobs_project_name_placeholder: 项目名称
     jobs_project_name_validation: 项目名称只能包含字母、数字、短横线、下划线和空格
@@ -228,19 +393,32 @@ zh-CN:
     jobs_project_open_label: 打开项目 %{name}
     jobs_project_remove_label: 移除项目 %{name}
     jobs_project_removed: 项目已从查找中移除！
+    jobs_project_return_to_projects: 返回项目页面
     jobs_project_save_error: 无法保存清单到 %{path}
+    jobs_project_save_project_title: 保存项目
     jobs_project_select_directory: 选择项目目录
     jobs_project_setgid_help: 保持 setgid 选中状态可确保项目文件以所选组创建。不会影响您主目录中的项目。
     jobs_project_validation_error: 无效请求。请查看以下错误
+    jobs_return_to_projects: 返回项目页面
+    jobs_save_project_title: 保存项目
     jobs_select_directory_placeholder: 单击下面的项目以导入到您的主页（可选）
     jobs_toggle_details: 点击切换工作 %{job_id} 的详细信息
+    jobs_workflow_add_launcher: 添加启动器
+    jobs_workflow_canvas_aria: 帆布
     jobs_workflow_clone: 克隆工作流 %{name}
+    jobs_workflow_connect_launchers: 连接启动器
     jobs_workflow_created: 工作流创建成功！
     jobs_workflow_delete_confirmation: 删除工作流的所有内容？
+    jobs_workflow_delete_edge: 删除 Edge
+    jobs_workflow_delete_edge_title: 删除选定边缘（Del/退格键）
+    jobs_workflow_delete_launcher: 删除启动器
+    jobs_workflow_delete_launcher_title: 删除选定的启动器（Del/退格键）
     jobs_workflow_delete_title: 删除工作流 %{name}
     jobs_workflow_deleted: 工作流删除成功！
     jobs_workflow_description_placeholder: 工作流描述
     jobs_workflow_edit_settings: 修改工作流 %{name} 的设置
+    jobs_workflow_editing: 编辑：%{name}
+    jobs_workflow_enable_sync_key: 启用 OOD_WORKFLOW_SYNC_KEY
     jobs_workflow_failed: 工作流失败，错误 %{error}
     jobs_workflow_help: 点击标题以选择并拖动。通过点击两个选中的发射器并选择“连接发射器”来连接
     jobs_workflow_manifest_updated: 工作流清单已更新！
@@ -248,25 +426,278 @@ zh-CN:
     jobs_workflow_name_placeholder: 工作流名称
     jobs_workflow_name_validation: 工作流名称只能包含字母、数字、短横线、下划线和空格
     jobs_workflow_not_found: 找不到工作流 %{workflow_id}
+    jobs_workflow_pick_launchers: 拾取发射器
     jobs_workflow_show_graph: 在图形编辑器中打开工作流 %{name}
     jobs_workflow_submitted: 工作流提交成功！
     jobs_workflow_sync_key_help: 启用后，此工作流中的每个启动器都会接收到相同的 <code>OOD_WORKFLOW_SYNC_KEY</code> 环境变量（一个对每次工作流运行唯一的随机令牌）。这对于生成同步的文件名、锁文件或跨依赖作业的共享标识符非常有用。
+    jobs_workflow_synchronization: 同步
+    jobs_workflow_toolbar_aria: 工具栏
+    jobs_workflow_zoom_controls: 缩放控制
+    jobs_workflow_zoom_in: 放大
+    jobs_workflow_zoom_out: 缩小
+    jobs_workflow_zoom_reset: 重置缩放
     jobs_workflows: 工作流
     jobs_workflows_not_supported: 已配置的调度程序不支持工作流。
+    js:
+      active_jobs:
+        delete_aria: 删除 ID 为 %{id} 的作业 %{name}
+        delete_confirm: 您确定要删除 %{name} - %{id} 吗？
+        delete_title: 删除职位
+        details_loaded: 职位详情列表已加载。
+        load_details_failed: 加载作业详情失败。
+        remote_server_error: 从远程服务器获取数据时出错。
+        request_failed_parse: 由于请求体解析错误，任务请求失败。
+        request_failed_status: 请求作业失败，状态码：%{status}
+        status_completed: 完全的
+        status_hold: 抓住
+        status_queued: 已排队
+        status_running: 跑步
+        status_suspended: 暂停
+        status_undetermined: 未确定
+        support_ticket_aria: 提交工单，工单 ID 为 %{id}
+        support_ticket_title: 提交支持工单
+        toggle_details_aria: 切换作业 %{name} 在 %{cluster} 上的可见性
+      batch_connect:
+        allow_notifications: 请在浏览器中启用通知权限以显示会话提醒。
+        invalid_prefill_value_html: 字段“%{field}”的值“%{value}”无效。<br>
+        notification_permission_error: 请求通知权限时出错：
+        resolution_reset: 分辨率重置为%{width}，重置幅度为%{height}像素。
+        session_expires_warning: 警告：%{title} (%{job_id}) 将在 ~%{minutes} 分钟后过期！
+        session_status_aria: '%{title} 现在是 %{status}。'
+        session_status_push: '%{title} (%{job_id}) 现在是 %{status}。'
+      common:
+        cancel: 取消
+        close: 关闭
+        error: 错误
+        loading: 加载中...
+        ok: 好的
+      datatables:
+        all: 全部
+        filter_label: 筛选：
+        invalid_date: 无效日期
+        rows_selected:
+          one: 已选择 %{count} 行
+          other: 已选择 %{count} 行
+        showing_filtered_rows: 显示 %{total} 行中的 %{display} 行
+        showing_rows: 显示 %{display} 行
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ' 和 '
+        changed_help: 将 %{widget} 的帮助文本更改为 %{help}
+        changed_label: 将标签 %{widget} 更改为新标签 %{label}
+        current_value: 将当前值设置为%{value}
+        hid_item: 隐藏表单项 %{widget}
+        maximum_limit: '%{value} 的最大限制'
+        minimum_limit: 最低限值为%{value}
+        option_disabled: 选项 %{value} 已为 %{widget} 禁用
+        option_enabled: 已为 %{widget} 启用选项 %{value}
+        revealed_item: 已揭示表单项 %{widget}
+        selected_option_disabled: 已为 %{widget} 禁用所选选项 %{value}
+        set_limits: 将 %{details} 设置为 %{widget}
+        set_value: 将 %{widget} 的值设置为 %{value}
+        widget_no_label: '%{type} 无标签'
+        widget_with_label: 标签为 %{type} 的标签为 %{label}
+      editor:
+        save_error: '保存此文件时出错！
+
+
+          %{error}'
+        unsaved_changes: 您有未保存的更改！
+      files:
+        action_delete: 删除
+        action_download: 下载
+        action_edit: 编辑
+        action_rename: 重命名
+        action_view: 看法
+        actions: 行动
+        cannot_navigate_file: 无法访问文件。
+        change_directory: 更改目录
+        clipboard_description_html: 将以下文件从 <code>%{from}</code> 复制或移动到当前目录：
+        contents_of_directory: 目录 %{path} 的内容
+        copied_path: 已将路径复制到剪贴板！
+        copy: 复制
+        create_directory_error: 创建新目录时出错：%{error}
+        create_file_error: 创建新文件时出错：%{error}
+        delete_confirm_text: 您确定要删除文件：%{files}
+        delete_multiple_title: 删除 %{count} 选定的文件？
+        delete_single_title: 删除 %{name}？
+        deleting_files: 正在删除文件……：
+        directory: 目录
+        directory_name_label: 目录名称
+        download_error: 下载时出错：%{error}
+        duplicate_files_warning: 检测到重复文件。上传这些文件将覆盖现有内容。
+        file: 文件
+        filename_invalid_chars: 文件名不能包含 / 或 ..
+        filename_label: 文件名
+        globus_open: 使用 Globus 打开当前目录
+        globus_unavailable: 此目录未关联任何 Globus 端点
+        illegal_slash_in_filename: 文件名中不允许包含非法字符（/）。
+        move: 移动
+        navigated_to: 导航至 %{path}
+        new_directory_title: 新目录
+        new_file_title: 新文件
+        path_label: 小路
+        poll_status_error: 操作可能未成功。获取文件操作状态失败。
+        preparing_download_dir: 准备下载目录：%{name}
+        provide_absolute_pathname: 提供绝对路径名
+        provide_directory_name: 请提供一个不包含斜杠 / 的目录名称。
+        provide_non_empty_filename: 请提供非空文件名。
+        provide_rename_filename: 请提供一个文件名，以便将其重命名为
+        rename_title: 重命名
+        see_details: 查看详情
+        select_row: 选择行
+        select_to_copy_move: 选择要复制或移动的文件、文件组或目录。您尚未选择任何内容。
+        select_to_delete: 请选择要删除的文件、文件组或目录。您尚未选择任何文件。
+        select_to_download: 请选择要下载的文件、多个文件或目录。您尚未选择任何文件。
+        select_to_send: 请选择至少一个文件或目录进行发送。
+        send_failed: 文件信息发送失败。
+        sent_successfully: 所选文件信息已成功发送。
+        show_dotfiles: 显示点文件
+        show_owner_mode: 显示所有者/模式
+        summary_copy_files: 复制文件
+        summary_move_files: 移动文件
+        summary_remove_files: 删除文件
+        summary_rename_file: 重命名文件
+        token_missing_expired: 应用程序令牌缺失或已过期。请重新开始。
+        transfer_error: 尝试执行 %{summary} 时发生错误：%{error}
+        upload_and_overwrite: 上传和覆盖
+        upload_count:
+          one: 上传 %{count} 文件
+          other: 上传%{count}文件
+        upload_new_files: 上传新文件
+        uppy_empty_dir_note: 只有当目录上传是通过拖放操作发起时，空目录才会包含在上传文件中。这是因为文件和目录条目 API 仅在拖放事件中可用，在输入更改事件中不可用。
+      icon_picker:
+        icon_selected: 已选择 %{icon} 图标
+        icon_sr: '%{name} 图标'
+      launcher_edit:
+        account_help: 提交工作申请所用的账户。
+        account_label: 帐户
+        add_new_option: 添加新选项
+        cores_help: 该作业将在多少个核心上运行？
+        cores_label: 核心
+        env_var_help: 添加一个环境变量。
+        env_var_key: 环境变量：%{name}
+        env_var_label: 环境变量
+        hours_help: 这项工作可以运行多长时间？
+        hours_label: 小时
+        job_name_help: 该职位将采用的名称。
+        job_name_label: 职位名称
+        log_location_help: 作业日志输出的目标位置。
+        log_location_label: 日志位置
+        no_more_options: 没有其他选择
+        nodes_help: 该作业将在多少个节点上运行？
+        nodes_label: 节点
+        queues_help: 作业将提交到哪个队列？
+        queues_label: 队列
+      module_browser:
+        copied: 已复制！
+        copy: 复制
+        showing_results:
+          one: 显示 %{count} 结果
+          other: 显示 %{count} 结果
+      nsf_access:
+        affected_resources: 受影响资源：%{resources}
+        read_more: 阅读更多
+        register_event: 注册参加本次活动
+      path_selector:
+        directory_loaded: 目录已加载 %{count} 项
+        invalid_regex: 为该路径选择器提供的正则表达式未编译。
+        loading_directory: 正在加载目录内容
+        permission_denied_prefix: '没有权限： '
+      popovers:
+        ihpc_content: 交互式高性能计算会话允许您对集群中的一个或多个节点进行专用访问。这类似于交互式批处理会话，您可以通过主节点上的桌面进行访问。此功能适用于长时间运行的计算任务等高负载作业，或需要专用资源的情况。
+        vdi_content: 虚拟桌面界面 (VDI) 让您能够通过桌面访问共享节点。它相当于登录节点的图形化版本。您可以将其用于访问和查看文件、提交作业以及进行可视化等轻量级任务。
+      products:
+        fatal_error: 发生致命错误
+        no_action: 无任何行动
+      projects:
+        undetermined_size: 尺寸未定
+      support_ticket:
+        delete_attachment: 删除附件
+        no_file_selected: 未选择文件
+        selected_file: 选定文件：%{name} (%{size})。
+        size_bytes: '%{size}字节'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: 由于您已注销账号，此页面无法更新。请刷新页面重新登录。
+        unexpected_error: 此页面遇到意外错误，请刷新页面。
+      utils:
+        loading: 加载中。
+        loading_complete: 加载完成。
+        popup_blocked: 此链接设置为在新窗口中打开，但似乎没有打开。请禁用此页面的弹出窗口拦截器，然后重试。
+      workflows:
+        begin_from_launcher: 从启动器 %{title} 开始工作流程
+        bidirectional_not_allowed: 不允许双向边缘。
+        cyclic_dependency: 添加此接口会在启动器之间产生循环依赖关系。
+        edge_aria_label: 从 %{from} 到 %{to} 的边缘
+        launcher_aria_label: 启动器：%{title}
+        launcher_exists: 启动器已存在，请选择其他启动器
+        load_launcher_failed: 启动器HTML加载失败，请重试。
+        no_empty_cells: 没有空网格单元！
+        save_failed: 工作流保存失败。请查看控制台了解详情。
+        select_launcher: 请选择一个启动器
+      xdmod:
+        analytics_toggle: 分析切换
+        column_date: 日期
+        column_id: ID
+        column_name: 姓名
+        date_range: '%{from} 至 %{to}'
+        efficiency_report: '%{unit} 效率报告'
+        ensure_logged_in_html: '%{error} Please ensure you are <a href="%{url}">logged into Open XDMoD first</a>, and then try again.'
+        expand_analytics_title: 点击上方表格，展开有关作业 %{id} 的分析信息。
+        fetch_user_failed: 尝试从 Open XDMoD 获取当前用户信息失败
+        idp_redirect_failed: 登录失败：身份提供商重定向失败
+        iframe_error: XDMoD 登录 iFrame 在 URL %{url} 处发布了包含信息 %{info} 的错误消息
+        inefficient_of_total_html: <span class="text-danger">%{bad} 效率低下 %{unit} </span> ⁄ %{total} 总计 %{unit}
+        invalid_job_data: 请求返回的作业数据无效。
+        loading_caps: 加载中...
+        login_page_load_failed: 登录失败：XDMoD 登录页面加载失败
+        login_timeout: 登录失败：等待登录超时
+        metric_cpu: 中央处理器
+        metric_mem: 记忆
+        metric_walltime: 墙时
+        no_data: 暂无数据。
+        not_available: 不适用
+        open_xdmod: 打开 XDMoD
+        percent_efficient: 效率 %{percent}%
+        percent_efficient_aria: 效率百分比
+        percent_inefficient: '%{percent}% 效率低下'
+        percent_inefficient_aria: 效率低下百分比
+        recently_completed_jobs: 近期完成的工作
+        unit_core_hours: 核心课时
+        unit_core_hours_title: 核心课时
+        unit_jobs: 工作
+        unit_jobs_title: 工作机会
     launch: 启动
     load_report: 加载报告 + %{node}
+    loading: 加载中...
+    loading_short: 加载中
     locale_name: 简体中文
     logo_alt_text: 欢迎使用 Open OnDemand
+    logout_body_html: 您必须完全关闭浏览器才能“注销”。如果您重新打开浏览器后仍然处于登录状态，请清除您的 Cookie。如果您使用的是 Chromebook 或 Chromebox，则需要重启设备才能“关闭浏览器”并“注销”。
+    logout_tip_html: <strong>提示：在使用 OnDemand 时使用“隐私浏览模式”</strong>窗口是处理“自动注销”的好方法，因为关闭浏览器窗口将删除所有相关的 cookie 和会话信息。
+    logout_title: 您尚未登出
     maximum: 最大值
     mem_report: 内存报告 + %{node}
     minimum: 最小值
     mode: 模式
+    module_browser_available_modules: 可用模块：
+    module_browser_copy_aria: 复制 %{name} 的加载命令
+    module_browser_dependencies: 依赖关系：
     module_browser_last_updated: 最后更新：%{last_updated}
+    module_browser_load_command: 加载命令：
+    module_browser_search_label: 搜索模块
+    module_browser_search_placeholder: 按模块名称搜索...
+    module_browser_select_version: （选择版本）
+    module_browser_showing_results: 显示 %{count} 结果
     module_browser_title: 模块浏览器
+    module_browser_versions: 版本
     motd_default_md: 'Open OnDemand 的开发得到了美国国家科学基金会 (NSF) 的支持，资助编号分别为 [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) 和 [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725)。了解更多信息或参与其中：- [Discourse](https://discourse.openondemand.org/)- [Open OnDemand 代码库](https://github.com/OSC/ondemand)- [ood-core 代码库](https://github.com/OSC/ood_core)- [文档](https://osc.github.io/ood-documentation/latest/)
 
       '
     motd_erb_render_error: MOTD 未正确解析或渲染：%{error_message}
+    motd_no_messages: 没有新消息。
     motd_title: 每日信息
     name: 名称
     nav_all_apps: 所有应用
@@ -284,11 +715,14 @@ zh-CN:
     nav_language: 语言
     nav_limit_caption: 显示 %{subset_count} 的 %{total_count}
     nav_logout: 登出
+    nav_main_menu: 主菜单
     nav_restart_server: 重启网页服务器
     nav_sessions: 我的交互会话
+    nav_toggle_navigation: 切换导航
     nav_user: 以用户名：%{username}登陆
     network_report: 网络报告 + %{node}
     node: 节点
+    none: 没有任何
     not_grouped: 其他应用
     nsf_access_announcements: NSF ACCESS 公告
     nsf_access_events: NSF 访问事件
@@ -297,15 +731,41 @@ zh-CN:
     opens_in_new_tab: 在新标签页中打开
     output_location: 输出位置：
     owner: 所有者
-    page_title: "%{page} - %{site}"
-    page_title_with_dir: "%{page} - %{site} - %{dir}"
+    page_actions_aria: 页面操作
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: 参数
+    path_selector_breadcrumb_aria: '%{title} 面包屑'
+    path_selector_caption: 在表单中选择要使用的文件或目录。
     path_selector_default_popup_title: 选择您的工作目录
     path_selector_home: 主页
     path_selector_parent_directory: 父目录
+    permissions_created: 权限创建成功。
+    permissions_destroyed: 权限已成功销毁。
+    permissions_group_title: 群组权限
+    permissions_user_title: 用户权限
     pinned_apps_caption_html: 一个精选的<a href="%{all_apps_url}">所有可用应用</a>子集
     pinned_apps_category: 应用
     pinned_apps_title: 固定应用
+    products_created: 产品已成功创建。
+    products_git_commit_hint_html: 请提交任何更改或将必要的文件添加到 <code>.gitignore</code>
+    products_git_staged: 摆拍
+    products_git_status: Git 状态
+    products_git_unstaged: 未经排练
+    products_git_untracked: 未追踪
     products_manifest_save_error: 无法将应用程序清单保存到 %{path}
+    products_ssh_key_created: SSH密钥已成功创建。
+    products_ssh_key_exists: SSH密钥已存在
+    products_ssh_key_failed: SSH密钥创建失败：%{error}
+    products_type_batch_connect: 批量连接应用程序
+    products_type_passenger: 乘客应用程序
+    products_type_passenger_meteor: 乘客流星应用程序
+    products_type_passenger_node: 乘客节点应用程序
+    products_type_passenger_rack: 乘客行李架应用程序
+    products_type_passenger_rails: 客运铁路应用程序
+    products_type_passenger_rails_sqlite: 使用 SQLite 数据库的乘客铁路应用程序
+    products_type_passenger_wsgi: 乘客 WSGI 应用
+    products_updated: 产品更新成功。
     project: 项目
     project_balances: 项目余额
     project_directory: 项目目录
@@ -314,49 +774,108 @@ zh-CN:
     queue: 队列
     quota_additional_message: 考虑删除或归档文件以释放磁盘空间。
     quota_block: 配额使用量%{used} 可用 %{available}
-    quota_block_shared: "(您的配额%{used_exclusive} )"
+    quota_block_shared: (您的配额%{used_exclusive} )
     quota_file: 文件配额使用量%{used} 可用 %{available}
-    quota_file_shared: "(您的文件配额%{used_exclusive})"
-    quota_message: "%{quota}. %{additional_message}"
+    quota_file_shared: (您的文件配额%{used_exclusive})
+    quota_message: '%{quota}. %{additional_message}'
     quota_reload_message: 重新加载页面以查看更新的配额。 配额每5分钟更新一次。
     quota_warning_prefix_html: 配额限制警告
     recently_used_apps_title: 最近使用的应用
     remove: 移除
     reset: 重置
-    restart_msg_html: |
-      您的小组成员资格已更改，这会影响您对应用程序的访问。 您的dashboard将自动重启。
+    restart_msg_html: '您的小组成员资格已更改，这会影响您对应用程序的访问。 您的dashboard将自动重启。
+
       如果没有重启，请点击 <a href="%{restart_url}">来重启网页服务器</a>.
+
+      '
     restore: 恢复
     root: 根
     save: 保存
     saved_settings_title: 已保存的设置
+    select: 选择
+    select_all: 全选
     select_path: 选择路径
-    select_path_for: "%{element} 选择路径\n"
+    select_path_for: '%{element} 选择路径
+
+      '
+    settings_csrf_expired: 您的会话安全令牌已过期。请重试您的操作。
     settings_invalid_request: 提交的设置无效
+    settings_unprocessable_body_html: Your session may have expired or the change you wanted was rejected. Please <a href="%{dashboard_url}">return to the Dashboard</a> and try again.
+    settings_unprocessable_title: 会话已过期或更改被拒绝
     settings_updated: 设置已更新
     shared_apps_caption: 由 %{owner_title} (%{owner}) 共享
     shared_apps_caption_short: 由 %{owner} 共享
     shared_apps_title: 共享应用
-    sharing_catalog_msg_html: "<br>可以在%{catalog_link_tag}上查看可用应用程序的子集。\n"
+    sharing_catalog_msg_html: '<br>可以在%{catalog_link_tag}上查看可用应用程序的子集。
+
+      '
     sharing_catalog_title: 应用目录
-    sharing_no_shared_apps_html: "<strong>没有可用的自定义共享应用。</strong>\n"
-    sharing_support_msg_html: |
-      如果您没有找到所需的应用程序，请
+    sharing_no_shared_apps_html: '<strong>没有可用的自定义共享应用。</strong>
+
+      '
+    sharing_support_msg_html: '如果您没有找到所需的应用程序，请
+
       <a href="%{support_url}">联系支持</a>.
-    sharing_welcome_msg_html: |
-      可以从上方导航栏中的下拉菜单访问群集访问应用程序。
+
+      '
+    sharing_welcome_msg_html: '可以从上方导航栏中的下拉菜单访问群集访问应用程序。
+
       <br>自定义共享应用程序可以在下面使用。
-    shell_app_title: "%{cluster_title} Shell 访问"
+
+      '
+    shell: 壳
+    shell_app_title: '%{cluster_title} Shell 访问'
     show: 显示
     size: 大小
     skip_navigation: 跳过导航
+    smart_attributes:
+      account: 帐户
+      auto_modules_none: 自动模块（未提供）
+      cluster: 簇
+      cores: 核心
+      email_on_started: 我希望在会议开始时收到电子邮件通知。
+      environment_variable: 环境变量
+      environment_variable_key: 环境变量：%{key}
+      job_name: 职位名称
+      module_version: '%{module} 版本'
+      num_cpus_single_node: 单个节点上的 CPU 数量
+      num_hours: 时长
+      num_nodes: 节点数量
+      num_processors: 处理器数量
+      partition: 分割
+      qos: 服务质量
+      queue: 队列
+      script: 脚本
+      vnc_idle_help: '如果经过 # 秒后仍无 VNC 查看器连接，则退出。'
+      vnc_idle_label: 空闲超时
+      vnc_resolution_help: 分辨率仅供原生 VNC 连接使用
+      vnc_resolution_label: 解决
     soft_tabs: 软制表符
     soft_tabs_info: 软制表符是文件中的空格，而不是实际的制表符字符。
     status: 地位
+    status_completed: 完全的
+    status_held: 握住
+    status_hold: 抓住
+    status_queued: 已排队
+    status_running: 跑步
+    status_starting: 开始
+    status_suspend: 暂停
+    status_suspended: 暂停
+    status_undetermined: 未确定
+    stop: 停止
     submit: 提交
     submit_args: 提交参数：
     support_ticket:
       creation_success: 支持票电子邮件已发送至：%{to}
+      fields:
+        attachments: 附件
+        cc: CC
+        description: 描述
+        email: 电子邮件
+        job_description: 职位描述
+        session_description: 会议描述
+        subject: 主题
+        username: 用户名
       generic_error: 处理您的请求时出错：%{error}
       header: 支持票
       rt:
@@ -364,23 +883,87 @@ zh-CN:
       servicenow:
         attachments_failure: 在 ServiceNow 中创建的支持票。编号：%{number}，但无法添加附件。
         creation_success: 在 ServiceNow 中创建的支持票。编号：%{number}
+      submit: 提交支持工单
       title: 支持票
       validation:
-        attachments_items: "%{id} 无效。%{items} 已添加，最大附件数量为 %{max}"
-        attachments_size: "%{id} 无效。最大附件大小为 %{max}"
-        email: "%{id} 格式无效。期望一个有效的电子邮件地址"
+        attachments_items: '%{id} 无效。%{items} 已添加，最大附件数量为 %{max}'
+        attachments_size: '%{id} 无效。最大附件大小为 %{max}'
+        email: '%{id} 格式无效。期望一个有效的电子邮件地址'
         items:
           attachments_js: 不允许更多附件
-        required: "%{id} 是必需的"
+        required: '%{id} 是必需的'
         size:
           attachments_js: 最大附件大小为 %{max}。所选文件大小为 %{size}
       validation_error: 无效请求。请查看下面的错误信息
+    support_ticket_add_attachment: 添加附件
+    support_ticket_attachments_help: 点击此框上传文件。屏幕截图或其他文件有助于我们排查您的问题。
     system_apps_caption: 系统已安装应用
+    system_status_available: '%{name} 可用：%{count}'
+    system_status_cluster_title: '%{title} 集群状态'
+    system_status_gpus: GPU
+    system_status_in_use: '%{percent} 正在使用中'
+    system_status_jobs_queued: 已排队的任务
+    system_status_jobs_queued_count: '%{count} 已排队作业'
+    system_status_jobs_running: 正在运行的作业
+    system_status_jobs_running_count: '%{count} 正在运行的作业'
+    system_status_nodes: 节点
+    system_status_not_slurm: '%{scheduler} 不提供集群信息。目前仅支持 Slurm 集群。'
+    system_status_processors: 处理器
+    toggle_notifications: 切换通知
+    toggle_push_notifications: 切换推送通知
     type: 类型
+    undefined_title: 未定义标题
     unknown: 未知
+    uppy:
+      strings:
+        addMore: 添加更多
+        addMoreFiles: 添加更多文件
+        addingMoreFiles: 添加更多文件
+        back: 后退
+        browseFiles: 浏览文件
+        browseFolders: 浏览文件夹
+        cancel: 取消
+        cancelUpload: 取消上传
+        closeModal: 关闭模态框
+        complete: 完全的
+        dashboardTitle: 文件上传器
+        dashboardWindowTitle: 文件上传窗口（按 Esc 键关闭）
+        done: 完毕
+        dropHint: 请将文件拖放到这里。
+        dropPasteBoth: 将文件拖放到此处，%{browseFiles} 或 %{browseFolders}
+        dropPasteFiles: 将文件拖放到此处或%{browseFiles}
+        dropPasteFolders: 将文件拖放到此处或%{browseFolders}
+        editFile: 编辑文件
+        editing: 正在编辑 %{file}
+        emptyFolderAdded: 未从空文件夹中添加任何文件
+        error: 错误
+        exceedsSize: '%{file} 超过了 %{size} 的最大允许大小'
+        failedToUpload: 上传 %{file} 失败
+        folderAlreadyAdded: 文件夹“%{folder}”已添加
+        myDevice: 我的设备
+        noDuplicates: 无法添加重复文件“%{fileName}”，该文件已存在。
+        pause: 暂停
+        pauseUpload: 暂停上传
+        paused: 暂停
+        removeFile: 删除文件
+        resume: 恢复
+        resumeUpload: 简历上传
+        retry: 重试
+        retryUpload: 重试上传
+        save: 节省
+        saveChanges: 保存更改
+        showErrorDetails: 显示错误详情
+        upload: 上传
+        uploadComplete: 上传完成
+        uploadFailed: 上传失败
+        uploadPaused: 上传已暂停。
+        uploading: 上传
+        xTimeLeft: '%{time} 左'
     user: 用户
     user_configuration:
       support_ticket_error: support_ticket 配置错误。请在配置 YAML 中添加后端实现。
-    welcome_html: |
-      %{logo_img_tag}
+    welcome_html: '%{logo_img_tag}
+
       <p class="lead">OnDemand为您的所有HPC资源提供了一个集成的单一访问点。</p>
+
+      '

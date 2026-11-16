@@ -1,0 +1,18 @@
+{
+  "page_title": "Shell - %{siteTitle}",
+  "menu_aria": "Shell-Menü",
+  "host_label": "Host: %{host}",
+  "initial_directory": "Anfangsverzeichnis: %{dir}",
+  "themes_label": "Themen:",
+  "theme_default": "Standard",
+  "theme_bright": "Hell",
+  "theme_dark": "Dunkel",
+  "fonts_label": "Schriftarten:",
+  "leave_page_warning": "Wenn Sie diese Seite verlassen, wird Ihre Terminal-Sitzung beendet.",
+  "websocket_failed": "Es konnte keine WebSocket-Verbindung hergestellt werden. Stellen Sie sicher, dass Sie einen Browser verwenden, der WebSocket-Verbindungen unterstützt.",
+  "connection_terminated": "Ihre Verbindung zum Remote-Server wurde unterbrochen.",
+  "auth_no_clusters": "Es sind keine Cluster definiert.",
+  "auth_invalid_origin": "Ungültiger Ursprung.",
+  "auth_bad_csrf": "Ungültiges CSRF-Token.",
+  "auth_host_not_allowed": "Host \"%{host}\" nicht in der Zulassungsliste oder den Clusterkonfigurationen angegeben."
+}

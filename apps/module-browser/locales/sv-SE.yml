@@ -1,0 +1,5 @@
+---
+sv-SE:
+  manifest:
+    name: Modulwebbläsare
+    description: Bläddra bland moduler i klustren för detaljerad information om modulerna.

@@ -1,0 +1,5 @@
+---
+en-CP:
+  manifest:
+    name: Daemon Compiler
+    description: Daemon Composer allows the creation and submission of batch daemons

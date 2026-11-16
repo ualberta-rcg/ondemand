@@ -1,0 +1,5 @@
+---
+da-DK:
+  manifest:
+    name: osc-editor
+    description: En teksteditor til filer på OSC-systemer

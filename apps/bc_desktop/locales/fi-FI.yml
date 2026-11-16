@@ -1,0 +1,14 @@
+---
+fi-FI:
+  manifest:
+    name: Työpöytä
+    description: Tämä sovellus käynnistää interaktiivisen työpöydän yhdellä tai useammalla laskentakeskuksella. Sinulla on täysi pääsy näiden keskuksien tarjoamiin resursseihin. Tämä on analogista interaktiivisen eräajon kanssa.
+  form:
+    attributes:
+      desktop:
+        label: Työpöytäympäristö
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: KUMPPANI
+          xfce: Xfce

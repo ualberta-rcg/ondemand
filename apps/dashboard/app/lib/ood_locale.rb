@@ -104,13 +104,48 @@ module OodLocale
   end
 
   # Admin-enabled locales filtered to those with dashboard translations.
+  # Supports shorthand `supported_locales: "regional"` (or `"all_regional"`) to
+  # enable all available regional `xx-YY` locales (excluding bare `:en`).
   def supported_locales
     allowed = dashboard_locales
-    configured = Array(::Configuration.supported_locales).filter_map do |entry|
+    raw_cfg = Array(::Configuration.supported_locales)
+    if raw_cfg.any? { |entry| %w[regional all_regional].include?(entry.to_s.strip.downcase) }
+      regional = regional_locales(allowed: allowed)
+      return regional unless regional.empty?
+    end
+
+    configured = raw_cfg.filter_map do |entry|
       normalize(entry, allowed: allowed)
     end.uniq
 
     configured.empty? ? [default_locale(allowed: allowed)] : configured
+  end
+
+  # All available regional `xx-YY` dashboard locales (excluding bare `:en`),
+  # ordered with `default_locale` first when regional.
+  def regional_locales(allowed: dashboard_locales)
+    regional = Array(allowed).select { |loc| to_bcp47(loc).include?('-') && !loc.to_s.casecmp('en').zero? }
+    def_loc = default_locale(allowed: allowed)
+    regional = [def_loc] + (regional - [def_loc]) if regional.include?(def_loc)
+    regional
+  end
+
+  # Match a user/cookie locale against `supported`, preferring exact tag match
+  # and falling back to primary-language prefix match (e.g. legacy `en` -> `en-CA`).
+  def match_supported(raw, supported:)
+    exact = normalize(raw, allowed: supported)
+    return exact if exact
+
+    cleaned = raw.to_s.strip
+    return nil if cleaned.empty?
+
+    stem = File.basename(cleaned, '.*')
+    return nil if stem.empty?
+
+    primary = stem.tr('_', '-').downcase.split('-').first
+    return nil if primary.nil? || primary.empty?
+
+    Array(supported).find { |loc| loc.to_s.tr('_', '-').downcase.split('-').first == primary }&.to_sym
   end
 
   # Resolve the active locale for a request using the shared OOD contract:
@@ -121,8 +156,8 @@ module OodLocale
   def resolve(user_locale: nil, cookie_locale: nil, accept_language: nil)
     supported = supported_locales
 
-    candidate = normalize(user_locale, allowed: supported)
-    candidate ||= normalize(cookie_locale, allowed: supported)
+    candidate = match_supported(user_locale, supported: supported)
+    candidate ||= match_supported(cookie_locale, supported: supported)
     candidate ||= negotiate_accept_language(accept_language, supported: supported) if supported.size > 1
     candidate || default_locale(allowed: dashboard_locales)
   end

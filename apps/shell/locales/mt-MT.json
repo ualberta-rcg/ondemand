@@ -1,0 +1,18 @@
+{
+  "page_title": "Qoxra - %{siteTitle}",
+  "menu_aria": "Menù tal-Qoxra",
+  "host_label": "Ospitanti: %{host}",
+  "initial_directory": "Direttorju inizjali: %{dir}",
+  "themes_label": "Temi:",
+  "theme_default": "Default",
+  "theme_bright": "Jgħajjat",
+  "theme_dark": "Dlam",
+  "fonts_label": "Fonts:",
+  "leave_page_warning": "Jekk titlaq minn din il-paġna, is-sessjoni tat-terminal tiegħek tiġi terminata.",
+  "websocket_failed": "Ma rnexxiex tiġi stabbilita konnessjoni websocket. Kun żgur li qed tuża browser li jappoġġja konnessjonijiet websocket.",
+  "connection_terminated": "Il-konnessjoni tiegħek mas-server remot ġiet terminata.",
+  "auth_no_clusters": "L-ebda raggruppament ma ġie definit.",
+  "auth_invalid_origin": "Oriġini Invalida.",
+  "auth_bad_csrf": "Token CSRF ħażin.",
+  "auth_host_not_allowed": "Il-host \"%{host}\" mhux speċifikat fil-lista permessa jew fil-konfigurazzjonijiet tal-cluster."
+}

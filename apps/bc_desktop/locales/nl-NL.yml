@@ -1,0 +1,21 @@
+---
+nl-NL:
+  manifest:
+    name: bureaublad
+    description: 'Deze app start een interactief bureaublad op een of meer rekenknooppunten. U
+
+      krijgt volledige toegang tot de resources die deze knooppunten bieden. Dit is vergelijkbaar met
+
+      een interactieve batchtaak.
+
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: Desktopomgeving
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: MAAT
+          xfce: Xfce

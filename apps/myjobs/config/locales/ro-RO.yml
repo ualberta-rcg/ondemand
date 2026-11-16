@@ -1,0 +1,131 @@
+---
+ro-RO:
+  jobcomposer:
+    account_label: 'Cont:'
+    back: Spate
+    cancel: Anula
+    close: Aproape
+    cluster_label: 'Cluster:'
+    confirm_delete: Ești sigur/ă?
+    confirm_delete_template: Ești sigur că vrei să ștergi asta?
+    copy_template: Copiați șablonul
+    create_from_path_title: Creați un nou job dintr-o cale
+    create_new_heading_html: Creați un nou „<span class="wrap-line" id="script-name-label">%{name}</span>”
+    create_new_job: Creați un nou loc de muncă
+    create_template: Creați un șablon
+    create_template_from_job_title: Creați un șablon din jobul selectat
+    delete: Şterge
+    delete_job_title: Ștergeți lucrarea
+    deprecation_warning_html: Composerul de joburi este depreciat și va fi eliminat în Open OnDemand 5.0. Vă rugăm să transferați joburile și șabloanele către Managerul de proiect <a href="%{projects_path}">_OODTOK1__.
+    edit: Edita
+    edit_files: Editați fișierele
+    folder_contents_label: 'Conținutul folderului:'
+    from_default_template: Din șablonul implicit
+    from_default_template_title: Creați un nou job din șablonul implicit
+    from_selected_job: Din jobul selectat
+    from_selected_job_title: Copiați lucrarea selectată
+    from_specified_path: Din calea specificată
+    from_template: Din șablon
+    from_template_title: Creați un nou job dintr-un șablon ales de dvs.
+    invalid_cluster_html: Clusterul nu este valid! Editați <a href="#" id="edit-job-options-script-link">Opțiunile jobului</a> pentru a selecta un cluster valid.
+    invalid_script_html: Scriptul nu este valid! Editați <a href="#" id="edit-job-options-link">Opțiuni job</a> pentru a selecta un script valid.
+    job_already_submitted: Lucrarea a fost deja trimisă.
+    job_array_request_label: 'Cerere matrice de joburi:'
+    job_attributes_heading_html: Atribute job <strong>(Opțional)</strong>
+    job_copied: Lucrarea a fost copiată cu succes.
+    job_copy_failed: 'Copierea lucrării a eșuat: %{errors}'
+    job_created: Lucrul a fost creat cu succes.
+    job_destroy_failed: 'Lucrul nu a putut fi distrus: %{errors}'
+    job_destroyed: Jobul a fost distrus cu succes.
+    job_details: Detalii despre job
+    job_directory_missing: Directorul de locuri de muncă lipsește!
+    job_name_label: 'Numele postului:'
+    job_not_submitted: Lucrarea nu a fost trimisă.
+    job_stop_failed: 'Nu s-a putut opri jobul: %{errors}'
+    job_stopped: Lucrul a fost oprit cu succes.
+    job_submit_failed: 'Nu s-a putut trimite jobul în lot:'
+    job_submitted: Lucrarea a fost trimisă cu succes.
+    job_updated: Lucrarea a fost actualizată cu succes.
+    loading: Încărcare
+    loading_job_info: Se încarcă informațiile despre job
+    nav_help: Ajutor
+    nav_jobs: Locuri de muncă
+    nav_menu_aria: Meniul Composer de joburi
+    nav_templates: Șabloane
+    new_job: Loc de muncă nou
+    new_template: Șablon nou
+    new_template_title: Creați un șablon nou
+    no_clusters_alert: Nu există gazde configurate care să vă permită trimiterea de lucrări. Vă rugăm să contactați administratorul de sistem.
+    open_dir: Deschideți directorul
+    open_dir_in_editor: Deschideți directorul în editorul de fișiere
+    open_dir_in_file_manager: Deschideți directorul în Managerul de fișiere
+    open_dir_in_terminal: Deschideți directorul în Terminal
+    open_editor: Deschideți editorul
+    open_selected_job_in_terminal: Deschideți jobul selectat în terminal
+    open_selected_template_in_terminal: Deschideți șablonul selectat în Terminal
+    open_template_dir_in_file_manager: Deschideți directorul de șabloane în Managerul de fișiere
+    open_terminal: Deschideți terminalul
+    open_xdmod: Deschide XDMoD
+    options_account_help: Contul este un câmp opțional. Dacă nu este setat, contul poate fi setat automat de filtrul de trimitere.
+    options_account_title: Cont
+    options_array_help: Tabelele de joburi sunt opționale. De exemplu, 1-10
+    options_array_help_with_clusters: 'Tablourile de joburi sunt opționale. OnDemand nu acceptă în prezent tablouri de joburi pentru clusterele: %{cluster_list}.'
+    options_array_title: Specificația matricei de joburi
+    options_cluster_title: Cluster
+    options_copy_environment: Mediul de copiere
+    options_errors: Vă rugăm să corectați erorile de mai jos.
+    options_name_title: Nume
+    options_script_help: Fișierele mai mari de 65KB sunt omise pentru câmpul scriptului de job
+    options_script_title: Specificați scriptul de job
+    options_title: Opțiuni de job
+    other_valid_files: Alte fișiere valide
+    page_title: Compozitor de joburi - %{site}
+    path_to_source_heading_html: Calea către sursă <strong>(Obligatoriu)</strong>
+    reset: Resetare
+    reset_template_fields_title: Resetează câmpurile la valorile implicite ale șablonului
+    save: Salva
+    script_contents_label: 'Conținutul scenariului:'
+    script_location_label: 'Locația scriptului:'
+    script_name_form_label: 'Numele scriptului:'
+    script_name_label: 'Numele scriptului:'
+    select_cluster_prompt: Selectați un cluster...
+    select_template_option: -- selectați un șablon --
+    selected_template_details: Detalii șablon selectat
+    show: Spectacol
+    show_batch_host_label: 'Gazdă lot:'
+    show_dir_contents_label: 'Conținutul directorului:'
+    show_name_label: 'Nume:'
+    show_staged_dir_label: 'Regizor:'
+    showing_job_title: Se afișează jobul
+    skip_navigation: Sari peste navigare
+    source_path_help: Introduceți calea către un director din sistemul de fișiere. Conținutul acestei căi va fi copiat într-un nou flux de lucru.
+    source_path_label: Calea sursă
+    specify_job_host_and_script: Specificați gazda de joburi și scriptul
+    stop: Stop
+    stop_job_title: Opriți lucrarea
+    submit: Trimite
+    submit_job_title: Trimiteți job-ul
+    submit_script_title: Trimiteți scriptul
+    submit_to_label: 'Trimiteți către:'
+    suggested_files: Fișier(e) sugerat(e)
+    table_created: Creat
+    table_id: ID-ul
+    table_source: Sursă
+    table_status: Stare
+    template_create_error: eroare la crearea șablonului
+    template_error_name_unique: trebuie să fie unic.
+    template_error_path_directory: trebuie să indice către un director.
+    template_error_path_missing: nu există.
+    template_errors_heading:
+      one: 'Eroarea %{count} a împiedicat salvarea acestui șablon:'
+      other: 'Erorile %{count} au împiedicat salvarea acestui șablon:'
+    template_label: 'Șablon:'
+    template_location_label: 'Locația șablonului:'
+    template_path_blank_help: Dacă este lăsat necompletat, un script de job implicit va fi adăugat la noul șablon.
+    template_path_label: Cale (șablonul va fi creat prin copierea fișierelor din această cale sursă)
+    templates_subtitle: Pentru a crea un job nou, selectați un șablon de copiat, completați formularul din dreapta și faceți clic pe „Creează job nou”.
+    title: Compositor de locuri de muncă
+    toggle_navigation: Comutare navigare
+    view_files: Vizualizare fișiere
+    xdmod_url_warning_message: Este posibil ca această lucrare să nu apară în Open XDMoD decât după 24 de ore de la finalizarea acesteia.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

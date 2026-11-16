@@ -96,6 +96,9 @@ class OodLocaleTest < ActiveSupport::TestCase
   test 'short_label and short_options_for_select return compact uppercase codes with native titles' do
     assert_equal 'EN', OodLocale.short_label(:en)
     assert_equal 'EN-CA', OodLocale.short_label(:'en-CA')
+    assert_equal 'EN-GB', OodLocale.short_label(:'en-GB')
+    assert_equal 'EN-HG', OodLocale.short_label(:'en-HG')
+    assert_equal 'EN-CP', OodLocale.short_label(:'en-CP')
     assert_equal 'FR-CA', OodLocale.short_label('fr_ca')
     assert_equal 'JA-JP', OodLocale.short_label(:ja_JP)
 
@@ -106,6 +109,25 @@ class OodLocaleTest < ActiveSupport::TestCase
         ['FR-CA', 'Français (Canada)', 'fr-CA', 'fr-CA']
       ],
       OodLocale.short_options_for_select
+    )
+  end
+
+  test 'regional_locales excludes bare en and resolve maps legacy en setting to regional en-CA' do
+    Configuration.stubs(:locale).returns(:'en-CA')
+    Configuration.stubs(:supported_locales).returns(['regional'])
+
+    regional = OodLocale.supported_locales
+    refute_includes regional, :en
+    assert_equal :'en-CA', regional.first
+    assert_includes regional, :'en-GB'
+    assert_includes regional, :'de-DE'
+    assert_includes regional, :'en-HG'
+    assert_includes regional, :'en-CP'
+
+    assert_equal :'en-CA', OodLocale.resolve(
+      user_locale:     'en',
+      cookie_locale:   'fr-CA',
+      accept_language: 'de-DE'
     )
   end
 end

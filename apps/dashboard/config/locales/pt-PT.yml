@@ -1,0 +1,1042 @@
+---
+pt-PT:
+  activemodel:
+    errors:
+      messages:
+        format: Formato %{attribute} inválido ou em falta
+        invalid: '%{attribute} é inválido'
+        required: '%{attribute} é obrigatório'
+        used: '%{attribute} já está em utilização'
+  dashboard:
+    account: Conta
+    actions: Ações
+    active_jobs: Empregos ativos
+    active_jobs_close_details: Fechar painel de detalhes expandidos.
+    active_jobs_detail:
+      account: Conta
+      array_job_id: ID do trabalho em matriz
+      array_task_id: ID da Tarefa em Matriz
+      cluster: Aglomeração
+      cluster_id: ID do cluster
+      comment: Comentar
+      cpu_time: Tempo de CPU
+      cpu_used: CPU utilizada
+      current_working_directory: Diretório de Trabalho Atual
+      end_time: Hora final
+      exec_host: Anfitrião Executivo
+      finish_time: Horário de término
+      from_host: Do anfitrião
+      gres: GRES
+      group_list: Lista de grupos
+      job_account: Conta de emprego
+      job_checkpoint_attr: Atributos do Ponto de Verificação de Trabalho
+      job_checkpoint_interval: Intervalo de ponto de verificação do trabalho
+      job_deadline: Prazo de entrega da vaga
+      job_exec_file: Ficheiro de Execução de Tarefas
+      job_execution_time: Tempo de Execução da Tarefa
+      job_gid: GID de trabalho
+      job_group: Grupo de Trabalho
+      job_id: ID da vaga
+      job_name: Nome do cargo
+      job_priority: Prioridade do trabalho
+      job_restart: Reinício do trabalho
+      job_script_file: Ficheiro de script de trabalho
+      job_script_size: Tamanho do guião de trabalho
+      job_share: Partilha de emprego
+      job_type: Tipo de vaga
+      job_uid: ID de trabalho
+      job_verify: Verificação de emprego
+      job_version: Versão de trabalho
+      mem: Membro
+      memory: Memória
+      node_count: Contagem de nós
+      node_list: Lista de nós
+      nodes: Nós
+      none: Nenhum
+      notifications: Notificações
+      partition: Partição
+      pbs_id: ID PBS
+      pids: PIDs
+      ppn: PPN
+      project_name: Nome do projeto
+      queue: Fila
+      reason: Razão
+      reserve: Reserva
+      select: Selecionar
+      start_time: Hora de início
+      state: Estado
+      status: Estatuto
+      submission_time: Tempo de envio
+      swap: Permuta
+      time_limit: Limite de tempo
+      time_used: Tempo utilizado
+      total_cpus: Total de CPUs
+      total_nodes: Total de nós
+      user: Usuário
+      virtual_memory: Memória virtual
+      walltime: Tempo de parede
+      walltime_used: Tempo de utilização
+    active_jobs_filter_all: Todos os empregos
+    active_jobs_filter_user: Seus trabalhos
+    active_jobs_ganlia_CPU: Imagem de gânglios para CPU.
+    active_jobs_ganlia_load: Imagem dos gânglios para as médias de carga do sistema.
+    active_jobs_ganlia_mem: Imagem de gânglios para utilização na memória.
+    active_jobs_ganlia_network: Imagem de gânglios para utilização na rede.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> ver tudo (%{number_of_sessions})</a>
+    active_sessions_title: Sessões interativas ativas
+    add: Adicionar
+    all_apps_table_app_column: Nome
+    all_apps_table_category_column: Categoria
+    all_apps_table_sub_category_column: Subcategoria
+    all_clusters: Todos os clusters
+    announcements_dismissible_button: OK
+    announcements_parse_error: Erro ao analisar o anúncio.
+    announcements_render_error: Não foi possível apresentar o anúncio '%{name}' devido a um erro.
+    announcements_required_button: Aceitar
+    apps_setup_failure_html: '<h2>Ocorreu um problema ao inicializar os seus dados para esta aplicação.</h2>
+
+      <p class="lead">
+
+
+      Por sua conta e risco, pode ainda <a href="%{app_url}">abrir a aplicação</a>
+
+      ou pode simplesmente <a href="%{home_url}">voltar ao painel</a>
+
+      </p>
+
+      <p>
+
+
+      Partilhe isto com o desenvolvedor do seu aplicativo:
+
+
+      O script de configuração de produção deve ser idempotente e é executado sempre que
+
+      o utilizador abre a aplicação através do painel.</p>
+
+      <h4>Exceção: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Pilha traço:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+
+      '
+    apps_system_apps_title: Aplicações do sistema
+    auto_log_location_title: Localização do registo
+    back: Costas
+    balance_additional_message: Considere solicitar %{balanace_units} adicionais
+    balance_message: '%{units_balance} é %{value}'
+    balance_no_warnings: Nenhum projeto está dentro do limite de aviso de saldo de %{threshold} dias.
+    balance_reload_message_html: 'Recarregue a página para ver o saldo atualizado. Os saldos são atualizados diariamente. <br> Última atualização: %{last_update}'
+    balance_warning_prefix_html: Aviso %{units_balance} para
+    batch_connect_active_sessions_aria: Sessões ativas
+    batch_connect_app_version: 'versão: %{version}'
+    batch_connect_apps_menu_aria: Menu de aplicações interativas
+    batch_connect_apps_menu_title: Aplicativos interativos
+    batch_connect_form_attr_cache_error: Não foi possível utilizar valores armazenados em cache anteriormente; utilizando os valores padrão. (%{error_message})
+    batch_connect_form_choose_template_name: Escolha um nome para o modelo.
+    batch_connect_form_data_root: diretório raiz de dados
+    batch_connect_form_dynamic_disclaimer: O formulário seguinte pode mudar dinamicamente à medida que as opções são selecionadas. Todas as alterações serão anunciadas e são reversíveis.
+    batch_connect_form_invalid: O ficheiro form. yml tem opções em falta no campo de formulário %{id}.
+    batch_connect_form_launch: Lançar
+    batch_connect_form_prefill: Usar configurações guardadas
+    batch_connect_form_prefill_error: Ups... Algo está errado com o seu modelo.
+    batch_connect_form_reset_resolution: Redefinir resolução
+    batch_connect_form_resolution_height: Altura da resolução (pixéis)
+    batch_connect_form_resolution_width: Largura da resolução (pixéis)
+    batch_connect_form_save: Guardar configurações
+    batch_connect_form_save_new_template: Guardar novas configurações
+    batch_connect_form_save_submit: Guarde as definições e feche.
+    batch_connect_form_select_template: selecione as definições guardadas
+    batch_connect_form_session_data_html: '* Os dados da sessão %{title} para esta sessão podem ser acedidos
+
+      em %{data_link_tag}.
+
+
+      '
+    batch_connect_form_template_name_label: nome da configuração
+    batch_connect_form_type_new_name: Nome das definições da aplicação
+    batch_connect_form_type_new_name_error: Por favor, introduza um nome válido para continuar.
+    batch_connect_invalid_form_array: O elemento 'form' em form.yml não é um Array.
+    batch_connect_invalid_form_attributes: O elemento 'attributes' no form.yml não é um Mapa.
+    batch_connect_missing_cluster: 'O cluster nunca foi configurado. Configure-o em form.yml.erb com `cluster` ou `form.cluster` ou
+
+      configure `cluster` em submit.yml.erb.
+
+
+      '
+    batch_connect_no_apps: Não existem aplicações interativas disponíveis.
+    batch_connect_no_sessions: Não possui nenhuma sessão ativa.
+    batch_connect_sandbox: '[Sandbox]'
+    batch_connect_sessions_cancel_confirm: Tem a certeza?
+    batch_connect_sessions_cancel_full_title: Cancelar sessão %{title}
+    batch_connect_sessions_cancel_title: Cancelar
+    batch_connect_sessions_connect_to: Ligue-se a %{app_title}
+    batch_connect_sessions_connection_render_error: Não foi possível renderizar o botão de ligação do ficheiro view.html.erb devido ao erro '%{error}'.
+    batch_connect_sessions_data_html: 'Os dados da sessão %{title} para esta sessão podem ser acedidos
+
+      em %{data_link_tag}.
+
+
+      '
+    batch_connect_sessions_delete_confirm: Tem a certeza?
+    batch_connect_sessions_delete_full_title: Apagar sessão %{title}
+    batch_connect_sessions_delete_hover: Apagar sessão
+    batch_connect_sessions_delete_title: Eliminar
+    batch_connect_sessions_edit_title: Edite o novo %{title} com estes parâmetros de sessão.
+    batch_connect_sessions_error_invalid_job_name_html: 'Se esta tarefa não pôde ser submetida devido a um nome de tarefa inválido,
+
+      solicite ao seu administrador que configure o OnDemand para definir a
+
+      variável de ambiente OOD_JOB_NAME_ILLEGAL_CHARS.
+
+
+      '
+    batch_connect_sessions_errors_staging: 'Falha ao preparar o modelo com o seguinte erro:'
+    batch_connect_sessions_errors_submission: 'Falha no envio da sessão. Ocorreu o seguinte erro:'
+    batch_connect_sessions_native_vnc_tab: Instruções Nativas
+    batch_connect_sessions_novnc_compression: Compressão
+    batch_connect_sessions_novnc_compression_help: 1 (baixo) a 9 (alto)
+    batch_connect_sessions_novnc_launch: Lançamento %{app_title}
+    batch_connect_sessions_novnc_quality: Qualidade da imagem
+    batch_connect_sessions_novnc_quality_help: 0 (baixo) a 9 (alto)
+    batch_connect_sessions_novnc_tab: Ligação noVNC
+    batch_connect_sessions_novnc_view_only: Apenas visualização (link partilhável)
+    batch_connect_sessions_path_selector_forbidden_error: Não tem permissão para selecionar esse diretório ou ficheiro.
+    batch_connect_sessions_relaunch_full_title: Relançamento da sessão %{title}
+    batch_connect_sessions_relaunch_title: Relançamento
+    batch_connect_sessions_staged_root: diretório raiz em passos
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} núcleo'
+      other: núcleos %{count}
+    batch_connect_sessions_stats_created_at: 'Criado em:'
+    batch_connect_sessions_stats_expected_time: 'Início previsto:'
+    batch_connect_sessions_stats_gpu_count:
+      one: GPU %{count}
+      other: GPUs %{count}
+    batch_connect_sessions_stats_host: 'Anfitrião:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} nó'
+      other: Nós %{count}
+    batch_connect_sessions_stats_session_dir_link_title: Abra o diretório de sessão para %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID da sessão:'
+    batch_connect_sessions_stats_support_ticket: Problemas com esta sessão?
+    batch_connect_sessions_stats_support_ticket_link_text: Enviar pedido de suporte
+    batch_connect_sessions_stats_time_remaining: 'Tempo restante:'
+    batch_connect_sessions_stats_time_requested: 'Tempo solicitado:'
+    batch_connect_sessions_stats_time_used: 'Tempo de utilização:'
+    batch_connect_sessions_stats_undetermined_host: Indeterminado
+    batch_connect_sessions_status_bad: A sua sessão entrou em um estado problemático. Sinta-se à vontade para contactar o suporte para obter mais informações.
+    batch_connect_sessions_status_blurb_cancel_failure: Falha ao cancelar a sessão.
+    batch_connect_sessions_status_blurb_cancel_success: A sessão foi cancelada com sucesso.
+    batch_connect_sessions_status_blurb_create_success: A sessão foi criada com sucesso.
+    batch_connect_sessions_status_blurb_delete_failure: Falha ao eliminar a sessão.
+    batch_connect_sessions_status_blurb_delete_success: A sessão foi encerrada com sucesso.
+    batch_connect_sessions_status_completed: Para efeitos de depuração, este cartão será retido por mais %{days} dias.
+    batch_connect_sessions_status_missing_connection: 'Esta aplicação não possui as informações necessárias para estabelecer uma ligação. Especificamente,
+
+      o ficheiro view.html.erb está em falta. Entre em contacto com o suporte se vir esta mensagem.
+
+
+      '
+    batch_connect_sessions_status_queued: 'Por favor, aguarde, pois a sua tarefa está atualmente na fila. O tempo de espera depende
+
+      do número de núcleos e do tempo solicitado.
+
+
+      '
+    batch_connect_sessions_status_starting: 'A sua sessão está a ser iniciada... Por favor, aguarde, pois este processo pode demorar alguns minutos.
+
+
+      '
+    batch_connect_sessions_word: Sessão
+    batch_connect_validation:
+      app_not_found: Esta aplicação não existe no diretório '%{root}'
+      inaccessible_clusters: Esta aplicação requer clusters que não existem ou aos quais não tem acesso.
+      missing_form_file: Esta aplicação não fornece um ficheiro de formulário no diretório '%{root}'.
+      missing_sub_app_form_file: Esta aplicação não fornece um ficheiro de formulário de subaplicação no diretório '%{root}'.
+      no_cluster_specified: Esta aplicação não especifica nenhum cluster.
+    bc_saved_settings:
+      delete_confirm: Tem a certeza?
+      delete_title: Apagar as definições guardadas %{settings_name}
+      deleted_message: Configurações guardadas %{settings_name} excluídas.
+      edit_title: Editar as definições guardadas de %{settings_name}
+      launch_title: Executar %{app_title} com parâmetros %{settings_name}
+      missing_settings: Definições guardadas selecionadas não encontradas.
+      no_settings_title: Não tem configurações salvas.
+      outdated_message: Os parâmetros %{app_title} foram alterados desde que estas definições foram criadas.
+      saved_message: Configurações %{settings_name} guardadas
+      settings_values_label: Valores
+      title: Configurações guardadas
+    breadcrumb_aria: Migalhas de pão
+    breadcrumbs_all_apps: Todos os aplicativos
+    breadcrumbs_home: Casa
+    breadcrumbs_my_sessions: As Minhas Sessões Interativas
+    breadcrumbs_support_ticket: Ticket de suporte
+    browser_warning: O OnDemand requer uma versão mais recente do browser que está a utilizar. Os requisitos atuais do browser incluem o IE Edge, Firefox 19+, Chrome 34+ e Safari 8+.
+    cancel: Cancelar
+    categories:
+      apps: Aplicativos
+      bioinformatics: Bioinformática
+      clusters: Aglomerados
+      data_science: Ciência de Dados
+      desktop: Área de trabalho
+      desktops: Computadores
+      development: Desenvolvimento
+      external_apps: Aplicativos externos
+      files: Arquivos
+      gateway_apps: Aplicações de gateway
+      guis: GUIs
+      interactive_apps: Aplicativos interativos
+      jobs: Empregos
+      machine_learning: Aprendizagem de máquina
+      mathematics: Matemática
+      servers: Servidores
+      utilities: Serviços públicos
+      virtual_desktop_interface: Interface de Ambiente de Trabalho Virtual
+      visualization: Visualização
+    clear: Claro
+    close: Perto
+    close_alert: Feche este alerta.
+    close_notice: Feche este aviso.
+    cluster: Aglomeração
+    copy: Cópia
+    copy_suffix: (Cópia)
+    cpu_report: Relatório da CPU + %{node}
+    custom_pages:
+      invalid: 'Código de página inválido: %{page}. Esta página não foi configurada.'
+    date: Data
+    delete: Eliminar
+    detailed_metrics: Métricas detalhadas
+    details: Detalhes
+    development_apps_caption: Aplicação Sandbox
+    development_apps_category: Aplicativos Sandbox
+    development_delete_app: Apagar aplicativo
+    development_edit_title: Editar %{title}
+    development_launch_title: Lançamento %{title}
+    directory: Diretório
+    edit: Editar
+    editor_default: Predefinição
+    editor_font_size: Tamanho da fonte
+    editor_key_bindings: Atalhos de teclado
+    editor_theme: Tema
+    editor_theme_bright: Luminoso
+    editor_theme_dark: Escuro
+    editor_wrap: Envolver
+    error_details: 'Detalhes:'
+    error_internal_body_html: Please try again in a few moments. If you continue to see this error, please <a href="%{support_url}">contact support</a>.
+    error_internal_title: Erro do Servidor Interno
+    error_not_found_body: A página que procura não existe.
+    error_not_found_title: Não encontrado
+    favorites: Favoritos
+    file: Ficheiro
+    file_editor: Editor de Ficheiros
+    file_quotas: Cotas de Arquivos
+    files: Arquivos
+    files_change_directory: Alterar diretório
+    files_contents_of_directory: Conteúdo do diretório %{path}
+    files_copy_move: Copiar/Mover
+    files_copy_path: Copiar caminho
+    files_directory_contents_aria: Conteúdo do diretório
+    files_directory_download_error_modal_title: Diretório muito grande para descarregar
+    files_directory_download_unauthorized: Só pode descarregar um ficheiro ou diretório ao qual tenha permissão de leitura e execução.
+    files_directory_size_calculation_error: Ocorreu um tempo limite ao tentar determinar o tamanho do diretório.
+    files_directory_size_calculation_timeout: Ocorreu um tempo limite ao tentar determinar o tamanho do diretório.
+    files_directory_size_unknown: 'Erro com o estado %{exit_code} ao tentar determinar o tamanho do diretório: %{error}'
+    files_directory_too_large: O diretório é demasiado grande para ser descarregado como um ficheiro zip. O diretório deve ter menos de %{download_directory_size_limit} bytes.
+    files_doesnt_exist: '%{path} não existe.'
+    files_download: Transferir
+    files_download_not_enabled: O download de ficheiros não está ativado neste servidor.
+    files_download_zip: Descarregue como ficheiro zip
+    files_exceeds_editor_limit: O ficheiro %{path} excede o limite de caracteres do editor, que é %{limit}. Faça o download do ficheiro para o editar ou visualize-o localmente.
+    files_file_too_large: O ficheiro é demasiado grande para ser descarregado. Os downloads de ficheiros devem ter menos de %{download_file_size_limit} bytes.
+    files_go_up_directory: Subir no diretório
+    files_modified_at: Modificado em
+    files_modify_aria: Modificar ficheiros
+    files_new_directory: Novo diretório
+    files_new_file: Novo ficheiro
+    files_not_editable: '%{path} não é um ficheiro editável'
+    files_not_readable: Não tem permissões suficientes para ler '%{path}'.
+    files_open_in_files_app: Abrir na aplicação Arquivos
+    files_open_in_globus: Abrir no Globus
+    files_path_breadcrumbs_aria: rasto de rastros
+    files_refresh: Atualizar
+    files_remote_dir_not_created: Não foi possível criar o diretório %{path}
+    files_remote_disabled: O suporte de ficheiros remotos não está ativado.
+    files_remote_empty_dir_unsupported: O acesso remoto não suporta diretórios vazios.
+    files_remote_error_listing_remotes: 'Erro ao listar os remotos do Rclone: %{error}'
+    files_send_to_target_title_default: Enviar metadados dos ficheiros selecionados para a aplicação externa
+    files_shell: Abrir no Terminal
+    files_shell_dropdown: Selecione o cluster que pretende abrir no terminal.
+    files_title: Navegação de ficheiros
+    files_upload: Carregar
+    footer_contribute: Contribua para o GitHub
+    footer_license: Aviso de Licença de Software
+    footer_open_source: Software de código aberto.
+    footer_powered_by: Com tecnologia Open OnDemand
+    footer_version: 'Versão OnDemand: %{version}'
+    home_directory: Página inicial
+    id: EU IA
+    import: Importação
+    job: Trabalho
+    job_info: Informações sobre a vaga
+    jobs_back_to_projects: Voltar aos Projetos
+    jobs_clear_form_fields: Limpar campos do formulário
+    jobs_completed_jobs: Trabalhos Concluídos
+    jobs_create_blank_project: Criar um novo projeto
+    jobs_create_blank_workflow: Novo fluxo de trabalho
+    jobs_create_template_project: Criar um novo projeto a partir de um modelo
+    jobs_import_shared_project: Importar um projeto partilhado
+    jobs_launchers: Lançadores
+    jobs_launchers_add_select_option: Adicionar opção de seleção %{name}
+    jobs_launchers_cannot_find: Não foi possível encontrar o iniciador %{id}
+    jobs_launchers_clone: Lançador de clones %{name}
+    jobs_launchers_created: Iniciador criado com sucesso!
+    jobs_launchers_default_created: Um ficheiro 'hello_world.sh' foi também adicionado a este projeto.
+    jobs_launchers_delete: Apagar o iniciador %{name}
+    jobs_launchers_delete_script_confirmation: Apagar todo o conteúdo do iniciador?
+    jobs_launchers_deleted: Iniciador eliminado com sucesso!
+    jobs_launchers_edit: Formulário de edição para o iniciador %{name}
+    jobs_launchers_edit_form_item: Editar item do formulário %{label}
+    jobs_launchers_editing: Editando %{title}
+    jobs_launchers_fixed_field: Valor fixo
+    jobs_launchers_fixed_field_help: Corrigir valor atual
+    jobs_launchers_max_value_label: Valor máximo para o campo numérico %{label}
+    jobs_launchers_min_value_label: Valor mínimo para o campo numérico %{label}
+    jobs_launchers_name: Nome do lançador
+    jobs_launchers_new_field_select: Selecione o item que pretende adicionar ao formulário.
+    jobs_launchers_not_found: Não foi possível encontrar o Launcher %{launcher_id}
+    jobs_launchers_preview_form_item: Pré-visualização do item de formulário %{label}
+    jobs_launchers_remove_form_item: Remover item do formulário %{label}
+    jobs_launchers_remove_select_option: Remover opção de seleção %{name}
+    jobs_launchers_save_form: Guardar formulário
+    jobs_launchers_save_form_item: Guardar alterações no item de formulário %{label}
+    jobs_launchers_show_form: Visualizar formulário para o iniciador %{name}
+    jobs_launchers_submit_launcher_title: Script de arranque com valores em cache ou padrão para o iniciador %{name}
+    jobs_launchers_submitted: 'Trabalho submetido com sucesso: %{job_id}.'
+    jobs_launchers_updated: Manifesto do inicializador atualizado!
+    jobs_native_dependency: . O trabalho depende do ID do trabalho%{dependency}
+    jobs_native_reason: por causa de '%{reason}'
+    jobs_native_state: O estado atual do trabalho é '%{state}'
+    jobs_new_launcher: Novo lançador
+    jobs_new_project: Novo projeto
+    jobs_project_cannot_find: 'Não foi possível encontrar o projeto: %{project_id}'
+    jobs_project_clear_form_fields: Limpar campos do formulário
+    jobs_project_created: Projeto criado com sucesso!
+    jobs_project_delete_label: Apagar projeto %{name}
+    jobs_project_delete_project_confirmation: Apagar todo o conteúdo do diretório do projeto?
+    jobs_project_deleted: Projeto eliminado com sucesso!
+    jobs_project_description_placeholder: Descrição do projeto
+    jobs_project_directory_error: O caminho do diretório do projeto não está definido para este fluxo de trabalho.
+    jobs_project_directory_help_html: 'Deixe em branco e será criado um novo diretório. <br />Localização predefinida: %{root_directory}'
+    jobs_project_directory_placeholder: Caminho absoluto do diretório do projeto
+    jobs_project_edit_label: Editar projeto %{name}
+    jobs_project_generic_error: 'Ocorreu um erro ao processar o seu pedido: %{error}'
+    jobs_project_group_help: Certifique-se de que escolhe o grupo que inclui todos os colaboradores pretendidos. Se este não for um projeto colaborativo, recomenda-se o grupo padrão.
+    jobs_project_group_owner: Grupo
+    jobs_project_imported: Projeto importado com sucesso!
+    jobs_project_invalid_configuration_clusters: É necessário um cluster HPC. Contacte o administrador para adicionar um ao sistema.
+    jobs_project_invalid_configuration_scripts: É necessário um script executável para o seu projeto. Faça o upload do script utilizando a aplicação de ficheiros.
+    jobs_project_job_deleted: Tarefa %{job_id} eliminada com sucesso
+    jobs_project_job_not_deleted: Não é possível eliminar a tarefa %{job_id}
+    jobs_project_job_stopped: Tarefa %{job_id} terminada com sucesso
+    jobs_project_list_aria: Lista de projetos
+    jobs_project_manager: Gestor de projeto
+    jobs_project_manifest_updated: Manifesto do projeto atualizado!
+    jobs_project_name_placeholder: Nome do projeto
+    jobs_project_name_validation: O nome do projeto pode conter apenas letras, dígitos, hífens, sublinhados e espaços.
+    jobs_project_not_found: Não foi possível encontrar o projeto %{project_id}
+    jobs_project_open_label: Projeto aberto %{name}
+    jobs_project_remove_label: Remover projeto %{name}
+    jobs_project_removed: Projeto removido da pesquisa!
+    jobs_project_return_to_projects: Voltar à página de projetos
+    jobs_project_save_error: Não foi possível guardar o manifesto em %{path}
+    jobs_project_save_project_title: Guardar projeto
+    jobs_project_select_directory: Selecione o diretório do projeto
+    jobs_project_setgid_help: Manter a opção setgid marcada garante que os ficheiros do projeto são criados com o grupo selecionado. Isto não afeta os projetos no seu diretório pessoal.
+    jobs_project_validation_error: Pedido inválido. Por favor, verifique os erros abaixo.
+    jobs_return_to_projects: Voltar à página de projetos
+    jobs_save_project_title: Guardar projeto
+    jobs_select_directory_placeholder: Clique no projeto para importar.
+    jobs_toggle_details: Clique para visualizar/ocultar os detalhes da vaga %{job_id}
+    jobs_workflow_add_launcher: Adicionar Iniciador
+    jobs_workflow_canvas_aria: tela
+    jobs_workflow_clone: Fluxo de trabalho de clonagem %{name}
+    jobs_workflow_connect_launchers: Conectar lançadores
+    jobs_workflow_created: Fluxo de trabalho criado com sucesso!
+    jobs_workflow_delete_confirmation: Apagar todo o conteúdo do fluxo de trabalho?
+    jobs_workflow_delete_edge: Excluir Borda
+    jobs_workflow_delete_edge_title: Apagar a aresta selecionada (Del/Backspace)
+    jobs_workflow_delete_launcher: Apagar Iniciador
+    jobs_workflow_delete_launcher_title: Apagar o iniciador selecionado (Del/Backspace)
+    jobs_workflow_delete_title: Apagar fluxo de trabalho %{name}
+    jobs_workflow_deleted: Fluxo de trabalho eliminado com sucesso!
+    jobs_workflow_description_placeholder: Descrição do fluxo de trabalho
+    jobs_workflow_edit_settings: Modificar as definições para o fluxo de trabalho %{name}
+    jobs_workflow_editing: 'Edição: %{name}'
+    jobs_workflow_enable_sync_key: Ativar OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: O fluxo de trabalho falhou com o erro %{error}
+    jobs_workflow_help: Clique no título para selecionar e arraste. Ligue clicando em dois launchers com a opção "Ligar Launchers" selecionada.
+    jobs_workflow_manifest_updated: Manifesto de workflow atualizado!
+    jobs_workflow_missing_launchers: seleccione pelo menos %{count}
+    jobs_workflow_name_placeholder: Nome do fluxo de trabalho
+    jobs_workflow_name_validation: O nome do fluxo de trabalho pode conter apenas letras, dígitos, hífens, sublinhados e espaços.
+    jobs_workflow_not_found: Não foi possível encontrar o fluxo de trabalho %{workflow_id}
+    jobs_workflow_pick_launchers: Escolha os lançadores
+    jobs_workflow_show_graph: Abra o fluxo de trabalho %{name} no editor de gráficos.
+    jobs_workflow_submitted: Fluxo de trabalho enviado com sucesso!
+    jobs_workflow_sync_key_help: Quando ativado, cada iniciador neste workflow recebe a mesma variável de ambiente <code>OOD_WORKFLOW_SYNC_KEY</code> (um token aleatório único para cada execução do workflow). Útil para gerar nomes de ficheiros sincronizados, ficheiros de bloqueio ou identificadores partilhados entre trabalhos dependentes.
+    jobs_workflow_synchronization: Sincronização
+    jobs_workflow_toolbar_aria: barra de ferramentas
+    jobs_workflow_zoom_controls: Controlos de zoom
+    jobs_workflow_zoom_in: Ampliar
+    jobs_workflow_zoom_out: Diminuir o zoom
+    jobs_workflow_zoom_reset: Redefinir zoom
+    jobs_workflows: Fluxos de trabalho
+    jobs_workflows_not_supported: Os fluxos de trabalho não são suportados pelo agendador configurado.
+    js:
+      active_jobs:
+        delete_aria: Apagar tarefa %{name} com ID %{id}
+        delete_confirm: Tem a certeza que pretende eliminar %{name} - %{id}?
+        delete_title: Apagar tarefa
+        details_loaded: Lista de detalhes da vaga carregada.
+        load_details_failed: Falha ao carregar os detalhes da tarefa.
+        remote_server_error: Ocorreu um erro ao obter os dados do servidor remoto.
+        request_failed_parse: O pedido de tarefas falhou devido a um erro de análise do corpo do pedido.
+        request_failed_status: 'O pedido de tarefas falhou com o código de estado: %{status}'
+        status_completed: Concluído
+        status_hold: Segurar
+        status_queued: Em fila
+        status_running: Corrida
+        status_suspended: Suspenso
+        status_undetermined: Indeterminado
+        support_ticket_aria: Envie um ticket de suporte para a vaga com o ID %{id}
+        support_ticket_title: Enviar pedido de suporte
+        toggle_details_aria: Alternar a visibilidade da tarefa %{name} em %{cluster}
+      batch_connect:
+        allow_notifications: Por favor, permita as notificações no seu browser para ativar os alertas de sessão.
+        invalid_prefill_value_html: 'Valor inválido: "%{value}" para o campo "%{field}".<br>'
+        notification_permission_error: 'Erro ao solicitar a permissão de notificação:'
+        resolution_reset: Resolução reposta para %{width} em %{height} pixéis.
+        session_expires_warning: 'Aviso: %{title} (%{job_id}) expira em ~%{minutes} minutos!'
+        session_status_aria: '%{title} é agora %{status}.'
+        session_status_push: '%{title} (%{job_id}) é agora %{status}.'
+      common:
+        cancel: Cancelar
+        close: Perto
+        error: Erro
+        loading: Carregando...
+        ok: OK
+      datatables:
+        all: Tudo
+        filter_label: 'Filtro:'
+        invalid_date: Data inválida
+        rows_selected:
+          one: Linha %{count} selecionada
+          other: '%{count} linhas selecionadas'
+        showing_filtered_rows: A apresentar %{display} de %{total} linhas
+        showing_rows: A apresentar linhas %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ' e '
+        changed_help: Alterado o texto de ajuda em %{widget} para %{help}
+        changed_label: Alterada a etiqueta em %{widget} para a nova etiqueta %{label}
+        current_value: Defina o valor atual para %{value}
+        hid_item: Item oculto do formulário %{widget}
+        maximum_limit: limite máximo para %{value}
+        minimum_limit: limite mínimo para %{value}
+        option_disabled: A opção %{value} está desativada para %{widget}
+        option_enabled: A opção %{value} está ativada para %{widget}
+        revealed_item: Item do formulário revelado %{widget}
+        selected_option_disabled: A opção selecionada %{value} está desativada para %{widget}
+        set_limits: Definir %{details} para %{widget}
+        set_value: Defina %{widget} com o valor %{value}
+        widget_no_label: '%{type} sem rótulo'
+        widget_with_label: '%{type} com etiqueta %{label}'
+      editor:
+        save_error: 'Ocorreu um erro ao tentar guardar este ficheiro!
+
+          %{error}'
+        unsaved_changes: Tem alterações não guardadas!
+      files:
+        action_delete: Eliminar
+        action_download: Transferir
+        action_edit: Editar
+        action_rename: Renomear
+        action_view: Ver
+        actions: Ações
+        cannot_navigate_file: Não foi possível navegar até ao ficheiro.
+        change_directory: Alterar diretório
+        clipboard_description_html: 'Copie ou mova os ficheiros abaixo de <code>%{from}</code> para o directório actual:'
+        contents_of_directory: Conteúdo do diretório %{path}
+        copied_path: Caminho copiado para a área de transferência!
+        copy: Cópia
+        create_directory_error: 'Ocorreu um erro ao tentar criar o novo diretório: %{error}'
+        create_file_error: 'Ocorreu um erro ao tentar criar um novo ficheiro: %{error}'
+        delete_confirm_text: 'Tem a certeza que pretende eliminar os ficheiros: %{files}'
+        delete_multiple_title: Apagar os ficheiros selecionados %{count}?
+        delete_single_title: Apagar %{name}?
+        deleting_files: 'Apagar ficheiros...:'
+        directory: diretório
+        directory_name_label: Nome do diretório
+        download_error: 'Erro ao descarregar: %{error}'
+        duplicate_files_warning: Ficheiros duplicados identificados. O envio destes ficheiros sobrescreverá o conteúdo existente.
+        file: ficheiro
+        filename_invalid_chars: O nome do ficheiro não pode incluir/ou ..
+        filename_label: Nome do ficheiro
+        globus_open: Abra o diretório atual com o Globus
+        globus_unavailable: Não existe nenhum endpoint Globus associado a este diretório.
+        illegal_slash_in_filename: Caracter ilegal (/) não permitido em nomes de ficheiros.
+        move: Mover
+        navigated_to: navegou até %{path}
+        new_directory_title: Novo diretório
+        new_file_title: Novo ficheiro
+        path_label: Percurso
+        poll_status_error: A operação pode não ter ocorrido. Falha ao recuperar o estado da operação do ficheiro.
+        preparing_download_dir: 'A preparar para descarregar o diretório: %{name}'
+        provide_absolute_pathname: Forneça o caminho absoluto.
+        provide_directory_name: Forneça um nome de diretório que não contenha a barra (/).
+        provide_non_empty_filename: Forneça um nome de ficheiro que não esteja vazio.
+        provide_rename_filename: Forneça um nome de ficheiro para renomear este ficheiro.
+        rename_title: Renomear
+        see_details: Veja os detalhes
+        select_row: Selecione a linha
+        select_to_copy_move: Selecione um ou mais ficheiros ou um diretório para copiar ou mover. Não selecionou nenhum.
+        select_to_delete: Selecione um ou mais ficheiros ou um diretório para eliminar. Não selecionou nenhum.
+        select_to_download: Selecione um ficheiro, ficheiros ou diretório para descarregar. Não selecionou nenhum.
+        select_to_send: Selecione pelo menos um ficheiro ou diretório para enviar.
+        send_failed: Falha ao enviar informações do ficheiro.
+        sent_successfully: Informações do ficheiro selecionado enviadas com sucesso.
+        show_dotfiles: Exibir ficheiros de configuração
+        show_owner_mode: Mostrar proprietário/modo
+        summary_copy_files: copiar ficheiros
+        summary_move_files: mover ficheiros
+        summary_remove_files: remover ficheiros
+        summary_rename_file: renomear ficheiro
+        token_missing_expired: O token de aplicação está em falta ou expirou. Comece novamente.
+        transfer_error: 'Ocorreu um erro ao tentar executar %{summary}: %{error}'
+        upload_and_overwrite: Carregar e sobrescrever
+        upload_count:
+          one: Carregar ficheiro %{count}
+          other: Carregar ficheiros %{count}
+        upload_new_files: Carregar novos ficheiros
+        uppy_empty_dir_note: Os diretórios vazios serão incluídos no carregamento apenas quando o carregamento de um diretório for iniciado através de arrastar e largar. Isto ocorre porque a API de Entradas de Ficheiros e Diretórios só está disponível num evento de largada, e não durante um evento de alteração de entrada.
+      icon_picker:
+        icon_selected: Ícone %{icon} selecionado
+        icon_sr: Ícone %{name}
+      launcher_edit:
+        account_help: A conta com a qual a tarefa será submetida.
+        account_label: Conta
+        add_new_option: Adicionar nova opção
+        cores_help: Em quantos núcleos será executado o trabalho?
+        cores_label: Núcleos
+        env_var_help: Adicione uma variável de ambiente.
+        env_var_key: 'Variável de ambiente: %{name}'
+        env_var_label: Variável de ambiente
+        hours_help: Durante quanto tempo pode ser realizado o trabalho?
+        hours_label: Horas
+        job_name_help: O nome que o cargo terá.
+        job_name_label: Nome do cargo
+        log_location_help: O destino do ficheiro de registo da tarefa.
+        log_location_label: Localização do registo
+        no_more_options: Não há mais opções.
+        nodes_help: Em quantos nós será executado o trabalho?
+        nodes_label: Nós
+        queues_help: Em que fila o trabalho será submetido?
+        queues_label: Filas
+      module_browser:
+        copied: Copiado!
+        copy: Cópia
+        showing_results:
+          one: A apresentar o resultado %{count}
+          other: A apresentar resultados de %{count}
+      nsf_access:
+        affected_resources: 'Características afetadas: %{resources}'
+        read_more: Leia mais
+        register_event: Inscreva-se neste evento
+      path_selector:
+        directory_loaded: Directório carregado com os itens %{count}
+        invalid_regex: A expressão regular fornecida para este seletor de percurso não foi compilada.
+        loading_directory: Carregando conteúdo do diretório
+        permission_denied_prefix: 'Permissão negada:'
+      popovers:
+        ihpc_content: Uma sessão HPC interativa oferece acesso dedicado a um ou mais nós do cluster. É semelhante a uma sessão de processamento em batch interativa, com uma área de trabalho acessível no nó primário. Utilize esta opção para tarefas complexas, como processos computacionais de longa duração, ou quando necessita de recursos dedicados.
+        vdi_content: Uma VDI (Virtual Desktop Interface) fornece acesso à área de trabalho a partir de um nó partilhado. Esta é a versão gráfica de um nó de login. Utilize-a para tarefas simples, como aceder e visualizar ficheiros, enviar trabalhos e para visualizações.
+      products:
+        fatal_error: Ocorreu um erro fatal.
+        no_action: nenhuma ação
+      projects:
+        undetermined_size: Tamanho indeterminado
+      support_ticket:
+        delete_attachment: Apagar anexo
+        no_file_selected: Nenhum ficheiro selecionado
+        selected_file: 'Ficheiro selecionado: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Esta página não pode ser atualizada porque já não está autenticado. Atualize a página para voltar a iniciar sessão.
+        unexpected_error: Esta página encontrou um erro inesperado. Por favor, atualize a página.
+      utils:
+        loading: Carregando.
+        loading_complete: Carregamento concluído.
+        popup_blocked: Este link está configurado para abrir numa nova janela, mas parece que não abriu. Desative o bloqueador de pop-ups para esta página e tente novamente.
+      workflows:
+        begin_from_launcher: Iniciar o fluxo de trabalho a partir do iniciador %{title}
+        bidirectional_not_allowed: As arestas bidirecionais não são permitidas.
+        cyclic_dependency: Adicionar esta aresta criará uma dependência cíclica entre os lançadores.
+        edge_aria_label: Aresta de %{from} para %{to}
+        launcher_aria_label: 'Iniciador: %{title}'
+        launcher_exists: O iniciador já existe. Selecione um iniciador diferente.
+        load_launcher_failed: Falha ao carregar o HTML do iniciador. Tente novamente.
+        no_empty_cells: Não existem células de grelha vazias disponíveis!
+        save_failed: Falha ao guardar o fluxo de trabalho. Verifique a consola para obter detalhes.
+        select_launcher: Por favor, selecione um iniciador.
+      xdmod:
+        analytics_toggle: Ativar/desativar análise
+        column_date: Data
+        column_id: EU IA
+        column_name: Nome
+        date_range: '%{from} a %{to}'
+        efficiency_report: Relatório de Eficiência %{unit}
+        ensure_logged_in_html: '%{error} Certifique-se de que está <a href="%{url}">ligado ao Open XDMoD primeiro</a>, e depois tente novamente.'
+        expand_analytics_title: Clique para expandir a informação analítica sobre o trabalho %{id} acima desta tabela.
+        fetch_user_failed: A tentativa de obter informações do utilizador atual do Open XDMoD falhou.
+        idp_redirect_failed: 'Falha no login: Falha no redireccionamento do IDP'
+        iframe_error: O iFrame de login do XDMoD no URL %{url} apresentou a mensagem de erro com a informação %{info}.
+        inefficient_of_total_html: <span class="text-danger">%{bad} ineficiente %{unit} </span> ⁄ %{total} total %{unit}
+        invalid_job_data: Os dados da tarefa devolvidos pela solicitação são inválidos.
+        loading_caps: A CARREGAR...
+        login_page_load_failed: 'Falha no login: Falha ao carregar a página de login do XDMoD'
+        login_timeout: 'Falha no login: Tempo limite excedido ao aguardar a conclusão do login.'
+        metric_cpu: CPU
+        metric_mem: Membro
+        metric_walltime: Tempo de parede
+        no_data: Não há dados disponíveis.
+        not_available: N / D
+        open_xdmod: Abra o XDMoD
+        percent_efficient: '%{percent}% eficiente'
+        percent_efficient_aria: percentual eficiente
+        percent_inefficient: '%{percent}% ineficiente'
+        percent_inefficient_aria: percentual ineficiente
+        recently_completed_jobs: Trabalhos Concluídos Recentemente
+        unit_core_hours: horário principal
+        unit_core_hours_title: Horário Principal
+        unit_jobs: empregos
+        unit_jobs_title: Empregos
+    launch: Lançar
+    load_report: Relatório de Carga + %{node}
+    loading: Carregando...
+    loading_short: Carregando
+    locale_name: Português (Portugal)
+    logo_alt_text: Bem-vindo ao Open OnDemand
+    logout_body_html: Necessita de fechar completamente o browser para que o "logout" seja efetuado. Se, após reabrir o navegador, ainda estiver ligado, limpe os cookies. Se estiver a utilizar um Chromebook ou Chromebox, será necessário reiniciar o dispositivo para fechar o browser e, consequentemente, fazer o "logout".
+    logout_tip_html: 'Dica: Utilizar uma janela no "modo de navegação privada" quando se utiliza o OnDemand é uma excelente forma de lidar com o "logout automático", uma vez que fechar a janela do navegador removerá todos os cookies e informações de sessão associados.'
+    logout_title: Ainda não foi desconectado(a)
+    maximum: Máximo
+    mem_report: Relatório de memória + %{node}
+    minimum: Mínimo
+    mode: Modo
+    module_browser_available_modules: 'Módulos disponíveis:'
+    module_browser_copy_aria: Copiar comando de carregamento para %{name}
+    module_browser_dependencies: 'Dependências:'
+    module_browser_last_updated: 'Última atualização: %{last_updated}'
+    module_browser_load_command: 'Comando de carregamento:'
+    module_browser_search_label: Módulos de pesquisa
+    module_browser_search_placeholder: Pesquisar por nome do módulo...
+    module_browser_select_version: (selecione a versão)
+    module_browser_showing_results: A apresentar resultados de %{count}
+    module_browser_title: Navegador de módulos
+    module_browser_versions: Versões
+    motd_default_md: 'O desenvolvimento do Open OnDemand é financiado pela [National Science Foundation](https://www.nsf.gov/)
+
+      sob os números de concessão [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) e
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Saiba mais ou participe:
+
+
+      - [Discurso](https://discourse.openondemand.org/)
+
+      - [Repositório Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [Repositório ood-core](https://github.com/OSC/ood_core)
+
+      - [Documentação](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'A mensagem do dia (MOTD) não foi analisada nem renderizada corretamente: %{error_message}'
+    motd_no_messages: Não há novas mensagens.
+    motd_title: Mensagem do dia
+    name: Nome
+    nav_all_apps: Todos os aplicativos
+    nav_develop_docs: Documentação do desenvolvedor
+    nav_develop_my_sandbox_apps_dev: As minhas aplicações de teste (desenvolvimento)
+    nav_develop_my_sandbox_apps_prod: As minhas aplicações partilhadas (produção)
+    nav_develop_title: Desenvolver
+    nav_help_change_password: Alterar a palavra-passe do HPC
+    nav_help_custom: Ajuda de navegação personalizada
+    nav_help_docs: Documentação online
+    nav_help_support: Contacte o suporte
+    nav_help_support_ticket: Enviar pedido de suporte
+    nav_help_title: Ajuda
+    nav_help_two_factor: Configurar a autenticação de dois fatores
+    nav_language: Idioma
+    nav_limit_caption: mostrando %{subset_count} de %{total_count}
+    nav_logout: Sair
+    nav_main_menu: Menu principal
+    nav_restart_server: Reinicie o servidor web.
+    nav_sessions: As Minhas Sessões Interativas
+    nav_toggle_navigation: Alternar navegação
+    nav_user: Logado como %{username}
+    network_report: Relatório de rede + %{node}
+    node: Nó
+    none: Nenhum
+    not_grouped: Outros aplicativos
+    nsf_access_announcements: Anúncios do NSF ACCESS
+    nsf_access_events: Eventos NSF ACCESS
+    nsf_access_outages: Interrupções do NSF ACCESS
+    ok: OK
+    opens_in_new_tab: abre em novo separador
+    output_location: 'Local de partida:'
+    owner: Proprietário
+    page_actions_aria: Ações da página
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parâmetros
+    path_selector_breadcrumb_aria: '%{title} Migalhas de pão'
+    path_selector_caption: Escolha um ficheiro ou diretório para utilizar no formulário.
+    path_selector_default_popup_title: Selecione o seu diretório de trabalho
+    path_selector_home: casa
+    path_selector_parent_directory: diretório pai
+    permissions_created: A permissão foi criada com sucesso.
+    permissions_destroyed: A permissão foi destruída com sucesso.
+    permissions_group_title: Permissões de grupo
+    permissions_user_title: Permissões do utilizador
+    pinned_apps_caption_html: Um subconjunto em destaque de <a href="%{all_apps_url}">todas as aplicações disponíveis</a>
+    pinned_apps_category: Aplicativos
+    pinned_apps_title: Aplicativos fixados
+    products_created: O produto foi criado com sucesso.
+    products_git_commit_hint_html: Por favor, confirme quaisquer alterações ou adicione os ficheiros necessários ao ficheiro <code>.gitignore</code>.
+    products_git_staged: Encenado
+    products_git_status: Estado do Git
+    products_git_unstaged: Sem encenação
+    products_git_untracked: Não rastreado
+    products_manifest_save_error: Não foi possível guardar o manifesto da aplicação em %{path}
+    products_ssh_key_created: A chave SSH foi criada com sucesso.
+    products_ssh_key_exists: A chave SSH já existe.
+    products_ssh_key_failed: 'Falha ao criar a chave SSH: %{error}'
+    products_type_batch_connect: Aplicação Batch Connect
+    products_type_passenger: Aplicação para passageiros
+    products_type_passenger_meteor: Aplicação Meteor para Passageiros
+    products_type_passenger_node: Aplicação Passenger Node
+    products_type_passenger_rack: Aplicação para bagageiro de passageiros
+    products_type_passenger_rails: Aplicação de comboios de passageiros
+    products_type_passenger_rails_sqlite: Aplicação de comboios de passageiros com base de dados SQLite
+    products_type_passenger_wsgi: Aplicação WSGI para passageiros
+    products_updated: O produto foi atualizado com sucesso.
+    project: Projeto
+    project_balances: Balanços de Projetos
+    project_directory: Diretório de Projetos
+    project_zip_error_message: 'Erro ao criar o ficheiro ZIP: %{error}'
+    project_zip_success_message: 'Sucesso: o ficheiro project. zip foi criado no diretório do seu projeto.'
+    queue: Fila
+    quota_additional_message: Considere eliminar ou arquivar ficheiros para libertar espaço em disco.
+    quota_block: Utilizando %{used} da quota %{available}
+    quota_block_shared: (%{used_exclusive} são seus)
+    quota_file: Utilizando ficheiros %{used} da quota de ficheiros %{available}
+    quota_file_shared: (Os ficheiros %{used_exclusive} são seus)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Recarregue a página para ver a quota atualizada. As quotas são atualizadas a cada 5 minutos.
+    quota_warning_prefix_html: Aviso de limite de quota para
+    recently_used_apps_title: Aplicativos usados recentemente
+    remove: Remover
+    reset: Reiniciar
+    restart_msg_html: 'A sua adesão ao grupo foi alterada, o que afeta o seu acesso às aplicações. O seu painel deve reiniciar automaticamente.
+
+      Caso contrário, clique em: <a href="%{restart_url}">reiniciar servidor web</a>.
+
+      '
+    restore: Restaurar
+    root: Raiz
+    save: Guardar
+    saved_settings_title: Configurações guardadas
+    select: Selecionar
+    select_all: Selecionar tudo
+    select_path: Selecione o caminho
+    select_path_for: '%{element} selecionar caminho
+
+      '
+    settings_csrf_expired: O seu token de segurança de sessão expirou. Tente realizar a ação novamente.
+    settings_invalid_request: Configurações inválidas enviadas
+    settings_unprocessable_body_html: Your session may have expired or the change you wanted was rejected. Please <a href="%{dashboard_url}">return to the Dashboard</a> and try again.
+    settings_unprocessable_title: Sessão expirada ou alteração rejeitada.
+    settings_updated: Configurações atualizadas
+    shared_apps_caption: Partilhado por %{owner_title} (%{owner})
+    shared_apps_caption_short: Partilhado por %{owner}
+    shared_apps_title: Aplicativos partilhados
+    sharing_catalog_msg_html: '<br>Um subconjunto das aplicações disponíveis pode ser visualizado no %{catalog_link_tag}.
+
+      '
+    sharing_catalog_title: Catálogo de aplicações
+    sharing_no_shared_apps_html: '<strong>Nenhuma aplicação partilhada personalizada disponível.</strong>
+
+      '
+    sharing_support_msg_html: 'Se não encontrar a aplicação que procura, entre em contacto com o suporte.
+
+
+      <a href="%{support_url}">'
+    sharing_welcome_msg_html: 'As aplicações de acesso ao cluster estão disponíveis nos menus suspensos da barra de navegação acima.
+
+      <br> As aplicações partilhadas personalizadas estão disponíveis abaixo.
+
+      '
+    shell: Concha
+    shell_app_title: '%{cluster_title} Acesso ao Shell'
+    show: Espetáculo
+    size: Tamanho
+    skip_navigation: Saltar navegação
+    smart_attributes:
+      account: Conta
+      auto_modules_none: Módulos automáticos (nenhum especificado)
+      cluster: Aglomeração
+      cores: Núcleos
+      email_on_started: Gostaria de receber um e-mail quando a sessão começar.
+      environment_variable: Variável de ambiente
+      environment_variable_key: 'Variável de ambiente: %{key}'
+      job_name: Nome do cargo
+      module_version: '%{module} versão'
+      num_cpus_single_node: Número de CPUs num único nó
+      num_hours: Número de horas
+      num_nodes: Número de nós
+      num_processors: Número de processadores
+      partition: Partição
+      qos: QoS
+      queue: Fila
+      script: Argumento
+      vnc_idle_help: 'Sair se passarem # segundos sem ligações do visualizador VNC'
+      vnc_idle_label: Tempo limite de inatividade
+      vnc_resolution_help: A resolução só é utilizada por ligações VNC nativas.
+      vnc_resolution_label: Resolução
+    soft_tabs: Comprimidos macios
+    soft_tabs_info: As tabulações suaves são espaços no ficheiro em vez de caracteres de tabulação reais.
+    status: Estatuto
+    status_completed: Concluído
+    status_held: Agarrado
+    status_hold: Segurar
+    status_queued: Em fila
+    status_running: Corrida
+    status_starting: Começando
+    status_suspend: Suspender
+    status_suspended: Suspenso
+    status_undetermined: Indeterminado
+    stop: Parar
+    submit: Submeter
+    submit_args: 'Enviar argumentos:'
+    support_ticket:
+      creation_success: 'E-mail de pedido de assistência enviado para: %{to}'
+      fields:
+        attachments: Anexos
+        cc: CC
+        description: Descrição
+        email: E-mail
+        job_description: Descrição da vaga
+        session_description: Descrição da sessão
+        subject: Assunto
+        username: Nome de utilizador
+      generic_error: 'Ocorreu um erro ao processar o seu pedido: %{error}'
+      header: Ticket de suporte
+      rt:
+        creation_success: 'Ticket de suporte criado no sistema RequestTracker. ID do ticket: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Chamado de suporte criado no ServiceNow. Número: %{number}. Mas não consigo adicionar os anexos.'
+        creation_success: 'Chamado de suporte criado no ServiceNow. Número: %{number}'
+      submit: Enviar pedido de suporte
+      title: Ticket de suporte
+      validation:
+        attachments_items: Os valores %{id} são inválidos. %{items} foi adicionado; o número máximo de anexos é %{max}.
+        attachments_size: Os valores %{id} são inválidos. O tamanho máximo do anexo é %{max}.
+        email: O formato %{id} é inválido. Era esperado um endereço de e-mail válido.
+        items:
+          attachments_js: Não são permitidos mais anexos.
+        required: O %{id} é obrigatório
+        size:
+          attachments_js: O tamanho máximo do anexo é %{max}. O tamanho do ficheiro selecionado é %{size}.
+      validation_error: Pedido inválido. Por favor, reveja as mensagens de erro abaixo.
+    support_ticket_add_attachment: Adicionar anexo
+    support_ticket_attachments_help: Clique na caixa para anexar um ficheiro. Capturas de ecrã ou outros ficheiros podem ajudar a solucionar o seu problema.
+    system_apps_caption: Aplicação instalada pelo sistema
+    system_status_available: '%{name} Disponível: %{count}'
+    system_status_cluster_title: Estado do cluster %{title}
+    system_status_gpus: GPUs
+    system_status_in_use: '%{percent} em utilização'
+    system_status_jobs_queued: Tarefas em fila
+    system_status_jobs_queued_count: '%{count} Tarefas em fila'
+    system_status_jobs_running: Empregos em curso
+    system_status_jobs_running_count: '%{count} Empregos em execução'
+    system_status_nodes: Nós
+    system_status_not_slurm: As informações do cluster não estão disponíveis para %{scheduler}. Atualmente, apenas os clusters Slurm são suportados.
+    system_status_processors: Processadores
+    toggle_notifications: Ativar/desativar notificações
+    toggle_push_notifications: Ativar/desativar notificações push
+    type: Tipo
+    undefined_title: Título indefinido
+    unknown: Desconhecido
+    uppy:
+      strings:
+        addMore: Adicionar mais
+        addMoreFiles: Adicionar mais ficheiros
+        addingMoreFiles: Adicionando mais ficheiros
+        back: Costas
+        browseFiles: navegar pelos ficheiros
+        browseFolders: navegar pelas pastas
+        cancel: Cancelar
+        cancelUpload: Cancelar carregamento
+        closeModal: Fechar Modal
+        complete: Concluir
+        dashboardTitle: Carregador de Ficheiros
+        dashboardWindowTitle: Janela de carregamento de ficheiros (Pressione Esc para fechar)
+        done: Concluído
+        dropHint: Solte os seus ficheiros aqui.
+        dropPasteBoth: Solte os ficheiros aqui, %{browseFiles} ou %{browseFolders}
+        dropPasteFiles: Solte os ficheiros aqui ou em %{browseFiles}
+        dropPasteFolders: Solte os ficheiros aqui ou em %{browseFolders}
+        editFile: Editar ficheiro
+        editing: Editando %{file}
+        emptyFolderAdded: Nenhum ficheiro foi adicionado da pasta vazia.
+        error: Erro
+        exceedsSize: '%{file} excede o tamanho máximo permitido de %{size}'
+        failedToUpload: Falha ao carregar %{file}
+        folderAlreadyAdded: A pasta "%{folder}" já foi adicionada.
+        myDevice: O meu dispositivo
+        noDuplicates: Não é possível adicionar o ficheiro duplicado '%{fileName}', já existe.
+        pause: Pausa
+        pauseUpload: Pausar o carregamento
+        paused: Em pausa
+        removeFile: Remover ficheiro
+        resume: Retomar
+        resumeUpload: Envio de currículo
+        retry: Tentar novamente
+        retryUpload: Tentar novamente o envio
+        save: Guardar
+        saveChanges: Guardar alterações
+        showErrorDetails: Mostrar detalhes do erro
+        upload: Carregar
+        uploadComplete: Upload concluído
+        uploadFailed: Falha no upload
+        uploadPaused: Upload pausado
+        uploading: Carregando
+        xTimeLeft: '%{time} esquerda'
+    user: Usuário
+    user_configuration:
+      support_ticket_error: O ticket de suporte está configurado incorretamente. Adicione uma implementação de backend no ficheiro de configuração YAML.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">O OnDemand fornece um ponto de acesso único e integrado para todas as suas funcionalidades HPC.</p>
+
+      '

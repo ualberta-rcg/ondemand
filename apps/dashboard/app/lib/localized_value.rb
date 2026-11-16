@@ -200,4 +200,19 @@ module LocalizedValue
     translated = I18n.t("dashboard.categories.#{slug}", locale: locale, default: nil)
     translated.is_a?(String) && !translated.empty? ? translated : resolved
   end
+
+  # Look up a localized string under `view:` in `<app_root>/locales/<locale>.yml`
+  # for custom BatchConnect `view.html.erb`, `info.html.erb`, or `completed.html.erb` views.
+  def app_view_translation(app_root, key, locale: I18n.locale, default: nil, **interpolations)
+    parts = key.to_s.split('.').reject(&:empty?).map(&:to_sym)
+    raw = parts.empty? ? nil : app_translations(app_root, locale: locale).dig(:view, *parts)
+    text = raw.is_a?(String) && !raw.empty? ? raw : default
+    return nil if text.nil?
+    return text if interpolations.empty?
+
+    text.gsub(/%\{([a-zA-Z0-9_]+)\}/) do |match|
+      k = Regexp.last_match(1).to_sym
+      interpolations.key?(k) ? interpolations[k].to_s : match
+    end
+  end
 end

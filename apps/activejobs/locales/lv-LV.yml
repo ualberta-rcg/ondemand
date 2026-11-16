@@ -1,0 +1,5 @@
+---
+lv-LV:
+  manifest:
+    name: Aktīvie darbi
+    description: Skatīt uzdevumus, kas pašlaik darbojas pieejamajos klasteros, kas konfigurēti OnDemand.

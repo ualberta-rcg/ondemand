@@ -1,0 +1,134 @@
+---
+ja-JP:
+  jobcomposer:
+    account_label: アカウント：
+    back: 戻る
+    cancel: キャンセル
+    close: 近い
+    cluster_label: クラスタ：
+    confirm_delete: 本気ですか？
+    confirm_delete_template: 本当に削除しますか？
+    copy_template: テンプレートをコピー
+    create_from_path_title: パスから新しいジョブを作成する
+    create_new_heading_html: 新規作成 "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: 新しい求人を作成する
+    create_template: テンプレートを作成する
+    create_template_from_job_title: 選択したジョブからテンプレートを作成する
+    delete: 消去
+    delete_job_title: ジョブを削除
+    deprecation_warning_html: ジョブコンポーザーは非推奨となり、Open OnDemand 5.0 で削除されます。ジョブとテンプレートは、<a href="%{projects_path}">プロジェクトマネージャー</a> に移行してください。
+    edit: 編集
+    edit_files: ファイルを編集する
+    folder_contents_label: フォルダの内容：
+    from_default_template: デフォルトテンプレートから
+    from_default_template_title: デフォルトテンプレートから新しいジョブを作成する
+    from_selected_job: 選択した求人から
+    from_selected_job_title: 選択したジョブをコピーします
+    from_specified_path: 指定されたパスから
+    from_template: テンプレートから
+    from_template_title: 選択したテンプレートから新しいジョブを作成します
+    invalid_cluster_html: クラスターが無効です！ <a href="#" id="edit-job-options-script-link">ジョブオプション</a> を編集して、有効なクラスターを選択してください。
+    invalid_script_html: スクリプトが無効です！有効なスクリプトを選択するには、<a href="#" id="edit-job-options-link">ジョブオプション</a> を編集してください。
+    job_already_submitted: 既に求人情報は送信済みです。
+    job_array_request_label: 'ジョブ配列リクエスト:'
+    job_attributes_heading_html: 職務属性 <strong>(オプション)</strong>
+    job_copied: ジョブのコピーに成功しました。
+    job_copy_failed: 'ジョブのコピーに失敗しました: %{errors}'
+    job_created: ジョブが正常に作成されました。
+    job_destroy_failed: 'ジョブの削除に失敗しました: %{errors}'
+    job_destroyed: ジョブは無事に破壊されました。
+    job_details: 求人詳細
+    job_directory_missing: 求人情報ディレクトリがありません！
+    job_name_label: '職名:'
+    job_not_submitted: 求人情報は送信されていません。
+    job_stop_failed: 'ジョブの停止に失敗しました: %{errors}'
+    job_stopped: ジョブは正常に停止しました。
+    job_submit_failed: バッチジョブの送信に失敗しました。
+    job_submitted: ジョブは正常に送信されました。
+    job_updated: ジョブの更新が正常に完了しました。
+    loading: ロード中
+    loading_job_info: 求人情報
+    nav_help: ヘルプ
+    nav_jobs: 求人情報
+    nav_menu_aria: ジョブコンポーザーメニュー
+    nav_templates: テンプレート
+    new_job: 新しい仕事
+    new_template: 新しいテンプレート
+    new_template_title: 新しいテンプレートを作成する
+    no_clusters_alert: ジョブを送信できる設定済みのホストがありません。システム管理者にお問い合わせください。
+    open_dir: ディレクトリを開く
+    open_dir_in_editor: ファイルエディタでディレクトリを開く
+    open_dir_in_file_manager: ファイルマネージャーでディレクトリを開く
+    open_dir_in_terminal: ターミナルでディレクトリを開く
+    open_editor: エディターを開く
+    open_selected_job_in_terminal: ターミナルで選択したジョブを開く
+    open_selected_template_in_terminal: ターミナルで選択したテンプレートを開く
+    open_template_dir_in_file_manager: ファイルマネージャーでテンプレートディレクトリを開く
+    open_terminal: ターミナルを開く
+    open_xdmod: XDMoDを開く
+    options_account_help: アカウントは任意項目です。設定しない場合、送信フィルターによってアカウントが自動的に設定されることがあります。
+    options_account_title: アカウント
+    options_array_help: ジョブ配列は省略可能です。例：1-10
+    options_array_help_with_clusters: 'ジョブ配列はオプションです。OnDemandは現在、クラスター%{cluster_list}のジョブ配列をサポートしていません。
+
+
+      '
+    options_array_title: ジョブ配列仕様
+    options_cluster_title: クラスタ
+    options_copy_environment: コピー環境
+    options_errors: 以下のエラーを修正してください。
+    options_name_title: 名前
+    options_script_help: ジョブスクリプトフィールドには、65KBを超えるファイルは含まれません。
+    options_script_title: ジョブスクリプトを指定します
+    options_title: 仕事の選択肢
+    other_valid_files: その他の有効なファイル
+    page_title: ジョブコンポーザー - %{site}
+    path_to_source_heading_html: ソースへのパス <strong>(必須)</strong>
+    reset: リセット
+    reset_template_fields_title: フィールドをテンプレートのデフォルトにリセットします
+    save: 保存
+    script_contents_label: スクリプトの内容：
+    script_location_label: 'スクリプトの場所:'
+    script_name_form_label: 'スクリプト名:'
+    script_name_label: 'スクリプト名:'
+    select_cluster_prompt: クラスターを選択してください...
+    select_template_option: -- テンプレートを選択 --
+    selected_template_details: 選択されたテンプレートの詳細
+    show: 見せる
+    show_batch_host_label: 'バッチホスト:'
+    show_dir_contents_label: 'ディレクトリの内容:'
+    show_name_label: 名前：
+    show_staged_dir_label: '演出監督:'
+    showing_job_title: 求人情報を表示
+    skip_navigation: ナビゲーションをスキップ
+    source_path_help: ファイルシステム上のディレクトリへのパスを入力してください。このパスの内容が新しいワークフローにコピーされます。
+    source_path_label: ソースパス
+    specify_job_host_and_script: ジョブホストとスクリプトを指定します
+    stop: 停止
+    stop_job_title: ストップジョブ
+    submit: 提出する
+    submit_job_title: 求人情報を送信する
+    submit_script_title: スクリプトを送信
+    submit_to_label: '提出先:'
+    suggested_files: 推奨ファイル
+    table_created: 作成済み
+    table_id: ID
+    table_source: ソース
+    table_status: 状態
+    template_create_error: テンプレートの作成エラー
+    template_error_name_unique: ユニークでなければならない。
+    template_error_path_directory: ディレクトリを指定する必要があります。
+    template_error_path_missing: 存在しません。
+    template_errors_heading:
+      one: エラー %{count} により、このテンプレートを保存できませんでした。
+      other: '%{count} エラーにより、このテンプレートを保存できませんでした。'
+    template_label: テンプレート：
+    template_location_label: 'テンプレートの場所:'
+    template_path_blank_help: 空欄のままにした場合、デフォルトのジョブスクリプトが新しいテンプレートに追加されます。
+    template_path_label: パス（このソースパスからファイルをコピーしてテンプレートを作成します）
+    templates_subtitle: 新しい求人を作成するには、コピーするテンプレートを選択し、右側のフォームに必要事項を入力して、「新しい求人を作成」をクリックしてください。
+    title: ジョブコンポーザー
+    toggle_navigation: ナビゲーションの切り替え
+    view_files: ファイルを表示
+    xdmod_url_warning_message: このジョブは、ジョブ完了後24時間経過するまでOpen XDMoDに表示されない場合があります。
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

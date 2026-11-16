@@ -131,5 +131,17 @@ test('dataTablesLanguage bundles offline language packs for fr-CA, ja-JP, zh-CN,
   const enPack = dataTablesLanguage({ search: 'Filter:' }, 'en-CA');
   assert.deepEqual(enPack, { search: 'Filter:' });
 
+  const dePack = dataTablesLanguage({}, 'de-DE');
+  assert.ok(dePack.search && dePack.search.length > 0);
+
+  const mtPack = dataTablesLanguage({}, 'mt-MT');
+  assert.equal(mtPack.search, 'Fittex:');
+
+  const hgPack = dataTablesLanguage({}, 'en-HG');
+  assert.match(hgPack.search, /Sub-Etha/);
+
+  const cpPack = dataTablesLanguage({}, 'en-CP');
+  assert.match(cpPack.search, /Net-Scan/);
+
   resetI18nCatalog();
 });

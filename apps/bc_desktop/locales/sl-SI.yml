@@ -1,0 +1,14 @@
+---
+sl-SI:
+  manifest:
+    name: Namizni računalnik
+    description: Ta aplikacija bo zagnala interaktivno namizje na enem ali več računalniških vozliščih. Imeli boste poln dostop do virov, ki jih ta vozlišča zagotavljajo. To je analogno interaktivnemu paketnemu opravilu.
+  form:
+    attributes:
+      desktop:
+        label: Namizno okolje
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: DRUŽBA
+          xfce: Xfce

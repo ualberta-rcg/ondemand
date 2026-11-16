@@ -1,0 +1,134 @@
+---
+nl-NL:
+  jobcomposer:
+    account_label: 'Rekening:'
+    back: Rug
+    cancel: Annuleren
+    close: Dichtbij
+    cluster_label: 'Cluster:'
+    confirm_delete: Weet je het zeker?
+    confirm_delete_template: Weet je zeker dat je dit wilt verwijderen?
+    copy_template: Kopieer sjabloon
+    create_from_path_title: Maak een nieuwe taak aan vanuit een pad.
+    create_new_heading_html: Maak een nieuwe "<span class="wrap-line" id="script-name-label">%{name}</span>" aan
+    create_new_job: Nieuwe vacature aanmaken
+    create_template: Sjabloon maken
+    create_template_from_job_title: Maak een sjabloon van de geselecteerde taak.
+    delete: Verwijderen
+    delete_job_title: Taak verwijderen
+    deprecation_warning_html: De Job Composer is verouderd en zal in Open OnDemand 5.0 worden verwijderd. Draag uw taken en sjablonen over naar de <a href="%{projects_path}">Project Manager</a>.
+    edit: Bewerking
+    edit_files: Bestanden bewerken
+    folder_contents_label: 'Mapinhoud:'
+    from_default_template: Vanuit standaardsjabloon
+    from_default_template_title: Maak een nieuwe taak aan op basis van de standaardsjabloon.
+    from_selected_job: Van geselecteerde baan
+    from_selected_job_title: Kopieer de geselecteerde taak
+    from_specified_path: Vanaf het opgegeven pad
+    from_template: Vanuit sjabloon
+    from_template_title: Maak een nieuwe taak aan op basis van een sjabloon naar keuze.
+    invalid_cluster_html: Het cluster is niet geldig! Bewerk <a href="#" id="edit-job-options-script-link">Job Options</a> om een geldig cluster te selecteren.
+    invalid_script_html: Het script is ongeldig! Bewerk <a href="#" id="edit-job-options-link">Job Options</a> om een geldig script te selecteren.
+    job_already_submitted: De vacature is al ingediend.
+    job_array_request_label: 'Verzoek om taakarray:'
+    job_attributes_heading_html: Taakkenmerken <strong>(Optioneel)</strong>
+    job_copied: De taak is succesvol gekopieerd.
+    job_copy_failed: 'Het kopiëren van de taak is mislukt: %{errors}'
+    job_created: De vacature is succesvol aangemaakt.
+    job_destroy_failed: 'Taak kon niet worden vernietigd: %{errors}'
+    job_destroyed: Job is succesvol vernietigd.
+    job_details: Functieomschrijving
+    job_directory_missing: De vacaturebank ontbreekt!
+    job_name_label: 'Functienaam:'
+    job_not_submitted: De opdracht is nog niet ingediend.
+    job_stop_failed: 'Taak kon niet worden gestopt: %{errors}'
+    job_stopped: De taak is succesvol gestopt.
+    job_submit_failed: 'Het verzenden van de batchtaak is mislukt:'
+    job_submitted: De opdracht is succesvol ingediend.
+    job_updated: De taak is succesvol bijgewerkt.
+    loading: Laden
+    loading_job_info: Vacature-informatie laden
+    nav_help: Hulp
+    nav_jobs: Banen
+    nav_menu_aria: Menu voor het samenstellen van taken
+    nav_templates: Sjablonen
+    new_job: Nieuwe baan
+    new_template: Nieuw sjabloon
+    new_template_title: Een nieuwe sjabloon maken
+    no_clusters_alert: Er zijn geen geconfigureerde hosts waarop u taken kunt indienen. Neem contact op met uw systeembeheerder.
+    open_dir: Map openen
+    open_dir_in_editor: Open de map in de bestandseditor.
+    open_dir_in_file_manager: Open de map in de bestandsbeheerder.
+    open_dir_in_terminal: Map openen in Terminal
+    open_editor: Editor openen
+    open_selected_job_in_terminal: Open de geselecteerde vacature in de terminal.
+    open_selected_template_in_terminal: Open de geselecteerde sjabloon in de terminal.
+    open_template_dir_in_file_manager: Open de sjabloonmap in de bestandsbeheerder.
+    open_terminal: Open Terminal
+    open_xdmod: Open XDMoD
+    options_account_help: Het account is een optioneel veld. Indien niet ingevuld, kan het account automatisch worden ingesteld door het verzendfilter.
+    options_account_title: Rekening
+    options_array_help: Taaknummers zijn optioneel. Bijvoorbeeld 1-10
+    options_array_help_with_clusters: 'Job-arrays zijn optioneel. OnDemand ondersteunt momenteel geen job-arrays voor de clusters: %{cluster_list}.
+
+
+      '
+    options_array_title: Functieomschrijving specificatie
+    options_cluster_title: Cluster
+    options_copy_environment: Kopieeromgeving
+    options_errors: Corrigeer de onderstaande fouten.
+    options_name_title: Naam
+    options_script_help: Bestanden groter dan 65 KB worden weggelaten voor het taakscriptveld.
+    options_script_title: Geef het taakscript op
+    options_title: Mogelijkheden voor een baan
+    other_valid_files: Andere geldige bestand(en)
+    page_title: Job Composer - %{site}
+    path_to_source_heading_html: Pad naar bron <strong>(Vereist)</strong>
+    reset: Reset
+    reset_template_fields_title: Velden terugzetten naar de standaardinstellingen van de sjabloon
+    save: Redden
+    script_contents_label: 'Inhoud van het script:'
+    script_location_label: 'Scriptlocatie:'
+    script_name_form_label: 'Scriptnaam:'
+    script_name_label: 'Scriptnaam:'
+    select_cluster_prompt: Selecteer een cluster...
+    select_template_option: -- selecteer een sjabloon --
+    selected_template_details: Details van de geselecteerde sjabloon
+    show: Show
+    show_batch_host_label: 'Batchhost:'
+    show_dir_contents_label: 'Mapinhoud:'
+    show_name_label: 'Naam:'
+    show_staged_dir_label: 'Geënsceneerde regie:'
+    showing_job_title: Toon vacature
+    skip_navigation: Navigatie overslaan
+    source_path_help: Voer het pad naar een map in het bestandssysteem in. De inhoud van dit pad wordt naar een nieuwe workflow gekopieerd.
+    source_path_label: Bronpad
+    specify_job_host_and_script: Geef de taakhost en het script op.
+    stop: Stop
+    stop_job_title: Stop Job
+    submit: Indienen
+    submit_job_title: Vacature indienen
+    submit_script_title: Script indienen
+    submit_to_label: 'Verzenden naar:'
+    suggested_files: Voorgestelde bestand(en)
+    table_created: Gemaakt
+    table_id: ID
+    table_source: Bron
+    table_status: Status
+    template_create_error: Fout bij het maken van de sjabloon.
+    template_error_name_unique: moet uniek zijn.
+    template_error_path_directory: moet verwijzen naar een map.
+    template_error_path_missing: bestaat niet.
+    template_errors_heading:
+      one: 'De fout %{count} verhinderde dat deze sjabloon kon worden opgeslagen:'
+      other: '%{count}-fouten hebben ervoor gezorgd dat deze sjabloon niet kon worden opgeslagen:'
+    template_label: 'Sjabloon:'
+    template_location_label: 'Locatie van de sjabloon:'
+    template_path_blank_help: Als u dit veld leeg laat, wordt er een standaard taakscript aan uw nieuwe sjabloon toegevoegd.
+    template_path_label: Pad (de sjabloon wordt gemaakt door bestanden van dit bronpad te kopiëren)
+    templates_subtitle: Om een nieuwe vacature aan te maken, selecteer je een sjabloon om te kopiëren, vul je het formulier aan de rechterkant in en klik je op 'Nieuwe vacature aanmaken'.
+    title: Job Composer
+    toggle_navigation: Navigatie in-/uitschakelen
+    view_files: Bestanden bekijken
+    xdmod_url_warning_message: Deze taak verschijnt mogelijk pas 24 uur na voltooiing in Open XDMoD.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

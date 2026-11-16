@@ -1,0 +1,131 @@
+---
+hu-HU:
+  jobcomposer:
+    account_label: 'Fiók:'
+    back: Vissza
+    cancel: Mégsem
+    close: Közeli
+    cluster_label: 'Fürt:'
+    confirm_delete: Biztos vagy benne?
+    confirm_delete_template: Biztos, hogy törölni akarod ezt?
+    copy_template: Sablon másolása
+    create_from_path_title: Új feladat létrehozása egy elérési útból
+    create_new_heading_html: Új „<span class="wrap-line" id="script-name-label">%{name}</span>” létrehozása
+    create_new_job: Új munka létrehozása
+    create_template: Sablon létrehozása
+    create_template_from_job_title: Sablon létrehozása a kiválasztott munkából
+    delete: Töröl
+    delete_job_title: Feladat törlése
+    deprecation_warning_html: A Job Composer elavult, és az Open OnDemand 5.0 verzióban eltávolításra kerül. Kérjük, vigye át a feladatait és sablonjait az <a href="%{projects_path}">Project Manager</a> projektbe.
+    edit: Szerkesztés
+    edit_files: Fájlok szerkesztése
+    folder_contents_label: 'Mappa tartalma:'
+    from_default_template: Az alapértelmezett sablonból
+    from_default_template_title: Új munka létrehozása az alapértelmezett sablonból
+    from_selected_job: A kiválasztott munkából
+    from_selected_job_title: A kiválasztott feladat másolása
+    from_specified_path: A megadott útvonalról
+    from_template: Sablonból
+    from_template_title: Hozz létre egy új munkát egy kiválasztott sablonból
+    invalid_cluster_html: A klaszter érvénytelen! Szerkessze a <a href="#" id="edit-job-options-script-link">Job Options</a> paramétert érvényes klaszter kiválasztásához.
+    invalid_script_html: A szkript érvénytelen! Szerkessze a <a href="#" id="edit-job-options-link">Job Options</a> paramétert érvényes szkript kiválasztásához.
+    job_already_submitted: A munka már beküldve.
+    job_array_request_label: 'Job Array kérés:'
+    job_attributes_heading_html: Munkaköri jellemzők <strong>(Opcionális)</strong>
+    job_copied: A feladat másolása sikeresen megtörtént.
+    job_copy_failed: 'Nem sikerült a feladatot másolni: %{errors}'
+    job_created: A munka sikeresen létrehozva.
+    job_destroy_failed: 'A feladat megsemmisítése sikertelen: %{errors}'
+    job_destroyed: A Job sikeresen megsemmisítésre került.
+    job_details: Munka részletei
+    job_directory_missing: Hiányzik az álláskereső!
+    job_name_label: 'Munkakör neve:'
+    job_not_submitted: A munka nincs beküldve.
+    job_stop_failed: 'Nem sikerült leállítani a feladatot: %{errors}'
+    job_stopped: A munkamenet sikeresen leállítva.
+    job_submit_failed: 'Nem sikerült elküldeni a kötegelt feladatot:'
+    job_submitted: A munka sikeresen elküldve.
+    job_updated: A munkakör frissítése sikeresen megtörtént.
+    loading: Terhelés
+    loading_job_info: Munkaadatok betöltése
+    nav_help: Segítség
+    nav_jobs: Állások
+    nav_menu_aria: Munkaösszeállító menü
+    nav_templates: Sablonok
+    new_job: Új munka
+    new_template: Új sablon
+    new_template_title: Új sablon létrehozása
+    no_clusters_alert: Nincsenek konfigurált hosztok, amelyek lehetővé teszik a feladatok beküldését. Kérjük, vegye fel a kapcsolatot a rendszergazdával.
+    open_dir: Nyílt könyvtár
+    open_dir_in_editor: Könyvtár megnyitása a fájlszerkesztőben
+    open_dir_in_file_manager: Könyvtár megnyitása a Fájlkezelőben
+    open_dir_in_terminal: Könyvtár megnyitása a Terminálban
+    open_editor: Szerkesztő megnyitása
+    open_selected_job_in_terminal: Nyissa meg a kiválasztott feladatot a terminálban
+    open_selected_template_in_terminal: Nyissa meg a kiválasztott sablont a terminálban
+    open_template_dir_in_file_manager: Sablonkönyvtár megnyitása a Fájlkezelőben
+    open_terminal: Nyissa meg a terminált
+    open_xdmod: Nyissa meg az XDMoD-t
+    options_account_help: A „Fiók” mező megadása opcionális. Ha nincs beállítva, a beküldési szűrő automatikusan beállíthatja a fiókot.
+    options_account_title: Fiók
+    options_array_help: A feladattömbök megadása opcionális. Pl. 1-10
+    options_array_help_with_clusters: 'A feladattömbök megadása opcionális. Az OnDemand jelenleg nem támogatja a feladattömböket a következő klaszter(ek)hez: %{cluster_list}.'
+    options_array_title: Job tömb specifikáció
+    options_cluster_title: Fürt
+    options_copy_environment: Környezet másolása
+    options_errors: Kérjük, javítsa ki az alábbi hibákat.
+    options_name_title: Név
+    options_script_help: A 65 KB-nál nagyobb fájlok kimaradnak a job script mezőből.
+    options_script_title: Adja meg a munkafüzetet
+    options_title: Álláslehetőségek
+    other_valid_files: Egyéb érvényes fájl(ok)
+    page_title: Munkaösszeállító - %{site}
+    path_to_source_heading_html: Forrás elérési útja <strong>(Kötelező)</strong>
+    reset: Visszaállítás
+    reset_template_fields_title: Mezők visszaállítása a sablon alapértelmezett értékére
+    save: Megtakarítás
+    script_contents_label: 'A szkript tartalma:'
+    script_location_label: 'Szkript helye:'
+    script_name_form_label: 'Szkript neve:'
+    script_name_label: 'Szkript neve:'
+    select_cluster_prompt: Válasszon egy klasztert...
+    select_template_option: -- válasszon sablont --
+    selected_template_details: Kiválasztott sablon részletei
+    show: Megmutat
+    show_batch_host_label: 'Köteggazdagép:'
+    show_dir_contents_label: 'Könyvtár tartalma:'
+    show_name_label: 'Név:'
+    show_staged_dir_label: 'Rendező:'
+    showing_job_title: Állás megjelenítése
+    skip_navigation: Navigáció kihagyása
+    source_path_help: Adja meg a fájlrendszer egy könyvtárának elérési útját. Az elérési út tartalma egy új munkafolyamatba lesz másolva.
+    source_path_label: Forrásútvonal
+    specify_job_host_and_script: Adja meg a feladatgépet és a szkriptet
+    stop: Stop
+    stop_job_title: Feladat leállítása
+    submit: Küldés
+    submit_job_title: Munka beküldése
+    submit_script_title: Szkript beküldése
+    submit_to_label: 'Beküldés ide:'
+    suggested_files: Javasolt fájl(ok)
+    table_created: Létrehozva
+    table_id: azonosító
+    table_source: Forrás
+    table_status: Állapot
+    template_create_error: hiba a sablon létrehozásakor
+    template_error_name_unique: egyedinek kell lennie.
+    template_error_path_directory: egy könyvtárra kell mutatnia.
+    template_error_path_missing: nem létezik.
+    template_errors_heading:
+      one: 'A %{count} hiba megakadályozta a sablon mentését:'
+      other: '%{count} hibák megakadályozták a sablon mentését:'
+    template_label: 'Sablon:'
+    template_location_label: 'Sablon helye:'
+    template_path_blank_help: Ha üresen hagyja, egy alapértelmezett munkaköri leírás kerül hozzáadásra az új sablonhoz.
+    template_path_label: Útvonal (a sablon a forrásútvonalról származó fájlok másolásával jön létre)
+    templates_subtitle: Új munkakör létrehozásához válasszon ki egy másolandó sablont, töltse ki a jobb oldali űrlapot, majd kattintson az „Új munkakör létrehozása” gombra.
+    title: Munkaszerkesztő
+    toggle_navigation: Navigáció váltása
+    view_files: Fájlok megtekintése
+    xdmod_url_warning_message: Ez a feladat a befejezését követő 24 órán belül csak akkor jelenik meg az Open XDMoD-ban.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

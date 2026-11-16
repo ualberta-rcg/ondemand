@@ -1,0 +1,21 @@
+---
+pt-PT:
+  manifest:
+    name: Área de trabalho
+    description: 'Esta aplicação iniciará uma área de trabalho interativa num ou mais nós de computação. Você
+
+      terá acesso total aos recursos fornecidos por esses nós. Isto é análogo
+
+      a um trabalho em batch interativo.
+
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: Ambiente de desktop
+        options:
+          gnome: GNOMO
+          kde: KDE
+          mate: AMIGO
+          xfce: Xface

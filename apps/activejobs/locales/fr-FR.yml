@@ -1,0 +1,5 @@
+---
+fr-FR:
+  manifest:
+    name: Tâches actives
+    description: Afficher les tâches en cours d'exécution sur les clusters configurées pour OnDemand.

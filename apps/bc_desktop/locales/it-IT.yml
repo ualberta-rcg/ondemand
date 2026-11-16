@@ -1,0 +1,17 @@
+---
+it-IT:
+  manifest:
+    name: Desktop
+    description: 'Questa applicazione avvierà un desktop interattivo su uno o più nodi di calcolo. Avrai pieno accesso alle risorse fornite da questi nodi. È analogo a un processo batch interattivo.
+
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: Ambiente desktop
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: COMPAGNO
+          xfce: Xfce

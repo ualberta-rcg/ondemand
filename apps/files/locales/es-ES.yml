@@ -1,0 +1,5 @@
+---
+es-ES:
+  manifest:
+    name: Aplicación de archivos
+    description: La aplicación para abrir archivos bajo demanda

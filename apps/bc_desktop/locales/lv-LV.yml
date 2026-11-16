@@ -1,0 +1,16 @@
+---
+lv-LV:
+  manifest:
+    name: Darbvirsma
+    description: 'Šī lietotne palaidīs interaktīvu darbvirsmu vienā vai vairākos skaitļošanas mezglos. Jums būs pilnīga piekļuve resursiem, ko šie mezgli nodrošina. Tas ir analogi
+
+      interaktīvam pakešuzdevumam.'
+  form:
+    attributes:
+      desktop:
+        label: Darbvirsmas vide
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: MATE
+          xfce: Xfce

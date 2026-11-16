@@ -1,0 +1,21 @@
+---
+de-DE:
+  manifest:
+    name: Desktop
+    description: 'Diese App startet einen interaktiven Desktop auf einem oder mehreren Rechenknoten. Sie
+
+      haben vollen Zugriff auf die Ressourcen dieser Knoten. Dies ist vergleichbar mit
+
+      einem interaktiven Batch-Job.
+
+
+      '
+  form:
+    attributes:
+      desktop:
+        label: Desktop-Umgebung
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: KUMPEL
+          xfce: Xfce

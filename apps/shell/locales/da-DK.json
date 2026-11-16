@@ -1,0 +1,18 @@
+{
+  "page_title": "Skal - %{siteTitle}",
+  "menu_aria": "Shell-menu",
+  "host_label": "Vært: %{host}",
+  "initial_directory": "Oprindelig mappe: %{dir}",
+  "themes_label": "Temaer:",
+  "theme_default": "Misligholdelse",
+  "theme_bright": "Lys",
+  "theme_dark": "Mørk",
+  "fonts_label": "Skrifttyper:",
+  "leave_page_warning": "Hvis du forlader denne side, afsluttes din terminalsession.",
+  "websocket_failed": "Kunne ikke oprette en websocket-forbindelse. Sørg for, at du bruger en browser, der understøtter websocket-forbindelser.",
+  "connection_terminated": "Din forbindelse til den eksterne server er blevet afbrudt.",
+  "auth_no_clusters": "Ingen klynger defineret.",
+  "auth_invalid_origin": "Ugyldig oprindelse.",
+  "auth_bad_csrf": "Forkert CSRF-token.",
+  "auth_host_not_allowed": "Værten \"%{host}\" er ikke angivet i tilladelseslisten eller klyngekonfigurationerne."
+}

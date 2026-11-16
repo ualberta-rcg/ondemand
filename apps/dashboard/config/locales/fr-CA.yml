@@ -4,9 +4,9 @@ fr-CA:
     errors:
       messages:
         format: Le format de %{attribute} est invalide ou manquant
-        invalid: "%{attribute} est invalide"
-        required: "%{attribute} est requis"
-        used: "%{attribute} est déjà utilisé"
+        invalid: '%{attribute} est invalide'
+        required: '%{attribute} est requis'
+        used: '%{attribute} est déjà utilisé'
   dashboard:
     account: Compte
     actions: Actes
@@ -93,28 +93,15 @@ fr-CA:
     announcements_parse_error: Erreur lors de l'analyse de l'annonce.
     announcements_render_error: Impossible d'afficher l'annonce « %{name} » en raison d'une erreur
     announcements_required_button: Accepter
-    apps_setup_failure_html: |
-      <h2>Un problème est survenu lors de l'initialisation de vos données pour cette application.</h2>
-      <p class="lead">
-        À vos risques, vous pouvez quand même <a href="%{app_url}">ouvrir l’application</a>
-        ou simplement <a href="%{home_url}">retourner au tableau de bord</a>
-      </p>
-      <p>
-        Partagez ceci avec le développeur de votre application :
-        Le script de production de configuration devrait être idempotent et s’exécute chaque fois
-        que l’utilisateur ouvre l’application via le tableau de bord.</p>
-      <h4>Exception : %{exception_class}</h4>
-      <pre>%{exception_message}</pre>
-      <h4>Trace de la pile :</h4>
-      <pre>%{exception_trace}</pre>
+    apps_setup_failure_html: "<h2>Un problème est survenu lors de l'initialisation de vos données pour cette application.</h2>\n<p class=\"lead\">\n  À vos risques, vous pouvez quand même <a href=\"%{app_url}\">ouvrir l’application</a>\n  ou simplement <a href=\"%{home_url}\">retourner au tableau de bord</a>\n</p>\n<p>\n  Partagez ceci avec le développeur de votre application :\n  Le script de production de configuration devrait être idempotent et s’exécute chaque fois\n  que l’utilisateur ouvre l’application via le tableau de bord.</p>\n<h4>Exception : %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Trace de la pile :</h4>\n<pre>%{exception_trace}</pre>\n"
     apps_system_apps_title: Applications système
     auto_log_location_title: Emplacement du journal
     back: Retour
     balance_additional_message: Envisagez de demander %{balanace_units} supplémentaires
-    balance_message: "%{units_balance} est %{value}"
+    balance_message: '%{units_balance} est %{value}'
     balance_no_warnings: Aucun projet n'est dans la zone d'alerte de solde de %{threshold} jours.
     balance_reload_message_html: 'Rechargez la page pour voir le solde mis à jour. Les soldes sont mis à jour quotidiennement.<br>Dernière mise à jour : %{last_update}'
-    balance_warning_prefix_html: "%{units_balance} avertissement pour"
+    balance_warning_prefix_html: '%{units_balance} avertissement pour'
     batch_connect_active_sessions_aria: Sessions actives
     batch_connect_app_version: 'version : %{version}'
     batch_connect_apps_menu_aria: Menu des applications interactives
@@ -134,49 +121,68 @@ fr-CA:
     batch_connect_form_save_new_template: enregistrer de nouveaux paramètres
     batch_connect_form_save_submit: Enregistrer et fermer
     batch_connect_form_select_template: sélectionner les paramètres sauvegardés
-    batch_connect_form_session_data_html: |
-      * Les données de session %{title} pour cette session sont accessibles
-        sous %{data_link_tag}.
+    batch_connect_form_session_data_html: "* Les données de session %{title} pour cette session sont accessibles\n  sous %{data_link_tag}.\n"
     batch_connect_form_template_name_label: nom du paramètre
     batch_connect_form_type_new_name: Nom des paramètres de l’application
     batch_connect_form_type_new_name_error: Veuillez saisir un nom valide pour continuer
-    batch_connect_invalid_form_array: "'form' dans form.yml n'est pas un tableau"
-    batch_connect_invalid_form_attributes: "'attributes' dans form.yml n'est pas une carte"
-    batch_connect_missing_cluster: |
-      Le cluster n'a jamais été défini. Définissez-le soit dans form.yml.erb avec `cluster` ou `form.cluster` ou
+    batch_connect_invalid_form_array: '''form'' dans form.yml n''est pas un tableau'
+    batch_connect_invalid_form_attributes: '''attributes'' dans form.yml n''est pas une carte'
+    batch_connect_missing_cluster: 'Le cluster n''a jamais été défini. Définissez-le soit dans form.yml.erb avec `cluster` ou `form.cluster` ou
+
       définissez `cluster` dans submit.yml.erb.
+
+      '
     batch_connect_no_apps: Il n'y a pas d'applications interactives disponibles.
     batch_connect_no_sessions: Vous n'avez aucune session active.
-    batch_connect_sandbox: " [Bac à sable]"
+    batch_connect_sandbox: ' [Bac à sable]'
     batch_connect_sessions_cancel_confirm: Êtes-vous sûr ?
     batch_connect_sessions_cancel_full_title: Annuler la session %{title}
     batch_connect_sessions_cancel_title: Annuler
+    batch_connect_sessions_connect_to: Se connecter à %{app_title}
     batch_connect_sessions_connection_render_error: Impossible d'afficher le bouton de connexion depuis view.html.erb en raison de l'erreur « %{error} »
-    batch_connect_sessions_data_html: |
-      Les données de session %{title} pour cette session sont accessibles
+    batch_connect_sessions_data_html: 'Les données de session %{title} pour cette session sont accessibles
+
       sous %{data_link_tag}.
+
+      '
     batch_connect_sessions_delete_confirm: Êtes-vous sûr ?
     batch_connect_sessions_delete_full_title: Supprimer la session %{title}
     batch_connect_sessions_delete_hover: Supprimer la session
     batch_connect_sessions_delete_title: Supprimer
     batch_connect_sessions_edit_title: Modifier %{title} avec les paramètres de cette session
-    batch_connect_sessions_error_invalid_job_name_html: |
-      Si ce travail a échoué en raison d'un nom de travail invalide,
+    batch_connect_sessions_error_invalid_job_name_html: 'Si ce travail a échoué en raison d''un nom de travail invalide,
+
       veuillez demander à votre administrateur de configurer OnDemand pour définir
-      la variable d'environnement OOD_JOB_NAME_ILLEGAL_CHARS.
+
+      la variable d''environnement OOD_JOB_NAME_ILLEGAL_CHARS.
+
+      '
     batch_connect_sessions_errors_staging: 'Échec du staging du modèle avec l’erreur suivante :'
     batch_connect_sessions_errors_submission: 'Échec de la soumission de la session avec l’erreur suivante :'
     batch_connect_sessions_native_vnc_tab: Instructions natives
+    batch_connect_sessions_novnc_compression: Compression
+    batch_connect_sessions_novnc_compression_help: 1 (faible) à 9 (élevé)
     batch_connect_sessions_novnc_launch: Lancer %{app_title}
+    batch_connect_sessions_novnc_quality: Qualité d'image
+    batch_connect_sessions_novnc_quality_help: 0 (faible) à 9 (élevé)
     batch_connect_sessions_novnc_tab: Connexion noVNC
     batch_connect_sessions_novnc_view_only: Vue seule (Lien partageable)
     batch_connect_sessions_path_selector_forbidden_error: Vous n'avez pas la permission de sélectionner ce répertoire ou fichier.
     batch_connect_sessions_relaunch_full_title: Relancer la session %{title}
     batch_connect_sessions_relaunch_title: Relancer
     batch_connect_sessions_staged_root: répertoire racine mis en scène
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} noyau'
+      other: '%{count} cœurs'
     batch_connect_sessions_stats_created_at: 'Créé le :'
     batch_connect_sessions_stats_expected_time: 'Start attendu:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPU'
     batch_connect_sessions_stats_host: 'Hôte :'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} nœud'
+      other: '%{count} nœuds'
     batch_connect_sessions_stats_session_dir_link_title: Ouvrir le répertoire de la session pour %{session_id}
     batch_connect_sessions_stats_session_id: 'ID de session :'
     batch_connect_sessions_stats_support_ticket: Problèmes avec cette session ?
@@ -192,21 +198,27 @@ fr-CA:
     batch_connect_sessions_status_blurb_delete_failure: Échec de la suppression de la session.
     batch_connect_sessions_status_blurb_delete_success: Session supprimée avec succès.
     batch_connect_sessions_status_completed: À des fins de débogage, cette carte sera conservée pendant %{days} jours supplémentaires
-    batch_connect_sessions_status_missing_connection: |
-      Cette application manque d’informations nécessaires à l’établissement d’une connexion.
+    batch_connect_sessions_status_missing_connection: 'Cette application manque d’informations nécessaires à l’établissement d’une connexion.
+
       Veuillez contacter le support si vous voyez ce message.
-    batch_connect_sessions_status_queued: |
-      Merci de patienter pendant que votre travail est en file d’attente.
+
+      '
+    batch_connect_sessions_status_queued: 'Merci de patienter pendant que votre travail est en file d’attente.
+
       Le temps d’attente dépend du nombre de cœurs et du temps demandé.
-    batch_connect_sessions_status_starting: |
-      Votre session démarre actuellement... Veuillez patienter car ce processus peut
+
+      '
+    batch_connect_sessions_status_starting: 'Votre session démarre actuellement... Veuillez patienter car ce processus peut
+
       prendre quelques minutes.
+
+      '
     batch_connect_sessions_word: Session
     batch_connect_validation:
-      app_not_found: "Cette application n'existe pas sous le répertoire '%{root}'"
+      app_not_found: Cette application n'existe pas sous le répertoire '%{root}'
       inaccessible_clusters: Cette application nécessite des grappes qui n'existent pas ou auxquelles vous n'avez pas accès.
-      missing_form_file: "Cette application ne fournit pas de fichier de formulaire sous le répertoire '%{root}'"
-      missing_sub_app_form_file: "Cette application ne fournit pas de fichier de formulaire de sous-application sous le répertoire '%{root}'"
+      missing_form_file: Cette application ne fournit pas de fichier de formulaire sous le répertoire '%{root}'
+      missing_sub_app_form_file: Cette application ne fournit pas de fichier de formulaire de sous-application sous le répertoire '%{root}'
       no_cluster_specified: Cette application ne spécifie aucune grappe.
     bc_saved_settings:
       delete_confirm: Êtes-vous sûr ?
@@ -253,6 +265,7 @@ fr-CA:
     close_notice: Fermer cet avis.
     cluster: Grappe
     copy: Copier
+    copy_suffix: (Copie)
     cpu_report: Rapport du processeur + %{node}
     custom_pages:
       invalid: 'Code de page invalide : %{page}. Cette page n’a pas été configurée'
@@ -262,6 +275,9 @@ fr-CA:
     details: Détails
     development_apps_caption: Application bac à sable
     development_apps_category: Applications bac à sable
+    development_delete_app: Supprimer l'application
+    development_edit_title: Modifier %{title}
+    development_launch_title: Lancement %{title}
     directory: Répertoire
     edit: Modifier
     editor_default: Par défaut
@@ -292,7 +308,7 @@ fr-CA:
     files_directory_size_calculation_timeout: Délai dépassé lors de la détermination de la taille du répertoire.
     files_directory_size_unknown: 'Erreur avec le code de sortie %{exit_code} lors de la détermination de la taille du répertoire : %{error}'
     files_directory_too_large: Le répertoire est trop volumineux pour être téléchargé en zip. Il doit faire moins de %{download_directory_size_limit} octets.
-    files_doesnt_exist: "%{path} n'existe pas."
+    files_doesnt_exist: '%{path} n''existe pas.'
     files_download: Télécharger
     files_download_not_enabled: Le téléchargement de fichiers n’est pas activé sur ce serveur.
     files_download_zip: Télécharger en zip
@@ -346,10 +362,12 @@ fr-CA:
     jobs_launchers_deleted: Lancement supprimé avec succès !
     jobs_launchers_edit: Modifier le formulaire pour le lanceur %{name}
     jobs_launchers_edit_form_item: Modifier l'élément de formulaire %{label}
+    jobs_launchers_editing: Édition %{title}
     jobs_launchers_fixed_field: Valeur fixe
     jobs_launchers_fixed_field_help: Corriger la valeur actuelle
     jobs_launchers_max_value_label: Valeur maximale pour le champ numérique %{label}
     jobs_launchers_min_value_label: Valeur minimale pour le champ numérique %{label}
+    jobs_launchers_name: Nom du lanceur
     jobs_launchers_new_field_select: Sélectionner un élément à ajouter au formulaire
     jobs_launchers_not_found: Impossible de trouver le lancement %{launcher_id}
     jobs_launchers_preview_form_item: Aperçu de l'élément de formulaire %{label}
@@ -367,6 +385,7 @@ fr-CA:
     jobs_new_launcher: Nouveau lancement
     jobs_new_project: Nouveau projet
     jobs_project_cannot_find: 'Impossible de trouver le projet : %{project_id}'
+    jobs_project_clear_form_fields: Effacer les champs de formulaire
     jobs_project_created: Projet créé avec succès !
     jobs_project_delete_label: Supprimer le projet %{name}
     jobs_project_delete_project_confirmation: Supprimer tout le contenu du répertoire du projet ?
@@ -394,7 +413,9 @@ fr-CA:
     jobs_project_open_label: Ouvrir le projet %{name}
     jobs_project_remove_label: Retirer le projet %{name}
     jobs_project_removed: Projet retiré de la recherche !
+    jobs_project_return_to_projects: Retour à la page des projets
     jobs_project_save_error: Impossible d’enregistrer le manifest dans %{path}
+    jobs_project_save_project_title: Enregistrer le projet
     jobs_project_select_directory: Sélectionner le répertoire du projet
     jobs_project_setgid_help: Laisser l'option setgid cochée garantit que les fichiers du projet sont créés avec le groupe sélectionné. N'affecte pas les projets dans votre répertoire personnel.
     jobs_project_validation_error: Requête invalide. Veuillez vérifier les erreurs ci-dessous
@@ -446,7 +467,7 @@ fr-CA:
         load_details_failed: Échec du chargement des détails de la tâche.
         remote_server_error: Une erreur s'est produite lors de la récupération des données depuis le serveur distant.
         request_failed_parse: La requête des tâches a échoué en raison d'une erreur d'analyse de la réponse.
-        request_failed_status: "La requête des tâches a échoué avec le code d'état : %{status}"
+        request_failed_status: 'La requête des tâches a échoué avec le code d''état : %{status}'
         status_completed: Terminée
         status_hold: En retenue
         status_queued: En file d'attente
@@ -459,11 +480,11 @@ fr-CA:
       batch_connect:
         allow_notifications: Veuillez autoriser les notifications dans votre navigateur pour activer les alertes de session.
         invalid_prefill_value_html: 'Valeur non valide : « %{value} » pour le champ « %{field} ».<br>'
-        notification_permission_error: "Erreur lors de la demande d'autorisation de notification :"
+        notification_permission_error: 'Erreur lors de la demande d''autorisation de notification :'
         resolution_reset: Résolution réinitialisée à %{width} par %{height} pixels.
-        session_expires_warning: "Avertissement : %{title} (%{job_id}) expire dans ~%{minutes} minutes !"
-        session_status_aria: "%{title} est maintenant à l'état %{status}."
-        session_status_push: "%{title} (%{job_id}) est maintenant à l'état %{status}."
+        session_expires_warning: 'Avertissement : %{title} (%{job_id}) expire dans ~%{minutes} minutes !'
+        session_status_aria: '%{title} est maintenant à l''état %{status}.'
+        session_status_push: '%{title} (%{job_id}) est maintenant à l''état %{status}.'
       common:
         cancel: Annuler
         close: Fermer
@@ -475,13 +496,13 @@ fr-CA:
         filter_label: 'Filtrer :'
         invalid_date: Date invalide
         rows_selected:
-          one: "%{count} ligne sélectionnée"
-          other: "%{count} lignes sélectionnées"
+          one: '%{count} ligne sélectionnée'
+          other: '%{count} lignes sélectionnées'
         showing_filtered_rows: Affichage de %{display} sur %{total} lignes
         showing_rows: Affichage de %{display} lignes
-        status_summary: "%{showing} - %{selected}"
+        status_summary: '%{showing} - %{selected}'
       dynamic_forms:
-        and_separator: " et "
+        and_separator: ' et '
         changed_help: Texte d'aide de %{widget} remplacé par %{help}
         changed_label: Libellé de %{widget} remplacé par %{label}
         current_value: valeur actuelle définie à %{value}
@@ -494,10 +515,12 @@ fr-CA:
         selected_option_disabled: Option sélectionnée %{value} désactivée pour %{widget}
         set_limits: Définition de %{details} pour %{widget}
         set_value: Valeur de %{widget} définie à %{value}
-        widget_no_label: "%{type} sans libellé"
-        widget_with_label: "%{type} avec le libellé %{label}"
+        widget_no_label: '%{type} sans libellé'
+        widget_with_label: '%{type} avec le libellé %{label}'
       editor:
-        save_error: "Une erreur s'est produite lors de l'enregistrement de ce fichier !\n%{error}"
+        save_error: 'Une erreur s''est produite lors de l''enregistrement de ce fichier !
+
+          %{error}'
         unsaved_changes: Vous avez des modifications non enregistrées !
       files:
         action_delete: Supprimer
@@ -508,19 +531,19 @@ fr-CA:
         actions: Actions
         cannot_navigate_file: Impossible de naviguer vers un fichier.
         change_directory: Changer de répertoire
-        clipboard_description_html: "Copier ou déplacer les fichiers ci-dessous depuis <code>%{from}</code> vers le répertoire courant :"
+        clipboard_description_html: 'Copier ou déplacer les fichiers ci-dessous depuis <code>%{from}</code> vers le répertoire courant :'
         contents_of_directory: Contenu du répertoire %{path}
         copied_path: Chemin copié dans le presse-papiers !
         copy: Copier
-        create_directory_error: "Une erreur s'est produite lors de la création du nouveau répertoire : %{error}"
-        create_file_error: "Une erreur s'est produite lors de la création du nouveau fichier : %{error}"
-        delete_confirm_text: "Êtes-vous sûr de vouloir supprimer les fichiers : %{files}"
+        create_directory_error: 'Une erreur s''est produite lors de la création du nouveau répertoire : %{error}'
+        create_file_error: 'Une erreur s''est produite lors de la création du nouveau fichier : %{error}'
+        delete_confirm_text: 'Êtes-vous sûr de vouloir supprimer les fichiers : %{files}'
         delete_multiple_title: Supprimer %{count} fichiers sélectionnés ?
         delete_single_title: Supprimer %{name} ?
-        deleting_files: "Suppression des fichiers... : "
+        deleting_files: 'Suppression des fichiers... : '
         directory: répertoire
         directory_name_label: Nom du répertoire
-        download_error: "Erreur lors du téléchargement : %{error}"
+        download_error: 'Erreur lors du téléchargement : %{error}'
         duplicate_files_warning: Fichiers en double détectés. Le téléversement de ces fichiers écrasera le contenu existant.
         file: fichier
         filename_invalid_chars: Le nom de fichier ne peut pas contenir / ou ..
@@ -534,7 +557,7 @@ fr-CA:
         new_file_title: Nouveau fichier
         path_label: Chemin
         poll_status_error: L'opération n'a peut-être pas abouti. Impossible de récupérer l'état de l'opération sur les fichiers.
-        preparing_download_dir: "préparation du téléchargement du répertoire : %{name}"
+        preparing_download_dir: 'préparation du téléchargement du répertoire : %{name}'
         provide_absolute_pathname: Fournissez un chemin absolu
         provide_directory_name: Fournissez un nom de répertoire sans caractère /
         provide_non_empty_filename: Fournissez un nom de fichier non vide.
@@ -555,7 +578,7 @@ fr-CA:
         summary_remove_files: supprimer les fichiers
         summary_rename_file: renommer le fichier
         token_missing_expired: Le jeton d'application est manquant ou expiré. Veuillez recommencer
-        transfer_error: "Une erreur s'est produite lors de la tentative de %{summary} : %{error}"
+        transfer_error: 'Une erreur s''est produite lors de la tentative de %{summary} : %{error}'
         upload_and_overwrite: Téléverser et écraser
         upload_count:
           one: Téléverser %{count} fichier
@@ -563,8 +586,8 @@ fr-CA:
         upload_new_files: Téléverser les nouveaux fichiers
         uppy_empty_dir_note: Les répertoires vides ne seront inclus dans le téléversement que lorsqu'un téléversement de répertoire est lancé par glisser-déposer, car l'API File and Directory Entries n'est disponible que lors d'un événement de dépôt.
       icon_picker:
-        icon_selected: "icône %{icon} sélectionnée"
-        icon_sr: "icône %{name}"
+        icon_selected: icône %{icon} sélectionnée
+        icon_sr: icône %{name}
       launcher_edit:
         account_help: Le compte avec lequel la tâche sera soumise.
         account_label: Compte
@@ -572,7 +595,7 @@ fr-CA:
         cores_help: Le nombre de cœurs sur lesquels la tâche s'exécutera.
         cores_label: Cœurs
         env_var_help: Ajouter une variable d'environnement.
-        env_var_key: "Variable d'environnement : %{name}"
+        env_var_key: 'Variable d''environnement : %{name}'
         env_var_label: Variable d'environnement
         hours_help: La durée maximale d'exécution de la tâche.
         hours_label: Heures
@@ -592,14 +615,14 @@ fr-CA:
           one: Affichage de %{count} résultat
           other: Affichage de %{count} résultats
       nsf_access:
-        affected_resources: "Ressources touchées : %{resources}"
+        affected_resources: 'Ressources touchées : %{resources}'
         read_more: Lire la suite
         register_event: S'inscrire à cet événement
       path_selector:
         directory_loaded: Répertoire chargé avec %{count} éléments
         invalid_regex: L'expression régulière fournie pour ce sélecteur de chemin n'a pas pu être compilée
         loading_directory: Chargement du contenu du répertoire
-        permission_denied_prefix: "Permission refusée : "
+        permission_denied_prefix: 'Permission refusée : '
       popovers:
         ihpc_content: Une session HPC interactive vous donne un accès dédié à un ou plusieurs nœuds de la grappe. Elle ressemble à une session par lots interactive avec un bureau accessible sur le nœud principal. Utilisez-la pour les tâches exigeantes comme les calculs de longue durée ou lorsque vous avez besoin de ressources dédiées.
         vdi_content: Une interface VDI (bureau virtuel) vous donne un accès graphique à un nœud partagé. Il s'agit de l'équivalent graphique d'un nœud de connexion. Utilisez-la pour les tâches légères comme consulter des fichiers, soumettre des tâches et effectuer des visualisations.
@@ -611,10 +634,10 @@ fr-CA:
       support_ticket:
         delete_attachment: Supprimer la pièce jointe
         no_file_selected: Aucun fichier sélectionné
-        selected_file: "Fichier sélectionné : %{name} (%{size})."
-        size_bytes: "%{size} octets"
-        size_kb: "%{size} Ko"
-        size_mb: "%{size} Mo"
+        selected_file: 'Fichier sélectionné : %{name} (%{size}).'
+        size_bytes: '%{size} octets'
+        size_kb: '%{size} Ko'
+        size_mb: '%{size} Mo'
       turbo_shim:
         unauthenticated: Cette page ne peut pas être mise à jour car votre session a expiré. Veuillez actualiser la page pour vous reconnecter.
         unexpected_error: Une erreur inattendue s'est produite sur cette page. Veuillez actualiser la page.
@@ -627,7 +650,7 @@ fr-CA:
         bidirectional_not_allowed: Les connexions bidirectionnelles ne sont pas autorisées.
         cyclic_dependency: L'ajout de cette connexion créera une dépendance cyclique entre les lanceurs.
         edge_aria_label: Connexion de %{from} vers %{to}
-        launcher_aria_label: "Lanceur : %{title}"
+        launcher_aria_label: 'Lanceur : %{title}'
         launcher_exists: Ce lanceur existe déjà, veuillez en sélectionner un autre
         load_launcher_failed: Échec du chargement du HTML du lanceur. Veuillez réessayer.
         no_empty_cells: Aucune cellule vide disponible dans la grille !
@@ -638,27 +661,27 @@ fr-CA:
         column_date: Date
         column_id: ID
         column_name: Nom
-        date_range: "%{from} au %{to}"
-        efficiency_report: "Rapport d'efficacité — %{unit}"
+        date_range: '%{from} au %{to}'
+        efficiency_report: Rapport d'efficacité — %{unit}
         ensure_logged_in_html: '%{error} Veuillez vous assurer d''être <a href="%{url}">d''abord connecté à Open XDMoD</a>, puis réessayez.'
         expand_analytics_title: Cliquez pour afficher les données analytiques de la tâche %{id} au-dessus de ce tableau.
         fetch_user_failed: La récupération des renseignements sur l'utilisateur actuel auprès d'Open XDMoD a échoué
-        idp_redirect_failed: "Échec de connexion : la redirection IDP a échoué"
+        idp_redirect_failed: 'Échec de connexion : la redirection IDP a échoué'
         iframe_error: L'iFrame de connexion XDMoD à l'URL %{url} a envoyé un message d'erreur avec l'information %{info}
-        inefficient_of_total_html: '<span class="text-danger">%{bad} %{unit} inefficaces </span> &frasl; %{total} %{unit} au total'
+        inefficient_of_total_html: <span class="text-danger">%{bad} %{unit} inefficaces </span> &frasl; %{total} %{unit} au total
         invalid_job_data: Les données de tâche renvoyées par la requête ne sont pas valides.
         loading_caps: CHARGEMENT...
-        login_page_load_failed: "Échec de connexion : impossible de charger la page de connexion XDMoD"
-        login_timeout: "Échec de connexion : délai d'attente dépassé lors de la connexion"
+        login_page_load_failed: 'Échec de connexion : impossible de charger la page de connexion XDMoD'
+        login_timeout: 'Échec de connexion : délai d''attente dépassé lors de la connexion'
         metric_cpu: CPU
         metric_mem: Mémoire
         metric_walltime: Temps réel
         no_data: Aucune donnée disponible.
         not_available: S/O
         open_xdmod: Ouvrir XDMoD
-        percent_efficient: "%{percent} % efficace"
+        percent_efficient: '%{percent} % efficace'
         percent_efficient_aria: pourcentage d'efficacité
-        percent_inefficient: "%{percent} % inefficace"
+        percent_inefficient: '%{percent} % inefficace'
         percent_inefficient_aria: pourcentage d'inefficacité
         recently_completed_jobs: Tâches récemment terminées
         unit_core_hours: heures-cœurs
@@ -726,8 +749,9 @@ fr-CA:
     output_location: 'Emplacement de sortie :'
     owner: Propriétaire
     page_actions_aria: Actions de la page
-    page_title: "%{page} - %{site}"
-    page_title_with_dir: "%{page} - %{site} - %{dir}"
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Paramètres
     path_selector_breadcrumb_aria: Fil d'Ariane — %{title}
     path_selector_caption: Choisissez un fichier ou un répertoire à utiliser dans le formulaire.
     path_selector_default_popup_title: Sélectionnez votre répertoire de travail
@@ -767,18 +791,20 @@ fr-CA:
     queue: File d'attente
     quota_additional_message: Envisagez de supprimer ou d’archiver des fichiers pour libérer de l’espace disque.
     quota_block: Utilisation de %{used} sur quota %{available}
-    quota_block_shared: "(%{used_exclusive} vous appartiennent)"
+    quota_block_shared: (%{used_exclusive} vous appartiennent)
     quota_file: Utilisation de %{used} fichiers sur quota %{available} fichiers
-    quota_file_shared: "(%{used_exclusive} fichiers sont à vous)"
-    quota_message: "%{quota}. %{additional_message}"
+    quota_file_shared: (%{used_exclusive} fichiers sont à vous)
+    quota_message: '%{quota}. %{additional_message}'
     quota_reload_message: Rechargez la page pour voir la quota mise à jour. Les quotas sont mis à jour toutes les 5 minutes.
     quota_warning_prefix_html: Avertissement de limite de quota pour
     recently_used_apps_title: Applications récemment utilisées
     remove: Retirer
     reset: Réinitialiser
-    restart_msg_html: |
-      Votre appartenance au groupe a changé, ce qui affecte votre accès aux applications. Votre tableau de bord devrait redémarrer automatiquement.
+    restart_msg_html: 'Votre appartenance au groupe a changé, ce qui affecte votre accès aux applications. Votre tableau de bord devrait redémarrer automatiquement.
+
       Si ce n’est pas le cas, cliquez ici : <a href="%{restart_url}">redémarrer le serveur web</a>.
+
+      '
     restore: Restaurer
     root: Racine
     save: Enregistrer
@@ -786,7 +812,9 @@ fr-CA:
     select: Sélectionner
     select_all: Tout sélectionner
     select_path: Sélectionner le chemin
-    select_path_for: "%{element} chemin de sélection\n"
+    select_path_for: '%{element} chemin de sélection
+
+      '
     settings_csrf_expired: Le jeton de sécurité de votre session a expiré. Veuillez réessayer votre action.
     settings_invalid_request: Paramètres soumis invalides
     settings_unprocessable_body_html: Votre session a peut-être expiré ou la modification demandée a été refusée. Veuillez <a href="%{dashboard_url}">retourner au tableau de bord</a> et réessayer.
@@ -795,16 +823,25 @@ fr-CA:
     shared_apps_caption: Partagé par %{owner_title} (%{owner})
     shared_apps_caption_short: Partagé par %{owner}
     shared_apps_title: Applications partagées
-    sharing_catalog_msg_html: "<br>Un sous-ensemble des applications disponibles peut être consulté sur le %{catalog_link_tag}.\n"
+    sharing_catalog_msg_html: '<br>Un sous-ensemble des applications disponibles peut être consulté sur le %{catalog_link_tag}.
+
+      '
     sharing_catalog_title: Catalogue d’applications
-    sharing_no_shared_apps_html: "<strong>Aucune application personnalisée partagée disponible.</strong>\n"
-    sharing_support_msg_html: |
-      Si vous ne voyez pas l’application recherchée, veuillez
+    sharing_no_shared_apps_html: '<strong>Aucune application personnalisée partagée disponible.</strong>
+
+      '
+    sharing_support_msg_html: 'Si vous ne voyez pas l’application recherchée, veuillez
+
       <a href="%{support_url}">contacter le support</a>.
-    sharing_welcome_msg_html: |
-      Les applications d’accès aux clusters sont disponibles via les menus déroulants dans la barre de navigation ci-dessus.
+
+      '
+    sharing_welcome_msg_html: 'Les applications d’accès aux clusters sont disponibles via les menus déroulants dans la barre de navigation ci-dessus.
+
       <br>Les applications partagées personnalisées sont disponibles ci-dessous.
-    shell_app_title: "%{cluster_title} Accès Shell"
+
+      '
+    shell: Coquille
+    shell_app_title: '%{cluster_title} Accès Shell'
     show: Afficher
     size: Taille
     skip_navigation: Ignorer la navigation
@@ -815,9 +852,9 @@ fr-CA:
       cores: Cœurs
       email_on_started: Je souhaite recevoir un courriel lorsque la session démarre
       environment_variable: Variable d'environnement
-      environment_variable_key: "Variable d'environnement : %{key}"
+      environment_variable_key: 'Variable d''environnement : %{key}'
       job_name: Nom de la tâche
-      module_version: "Version de %{module}"
+      module_version: Version de %{module}
       num_cpus_single_node: Nombre de processeurs sur un seul nœud
       num_hours: Nombre d'heures
       num_nodes: Nombre de nœuds
@@ -826,7 +863,7 @@ fr-CA:
       qos: QoS
       queue: File d'attente
       script: Script
-      vnc_idle_help: "Quitter si ce nombre de secondes s'écoule sans connexion au visualiseur VNC"
+      vnc_idle_help: Quitter si ce nombre de secondes s'écoule sans connexion au visualiseur VNC
       vnc_idle_label: Délai d'inactivité
       vnc_resolution_help: La résolution est uniquement utilisée par les connexions VNC natives
       vnc_resolution_label: Résolution
@@ -842,6 +879,7 @@ fr-CA:
     status_suspend: Suspendue
     status_suspended: Suspendue
     status_undetermined: Indéterminé
+    stop: Arrêt
     submit: Soumettre
     submit_args: 'Soumettre les arguments :'
     support_ticket:
@@ -862,6 +900,7 @@ fr-CA:
       servicenow:
         attachments_failure: 'Ticket de support créé dans ServiceNow. Numéro : %{number}. Mais impossible d''ajouter les pièces jointes.'
         creation_success: 'Ticket de support créé dans ServiceNow. Numéro : %{number}'
+      submit: Soumettre un ticket d'assistance
       title: Billet de soutien
       validation:
         attachments_items: 'Les %{id} sont invalides. %{items} ajoutés, nombre maximal de pièces jointes : %{max}'
@@ -908,18 +947,18 @@ fr-CA:
         dashboardWindowTitle: Fenêtre de téléversement de fichiers (Appuyez sur Échap pour fermer)
         done: Terminé
         dropHint: Déposez vos fichiers ici
-        dropPasteBoth: 'Déposez vos fichiers ici, %{browseFiles} ou %{browseFolders}'
-        dropPasteFiles: 'Déposez vos fichiers ici ou %{browseFiles}'
-        dropPasteFolders: 'Déposez vos fichiers ici ou %{browseFolders}'
+        dropPasteBoth: Déposez vos fichiers ici, %{browseFiles} ou %{browseFolders}
+        dropPasteFiles: Déposez vos fichiers ici ou %{browseFiles}
+        dropPasteFolders: Déposez vos fichiers ici ou %{browseFolders}
         editFile: Modifier le fichier
-        editing: 'Modification de %{file}'
+        editing: Modification de %{file}
         emptyFolderAdded: Aucun fichier n'a été ajouté depuis le dossier vide
         error: Erreur
         exceedsSize: '%{file} dépasse la taille maximale permise de %{size}'
-        failedToUpload: 'Échec du téléversement de %{file}'
-        folderAlreadyAdded: 'Le dossier « %{folder} » a déjà été ajouté'
+        failedToUpload: Échec du téléversement de %{file}
+        folderAlreadyAdded: Le dossier « %{folder} » a déjà été ajouté
         myDevice: Mon appareil
-        noDuplicates: "Impossible d'ajouter le fichier en double « %{fileName} », il existe déjà"
+        noDuplicates: Impossible d'ajouter le fichier en double « %{fileName} », il existe déjà
         pause: Pause
         pauseUpload: Mettre le téléversement en pause
         paused: En pause
@@ -940,6 +979,8 @@ fr-CA:
     user: Utilisateur
     user_configuration:
       support_ticket_error: support_ticket est mal configuré. Les sections « email » ou « rt_api » sont requises dans le YAML de configuration.
-    welcome_html: |
-      %{logo_img_tag}
-      <p class="lead">OnDemand offre un point d'accès intégré et unique à toutes vos ressources HPC.</p>
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand offre un point d''accès intégré et unique à toutes vos ressources HPC.</p>
+
+      '

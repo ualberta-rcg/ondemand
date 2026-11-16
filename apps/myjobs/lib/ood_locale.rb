@@ -93,18 +93,40 @@ module OodLocale
 
   def supported_locales
     allowed = jobcomposer_locales
-    configured = Array(::Configuration.supported_locales).filter_map do |entry|
+    raw_cfg = Array(::Configuration.supported_locales)
+    if raw_cfg.any? { |entry| %w[regional all_regional].include?(entry.to_s.strip.downcase) }
+      regional = allowed.select { |loc| to_bcp47(loc).include?('-') && !loc.to_s.casecmp('en').zero? }
+      return regional unless regional.empty?
+    end
+
+    configured = raw_cfg.filter_map do |entry|
       normalize(entry, allowed: allowed)
     end.uniq
 
     configured.empty? ? allowed : configured
   end
 
+  def match_supported(raw, supported:)
+    exact = normalize(raw, allowed: supported)
+    return exact if exact
+
+    cleaned = raw.to_s.strip
+    return nil if cleaned.empty?
+
+    stem = File.basename(cleaned, '.*')
+    return nil if stem.empty?
+
+    primary = stem.tr('_', '-').downcase.split('-').first
+    return nil if primary.nil? || primary.empty?
+
+    Array(supported).find { |loc| loc.to_s.tr('_', '-').downcase.split('-').first == primary }&.to_sym
+  end
+
   def resolve(user_locale: nil, cookie_locale: nil, accept_language: nil)
     supported = supported_locales
 
-    candidate = normalize(user_locale, allowed: supported)
-    candidate ||= normalize(cookie_locale, allowed: supported)
+    candidate = match_supported(user_locale, supported: supported)
+    candidate ||= match_supported(cookie_locale, supported: supported)
     candidate ||= negotiate_accept_language(accept_language, supported: supported) if supported.size > 1
     candidate || default_locale(allowed: jobcomposer_locales)
   end

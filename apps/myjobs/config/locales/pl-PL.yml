@@ -1,0 +1,133 @@
+---
+pl-PL:
+  jobcomposer:
+    account_label: 'Konto:'
+    back: Z powrotem
+    cancel: Anulować
+    close: Zamknąć
+    cluster_label: 'Grupa:'
+    confirm_delete: Jesteś pewien?
+    confirm_delete_template: Czy na pewno chcesz to usunąć?
+    copy_template: Kopiuj szablon
+    create_from_path_title: Utwórz nowe zadanie ze ścieżki
+    create_new_heading_html: Utwórz nowy „<span class="wrap-line" id="script-name-label">%{name}</span>”
+    create_new_job: Utwórz nowe zadanie
+    create_template: Utwórz szablon
+    create_template_from_job_title: Utwórz szablon z wybranego zadania
+    delete: Usuwać
+    delete_job_title: Usuń zadanie
+    deprecation_warning_html: Narzędzie Job Composer jest przestarzałe i zostanie usunięte w Open OnDemand 5.0. Prosimy o przeniesienie zadań i szablonów do <a href="%{projects_path}">Project Manager</a>.
+    edit: Redagować
+    edit_files: Edytuj pliki
+    folder_contents_label: 'Zawartość folderu:'
+    from_default_template: Z domyślnego szablonu
+    from_default_template_title: Utwórz nowe zadanie z domyślnego szablonu
+    from_selected_job: Z wybranej pracy
+    from_selected_job_title: Skopiuj wybrane zadanie
+    from_specified_path: Ze wskazanej ścieżki
+    from_template: Z szablonu
+    from_template_title: Utwórz nowe zadanie na podstawie wybranego szablonu
+    invalid_cluster_html: Klaster jest nieprawidłowy! Edytuj <a href="#" id="edit-job-options-script-link">Opcje zadania</a>, aby wybrać prawidłowy klaster.
+    invalid_script_html: Skrypt jest nieprawidłowy! Edytuj <a href="#" id="edit-job-options-link">Opcje zadania</a>, aby wybrać prawidłowy skrypt.
+    job_already_submitted: Oferta pracy została już wysłana.
+    job_array_request_label: 'Żądanie tablicy zadań:'
+    job_attributes_heading_html: Atrybuty stanowiska <strong>(opcjonalnie)</strong>
+    job_copied: Zadanie zostało pomyślnie skopiowane.
+    job_copy_failed: 'Nie udało się skopiować zadania: %{errors}'
+    job_created: Zadanie zostało pomyślnie utworzone.
+    job_destroy_failed: 'Nie udało się zniszczyć zadania: %{errors}'
+    job_destroyed: Hiob został pomyślnie zniszczony.
+    job_details: Szczegóły pracy
+    job_directory_missing: Brak katalogu ofert pracy!
+    job_name_label: 'Nazwa stanowiska:'
+    job_not_submitted: Zadanie nie zostało przesłane.
+    job_stop_failed: 'Nie udało się zatrzymać zadania: %{errors}'
+    job_stopped: Zadanie zostało pomyślnie zatrzymane.
+    job_submit_failed: 'Nie udało się przesłać zadania wsadowego:'
+    job_submitted: Zadanie zostało pomyślnie przesłane.
+    job_updated: Zadanie zostało pomyślnie zaktualizowane.
+    loading: Załadunek
+    loading_job_info: Ładowanie informacji o zadaniu
+    nav_help: Pomoc
+    nav_jobs: Praca
+    nav_menu_aria: Menu kompozytora zadań
+    nav_templates: Szablony
+    new_job: Nowa praca
+    new_template: Nowy szablon
+    new_template_title: Utwórz nowy szablon
+    no_clusters_alert: Brak skonfigurowanych hostów umożliwiających przesyłanie zadań. Skontaktuj się z administratorem systemu.
+    open_dir: Otwórz katalog
+    open_dir_in_editor: Otwórz katalog w edytorze plików
+    open_dir_in_file_manager: Otwórz katalog w Menedżerze plików
+    open_dir_in_terminal: Otwórz katalog w terminalu
+    open_editor: Otwórz edytor
+    open_selected_job_in_terminal: Otwórz wybrane zadanie w terminalu
+    open_selected_template_in_terminal: Otwórz wybrany szablon w terminalu
+    open_template_dir_in_file_manager: Otwórz katalog szablonów w Menedżerze plików
+    open_terminal: Otwórz terminal
+    open_xdmod: Otwórz XDMoD
+    options_account_help: Konto to pole opcjonalne. Jeśli nie zostanie ustawione, konto może zostać automatycznie ustawione przez filtr przesyłania.
+    options_account_title: Konto
+    options_array_help: Tablice zadań są opcjonalne. np. 1-10
+    options_array_help_with_clusters: 'Tablice zadań są opcjonalne. OnDemand obecnie nie obsługuje tablic zadań dla klastrów: %{cluster_list}.
+
+      '
+    options_array_title: Specyfikacja tablicy zadań
+    options_cluster_title: Grupa
+    options_copy_environment: Kopiuj środowisko
+    options_errors: Proszę poprawić poniższe błędy.
+    options_name_title: Nazwa
+    options_script_help: Pliki większe niż 65 KB nie są uwzględniane w polu skryptu zadania
+    options_script_title: Określ skrypt zadania
+    options_title: Opcje pracy
+    other_valid_files: Inne prawidłowe pliki
+    page_title: Kompozytor zadań - %{site}
+    path_to_source_heading_html: Ścieżka do źródła <strong>(wymagane)</strong>
+    reset: Nastawić
+    reset_template_fields_title: Przywróć pola do domyślnych ustawień szablonu
+    save: Ratować
+    script_contents_label: 'Zawartość skryptu:'
+    script_location_label: 'Lokalizacja skryptu:'
+    script_name_form_label: 'Nazwa skryptu:'
+    script_name_label: 'Nazwa skryptu:'
+    select_cluster_prompt: Wybierz klaster...
+    select_template_option: -- wybierz szablon --
+    selected_template_details: Wybrane szczegóły szablonu
+    show: Pokazywać
+    show_batch_host_label: 'Host wsadowy:'
+    show_dir_contents_label: 'Zawartość katalogu:'
+    show_name_label: 'Nazwa:'
+    show_staged_dir_label: 'Reżyseria:'
+    showing_job_title: Pokazywanie pracy
+    skip_navigation: Pomiń nawigację
+    source_path_help: Wprowadź ścieżkę do katalogu w systemie plików. Zawartość tej ścieżki zostanie skopiowana do nowego przepływu pracy.
+    source_path_label: Ścieżka źródłowa
+    specify_job_host_and_script: Określ hosta zadania i skrypt
+    stop: Zatrzymywać się
+    stop_job_title: Zatrzymaj pracę
+    submit: Składać
+    submit_job_title: Prześlij ofertę pracy
+    submit_script_title: Prześlij skrypt
+    submit_to_label: 'Prześlij do:'
+    suggested_files: Sugerowane pliki
+    table_created: Stworzony
+    table_id: ID
+    table_source: Źródło
+    table_status: Status
+    template_create_error: błąd podczas tworzenia szablonu
+    template_error_name_unique: musi być unikalny.
+    template_error_path_directory: musi wskazywać na katalog.
+    template_error_path_missing: nie istnieje.
+    template_errors_heading:
+      one: 'Błąd %{count} uniemożliwił zapisanie tego szablonu:'
+      other: 'Błędy %{count} uniemożliwiły zapisanie tego szablonu:'
+    template_label: 'Szablon:'
+    template_location_label: 'Lokalizacja szablonu:'
+    template_path_blank_help: Jeśli pozostawisz to pole puste, do nowego szablonu zostanie dodany domyślny skrypt zadania.
+    template_path_label: Ścieżka (szablon zostanie utworzony poprzez skopiowanie plików z tej ścieżki źródłowej)
+    templates_subtitle: Aby utworzyć nowe zadanie, wybierz szablon, który chcesz skopiować, wypełnij formularz po prawej stronie i kliknij „Utwórz nowe zadanie”.
+    title: Kompozytor zadań
+    toggle_navigation: Przełącz nawigację
+    view_files: Wyświetl pliki
+    xdmod_url_warning_message: To zadanie może pojawić się w Open XDMoD dopiero po upływie 24 godzin od jego zakończenia.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400
