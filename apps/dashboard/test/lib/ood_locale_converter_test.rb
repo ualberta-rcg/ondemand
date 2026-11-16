@@ -130,4 +130,24 @@ class OodLocaleConverterTest < ActiveSupport::TestCase
     assert_equal 'Jack Into %{app_title}',
                  offline.convert_text('Connect to %{app_title}', target_locale: 'en-CP')
   end
+
+  test 'restores OODTOK placeholders even when MT strips underscores and avoids multi-digit index collisions' do
+    mangling_converter = OodLocaleConverter.new(
+      google_api_key: '',
+      translate_url:  '',
+      translator:     lambda do |text, _target, _source|
+        text.gsub('__OODTOK0__', 'OODTOK0')
+            .gsub('__OODTOK1__', 'OODTOK1__')
+            .gsub('__OODTOK10__', '_oodtok 10_')
+      end
+    )
+
+    tokens = (0..10).map { |i| "<span data-idx=\"#{i}\">" }.join(' ')
+    out = mangling_converter.convert_text("Hello #{tokens} world", target_locale: 'es-ES')
+
+    refute_match(/oodtok/i, out)
+    (0..10).each do |i|
+      assert_includes out, "<span data-idx=\"#{i}\">"
+    end
+  end
 end

@@ -246,15 +246,15 @@ sk-SK:
       bioinformatics: Bioinformatika
       clusters: Klastre
       data_science: Dátová veda
-      desktop: Počítačová počítača
-      desktops: Stolné počítače
+      desktop: Pracovná plocha
+      desktops: Pracovná plocha
       development: Vývoj
       external_apps: Externé aplikácie
       files: Súbory
       gateway_apps: Aplikácie brány
       guis: grafické používateľské rozhrania
       interactive_apps: Interaktívne aplikácie
-      jobs: Pracovné miesta
+      jobs: Úlohy
       machine_learning: Strojové učenie
       mathematics: Matematika
       servers: Servery
@@ -407,7 +407,7 @@ sk-SK:
     jobs_project_job_not_deleted: Úlohu nie je možné odstrániť %{job_id}
     jobs_project_job_stopped: Úloha %{job_id} bola úspešne zastavená
     jobs_project_list_aria: Zoznam projektov
-    jobs_project_manager: Projektový manažér
+    jobs_project_manager: Správca projektov
     jobs_project_manifest_updated: Manifest projektu aktualizovaný!
     jobs_project_name_placeholder: Názov projektu
     jobs_project_name_validation: Názov projektu môže obsahovať iba písmená, číslice, pomlčky, podčiarkovníky a medzery

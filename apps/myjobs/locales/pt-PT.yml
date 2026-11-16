@@ -1,5 +1,5 @@
 ---
 pt-PT:
   manifest:
-    name: Compositor de emprego
+    name: Compositor de tarefas
     description: O Job Composer permite a criação e o envio de trabalhos em batch.

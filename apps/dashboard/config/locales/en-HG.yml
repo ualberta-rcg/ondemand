@@ -85,16 +85,16 @@ en-HG:
     active_sessions_caption_html: <a href="%{all_sessions_url}"> view all (%{number_of_sessions})</a>
     active_sessions_title: Active improbability voyages
     add: Add
-    all_apps_table_app_column: Name
-    all_apps_table_category_column: Category
-    all_apps_table_sub_category_column: Sub Category
+    all_apps_table_app_column: Drive / Entry
+    all_apps_table_category_column: Galactic Category
+    all_apps_table_sub_category_column: Sub-Sector
     all_clusters: All Galactic Sectors
     announcements_dismissible_button: OK
     announcements_parse_error: Improbability Glitch parsing announcement.
     announcements_render_error: Could not render announcement '%{name}' because of error
     announcements_required_button: Accept
     apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
-    apps_system_apps_title: System Apps
+    apps_system_apps_title: Galactic Registry Drives
     auto_log_location_title: Log Location
     back: Retrace Hyperspace
     balance_additional_message: Consider requesting additional %{balanace_units}
@@ -159,37 +159,37 @@ en-HG:
       '
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit voyage with the following error:'
-    batch_connect_sessions_native_vnc_tab: Native Instructions
-    batch_connect_sessions_novnc_compression: Compression
+    batch_connect_sessions_native_vnc_tab: Sub-Etha VNC Coordinates
+    batch_connect_sessions_novnc_compression: Sub-Etha Compression
     batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Engage %{app_title}
-    batch_connect_sessions_novnc_quality: Image Quality
+    batch_connect_sessions_novnc_quality: Viewscreen Clarity
     batch_connect_sessions_novnc_quality_help: 0 (low) to 9 (high)
-    batch_connect_sessions_novnc_tab: noVNC Connection
-    batch_connect_sessions_novnc_view_only: View Only (Share-able Link)
+    batch_connect_sessions_novnc_tab: Bridge Viewscreen (noVNC)
+    batch_connect_sessions_novnc_view_only: Observe Only (Share-able Sub-Etha Link)
     batch_connect_sessions_path_selector_forbidden_error: You do not have permission to select that directory or file.
     batch_connect_sessions_relaunch_full_title: Relaunch %{title} Voyage
-    batch_connect_sessions_relaunch_title: Relaunch
+    batch_connect_sessions_relaunch_title: Re-Engage Drive
     batch_connect_sessions_staged_root: staged root directory
     batch_connect_sessions_stats_core_count:
       one: '%{count} core'
       other: '%{count} cores'
-    batch_connect_sessions_stats_created_at: 'Created at:'
-    batch_connect_sessions_stats_expected_time: 'Expected start:'
+    batch_connect_sessions_stats_created_at: 'Engaged at:'
+    batch_connect_sessions_stats_expected_time: 'Estimated Arrival:'
     batch_connect_sessions_stats_gpu_count:
       one: '%{count} GPU'
       other: '%{count} GPUs'
-    batch_connect_sessions_stats_host: 'Host:'
+    batch_connect_sessions_stats_host: 'Starship Node:'
     batch_connect_sessions_stats_node_count:
       one: '%{count} node'
       other: '%{count} nodes'
     batch_connect_sessions_stats_session_dir_link_title: Open voyage directory for %{session_id}
     batch_connect_sessions_stats_session_id: 'Voyage ID:'
-    batch_connect_sessions_stats_support_ticket: Problems with this voyage?
-    batch_connect_sessions_stats_support_ticket_link_text: Fire Sub-Etha distress flare
-    batch_connect_sessions_stats_time_remaining: 'Time Remaining:'
-    batch_connect_sessions_stats_time_requested: 'Time Requested:'
-    batch_connect_sessions_stats_time_used: 'Time Used:'
+    batch_connect_sessions_stats_support_ticket: Vogon Poetry or Glitches with this Voyage?
+    batch_connect_sessions_stats_support_ticket_link_text: Fire Sub-Etha Distress Flare
+    batch_connect_sessions_stats_time_remaining: 'Improbability Fuel Remaining:'
+    batch_connect_sessions_stats_time_requested: 'Voyage Duration Requested:'
+    batch_connect_sessions_stats_time_used: 'Voyage Time Elapsed:'
     batch_connect_sessions_stats_undetermined_host: Lost in Hyperspace
     batch_connect_sessions_status_bad: Your voyage has entered a bad state. Feel free to hail Sub-Etha support for further information.
     batch_connect_sessions_status_blurb_cancel_failure: Failed to cancel voyage.
@@ -197,7 +197,7 @@ en-HG:
     batch_connect_sessions_status_blurb_create_success: Voyage was successfully created.
     batch_connect_sessions_status_blurb_delete_failure: Failed to delete voyage.
     batch_connect_sessions_status_blurb_delete_success: Voyage was successfully deleted.
-    batch_connect_sessions_status_completed: For debugging purposes, this card will be retained for %{days} more days
+    batch_connect_sessions_status_completed: For Deep Thought diagnostics, this voyage log remains for %{days} more days
     batch_connect_sessions_status_missing_connection: 'This app is missing information required to establish a connection. Specifically,
 
       the view.html.erb file is missing. Please hail Sub-Etha support if you see this message.
@@ -240,16 +240,16 @@ en-HG:
     browser_warning: OnDemand requires a newer version of the browser you are using. Current browser requirements include IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
     cancel: Abort Trajectory
     categories:
-      apps: Apps
+      apps: Guide Drives
       bioinformatics: Pan-Galactic Biology
       clusters: Galactic Sectors
       data_science: Bistromathics
       desktop: Starship Bridge
-      desktops: Starship Bridges
+      desktops: Starship Bridge
       development: Magrathea Engineering
-      external_apps: External Apps
+      external_apps: External Sub-Etha Drives
       files: Guide Entries
-      gateway_apps: Gateway Apps
+      gateway_apps: Hyperspace Gateways
       guis: Holographic Visors
       interactive_apps: Improbability Drives
       jobs: Deep Thought Tasks
@@ -257,10 +257,10 @@ en-HG:
       mathematics: Infinite Improbability Math
       servers: Sub-Etha Relays
       utilities: Towel & Babel Kit
-      virtual_desktop_interface: Virtual Desktop Interface
+      virtual_desktop_interface: Starship Bridge Interface
       visualization: Total Perspective Vortex
     clear: Clear
-    close: Close
+    close: Dismiss
     close_alert: Close this alert.
     close_notice: Close this notice.
     cluster: Galactic Sector
@@ -270,7 +270,7 @@ en-HG:
     custom_pages:
       invalid: 'Invalid page code: %{page}. This page has not been configured'
     date: Date
-    delete: Vogon-Demolish
+    delete: Jettison
     detailed_metrics: Detailed Metrics
     details: Details
     development_apps_caption: Sandbox App
@@ -279,7 +279,7 @@ en-HG:
     development_edit_title: Edit %{title}
     development_launch_title: Engage %{title}
     directory: Directory
-    edit: Edit
+    edit: Recalibrate
     editor_default: Default
     editor_font_size: Font Size
     editor_key_bindings: Key Bindings
@@ -297,10 +297,10 @@ en-HG:
     file_editor: Guide Entry Editor
     file_quotas: File Quotas
     files: Guide Entries
-    files_change_directory: Change directory
+    files_change_directory: Jump to Sector Path
     files_contents_of_directory: Contents of directory %{path}
-    files_copy_move: Copy/Move
-    files_copy_path: Copy path
+    files_copy_move: Teleport / Clone
+    files_copy_path: Copy Sector Coordinates
     files_directory_contents_aria: Directory contents
     files_directory_download_error_modal_title: Directory too large to download
     files_directory_download_unauthorized: You can only download a file or directory that you have read and execute access to
@@ -309,37 +309,37 @@ en-HG:
     files_directory_size_unknown: 'Improbability Glitch with status %{exit_code} when trying to determine directory size: %{error}'
     files_directory_too_large: The directory is too large to download as a zip. The directory should be less than %{download_directory_size_limit} bytes.
     files_doesnt_exist: '%{path} does not exist.'
-    files_download: Download
+    files_download: Beam Down
     files_download_not_enabled: Downloading files is not enabled on this server.
-    files_download_zip: Download as zip
+    files_download_zip: Beam Down Archive (.zip)
     files_exceeds_editor_limit: '%{path} exceeds editor limit of %{limit}. Please download the file to edit or view it locally.'
     files_file_too_large: The file is too large to download. File downloads should be less than %{download_file_size_limit} bytes.
-    files_go_up_directory: Go up directory
+    files_go_up_directory: Ascend Sector
     files_modified_at: Modified at
     files_modify_aria: Modify files
-    files_new_directory: New Directory
-    files_new_file: New File
+    files_new_directory: New Stowage Bay
+    files_new_file: Inscribe New Scroll
     files_not_editable: '%{path} is not an editable file'
     files_not_readable: You do not have sufficient permissions to read '%{path}'.
-    files_open_in_files_app: Open in files app
+    files_open_in_files_app: Open in Hitchhiker's Archive
     files_open_in_globus: Open in Globus
     files_path_breadcrumbs_aria: Path breadcrumbs
-    files_refresh: Refresh
+    files_refresh: Rescan Sub-Etha
     files_remote_dir_not_created: Did not create directory %{path}
     files_remote_disabled: Remote file support is not enabled
     files_remote_empty_dir_unsupported: Remote does not support empty directories
     files_remote_error_listing_remotes: 'Improbability Glitch listing Rclone remotes: %{error}'
     files_send_to_target_title_default: Send selected files metadata to the external application
-    files_shell: Open in Terminal
+    files_shell: Open Sub-Etha Console
     files_shell_dropdown: Select Galactic Sector to Open in Terminal
-    files_title: File browsing
-    files_upload: Upload
+    files_title: Hitchhiker's Archive
+    files_upload: Beam Up Files
     footer_contribute: Contribute on GitHub
     footer_license: Software License Notice
     footer_open_source: Open source software.
     footer_powered_by: Powered by Open OnDemand
     footer_version: 'OnDemand version: %{version}'
-    home_directory: Home Directory
+    home_directory: Towel Locker (Home)
     id: ID
     import: Import
     job: Computation
@@ -732,29 +732,29 @@ en-HG:
 
       '
     motd_erb_render_error: 'MOTD was not parsed or rendered correctly: %{error_message}'
-    motd_no_messages: There are no new messages.
-    motd_title: Message of the Day
+    motd_no_messages: No Vogon fleet bulletins in your sector.
+    motd_title: Sub-Etha Bulletin (Don't Panic!)
     name: Name
     nav_all_apps: Complete Guide Index
-    nav_develop_docs: Developer Documentation
-    nav_develop_my_sandbox_apps_dev: My Sandbox Apps (Development)
-    nav_develop_my_sandbox_apps_prod: My Shared Apps (Production)
-    nav_develop_title: Develop
-    nav_help_change_password: Change HPC Password
+    nav_develop_docs: Magrathea Guidebook
+    nav_develop_my_sandbox_apps_dev: My Prototype Drives (Sandbox)
+    nav_develop_my_sandbox_apps_prod: My Galactic Drives (Shared)
+    nav_develop_title: Magrathea Lab
+    nav_help_change_password: Rotate Babel Passphrase
     nav_help_custom: Nav help custom
-    nav_help_docs: Online Documentation
-    nav_help_support: Contact Support
+    nav_help_docs: The Hitchhiker's Guide (Docs)
+    nav_help_support: Sub-Etha Distress Desk
     nav_help_support_ticket: Fire Sub-Etha Distress Flare
     nav_help_title: Don't Panic!
-    nav_help_two_factor: Configure Two-Factor Authentication
+    nav_help_two_factor: Two-Headed Zaphod Auth
     nav_language: Babel Fish Dialect
     nav_limit_caption: showing %{subset_count} of %{total_count}
     nav_logout: So Long & Thanks for All the Fish
-    nav_main_menu: Main Menu
-    nav_restart_server: Restart Web Server
+    nav_main_menu: Guide Navigation
+    nav_restart_server: Reboot Improbability Core
     nav_sessions: Active Improbability Voyages
-    nav_toggle_navigation: Toggle navigation
-    nav_user: Logged in as %{username}
+    nav_toggle_navigation: Toggle Sub-Etha Nav
+    nav_user: Hitchhiking as %{username}
     network_report: Network Report + %{node}
     node: Node
     none: None
@@ -779,8 +779,8 @@ en-HG:
     permissions_destroyed: Permission was successfully destroyed.
     permissions_group_title: Group Permissions
     permissions_user_title: User Permissions
-    pinned_apps_caption_html: A featured subset of <a href="%{all_apps_url}">all available apps</a>
-    pinned_apps_category: Apps
+    pinned_apps_caption_html: A Towel-Ready subset of <a href="%{all_apps_url}">all Galactic Guide drives</a>
+    pinned_apps_category: Guide Apps
     pinned_apps_title: Essential Towels & Drives
     products_created: Product was successfully created.
     products_git_commit_hint_html: Please commit any changes or add necessary files to <code>.gitignore</code>
@@ -825,7 +825,7 @@ en-HG:
       '
     restore: Restore
     root: Root
-    save: Inscribe in Guide
+    save: Inscribe (42)
     saved_settings_title: Saved Settings
     select: Select
     select_all: Select All
@@ -932,7 +932,7 @@ en-HG:
       validation_error: Invalid Request. Please review the error messages below
     support_ticket_add_attachment: Add attachment
     support_ticket_attachments_help: Click the box to attach a file. Screenshots or other files can help troubleshoot your problem.
-    system_apps_caption: System Installed App
+    system_apps_caption: Galactic Registry Drive
     system_status_available: '%{name} Available: %{count}'
     system_status_cluster_title: '%{title} Galactic Sector Status'
     system_status_gpus: GPUs
@@ -999,6 +999,6 @@ en-HG:
       support_ticket_error: support_ticket is misconfigured. Please add a backend implementation in the configuration YAML.
     welcome_html: '%{logo_img_tag}
 
-      <p class="lead">OnDemand provides an integrated, single access point for all of your HPC resources.</p>
+      <p class="lead">Don''t Panic! This Improbability Gateway links all of your Galactic HPC sectors in one towel-friendly console.</p>
 
       '

@@ -10,7 +10,7 @@ sl-SI:
   dashboard:
     account: Račun
     actions: Dejanja
-    active_jobs: Aktivna delovna mesta
+    active_jobs: Aktivna opravila
     active_jobs_close_details: Zapri razširjeno ploščo s podrobnostmi.
     active_jobs_detail:
       account: Račun
@@ -246,15 +246,15 @@ sl-SI:
       bioinformatics: Bioinformatika
       clusters: Grozdi
       data_science: Znanost o podatkih
-      desktop: Namizni računalnik
-      desktops: Namizni računalniki
+      desktop: Namizje
+      desktops: Namizje
       development: Razvoj
       external_apps: Zunanje aplikacije
       files: Datoteke
       gateway_apps: Aplikacije za prehod
       guis: Grafični uporabniški vmesniki
       interactive_apps: Interaktivne aplikacije
-      jobs: Zaposlitve
+      jobs: Opravila
       machine_learning: Strojno učenje
       mathematics: Matematika
       servers: Strežniki
@@ -407,7 +407,7 @@ sl-SI:
     jobs_project_job_not_deleted: Naloga %{job_id} ni mogoče izbrisati
     jobs_project_job_stopped: Uspešno zaustavljeno opravilo %{job_id}
     jobs_project_list_aria: Seznam projektov
-    jobs_project_manager: Vodja projekta
+    jobs_project_manager: Upravitelj projektov
     jobs_project_manifest_updated: Projektni manifest posodobljen!
     jobs_project_name_placeholder: Ime projekta
     jobs_project_name_validation: Ime projekta lahko vsebuje samo črke, številke, pomišljaje, podčrte in presledke

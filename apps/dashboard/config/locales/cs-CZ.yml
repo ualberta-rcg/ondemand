@@ -238,7 +238,7 @@ cs-CZ:
       title: Uložená nastavení
     breadcrumb_aria: Drobečková navigace
     breadcrumbs_all_apps: Všechny aplikace
-    breadcrumbs_home: Domov
+    breadcrumbs_home: Domů
     breadcrumbs_my_sessions: Moje interaktivní sezení
     breadcrumbs_support_ticket: Tiket podpory
     browser_warning: OnDemand vyžaduje novější verzi prohlížeče, který používáte. Aktuální požadavky na prohlížeče zahrnují IE Edge, Firefox 19+, Chrome 34+ a Safari 8+.
@@ -248,15 +248,15 @@ cs-CZ:
       bioinformatics: Bioinformatika
       clusters: Klastry
       data_science: Datová věda
-      desktop: Počítač
-      desktops: Stolní počítače
+      desktop: Pracovní plocha
+      desktops: Pracovní plocha
       development: Rozvoj
       external_apps: Externí aplikace
       files: Soubory
       gateway_apps: Aplikace brány
       guis: grafické uživatelské rozhraní
       interactive_apps: Interaktivní aplikace
-      jobs: Pracovní místa
+      jobs: Úlohy
       machine_learning: Strojové učení
       mathematics: Matematika
       servers: Servery
@@ -409,7 +409,7 @@ cs-CZ:
     jobs_project_job_not_deleted: Nelze smazat úlohu %{job_id}
     jobs_project_job_stopped: Úspěšně zastavena úloha %{job_id}
     jobs_project_list_aria: Seznam projektů
-    jobs_project_manager: Projektový manažer
+    jobs_project_manager: Správce projektů
     jobs_project_manifest_updated: Manifest projektu aktualizován!
     jobs_project_name_placeholder: Název projektu
     jobs_project_name_validation: Název projektu může obsahovat pouze písmena, číslice, pomlčky, podtržítka a mezery.

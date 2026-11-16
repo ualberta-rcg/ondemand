@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="<%= OodLocale.to_bcp47(I18n.locale) %>">
 <head>
-  <title><%= content_for?(:title) ? yield(:title) : "Dashboard - #{@user_configuration.dashboard_title}" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : t('dashboard.page_title', page: t('dashboard.breadcrumbs_home'), site: @user_configuration.dashboard_title) %></title>
   <%= favicon %>
 
   <%= render partial: 'layouts/i18n' %>

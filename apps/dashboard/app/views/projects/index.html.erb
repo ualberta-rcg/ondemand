@@ -1,3 +1,4 @@
+<% content_for :title, t('dashboard.page_title', page: t('dashboard.jobs_project_manager'), site: @user_configuration.dashboard_title) %>
 <%= javascript_include_tag('projects_index', nonce: true, type: 'module') %>
 
 <div class='page-header text-center'>

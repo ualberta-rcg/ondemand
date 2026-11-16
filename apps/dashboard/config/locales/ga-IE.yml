@@ -10,7 +10,7 @@ ga-IE:
   dashboard:
     account: Cuntas
     actions: Gníomhartha
-    active_jobs: Poist Ghníomhacha
+    active_jobs: Jabanna Gníomhacha
     active_jobs_close_details: Dún an painéal sonraí leathnaithe.
     active_jobs_detail:
       account: Cuntas
@@ -219,14 +219,14 @@ ga-IE:
       clusters: Braislí
       data_science: Eolaíocht Sonraí
       desktop: Deasc
-      desktops: Deasca
+      desktops: Deasc
       development: Forbairt
       external_apps: Aipeanna Seachtracha
       files: Comhaid
       gateway_apps: Aipeanna Geata
       guis: Comhéadain Ghréasáin
-      interactive_apps: Aipeanna Idirghníomhacha
-      jobs: Poist
+      interactive_apps: Feidhmchláir Idirghníomhacha
+      jobs: Jabanna
       machine_learning: Foghlaim Meaisín
       mathematics: Matamaitic
       servers: Freastalaithe
@@ -379,7 +379,7 @@ ga-IE:
     jobs_project_job_not_deleted: Ní féidir an post %{job_id} a scriosadh
     jobs_project_job_stopped: Cuireadh stop leis an bpost go rathúil %{job_id}
     jobs_project_list_aria: Liosta tionscadal
-    jobs_project_manager: Bainisteoir Tionscadail
+    jobs_project_manager: Bainisteoir Tionscadal
     jobs_project_manifest_updated: Manuscript tionscadail nuashonraithe!
     jobs_project_name_placeholder: Ainm an tionscadail
     jobs_project_name_validation: Ní fhéadfaidh ach litreacha, digití, fleascáin, fo-línte agus spásanna a bheith in ainm an tionscadail

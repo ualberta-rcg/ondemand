@@ -10,7 +10,7 @@ bg-BG:
   dashboard:
     account: Профил
     actions: Действия
-    active_jobs: Активни работни места
+    active_jobs: Активни задачи
     active_jobs_close_details: Затвори панела с разширени подробности.
     active_jobs_detail:
       account: Профил
@@ -242,7 +242,7 @@ bg-BG:
       title: Запазени настройки
     breadcrumb_aria: Навигационна троха
     breadcrumbs_all_apps: Всички приложения
-    breadcrumbs_home: Дом
+    breadcrumbs_home: Начало
     breadcrumbs_my_sessions: Моите интерактивни сесии
     breadcrumbs_support_ticket: Заявка за поддръжка
     browser_warning: OnDemand изисква по-нова версия на браузъра, който използвате. Текущите изисквания за браузъра включват IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
@@ -252,15 +252,15 @@ bg-BG:
       bioinformatics: Биоинформатика
       clusters: Клъстери
       data_science: Наука за данни
-      desktop: Настолен компютър
-      desktops: Настолни компютри
+      desktop: Работен плот
+      desktops: Работен плот
       development: Развитие
       external_apps: Външни приложения
       files: Файлове
       gateway_apps: Приложения на шлюза
       guis: графични потребителски интерфейси
       interactive_apps: Интерактивни приложения
-      jobs: Работа
+      jobs: Задачи
       machine_learning: Машинно обучение
       mathematics: Математика
       servers: Сървъри

@@ -10,7 +10,7 @@ es-ES:
   dashboard:
     account: Cuenta
     actions: Comportamiento
-    active_jobs: Empleos activos
+    active_jobs: Trabajos activos
     active_jobs_close_details: Cerrar el panel de detalles extendidos.
     active_jobs_detail:
       account: Cuenta
@@ -244,7 +244,7 @@ es-ES:
       title: Configuración guardada
     breadcrumb_aria: Migaja de pan
     breadcrumbs_all_apps: Todas las aplicaciones
-    breadcrumbs_home: Hogar
+    breadcrumbs_home: Inicio
     breadcrumbs_my_sessions: Mis sesiones interactivas
     breadcrumbs_support_ticket: Ticket de soporte
     browser_warning: OnDemand requiere una versión más reciente del navegador que esté utilizando. Los requisitos actuales de navegador incluyen IE Edge, Firefox 19+, Chrome 34+ y Safari 8+.
@@ -254,15 +254,15 @@ es-ES:
       bioinformatics: Bioinformática
       clusters: Clústeres
       data_science: Ciencia de datos
-      desktop: De oficina
-      desktops: Escritorios
+      desktop: Escritorio
+      desktops: Escritorio
       development: Desarrollo
       external_apps: Aplicaciones externas
       files: Archivos
       gateway_apps: Aplicaciones de puerta de enlace
       guis: interfaces gráficas de usuario
       interactive_apps: Aplicaciones interactivas
-      jobs: Empleos
+      jobs: Trabajos
       machine_learning: Aprendizaje automático
       mathematics: Matemáticas
       servers: Servidores
@@ -415,7 +415,7 @@ es-ES:
     jobs_project_job_not_deleted: No se puede eliminar el trabajo %{job_id}
     jobs_project_job_stopped: El trabajo %{job_id} se ha detenido correctamente.
     jobs_project_list_aria: Lista de proyectos
-    jobs_project_manager: Gerente de proyecto
+    jobs_project_manager: Gestor de proyectos
     jobs_project_manifest_updated: ¡Manifiesto del proyecto actualizado!
     jobs_project_name_placeholder: Nombre del proyecto
     jobs_project_name_validation: El nombre del proyecto solo puede contener letras, dígitos, guiones, guiones bajos y espacios.
@@ -723,23 +723,23 @@ es-ES:
     module_browser_showing_results: Mostrando resultados de %{count}
     module_browser_title: Explorador de módulos
     module_browser_versions: Versiones
-    motd_default_md: 'El desarrollo de Open OnDemand cuenta con el apoyo de la Fundación Nacional de Ciencias (National Science Foundation)
+    motd_default_md: 'El desarrollo de Open OnDemand cuenta con el apoyo de la [National Science Foundation](https://www.nsf.gov/)
 
-      bajo las subvenciones números [1534949](OODTOK1__) y
+      bajo las subvenciones números [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) y
 
-      [1835725](OODTOK2__).
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
 
 
       Para obtener más información o participar:
 
 
-      - [Discourse](OODTOK3__)
+      - [Discourse](https://discourse.openondemand.org/)
 
-      - [Repositorio de Open OnDemand](OODTOK4__)
+      - [Repositorio de Open OnDemand](https://github.com/OSC/ondemand)
 
-      - [Repositorio ood-core](OODTOK5__)
+      - [Repositorio ood-core](https://github.com/OSC/ood_core)
 
-      - [Documentación](OODTOK6__)
+      - [Documentación](https://osc.github.io/ood-documentation/latest/)
 
       '
     motd_erb_render_error: 'El mensaje del día no se analizó ni se representó correctamente: %{error_message}'
@@ -790,7 +790,7 @@ es-ES:
     permissions_destroyed: El permiso fue destruido con éxito.
     permissions_group_title: Permisos de grupo
     permissions_user_title: Permisos de usuario
-    pinned_apps_caption_html: Un subconjunto destacado de todas las aplicaciones disponibles de <a href="%{all_apps_url}">OODTOK1__
+    pinned_apps_caption_html: Un subconjunto destacado de <a href="%{all_apps_url}">todas las aplicaciones disponibles</a>
     pinned_apps_category: Aplicaciones
     pinned_apps_title: Aplicaciones fijadas
     products_created: El producto se creó con éxito.

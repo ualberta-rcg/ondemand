@@ -216,7 +216,7 @@ el-GR:
       title: Αποθηκευμένες ρυθμίσεις
     breadcrumb_aria: Ψίχουλα ψωμιού
     breadcrumbs_all_apps: Όλες οι εφαρμογές
-    breadcrumbs_home: Σπίτι
+    breadcrumbs_home: Αρχική
     breadcrumbs_my_sessions: Οι διαδραστικές μου συνεδρίες
     breadcrumbs_support_ticket: Αίτημα υποστήριξης
     browser_warning: Το OnDemand απαιτεί μια νεότερη έκδοση του προγράμματος περιήγησης που χρησιμοποιείτε. Οι τρέχουσες απαιτήσεις του προγράμματος περιήγησης περιλαμβάνουν IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
@@ -224,17 +224,17 @@ el-GR:
     categories:
       apps: Εφαρμογές
       bioinformatics: Βιοπληροφορική
-      clusters: Συσπειρώσεις
+      clusters: Συστάδες
       data_science: Επιστήμη Δεδομένων
       desktop: Επιφάνεια εργασίας
-      desktops: Επιτραπέζιοι υπολογιστές
+      desktops: Επιφάνεια εργασίας
       development: Ανάπτυξη
       external_apps: Εξωτερικές εφαρμογές
       files: Αρχεία
       gateway_apps: Εφαρμογές πύλης
       guis: Γραφικά περιβάλλοντα χρήστη (GUI)
       interactive_apps: Διαδραστικές εφαρμογές
-      jobs: Θέσεις εργασίας
+      jobs: Εργασίες
       machine_learning: Μηχανική Μάθηση
       mathematics: Μαθηματικά
       servers: Διακομιστές
@@ -387,7 +387,7 @@ el-GR:
     jobs_project_job_not_deleted: Δεν είναι δυνατή η διαγραφή της εργασίας %{job_id}
     jobs_project_job_stopped: Η εργασία %{job_id} διακόπηκε με επιτυχία
     jobs_project_list_aria: Λίστα έργων
-    jobs_project_manager: Διευθυντής Έργου
+    jobs_project_manager: Διαχείριση έργων
     jobs_project_manifest_updated: Η δήλωση έργου ενημερώθηκε!
     jobs_project_name_placeholder: Όνομα έργου
     jobs_project_name_validation: Το όνομα του έργου μπορεί να περιέχει μόνο γράμματα, ψηφία, παύλες, υπογράμμιση και κενά
@@ -692,7 +692,7 @@ el-GR:
     module_browser_search_placeholder: Αναζήτηση με βάση το όνομα της ενότητας...
     module_browser_select_version: (επιλέξτε έκδοση)
     module_browser_showing_results: Εμφάνιση αποτελεσμάτων %{count}
-    module_browser_title: Πρόγραμμα περιήγησης λειτουργικών μονάδων
+    module_browser_title: Περιήγηση αρθρωμάτων
     module_browser_versions: Εκδόσεις
     motd_default_md: 'Η ανάπτυξη του Open OnDemand υποστηρίζεται από το [Εθνικό Ίδρυμα Επιστημών](https://www.nsf.gov/)
 

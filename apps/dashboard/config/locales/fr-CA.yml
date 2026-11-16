@@ -245,7 +245,7 @@ fr-CA:
       clusters: Grappes
       data_science: Science des données
       desktop: Bureau
-      desktops: Bureaux
+      desktops: Bureau
       development: Développement
       external_apps: Applications externes
       files: Fichiers
@@ -710,7 +710,7 @@ fr-CA:
     module_browser_search_placeholder: Rechercher par nom de module...
     module_browser_select_version: (sélectionner une version)
     module_browser_showing_results: Affichage de %{count} résultats
-    module_browser_title: Navigateur de modules
+    module_browser_title: Explorateur de modules
     module_browser_versions: Versions
     motd_default_md: 'Le développement d''Open OnDemand est soutenu par la National Science Foundation (NSF) grâce aux subventions n° 1534949 et n° 1835725. Pour en savoir plus ou participer : - Discours (https://discourse.openondemand.org/) - Dépôt Open OnDemand (https://github.com/OSC/ondemand) - Dépôt ood-core (https://github.com/OSC/ood_core) - Documentation (https://osc.github.io/ood-documentation/latest/).'
     motd_erb_render_error: 'Le MOTD n’a pas été analysé ou rendu correctement : %{error_message}'

@@ -1,5 +1,5 @@
 {
-  "page_title": "Shell - %{siteTitle}",
+  "page_title": "终端 (Shell) - %{siteTitle}",
   "menu_aria": "Shell 菜单",
   "host_label": "主机：%{host}",
   "initial_directory": "初始目录：%{dir}",

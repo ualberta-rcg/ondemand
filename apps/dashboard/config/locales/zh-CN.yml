@@ -10,7 +10,7 @@ zh-CN:
   dashboard:
     account: 帐户
     actions: 行动
-    active_jobs: 活跃职位
+    active_jobs: 活动作业
     active_jobs_close_details: 关闭扩展详细信息面板。
     active_jobs_detail:
       account: 帐户
@@ -214,7 +214,7 @@ zh-CN:
       title: 保存的设置
     breadcrumb_aria: 面包屑
     breadcrumbs_all_apps: 所有应用
-    breadcrumbs_home: 主页
+    breadcrumbs_home: 首页
     breadcrumbs_my_sessions: 我的交互会话
     breadcrumbs_support_ticket: 支持票
     browser_warning: OnDemand 需要您使用较新版本的浏览器。目前的浏览器要求包括 IE Edge、Firefox 19+、Chrome 34+ 和 Safari 8+。
@@ -225,14 +225,14 @@ zh-CN:
       clusters: 集群
       data_science: 数据科学
       desktop: 桌面
-      desktops: 台式机
+      desktops: 桌面
       development: 发展
       external_apps: 外部应用程序
       files: 文件
       gateway_apps: Gateway Apps
       guis: 图形用户界面
-      interactive_apps: 互动应用
-      jobs: 工作机会
+      interactive_apps: 交互式应用
+      jobs: 作业
       machine_learning: 机器学习
       mathematics: 数学
       servers: 服务器
@@ -385,7 +385,7 @@ zh-CN:
     jobs_project_job_not_deleted: 无法删除作业 %{job_id}
     jobs_project_job_stopped: 成功停止作业 %{job_id}
     jobs_project_list_aria: 项目列表
-    jobs_project_manager: 专案经理
+    jobs_project_manager: 项目管理器
     jobs_project_manifest_updated: 项目清单已更新！
     jobs_project_name_placeholder: 项目名称
     jobs_project_name_validation: 项目名称只能包含字母、数字、短横线、下划线和空格

@@ -1,5 +1,5 @@
 {
-  "page_title": "Κέλυφος - %{siteTitle}",
+  "page_title": "Τερματικό (Shell) - %{siteTitle}",
   "menu_aria": "Μενού κελύφους",
   "host_label": "Υποδοχή: %{host}",
   "initial_directory": "Αρχικός κατάλογος: %{dir}",

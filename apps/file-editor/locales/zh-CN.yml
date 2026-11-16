@@ -1,5 +1,5 @@
 ---
 zh-CN:
   manifest:
-    name: osc-editor
+    name: 文件编辑器
     description: 用于 OSC 系统文件的文本编辑器

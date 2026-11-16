@@ -1,5 +1,5 @@
 {
-  "page_title": "Škrupina - %{siteTitle}",
+  "page_title": "Terminál (Shell) - %{siteTitle}",
   "menu_aria": "Ponuka Shell",
   "host_label": "Hostiteľ: %{host}",
   "initial_directory": "Počiatočný adresár: %{dir}",

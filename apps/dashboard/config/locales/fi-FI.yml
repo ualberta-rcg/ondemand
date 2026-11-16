@@ -10,7 +10,7 @@ fi-FI:
   dashboard:
     account: Tili
     actions: Toiminnot
-    active_jobs: Aktiiviset työpaikat
+    active_jobs: Aktiiviset työt
     active_jobs_close_details: Sulje laajennettu tietopaneeli.
     active_jobs_detail:
       account: Tili
@@ -236,7 +236,7 @@ fi-FI:
       title: Tallennetut asetukset
     breadcrumb_aria: Navigointipolku
     breadcrumbs_all_apps: Kaikki sovellukset
-    breadcrumbs_home: Kotiin
+    breadcrumbs_home: Etusivu
     breadcrumbs_my_sessions: Interaktiiviset istunnot
     breadcrumbs_support_ticket: Tukipyyntö
     browser_warning: OnDemand vaatii käyttämäsi selaimen uudemman version. Nykyiset selainvaatimukset ovat IE Edge, Firefox 19+, Chrome 34+ ja Safari 8+.
@@ -247,14 +247,14 @@ fi-FI:
       clusters: Klusterit
       data_science: Tietojenkäsittelytiede
       desktop: Työpöytä
-      desktops: Pöytätietokoneet
+      desktops: Työpöytä
       development: Kehitys
       external_apps: Ulkoiset sovellukset
       files: Tiedostot
       gateway_apps: Gateway-sovellukset
       guis: Käyttöliittymät
-      interactive_apps: Interaktiiviset sovellukset
-      jobs: Työpaikat
+      interactive_apps: Vuorovaikutteiset sovellukset
+      jobs: Työt
       machine_learning: Koneoppiminen
       mathematics: Matematiikka
       servers: Palvelimet
@@ -407,7 +407,7 @@ fi-FI:
     jobs_project_job_not_deleted: Työtä %{job_id} ei voida poistaa
     jobs_project_job_stopped: Työ %{job_id} pysäytetty onnistuneesti
     jobs_project_list_aria: Projektiluettelo
-    jobs_project_manager: Projektipäällikkö
+    jobs_project_manager: Projektinhallinta
     jobs_project_manifest_updated: Projektiluettelo päivitetty!
     jobs_project_name_placeholder: Projektin nimi
     jobs_project_name_validation: Projektin nimi saa sisältää vain kirjaimia, numeroita, viivoja, alaviivoja ja välilyöntejä
@@ -712,7 +712,7 @@ fi-FI:
     module_browser_search_placeholder: Hae moduulin nimellä...
     module_browser_select_version: (valitse versio)
     module_browser_showing_results: Näytetään %{count} tulosta
-    module_browser_title: Moduulien selain
+    module_browser_title: Moduuliselain
     module_browser_versions: Versiot
     motd_default_md: 'Open OnDemand -kehitystä tukee [National Science Foundation](https://www.nsf.gov/)
 

@@ -1,5 +1,5 @@
 {
-  "page_title": "Shell - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Meniu Shell",
   "host_label": "Gazdă: %{host}",
   "initial_directory": "Directorul inițial: %{dir}",

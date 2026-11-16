@@ -1,5 +1,5 @@
 {
-  "page_title": "Shell - %{siteTitle}",
+  "page_title": "Terminál (Shell) - %{siteTitle}",
   "menu_aria": "Nabídka Shell",
   "host_label": "Hostitel: %{host}",
   "initial_directory": "Počáteční adresář: %{dir}",

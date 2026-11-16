@@ -1,5 +1,5 @@
 {
-  "page_title": "Školjka - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Meni lupine",
   "host_label": "Gostitelj: %{host}",
   "initial_directory": "Začetni imenik: %{dir}",

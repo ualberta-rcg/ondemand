@@ -1,5 +1,5 @@
 ---
 da-DK:
   manifest:
-    name: Aktive job
+    name: Aktive jobs
     description: Se job, der i øjeblikket kører på tilgængelige klynger, der er konfigureret til OnDemand.

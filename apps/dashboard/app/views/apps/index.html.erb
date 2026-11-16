@@ -1,3 +1,4 @@
+<% content_for :title, t('dashboard.page_title', page: t('dashboard.breadcrumbs_all_apps'), site: @user_configuration.dashboard_title) %>
 <%= javascript_include_tag 'apps', nonce: true %>
 
 <%= render partial: 'batch_connect/shared/breadcrumb',

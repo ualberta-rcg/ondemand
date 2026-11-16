@@ -1,5 +1,5 @@
 ---
 pt-PT:
   manifest:
-    name: editor-osc
+    name: Editor de ficheiros
     description: Um editor de texto para ficheiros em sistemas OSC.

@@ -1,5 +1,5 @@
 ---
 en-GB:
   manifest:
-    name: osc-editor
+    name: File Editor
     description: A text editor for files on OSC systems

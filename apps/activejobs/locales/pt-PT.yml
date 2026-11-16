@@ -1,5 +1,5 @@
 ---
 pt-PT:
   manifest:
-    name: Empregos ativos
+    name: Tarefas ativas
     description: Veja os trabalhos em execução nos clusters disponíveis configurados para OnDemand.

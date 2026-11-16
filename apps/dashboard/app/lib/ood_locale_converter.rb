@@ -291,8 +291,8 @@ class OodLocaleConverter
 
   def restore_tokens(text, tokens)
     result = text.dup
-    tokens.each_with_index do |original, idx|
-      pattern = /__\s*OODTOK\s*#{idx}\s*__/i
+    tokens.each_with_index.reverse_each do |original, idx|
+      pattern = /_{0,2}\s*OODTOK\s*#{idx}(?!\d)\s*_{0,2}/i
       result.gsub!(pattern) { original }
     end
     result
