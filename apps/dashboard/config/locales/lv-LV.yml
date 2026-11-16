@@ -175,7 +175,16 @@ lv-LV:
     batch_connect_sessions_error_invalid_job_name_html: Ja šo uzdevumu neizdevās iesniegt nederīga uzdevuma nosaukuma dēļ, lūdzu, lūdziet administratoram konfigurēt OnDemand, lai iestatītu vides mainīgo OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Neizdevās sagatavot veidni, radās šāda kļūda:'
     batch_connect_sessions_errors_submission: 'Neizdevās iesniegt sesiju ar šādu kļūdu:'
+    batch_connect_sessions_native_vnc_connect_client_html: Atveriet VNC klientu un izveidojiet savienojumu ar %{target} klienta ietvaros.
+    batch_connect_sessions_native_vnc_download_viewer_html: Lejupielādējiet jebkuru VNC skatītāju, %{realvnc_link} ir labs variants.
+    batch_connect_sessions_native_vnc_mac_code: 'Lai izveidotu VNC savienojumu, izmantojiet tālāk norādīto kodu:'
+    batch_connect_sessions_native_vnc_open_terminal: Atvērt termināļa logu
+    batch_connect_sessions_native_vnc_password: 'Izmantojiet VNC paroli:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Kopējiet/ielīmējiet terminālī, lai izveidotu SSH tuneli:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopējiet/ielīmējiet savā terminālī un nomainiet %{ssh_host} ar derīgu HPC pieteikšanās serveri, lai izveidotu SSH tuneli:'
     batch_connect_sessions_native_vnc_tab: Vietējās instrukcijas
+    batch_connect_sessions_native_vnc_unsupported: Pašlaik mēs neatbalstām dokumentāciju par savienojuma izveidi ar VNC sesiju, izmantojot jūsu operētājsistēmai paredzētu vietējo klientu.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Windows termināļiem var izmantot: %{powershell_link}, %{putty_link} un %{wsl_link} izplatījumus.'
     batch_connect_sessions_novnc_compression: Kompresija
     batch_connect_sessions_novnc_compression_help: 1 (zems) līdz 9 (augsts)
     batch_connect_sessions_novnc_launch: Palaist %{app_title}

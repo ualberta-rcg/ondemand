@@ -151,7 +151,16 @@ zh-CN:
     batch_connect_sessions_error_invalid_job_name_html: 如果由于作业名称无效而导致该作业提交失败，请要求管理员配置OnDemand来设置环境变量OOD_JOB_NAME_ILLEGAL_CHARS。
     batch_connect_sessions_errors_staging: 无法调用模板，并显示以下错误：
     batch_connect_sessions_errors_submission: 提交会话失败，出现以下错误：
+    batch_connect_sessions_native_vnc_connect_client_html: 打开 VNC 客户端并连接到客户端内的 %{target}。
+    batch_connect_sessions_native_vnc_download_viewer_html: 下载任意一款 VNC 查看器，%{realvnc_link} 就是一个不错的选择。
+    batch_connect_sessions_native_vnc_mac_code: 使用以下代码建立 VNC 连接：
+    batch_connect_sessions_native_vnc_open_terminal: 打开终端窗口
+    batch_connect_sessions_native_vnc_password: 使用 VNC 密码：
+    batch_connect_sessions_native_vnc_ssh_tunnel: 在终端中复制/粘贴以下内容以建立 SSH 隧道：
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 复制/粘贴到终端中，并将 %{ssh_host} 替换为有效的 HPC 登录服务器地址，以建立 SSH 隧道：
     batch_connect_sessions_native_vnc_tab: 本地指令
+    batch_connect_sessions_native_vnc_unsupported: 我们目前不提供关于如何使用操作系统自带客户端连接到 VNC 会话的文档。
+    batch_connect_sessions_native_vnc_windows_terminals_html: 对于 Windows 终端，您可以使用以下发行版：%{powershell_link}、%{putty_link} 和 %{wsl_link}。
     batch_connect_sessions_novnc_compression: 压缩
     batch_connect_sessions_novnc_compression_help: 1（低）到 9（高）
     batch_connect_sessions_novnc_launch: 启动%{app_title}

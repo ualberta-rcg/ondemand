@@ -159,7 +159,16 @@ en-GB:
       '
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit session with the following error:'
+    batch_connect_sessions_native_vnc_connect_client_html: Open a VNC client and connect to %{target} within the client
+    batch_connect_sessions_native_vnc_download_viewer_html: Download any VNC viewer, %{realvnc_link} is a good option.
+    batch_connect_sessions_native_vnc_mac_code: 'Use the code below to establish the VNC connection:'
+    batch_connect_sessions_native_vnc_open_terminal: Open a terminal window
+    batch_connect_sessions_native_vnc_password: 'Use the VNC password:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Copy/paste in your terminal to establish the SSH tunnel:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Copy/paste in your terminal and replace %{ssh_host} with a valid HPC login server to establish the SSH tunnel:'
     batch_connect_sessions_native_vnc_tab: Native Instructions
+    batch_connect_sessions_native_vnc_unsupported: We do not currently support documentation for connecting to a VNC session with a native client for your operating system.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'For terminals in Windows you can use: %{powershell_link}, %{putty_link} and %{wsl_link} distributions'
     batch_connect_sessions_novnc_compression: Compression
     batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Launch %{app_title}

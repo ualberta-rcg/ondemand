@@ -145,7 +145,16 @@ ga-IE:
     batch_connect_sessions_error_invalid_job_name_html: Mura ndearnadh an post seo a chur isteach mar gheall ar ainm poist neamhbhailí, iarr ar do riarthóir OnDemand a chumrú chun an athróg timpeallachta OOD_JOB_NAME_ILLEGAL_CHARS a shocrú.
     batch_connect_sessions_errors_staging: 'Theip ar an teimpléad a chur ar stáitse leis an earráid seo a leanas:'
     batch_connect_sessions_errors_submission: 'Theip ar an seisiún a chur isteach leis an earráid seo a leanas:'
+    batch_connect_sessions_native_vnc_connect_client_html: Oscail cliant VNC agus ceangail le %{target} laistigh den chliant
+    batch_connect_sessions_native_vnc_download_viewer_html: Íoslódáil aon lucht féachana VNC, is rogha mhaith é %{realvnc_link}.
+    batch_connect_sessions_native_vnc_mac_code: 'Úsáid an cód thíos chun an nasc VNC a bhunú:'
+    batch_connect_sessions_native_vnc_open_terminal: Oscail fuinneog críochfoirt
+    batch_connect_sessions_native_vnc_password: 'Úsáid an focal faire VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Cóipeáil/greamaigh i do chríochfort chun an tollán SSH a bhunú:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Cóipeáil/greamaigh i do chríochfort agus cuir freastalaí logála isteach HPC bailí in ionad %{ssh_host} chun an tollán SSH a bhunú:'
     batch_connect_sessions_native_vnc_tab: Treoracha Dúchasacha
+    batch_connect_sessions_native_vnc_unsupported: Ní thacaímid le doiciméadacht faoi láthair maidir le ceangal le seisiún VNC le cliant dúchasach do do chóras oibriúcháin.
+    batch_connect_sessions_native_vnc_windows_terminals_html: I gcás críochfoirt i Windows is féidir leat na dáiltí %{powershell_link}, %{putty_link} agus %{wsl_link} a úsáid.
     batch_connect_sessions_novnc_compression: Comhbhrú
     batch_connect_sessions_novnc_compression_help: 1 (íseal) go 9 (ard)
     batch_connect_sessions_novnc_launch: Seoladh %{app_title}
