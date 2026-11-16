@@ -118,6 +118,12 @@ test('dataTablesLanguage bundles offline language packs for fr-CA, ja-JP, zh-CN,
   assert.equal(frPack.search, 'Filtrer :');
   assert.equal(frPack.infoFiltered, '');
   assert.equal(frPack.aria.paginate.next, 'Suivante');
+  assert.equal(frPack.buttons.copyTitle, 'Copier dans le presse-papiers');
+  assert.equal(frPack.buttons.savedStates, 'États enregistrés');
+  assert.equal(frPack.stateRestore.removeConfirm, 'Voulez-vous vraiment supprimer %s?');
+
+  const frFrancePack = dataTablesLanguage({}, 'fr-FR');
+  assert.equal(frFrancePack.buttons.savedStates, 'États sauvegardés');
 
   const jaPack = dataTablesLanguage({}, 'ja_JP');
   assert.ok(jaPack.search && jaPack.search.length > 0);
