@@ -2,4 +2,4 @@
 fr-CA:
   manifest:
     name: Éditeur de fichiers
-    description: Un éditeur de texte pour les fichiers sur les systèmes HPC
+    description: Un éditeur de texte pour les fichiers sur les systèmes CHP

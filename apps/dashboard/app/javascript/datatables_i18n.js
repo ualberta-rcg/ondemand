@@ -107,6 +107,50 @@ const enCP = {
   },
 };
 
+function buildFrCAPack(base) {
+  const pack = JSON.parse(JSON.stringify(base || {}));
+  if (pack.buttons) {
+    pack.buttons = {
+      ...pack.buttons,
+      copyKeys:
+        "Appuyez sur Ctrl ou \u2318 + C pour copier les données du tableau dans votre presse-papiers.",
+      copySuccess: {
+        _: "%d lignes copiées dans le presse-papiers",
+        "1": "1 ligne copiée dans le presse-papiers",
+      },
+      copyTitle: "Copier dans le presse-papiers",
+      savedStates: "États enregistrés",
+    };
+  }
+  if (pack.editor) {
+    pack.editor = {
+      ...pack.editor,
+      edit: {
+        ...(pack.editor.edit || {}),
+        button: "Modifier",
+        title: "Modifier l'entrée",
+      },
+      remove: {
+        ...(pack.editor.remove || {}),
+        confirm: {
+          _: "Voulez-vous vraiment supprimer %d lignes?",
+          "1": "Voulez-vous vraiment supprimer 1 ligne?",
+        },
+      },
+    };
+  }
+  if (pack.stateRestore) {
+    pack.stateRestore = {
+      ...pack.stateRestore,
+      emptyStates: "Aucun état enregistré",
+      removeConfirm: "Voulez-vous vraiment supprimer %s?",
+    };
+  }
+  return pack;
+}
+
+const frCA = buildFrCAPack(frFR);
+
 const EXACT_PACKS = {
   'bg-bg': bg,
   'cs-cz': cs,
@@ -120,7 +164,7 @@ const EXACT_PACKS = {
   'et-ee': et,
   'fa-ir': fa,
   'fi-fi': fi,
-  'fr-ca': frFR,
+  'fr-ca': frCA,
   'fr-fr': frFR,
   'ga-ie': ga,
   'hr-hr': hr,

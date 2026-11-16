@@ -6,8 +6,8 @@ fr-CA:
     cancel: Annuler
     close: Fermer
     cluster_label: 'Grappe :'
-    confirm_delete: Êtes-vous certain?
-    confirm_delete_template: Êtes-vous certain de vouloir supprimer cet élément?
+    confirm_delete: Voulez-vous vraiment continuer?
+    confirm_delete_template: Voulez-vous vraiment supprimer cet élément?
     copy_template: Copier le modèle
     create_from_path_title: Créer une nouvelle tâche à partir d'un chemin
     create_new_heading_html: Créer « <span class="wrap-line" id="script-name-label">%{name}</span> »
