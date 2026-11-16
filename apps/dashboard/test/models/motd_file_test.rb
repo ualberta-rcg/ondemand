@@ -76,6 +76,14 @@ class MotdFileTest < ActiveSupport::TestCase
       assert_equal 'Bienvenue sur la grappe', MotdFile.new(base, locale: :'fr-CA').content
       assert_equal 'Bienvenue sur la grappe', MotdFile.new(base, locale: :fr).content
       assert_equal 'Welcome to the cluster', MotdFile.new(base, locale: :ja_JP).content
+
+      # Ensure en-CA / en falls back to base motd rather than cross-matching themed motd.en-CP / motd.en-HG
+      File.write(File.join(dir, 'motd.en-CP'), 'Cyberpunk MOTD')
+      File.write(File.join(dir, 'motd.en-HG'), "Don't Panic MOTD")
+      assert_equal 'Welcome to the cluster', MotdFile.new(base, locale: :'en-CA').content
+      assert_equal 'Welcome to the cluster', MotdFile.new(base, locale: :en).content
+      assert_equal 'Cyberpunk MOTD', MotdFile.new(base, locale: :'en-CP').content
+      assert_equal "Don't Panic MOTD", MotdFile.new(base, locale: :'en-HG').content
     end
   end
 
