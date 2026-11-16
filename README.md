@@ -62,6 +62,8 @@ and is the access layer powering some of the world's most capable supercomputers
 Full installation documentation, including system requirements, is available at
 **[osc.github.io/ood-documentation/latest/requirements.html](https://osc.github.io/ood-documentation/latest/requirements.html)**.
 
+For multi-language site configuration, localized MOTDs, and building multi-language Batch Connect applications, see **[LOCALIZATION.md](LOCALIZATION.md)**.
+
 ### Test Drive
 
 You can **[test drive Open OnDemand](https://www.openondemand.org/administer-open-ondemand#test-drive-ood)** before deploying it at your site.

@@ -118,7 +118,7 @@ is likely to be specific to your HOME directory on any given machine.
 
 Now you can refer to the [documentation on customizing](https://osc.github.io/ood-documentation/latest/customizations.html)
 and make those changes to a `.env.local` file in the same directory as
-this README.md.
+this README.md. For internationalization (`i18n`), adding or syncing regional locales, localizing MOTDs, and building multi-language interactive apps, see [LOCALIZATION.md](LOCALIZATION.md).
 
 Refer to [the configuration class](apps/dashboard/config/configuration_singleton.rb) to see every option
 available.
