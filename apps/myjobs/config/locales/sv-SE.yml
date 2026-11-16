@@ -1,0 +1,131 @@
+---
+sv-SE:
+  jobcomposer:
+    account_label: 'Konto:'
+    back: Tillbaka
+    cancel: Avboka
+    close: Nära
+    cluster_label: 'Klunga:'
+    confirm_delete: Är du säker?
+    confirm_delete_template: Är du säker på att du vill radera detta?
+    copy_template: Kopiera mall
+    create_from_path_title: Skapa ett nytt jobb från en sökväg
+    create_new_heading_html: Skapa ny "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Skapa nytt jobb
+    create_template: Skapa mall
+    create_template_from_job_title: Skapa mall från valt jobb
+    delete: Radera
+    delete_job_title: Ta bort jobb
+    deprecation_warning_html: Job Composer är föråldrad och kommer att tas bort i Open OnDemand 5.0. Vänligen överför dina jobb och mallar till <a href="%{projects_path}">Projekthanteraren</a>.
+    edit: Redigera
+    edit_files: Redigera filer
+    folder_contents_label: 'Mappinnehåll:'
+    from_default_template: Från standardmall
+    from_default_template_title: Skapa ett nytt jobb från standardmallen
+    from_selected_job: Från valt jobb
+    from_selected_job_title: Kopiera det valda jobbet
+    from_specified_path: Från angiven sökväg
+    from_template: Från mall
+    from_template_title: Skapa ett nytt jobb från en mall du väljer
+    invalid_cluster_html: Klustret är inte giltigt! Redigera <a href="#" id="edit-job-options-script-link">Jobbalternativ</a> för att välja ett giltigt kluster.
+    invalid_script_html: Skriptet är inte giltigt! Redigera <a href="#" id="edit-job-options-link">Jobbalternativ</a> för att välja ett giltigt skript.
+    job_already_submitted: Jobbet har redan skickats in.
+    job_array_request_label: 'Begäran om jobbmatris:'
+    job_attributes_heading_html: Jobbattribut <strong> (Valfritt) </strong>
+    job_copied: Jobbet kopierades.
+    job_copy_failed: 'Jobbet kunde inte kopieras: %{errors}'
+    job_created: Jobbet skapades.
+    job_destroy_failed: 'Jobbet kunde inte förstöras: %{errors}'
+    job_destroyed: Jobbet förstördes framgångsrikt.
+    job_details: Jobbdetaljer
+    job_directory_missing: Jobbkatalogen saknas!
+    job_name_label: 'Jobbnamn:'
+    job_not_submitted: Jobbet har inte skickats in.
+    job_stop_failed: 'Jobbet kunde inte stoppas: %{errors}'
+    job_stopped: Jobbet stoppades.
+    job_submit_failed: 'Misslyckades med att skicka batchjobbet:'
+    job_submitted: Jobbet har skickats in.
+    job_updated: Jobbet har uppdaterats.
+    loading: Belastning
+    loading_job_info: Laddar jobbinformation
+    nav_help: Hjälp
+    nav_jobs: Jobb
+    nav_menu_aria: Meny för jobbsammansättning
+    nav_templates: Mallar
+    new_job: Nytt jobb
+    new_template: Ny mall
+    new_template_title: Skapa en ny mall
+    no_clusters_alert: Det finns inga konfigurerade värdar som tillåter dig att skicka jobb. Kontakta din systemadministratör.
+    open_dir: Öppna katalogen
+    open_dir_in_editor: Öppna katalogen i filredigeraren
+    open_dir_in_file_manager: Öppna katalogen i filhanteraren
+    open_dir_in_terminal: Öppna katalogen i terminalen
+    open_editor: Öppna redigeraren
+    open_selected_job_in_terminal: Öppna valt jobb i terminalen
+    open_selected_template_in_terminal: Öppna vald mall i terminalen
+    open_template_dir_in_file_manager: Öppna mallkatalogen i filhanteraren
+    open_terminal: Öppna terminalen
+    open_xdmod: Öppna XDMoD
+    options_account_help: Konto är ett valfritt fält. Om det inte anges kan kontot ställas in automatiskt av inskickningsfiltret.
+    options_account_title: Konto
+    options_array_help: Jobbmatriser är valfria. t.ex. 1–10
+    options_array_help_with_clusters: 'Jobbmatriser är valfria. OnDemand stöder för närvarande inte jobbmatriser för klustren: %{cluster_list}.'
+    options_array_title: Specifikation för jobbmatris
+    options_cluster_title: Klunga
+    options_copy_environment: Kopiera miljö
+    options_errors: Vänligen åtgärda felen nedan.
+    options_name_title: Namn
+    options_script_help: Filer större än 65 KB utelämnas från jobbskriptfältet
+    options_script_title: Ange jobbskript
+    options_title: Jobbalternativ
+    other_valid_files: Andra giltiga filer
+    page_title: Jobbkomponist - %{site}
+    path_to_source_heading_html: Sökväg till källan <strong>(Obligatorisk)</strong>
+    reset: Återställa
+    reset_template_fields_title: Återställ fält till mallens standardvärde
+    save: Spara
+    script_contents_label: 'Manusinnehåll:'
+    script_location_label: 'Skriptplats:'
+    script_name_form_label: 'Skriptnamn:'
+    script_name_label: 'Skriptnamn:'
+    select_cluster_prompt: Välj ett kluster...
+    select_template_option: -- välj en mall --
+    selected_template_details: Detaljer om valda mallar
+    show: Visa
+    show_batch_host_label: 'Batchvärd:'
+    show_dir_contents_label: 'Katalogens innehåll:'
+    show_name_label: 'Namn:'
+    show_staged_dir_label: 'Scenregi:'
+    showing_job_title: Visar jobb
+    skip_navigation: Hoppa över navigering
+    source_path_help: Ange sökvägen till en katalog i filsystemet. Innehållet i den här sökvägen kommer att kopieras till ett nytt arbetsflöde.
+    source_path_label: Källväg
+    specify_job_host_and_script: Ange jobbvärd och skript
+    stop: Stopp
+    stop_job_title: Stoppa jobbet
+    submit: Överlämna
+    submit_job_title: Skicka in jobb
+    submit_script_title: Skicka in manus
+    submit_to_label: 'Skicka till:'
+    suggested_files: Föreslagna filer
+    table_created: Skapad
+    table_id: ID
+    table_source: Källa
+    table_status: Status
+    template_create_error: fel vid skapandet av mallen
+    template_error_name_unique: måste vara unik.
+    template_error_path_directory: måste peka till en katalog.
+    template_error_path_missing: finns inte.
+    template_errors_heading:
+      one: 'Felet %{count} förhindrade att den här mallen sparades:'
+      other: '%{count}-felen förhindrade att den här mallen sparades:'
+    template_label: 'Mall:'
+    template_location_label: 'Mallens plats:'
+    template_path_blank_help: Om fältet lämnas tomt läggs ett standardjobbskript till i din nya mall.
+    template_path_label: Sökväg (mallen skapas genom att kopiera filer från denna källsökväg)
+    templates_subtitle: För att skapa ett nytt jobb, välj en mall att kopiera, fyll i formuläret till höger och klicka på "Skapa nytt jobb".
+    title: Jobbkompositör
+    toggle_navigation: Växla navigering
+    view_files: Visa filer
+    xdmod_url_warning_message: Det här jobbet kanske inte visas i Open XDMoD förrän 24 timmar efter att jobbet är slutfört.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

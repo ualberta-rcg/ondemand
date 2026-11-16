@@ -1,0 +1,5 @@
+---
+zh-CN:
+  manifest:
+    name: osc-editor
+    description: 用于 OSC 系统文件的文本编辑器

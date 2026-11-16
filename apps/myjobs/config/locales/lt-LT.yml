@@ -1,0 +1,131 @@
+---
+lt-LT:
+  jobcomposer:
+    account_label: 'Paskyra:'
+    back: Atgal
+    cancel: Atšaukti
+    close: Uždaryti
+    cluster_label: 'Klasteris:'
+    confirm_delete: Ar tikrai?
+    confirm_delete_template: Ar tikrai norite tai ištrinti?
+    copy_template: Kopijuoti šabloną
+    create_from_path_title: Sukurti naują užduotį iš kelio
+    create_new_heading_html: Sukurti naują „<span class="wrap-line" id="script-name-label">%{name}</span>“
+    create_new_job: Sukurti naują darbą
+    create_template: Sukurti šabloną
+    create_template_from_job_title: Sukurti šabloną iš pasirinkto darbo
+    delete: Ištrinti
+    delete_job_title: Ištrinti užduotį
+    deprecation_warning_html: Užduočių kūrimo priemonė nebenaudojama ir bus pašalinta iš „Open OnDemand 5.0“. Prašome perkelti savo užduotis ir šablonus į <a href="%{projects_path}">Project Manager</a>.
+    edit: Redaguoti
+    edit_files: Redaguoti failus
+    folder_contents_label: 'Aplanko turinys:'
+    from_default_template: Iš numatytojo šablono
+    from_default_template_title: Sukurkite naują užduotį iš numatytojo šablono
+    from_selected_job: Iš pasirinkto darbo
+    from_selected_job_title: Kopijuoti pasirinktą užduotį
+    from_specified_path: Iš nurodyto kelio
+    from_template: Iš šablono
+    from_template_title: Sukurkite naują užduotį pagal pasirinktą šabloną
+    invalid_cluster_html: Klasteris negalioja! Redaguokite <a href="#" id="edit-job-options-script-link">Job Options</a>, kad pasirinktumėte galiojantį klasterį.
+    invalid_script_html: Scenarijus negalioja! Redaguokite <a href="#" id="edit-job-options-link">Job Options</a>, kad pasirinktumėte galiojantį scenarijų.
+    job_already_submitted: Darbas jau pateiktas.
+    job_array_request_label: 'Darbo masyvo užklausa:'
+    job_attributes_heading_html: Darbo atributai <strong>(neprivaloma)</strong>
+    job_copied: Darbas sėkmingai nukopijuotas.
+    job_copy_failed: 'Nepavyko nukopijuoti užduoties: %{errors}'
+    job_created: Darbas sėkmingai sukurtas.
+    job_destroy_failed: 'Nepavyko sunaikinti užduoties: %{errors}'
+    job_destroyed: Darbas buvo sėkmingai sunaikintas.
+    job_details: Darbo informacija
+    job_directory_missing: Trūksta darbo katalogo!
+    job_name_label: 'Pareigybės pavadinimas:'
+    job_not_submitted: Darbas nebuvo pateiktas.
+    job_stop_failed: 'Nepavyko sustabdyti užduoties: %{errors}'
+    job_stopped: Darbas sėkmingai sustabdytas.
+    job_submit_failed: 'Nepavyko pateikti paketinės užduoties:'
+    job_submitted: Darbas sėkmingai pateiktas.
+    job_updated: Darbas sėkmingai atnaujintas.
+    loading: Kraunama
+    loading_job_info: Įkeliama darbo informacija
+    nav_help: Pagalba
+    nav_jobs: Darbai
+    nav_menu_aria: Užduočių rengyklės meniu
+    nav_templates: Šablonai
+    new_job: Naujas darbas
+    new_template: Naujas šablonas
+    new_template_title: Sukurti naują šabloną
+    no_clusters_alert: Nėra sukonfigūruotų pagrindinių kompiuterių, kurie leistų pateikti užduotis. Susisiekite su sistemos administratoriumi.
+    open_dir: Atidaryti katalogą
+    open_dir_in_editor: Atidaryti katalogą failų rengyklėje
+    open_dir_in_file_manager: Atidaryti katalogą failų tvarkyklėje
+    open_dir_in_terminal: Atidaryti katalogą terminale
+    open_editor: Atidaryti redaktorių
+    open_selected_job_in_terminal: Atidaryti pasirinktą užduotį terminale
+    open_selected_template_in_terminal: Atidaryti pasirinktą šabloną terminale
+    open_template_dir_in_file_manager: Atidaryti šablonų katalogą failų tvarkyklėje
+    open_terminal: Atidaryti terminalą
+    open_xdmod: Atidaryti XDMoD
+    options_account_help: Paskyra yra neprivalomas laukas. Jei nenustatyta, pateikimo filtras gali nustatyti paskyrą automatiškai.
+    options_account_title: Paskyra
+    options_array_help: Darbo masyvai yra neprivalomi, pvz., 1–10
+    options_array_help_with_clusters: 'Darbų masyvai yra neprivalomi. „OnDemand“ šiuo metu nepalaiko darbų masyvų klasteriams: %{cluster_list}.'
+    options_array_title: Darbo masyvo specifikacija
+    options_cluster_title: Klasteris
+    options_copy_environment: Kopijuoti aplinką
+    options_errors: Prašome ištaisyti toliau pateiktas klaidas.
+    options_name_title: Vardas
+    options_script_help: Didesni nei 65 KB failai darbo scenarijaus lauke neįtraukiami
+    options_script_title: Nurodykite darbo scenarijų
+    options_title: Darbo galimybės
+    other_valid_files: Kitas (-i) galiojantis (-i) failas (-ai)
+    page_title: Darbo komponierius - %{site}
+    path_to_source_heading_html: Kelias į šaltinį <strong>(Privaloma)</strong>
+    reset: Atstatyti
+    reset_template_fields_title: Atkurti laukų numatytąsias šablono reikšmes
+    save: Išsaugoti
+    script_contents_label: 'Scenarijaus turinys:'
+    script_location_label: 'Scenarijaus vieta:'
+    script_name_form_label: 'Scenarijaus pavadinimas:'
+    script_name_label: 'Scenarijaus pavadinimas:'
+    select_cluster_prompt: Pasirinkite klasterį...
+    select_template_option: -- pasirinkite šabloną --
+    selected_template_details: Pasirinkto šablono informacija
+    show: Rodyti
+    show_batch_host_label: 'Paketinis serveris:'
+    show_dir_contents_label: 'Katalogo turinys:'
+    show_name_label: 'Vardas:'
+    show_staged_dir_label: 'Pastato režisierius:'
+    showing_job_title: Rodomas darbas
+    skip_navigation: Praleisti navigaciją
+    source_path_help: Įveskite kelią į katalogą failų sistemoje. Šio kelio turinys bus nukopijuotas į naują darbo eigą.
+    source_path_label: Šaltinio kelias
+    specify_job_host_and_script: Nurodykite darbo prieglobą ir scenarijų
+    stop: Stop
+    stop_job_title: Sustabdyti darbą
+    submit: Pateikti
+    submit_job_title: Pateikti darbą
+    submit_script_title: Pateikti scenarijų
+    submit_to_label: 'Pateikti adresu:'
+    suggested_files: Siūlomas(-i) failas(-ai)
+    table_created: Sukurta
+    table_id: ID
+    table_source: Šaltinis
+    table_status: Būsena
+    template_create_error: Klaida kuriant šabloną
+    template_error_name_unique: turi būti unikalus.
+    template_error_path_directory: turi nurodyti į katalogą.
+    template_error_path_missing: neegzistuoja.
+    template_errors_heading:
+      one: '%{count} klaida neleido išsaugoti šio šablono:'
+      other: '%{count} klaidos neleido išsaugoti šio šablono:'
+    template_label: 'Šablonas:'
+    template_location_label: 'Šablono vieta:'
+    template_path_blank_help: Jei paliksite tuščią, prie naujo šablono bus pridėtas numatytasis darbo scenarijus.
+    template_path_label: Kelias (šablonas bus sukurtas nukopijuojant failus iš šio šaltinio kelio)
+    templates_subtitle: Norėdami sukurti naują darbo skelbimą, pasirinkite norimą kopijuoti šabloną, užpildykite dešinėje esančią formą ir spustelėkite „Sukurti naują darbo skelbimą“.
+    title: Darbo komponierius
+    toggle_navigation: Perjungti navigaciją
+    view_files: Peržiūrėti failus
+    xdmod_url_warning_message: Šis darbas gali būti rodomas „Open XDMoD“ tik po 24 valandų nuo jo užbaigimo.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

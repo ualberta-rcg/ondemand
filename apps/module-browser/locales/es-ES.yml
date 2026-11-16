@@ -1,0 +1,5 @@
+---
+es-ES:
+  manifest:
+    name: Explorador de módulos
+    description: Consulte los módulos en los clústeres para obtener información detallada sobre los mismos.

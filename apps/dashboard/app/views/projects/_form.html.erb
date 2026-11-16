@@ -100,9 +100,9 @@
   </div>
   <br>
   <p>
-    <%= form.submit 'Save', class: 'btn btn-primary', title: 'Save project' %>
-    <%= form.button 'Reset', type: :reset, class: 'btn btn-default', title: 'Clear form fields' %>
-    <%= link_to 'Back', projects_path, class: 'btn btn-default', title: 'Return to projects page' %>
+    <%= form.submit t('dashboard.save'), class: 'btn btn-primary', title: t('dashboard.jobs_project_save_project_title') %>
+    <%= form.button t('dashboard.reset'), type: :reset, class: 'btn btn-default', title: t('dashboard.jobs_project_clear_form_fields') %>
+    <%= link_to t('dashboard.back'), projects_path, class: 'btn btn-default', title: t('dashboard.jobs_project_return_to_projects') %>
   </p>
 </div>
 

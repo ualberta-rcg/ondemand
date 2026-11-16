@@ -1,4 +1,4 @@
-<h1>Editing <%= @launcher.title %></h1>
+<h1><%= t('dashboard.jobs_launchers_editing', title: @launcher.title) %></h1>
 
 <%= javascript_include_tag 'launcher_edit', nonce: true %>
 

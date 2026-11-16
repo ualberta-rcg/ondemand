@@ -1,0 +1,1023 @@
+---
+nl-NL:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute} formaat ongeldig of ontbreekt'
+        invalid: '%{attribute} is ongeldig'
+        required: '%{attribute} is vereist'
+        used: '%{attribute} wordt al gebruikt'
+  dashboard:
+    account: Rekening
+    actions: Acties
+    active_jobs: Actieve vacatures
+    active_jobs_close_details: Sluit het paneel met uitgebreide details.
+    active_jobs_detail:
+      account: Rekening
+      array_job_id: Array Job Id
+      array_task_id: Array Taak-ID
+      cluster: Cluster
+      cluster_id: Cluster-ID
+      comment: Opmerking
+      cpu_time: CPU-tijd
+      cpu_used: CPU-gebruik
+      current_working_directory: Huidige werkmap
+      end_time: Eindtijd
+      exec_host: Uitvoerend gastheer
+      finish_time: Eindtijd
+      from_host: Van de presentator
+      gres: GRES
+      group_list: Groepslijst
+      job_account: Vacatureaccount
+      job_checkpoint_attr: Job Checkpoint Attr
+      job_checkpoint_interval: Job Checkpoint Interval
+      job_deadline: Deadline voor sollicitaties
+      job_exec_file: Job Exec File
+      job_execution_time: Taakuitvoeringstijd
+      job_gid: Job GID
+      job_group: Functiegroep
+      job_id: Vacature-ID
+      job_name: Functienaam
+      job_priority: Prioriteit bij de taak
+      job_restart: Taak opnieuw starten
+      job_script_file: Taakscriptbestand
+      job_script_size: Grootte van het taakscript
+      job_share: Deeltijdbaan
+      job_type: Soort baan
+      job_uid: Job UID
+      job_verify: Jobverificatie
+      job_version: Taakversie
+      mem: Mem
+      memory: Geheugen
+      node_count: Aantal knooppunten
+      node_list: Knooppuntenlijst
+      nodes: Knooppunten
+      none: Geen
+      notifications: Meldingen
+      partition: Partitie
+      pbs_id: PBS-ID
+      pids: PID's
+      ppn: PPN
+      project_name: Projectnaam
+      queue: Wachtrij
+      reason: Reden
+      reserve: Reserveren
+      select: Select
+      start_time: Starttijd
+      state: Staat
+      status: Status
+      submission_time: Inlevertijd
+      swap: Ruil
+      time_limit: Tijdslimiet
+      time_used: Gebruikte tijd
+      total_cpus: Totaal aantal CPU's
+      total_nodes: Totaal aantal knooppunten
+      user: Gebruiker
+      virtual_memory: Virtueel geheugen
+      walltime: Walltime
+      walltime_used: Walltime gebruikt
+    active_jobs_filter_all: Alle vacatures
+    active_jobs_filter_user: Jouw banen
+    active_jobs_ganlia_CPU: Ganglia-afbeelding voor de CPU.
+    active_jobs_ganlia_load: Ganglia-afbeelding voor gemiddelde systeembelasting.
+    active_jobs_ganlia_mem: Ganglia-afbeelding voor geheugengebruik.
+    active_jobs_ganlia_network: Ganglia-afbeelding voor netwerkgebruik.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> bekijk alles (%{number_of_sessions})</a>
+    active_sessions_title: Actieve interactieve sessies
+    add: Toevoegen
+    all_apps_table_app_column: Naam
+    all_apps_table_category_column: Categorie
+    all_apps_table_sub_category_column: Subcategorie
+    all_clusters: Alle clusters
+    announcements_dismissible_button: OK
+    announcements_parse_error: Fout bij het parseren van de aankondiging.
+    announcements_render_error: Kon aankondiging '%{name}' niet weergeven vanwege een fout.
+    announcements_required_button: Accepteren
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: Systeemapps
+    auto_log_location_title: Logboeklocatie
+    back: Rug
+    balance_additional_message: Overweeg om aanvullende %{balanace_units} aan te vragen.
+    balance_message: '%{units_balance} is %{value}'
+    balance_no_warnings: Er zijn geen projecten die binnen de waarschuwingsdrempel van %{threshold} dagensaldo vallen.
+    balance_reload_message_html: Reload page to see updated balance. Balances are updated daily.<br>Last update was %{last_update}
+    balance_warning_prefix_html: '%{units_balance} waarschuwing voor'
+    batch_connect_active_sessions_aria: Actieve sessies
+    batch_connect_app_version: 'versie: %{version}'
+    batch_connect_apps_menu_aria: Interactief app-menu
+    batch_connect_apps_menu_title: Interactieve apps
+    batch_connect_form_attr_cache_error: Kan eerder opgeslagen waarden niet gebruiken, er worden in plaats daarvan standaardwaarden gebruikt. (%{error_message})
+    batch_connect_form_choose_template_name: Kies een sjabloonnaam
+    batch_connect_form_data_root: gegevenshoofdmap
+    batch_connect_form_dynamic_disclaimer: Het volgende formulier kan dynamisch veranderen naarmate er opties worden geselecteerd. Alle wijzigingen worden aangekondigd en zijn omkeerbaar.
+    batch_connect_form_invalid: In het form.yml-bestand ontbreken opties in het formulierveld %{id}.
+    batch_connect_form_launch: Launch
+    batch_connect_form_prefill: Gebruik opgeslagen instellingen
+    batch_connect_form_prefill_error: Oeps... Er is iets mis met je sjabloon.
+    batch_connect_form_reset_resolution: Resolutie opnieuw instellen
+    batch_connect_form_resolution_height: Resolutiehoogte (pixels)
+    batch_connect_form_resolution_width: Resolutiebreedte (pixels)
+    batch_connect_form_save: Instellingen opslaan
+    batch_connect_form_save_new_template: nieuwe instellingen opslaan
+    batch_connect_form_save_submit: Instellingen opslaan en sluiten
+    batch_connect_form_select_template: selecteer opgeslagen instellingen
+    batch_connect_form_session_data_html: '* De sessiegegevens van %{title} voor deze sessie zijn toegankelijk
+
+
+      onder %{data_link_tag}.
+
+
+      '
+    batch_connect_form_template_name_label: instellingsnaam
+    batch_connect_form_type_new_name: App-instellingen naam
+    batch_connect_form_type_new_name_error: Voer een geldige naam in om verder te gaan.
+    batch_connect_invalid_form_array: Het element 'form' in form.yml is geen array.
+    batch_connect_invalid_form_attributes: Het element 'attributes' in form.yml is geen Map.
+    batch_connect_missing_cluster: 'De cluster is nooit ingesteld. Stel deze in in form.yml.erb met `cluster` of `form.cluster` of
+
+      stel `cluster` in in submit.yml.erb.
+
+
+      '
+    batch_connect_no_apps: Er zijn geen interactieve apps beschikbaar.
+    batch_connect_no_sessions: Je hebt geen actieve sessies.
+    batch_connect_sandbox: '[Sandbox]'
+    batch_connect_sessions_cancel_confirm: Weet je het zeker?
+    batch_connect_sessions_cancel_full_title: Annuleer de %{title} sessie
+    batch_connect_sessions_cancel_title: Annuleren
+    batch_connect_sessions_connect_to: Verbinden met %{app_title}
+    batch_connect_sessions_connection_render_error: Kan de verbindingsknop in view.html.erb niet weergeven vanwege fout '%{error}'.
+    batch_connect_sessions_data_html: 'De sessiegegevens %{title} voor deze sessie zijn toegankelijk
+
+      onder %{data_link_tag}.
+
+
+      '
+    batch_connect_sessions_delete_confirm: Weet je het zeker?
+    batch_connect_sessions_delete_full_title: Verwijder de sessie %{title}
+    batch_connect_sessions_delete_hover: Sessie verwijderen
+    batch_connect_sessions_delete_title: Verwijderen
+    batch_connect_sessions_edit_title: Bewerk de nieuwe %{title} met deze sessieparameters
+    batch_connect_sessions_error_invalid_job_name_html: 'Als deze taak niet kon worden ingediend vanwege een ongeldige taaknaam,
+
+      vraag dan uw beheerder om OnDemand zo te configureren dat de
+
+      omgevingsvariabele OOD_JOB_NAME_ILLEGAL_CHARS wordt ingesteld.
+
+
+      '
+    batch_connect_sessions_errors_staging: 'Het klaarzetten van de sjabloon is mislukt vanwege de volgende fout:'
+    batch_connect_sessions_errors_submission: 'Het verzenden van de sessie is mislukt met de volgende foutmelding:'
+    batch_connect_sessions_native_vnc_tab: Instructies van de moedertaal
+    batch_connect_sessions_novnc_compression: Compressie
+    batch_connect_sessions_novnc_compression_help: 1 (laag) tot 9 (hoog)
+    batch_connect_sessions_novnc_launch: Lancering %{app_title}
+    batch_connect_sessions_novnc_quality: Beeldkwaliteit
+    batch_connect_sessions_novnc_quality_help: 0 (laag) tot 9 (hoog)
+    batch_connect_sessions_novnc_tab: noVNC-verbinding
+    batch_connect_sessions_novnc_view_only: Alleen bekijken (deelbare link)
+    batch_connect_sessions_path_selector_forbidden_error: U hebt geen toestemming om die map of dat bestand te selecteren.
+    batch_connect_sessions_relaunch_full_title: Herstart de %{title} sessie
+    batch_connect_sessions_relaunch_title: Herlancering
+    batch_connect_sessions_staged_root: gefaseerde hoofdmap
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} kern'
+      other: '%{count} kernen'
+    batch_connect_sessions_stats_created_at: 'Gemaakt op:'
+    batch_connect_sessions_stats_expected_time: 'Verwachte startdatum:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPU''s'
+    batch_connect_sessions_stats_host: 'Gastheer:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} knooppunt'
+      other: '%{count} knooppunten'
+    batch_connect_sessions_stats_session_dir_link_title: Open de sessiemap voor %{session_id}
+    batch_connect_sessions_stats_session_id: 'Sessie-ID:'
+    batch_connect_sessions_stats_support_ticket: Problemen met deze sessie?
+    batch_connect_sessions_stats_support_ticket_link_text: Dien een supportticket in
+    batch_connect_sessions_stats_time_remaining: 'Resterende tijd:'
+    batch_connect_sessions_stats_time_requested: 'Gewenste tijd:'
+    batch_connect_sessions_stats_time_used: 'Gebruikte tijd:'
+    batch_connect_sessions_stats_undetermined_host: Onbepaald
+    batch_connect_sessions_status_bad: Je sessie is in een foutieve status terechtgekomen. Neem gerust contact op met de ondersteuning voor meer informatie.
+    batch_connect_sessions_status_blurb_cancel_failure: Het annuleren van de sessie is mislukt.
+    batch_connect_sessions_status_blurb_cancel_success: De sessie is succesvol geannuleerd.
+    batch_connect_sessions_status_blurb_create_success: De sessie is succesvol aangemaakt.
+    batch_connect_sessions_status_blurb_delete_failure: Sessie verwijderen mislukt.
+    batch_connect_sessions_status_blurb_delete_success: De sessie is succesvol verwijderd.
+    batch_connect_sessions_status_completed: Voor debugdoeleinden wordt deze kaart nog %{days} dagen bewaard.
+    batch_connect_sessions_status_missing_connection: 'Deze app mist informatie die nodig is om een verbinding tot stand te brengen. Meer specifiek:
+
+      het bestand view.html.erb ontbreekt. Neem contact op met de supportafdeling als u dit bericht ziet.
+
+
+      '
+    batch_connect_sessions_status_queued: 'Even geduld alstublieft, uw taak staat momenteel in de wachtrij. De wachttijd is afhankelijk van
+
+      het aantal cores en de aangevraagde tijd.
+
+
+      '
+    batch_connect_sessions_status_starting: 'Uw sessie start momenteel... Even geduld, dit proces kan een paar minuten duren.
+
+
+      '
+    batch_connect_sessions_word: Sessie
+    batch_connect_validation:
+      app_not_found: Deze app bestaat niet in de map '%{root}'.
+      inaccessible_clusters: Deze app vereist clusters die niet bestaan of waartoe u geen toegang hebt.
+      missing_form_file: Deze app levert geen formulierbestand in de map '%{root}'.
+      missing_sub_app_form_file: Deze app levert geen sub-app-formulierbestand in de map '%{root}'.
+      no_cluster_specified: Deze app specificeert geen cluster.
+    bc_saved_settings:
+      delete_confirm: Weet je het zeker?
+      delete_title: Verwijder de opgeslagen instellingen van %{settings_name}
+      deleted_message: Opgeslagen instellingen %{settings_name} verwijderd.
+      edit_title: Bewerk de opgeslagen instellingen van %{settings_name}
+      launch_title: Start %{app_title} met de parameters van %{settings_name}
+      missing_settings: De geselecteerde opgeslagen instellingen zijn niet gevonden.
+      no_settings_title: Je hebt geen opgeslagen instellingen.
+      outdated_message: De parameters van %{app_title} zijn gewijzigd sinds deze instellingen zijn aangemaakt.
+      saved_message: '%{settings_name} instellingen opgeslagen'
+      settings_values_label: Waarden
+      title: Opgeslagen instellingen
+    breadcrumb_aria: Paneermeel
+    breadcrumbs_all_apps: Alle apps
+    breadcrumbs_home: Thuis
+    breadcrumbs_my_sessions: Mijn interactieve sessies
+    breadcrumbs_support_ticket: Ondersteuningsticket
+    browser_warning: 'Voor OnDemand is een recentere versie van uw browser vereist. De volgende browsers worden momenteel ondersteund: IE Edge, Firefox 19+, Chrome 34+ en Safari 8+.'
+    cancel: Annuleren
+    categories:
+      apps: Apps
+      bioinformatics: Bio-informatica
+      clusters: Clusters
+      data_science: Datawetenschap
+      desktop: bureaublad
+      desktops: Desktops
+      development: Ontwikkeling
+      external_apps: Externe apps
+      files: Bestanden
+      gateway_apps: Gateway-apps
+      guis: GUI's
+      interactive_apps: Interactieve apps
+      jobs: Banen
+      machine_learning: Machine learning
+      mathematics: Wiskunde
+      servers: Servers
+      utilities: Nutsvoorzieningen
+      virtual_desktop_interface: Virtuele bureaubladinterface
+      visualization: Visualisatie
+    clear: Duidelijk
+    close: Dichtbij
+    close_alert: Sluit deze melding.
+    close_notice: Sluit deze melding.
+    cluster: Cluster
+    copy: Kopiëren
+    copy_suffix: (Kopie)
+    cpu_report: CPU-rapport + %{node}
+    custom_pages:
+      invalid: 'Ongeldige paginacode: %{page}. Deze pagina is niet geconfigureerd.'
+    date: Datum
+    delete: Verwijderen
+    detailed_metrics: Gedetailleerde statistieken
+    details: Details
+    development_apps_caption: Sandbox-app
+    development_apps_category: Sandbox-apps
+    development_delete_app: App verwijderen
+    development_edit_title: Bewerk %{title}
+    development_launch_title: Lancering %{title}
+    directory: Directory
+    edit: Bewerking
+    editor_default: Standaard
+    editor_font_size: Lettergrootte
+    editor_key_bindings: Toetsencombinaties
+    editor_theme: Thema
+    editor_theme_bright: Helder
+    editor_theme_dark: Donker
+    editor_wrap: Wrap
+    error_details: 'Details:'
+    error_internal_body_html: Please try again in a few moments. If you continue to see this error, please <a href="%{support_url}">contact support</a>.
+    error_internal_title: Interne serverfout
+    error_not_found_body: De pagina die u zoekt bestaat niet.
+    error_not_found_title: Niet gevonden
+    favorites: Favorieten
+    file: Bestand
+    file_editor: Bestandseditor
+    file_quotas: Bestandsquota
+    files: Bestanden
+    files_change_directory: Map wijzigen
+    files_contents_of_directory: Inhoud van de map %{path}
+    files_copy_move: Kopiëren/Verplaatsen
+    files_copy_path: Kopieer pad
+    files_directory_contents_aria: Mapinhoud
+    files_directory_download_error_modal_title: De map is te groot om te downloaden.
+    files_directory_download_unauthorized: Je kunt alleen een bestand of map downloaden waarvoor je lees- en uitvoerrechten hebt.
+    files_directory_size_calculation_error: Er is een time-out opgetreden tijdens het bepalen van de mapgrootte.
+    files_directory_size_calculation_timeout: Er is een time-out opgetreden tijdens het bepalen van de mapgrootte.
+    files_directory_size_unknown: 'Fout met status %{exit_code} bij het bepalen van de mapgrootte: %{error}'
+    files_directory_too_large: De map is te groot om als zip-bestand te downloaden. De map moet kleiner zijn dan %{download_directory_size_limit} bytes.
+    files_doesnt_exist: '%{path} bestaat niet.'
+    files_download: Download
+    files_download_not_enabled: Het downloaden van bestanden is niet ingeschakeld op deze server.
+    files_download_zip: Downloaden als zip-bestand
+    files_exceeds_editor_limit: '%{path} overschrijdt de editorlimiet van %{limit}. Download het bestand om het te bewerken of bekijk het lokaal.'
+    files_file_too_large: Het bestand is te groot om te downloaden. Bestanden mogen niet groter zijn dan %{download_file_size_limit} bytes.
+    files_go_up_directory: Ga naar boven in de map
+    files_modified_at: Gewijzigd op
+    files_modify_aria: Bestanden wijzigen
+    files_new_directory: Nieuwe map
+    files_new_file: Nieuw bestand
+    files_not_editable: '%{path} is geen bewerkbaar bestand'
+    files_not_readable: U beschikt niet over voldoende rechten om '%{path}' te lezen.
+    files_open_in_files_app: Openen in de bestandsapp
+    files_open_in_globus: Openen in Globus
+    files_path_breadcrumbs_aria: Pad broodkruimels
+    files_refresh: Vernieuwen
+    files_remote_dir_not_created: Map %{path} is niet aangemaakt.
+    files_remote_disabled: Ondersteuning voor externe bestanden is niet ingeschakeld.
+    files_remote_empty_dir_unsupported: Remote ondersteunt geen lege mappen.
+    files_remote_error_listing_remotes: 'Fout bij het weergeven van Rclone-remotes: %{error}'
+    files_send_to_target_title_default: Verzend de metadata van de geselecteerde bestanden naar de externe applicatie.
+    files_shell: Openen in Terminal
+    files_shell_dropdown: Selecteer het cluster dat u in de terminal wilt openen.
+    files_title: Bestanden bekijken
+    files_upload: Uploaden
+    footer_contribute: Draag bij via GitHub
+    footer_license: Softwarelicentie-kennisgeving
+    footer_open_source: Open source software.
+    footer_powered_by: Mogelijk gemaakt door Open OnDemand
+    footer_version: 'OnDemand-versie: %{version}'
+    home_directory: Startpagina
+    id: ID
+    import: Importeren
+    job: Functie
+    job_info: Vacature-informatie
+    jobs_back_to_projects: Terug naar projecten
+    jobs_clear_form_fields: Wis de velden in het formulier
+    jobs_completed_jobs: Voltooide opdrachten
+    jobs_create_blank_project: Een nieuw project aanmaken
+    jobs_create_blank_workflow: Nieuwe workflow
+    jobs_create_template_project: Een nieuw project maken op basis van een sjabloon.
+    jobs_import_shared_project: Een gedeeld project importeren
+    jobs_launchers: Lanceerders
+    jobs_launchers_add_select_option: Voeg selectieoptie %{name} toe
+    jobs_launchers_cannot_find: Kan launcher %{id} niet vinden
+    jobs_launchers_clone: Kloonlauncher %{name}
+    jobs_launchers_created: Launcher succesvol aangemaakt!
+    jobs_launchers_default_created: Aan dit project is ook een 'hello_world.sh'-bestand toegevoegd.
+    jobs_launchers_delete: Verwijder launcher %{name}
+    jobs_launchers_delete_script_confirmation: Alle inhoud van de launcher verwijderen?
+    jobs_launchers_deleted: Launcher succesvol verwijderd!
+    jobs_launchers_edit: Bewerkingsformulier voor launcher %{name}
+    jobs_launchers_edit_form_item: Bewerk formulieritem %{label}
+    jobs_launchers_editing: Bewerken %{title}
+    jobs_launchers_fixed_field: Vaste waarde
+    jobs_launchers_fixed_field_help: De huidige waarde vastzetten
+    jobs_launchers_max_value_label: Maximale waarde voor numeriek veld %{label}
+    jobs_launchers_min_value_label: Minimumwaarde voor numeriek veld %{label}
+    jobs_launchers_name: Naam van de launcher
+    jobs_launchers_new_field_select: Selecteer het item dat u aan het formulier wilt toevoegen.
+    jobs_launchers_not_found: Kan Launcher %{launcher_id} niet vinden
+    jobs_launchers_preview_form_item: Voorbeeldweergave van formulieritem %{label}
+    jobs_launchers_remove_form_item: Verwijder formulieritem %{label}
+    jobs_launchers_remove_select_option: Verwijder selectieoptie %{name}
+    jobs_launchers_save_form: Formulier opslaan
+    jobs_launchers_save_form_item: Wijzigingen in formulieritem %{label} opslaan
+    jobs_launchers_show_form: Toon formulier voor launcher %{name}
+    jobs_launchers_submit_launcher_title: Startscript met opgeslagen of standaardwaarden voor launcher %{name}
+    jobs_launchers_submitted: Taak %{job_id} succesvol ingediend.
+    jobs_launchers_updated: Launchermanifest bijgewerkt!
+    jobs_native_dependency: De taak is afhankelijk van taak-ID%{dependency}
+    jobs_native_reason: vanwege '%{reason}'
+    jobs_native_state: De huidige taakstatus is '%{state}'.
+    jobs_new_launcher: Nieuwe launcher
+    jobs_new_project: Nieuw project
+    jobs_project_cannot_find: Project %{project_id} kan niet worden gevonden.
+    jobs_project_clear_form_fields: Wis de velden in het formulier
+    jobs_project_created: Project succesvol aangemaakt!
+    jobs_project_delete_label: Verwijder project %{name}
+    jobs_project_delete_project_confirmation: Alle inhoud van de projectmap verwijderen?
+    jobs_project_deleted: Project succesvol verwijderd!
+    jobs_project_description_placeholder: Projectbeschrijving
+    jobs_project_directory_error: Het pad naar de projectmap is niet ingesteld voor deze workflow.
+    jobs_project_directory_help_html: 'Laat dit veld leeg en er wordt een nieuwe map aangemaakt. <br />Standaardlocatie: %{root_directory}'
+    jobs_project_directory_placeholder: Het absolute pad van de projectmap
+    jobs_project_edit_label: Bewerk project %{name}
+    jobs_project_generic_error: 'Er is een fout opgetreden bij het verwerken van uw verzoek: %{error}'
+    jobs_project_group_help: Zorg ervoor dat u de groep kiest die alle beoogde medewerkers omvat. Als dit geen samenwerkingsproject is, wordt de standaardgroep aanbevolen.
+    jobs_project_group_owner: Groep
+    jobs_project_imported: Project succesvol geïmporteerd!
+    jobs_project_invalid_configuration_clusters: Een HPC-cluster is vereist. Neem contact op met uw beheerder om er een aan het systeem toe te voegen.
+    jobs_project_invalid_configuration_scripts: Voor je project heb je een uitvoerbaar script nodig. Upload een script via de bestandsapplicatie.
+    jobs_project_job_deleted: Taak %{job_id} succesvol verwijderd.
+    jobs_project_job_not_deleted: Kan taak %{job_id} niet verwijderen
+    jobs_project_job_stopped: Taak %{job_id} succesvol gestopt
+    jobs_project_list_aria: Projectenlijst
+    jobs_project_manager: Projectmanager
+    jobs_project_manifest_updated: Projectmanifest bijgewerkt!
+    jobs_project_name_placeholder: Projectnaam
+    jobs_project_name_validation: De projectnaam mag alleen letters, cijfers, streepjes, underscores en spaties bevatten.
+    jobs_project_not_found: Project %{project_id} kan niet worden gevonden.
+    jobs_project_open_label: Open project %{name}
+    jobs_project_remove_label: Verwijder project %{name}
+    jobs_project_removed: Project verwijderd uit zoekresultaten!
+    jobs_project_return_to_projects: Terug naar de projectenpagina
+    jobs_project_save_error: Kan het manifest niet opslaan in %{path}
+    jobs_project_save_project_title: Project opslaan
+    jobs_project_select_directory: Selecteer de projectmap
+    jobs_project_setgid_help: Als u 'setgid' aangevinkt laat, worden projectbestanden aangemaakt met de geselecteerde groep. Dit heeft geen invloed op projecten in uw thuismap.
+    jobs_project_validation_error: Ongeldig verzoek. Controleer de onderstaande foutmeldingen.
+    jobs_return_to_projects: Terug naar de projectenpagina
+    jobs_save_project_title: Project opslaan
+    jobs_select_directory_placeholder: Klik op het project om het te importeren.
+    jobs_toggle_details: Klik om de details voor taak %{job_id} weer te geven.
+    jobs_workflow_add_launcher: Voeg Launcher toe
+    jobs_workflow_canvas_aria: canvas
+    jobs_workflow_clone: Kloon workflow %{name}
+    jobs_workflow_connect_launchers: Connect Launchers
+    jobs_workflow_created: Werkstroom succesvol aangemaakt!
+    jobs_workflow_delete_confirmation: Alle inhoud van de workflow verwijderen?
+    jobs_workflow_delete_edge: Edge verwijderen
+    jobs_workflow_delete_edge_title: Verwijder de geselecteerde rand (Del/Backspace)
+    jobs_workflow_delete_launcher: Verwijder Launcher
+    jobs_workflow_delete_launcher_title: Verwijder de geselecteerde launcher (Del/Backspace)
+    jobs_workflow_delete_title: Werkstroom %{name} verwijderen
+    jobs_workflow_deleted: Werkstroom succesvol verwijderd!
+    jobs_workflow_description_placeholder: Werkprocesbeschrijving
+    jobs_workflow_edit_settings: Wijzig de instellingen voor workflow %{name}
+    jobs_workflow_editing: 'Bewerking: %{name}'
+    jobs_workflow_enable_sync_key: OOD_WORKFLOW_SYNC_KEY inschakelen
+    jobs_workflow_failed: De workflow is mislukt met foutcode %{error}
+    jobs_workflow_help: Klik op de titel om te selecteren en te slepen. Verbind door op twee launchers te klikken terwijl 'Launchers verbinden' is geselecteerd.
+    jobs_workflow_manifest_updated: Het workflowmanifest is bijgewerkt!
+    jobs_workflow_missing_launchers: selecteer ten minste %{count}
+    jobs_workflow_name_placeholder: Werkstroomnaam
+    jobs_workflow_name_validation: De naam van de workflow mag alleen letters, cijfers, streepjes, underscores en spaties bevatten.
+    jobs_workflow_not_found: Kan workflow %{workflow_id} niet vinden
+    jobs_workflow_pick_launchers: Kies lanceerders
+    jobs_workflow_show_graph: Open workflow %{name} in de grafische editor
+    jobs_workflow_submitted: Werkstroom succesvol ingediend!
+    jobs_workflow_sync_key_help: Wanneer deze optie is ingeschakeld, ontvangt elke launcher in deze workflow dezelfde omgevingsvariabele <code>OOD_WORKFLOW_SYNC_KEY</code> (een willekeurig token dat uniek is voor elke workflow-uitvoering). Dit is handig voor het genereren van gesynchroniseerde bestandsnamen, vergrendelingsbestanden of gedeelde identificaties voor afhankelijke taken.
+    jobs_workflow_synchronization: Synchronisatie
+    jobs_workflow_toolbar_aria: werkbalk
+    jobs_workflow_zoom_controls: Zoombediening
+    jobs_workflow_zoom_in: Zoom in
+    jobs_workflow_zoom_out: Uitzoomen
+    jobs_workflow_zoom_reset: Zoom opnieuw instellen
+    jobs_workflows: Werkstromen
+    jobs_workflows_not_supported: Werkstromen worden niet ondersteund door de geconfigureerde planner.
+    js:
+      active_jobs:
+        delete_aria: Verwijder taak %{name} met ID %{id}
+        delete_confirm: Weet je zeker dat je %{name} - %{id} wilt verwijderen?
+        delete_title: Taak verwijderen
+        details_loaded: De lijst met vacaturedetails is geladen.
+        load_details_failed: Het laden van de taakdetails is mislukt.
+        remote_server_error: Er is een fout opgetreden bij het ophalen van gegevens van de externe server.
+        request_failed_parse: Het verzoek om banen is mislukt vanwege een fout bij het parseren van de gegevensbody.
+        request_failed_status: 'Verzoek om taken mislukte met statuscode: %{status}'
+        status_completed: Voltooid
+        status_hold: Uitstel
+        status_queued: In de wachtrij
+        status_running: Rennen
+        status_suspended: Opgeschort
+        status_undetermined: Onbepaald
+        support_ticket_aria: Dien een supportticket in voor de taak met ID %{id}
+        support_ticket_title: Dien een supportticket in
+        toggle_details_aria: Schakel de zichtbaarheid van taak %{name} in/uit op %{cluster}
+      batch_connect:
+        allow_notifications: Schakel notificatierechten in uw browser in om sessiewaarschuwingen te kunnen ontvangen.
+        invalid_prefill_value_html: 'Ongeldige waarde: "%{value}" voor het veld "%{field}".<br>'
+        notification_permission_error: 'Fout bij het aanvragen van toestemming voor meldingen:'
+        resolution_reset: Resolutie teruggezet naar %{width} met %{height} pixels.
+        session_expires_warning: 'Waarschuwing: %{title} (%{job_id}) verloopt over ongeveer %{minutes} minuten!'
+        session_status_aria: '%{title} is nu %{status}.'
+        session_status_push: '%{title} (%{job_id}) is nu %{status}.'
+      common:
+        cancel: Annuleren
+        close: Dichtbij
+        error: Fout
+        loading: Laden...
+        ok: OK
+      datatables:
+        all: Alle
+        filter_label: 'Filter:'
+        invalid_date: Ongeldige datum
+        rows_selected:
+          one: '%{count} rij geselecteerd'
+          other: '%{count} rijen geselecteerd'
+        showing_filtered_rows: Toont %{display} van de %{total} rijen
+        showing_rows: '%{display} rijen weergeven'
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ' En '
+        changed_help: De helptekst van %{widget} is gewijzigd naar %{help}.
+        changed_label: Het label van %{widget} is gewijzigd naar het nieuwe label %{label}.
+        current_value: stel de huidige waarde in op %{value}
+        hid_item: Formulieritem %{widget} verborgen
+        maximum_limit: maximale limiet voor %{value}
+        minimum_limit: minimumlimiet voor %{value}
+        option_disabled: Optie %{value} uitgeschakeld voor %{widget}
+        option_enabled: Optie %{value} ingeschakeld voor %{widget}
+        revealed_item: Onthuld formulieritem %{widget}
+        selected_option_disabled: De geselecteerde optie %{value} is uitgeschakeld voor %{widget}.
+        set_limits: Stel %{details} in voor %{widget}
+        set_value: Stel %{widget} in op de waarde %{value}
+        widget_no_label: '%{type} zonder label'
+        widget_with_label: '%{type} met label %{label}'
+      editor:
+        save_error: 'Er is een fout opgetreden tijdens het opslaan van dit bestand!
+
+
+          %{error}'
+        unsaved_changes: Je hebt niet-opgeslagen wijzigingen!
+      files:
+        action_delete: Verwijderen
+        action_download: Download
+        action_edit: Bewerking
+        action_rename: Naam wijzigen
+        action_view: Weergave
+        actions: Acties
+        cannot_navigate_file: Kan niet naar een bestand navigeren.
+        change_directory: Wijzigingsmap
+        clipboard_description_html: 'Kopieer of verplaats de onderstaande bestanden van <code>%{from}</code> naar de huidige map:'
+        contents_of_directory: Inhoud van de map %{path}
+        copied_path: Pad naar klembord gekopieerd!
+        copy: Kopiëren
+        create_directory_error: 'Er is een fout opgetreden tijdens het aanmaken van een nieuwe map: %{error}'
+        create_file_error: 'Er is een fout opgetreden tijdens het aanmaken van een nieuw bestand: %{error}'
+        delete_confirm_text: Weet je zeker dat je de bestanden %{files} wilt verwijderen?
+        delete_multiple_title: De geselecteerde bestanden van %{count} verwijderen?
+        delete_single_title: '%{name} verwijderen?'
+        deleting_files: 'Bestanden verwijderen...:'
+        directory: map
+        directory_name_label: Mapnaam
+        download_error: 'Fout tijdens het downloaden: %{error}'
+        duplicate_files_warning: Er zijn dubbele bestanden gevonden. Het uploaden van deze bestanden zal de bestaande inhoud overschrijven.
+        file: bestand
+        filename_invalid_chars: De bestandsnaam mag geen / of . bevatten.
+        filename_label: Bestandsnaam
+        globus_open: Open de huidige map met Globus.
+        globus_unavailable: Er is geen Globus-eindpunt aan deze map gekoppeld.
+        illegal_slash_in_filename: Het teken (/) is niet toegestaan in de bestandsnaam.
+        move: Beweging
+        navigated_to: Navigeren naar %{path}
+        new_directory_title: Nieuwe map
+        new_file_title: Nieuw bestand
+        path_label: Pad
+        poll_status_error: De bewerking heeft mogelijk niet plaatsgevonden. Het ophalen van de bestandsstatus is mislukt.
+        preparing_download_dir: 'Map voorbereiden voor downloaden: %{name}'
+        provide_absolute_pathname: Geef een absoluut pad op
+        provide_directory_name: Geef een mapnaam op die geen schuine streep (/) bevat.
+        provide_non_empty_filename: Geef een niet-lege bestandsnaam op.
+        provide_rename_filename: Geef een bestandsnaam op waarnaar dit bestand moet worden hernoemd.
+        rename_title: Naam wijzigen
+        see_details: Zie details
+        select_row: Selecteer rij
+        select_to_copy_move: Selecteer een of meer bestanden of mappen om te kopiëren of te verplaatsen. U hebt niets geselecteerd.
+        select_to_delete: Selecteer een of meer bestanden of mappen om te verwijderen. U hebt niets geselecteerd.
+        select_to_download: Selecteer een of meerdere bestanden of een map om te downloaden. U heeft niets geselecteerd.
+        select_to_send: Selecteer ten minste één bestand of map om te verzenden.
+        send_failed: Het verzenden van de bestandsinformatie is mislukt.
+        sent_successfully: De geselecteerde bestandsinformatie is succesvol verzonden.
+        show_dotfiles: Toon puntbestanden
+        show_owner_mode: Eigenaar/modus weergeven
+        summary_copy_files: bestanden kopiëren
+        summary_move_files: bestanden verplaatsen
+        summary_remove_files: bestanden verwijderen
+        summary_rename_file: hernoem het bestand
+        token_missing_expired: Het applicatietoken ontbreekt of is verlopen. Begin opnieuw.
+        transfer_error: 'Er is een fout opgetreden tijdens de poging tot %{summary}: %{error}'
+        upload_and_overwrite: Uploaden en overschrijven
+        upload_count:
+          one: Upload het bestand %{count}
+          other: Upload %{count} bestanden
+        upload_new_files: Nieuwe bestanden uploaden
+        uppy_empty_dir_note: Lege mappen worden alleen in de upload opgenomen wanneer een mapupload wordt gestart via slepen en neerzetten. Dit komt omdat de API voor bestanden en mapvermeldingen alleen beschikbaar is bij een neerzetgebeurtenis, niet bij een wijziging van de invoer.
+      icon_picker:
+        icon_selected: '%{icon} pictogram geselecteerd'
+        icon_sr: '%{name} icoon'
+      launcher_edit:
+        account_help: Het account waarmee de opdracht zal worden ingediend.
+        account_label: Rekening
+        add_new_option: Nieuwe optie toevoegen
+        cores_help: Op hoeveel processorkernen de taak zal worden uitgevoerd.
+        cores_label: Kernen
+        env_var_help: Voeg een omgevingsvariabele toe.
+        env_var_key: 'Omgevingsvariabele: %{name}'
+        env_var_label: Omgevingsvariabele
+        hours_help: Hoe lang de klus kan duren.
+        hours_label: Uren
+        job_name_help: De naam die de functie zal hebben.
+        job_name_label: Functienaam
+        log_location_help: De bestemming van de loguitvoer van de taak.
+        log_location_label: Logboeklocatie
+        no_more_options: Geen opties meer
+        nodes_help: Op hoeveel knooppunten de taak zal worden uitgevoerd.
+        nodes_label: Knooppunten
+        queues_help: Naar welke wachtrij de taak wordt verzonden.
+        queues_label: Wachtrijen
+      module_browser:
+        copied: Gekopieerd!
+        copy: Kopiëren
+        showing_results:
+          one: Resultaat %{count} weergeven
+          other: Resultaten van %{count} weergeven
+      nsf_access:
+        affected_resources: 'Betrokken bronnen: %{resources}'
+        read_more: Lees meer
+        register_event: Meld je aan voor dit evenement
+      path_selector:
+        directory_loaded: Map gevuld met %{count} items
+        invalid_regex: De reguliere expressie die voor deze padselector is opgegeven, is niet gecompileerd.
+        loading_directory: Mapinhoud laden
+        permission_denied_prefix: 'Toegang geweigerd:'
+      popovers:
+        ihpc_content: Een interactieve HPC-sessie geeft u directe toegang tot een of meer knooppunten in het cluster. Dit is vergelijkbaar met een interactieve batchsessie met een toegankelijk bureaublad op het primaire knooppunt. Gebruik dit voor zware taken, zoals langlopende rekentaken, of wanneer u specifieke resources nodig hebt.
+        vdi_content: Een VDI (Virtual Desktop Interface) geeft u toegang tot een gedeelde server via uw bureaublad. Dit is de grafische versie van een inlogserver. Gebruik deze voor eenvoudige taken zoals het openen en bekijken van bestanden, het indienen van taken en voor visualisaties.
+      products:
+        fatal_error: Er is een fatale fout opgetreden.
+        no_action: geen actie
+      projects:
+        undetermined_size: Onbekende grootte
+      support_ticket:
+        delete_attachment: Verwijder bijlage
+        no_file_selected: Geen bestand geselecteerd
+        selected_file: 'Geselecteerd bestand: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Deze pagina kan niet worden bijgewerkt omdat u niet langer bent ingelogd. Vernieuw de pagina om opnieuw in te loggen.
+        unexpected_error: Er is een onverwachte fout opgetreden op deze pagina. Vernieuw de pagina.
+      utils:
+        loading: Laden...
+        loading_complete: Laden voltooid.
+        popup_blocked: Deze link is ingesteld om in een nieuw venster te openen, maar dat lijkt niet te gebeuren. Schakel uw pop-upblokkering voor deze pagina uit en probeer het opnieuw.
+      workflows:
+        begin_from_launcher: Start workflow from launcher %{title}
+        bidirectional_not_allowed: Bidirectionele randen zijn niet toegestaan.
+        cyclic_dependency: Het toevoegen van deze rand zal een cyclische afhankelijkheid tussen de launchers creëren.
+        edge_aria_label: Rand van %{from} naar %{to}
+        launcher_aria_label: 'Launcher: %{title}'
+        launcher_exists: Deze launcher bestaat al, selecteer een andere launcher.
+        load_launcher_failed: Het laden van de launcher-HTML is mislukt. Probeer het opnieuw.
+        no_empty_cells: Geen lege rastercellen beschikbaar!
+        save_failed: Het opslaan van de workflow is mislukt. Raadpleeg de console voor meer informatie.
+        select_launcher: Selecteer een launcher.
+      xdmod:
+        analytics_toggle: Analyse-schakelaar
+        column_date: Datum
+        column_id: ID
+        column_name: Naam
+        date_range: '%{from} naar %{to}'
+        efficiency_report: '%{unit} Efficiëntierapport'
+        ensure_logged_in_html: '%{error} Zorg ervoor dat je eerst bent ingelogd bij Open XDMoD<a href="%{url}"> en probeer het dan opnieuw.'
+        expand_analytics_title: Klik om de analysegegevens voor taak %{id} boven deze tabel uit te breiden.
+        fetch_user_failed: Poging om huidige gebruikersinformatie op te halen van Open XDMoD is mislukt.
+        idp_redirect_failed: 'Aanmelden mislukt: IDP-omleiding mislukt'
+        iframe_error: XDMoD Login iFrame op URL %{url} gaf een foutmelding met info %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} inefficiënt %{unit} </span> ⁄ %{total} totaal %{unit}
+        invalid_job_data: De door het verzoek geretourneerde taakgegevens zijn ongeldig.
+        loading_caps: LADEN...
+        login_page_load_failed: 'Aanmelden mislukt: Het laden van de XDMoD-aanmeldpagina is mislukt.'
+        login_timeout: 'Aanmelden mislukt: Time-out opgetreden tijdens het wachten tot de aanmelding is voltooid.'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Walltime
+        no_data: Geen gegevens beschikbaar.
+        not_available: Niet van toepassing
+        open_xdmod: Open XDMoD
+        percent_efficient: '%{percent}% efficiënt'
+        percent_efficient_aria: procent efficiënt
+        percent_inefficient: '%{percent}% inefficiënt'
+        percent_inefficient_aria: procent inefficiënt
+        recently_completed_jobs: Recent afgeronde projecten
+        unit_core_hours: kernuren
+        unit_core_hours_title: Kernuren
+        unit_jobs: banen
+        unit_jobs_title: Banen
+    launch: Launch
+    load_report: Laadrapport + %{node}
+    loading: Laden...
+    loading_short: Laden
+    locale_name: Nederlands (Nederland)
+    logo_alt_text: Welkom bij Open OnDemand
+    logout_body_html: <strong>U moet uw browser volledig afsluiten</strong> om uit te loggen. Als u na het opnieuw openen van uw browser nog steeds bent ingelogd, wis dan uw cookies. Als u een Chromebook of Chromebox gebruikt, moet u uw apparaat opnieuw opstarten om de browser af te sluiten en dus uit te loggen.
+    logout_tip_html: '<strong>Tip: Het gebruik van een "privémodus"</strong> venster tijdens het gebruik van OnDemand is een uitstekende manier om "automatisch uitloggen" te voorkomen, aangezien het sluiten van uw browservenster alle bijbehorende cookies en sessiegegevens verwijdert.'
+    logout_title: Je bent nog niet uitgelogd.
+    maximum: Maximum
+    mem_report: Geheugenrapport + %{node}
+    minimum: Minimum
+    mode: Modus
+    module_browser_available_modules: 'Beschikbare modules:'
+    module_browser_copy_aria: Kopieer laadopdracht voor %{name}
+    module_browser_dependencies: 'Afhankelijkheden:'
+    module_browser_last_updated: 'Laatst bijgewerkt: %{last_updated}'
+    module_browser_load_command: 'Laadopdracht:'
+    module_browser_search_label: Zoekmodules
+    module_browser_search_placeholder: Zoeken op modulenaam...
+    module_browser_select_version: (selecteer versie)
+    module_browser_showing_results: Resultaten van %{count} weergeven
+    module_browser_title: Modulebrowser
+    module_browser_versions: Versies
+    motd_default_md: 'De ontwikkeling van Open OnDemand wordt ondersteund door de [National Science Foundation](https://www.nsf.gov/)
+
+      onder subsidienummers [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) en
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Meer informatie of meedoen:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
+      - [Open OnDemand repository](https://github.com/OSC/ondemand)
+
+      - [ood-core repository](https://github.com/OSC/ood_core)
+
+      - [Documentatie](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD is niet correct geparseerd of weergegeven: %{error_message}'
+    motd_no_messages: Er zijn geen nieuwe berichten.
+    motd_title: Bericht van de dag
+    name: Naam
+    nav_all_apps: Alle apps
+    nav_develop_docs: Ontwikkelaarsdocumentatie
+    nav_develop_my_sandbox_apps_dev: Mijn sandbox-apps (ontwikkeling)
+    nav_develop_my_sandbox_apps_prod: Mijn gedeelde apps (productie)
+    nav_develop_title: Ontwikkelen
+    nav_help_change_password: HPC-wachtwoord wijzigen
+    nav_help_custom: Navigatiehulp aangepast
+    nav_help_docs: Online documentatie
+    nav_help_support: Neem contact op met de ondersteuning.
+    nav_help_support_ticket: Dien een supportticket in
+    nav_help_title: Hulp
+    nav_help_two_factor: Tweefactorauthenticatie configureren
+    nav_language: Taal
+    nav_limit_caption: '%{subset_count} van %{total_count} weergeven'
+    nav_logout: Uitloggen
+    nav_main_menu: Hoofdmenu
+    nav_restart_server: Webserver opnieuw opstarten
+    nav_sessions: Mijn interactieve sessies
+    nav_toggle_navigation: Navigatie in-/uitschakelen
+    nav_user: Ingelogd als %{username}
+    network_report: Netwerkrapport + %{node}
+    node: Knooppunt
+    none: Geen
+    not_grouped: Andere apps
+    nsf_access_announcements: NSF ACCESS-aankondigingen
+    nsf_access_events: NSF ACCESS-evenementen
+    nsf_access_outages: NSF ACCESS-storingen
+    ok: OK
+    opens_in_new_tab: wordt geopend in een nieuw tabblad
+    output_location: 'Uitvoerlocatie:'
+    owner: Eigenaar
+    page_actions_aria: Pagina-acties
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parameters
+    path_selector_breadcrumb_aria: '%{title} Broodkruimel'
+    path_selector_caption: Kies een bestand of map die u in het formulier wilt gebruiken.
+    path_selector_default_popup_title: Selecteer uw werkmap
+    path_selector_home: thuis
+    path_selector_parent_directory: bovenliggende map
+    permissions_created: De toestemming is succesvol aangemaakt.
+    permissions_destroyed: De toestemming is succesvol vernietigd.
+    permissions_group_title: Groepsmachtigingen
+    permissions_user_title: Gebruikersrechten
+    pinned_apps_caption_html: Een geselecteerde subset van <a href="%{all_apps_url}">alle beschikbare apps</a>
+    pinned_apps_category: Apps
+    pinned_apps_title: Vastgepinde apps
+    products_created: Het product is succesvol ontwikkeld.
+    products_git_commit_hint_html: Sla eventuele wijzigingen op of voeg de benodigde bestanden toe aan <code>.gitignore</code>.
+    products_git_staged: Geënsceneerd
+    products_git_status: Git-status
+    products_git_unstaged: Niet in scène gezet
+    products_git_untracked: Niet geregistreerd
+    products_manifest_save_error: Kan het app-manifest niet opslaan in %{path}
+    products_ssh_key_created: De SSH-sleutel is succesvol aangemaakt.
+    products_ssh_key_exists: SSH-sleutel bestaat al
+    products_ssh_key_failed: 'Het aanmaken van de SSH-sleutel is mislukt: %{error}'
+    products_type_batch_connect: Batch Connect-app
+    products_type_passenger: Passagiersapp
+    products_type_passenger_meteor: Passagiers-Meteor-app
+    products_type_passenger_node: Passagiersknooppunt-app
+    products_type_passenger_rack: Passagiersrek-app
+    products_type_passenger_rails: Passagierstrein-app
+    products_type_passenger_rails_sqlite: Passagierstrein-app met SQLite-database
+    products_type_passenger_wsgi: Passagiers-WSGI-app
+    products_updated: Het product is succesvol bijgewerkt.
+    project: Project
+    project_balances: Projectbalansen
+    project_directory: Projectmap
+    project_zip_error_message: 'Fout bij het maken van het ZIP-bestand: %{error}'
+    project_zip_success_message: 'Succes: het bestand project.zip is aangemaakt in uw projectmap.'
+    queue: Wachtrij
+    quota_additional_message: Overweeg om bestanden te verwijderen of te archiveren om schijfruimte vrij te maken.
+    quota_block: Gebruikmakend van %{used} van quotum %{available}
+    quota_block_shared: (%{used_exclusive} zijn van jou)
+    quota_file: Gebruikmakend van %{used}-bestanden van quota %{available}-bestanden
+    quota_file_shared: (De bestanden %{used_exclusive} zijn van jou)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Vernieuw de pagina om het bijgewerkte quotum te zien. Het quotum wordt elke 5 minuten bijgewerkt.
+    quota_warning_prefix_html: Quotalimietwaarschuwing voor
+    recently_used_apps_title: Recent gebruikte apps
+    remove: Verwijderen
+    reset: Reset
+    restart_msg_html: 'Je groepslidmaatschap is gewijzigd, wat gevolgen heeft voor je toegang tot apps. Je dashboard zou automatisch opnieuw moeten opstarten.
+
+
+      Als dit niet gebeurt, klik dan op: <a href="%{restart_url}">webserver opnieuw opstarten</a>.
+
+
+      '
+    restore: Herstellen
+    root: Wortel
+    save: Redden
+    saved_settings_title: Opgeslagen instellingen
+    select: Select
+    select_all: Alles selecteren
+    select_path: Selecteer pad
+    select_path_for: '%{element} selecteer pad
+
+
+      '
+    settings_csrf_expired: Uw sessiebeveiligingstoken is verlopen. Probeer uw actie opnieuw.
+    settings_invalid_request: Ongeldige instellingen ingediend
+    settings_unprocessable_body_html: Your session may have expired or the change you wanted was rejected. Please <a href="%{dashboard_url}">return to the Dashboard</a> and try again.
+    settings_unprocessable_title: Sessie verlopen of wijziging afgewezen
+    settings_updated: Instellingen bijgewerkt
+    shared_apps_caption: Gedeeld door %{owner_title} (%{owner})
+    shared_apps_caption_short: Gedeeld door %{owner}
+    shared_apps_title: Gedeelde apps
+    sharing_catalog_msg_html: 'Een subset van de beschikbare apps is te bekijken op de <br>.
+
+
+      Een deel van de beschikbare apps is te zien op de %{catalog_link_tag}.'
+    sharing_catalog_title: App-catalogus
+    sharing_no_shared_apps_html: '<strong>Geen aangepaste gedeelde apps beschikbaar.</strong>
+
+
+      '
+    sharing_support_msg_html: 'If you don''t see the app you are looking for, please
+
+      <a href="%{support_url}">contact support</a>.
+
+      '
+    sharing_welcome_msg_html: 'Toegangstoepassingen voor clusters zijn beschikbaar via de vervolgkeuzemenu''s in de navigatiebalk hierboven.
+
+
+      Aangepaste gedeelde toepassingen zijn hieronder beschikbaar.
+
+
+      '
+    shell: Schelp
+    shell_app_title: '%{cluster_title} Shell-toegang'
+    show: Show
+    size: Maat
+    skip_navigation: Navigatie overslaan
+    smart_attributes:
+      account: Rekening
+      auto_modules_none: Automatische modules (geen opgegeven)
+      cluster: Cluster
+      cores: Kernen
+      email_on_started: Ik ontvang graag een e-mail wanneer de sessie begint.
+      environment_variable: Omgevingsvariabele
+      environment_variable_key: 'Omgevingsvariabele: %{key}'
+      job_name: Functienaam
+      module_version: '%{module} versie'
+      num_cpus_single_node: Aantal CPU's op één knooppunt
+      num_hours: Aantal uren
+      num_nodes: Aantal knooppunten
+      num_processors: Aantal processors
+      partition: Partitie
+      qos: QoS
+      queue: Wachtrij
+      script: Script
+      vnc_idle_help: 'Stop als er # seconden verstrijken zonder VNC-viewerverbindingen'
+      vnc_idle_label: Inactiviteitstijdslimiet
+      vnc_resolution_help: Resolutie wordt alleen gebruikt door native VNC-verbindingen.
+      vnc_resolution_label: Oplossing
+    soft_tabs: Zachte tabletten
+    soft_tabs_info: Zachte tabs zijn spaties in het bestand in plaats van echte tabtekens.
+    status: Status
+    status_completed: Voltooid
+    status_held: Vastgehouden
+    status_hold: Uitstel
+    status_queued: In de wachtrij
+    status_running: Rennen
+    status_starting: Beginnen
+    status_suspend: Opschorten
+    status_suspended: Opgeschort
+    status_undetermined: Onbepaald
+    stop: Stop
+    submit: Indienen
+    submit_args: 'Argumenten indienen:'
+    support_ticket:
+      creation_success: 'E-mail met supportticket verzonden naar: %{to}'
+      fields:
+        attachments: Bijlagen
+        cc: CC
+        description: Beschrijving
+        email: E-mail
+        job_description: Functieomschrijving
+        session_description: Sessiebeschrijving
+        subject: Onderwerp
+        username: Gebruikersnaam
+      generic_error: 'Er is een fout opgetreden bij het verwerken van uw verzoek: %{error}'
+      header: Ondersteuningsticket
+      rt:
+        creation_success: 'Supportticket aangemaakt in het RequestTracker-systeem. Ticket-ID: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Er is een supportticket aangemaakt in ServiceNow. Nummer: %{number}. Maar het lukt niet om bijlagen toe te voegen.'
+        creation_success: 'Supportticket aangemaakt in ServiceNow. Nummer: %{number}'
+      submit: Dien een supportticket in
+      title: Ondersteuningsticket
+      validation:
+        attachments_items: De %{id} zijn ongeldig. %{items} is toegevoegd, het maximale aantal bijlagen is %{max}.
+        attachments_size: De %{id} zijn ongeldig. De maximale bijlagegrootte is %{max}.
+        email: Het %{id}-formaat is ongeldig. Er werd een geldig e-mailadres verwacht.
+        items:
+          attachments_js: Geen bijlagen meer toegestaan
+        required: De %{id} is vereist
+        size:
+          attachments_js: Maximale bijlagegrootte is %{max}. Geselecteerde bestandsgrootte is %{size}.
+      validation_error: Ongeldig verzoek. Bekijk de onderstaande foutmeldingen.
+    support_ticket_add_attachment: Bijlage toevoegen
+    support_ticket_attachments_help: Vink het vakje aan om een bestand bij te voegen. Screenshots of andere bestanden kunnen helpen bij het oplossen van uw probleem.
+    system_apps_caption: Systeemgeïnstalleerde app
+    system_status_available: '%{name} Beschikbaar: %{count}'
+    system_status_cluster_title: '%{title} Clusterstatus'
+    system_status_gpus: GPU's
+    system_status_in_use: '%{percent} in gebruik'
+    system_status_jobs_queued: Taken in de wachtrij
+    system_status_jobs_queued_count: '%{count} Taken in de wachtrij'
+    system_status_jobs_running: Banen die worden uitgevoerd
+    system_status_jobs_running_count: '%{count} Taken actief'
+    system_status_nodes: Knooppunten
+    system_status_not_slurm: Clusterinformatie is niet beschikbaar met %{scheduler}. Momenteel worden alleen Slurm-clusters ondersteund.
+    system_status_processors: Processors
+    toggle_notifications: Meldingen in- of uitschakelen
+    toggle_push_notifications: Pushmeldingen in- of uitschakelen
+    type: Type
+    undefined_title: Titel onbekend
+    unknown: Onbekend
+    uppy:
+      strings:
+        addMore: Voeg meer toe
+        addMoreFiles: Voeg meer bestanden toe
+        addingMoreFiles: Meer bestanden toevoegen
+        back: Rug
+        browseFiles: bestanden bekijken
+        browseFolders: Blader door mappen
+        cancel: Annuleren
+        cancelUpload: Upload annuleren
+        closeModal: Sluit het venster
+        complete: Compleet
+        dashboardTitle: Bestandsuploader
+        dashboardWindowTitle: Bestandsuploadvenster (druk op Esc om te sluiten)
+        done: Klaar
+        dropHint: Sleep je bestanden hierheen.
+        dropPasteBoth: Sleep bestanden hierheen, %{browseFiles} of %{browseFolders}
+        dropPasteFiles: Sleep bestanden hierheen of naar %{browseFiles}
+        dropPasteFolders: Sleep bestanden hierheen of naar %{browseFolders}
+        editFile: Bewerk het bestand
+        editing: Bewerken %{file}
+        emptyFolderAdded: Er zijn geen bestanden toegevoegd vanuit een lege map.
+        error: Fout
+        exceedsSize: '%{file} overschrijdt de maximaal toegestane grootte van %{size}'
+        failedToUpload: Uploaden van %{file} mislukt
+        folderAlreadyAdded: De map "%{folder}" is al toegevoegd.
+        myDevice: Mijn apparaat
+        noDuplicates: Het dubbele bestand '%{fileName}' kan niet worden toegevoegd, het bestaat al.
+        pause: Pauze
+        pauseUpload: Upload pauzeren
+        paused: Gepauzeerd
+        removeFile: Verwijder bestand
+        resume: Cv
+        resumeUpload: CV uploaden
+        retry: Opnieuw proberen
+        retryUpload: Upload opnieuw proberen
+        save: Redden
+        saveChanges: Wijzigingen opslaan
+        showErrorDetails: Foutdetails weergeven
+        upload: Uploaden
+        uploadComplete: Upload voltooid
+        uploadFailed: Uploaden mislukt
+        uploadPaused: Uploaden gepauzeerd
+        uploading: Uploaden
+        xTimeLeft: '%{time} links'
+    user: Gebruiker
+    user_configuration:
+      support_ticket_error: De configuratie van support_ticket is onjuist. Voeg een backend-implementatie toe aan het configuratie-YAML-bestand.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand biedt een geïntegreerd, centraal toegangspunt voor al uw HPC-bronnen.</p>
+
+
+      '

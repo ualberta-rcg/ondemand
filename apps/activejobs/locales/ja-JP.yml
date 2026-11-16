@@ -1,0 +1,5 @@
+---
+ja-JP:
+  manifest:
+    name: 募集中の求人
+    description: OnDemand用に構成された利用可能なクラスター上で現在実行中のジョブを表示します。

@@ -1,0 +1,18 @@
+{
+  "page_title": "Shell - %{siteTitle}",
+  "menu_aria": "Menú Shell",
+  "host_label": "Anfitrión: %{host}",
+  "initial_directory": "Directorio inicial: %{dir}",
+  "themes_label": "Temas:",
+  "theme_default": "Por defecto",
+  "theme_bright": "Brillante",
+  "theme_dark": "Oscuro",
+  "fonts_label": "Fuentes:",
+  "leave_page_warning": "Si abandona esta página, finalizará su sesión de terminal.",
+  "websocket_failed": "No se pudo establecer una conexión websocket. Asegúrese de usar un navegador compatible con conexiones websocket.",
+  "connection_terminated": "Su conexión con el servidor remoto ha sido interrumpida.",
+  "auth_no_clusters": "No se han definido clústeres.",
+  "auth_invalid_origin": "Origen no válido.",
+  "auth_bad_csrf": "Token CSRF inválido.",
+  "auth_host_not_allowed": "El host \"%{host}\" no está especificado en la lista de permitidos ni en la configuración del clúster."
+}

@@ -1,0 +1,18 @@
+{
+  "page_title": "Shell - %{siteTitle}",
+  "menu_aria": "Nabídka Shell",
+  "host_label": "Hostitel: %{host}",
+  "initial_directory": "Počáteční adresář: %{dir}",
+  "themes_label": "Témata:",
+  "theme_default": "Výchozí",
+  "theme_bright": "Jasný",
+  "theme_dark": "Tmavý",
+  "fonts_label": "Fonty:",
+  "leave_page_warning": "Opuštěním této stránky ukončíte relaci terminálu.",
+  "websocket_failed": "Nepodařilo se navázat připojení přes websocket. Ujistěte se, že používáte prohlížeč, který podporuje připojení přes websocket.",
+  "connection_terminated": "Vaše připojení ke vzdálenému serveru bylo ukončeno.",
+  "auth_no_clusters": "Nejsou definovány žádné klastry.",
+  "auth_invalid_origin": "Neplatný původ.",
+  "auth_bad_csrf": "Špatný token CSRF.",
+  "auth_host_not_allowed": "Hostitel „%{host}“ není uveden v seznamu povolených ani v konfiguraci clusteru."
+}

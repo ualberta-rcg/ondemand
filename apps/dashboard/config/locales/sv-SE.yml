@@ -1,0 +1,969 @@
+---
+sv-SE:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute}-formatet är ogiltigt eller saknas'
+        invalid: '%{attribute} är ogiltig'
+        required: '%{attribute} krävs'
+        used: '%{attribute} används redan'
+  dashboard:
+    account: Konto
+    actions: Åtgärder
+    active_jobs: Aktiva jobb
+    active_jobs_close_details: Stäng panelen med utökad information.
+    active_jobs_detail:
+      account: Konto
+      array_job_id: Arrayjobb-ID
+      array_task_id: Array-uppgifts-ID
+      cluster: Klunga
+      cluster_id: Kluster-ID
+      comment: Kommentar
+      cpu_time: CPU-tid
+      cpu_used: CPU som används
+      current_working_directory: Nuvarande arbetskatalog
+      end_time: Sluttid
+      exec_host: Exec-värd
+      finish_time: Sluttid
+      from_host: Från värd
+      gres: GRES
+      group_list: Grupplista
+      job_account: Jobbkonto
+      job_checkpoint_attr: Jobbkontrollpunkt Attr
+      job_checkpoint_interval: Intervall för jobbkontrollpunkt
+      job_deadline: Jobbdeadline
+      job_exec_file: Job Exec-fil
+      job_execution_time: Jobbkörningstid
+      job_gid: Jobb-GID
+      job_group: Jobbgrupp
+      job_id: Jobb-ID
+      job_name: Jobbnamn
+      job_priority: Jobbprioritet
+      job_restart: Omstart av jobb
+      job_script_file: Jobbskriptfil
+      job_script_size: Storlek på jobbskript
+      job_share: Jobbdelning
+      job_type: Jobbtyp
+      job_uid: Jobb-UID
+      job_verify: Jobbverifiering
+      job_version: Jobbversion
+      mem: Mem
+      memory: Minne
+      node_count: Nodantal
+      node_list: Nodlista
+      nodes: Noder
+      none: Ingen
+      notifications: Aviseringar
+      partition: Dela
+      pbs_id: PBS-ID
+      pids: PID:er
+      ppn: PPN
+      project_name: Projektnamn
+      queue: Kö
+      reason: Resonera
+      reserve: Boka
+      select: Välja
+      start_time: Starttid
+      state: Ange
+      status: Status
+      submission_time: Inlämningstid
+      swap: Byta
+      time_limit: Tidsgräns
+      time_used: Använd tid
+      total_cpus: Totalt antal processorer
+      total_nodes: Totalt antal noder
+      user: Användare
+      virtual_memory: Virtuellt minne
+      walltime: Väggtid
+      walltime_used: Väggtid Begagnad
+    active_jobs_filter_all: Alla jobb
+    active_jobs_filter_user: Dina jobb
+    active_jobs_ganlia_CPU: Ganglierbild för CPU.
+    active_jobs_ganlia_load: Ganglierbild för systembelastningsmedelvärden.
+    active_jobs_ganlia_mem: Ganglierbild för minnesanvändning.
+    active_jobs_ganlia_network: Ganglierbild för nätverksanvändning.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> visa alla (%{number_of_sessions})</a>
+    active_sessions_title: Aktiva interaktiva sessioner
+    add: Tillägga
+    all_apps_table_app_column: Namn
+    all_apps_table_category_column: Kategori
+    all_apps_table_sub_category_column: Underkategori
+    all_clusters: Alla kluster
+    announcements_dismissible_button: OK
+    announcements_parse_error: Fel vid tolkning av meddelandet.
+    announcements_render_error: Kunde inte rendera meddelandet '%{name}' på grund av ett fel
+    announcements_required_button: Acceptera
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: Systemappar
+    auto_log_location_title: Loggplats
+    back: Tillbaka
+    balance_additional_message: Överväg att begära ytterligare %{balanace_units}
+    balance_message: '%{units_balance} är %{value}'
+    balance_no_warnings: Inga projekt ligger inom gränsen för saldovarning på %{threshold} dagar.
+    balance_reload_message_html: Ladda om sidan för att se uppdaterat saldo. Saldon uppdateras dagligen.<br>Senaste uppdateringen var %{last_update}
+    balance_warning_prefix_html: '%{units_balance} varning för'
+    batch_connect_active_sessions_aria: Aktiva sessioner
+    batch_connect_app_version: 'version: %{version}'
+    batch_connect_apps_menu_aria: Meny för interaktiva appar
+    batch_connect_apps_menu_title: Interaktiva appar
+    batch_connect_form_attr_cache_error: Det går inte att använda tidigare cachade värden, standardvärden används istället. (%{error_message})
+    batch_connect_form_choose_template_name: Välj ett mallnamn
+    batch_connect_form_data_root: datarotkatalog
+    batch_connect_form_dynamic_disclaimer: Följande formulär kan ändras dynamiskt allt eftersom alternativ väljs. Alla ändringar kommer att meddelas och är återkallbara.
+    batch_connect_form_invalid: form.yml saknar alternativ i formulärfältet %{id}.
+    batch_connect_form_launch: Lansera
+    batch_connect_form_prefill: Använd sparade inställningar
+    batch_connect_form_prefill_error: Oj... Något är fel med din mall
+    batch_connect_form_reset_resolution: Återställ upplösning
+    batch_connect_form_resolution_height: Upplösningshöjd (pixlar)
+    batch_connect_form_resolution_width: Upplösningsbredd (pixlar)
+    batch_connect_form_save: Spara inställningar
+    batch_connect_form_save_new_template: spara nya inställningar
+    batch_connect_form_save_submit: Spara inställningar och stäng
+    batch_connect_form_select_template: välj sparade inställningar
+    batch_connect_form_session_data_html: '* %{title}-sessionsdata för denna session kan nås under %{data_link_tag}.'
+    batch_connect_form_template_name_label: inställningsnamn
+    batch_connect_form_type_new_name: Namn på appinställningar
+    batch_connect_form_type_new_name_error: Vänligen skriv ett giltigt namn för att fortsätta
+    batch_connect_invalid_form_array: '''form''-elementet i form.yml är inte en array'
+    batch_connect_invalid_form_attributes: Elementet 'attributes' i form.yml är inte en karta
+    batch_connect_missing_cluster: Klustret sattes aldrig. Antingen sattes det i form.yml.erb med `cluster` eller `form.cluster` eller så sattes `cluster` i submit.yml.erb.
+    batch_connect_no_apps: Det finns inga tillgängliga interaktiva appar.
+    batch_connect_no_sessions: Du har inga aktiva sessioner.
+    batch_connect_sandbox: '[Sandlåda]'
+    batch_connect_sessions_cancel_confirm: Är du säker?
+    batch_connect_sessions_cancel_full_title: Avbryt %{title}-session
+    batch_connect_sessions_cancel_title: Avboka
+    batch_connect_sessions_connect_to: Anslut till %{app_title}
+    batch_connect_sessions_connection_render_error: Kan inte rendera anslutningsknappen från view.html.erb på grund av felet '%{error}'
+    batch_connect_sessions_data_html: Sessionsdata för %{title} för denna session kan nås under %{data_link_tag}.
+    batch_connect_sessions_delete_confirm: Är du säker?
+    batch_connect_sessions_delete_full_title: Ta bort %{title}-session
+    batch_connect_sessions_delete_hover: Ta bort session
+    batch_connect_sessions_delete_title: Radera
+    batch_connect_sessions_edit_title: Redigera nya %{title} med dessa sessionsparametrar
+    batch_connect_sessions_error_invalid_job_name_html: Om det här jobbet misslyckades med att skickas på grund av ett ogiltigt jobbnamn, be din administratör att konfigurera OnDemand för att ställa in miljövariabeln OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Misslyckades med att mellanlagra mallen med följande fel:'
+    batch_connect_sessions_errors_submission: 'Misslyckades med att skicka sessionen med följande fel:'
+    batch_connect_sessions_native_vnc_tab: Inbyggda instruktioner
+    batch_connect_sessions_novnc_compression: Kompression
+    batch_connect_sessions_novnc_compression_help: 1 (låg) till 9 (hög)
+    batch_connect_sessions_novnc_launch: Starta %{app_title}
+    batch_connect_sessions_novnc_quality: Bildkvalitet
+    batch_connect_sessions_novnc_quality_help: 0 (låg) till 9 (hög)
+    batch_connect_sessions_novnc_tab: noVNC-anslutning
+    batch_connect_sessions_novnc_view_only: Endast visning (delbar länk)
+    batch_connect_sessions_path_selector_forbidden_error: Du har inte behörighet att välja den katalogen eller filen.
+    batch_connect_sessions_relaunch_full_title: Starta om %{title}-sessionen
+    batch_connect_sessions_relaunch_title: Återlansera
+    batch_connect_sessions_staged_root: stegad rotkatalog
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} kärna'
+      other: '%{count} kärnor'
+    batch_connect_sessions_stats_created_at: 'Skapad på:'
+    batch_connect_sessions_stats_expected_time: 'Förväntad start:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} Grafikkort'
+    batch_connect_sessions_stats_host: 'Värd:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} nod'
+      other: '%{count} noder'
+    batch_connect_sessions_stats_session_dir_link_title: Öppna sessionskatalogen för %{session_id}
+    batch_connect_sessions_stats_session_id: 'Sessions-ID:'
+    batch_connect_sessions_stats_support_ticket: Problem med den här sessionen?
+    batch_connect_sessions_stats_support_ticket_link_text: Skicka supportärende
+    batch_connect_sessions_stats_time_remaining: 'Återstående tid:'
+    batch_connect_sessions_stats_time_requested: 'Begärd tid:'
+    batch_connect_sessions_stats_time_used: 'Använd tid:'
+    batch_connect_sessions_stats_undetermined_host: Obestämd
+    batch_connect_sessions_status_bad: Din session har hamnat i ett dåligt tillstånd. Kontakta gärna supporten för mer information.
+    batch_connect_sessions_status_blurb_cancel_failure: Det gick inte att avbryta sessionen.
+    batch_connect_sessions_status_blurb_cancel_success: Sessionen avbröts.
+    batch_connect_sessions_status_blurb_create_success: Sessionen skapades.
+    batch_connect_sessions_status_blurb_delete_failure: Misslyckades med att radera sessionen.
+    batch_connect_sessions_status_blurb_delete_success: Sessionen har raderats.
+    batch_connect_sessions_status_completed: För felsökningsändamål kommer detta kort att behållas i ytterligare %{days} dagar.
+    batch_connect_sessions_status_missing_connection: Den här appen saknar information som krävs för att upprätta en anslutning. Mer specifikt saknas filen view.html.erb. Kontakta supporten om du ser det här meddelandet.
+    batch_connect_sessions_status_queued: Ha tålamod eftersom ditt jobb för närvarande står i kö. Väntetiden beror på antalet kärnor samt den begärda tiden.
+    batch_connect_sessions_status_starting: Din session börjar just nu... Ha tålamod eftersom den här processen kan ta några minuter.
+    batch_connect_sessions_word: Session
+    batch_connect_validation:
+      app_not_found: Den här appen finns inte i katalogen '%{root}'
+      inaccessible_clusters: Den här appen kräver kluster som inte finns eller som du inte har åtkomst till.
+      missing_form_file: Den här appen tillhandahåller inte en formulärfil under katalogen '%{root}'
+      missing_sub_app_form_file: Den här appen tillhandahåller inte en underappformulärfil under katalogen '%{root}'
+      no_cluster_specified: Den här appen anger inget kluster.
+    bc_saved_settings:
+      delete_confirm: Är du säker?
+      delete_title: Ta bort %{settings_name} sparade inställningar
+      deleted_message: Sparade inställningar %{settings_name} raderade.
+      edit_title: Redigera %{settings_name} sparade inställningar
+      launch_title: Starta %{app_title} med %{settings_name}-parametrar
+      missing_settings: Valda sparade inställningar hittades inte.
+      no_settings_title: Du har inga sparade inställningar.
+      outdated_message: Parametrarna %{app_title} har ändrats sedan dessa inställningar skapades.
+      saved_message: '%{settings_name} inställningar sparade'
+      settings_values_label: Värden
+      title: Sparade inställningar
+    breadcrumb_aria: Brödsmulor
+    breadcrumbs_all_apps: Alla appar
+    breadcrumbs_home: Hem
+    breadcrumbs_my_sessions: Mina interaktiva sessioner
+    breadcrumbs_support_ticket: Supportärende
+    browser_warning: OnDemand kräver en nyare version av webbläsaren du använder. Nuvarande webbläsarkrav inkluderar IE Edge, Firefox 19+, Chrome 34+ och Safari 8+.
+    cancel: Avboka
+    categories:
+      apps: Appar
+      bioinformatics: Bioinformatik
+      clusters: Kluster
+      data_science: Datavetenskap
+      desktop: Skrivbord
+      desktops: Stationära datorer
+      development: Utveckling
+      external_apps: Externa appar
+      files: Filer
+      gateway_apps: Gateway-appar
+      guis: GUI:er
+      interactive_apps: Interaktiva appar
+      jobs: Jobb
+      machine_learning: Maskininlärning
+      mathematics: Matematik
+      servers: Servrar
+      utilities: Verksamhetsnyttiga tjänster
+      virtual_desktop_interface: Virtuellt skrivbordsgränssnitt
+      visualization: Visualisering
+    clear: Rensa
+    close: Nära
+    close_alert: Stäng den här varningen.
+    close_notice: Stäng detta meddelande.
+    cluster: Klunga
+    copy: Kopiera
+    copy_suffix: (Kopia)
+    cpu_report: CPU-rapport + %{node}
+    custom_pages:
+      invalid: 'Ogiltig sidkod: %{page}. Den här sidan har inte konfigurerats.'
+    date: Datum
+    delete: Radera
+    detailed_metrics: Detaljerade mätvärden
+    details: Detaljer
+    development_apps_caption: Sandbox-appen
+    development_apps_category: Sandbox-appar
+    development_delete_app: Ta bort appen
+    development_edit_title: Redigera %{title}
+    development_launch_title: Starta %{title}
+    directory: Katalog
+    edit: Redigera
+    editor_default: Standard
+    editor_font_size: Fontstorlek
+    editor_key_bindings: Tangentbindningar
+    editor_theme: Tema
+    editor_theme_bright: Ljus
+    editor_theme_dark: Mörk
+    editor_wrap: Sjal
+    error_details: 'Detaljer:'
+    error_internal_body_html: Försök igen om en liten stund. Om du fortsätter att se det här felet, vänligen <a href="%{support_url}">kontakta supporten</a>.
+    error_internal_title: Internt serverfel
+    error_not_found_body: Sidan du söker finns inte.
+    error_not_found_title: Inte hittad
+    favorites: Favoriter
+    file: Fil
+    file_editor: Filredigerare
+    file_quotas: Filkvoter
+    files: Filer
+    files_change_directory: Ändra katalog
+    files_contents_of_directory: Innehåll i katalogen %{path}
+    files_copy_move: Kopiera/Flytta
+    files_copy_path: Kopiera sökväg
+    files_directory_contents_aria: Katalogens innehåll
+    files_directory_download_error_modal_title: Katalogen är för stor för att laddas ner
+    files_directory_download_unauthorized: Du kan bara ladda ner en fil eller katalog som du har läs- och köråtkomst till
+    files_directory_size_calculation_error: Timeout vid försök att fastställa katalogstorleken.
+    files_directory_size_calculation_timeout: Timeout vid försök att fastställa katalogstorleken.
+    files_directory_size_unknown: 'Fel med status %{exit_code} vid försök att fastställa katalogstorlek: %{error}'
+    files_directory_too_large: Katalogen är för stor för att laddas ner som en zip-fil. Katalogen bör vara mindre än %{download_directory_size_limit} byte.
+    files_doesnt_exist: '%{path} finns inte.'
+    files_download: Ladda ner
+    files_download_not_enabled: Nedladdning av filer är inte aktiverat på den här servern.
+    files_download_zip: Ladda ner som zip-fil
+    files_exceeds_editor_limit: '%{path} överskrider redigeringsgränsen på %{limit}. Ladda ner filen för att redigera eller visa den lokalt.'
+    files_file_too_large: Filen är för stor för att laddas ner. Nedladdningar av filer bör vara mindre än %{download_file_size_limit} byte.
+    files_go_up_directory: Gå upp katalogen
+    files_modified_at: Ändrad kl.
+    files_modify_aria: Ändra filer
+    files_new_directory: Ny katalog
+    files_new_file: Ny fil
+    files_not_editable: '%{path} är inte en redigerbar fil'
+    files_not_readable: Du har inte tillräcklig behörighet för att läsa '%{path}'.
+    files_open_in_files_app: Öppna i filappen
+    files_open_in_globus: Öppet i Globus
+    files_path_breadcrumbs_aria: Sökvägsbrödsmulor
+    files_refresh: Uppdatera
+    files_remote_dir_not_created: Skapade inte katalogen %{path}
+    files_remote_disabled: Fjärrfilstöd är inte aktiverat
+    files_remote_empty_dir_unsupported: Fjärrkontrollen stöder inte tomma kataloger
+    files_remote_error_listing_remotes: 'Fel vid lista av Rclone-fjärrkontroller: %{error}'
+    files_send_to_target_title_default: Skicka metadata för valda filer till den externa applikationen
+    files_shell: Öppna i terminalen
+    files_shell_dropdown: Välj kluster att öppna i terminalen
+    files_title: Filbläddring
+    files_upload: Ladda upp
+    footer_contribute: Bidra på GitHub
+    footer_license: Meddelande om programvarulicens
+    footer_open_source: Programvara med öppen källkod.
+    footer_powered_by: Drivs av Open OnDemand
+    footer_version: 'OnDemand-version: %{version}'
+    home_directory: Hemkatalog
+    id: ID
+    import: Importera
+    job: Jobb
+    job_info: Jobbinformation
+    jobs_back_to_projects: Tillbaka till Projekt
+    jobs_clear_form_fields: Rensa formulärfält
+    jobs_completed_jobs: Avslutade jobb
+    jobs_create_blank_project: Skapa ett nytt projekt
+    jobs_create_blank_workflow: Nytt arbetsflöde
+    jobs_create_template_project: Skapa ett nytt projekt från en mall
+    jobs_import_shared_project: Importera ett delat projekt
+    jobs_launchers: Launchers
+    jobs_launchers_add_select_option: Lägg till valfritt alternativ %{name}
+    jobs_launchers_cannot_find: Kan inte hitta startprogrammet %{id}
+    jobs_launchers_clone: Klonstartare %{name}
+    jobs_launchers_created: Launchern har skapats!
+    jobs_launchers_default_created: En 'hello_world.sh' lades också till i det här projektet.
+    jobs_launchers_delete: Ta bort startprogrammet %{name}
+    jobs_launchers_delete_script_confirmation: Radera allt innehåll i startprogrammet?
+    jobs_launchers_deleted: Startprogrammet har tagits bort!
+    jobs_launchers_edit: Redigera formulär för startprogrammet %{name}
+    jobs_launchers_edit_form_item: Redigera formulärpost %{label}
+    jobs_launchers_editing: Redigerar %{title}
+    jobs_launchers_fixed_field: Fast värde
+    jobs_launchers_fixed_field_help: Fixera aktuellt värde
+    jobs_launchers_max_value_label: Maximalt värde för talfältet %{label}
+    jobs_launchers_min_value_label: Minimivärde för talfältet %{label}
+    jobs_launchers_name: Namn på startprogrammet
+    jobs_launchers_new_field_select: Välj objekt att lägga till i formuläret
+    jobs_launchers_not_found: Kan inte hitta startprogrammet %{launcher_id}
+    jobs_launchers_preview_form_item: Förhandsgranskning av formulärpost %{label}
+    jobs_launchers_remove_form_item: Ta bort formulärpost %{label}
+    jobs_launchers_remove_select_option: Ta bort markeringsalternativet %{name}
+    jobs_launchers_save_form: Spara formulär
+    jobs_launchers_save_form_item: Spara ändringar i formulärpost %{label}
+    jobs_launchers_show_form: Visa formulär för startprogrammet %{name}
+    jobs_launchers_submit_launcher_title: Starta skript med cachade värden eller standardvärden för startprogrammet %{name}
+    jobs_launchers_submitted: Jobb %{job_id} har skickats.
+    jobs_launchers_updated: Launcher-manifestet uppdaterat!
+    jobs_native_dependency: Jobbet beror på jobb-id%{dependency}
+    jobs_native_reason: på grund av '%{reason}'
+    jobs_native_state: Nuvarande jobbstatus är '%{state}'
+    jobs_new_launcher: Ny startskärm
+    jobs_new_project: Nytt projekt
+    jobs_project_cannot_find: 'Kan inte hitta projektet: %{project_id}'
+    jobs_project_clear_form_fields: Rensa formulärfält
+    jobs_project_created: Projektet har skapats!
+    jobs_project_delete_label: Ta bort projekt %{name}
+    jobs_project_delete_project_confirmation: Ta bort allt innehåll i projektkatalogen?
+    jobs_project_deleted: Projektet har raderats!
+    jobs_project_description_placeholder: Projektbeskrivning
+    jobs_project_directory_error: Projektkatalogens sökväg är inte angiven för detta arbetsflöde
+    jobs_project_directory_help_html: 'Lämna tomt så skapas en ny katalog. <br />Standardplats: %{root_directory}'
+    jobs_project_directory_placeholder: Absolut sökväg till projektkatalogen
+    jobs_project_edit_label: Redigera projekt %{name}
+    jobs_project_generic_error: 'Det uppstod ett fel när din begäran bearbetades: %{error}'
+    jobs_project_group_help: Se till att välja den grupp som inkluderar alla avsedda samarbetspartners. Om detta inte är ett samarbetsprojekt rekommenderas standardgruppen.
+    jobs_project_group_owner: Grupp
+    jobs_project_imported: Projektet har importerats!
+    jobs_project_invalid_configuration_clusters: Ett HPC-kluster krävs. Kontakta din administratör för att lägga till ett i systemet.
+    jobs_project_invalid_configuration_scripts: Ett körbart skript krävs för ditt projekt. Ladda upp ett skript med hjälp av filprogrammet.
+    jobs_project_job_deleted: Jobbet har tagits bort %{job_id}
+    jobs_project_job_not_deleted: Kan inte ta bort jobbet %{job_id}
+    jobs_project_job_stopped: Jobbet har avslutats %{job_id}
+    jobs_project_list_aria: Projektlista
+    jobs_project_manager: Projektledare
+    jobs_project_manifest_updated: Projektmanifestet uppdaterat!
+    jobs_project_name_placeholder: Projektnamn
+    jobs_project_name_validation: Projektnamnet får endast innehålla bokstäver, siffror, bindestreck, understreck och mellanslag
+    jobs_project_not_found: Kan inte hitta projektet %{project_id}
+    jobs_project_open_label: Öppna projektet %{name}
+    jobs_project_remove_label: Ta bort projekt %{name}
+    jobs_project_removed: Projekt borttaget från sökningen!
+    jobs_project_return_to_projects: Återgå till projektsidan
+    jobs_project_save_error: Kan inte spara manifestet till %{path}
+    jobs_project_save_project_title: Spara projekt
+    jobs_project_select_directory: Välj projektkatalog
+    jobs_project_setgid_help: Om du lämnar setgid markerat skapas projektfiler med den valda gruppen. Detta påverkar inte projekt i din hemkatalog.
+    jobs_project_validation_error: Ogiltig begäran. Vänligen granska felen nedan.
+    jobs_return_to_projects: Återgå till projektsidan
+    jobs_save_project_title: Spara projekt
+    jobs_select_directory_placeholder: Klicka på projektet för att importera
+    jobs_toggle_details: Klicka för att visa information om jobbet %{job_id}
+    jobs_workflow_add_launcher: Lägg till startprogram
+    jobs_workflow_canvas_aria: duk
+    jobs_workflow_clone: Klona arbetsflöde %{name}
+    jobs_workflow_connect_launchers: Anslut startprogram
+    jobs_workflow_created: Arbetsflödet har skapats!
+    jobs_workflow_delete_confirmation: Ta bort allt innehåll i arbetsflödet?
+    jobs_workflow_delete_edge: Ta bort kant
+    jobs_workflow_delete_edge_title: Ta bort markerad kant (Del/Backsteg)
+    jobs_workflow_delete_launcher: Ta bort startprogrammet
+    jobs_workflow_delete_launcher_title: Ta bort vald startskärm (Del/Backspace)
+    jobs_workflow_delete_title: Ta bort arbetsflöde %{name}
+    jobs_workflow_deleted: Arbetsflödet har raderats!
+    jobs_workflow_description_placeholder: Beskrivning av arbetsflödet
+    jobs_workflow_edit_settings: Ändra inställningar för arbetsflöde %{name}
+    jobs_workflow_editing: 'Redigering: %{name}'
+    jobs_workflow_enable_sync_key: Aktivera OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Arbetsflödet misslyckades med felet %{error}
+    jobs_workflow_help: Klicka på titeln för att välja och dra. Anslut genom att klicka på två startprogram med "Anslut startprogram" markerat.
+    jobs_workflow_manifest_updated: Arbetsflödesmanifestet uppdaterat!
+    jobs_workflow_missing_launchers: välj minst %{count}
+    jobs_workflow_name_placeholder: Arbetsflödesnamn
+    jobs_workflow_name_validation: Arbetsflödets namn får endast innehålla bokstäver, siffror, bindestreck, understreck och mellanslag
+    jobs_workflow_not_found: Kan inte hitta arbetsflödet %{workflow_id}
+    jobs_workflow_pick_launchers: Pick Launchers
+    jobs_workflow_show_graph: Öppna arbetsflödet %{name} i grafredigeraren
+    jobs_workflow_submitted: Arbetsflödet har skickats!
+    jobs_workflow_sync_key_help: När den är aktiverad får varje startprogram i det här arbetsflödet samma <code>OOD_WORKFLOW_SYNC_KEY</code> miljövariabel (en slumpmässig token som är unik för varje arbetsflödeskörning). Användbart för att generera synkroniserade filnamn, låsfiler eller delade identifierare mellan beroende jobb.
+    jobs_workflow_synchronization: Synkronisering
+    jobs_workflow_toolbar_aria: verktygsfält
+    jobs_workflow_zoom_controls: Zoomkontroller
+    jobs_workflow_zoom_in: Zooma in
+    jobs_workflow_zoom_out: Zooma ut
+    jobs_workflow_zoom_reset: Återställ zoom
+    jobs_workflows: Arbetsflöden
+    jobs_workflows_not_supported: Arbetsflöden stöds inte av den konfigurerade schemaläggaren.
+    js:
+      active_jobs:
+        delete_aria: Ta bort jobb %{name} med ID %{id}
+        delete_confirm: Är du säker på att du vill ta bort %{name} - %{id}
+        delete_title: Ta bort jobb
+        details_loaded: Listan över jobbdetaljer har laddats.
+        load_details_failed: Det gick inte att läsa in jobbinformationen.
+        remote_server_error: Det uppstod ett fel när data hämtades från fjärrservern.
+        request_failed_parse: Begäran om jobb misslyckades på grund av ett fel vid brödtextparsning.
+        request_failed_status: 'Begäran om jobb misslyckades med statuskod: %{status}'
+        status_completed: Avslutad
+        status_hold: Hålla
+        status_queued: I kö
+        status_running: Spring
+        status_suspended: Upphängd
+        status_undetermined: Obestämd
+        support_ticket_aria: Skicka supportärende för jobb med ID %{id}
+        support_ticket_title: Skicka supportärende
+        toggle_details_aria: Växla synlighet för jobb %{name} på %{cluster}
+      batch_connect:
+        allow_notifications: Vänligen ge aviseringsbehörighet i din webbläsare för att aktivera sessionsaviseringar.
+        invalid_prefill_value_html: 'Ogiltigt värde: "%{value}" för fältet "%{field}".<br>'
+        notification_permission_error: 'Fel vid begäran om aviseringstillstånd:'
+        resolution_reset: Upplösningen återställd till %{width} med %{height} pixlar.
+        session_expires_warning: 'Varning: %{title} (%{job_id}) löper ut om ~%{minutes} minuter!'
+        session_status_aria: '%{title} är nu %{status}.'
+        session_status_push: '%{title} (%{job_id}) är nu %{status}.'
+      common:
+        cancel: Avboka
+        close: Nära
+        error: Fel
+        loading: Belastning...
+        ok: OK
+      datatables:
+        all: Alla
+        filter_label: 'Filtrera:'
+        invalid_date: Ogiltigt datum
+        rows_selected:
+          one: '%{count} rad vald'
+          other: '%{count} rader valda'
+        showing_filtered_rows: Visar %{display} av %{total} rader
+        showing_rows: Visar %{display} rader
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: och
+        changed_help: Ändrade hjälptexten på %{widget} till %{help}
+        changed_label: Ändrade etikett på %{widget} till ny etikett %{label}
+        current_value: ställ in aktuellt värde till %{value}
+        hid_item: Dold formulärpost %{widget}
+        maximum_limit: maximal gräns till %{value}
+        minimum_limit: minimigräns till %{value}
+        option_disabled: Alternativet %{value} inaktiverat för %{widget}
+        option_enabled: Alternativet %{value} aktiverat för %{widget}
+        revealed_item: Avslöjat formulärobjekt %{widget}
+        selected_option_disabled: Valt alternativ %{value} inaktiverat för %{widget}
+        set_limits: Ställ in %{details} för %{widget}
+        set_value: Sätt %{widget} till värdet %{value}
+        widget_no_label: '%{type} utan etikett'
+        widget_with_label: '%{type} med etiketten %{label}'
+      editor:
+        save_error: 'Ett fel uppstod vid försök att spara den här filen!
+
+          %{error}'
+        unsaved_changes: Du har osparade ändringar!
+      files:
+        action_delete: Radera
+        action_download: Ladda ner
+        action_edit: Redigera
+        action_rename: Döpa om
+        action_view: Se
+        actions: Åtgärder
+        cannot_navigate_file: Det går inte att navigera till en fil.
+        change_directory: Ändra katalog
+        clipboard_description_html: 'Kopiera eller flytta filerna nedan från <code>%{from}</code> till den aktuella katalogen:'
+        contents_of_directory: Innehåll i katalogen %{path}
+        copied_path: Kopierad sökväg till urklipp!
+        copy: Kopiera
+        create_directory_error: 'Fel uppstod vid försök att skapa en ny katalog: %{error}'
+        create_file_error: 'Fel uppstod vid försök att skapa en ny fil: %{error}'
+        delete_confirm_text: 'Är du säker på att du vill ta bort filerna: %{files}'
+        delete_multiple_title: Radera %{count} valda filer?
+        delete_single_title: Radera %{name}?
+        deleting_files: 'Tar bort filer...:'
+        directory: katalog
+        directory_name_label: Katalognamn
+        download_error: 'Fel vid nedladdning: %{error}'
+        duplicate_files_warning: Dubblettfiler identifierade. Om du laddar upp dessa filer skrivs befintligt innehåll över.
+        file: fil
+        filename_invalid_chars: Filnamnet får inte innehålla / eller ..
+        filename_label: Filnamn
+        globus_open: Öppna den aktuella katalogen med Globus
+        globus_unavailable: Ingen Globus-slutpunkt associerad med den här katalogen
+        illegal_slash_in_filename: Ogiltigt tecken (/) är inte tillåtet i filnamn.
+        move: Flytta
+        navigated_to: navigerade till %{path}
+        new_directory_title: Ny katalog
+        new_file_title: Ny fil
+        path_label: Väg
+        poll_status_error: Åtgärden kanske inte har utförts. Det gick inte att hämta statusen för filåtgärden.
+        preparing_download_dir: 'förbereder nedladdning av katalog: %{name}'
+        provide_absolute_pathname: Ange ett absolut söknamn
+        provide_directory_name: Ange ett katalognamn som inte innehåller /
+        provide_non_empty_filename: Ange ett filnamn som inte är tomt.
+        provide_rename_filename: Ange ett filnamn att byta namn på detta till
+        rename_title: Döpa om
+        see_details: Se detaljer
+        select_row: Välj rad
+        select_to_copy_move: Välj en fil, filer eller katalog att kopiera eller flytta. Du har inte valt någon.
+        select_to_delete: Välj en fil, filer eller katalog att radera. Du har inte valt någon.
+        select_to_download: Välj en fil, filer eller katalog att ladda ner. Du har inte valt någon.
+        select_to_send: Välj minst en fil eller katalog att skicka.
+        send_failed: Misslyckades med att skicka filinformation.
+        sent_successfully: Information om vald fil har skickats.
+        show_dotfiles: Visa punktfiler
+        show_owner_mode: Visa ägare/läge
+        summary_copy_files: kopiera filer
+        summary_move_files: flytta filer
+        summary_remove_files: ta bort filer
+        summary_rename_file: byt namn på fil
+        token_missing_expired: Applikationstoken saknas eller har löpt ut. Börja om.
+        transfer_error: 'Fel uppstod vid försök att %{summary}: %{error}'
+        upload_and_overwrite: Ladda upp och skriv över
+        upload_count:
+          one: Ladda upp %{count}-filen
+          other: Ladda upp %{count}-filer
+        upload_new_files: Ladda upp nya filer
+        uppy_empty_dir_note: Tomma kataloger inkluderas endast i uppladdningen när en kataloguppladdning initieras via dra-och-släpp. Detta beror på att API:et för fil- och katalogposter endast är tillgängligt vid en släpphändelse, inte under en inmatningsändringshändelse.
+      icon_picker:
+        icon_selected: '%{icon} ikon vald'
+        icon_sr: '%{name}-ikonen'
+      launcher_edit:
+        account_help: Kontot som jobbet ska skickas med.
+        account_label: Konto
+        add_new_option: Lägg till nytt alternativ
+        cores_help: Hur många kärnor jobbet kommer att köras på.
+        cores_label: Kärnor
+        env_var_help: Lägg till en miljövariabel.
+        env_var_key: 'Miljövariabel: %{name}'
+        env_var_label: Miljövariabel
+        hours_help: Hur länge jobbet kan pågå.
+        hours_label: Timmar
+        job_name_help: Namnet jobbet kommer att ha.
+        job_name_label: Jobbnamn
+        log_location_help: Destinationen för jobbets loggutdata.
+        log_location_label: Loggplats
+        no_more_options: Inga fler alternativ
+        nodes_help: Hur många noder jobbet kommer att köras på.
+        nodes_label: Noder
+        queues_help: Vilken kö jobbet kommer att skicka också.
+        queues_label: Köer
+      module_browser:
+        copied: Kopierad!
+        copy: Kopiera
+        showing_results:
+          one: Visar %{count} resultat
+          other: Visar %{count} resultat
+      nsf_access:
+        affected_resources: 'Berörda resurser: %{resources}'
+        read_more: Läs mer
+        register_event: Registrera dig för detta evenemang
+      path_selector:
+        directory_loaded: Katalogen laddad med %{count} objekt
+        invalid_regex: Det reguljära uttrycket som anges för den här sökvägsväljaren kompilerades inte
+        loading_directory: Laddar kataloginnehåll
+        permission_denied_prefix: 'Tillstånd nekat:'
+      popovers:
+        ihpc_content: En interaktiv HPC-session ger dig dedikerad åtkomst till en eller flera noder i klustret. Detta liknar en interaktiv batchsession med ett tillgängligt skrivbord på den primära noden. Använd detta för tunga jobb som långvariga beräkningsuppgifter eller där du behöver dedikerade resurser.
+        vdi_content: Ett VDI (Virtual Desktop Interface) ger dig skrivbordsåtkomst till en delad nod. Detta är den grafiska versionen av en inloggningsnod. Använd detta för enklare uppgifter som att komma åt och visa filer, skicka in jobb och för visualiseringar.
+      products:
+        fatal_error: Ett allvarligt fel har inträffat
+        no_action: ingen åtgärd
+      projects:
+        undetermined_size: Obestämd storlek
+      support_ticket:
+        delete_attachment: Ta bort bilaga
+        no_file_selected: Ingen fil vald
+        selected_file: 'Vald fil: %{name} (%{size}).'
+        size_bytes: '%{size}byte'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Den här sidan kan inte uppdateras eftersom du inte längre är autentiserad. Uppdatera sidan för att logga in igen.
+        unexpected_error: Ett oväntat fel har uppstått på den här sidan. Vänligen uppdatera sidan.
+      utils:
+        loading: Belastning.
+        loading_complete: Inläsning klar.
+        popup_blocked: Den här länken är konfigurerad för att öppnas i ett nytt fönster, men den verkar inte ha öppnats. Inaktivera popup-blockeraren för den här sidan och försök igen.
+      workflows:
+        begin_from_launcher: Starta arbetsflödet från startprogrammet %{title}
+        bidirectional_not_allowed: Dubbelriktade kanter är inte tillåtna.
+        cyclic_dependency: Att lägga till denna fördel kommer att skapa ett cykliskt beroende mellan launchers.
+        edge_aria_label: Kant från %{from} till %{to}
+        launcher_aria_label: 'Startprogram: %{title}'
+        launcher_exists: Launchern finns redan, vänligen välj en annan launcher
+        load_launcher_failed: Misslyckades med att ladda startprogrammets HTML. Försök igen.
+        no_empty_cells: Inga tomma rutnätsceller tillgängliga!
+        save_failed: Kunde inte spara arbetsflödet. Kontrollera konsolen för mer information.
+        select_launcher: Välj en startskärm
+      xdmod:
+        analytics_toggle: Analysväxling
+        column_date: Datum
+        column_id: ID
+        column_name: Namn
+        date_range: '%{from} till %{to}'
+        efficiency_report: '%{unit} Effektivitetsrapport'
+        ensure_logged_in_html: '%{error} Se till att du är <a href="%{url}">inloggad i Öppna XDMoD först</a> och försök sedan igen.'
+        expand_analytics_title: Klicka för att expandera analysinformationen för jobbet %{id} ovanför den här tabellen.
+        fetch_user_failed: Försöket att hämta aktuell användarinformation från Open XDMoD misslyckades
+        idp_redirect_failed: 'Inloggning misslyckades: IDP-omdirigering misslyckades'
+        iframe_error: XDMoD-inloggning iFrame på URL %{url} publicerade felmeddelande med informationen %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} ineffektiv %{unit} </span> ⁄ %{total} totalt %{unit}
+        invalid_job_data: Jobbdata som returnerades av begäran är ogiltig.
+        loading_caps: BELASTNING...
+        login_page_load_failed: 'Inloggning misslyckades: Det gick inte att ladda XDMoD-inloggningssidan'
+        login_timeout: 'Inloggning misslyckades: Tidsgräns för att inloggningen ska slutföras'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Väggtid
+        no_data: Inga data tillgängliga.
+        not_available: Ej tillämpligt
+        open_xdmod: Öppna XDMoD
+        percent_efficient: '%{percent}% effektiv'
+        percent_efficient_aria: procent effektiv
+        percent_inefficient: '%{percent}% ineffektiv'
+        percent_inefficient_aria: procent ineffektiv
+        recently_completed_jobs: Nyligen avslutade jobb
+        unit_core_hours: kärntimmar
+        unit_core_hours_title: Kärntimmar
+        unit_jobs: jobb
+        unit_jobs_title: Jobb
+    launch: Lansera
+    load_report: Ladda rapport + %{node}
+    loading: Belastning...
+    loading_short: Belastning
+    locale_name: Svenska (Sverige)
+    logo_alt_text: Välkommen till Open OnDemand
+    logout_body_html: <strong>Du måste avsluta din webbläsare helt</strong> för att "logga ut" ska ske. Om du fortfarande är inloggad efter att du öppnat webbläsaren igen, rensa dina cookies. Om du använder en Chromebook eller Chromebox måste du starta om enheten för att "avsluta webbläsaren" och därmed "logga ut".
+    logout_tip_html: '<strong>Tips: Att använda ett "privat surfläge"</strong>-fönster när du använder OnDemand är ett bra sätt att hantera "automatisk utloggning", eftersom alla tillhörande cookies och sessionsinformation tas bort om du stänger webbläsarfönstret.'
+    logout_title: Du är inte utloggad än
+    maximum: Maximal
+    mem_report: Minnesrapport + %{node}
+    minimum: Minimum
+    mode: Läge
+    module_browser_available_modules: 'Tillgängliga moduler:'
+    module_browser_copy_aria: Kopiera laddningskommando för %{name}
+    module_browser_dependencies: 'Beroenden:'
+    module_browser_last_updated: 'Senast uppdaterad: %{last_updated}'
+    module_browser_load_command: 'Ladda kommando:'
+    module_browser_search_label: Sökmoduler
+    module_browser_search_placeholder: Sök efter modulnamn...
+    module_browser_select_version: (välj version)
+    module_browser_showing_results: Visar %{count} resultat
+    module_browser_title: Modulwebbläsare
+    module_browser_versions: Versioner
+    motd_default_md: 'Utvecklingen av Open OnDemand stöds av [National Science Foundation](https://www.nsf.gov/)
+
+      under bidragsnummer [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) och
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Läs mer eller engagera dig:
+
+
+      - [Diskurs](https://discourse.openondemand.org/)
+
+      - [Open OnDemand-repository](https://github.com/OSC/ondemand)
+
+      - [ood-core repository](https://github.com/OSC/ood_core)
+
+      - [Dokumentation](https://osc.github.io/ood-documentation/latest/)
+
+
+      '
+    motd_erb_render_error: 'MOTD analyserades eller renderades inte korrekt: %{error_message}'
+    motd_no_messages: Det finns inga nya meddelanden.
+    motd_title: Dagens budskap
+    name: Namn
+    nav_all_apps: Alla appar
+    nav_develop_docs: Utvecklardokumentation
+    nav_develop_my_sandbox_apps_dev: Mina sandlådeappar (utveckling)
+    nav_develop_my_sandbox_apps_prod: Mina delade appar (produktion)
+    nav_develop_title: Utveckla
+    nav_help_change_password: Ändra HPC-lösenord
+    nav_help_custom: Anpassad navigeringshjälp
+    nav_help_docs: Online-dokumentation
+    nav_help_support: Kontakta supporten
+    nav_help_support_ticket: Skicka supportärende
+    nav_help_title: Hjälp
+    nav_help_two_factor: Konfigurera tvåfaktorsautentisering
+    nav_language: Språk
+    nav_limit_caption: visar %{subset_count} av %{total_count}
+    nav_logout: Logga ut
+    nav_main_menu: Huvudmeny
+    nav_restart_server: Starta om webbservern
+    nav_sessions: Mina interaktiva sessioner
+    nav_toggle_navigation: Växla navigering
+    nav_user: Inloggad som %{username}
+    network_report: Nätverksrapport + %{node}
+    node: Nod
+    none: Ingen
+    not_grouped: Andra appar
+    nsf_access_announcements: NSF ACCESS-meddelanden
+    nsf_access_events: NSF ACCESS-evenemang
+    nsf_access_outages: NSF ACCESS-avbrott
+    ok: OK
+    opens_in_new_tab: öppnas i ny flik
+    output_location: 'Utmatningsplats:'
+    owner: Ägare
+    page_actions_aria: Sidåtgärder
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametrar
+    path_selector_breadcrumb_aria: '%{title} Brödsmulor'
+    path_selector_caption: Välj en fil eller katalog som ska användas i formuläret.
+    path_selector_default_popup_title: Välj din arbetskatalog
+    path_selector_home: hem
+    path_selector_parent_directory: föräldrakatalog
+    permissions_created: Behörigheten skapades.
+    permissions_destroyed: Tillståndet förstördes.
+    permissions_group_title: Gruppbehörigheter
+    permissions_user_title: Användarbehörigheter
+    pinned_apps_caption_html: En utvald delmängd av <a href="%{all_apps_url}">alla tillgängliga appar</a>
+    pinned_apps_category: Appar
+    pinned_apps_title: Fästade appar
+    products_created: Produkten skapades.
+    products_git_commit_hint_html: Vänligen bekräfta eventuella ändringar eller lägg till nödvändiga filer i <code>.gitignore</code>
+    products_git_staged: Iscensatt
+    products_git_status: Git-status
+    products_git_unstaged: Oiscensatt
+    products_git_untracked: Ospårad
+    products_manifest_save_error: Kan inte spara appmanifestet till %{path}
+    products_ssh_key_created: SSH-nyckeln skapades.
+    products_ssh_key_exists: SSH-nyckeln finns redan
+    products_ssh_key_failed: 'SSH-nyckeln kunde inte skapas: %{error}'
+    products_type_batch_connect: Batch Connect-appen
+    products_type_passenger: Passagerarapp
+    products_type_passenger_meteor: Passagerar Meteor-appen
+    products_type_passenger_node: Passenger Node-appen
+    products_type_passenger_rack: Passagerarställ-app
+    products_type_passenger_rails: App för passagerartåg
+    products_type_passenger_rails_sqlite: Passagerartågsapp med SQLite-databas
+    products_type_passenger_wsgi: Passagerar-WSGI-appen
+    products_updated: Produkten har uppdaterats.
+    project: Projekt
+    project_balances: Projektsaldon
+    project_directory: Projektkatalog
+    project_zip_error_message: 'Fel vid skapande av ZIP-fil: %{error}'
+    project_zip_success_message: 'Lyckades: project.zip har skapats i din projektkatalog.'
+    queue: Kö
+    quota_additional_message: Överväg att radera eller arkivera filer för att frigöra diskutrymme.
+    quota_block: Använder %{used} av kvoten %{available}
+    quota_block_shared: (%{used_exclusive} är din)
+    quota_file: Använder %{used}-filer av kvoten %{available}-filer
+    quota_file_shared: (%{used_exclusive}-filerna är dina)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Ladda om sidan för att se uppdaterad kvot. Kvoter uppdateras var 5:e minut.
+    quota_warning_prefix_html: Varning om kvotgräns för
+    recently_used_apps_title: Nyligen använda appar
+    remove: Ta bort
+    reset: Återställa
+    restart_msg_html: 'Ditt gruppmedlemskap har ändrats, vilket påverkar din åtkomst till appar. Din instrumentpanel bör startas om automatiskt.
+
+      Om den inte gör det klickar du på: <a href="%{restart_url}">starta om webbservern</a>.'
+    restore: Återställa
+    root: Rot
+    save: Spara
+    saved_settings_title: Sparade inställningar
+    select: Välja
+    select_all: Markera alla
+    select_path: Välj sökväg
+    select_path_for: '%{element} välj sökväg'
+    settings_csrf_expired: Din sessionssäkerhetstoken har upphört att gälla. Försök igen.
+    settings_invalid_request: Ogiltiga inställningar har skickats
+    settings_unprocessable_body_html: Din session kan ha löpt ut eller så har den önskade ändringen avvisats. Gå <a href="%{dashboard_url}">tillbaka till instrumentpanelen</a> och försök igen.
+    settings_unprocessable_title: Sessionen har gått ut eller ändringen har avvisats
+    settings_updated: Inställningar uppdaterade
+    shared_apps_caption: Delat av %{owner_title} (%{owner})
+    shared_apps_caption_short: Delat av %{owner}
+    shared_apps_title: Delade appar
+    sharing_catalog_msg_html: <br>En delmängd av de tillgängliga apparna kan visas på %{catalog_link_tag}.
+    sharing_catalog_title: Appkatalog
+    sharing_no_shared_apps_html: <strong>Inga anpassade delade appar tillgängliga.</strong>
+    sharing_support_msg_html: 'Om du inte hittar appen du letar efter, vänligen
+
+      <a href="%{support_url}">kontakta supporten</a>.'
+    sharing_welcome_msg_html: 'Klusteråtkomstapplikationer finns tillgängliga från rullgardinsmenyerna i navigeringsfältet ovan.
+
+      <br>Anpassade delade appar finns tillgängliga nedan.
+
+      '
+    shell: Skal
+    shell_app_title: '%{cluster_title} Shell-åtkomst'
+    show: Visa
+    size: Storlek
+    skip_navigation: Hoppa över navigering
+    smart_attributes:
+      account: Konto
+      auto_modules_none: Automoduler (inga angivna)
+      cluster: Klunga
+      cores: Kärnor
+      email_on_started: Jag vill gärna få ett e-postmeddelande när sessionen börjar
+      environment_variable: Miljövariabel
+      environment_variable_key: 'Miljövariabel: %{key}'
+      job_name: Jobbnamn
+      module_version: '%{module} version'
+      num_cpus_single_node: Antal processorer på enskild nod
+      num_hours: Antal timmar
+      num_nodes: Antal noder
+      num_processors: Antal processorer
+      partition: Dela
+      qos: QoS
+      queue: Kö
+      script: Manus
+      vnc_idle_help: 'Avsluta om # sekunder förflyter utan VNC-visningsanslutningar'
+      vnc_idle_label: Timeout för inaktivitet
+      vnc_resolution_help: Upplösning används endast av inbyggda VNC-anslutningar
+      vnc_resolution_label: Upplösning
+    soft_tabs: Mjuka flikar
+    soft_tabs_info: Mjuka tabbtecken är mellanslag i filen istället för faktiska tabbtecken.
+    status: Status
+    status_completed: Avslutad
+    status_held: Hölls
+    status_hold: Hålla
+    status_queued: I kö
+    status_running: Spring
+    status_starting: Startande
+    status_suspend: Uppskjuta
+    status_suspended: Upphängd
+    status_undetermined: Obestämd
+    stop: Stopp
+    submit: Överlämna
+    submit_args: 'Skicka in argument:'
+    support_ticket:
+      creation_success: 'Supportärende-e-post skickat till: %{to}'
+      fields:
+        attachments: Bilagor
+        cc: Kreditkort
+        description: Beskrivning
+        email: E-post
+        job_description: Arbetsbeskrivning
+        session_description: Sessionsbeskrivning
+        subject: Ämne
+        username: Användarnamn
+      generic_error: 'Det uppstod ett fel när din begäran bearbetades: %{error}'
+      header: Supportärende
+      rt:
+        creation_success: 'Supportärende skapat i RequestTracker-systemet. Ärende-ID: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Supportärende skapat i ServiceNow. Nummer: %{number}. Men det går inte att lägga till bilagorna.'
+        creation_success: 'Supportärende skapat i ServiceNow. Nummer: %{number}'
+      submit: Skicka supportärende
+      title: Supportärende
+      validation:
+        attachments_items: '%{id} är ogiltiga. %{items} har lagts till, maximalt antal bilagor är %{max}'
+        attachments_size: '%{id} är ogiltiga. Maximal storlek för bilagor är %{max}'
+        email: Formatet %{id} är ogiltigt. Förväntade en giltig e-postadress
+        items:
+          attachments_js: Inga fler bilagor tillåtna
+        required: '%{id} krävs'
+        size:
+          attachments_js: Maximal storlek på bilagor är %{max}. Vald filstorlek är %{size}
+      validation_error: Ogiltig begäran. Vänligen granska felmeddelandena nedan.
+    support_ticket_add_attachment: Lägg till bilaga
+    support_ticket_attachments_help: Klicka i rutan för att bifoga en fil. Skärmdumpar eller andra filer kan hjälpa till att felsöka problemet.
+    system_apps_caption: Systeminstallerad app
+    system_status_available: '%{name} Tillgänglig: %{count}'
+    system_status_cluster_title: '%{title} Klusterstatus'
+    system_status_gpus: GPU:er
+    system_status_in_use: '%{percent} används'
+    system_status_jobs_queued: Jobb i kö
+    system_status_jobs_queued_count: '%{count} Jobb i kö'
+    system_status_jobs_running: Jobb som körs
+    system_status_jobs_running_count: '%{count} Jobb som körs'
+    system_status_nodes: Noder
+    system_status_not_slurm: Klusterinformation är inte tillgänglig med %{scheduler}. För närvarande stöds endast Slurm-kluster.
+    system_status_processors: Processorer
+    toggle_notifications: Växla aviseringar
+    toggle_push_notifications: Växla push-meddelanden
+    type: Typ
+    undefined_title: Odefinierad titel
+    unknown: Okänd
+    uppy:
+      strings:
+        addMore: Lägg till mer
+        addMoreFiles: Lägg till fler filer
+        addingMoreFiles: Lägger till fler filer
+        back: Tillbaka
+        browseFiles: bläddra bland filer
+        browseFolders: bläddra bland mappar
+        cancel: Avboka
+        cancelUpload: Avbryt uppladdning
+        closeModal: Stäng modal
+        complete: Komplett
+        dashboardTitle: Filuppladdare
+        dashboardWindowTitle: Filuppladdningsfönstret (tryck på Escape för att stänga)
+        done: Gjort
+        dropHint: Släpp dina filer här
+        dropPasteBoth: Släpp filer här, %{browseFiles} eller %{browseFolders}
+        dropPasteFiles: Släpp filer här eller %{browseFiles}
+        dropPasteFolders: Släpp filer här eller %{browseFolders}
+        editFile: Redigera fil
+        editing: Redigerar %{file}
+        emptyFolderAdded: Inga filer lades till från den tomma mappen
+        error: Fel
+        exceedsSize: '%{file} överskrider den maximalt tillåtna storleken på %{size}'
+        failedToUpload: Misslyckades med att ladda upp %{file}
+        folderAlreadyAdded: Mappen "%{folder}" har redan lagts till
+        myDevice: Min enhet
+        noDuplicates: Det går inte att lägga till dubblettfilen '%{fileName}', den finns redan.
+        pause: Paus
+        pauseUpload: Pausa uppladdningen
+        paused: Pausad
+        removeFile: Ta bort fil
+        resume: Resume
+        resumeUpload: CV-uppladdning
+        retry: Försöka igen
+        retryUpload: Försök uppladdning igen
+        save: Spara
+        saveChanges: Spara ändringar
+        showErrorDetails: Visa felinformation
+        upload: Ladda upp
+        uploadComplete: Uppladdningen är klar
+        uploadFailed: Uppladdningen misslyckades
+        uploadPaused: Uppladdning pausad
+        uploading: Uppladdning
+        xTimeLeft: '%{time} kvar'
+    user: Användare
+    user_configuration:
+      support_ticket_error: support_ticket är felkonfigurerat. Lägg till en backend-implementering i YAML-konfigurationen.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand tillhandahåller en integrerad, enda åtkomstpunkt för alla dina HPC-resurser.</p>
+
+      '

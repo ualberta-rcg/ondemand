@@ -4,14 +4,80 @@ fa-IR:
     errors:
       messages:
         format: قالب %{attribute} نامعتبر است یا وجود ندارد
-        invalid: "%{attribute} نامعتبر است"
+        invalid: '%{attribute} نامعتبر است'
         required: وارد کردن %{attribute} الزامی است
-        used: "%{attribute} قبلاً استفاده شده است"
+        used: '%{attribute} قبلاً استفاده شده است'
   dashboard:
     account: حساب کاربری
     actions: اقدامات
     active_jobs: مشاغل فعال
     active_jobs_close_details: بستن پنل جزئیات تکمیلی.
+    active_jobs_detail:
+      account: حساب کاربری
+      array_job_id: شناسه کار آرایه
+      array_task_id: شناسه وظیفه آرایه
+      cluster: خوشه
+      cluster_id: شناسه خوشه
+      comment: نظر دهید
+      cpu_time: زمان پردازنده
+      cpu_used: پردازنده مورد استفاده
+      current_working_directory: فهرست کاری فعلی
+      end_time: زمان پایان
+      exec_host: میزبان اجرایی
+      finish_time: زمان پایان
+      from_host: از میزبان
+      gres: جی‌آر‌ای‌اس
+      group_list: فهرست گروه
+      job_account: حساب کاربری
+      job_checkpoint_attr: موقعیت بازرسی شغلی
+      job_checkpoint_interval: فاصله زمانی بررسی کار
+      job_deadline: مهلت شغلی
+      job_exec_file: فایل اجرایی کار
+      job_execution_time: زمان اجرای کار
+      job_gid: شناسه شغلی (GID)
+      job_group: گروه شغلی
+      job_id: شناسه شغل
+      job_name: نام شغل
+      job_priority: اولویت شغلی
+      job_restart: شروع مجدد کار
+      job_script_file: فایل اسکریپت شغلی
+      job_script_size: اندازه اسکریپت شغلی
+      job_share: اشتراک گذاری شغل
+      job_type: نوع شغل
+      job_uid: شناسه کاربری شغل
+      job_verify: تأیید شغل
+      job_version: نسخه شغلی
+      mem: میم
+      memory: حافظه
+      node_count: تعداد گره
+      node_list: لیست گره‌ها
+      nodes: گره‌ها
+      none: هیچکدام
+      notifications: اعلان‌ها
+      partition: پارتیشن
+      pbs_id: شناسه پی‌بی‌اس
+      pids: PID ها
+      ppn: پی پی ان
+      project_name: نام پروژه
+      queue: صف
+      reason: دلیل
+      reserve: رزرو
+      select: انتخاب کنید
+      start_time: زمان شروع
+      state: ایالت
+      status: وضعیت
+      submission_time: زمان ارسال
+      swap: تعویض
+      time_limit: محدودیت زمانی
+      time_used: زمان استفاده شده
+      total_cpus: کل پردازنده‌ها
+      total_nodes: کل گره‌ها
+      user: کاربر
+      virtual_memory: حافظه مجازی
+      walltime: والتایم
+      walltime_used: والتایم کارکرده
+    active_jobs_filter_all: همه مشاغل
+    active_jobs_filter_user: شغل‌های شما
     active_jobs_ganlia_CPU: تصویر گانگلیون برای CPU.
     active_jobs_ganlia_load: تصویر گانگلیا برای میانگین بار سیستم.
     active_jobs_ganlia_mem: تصویر گانگلیون برای استفاده از حافظه.
@@ -24,28 +90,21 @@ fa-IR:
     all_apps_table_sub_category_column: زیر‌دسته
     all_clusters: همه خوشه‌ها
     announcements_dismissible_button: تأیید
+    announcements_parse_error: خطا در تجزیه اطلاعیه.
+    announcements_render_error: به دلیل خطا، نمی‌توان اعلان '%{name}' را رندر کرد
     announcements_required_button: پذیرفتن
-    apps_setup_failure_html: |
-      <h2>هنگام آماده‌سازی داده‌های شما برای این برنامه مشکلی رخ داد.</h2>
-      <p class="lead">
-        با مسئولیت خودتان همچنان می‌توانید <a href="%{app_url}">برنامه را باز کنید</a>
-        یا به <a href="%{home_url}">پیشخوان بازگردید</a>.
-      </p>
-      <p>
-        این اطلاعات را با توسعه‌دهنده برنامه در میان بگذارید:
-        اسکریپت setup production باید تکرارپذیر باشد و هر بار که کاربر برنامه را از پیشخوان باز می‌کند اجرا می‌شود.</p>
-      <h4>استثنا: %{exception_class}</h4>
-      <pre>%{exception_message}</pre>
-      <h4>ردیابی پشته:</h4>
-      <pre>%{exception_trace}</pre>
+    apps_setup_failure_html: "<h2>هنگام آماده‌سازی داده‌های شما برای این برنامه مشکلی رخ داد.</h2>\n<p class=\"lead\">\n  با مسئولیت خودتان همچنان می‌توانید <a href=\"%{app_url}\">برنامه را باز کنید</a>\n  یا به <a href=\"%{home_url}\">پیشخوان بازگردید</a>.\n</p>\n<p>\n  این اطلاعات را با توسعه‌دهنده برنامه در میان بگذارید:\n  اسکریپت setup production باید تکرارپذیر باشد و هر بار که کاربر برنامه را از پیشخوان باز می‌کند اجرا می‌شود.</p>\n<h4>استثنا: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>ردیابی پشته:</h4>\n<pre>%{exception_trace}</pre>\n"
     apps_system_apps_title: برنامه‌های سامانه
     auto_log_location_title: محل گزارش
     back: بازگشت
     balance_additional_message: درخواست %{balanace_units} بیشتر را در نظر بگیرید
-    balance_message: "%{units_balance} برابر با %{value} است"
+    balance_message: '%{units_balance} برابر با %{value} است'
     balance_no_warnings: هیچ پروژه‌ای در محدوده‌ی آستانه‌ی هشدار موجودی %{threshold} روزه قرار ندارد.
     balance_reload_message_html: 'برای مشاهده موجودی به‌روز، صفحه را دوباره بارگذاری کنید. موجودی‌ها روزانه به‌روزرسانی می‌شوند.<br>آخرین به‌روزرسانی: %{last_update}'
     balance_warning_prefix_html: هشدار %{units_balance} برای
+    batch_connect_active_sessions_aria: جلسات فعال
+    batch_connect_app_version: 'نسخه: %{version}'
+    batch_connect_apps_menu_aria: منوی برنامه‌های تعاملی
     batch_connect_apps_menu_title: برنامه‌های تعاملی
     batch_connect_form_attr_cache_error: استفاده از مقادیر ذخیره‌شده قبلی ممکن نیست؛ از مقادیر پیش‌فرض استفاده می‌شود. (%{error_message})
     batch_connect_form_choose_template_name: یک نام برای الگو انتخاب کنید
@@ -62,7 +121,9 @@ fa-IR:
     batch_connect_form_save_new_template: ذخیره تنظیمات جدید
     batch_connect_form_save_submit: ذخیره تنظیمات و بستن
     batch_connect_form_select_template: انتخاب تنظیمات ذخیره‌شده
-    batch_connect_form_session_data_html: "* داده‌های نشست %{title} از طریق %{data_link_tag} در دسترس است.\n"
+    batch_connect_form_session_data_html: '* داده‌های نشست %{title} از طریق %{data_link_tag} در دسترس است.
+
+      '
     batch_connect_form_template_name_label: نام تنظیم
     batch_connect_form_type_new_name: نام تنظیمات برنامه
     batch_connect_form_type_new_name_error: برای ادامه، یک نام معتبر وارد کنید
@@ -73,10 +134,12 @@ fa-IR:
       '
     batch_connect_no_apps: هیچ برنامه تعاملی در دسترس نیست.
     batch_connect_no_sessions: هیچ نشست فعالی ندارید.
-    batch_connect_sandbox: " [محیط آزمایشی]"
+    batch_connect_sandbox: ' [محیط آزمایشی]'
     batch_connect_sessions_cancel_confirm: آیا مطمئن هستید؟
     batch_connect_sessions_cancel_full_title: لغو نشست %{title}
     batch_connect_sessions_cancel_title: لغو
+    batch_connect_sessions_connect_to: اتصال به %{app_title}
+    batch_connect_sessions_connection_render_error: به دلیل خطای '%{error}' نمی‌توان دکمه اتصال را از view.html.erb رندر کرد.
     batch_connect_sessions_data_html: 'داده‌های نشست %{title} از طریق %{data_link_tag} در دسترس است.
 
       '
@@ -90,15 +153,30 @@ fa-IR:
       '
     batch_connect_sessions_errors_staging: 'آماده‌سازی الگو با خطای زیر ناموفق بود:'
     batch_connect_sessions_errors_submission: 'ارسال نشست با خطای زیر ناموفق بود:'
+    batch_connect_sessions_native_vnc_tab: دستورالعمل‌های بومی
+    batch_connect_sessions_novnc_compression: فشرده سازی
+    batch_connect_sessions_novnc_compression_help: ۱ (کم) تا ۹ (زیاد)
     batch_connect_sessions_novnc_launch: راه‌اندازی %{app_title}
+    batch_connect_sessions_novnc_quality: کیفیت تصویر
+    batch_connect_sessions_novnc_quality_help: ۰ (کم) تا ۹ (زیاد)
+    batch_connect_sessions_novnc_tab: اتصال بدون VNC
     batch_connect_sessions_novnc_view_only: فقط مشاهده (پیوند قابل اشتراک)
     batch_connect_sessions_path_selector_forbidden_error: اجازه انتخاب آن پوشه یا فایل را ندارید.
     batch_connect_sessions_relaunch_full_title: راه‌اندازی مجدد نشست %{title}
     batch_connect_sessions_relaunch_title: راه‌اندازی مجدد
     batch_connect_sessions_staged_root: پوشه ریشه آماده‌سازی‌شده
+    batch_connect_sessions_stats_core_count:
+      one: هسته %{count}
+      other: هسته‌های %{count}
     batch_connect_sessions_stats_created_at: 'زمان ایجاد:'
     batch_connect_sessions_stats_expected_time: 'شروع مورد انتظار:'
+    batch_connect_sessions_stats_gpu_count:
+      one: پردازنده گرافیکی %{count}
+      other: پردازنده‌های گرافیکی %{count}
     batch_connect_sessions_stats_host: 'میزبان:'
+    batch_connect_sessions_stats_node_count:
+      one: گره %{count}
+      other: گره‌های %{count}
     batch_connect_sessions_stats_session_dir_link_title: باز کردن پوشه نشست %{session_id}
     batch_connect_sessions_stats_session_id: 'شناسه نشست:'
     batch_connect_sessions_stats_support_ticket: در این نشست مشکلی دارید؟
@@ -124,6 +202,12 @@ fa-IR:
 
       '
     batch_connect_sessions_word: نشست
+    batch_connect_validation:
+      app_not_found: این برنامه در دایرکتوری '%{root}' وجود ندارد.
+      inaccessible_clusters: این برنامه به کلاسترهایی نیاز دارد که وجود ندارند یا شما به آنها دسترسی ندارید.
+      missing_form_file: این برنامه فایل فرمی را در دایرکتوری '%{root}' ارائه نمی‌دهد.
+      missing_sub_app_form_file: این برنامه فایل فرم زیربرنامه را در دایرکتوری '%{root}' ارائه نمی‌دهد.
+      no_cluster_specified: این برنامه هیچ خوشه ای را مشخص نمی کند.
     bc_saved_settings:
       delete_confirm: آیا مطمئن هستید؟
       delete_title: حذف تنظیمات ذخیره‌شده %{settings_name}
@@ -136,16 +220,40 @@ fa-IR:
       saved_message: تنظیمات %{settings_name} ذخیره شد
       settings_values_label: مقادیر
       title: تنظیمات ذخیره‌شده
+    breadcrumb_aria: خرده نان
     breadcrumbs_all_apps: همه برنامه‌ها
     breadcrumbs_home: خانه
     breadcrumbs_my_sessions: نشست‌های تعاملی من
     breadcrumbs_support_ticket: درخواست پشتیبانی
+    browser_warning: OnDemand به نسخه جدیدتری از مرورگری که استفاده می‌کنید نیاز دارد. الزامات فعلی مرورگر شامل IE Edge، Firefox 19+، Chrome 34+، Safari 8+ است.
     cancel: لغو
+    categories:
+      apps: برنامه‌ها
+      bioinformatics: بیوانفورماتیک
+      clusters: خوشه‌ها
+      data_science: علم داده
+      desktop: دسکتاپ
+      desktops: دسکتاپ‌ها
+      development: توسعه
+      external_apps: برنامه‌های خارجی
+      files: فایل‌ها
+      gateway_apps: اپلیکیشن‌های گیت‌وی
+      guis: رابط‌های کاربری گرافیکی
+      interactive_apps: برنامه‌های تعاملی
+      jobs: مشاغل
+      machine_learning: یادگیری ماشین
+      mathematics: ریاضیات
+      servers: سرورها
+      utilities: خدمات رفاهی
+      virtual_desktop_interface: رابط دسکتاپ مجازی
+      visualization: تجسم
     clear: پاک کردن
     close: بستن
     close_alert: بستن این هشدار.
     close_notice: بستن این اعلان.
     cluster: خوشه
+    copy: کپی
+    copy_suffix: (کپی)
     cpu_report: گزارش پردازنده + %{node}
     custom_pages:
       invalid: 'کد صفحه نامعتبر است: %{page}. این صفحه پیکربندی نشده است'
@@ -154,22 +262,57 @@ fa-IR:
     detailed_metrics: معیارهای دقیق
     details: جزئیات
     development_apps_caption: برنامه آزمایشی
+    development_apps_category: برنامه‌های سندباکس
+    development_delete_app: حذف برنامه
+    development_edit_title: ویرایش %{title}
+    development_launch_title: راه اندازی %{title}
     directory: پوشه
     edit: ویرایش
+    editor_default: پیش‌فرض
+    editor_font_size: اندازه فونت
+    editor_key_bindings: اتصالات کلیدی
+    editor_theme: تم
+    editor_theme_bright: روشن
+    editor_theme_dark: تیره
+    editor_wrap: بسته بندی
+    error_details: 'جزئیات:'
+    error_internal_body_html: لطفاً چند لحظه دیگر دوباره امتحان کنید. اگر همچنان این خطا را مشاهده می‌کنید، لطفاً با پشتیبانی <a href="%{support_url}"> تماس بگیرید</a>.
+    error_internal_title: خطای سرور داخلی
+    error_not_found_body: صفحه‌ای که به دنبال آن هستید وجود ندارد.
+    error_not_found_title: یافت نشد
+    favorites: موارد دلخواه
     file: فایل
+    file_editor: ویرایشگر فایل
     file_quotas: سهمیه فایل‌ها
     files: فایل‌ها
+    files_change_directory: تغییر دایرکتوری
+    files_contents_of_directory: محتویات دایرکتوری %{path}
+    files_copy_move: کپی/انتقال
+    files_copy_path: مسیر کپی
+    files_directory_contents_aria: محتویات دایرکتوری
     files_directory_download_error_modal_title: پوشه برای بارگیری بیش از حد بزرگ است
     files_directory_download_unauthorized: فقط فایل یا پوشه‌ای را می‌توانید بارگیری کنید که اجازه خواندن و اجرا برای آن دارید
     files_directory_size_calculation_error: محاسبه اندازه پوشه به‌دلیل پایان مهلت زمانی متوقف شد.
     files_directory_size_calculation_timeout: محاسبه اندازه پوشه به‌دلیل پایان مهلت زمانی متوقف شد.
     files_directory_size_unknown: 'هنگام محاسبه اندازه پوشه، خطایی با وضعیت %{exit_code} رخ داد: %{error}'
     files_directory_too_large: پوشه برای بارگیری به‌صورت ZIP بیش از حد بزرگ است. اندازه پوشه باید کمتر از %{download_directory_size_limit} بایت باشد.
-    files_doesnt_exist: "%{path} وجود ندارد."
+    files_doesnt_exist: '%{path} وجود ندارد.'
+    files_download: دانلود
     files_download_not_enabled: بارگیری فایل در این سرور فعال نیست.
     files_download_zip: بارگیری به‌صورت ZIP
+    files_exceeds_editor_limit: '%{path} از محدودیت ویرایشگر %{limit} فراتر رفته است. لطفاً فایل را برای ویرایش یا مشاهده محلی دانلود کنید.'
     files_file_too_large: فایل برای بارگیری بیش از حد بزرگ است. اندازه فایل باید کمتر از %{download_file_size_limit} بایت باشد.
+    files_go_up_directory: برو به فهرست بالا
+    files_modified_at: اصلاح شده در
+    files_modify_aria: تغییر فایل‌ها
+    files_new_directory: دایرکتوری جدید
+    files_new_file: فایل جدید
+    files_not_editable: '%{path} یک فایل قابل ویرایش نیست'
     files_not_readable: مجوز کافی برای خواندن «%{path}» را ندارید.
+    files_open_in_files_app: باز کردن در برنامه فایل‌ها
+    files_open_in_globus: باز در گلوبوس
+    files_path_breadcrumbs_aria: مسیرها (مسیرهای مسیر)
+    files_refresh: تازه کردن
     files_remote_dir_not_created: پوشه %{path} ایجاد نشد
     files_remote_disabled: پشتیبانی از فایل راه‌دور فعال نیست
     files_remote_empty_dir_unsupported: سامانه راه‌دور از پوشه خالی پشتیبانی نمی‌کند
@@ -178,17 +321,27 @@ fa-IR:
     files_shell: باز کردن در پایانه
     files_shell_dropdown: انتخاب کلاستر برای باز کردن در پایانه
     files_title: مرور فایل‌ها
+    files_upload: آپلود
+    footer_contribute: مشارکت در گیت‌هاب
+    footer_license: اطلاعیه مجوز نرم‌افزار
+    footer_open_source: نرم‌افزار متن‌باز.
+    footer_powered_by: طراحی شده توسط Open OnDemand
+    footer_version: 'نسخهٔ درخواستی: %{version}'
     home_directory: پوشه خانه
     id: شناسه
     import: درون‌ریزی
     job: شغل
     job_info: اطلاعات کار
+    jobs_back_to_projects: بازگشت به پروژه‌ها
+    jobs_clear_form_fields: پاک کردن فیلدهای فرم
+    jobs_completed_jobs: کارهای انجام شده
     jobs_create_blank_project: ایجاد پروژه جدید
     jobs_create_blank_workflow: گردش‌کار جدید
     jobs_create_template_project: ایجاد پروژه جدید از الگو
     jobs_import_shared_project: درون‌ریزی پروژه اشتراکی
     jobs_launchers: راه‌اندازها
     jobs_launchers_add_select_option: افزودن گزینه انتخاب %{name}
+    jobs_launchers_cannot_find: لانچر پیدا نمیشه %{id}
     jobs_launchers_clone: تکثیر راه‌انداز %{name}
     jobs_launchers_created: راه‌انداز با موفقیت ایجاد شد!
     jobs_launchers_default_created: فایل «hello_world.sh» نیز به این پروژه افزوده شد.
@@ -197,10 +350,12 @@ fa-IR:
     jobs_launchers_deleted: راه‌انداز با موفقیت حذف شد!
     jobs_launchers_edit: ویرایش فرم راه‌انداز %{name}
     jobs_launchers_edit_form_item: ویرایش مورد فرم %{label}
+    jobs_launchers_editing: در حال ویرایش %{title}
     jobs_launchers_fixed_field: مقدار ثابت
     jobs_launchers_fixed_field_help: ثابت نگه داشتن مقدار فعلی
     jobs_launchers_max_value_label: بیشینه مقدار فیلد عددی %{label}
     jobs_launchers_min_value_label: کمینه مقدار فیلد عددی %{label}
+    jobs_launchers_name: نام لانچر
     jobs_launchers_new_field_select: موردی را برای افزودن به فرم انتخاب کنید
     jobs_launchers_not_found: راه‌انداز %{launcher_id} پیدا نشد
     jobs_launchers_preview_form_item: پیش‌نمایش مورد فرم %{label}
@@ -212,7 +367,13 @@ fa-IR:
     jobs_launchers_submit_launcher_title: اجرای اسکریپت با مقادیر ذخیره‌شده یا پیش‌فرض برای راه‌انداز %{name}
     jobs_launchers_submitted: کار %{job_id} با موفقیت ارسال شد.
     jobs_launchers_updated: مانیفست راه‌انداز به‌روزرسانی شد!
+    jobs_native_dependency: . کار به job-id%{dependency} بستگی دارد
+    jobs_native_reason: به دلیل '%{reason}'
+    jobs_native_state: وضعیت فعلی کار '%{state}' است.
     jobs_new_launcher: راه‌انداز جدید
+    jobs_new_project: پروژه جدید
+    jobs_project_cannot_find: 'پروژه پیدا نشد: %{project_id}'
+    jobs_project_clear_form_fields: پاک کردن فیلدهای فرم
     jobs_project_created: پروژه با موفقیت ایجاد شد!
     jobs_project_delete_label: حذف پروژه %{name}
     jobs_project_delete_project_confirmation: همه محتوای پوشه پروژه حذف شود؟
@@ -231,6 +392,8 @@ fa-IR:
     jobs_project_job_deleted: کار %{job_id} با موفقیت حذف شد
     jobs_project_job_not_deleted: کار %{job_id} حذف نشد
     jobs_project_job_stopped: کار %{job_id} با موفقیت متوقف شد
+    jobs_project_list_aria: فهرست پروژه‌ها
+    jobs_project_manager: مدیر پروژه
     jobs_project_manifest_updated: مانیفست پروژه به‌روزرسانی شد!
     jobs_project_name_placeholder: نام پروژه
     jobs_project_name_validation: نام پروژه فقط می‌تواند شامل حروف، رقم، خط تیره، زیرخط و فاصله باشد
@@ -238,19 +401,32 @@ fa-IR:
     jobs_project_open_label: باز کردن پروژه %{name}
     jobs_project_remove_label: برداشتن پروژه %{name}
     jobs_project_removed: پروژه از فهرست جست‌وجو حذف شد!
+    jobs_project_return_to_projects: بازگشت به صفحه پروژه‌ها
     jobs_project_save_error: مانیفست در %{path} ذخیره نشد
+    jobs_project_save_project_title: ذخیره پروژه
     jobs_project_select_directory: انتخاب پوشه پروژه
     jobs_project_setgid_help: فعال ماندن setgid باعث می‌شود فایل‌های پروژه با گروه انتخابی ایجاد شوند. این گزینه بر پروژه‌های پوشه خانه شما اثری ندارد.
     jobs_project_validation_error: درخواست نامعتبر است. خطاهای زیر را بررسی کنید
+    jobs_return_to_projects: بازگشت به صفحه پروژه‌ها
+    jobs_save_project_title: ذخیره پروژه
     jobs_select_directory_placeholder: برای درون‌ریزی روی پروژه کلیک کنید
     jobs_toggle_details: برای نمایش یا پنهان کردن جزئیات کار %{job_id} کلیک کنید
+    jobs_workflow_add_launcher: اضافه کردن لانچر
+    jobs_workflow_canvas_aria: بوم نقاشی
     jobs_workflow_clone: تکثیر گردش‌کار %{name}
+    jobs_workflow_connect_launchers: لانچرها را وصل کنید
     jobs_workflow_created: گردش‌کار با موفقیت ایجاد شد!
     jobs_workflow_delete_confirmation: همه محتوای گردش‌کار حذف شود؟
+    jobs_workflow_delete_edge: حذف لبه
+    jobs_workflow_delete_edge_title: حذف لبه انتخاب شده (Del/Backspace)
+    jobs_workflow_delete_launcher: حذف لانچر
+    jobs_workflow_delete_launcher_title: حذف لانچر انتخاب شده (Del/Backspace)
     jobs_workflow_delete_title: حذف گردش‌کار %{name}
     jobs_workflow_deleted: گردش‌کار با موفقیت حذف شد!
     jobs_workflow_description_placeholder: توضیحات گردش‌کار
     jobs_workflow_edit_settings: ویرایش تنظیمات گردش‌کار %{name}
+    jobs_workflow_editing: 'ویرایش: %{name}'
+    jobs_workflow_enable_sync_key: فعال کردن OOD_WORKFLOW_SYNC_KEY
     jobs_workflow_failed: گردش‌کار با خطای %{error} ناموفق بود
     jobs_workflow_help: برای انتخاب و جابه‌جایی، روی عنوان کلیک کنید. با انتخاب «اتصال راه‌اندازها»، روی دو راه‌انداز کلیک کنید تا متصل شوند.
     jobs_workflow_manifest_updated: مانیفست گردش‌کار به‌روزرسانی شد!
@@ -258,31 +434,275 @@ fa-IR:
     jobs_workflow_name_placeholder: نام گردش‌کار
     jobs_workflow_name_validation: نام گردش‌کار فقط می‌تواند شامل حروف، رقم، خط تیره، زیرخط و فاصله باشد
     jobs_workflow_not_found: گردش‌کار %{workflow_id} پیدا نشد
+    jobs_workflow_pick_launchers: پرتابگرها را انتخاب کنید
     jobs_workflow_show_graph: باز کردن گردش‌کار %{name} در ویرایشگر گراف
     jobs_workflow_submitted: گردش‌کار با موفقیت ارسال شد!
     jobs_workflow_sync_key_help: در صورت فعال بودن، همه راه‌اندازهای این گردش‌کار متغیر محیطی یکسان <code>OOD_WORKFLOW_SYNC_KEY</code> را دریافت می‌کنند؛ این متغیر توکنی تصادفی و یکتا برای هر اجرای گردش‌کار است. برای ساخت نام فایل‌های هماهنگ، فایل‌های قفل یا شناسه‌های مشترک بین کارهای وابسته مفید است.
+    jobs_workflow_synchronization: همگام‌سازی
+    jobs_workflow_toolbar_aria: نوار ابزار
+    jobs_workflow_zoom_controls: کنترل‌های بزرگنمایی
+    jobs_workflow_zoom_in: بزرگنمایی
+    jobs_workflow_zoom_out: کوچک‌نمایی
+    jobs_workflow_zoom_reset: تنظیم مجدد بزرگنمایی
     jobs_workflows: گردش‌کارها
     jobs_workflows_not_supported: گردش‌های کاری توسط زمانبند پیکربندی‌شده پشتیبانی نمی‌شوند.
+    js:
+      active_jobs:
+        delete_aria: حذف کار %{name} با شناسه %{id}
+        delete_confirm: آیا از حذف %{name} - %{id} مطمئن هستید؟
+        delete_title: حذف شغل
+        details_loaded: لیست جزئیات شغل بارگذاری شد.
+        load_details_failed: جزئیات کار بارگیری نشد.
+        remote_server_error: خطایی در دریافت داده‌ها از سرور راه دور رخ داده است.
+        request_failed_parse: درخواست برای کارها به دلیل خطای تجزیه بدنه ناموفق بود.
+        request_failed_status: درخواست کارها با کد وضعیت %{status} ناموفق بود.
+        status_completed: تکمیل شده
+        status_hold: نگه دارید
+        status_queued: صف کشیده
+        status_running: دویدن
+        status_suspended: معلق
+        status_undetermined: نامشخص
+        support_ticket_aria: برای کار با شناسه %{id} تیکت پشتیبانی ارسال کنید
+        support_ticket_title: ارسال تیکت پشتیبانی
+        toggle_details_aria: تغییر وضعیت نمایش کار %{name} در %{cluster}
+      batch_connect:
+        allow_notifications: لطفاً مجوزهای اعلان را در مرورگر خود فعال کنید تا هشدارهای جلسه فعال شوند.
+        invalid_prefill_value_html: 'مقدار نامعتبر: "%{value}" برای فیلد "%{field}".<br>'
+        notification_permission_error: 'خطا در درخواست مجوز اعلان:'
+        resolution_reset: وضوح تصویر به %{width} توسط %{height} پیکسل تنظیم مجدد شد.
+        session_expires_warning: 'هشدار: %{title} (%{job_id}) ظرف ~%{minutes} دقیقه منقضی می‌شود!'
+        session_status_aria: '%{title} حالا %{status} شده است.'
+        session_status_push: '%{title} (%{job_id}) اکنون %{status} است.'
+      common:
+        cancel: لغو
+        close: بستن
+        error: خطا
+        loading: در حال بارگذاری...
+        ok: باشه
+      datatables:
+        all: همه
+        filter_label: 'فیلتر:'
+        invalid_date: تاریخ نامعتبر
+        rows_selected:
+          one: ردیف %{count} انتخاب شد
+          other: ردیف‌های %{count} انتخاب شدند
+        showing_filtered_rows: نمایش ردیف‌های %{display} از %{total}
+        showing_rows: نمایش ردیف‌های %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: و
+        changed_help: متن راهنما در %{widget} به %{help} تغییر یافت.
+        changed_label: برچسب %{widget} به برچسب جدید %{label} تغییر یافت.
+        current_value: مقدار فعلی را روی %{value} تنظیم کن.
+        hid_item: مورد فرم را مخفی کن %{widget}
+        maximum_limit: حداکثر محدودیت برای %{value}
+        minimum_limit: حداقل محدودیت به %{value}
+        option_disabled: گزینه %{value} برای %{widget} غیرفعال است.
+        option_enabled: گزینه %{value} برای %{widget} فعال است
+        revealed_item: مورد فرم آشکار شده %{widget}
+        selected_option_disabled: گزینه انتخاب شده %{value} برای %{widget} غیرفعال است.
+        set_limits: تنظیم %{details} برای %{widget}
+        set_value: مقدار %{widget} را برابر با %{value} قرار دهید.
+        widget_no_label: '%{type} بدون برچسب'
+        widget_with_label: '%{type} با برچسب %{label}'
+      editor:
+        save_error: 'هنگام ذخیره این فایل خطایی رخ داد!
+
+          %{error}'
+        unsaved_changes: شما تغییرات ذخیره نشده دارید!
+      files:
+        action_delete: حذف
+        action_download: دانلود
+        action_edit: ویرایش
+        action_rename: تغییر نام
+        action_view: مشاهده
+        actions: اقدامات
+        cannot_navigate_file: نمی‌توان به یک فایل پیمایش کرد.
+        change_directory: تغییر دایرکتوری
+        clipboard_description_html: 'فایل‌های زیر را از <code>%{from}</code> به دایرکتوری فعلی کپی یا منتقل کنید:'
+        contents_of_directory: محتویات دایرکتوری %{path}
+        copied_path: مسیر در کلیپ‌بورد کپی شد!
+        copy: کپی
+        create_directory_error: 'هنگام تلاش برای ایجاد دایرکتوری جدید خطایی روی داد: %{error}'
+        create_file_error: 'هنگام تلاش برای ایجاد فایل جدید، خطایی روی داد: %{error}'
+        delete_confirm_text: آیا از حذف فایل‌ها مطمئن هستید؟ %{files}
+        delete_multiple_title: فایل‌های انتخاب‌شده %{count} حذف شوند؟
+        delete_single_title: حذف %{name}؟
+        deleting_files: 'حذف فایل‌ها...:'
+        directory: دایرکتوری
+        directory_name_label: نام دایرکتوری
+        download_error: 'خطا هنگام دانلود: %{error}'
+        duplicate_files_warning: فایل‌های تکراری شناسایی شدند. آپلود این فایل‌ها باعث بازنویسی محتوای موجود می‌شود.
+        file: فایل
+        filename_invalid_chars: نام فایل نمی‌تواند شامل / یا .. باشد.
+        filename_label: نام فایل
+        globus_open: باز کردن دایرکتوری فعلی با Globus
+        globus_unavailable: هیچ نقطه پایانی Globus با این دایرکتوری مرتبط نیست
+        illegal_slash_in_filename: کاراکتر غیرمجاز (/) در نام فایل مجاز نیست.
+        move: حرکت
+        navigated_to: به %{path} هدایت شد
+        new_directory_title: دایرکتوری جدید
+        new_file_title: فایل جدید
+        path_label: مسیر
+        poll_status_error: ممکن است عملیات انجام نشده باشد. بازیابی وضعیت عملیات فایل ناموفق بود.
+        preparing_download_dir: 'آماده‌سازی برای دانلود دایرکتوری: %{name}'
+        provide_absolute_pathname: یک نام مسیر مطلق ارائه دهید
+        provide_directory_name: نام دایرکتوری را وارد کنید که / در آن وجود نداشته باشد
+        provide_non_empty_filename: یک نام فایل غیر خالی ارائه دهید.
+        provide_rename_filename: یک نام فایل برای تغییر نام آن وارد کنید
+        rename_title: تغییر نام
+        see_details: جزئیات را ببینید
+        select_row: انتخاب ردیف
+        select_to_copy_move: یک فایل، فایل‌ها یا دایرکتوری را برای کپی یا انتقال انتخاب کنید. شما هیچ کدام را انتخاب نکرده‌اید.
+        select_to_delete: یک فایل، فایل‌ها یا دایرکتوری را برای حذف انتخاب کنید. شما هیچ کدام را انتخاب نکرده‌اید.
+        select_to_download: یک فایل، فایل‌ها یا دایرکتوری را برای دانلود انتخاب کنید. شما هیچ کدام را انتخاب نکرده‌اید.
+        select_to_send: حداقل یک فایل یا دایرکتوری را برای ارسال انتخاب کنید.
+        send_failed: ارسال اطلاعات فایل ناموفق بود.
+        sent_successfully: اطلاعات فایل انتخاب شده با موفقیت ارسال شد.
+        show_dotfiles: نمایش فایل‌های نقطه‌ای
+        show_owner_mode: نمایش مالک/حالت
+        summary_copy_files: کپی کردن فایل‌ها
+        summary_move_files: جابجایی فایل‌ها
+        summary_remove_files: حذف فایل‌ها
+        summary_rename_file: تغییر نام فایل
+        token_missing_expired: توکن برنامه موجود نیست یا منقضی شده است. دوباره شروع کنید
+        transfer_error: 'هنگام تلاش برای %{summary} خطایی روی داد: %{error}'
+        upload_and_overwrite: آپلود و بازنویسی
+        upload_count:
+          one: فایل %{count} را آپلود کنید
+          other: آپلود فایل‌های %{count}
+        upload_new_files: آپلود فایل‌های جدید
+        uppy_empty_dir_note: دایرکتوری‌های خالی فقط زمانی در آپلود گنجانده می‌شوند که آپلود دایرکتوری از طریق کشیدن و رها کردن آغاز شود. دلیل این امر این است که API ورودی‌های فایل و دایرکتوری فقط در رویداد رها کردن در دسترس است، نه در طول رویداد تغییر ورودی.
+      icon_picker:
+        icon_selected: آیکون %{icon} انتخاب شد
+        icon_sr: آیکون %{name}
+      launcher_edit:
+        account_help: حسابی که کار با آن ارسال می‌شود.
+        account_label: حساب کاربری
+        add_new_option: اضافه کردن گزینه جدید
+        cores_help: این کار روی چند هسته اجرا خواهد شد.
+        cores_label: هسته‌ها
+        env_var_help: یک متغیر محیطی اضافه کنید.
+        env_var_key: 'متغیر محیطی: %{name}'
+        env_var_label: متغیر محیطی
+        hours_help: مدت زمانی که کار می‌تواند ادامه داشته باشد.
+        hours_label: ساعت‌ها
+        job_name_help: نامی که شغل خواهد داشت.
+        job_name_label: نام شغل
+        log_location_help: مقصد خروجی گزارش کار.
+        log_location_label: محل ثبت وقایع
+        no_more_options: گزینه های بیشتری وجود ندارد
+        nodes_help: کار روی چند گره اجرا خواهد شد.
+        nodes_label: گره‌ها
+        queues_help: کدام صف نیز کار را ارسال خواهد کرد.
+        queues_label: صف‌ها
+      module_browser:
+        copied: کپی شده!
+        copy: کپی
+        showing_results:
+          one: نمایش نتیجه %{count}
+          other: نمایش نتایج %{count}
+      nsf_access:
+        affected_resources: 'منابع تحت تأثیر: %{resources}'
+        read_more: ادامه مطلب
+        register_event: ثبت نام در این رویداد
+      path_selector:
+        directory_loaded: دایرکتوری با آیتم‌های %{count} بارگذاری شده است
+        invalid_regex: عبارت منظم ارائه شده برای این انتخابگر مسیر کامپایل نشد
+        loading_directory: بارگیری محتویات دایرکتوری
+        permission_denied_prefix: 'مجوز رد شد:'
+      popovers:
+        ihpc_content: یک جلسه تعاملی HPC به شما امکان دسترسی اختصاصی به یک یا چند گره در کلاستر را می‌دهد. این شبیه به یک جلسه دسته‌ای تعاملی با یک دسکتاپ قابل دسترسی در گره اصلی است. از این برای کارهای سنگین مانند وظایف محاسباتی طولانی مدت یا جایی که به منابع اختصاصی نیاز دارید استفاده کنید.
+        vdi_content: رابط دسکتاپ مجازی (VDI) به شما امکان دسترسی دسکتاپ به یک گره مشترک را می‌دهد. این نسخه گرافیکی یک گره ورود به سیستم است. از آن برای کارهای سبک مانند دسترسی و مشاهده فایل‌ها، ارسال کارها و برای مصورسازی استفاده کنید.
+      products:
+        fatal_error: یک خطای مهلک رخ داده است
+        no_action: هیچ اقدامی صورت نگرفته است
+      projects:
+        undetermined_size: اندازه نامشخص
+      support_ticket:
+        delete_attachment: حذف پیوست
+        no_file_selected: فایلی انتخاب نشده است
+        selected_file: 'فایل انتخاب شده: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: این صفحه قابل به‌روزرسانی نیست زیرا شما دیگر احراز هویت نشده‌اید. لطفاً برای ورود مجدد، صفحه را رفرش کنید.
+        unexpected_error: این صفحه با خطای غیرمنتظره‌ای مواجه شده است. لطفاً صفحه را رفرش کنید.
+      utils:
+        loading: در حال بارگذاری.
+        loading_complete: بارگذاری کامل شد.
+        popup_blocked: این لینک طوری پیکربندی شده است که در پنجره جدید باز شود، اما به نظر نمی‌رسد که باز شده باشد. لطفاً مسدودکننده پنجره بازشو را برای این صفحه غیرفعال کنید و دوباره امتحان کنید.
+      workflows:
+        begin_from_launcher: شروع گردش کار از لانچر %{title}
+        bidirectional_not_allowed: لبه‌های دو جهته مجاز نیستند.
+        cyclic_dependency: اضافه کردن این لبه، یک وابستگی چرخه‌ای بین لانچرها ایجاد می‌کند.
+        edge_aria_label: لبه از %{from} به %{to}
+        launcher_aria_label: 'پرتاب کننده: %{title}'
+        launcher_exists: لانچر از قبل وجود دارد، لطفاً لانچر دیگری انتخاب کنید
+        load_launcher_failed: بارگذاری لانچر HTML ناموفق بود. لطفاً دوباره امتحان کنید.
+        no_empty_cells: هیچ سلول شبکه خالی موجود نیست!
+        save_failed: ذخیره گردش کار ناموفق بود. برای جزئیات بیشتر، کنسول را بررسی کنید.
+        select_launcher: لطفا یک لانچر انتخاب کنید
+      xdmod:
+        analytics_toggle: تجزیه و تحلیل
+        column_date: تاریخ
+        column_id: شناسه
+        column_name: نام
+        date_range: '%{from} به %{to}'
+        efficiency_report: '%{unit} Efficiency Report'
+        ensure_logged_in_html: '%{error} لطفاً مطمئن شوید که <a href="%{url}">وارد سیستم شده‌اید. ابتدا XDMoD را باز کنید</a>، و سپس دوباره امتحان کنید.'
+        expand_analytics_title: برای مشاهده اطلاعات تحلیلی مربوط به شغل %{id} در بالای این جدول، کلیک کنید.
+        fetch_user_failed: تلاش برای دریافت اطلاعات کاربر فعلی از Open XDMoD ناموفق بود.
+        idp_redirect_failed: 'ورود ناموفق بود: تغییر مسیر IDP ناموفق بود'
+        iframe_error: ورود به سیستم XDMoD با iFrame در آدرس %{url} پیام خطایی با اطلاعات %{info} ارسال کرد.
+        inefficient_of_total_html: <span class="text-danger">%{bad} ناکارآمد %{unit} </span> ⁄ %{total} مجموع %{unit}
+        invalid_job_data: داده‌های کاری که توسط درخواست برگردانده شده‌اند نامعتبر هستند.
+        loading_caps: در حال بارگذاری...
+        login_page_load_failed: 'ورود ناموفق بود: صفحه ورود XDMoD بارگیری نشد.'
+        login_timeout: 'ورود ناموفق بود: مهلت انتظار برای تکمیل ورود به سیستم به پایان رسیده است'
+        metric_cpu: پردازنده
+        metric_mem: میم
+        metric_walltime: والتایم
+        no_data: داده‌ای موجود نیست.
+        not_available: ناموجود
+        open_xdmod: باز کردن XDMoD
+        percent_efficient: '%{percent}% کارآمد'
+        percent_efficient_aria: درصد کارآمد
+        percent_inefficient: '%{percent}% ناکارآمد'
+        percent_inefficient_aria: درصد ناکارآمد
+        recently_completed_jobs: کارهای اخیراً تکمیل شده
+        unit_core_hours: ساعات اصلی
+        unit_core_hours_title: ساعات کاری اصلی
+        unit_jobs: مشاغل
+        unit_jobs_title: مشاغل
     launch: راه‌اندازی
     load_report: گزارش بارگیری + %{node}
+    loading: در حال بارگذاری...
+    loading_short: بارگیری
     locale_name: فارسی
     logo_alt_text: به Open OnDemand خوش آمدید
+    logout_body_html: <strong>برای اینکه "خروج" رخ دهد، باید مرورگر خود را کاملاً ببندید</strong>. اگر پس از باز کردن مجدد مرورگر، هنوز وارد سیستم هستید، لطفاً کوکی‌های خود را پاک کنید. اگر از کروم‌بوک یا کروم‌باکس استفاده می‌کنید، برای "خروج از مرورگر" و در نتیجه "خروج"، باید دستگاه خود را مجدداً راه‌اندازی کنید.
+    logout_tip_html: 'نکته: استفاده از پنجره «حالت مرور خصوصی» هنگام استفاده از OnDemand، روشی عالی برای مدیریت «خروج خودکار» است، زیرا بستن پنجره مرورگر، تمام کوکی‌ها و اطلاعات مربوط به جلسه را حذف می‌کند.'
+    logout_title: شما هنوز از سیستم خارج نشده‌اید
     maximum: بیشینه
     mem_report: گزارش حافظه + %{node}
     minimum: کمینه
     mode: حالت
+    module_browser_available_modules: 'ماژول‌های موجود:'
+    module_browser_copy_aria: دستور بارگذاری کپی برای %{name}
+    module_browser_dependencies: 'وابستگی‌ها:'
     module_browser_last_updated: 'آخرین به‌روزرسانی: %{last_updated}'
+    module_browser_load_command: 'دستور بارگذاری:'
+    module_browser_search_label: ماژول‌های جستجو
+    module_browser_search_placeholder: جستجو بر اساس نام ماژول ...
+    module_browser_select_version: (نسخه را انتخاب کنید)
+    module_browser_showing_results: نمایش نتایج %{count}
     module_browser_title: مرورگر ماژول
-    motd_default_md: |
-      توسعه Open OnDemand از طریق [بنیاد ملی علوم](https://www.nsf.gov/)
-      تحت شماره‌های کمک‌هزینه [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) و
-      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) پشتیبانی می‌شود.
-       برای کسب اطلاعات بیشتر یا مشارکت:
-       - [Discourse](https://discourse.openondemand.org/)
-      - [مخزن Open OnDemand](https://github.com/OSC/ondemand)
-      - [مخزن ood-core](https://github.com/OSC/ood_core)
-      - [مستندات](https://osc.github.io/ood-documentation/latest/)
+    module_browser_versions: نسخه‌ها
+    motd_default_md: "توسعه Open OnDemand از طریق [بنیاد ملی علوم](https://www.nsf.gov/)\nتحت شماره‌های کمک‌هزینه [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) و\n[1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) پشتیبانی می‌شود.\n برای کسب اطلاعات بیشتر یا مشارکت:\n - [Discourse](https://discourse.openondemand.org/)\n- [مخزن Open OnDemand](https://github.com/OSC/ondemand)\n- [مخزن ood-core](https://github.com/OSC/ood_core)\n- [مستندات](https://osc.github.io/ood-documentation/latest/)\n"
     motd_erb_render_error: 'پیام روز به‌درستی تجزیه یا نمایش داده نشد: %{error_message}'
+    motd_no_messages: هیچ پیام جدیدی وجود ندارد.
     motd_title: پیام روز
     name: نام
     nav_all_apps: همه برنامه‌ها
@@ -300,11 +720,14 @@ fa-IR:
     nav_language: زبان
     nav_limit_caption: نمایش %{subset_count} از %{total_count}
     nav_logout: خروج
+    nav_main_menu: منوی اصلی
     nav_restart_server: راه‌اندازی مجدد وب‌سرور
     nav_sessions: نشست‌های تعاملی من
+    nav_toggle_navigation: تغییر ناوبری
     nav_user: واردشده با نام %{username}
     network_report: گزارش شبکه + %{node}
     node: گره
+    none: هیچکدام
     not_grouped: سایر برنامه‌ها
     nsf_access_announcements: اطلاعیه‌های دسترسی NSF
     nsf_access_events: رویدادهای NSF ACCESS
@@ -313,15 +736,41 @@ fa-IR:
     opens_in_new_tab: در زبانه جدید باز می‌شود
     output_location: 'محل خروجی:'
     owner: مالک
-    page_title: "%{page} - %{site}"
-    page_title_with_dir: "%{page} - %{site} - %{dir}"
+    page_actions_aria: اقدامات صفحه
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: پارامترها
+    path_selector_breadcrumb_aria: '%{title} خرده نان'
+    path_selector_caption: یک فایل یا دایرکتوری برای استفاده در فرم انتخاب کنید.
     path_selector_default_popup_title: پوشه کاری خود را انتخاب کنید
     path_selector_home: خانه
     path_selector_parent_directory: پوشه والد
+    permissions_created: مجوز با موفقیت ایجاد شد.
+    permissions_destroyed: مجوز با موفقیت از بین رفت.
+    permissions_group_title: مجوزهای گروه
+    permissions_user_title: مجوزهای کاربر
     pinned_apps_caption_html: گزیده‌ای از <a href="%{all_apps_url}">همه برنامه‌های در دسترس</a>
     pinned_apps_category: برنامه‌ها
     pinned_apps_title: برنامه‌های سنجاق‌شده
+    products_created: محصول با موفقیت ایجاد شد.
+    products_git_commit_hint_html: لطفاً هرگونه تغییر را اعمال کنید یا فایل‌های لازم را به <code>.gitignore</code> اضافه کنید.
+    products_git_staged: صحنه‌ای
+    products_git_status: وضعیت گیت
+    products_git_unstaged: بدون صحنه
+    products_git_untracked: ردیابی نشده
     products_manifest_save_error: مانیفست برنامه در %{path} ذخیره نشد
+    products_ssh_key_created: کلید SSH با موفقیت ایجاد شد.
+    products_ssh_key_exists: کلید SSH از قبل وجود دارد
+    products_ssh_key_failed: 'کلید SSH ایجاد نشد: %{error}'
+    products_type_batch_connect: برنامه اتصال دسته‌ای
+    products_type_passenger: اپلیکیشن مسافر
+    products_type_passenger_meteor: اپلیکیشن شهاب مسافر
+    products_type_passenger_node: برنامه گره مسافر
+    products_type_passenger_rack: اپلیکیشن رک مسافر
+    products_type_passenger_rails: اپلیکیشن ریل‌های مسافربری
+    products_type_passenger_rails_sqlite: اپلیکیشن ریل‌های مسافربری با پایگاه داده SQLite
+    products_type_passenger_wsgi: برنامه WSGI مسافر
+    products_updated: محصول با موفقیت به‌روزرسانی شد.
     project: پروژه
     project_balances: موجودی پروژه‌ها
     project_directory: پوشه پروژه
@@ -330,51 +779,106 @@ fa-IR:
     queue: صف
     quota_additional_message: برای آزاد کردن فضای دیسک، حذف یا بایگانی فایل‌ها را در نظر بگیرید.
     quota_block: استفاده از %{used} از سهمیه %{available}
-    quota_block_shared: "(%{used_exclusive} متعلق به شماست)"
+    quota_block_shared: (%{used_exclusive} متعلق به شماست)
     quota_file: استفاده از %{used} فایل از سهمیه %{available} فایل
-    quota_file_shared: "(%{used_exclusive} فایل متعلق به شماست)"
-    quota_message: "%{quota}. %{additional_message}"
+    quota_file_shared: (%{used_exclusive} فایل متعلق به شماست)
+    quota_message: '%{quota}. %{additional_message}'
     quota_reload_message: برای مشاهده سهمیه به‌روز، صفحه را دوباره بارگذاری کنید. سهمیه‌ها هر ۵ دقیقه به‌روزرسانی می‌شوند.
     quota_warning_prefix_html: هشدار حد سهمیه برای
     recently_used_apps_title: برنامه‌های اخیراً استفاده‌شده
     remove: حذف
     reset: بازنشانی
-    restart_msg_html: |
-      عضویت گروهی شما تغییر کرده و بر دسترسی‌تان به برنامه‌ها اثر می‌گذارد. پیشخوان باید به‌طور خودکار راه‌اندازی مجدد شود.
+    restart_msg_html: 'عضویت گروهی شما تغییر کرده و بر دسترسی‌تان به برنامه‌ها اثر می‌گذارد. پیشخوان باید به‌طور خودکار راه‌اندازی مجدد شود.
+
       اگر نشد، روی <a href="%{restart_url}">راه‌اندازی مجدد وب‌سرور</a> کلیک کنید.
+
+      '
     restore: بازیابی
     root: ریشه
     save: ذخیره
     saved_settings_title: تنظیمات ذخیره‌شده
+    select: انتخاب کنید
+    select_all: انتخاب همه
     select_path: انتخاب مسیر
     select_path_for: 'انتخاب مسیر برای %{element}
 
       '
+    settings_csrf_expired: توکن امنیتی جلسه شما منقضی شده است. لطفاً دوباره اقدام کنید.
     settings_invalid_request: تنظیمات ارسالی نامعتبر است
+    settings_unprocessable_body_html: ممکن است جلسه شما منقضی شده باشد یا تغییری که می‌خواستید رد شده باشد. لطفاً <a href="%{dashboard_url}"> به داشبورد</a> برگردید و دوباره امتحان کنید.
+    settings_unprocessable_title: جلسه منقضی شده یا تغییر رد شده است
     settings_updated: تنظیمات به‌روزرسانی شد
     shared_apps_caption: اشتراک‌گذاری‌شده توسط %{owner_title} (%{owner})
     shared_apps_caption_short: اشتراک‌گذاری‌شده توسط %{owner}
     shared_apps_title: برنامه‌های اشتراکی
-    sharing_catalog_msg_html: "<br>گزیده‌ای از برنامه‌های موجود در %{catalog_link_tag} قابل مشاهده است.\n"
+    sharing_catalog_msg_html: '<br>گزیده‌ای از برنامه‌های موجود در %{catalog_link_tag} قابل مشاهده است.
+
+      '
     sharing_catalog_title: فهرست برنامه‌ها
-    sharing_no_shared_apps_html: "<strong>هیچ برنامه اشتراکی سفارشی در دسترس نیست.</strong>\n"
+    sharing_no_shared_apps_html: '<strong>هیچ برنامه اشتراکی سفارشی در دسترس نیست.</strong>
+
+      '
     sharing_support_msg_html: 'اگر برنامه موردنظر خود را نمی‌بینید، لطفاً با <a href="%{support_url}">پشتیبانی تماس بگیرید</a>.
 
       '
-    sharing_welcome_msg_html: |
-      برنامه‌های دسترسی به کلاستر از منوهای کشویی نوار پیمایش بالا در دسترس‌اند.
+    sharing_welcome_msg_html: 'برنامه‌های دسترسی به کلاستر از منوهای کشویی نوار پیمایش بالا در دسترس‌اند.
+
       <br>برنامه‌های اشتراکی سفارشی در پایین قرار دارند.
+
+      '
+    shell: پوسته
     shell_app_title: دسترسی پوسته به %{cluster_title}
     show: نمایش
     size: اندازه
     skip_navigation: پرش از پیمایش
+    smart_attributes:
+      account: حساب کاربری
+      auto_modules_none: ماژول‌های خودکار (هیچ‌کدام داده نشده است)
+      cluster: خوشه
+      cores: هسته‌ها
+      email_on_started: می‌خواهم وقتی جلسه شروع می‌شود، ایمیلی دریافت کنم
+      environment_variable: متغیر محیطی
+      environment_variable_key: 'متغیر محیطی: %{key}'
+      job_name: نام شغل
+      module_version: نسخه %{module}
+      num_cpus_single_node: تعداد پردازنده‌ها روی یک گره
+      num_hours: تعداد ساعات
+      num_nodes: تعداد گره‌ها
+      num_processors: تعداد پردازنده‌ها
+      partition: پارتیشن
+      qos: کیفیت سرویس (QoS)
+      queue: صف
+      script: اسکریپت
+      vnc_idle_help: 'اگر # ثانیه گذشت و هیچ اتصال نمایشگر VNC وجود نداشت، خارج شوید'
+      vnc_idle_label: مهلت زمانی بیکار بودن
+      vnc_resolution_help: وضوح تصویر فقط توسط اتصالات VNC بومی استفاده می‌شود
+      vnc_resolution_label: وضوح تصویر
     soft_tabs: تب نرم
     soft_tabs_info: تب‌های نرم به‌جای نویسه واقعی تب، از فاصله در فایل استفاده می‌کنند.
     status: وضعیت
+    status_completed: تکمیل شده
+    status_held: برگزار شد
+    status_hold: نگه دارید
+    status_queued: صف کشیده
+    status_running: دویدن
+    status_starting: شروع
+    status_suspend: تعلیق
+    status_suspended: معلق
+    status_undetermined: نامشخص
+    stop: توقف
     submit: ارسال
     submit_args: 'ارسال آرگومان‌ها:'
     support_ticket:
       creation_success: ایمیل درخواست پشتیبانی به %{to} ارسال شد
+      fields:
+        attachments: پیوست‌ها
+        cc: سی سی
+        description: توضیحات
+        email: ایمیل
+        job_description: شرح شغل
+        session_description: شرح جلسه
+        subject: موضوع
+        username: نام کاربری
       generic_error: 'هنگام پردازش درخواست شما خطایی رخ داد: %{error}'
       header: درخواست پشتیبانی
       rt:
@@ -382,10 +886,11 @@ fa-IR:
       servicenow:
         attachments_failure: درخواست پشتیبانی در ServiceNow با شماره %{number} ایجاد شد، اما پیوست‌ها افزوده نشدند.
         creation_success: درخواست پشتیبانی در ServiceNow با شماره %{number} ایجاد شد.
+      submit: ارسال تیکت پشتیبانی
       title: درخواست پشتیبانی
       validation:
-        attachments_items: "%{id} نامعتبر است. %{items} مورد افزوده شد؛ بیشینه تعداد پیوست‌ها %{max} است"
-        attachments_size: "%{id} نامعتبر است. بیشینه اندازه پیوست %{max} است"
+        attachments_items: '%{id} نامعتبر است. %{items} مورد افزوده شد؛ بیشینه تعداد پیوست‌ها %{max} است'
+        attachments_size: '%{id} نامعتبر است. بیشینه اندازه پیوست %{max} است'
         email: قالب %{id} نامعتبر است. یک نشانی ایمیل معتبر وارد کنید
         items:
           attachments_js: افزودن پیوست بیشتر مجاز نیست
@@ -393,12 +898,75 @@ fa-IR:
         size:
           attachments_js: بیشینه اندازه پیوست %{max} است. اندازه فایل انتخابی %{size} است
       validation_error: درخواست نامعتبر است. پیام‌های خطای زیر را بررسی کنید
+    support_ticket_add_attachment: پیوست اضافه کنید
+    support_ticket_attachments_help: برای پیوست کردن فایل، روی کادر کلیک کنید. اسکرین‌شات‌ها یا فایل‌های دیگر می‌توانند به رفع مشکل شما کمک کنند.
     system_apps_caption: برنامه نصب‌شده سامانه
+    system_status_available: '%{name} موجود: %{count}'
+    system_status_cluster_title: '%{title} Cluster Status'
+    system_status_gpus: پردازنده‌های گرافیکی
+    system_status_in_use: '%{percent} در حال استفاده'
+    system_status_jobs_queued: مشاغل در صف انتظار
+    system_status_jobs_queued_count: '%{count} کارها در صف انتظار قرار گرفتند'
+    system_status_jobs_running: مشاغل دویدن
+    system_status_jobs_running_count: '%{count} مشاغل در حال اجرا'
+    system_status_nodes: گره‌ها
+    system_status_not_slurm: اطلاعات خوشه‌بندی با %{scheduler} در دسترس نیست. در حال حاضر، فقط خوشه‌های Slurm پشتیبانی می‌شوند.
+    system_status_processors: پردازنده‌ها
+    toggle_notifications: اعلان‌ها را تغییر دهید
+    toggle_push_notifications: اعلان‌های فشاری را تغییر دهید
     type: نوع
+    undefined_title: عنوان تعریف نشده
     unknown: نامشخص
+    uppy:
+      strings:
+        addMore: بیشتر اضافه کنید
+        addMoreFiles: اضافه کردن فایل‌های بیشتر
+        addingMoreFiles: اضافه کردن فایل‌های بیشتر
+        back: برگشت
+        browseFiles: مرور فایل‌ها
+        browseFolders: مرور پوشه‌ها
+        cancel: لغو
+        cancelUpload: لغو آپلود
+        closeModal: بستن مودال
+        complete: کامل
+        dashboardTitle: آپلودکننده فایل
+        dashboardWindowTitle: پنجره آپلود فایل (برای بستن، کلید escape را فشار دهید)
+        done: انجام شد
+        dropHint: فایل‌های خود را اینجا رها کنید
+        dropPasteBoth: فایل‌ها را اینجا رها کنید، %{browseFiles} یا %{browseFolders}
+        dropPasteFiles: فایل‌ها را اینجا رها کنید یا %{browseFiles}
+        dropPasteFolders: فایل‌ها را اینجا رها کنید یا %{browseFolders}
+        editFile: ویرایش فایل
+        editing: در حال ویرایش %{file}
+        emptyFolderAdded: هیچ فایلی از پوشه خالی اضافه نشد
+        error: خطا
+        exceedsSize: '%{file} از حداکثر اندازه مجاز %{size} تجاوز می‌کند.'
+        failedToUpload: آپلود نشد %{file}
+        folderAlreadyAdded: پوشه "%{folder}" قبلاً اضافه شده است
+        myDevice: دستگاه من
+        noDuplicates: نمی‌توان فایل تکراری '%{fileName}' را اضافه کرد، این فایل از قبل وجود دارد
+        pause: مکث
+        pauseUpload: آپلود را متوقف کنید
+        paused: مکث کرد
+        removeFile: حذف فایل
+        resume: رزومه
+        resumeUpload: آپلود رزومه
+        retry: دوباره امتحان کنید
+        retryUpload: آپلود را دوباره امتحان کنید
+        save: ذخیره
+        saveChanges: ذخیره تغییرات
+        showErrorDetails: نمایش جزئیات خطا
+        upload: آپلود
+        uploadComplete: آپلود کامل شد
+        uploadFailed: آپلود ناموفق بود
+        uploadPaused: آپلود متوقف شد
+        uploading: آپلود
+        xTimeLeft: '%{time} سمت چپ'
     user: کاربر
     user_configuration:
       support_ticket_error: پیکربندی support_ticket نادرست است. یک پیاده‌سازی backend در فایل پیکربندی YAML اضافه کنید.
-    welcome_html: |
-      %{logo_img_tag}
+    welcome_html: '%{logo_img_tag}
+
       <p class="lead">OnDemand یک نقطه دسترسی یکپارچه و واحد برای همه منابع HPC شما فراهم می‌کند.</p>
+
+      '

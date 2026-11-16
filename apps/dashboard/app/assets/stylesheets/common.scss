@@ -46,7 +46,17 @@
   margin-top: 40vh;
 }
 
+#locale-switcher > .nav-link,
+.locale-dropdown-menu .dropdown-item {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
 .locale-dropdown-menu {
   min-width: auto;
   width: max-content;
+  max-height: 70vh;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  font-weight: 500;
 }

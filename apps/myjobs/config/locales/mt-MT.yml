@@ -1,0 +1,131 @@
+---
+mt-MT:
+  jobcomposer:
+    account_label: 'Kont:'
+    back: Lura
+    cancel: Ikkanċella
+    close: Agħlaq
+    cluster_label: 'Raggruppament:'
+    confirm_delete: Żgur/a?
+    confirm_delete_template: Żgur li trid tħassar dan?
+    copy_template: Kopja l-Mudell
+    create_from_path_title: Oħloq xogħol ġdid minn mogħdija
+    create_new_heading_html: Oħloq "<span class="wrap-line" id="script-name-label">%{name}</span>" Ġdid
+    create_new_job: Oħloq Xogħol Ġdid
+    create_template: Oħloq Template
+    create_template_from_job_title: Oħloq template mix-xogħol magħżul
+    delete: Ħassar
+    delete_job_title: Ħassar ix-Xogħol
+    deprecation_warning_html: Il-Job Composer mhuwiex aktar adattat u se jitneħħa f'Open OnDemand 5.0. Jekk jogħġbok ittrasferixxi x-xogħlijiet u t-templates tiegħek lill-<a href="%{projects_path}">Project Manager</a>.
+    edit: Editja
+    edit_files: Editja l-Fajls
+    folder_contents_label: 'Kontenut tal-Fowlder:'
+    from_default_template: Mill-Mudell Predefinit
+    from_default_template_title: Oħloq xogħol ġdid mill-mudell awtomatiku
+    from_selected_job: Minn Xogħol Magħżul
+    from_selected_job_title: Ikkopja x-xogħol magħżul
+    from_specified_path: Minn Mogħdija Speċifikata
+    from_template: Mill-Mudell
+    from_template_title: Oħloq xogħol ġdid minn mudell li tagħżel
+    invalid_cluster_html: Il-grupp mhux validu! Editja <a href="#" id="edit-job-options-script-link">Job Options</a> biex tagħżel grupp validu.
+    invalid_script_html: L-iskript mhux validu! Editja <a href="#" id="edit-job-options-link">Job Options</a> biex tagħżel skript validu.
+    job_already_submitted: Ix-xogħol diġà ġie sottomess.
+    job_array_request_label: 'Talba għal Array ta'' Xogħol:'
+    job_attributes_heading_html: Attributi tax-Xogħol <strong>(Mhux obbligatorju)</strong>
+    job_copied: Ix-xogħol ġie kkupjat b'suċċess.
+    job_copy_failed: 'Ix-xogħol ma rnexxilux jiġi kkupjat: %{errors}'
+    job_created: Ix-xogħol inħoloq b'suċċess.
+    job_destroy_failed: 'Ix-xogħol ma rnexxilux jinqered: %{errors}'
+    job_destroyed: Job ġie meqrud b'suċċess.
+    job_details: Dettalji tax-Xogħol
+    job_directory_missing: Id-Direttorju tax-Xogħol huwa nieqes!
+    job_name_label: 'Isem tax-Xogħol:'
+    job_not_submitted: Ix-xogħol ma ġiex sottomess.
+    job_stop_failed: 'Ix-xogħol ma rnexxilux jitwaqqaf: %{errors}'
+    job_stopped: Ix-xogħol twaqqaf b'suċċess.
+    job_submit_failed: 'Ma rnexxiex nissottometti xogħol f''lott:'
+    job_submitted: Ix-xogħol ġie sottomess b'suċċess.
+    job_updated: Ix-xogħol ġie aġġornat b'suċċess.
+    loading: Tagħbija
+    loading_job_info: Tagħbija tal-Informazzjoni dwar ix-Xogħol
+    nav_help: Għajnuna
+    nav_jobs: Impjiegi
+    nav_menu_aria: Menù tal-Kompożitur tax-Xogħol
+    nav_templates: Mudelli
+    new_job: Xogħol Ġdid
+    new_template: Mudell Ġdid
+    new_template_title: Oħloq mudell ġdid
+    no_clusters_alert: M'hemm l-ebda hosts ikkonfigurati li jippermettulek tissottometti xogħlijiet. Jekk jogħġbok ikkuntattja lill-amministratur tas-sistema tiegħek.
+    open_dir: Iftaħ id-Dir
+    open_dir_in_editor: Iftaħ id-Direttorju fl-Editur tal-Fajls
+    open_dir_in_file_manager: Iftaħ id-Direttorju fil-Maniġer tal-Fajls
+    open_dir_in_terminal: Iftaħ id-Direttorju fit-Terminal
+    open_editor: Editur Miftuħ
+    open_selected_job_in_terminal: Iftaħ ix-Xogħol Magħżul fit-Terminal
+    open_selected_template_in_terminal: Iftaħ it-Template Magħżul fit-Terminal
+    open_template_dir_in_file_manager: Iftaħ id-Direttorju tal-Mudelli fil-Maniġer tal-Fajls
+    open_terminal: Iftaħ it-Terminal
+    open_xdmod: Iftaħ XDMoD
+    options_account_help: Il-kont huwa qasam fakultattiv. Jekk mhux issettjat, il-kont jista' jiġi ssettjat awtomatikament mill-filtru tas-sottomissjoni.
+    options_account_title: Kont
+    options_array_help: L-arrays tax-xogħol huma fakultattivi. eż. 1-10
+    options_array_help_with_clusters: 'L-arrays tax-xogħol huma fakultattivi. OnDemand bħalissa ma jappoġġjax arrays tax-xogħol għall-clusters(s): %{cluster_list}.'
+    options_array_title: Speċifikazzjoni tal-firxa tax-xogħol
+    options_cluster_title: Raggruppament
+    options_copy_environment: Ambjent tal-kopja
+    options_errors: Jekk jogħġbok irranġa l-iżbalji hawn taħt.
+    options_name_title: Isem
+    options_script_help: Fajls akbar minn 65KB jitħallew barra għall-qasam tal-iskritt tax-xogħol
+    options_script_title: Speċifika l-iskritt tax-xogħol
+    options_title: Għażliet ta' Xogħol
+    other_valid_files: Fajl(i) validu(i) ieħor(i)
+    page_title: Kompożitur tax-Xogħol - %{site}
+    path_to_source_heading_html: Mogħdija għas-sors <strong>(Meħtieġ)</strong>
+    reset: Irrisettja
+    reset_template_fields_title: Irrisettja l-oqsma għad-default tat-template
+    save: Issejvja
+    script_contents_label: 'Kontenut tal-iskript:'
+    script_location_label: 'Post tal-iskript:'
+    script_name_form_label: 'Isem tal-Iskript:'
+    script_name_label: 'Isem tal-iskript:'
+    select_cluster_prompt: Agħżel raggruppament...
+    select_template_option: -- agħżel mudell --
+    selected_template_details: Dettalji tal-Mudell Magħżula
+    show: Uri
+    show_batch_host_label: 'Ospitanti tal-lott:'
+    show_dir_contents_label: 'Kontenut tad-Direttorju:'
+    show_name_label: 'Isem:'
+    show_staged_dir_label: 'Direzzjoni tal-Palk:'
+    showing_job_title: Wirja tax-Xogħol
+    skip_navigation: Aqbeż in-Navigazzjoni
+    source_path_help: Daħħal il-mogħdija għal direttorju fis-sistema tal-fajls. Il-kontenut ta' din il-mogħdija se jiġi kkupjat għal fluss tax-xogħol ġdid.
+    source_path_label: Mogħdija tas-sors
+    specify_job_host_and_script: Speċifika l-Ospitanti tax-Xogħol u l-Iskript
+    stop: Waqqaf
+    stop_job_title: Waqqaf ix-Xogħol
+    submit: Ibgħat
+    submit_job_title: Ibgħat ix-Xogħol
+    submit_script_title: Ibgħat l-Iskript
+    submit_to_label: 'Ibgħat lil:'
+    suggested_files: Fajl(i) suġġerit(i)
+    table_created: Maħluq
+    table_id: ID
+    table_source: Sors
+    table_status: Status
+    template_create_error: żball fil-ħolqien tat-template
+    template_error_name_unique: irid ikun uniku.
+    template_error_path_directory: irid jipponta lejn direttorju.
+    template_error_path_missing: ma teżistix.
+    template_errors_heading:
+      one: 'Żball %{count} ipprojbixxa s-salvataġġ ta'' dan it-template:'
+      other: 'Żbalji ta'' %{count} ipprojbixxew is-salvataġġ ta'' dan it-template:'
+    template_label: 'Mudell:'
+    template_location_label: 'Post tat-template:'
+    template_path_blank_help: Jekk titħalla vojta, skript tax-xogħol awtomatiku se jiżdied mat-template il-ġdid tiegħek.
+    template_path_label: Mogħdija (il-mudell se jinħoloq billi jiġu kkupjati fajls minn din il-mogħdija tas-sors)
+    templates_subtitle: Biex toħloq xogħol ġdid, agħżel template biex tikkopjah, imla l-formola fuq il-lemin, u kklikkja "Oħloq Xogħol Ġdid".
+    title: Kompożitur tax-Xogħol
+    toggle_navigation: Aqleb in-navigazzjoni
+    view_files: Ara l-Fajls
+    xdmod_url_warning_message: Din il-biċċa xogħol tista' ma tidhirx f'Open XDMoD qabel 24 siegħa wara t-tlestija tagħha.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

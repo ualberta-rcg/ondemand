@@ -1,0 +1,18 @@
+{
+  "page_title": "Shell - %{siteTitle}",
+  "menu_aria": "Meniu Shell",
+  "host_label": "Gazdă: %{host}",
+  "initial_directory": "Directorul inițial: %{dir}",
+  "themes_label": "Teme:",
+  "theme_default": "Implicit",
+  "theme_bright": "Luminos",
+  "theme_dark": "Întuneric",
+  "fonts_label": "Fonturi:",
+  "leave_page_warning": "Părăsirea acestei pagini va încheia sesiunea terminalului.",
+  "websocket_failed": "Nu s-a putut stabili o conexiune websocket. Asigurați-vă că utilizați un browser care acceptă conexiuni websocket.",
+  "connection_terminated": "Conexiunea dumneavoastră la serverul la distanță a fost terminată.",
+  "auth_no_clusters": "Nu au fost definite clustere.",
+  "auth_invalid_origin": "Origine nevalidă.",
+  "auth_bad_csrf": "Jeton CSRF incorect.",
+  "auth_host_not_allowed": "Gazda „%{host}” nu este specificată în lista de acces permise sau în configurațiile clusterului."
+}

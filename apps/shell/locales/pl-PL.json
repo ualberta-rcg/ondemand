@@ -1,0 +1,18 @@
+{
+  "page_title": "Muszla - %{siteTitle}",
+  "menu_aria": "Menu powłoki",
+  "host_label": "Gospodarz: %{host}",
+  "initial_directory": "Katalog początkowy: %{dir}",
+  "themes_label": "Tematy:",
+  "theme_default": "Domyślny",
+  "theme_bright": "Jasny",
+  "theme_dark": "Ciemny",
+  "fonts_label": "Czcionki:",
+  "leave_page_warning": "Opuszczenie tej strony spowoduje zakończenie sesji terminalowej.",
+  "websocket_failed": "Nie udało się nawiązać połączenia przez WebSocket. Upewnij się, że używasz przeglądarki obsługującej połączenia przez WebSocket.",
+  "connection_terminated": "Twoje połączenie ze zdalnym serwerem zostało zakończone.",
+  "auth_no_clusters": "Nie zdefiniowano żadnych klastrów.",
+  "auth_invalid_origin": "Nieprawidłowe pochodzenie.",
+  "auth_bad_csrf": "Zły token CSRF.",
+  "auth_host_not_allowed": "Host „%{host}” nie został określony na liście dozwolonych ani w konfiguracji klastra."
+}

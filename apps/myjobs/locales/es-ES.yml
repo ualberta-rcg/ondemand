@@ -1,0 +1,5 @@
+---
+es-ES:
+  manifest:
+    name: Compositor de trabajos
+    description: Job Composer permite la creación y el envío de trabajos por lotes.

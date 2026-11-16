@@ -89,6 +89,7 @@ class ConfigurationSingleton
       :unsafe_render_html           => false,
       :open_apps_in_new_window      => true,
       :bc_ssh_to_compute_node       => true,
+      :auto_generate_locales        => true,
     }.freeze
   end
 

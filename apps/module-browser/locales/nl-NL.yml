@@ -1,0 +1,5 @@
+---
+nl-NL:
+  manifest:
+    name: Modulebrowser
+    description: Bekijk de modules op de clusters voor gedetailleerde informatie over de modules.

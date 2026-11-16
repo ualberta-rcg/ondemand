@@ -1,0 +1,5 @@
+---
+en-HG:
+  manifest:
+    name: Deep Thought Computations
+    description: View computations currently running on available galactic sectors configured for OnDemand.

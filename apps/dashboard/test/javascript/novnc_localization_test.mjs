@@ -76,4 +76,10 @@ test('noVNC Localizer falls back to browser language or English when ood_locale 
     loc.setup(SUPPORTED);
     assert.equal(loc.language, 'en');
   });
+
+  withBrowserEnv({ cookie: 'ood_locale=pt-PT', languages: ['en-US'] }, () => {
+    const loc = new Localizer();
+    loc.setup(SUPPORTED);
+    assert.equal(loc.language, 'pt_BR');
+  });
 });

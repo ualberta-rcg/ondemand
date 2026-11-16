@@ -1,0 +1,14 @@
+---
+lt-LT:
+  manifest:
+    name: Darbalaukis
+    description: Ši programa paleis interaktyvų darbalaukį viename ar keliuose skaičiavimo mazguose. Jūs turėsite visišką prieigą prie šių mazgų teikiamų išteklių. Tai analogiška interaktyviam paketiniam darbui.
+  form:
+    attributes:
+      desktop:
+        label: Darbalaukio aplinka
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: PARTIEČIAI
+          xfce: Xfce

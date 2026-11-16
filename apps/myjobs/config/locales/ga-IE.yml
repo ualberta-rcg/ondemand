@@ -1,0 +1,131 @@
+---
+ga-IE:
+  jobcomposer:
+    account_label: 'Cuntas:'
+    back: Ar ais
+    cancel: Cealaigh
+    close: Dún
+    cluster_label: 'Braisle:'
+    confirm_delete: An bhfuil tú cinnte?
+    confirm_delete_template: An bhfuil tú cinnte gur mian leat é seo a scriosadh?
+    copy_template: Cóipeáil Teimpléid
+    create_from_path_title: Cruthaigh post nua ó chonair
+    create_new_heading_html: Cruthaigh "<span class="wrap-line" id="script-name-label">%{name}</span>" Nua
+    create_new_job: Cruthaigh Post Nua
+    create_template: Cruthaigh Teimpléad
+    create_template_from_job_title: Cruthaigh teimpléad ón bpost roghnaithe
+    delete: Scrios
+    delete_job_title: Scrios an Post
+    deprecation_warning_html: Tá an Cumadóir Poist imithe i léig agus bainfear é in Open OnDemand 5.0. Aistrigh do phoist agus do theimpléid chuig an <a href="%{projects_path}">Bainisteoir Tionscadail</a>.
+    edit: Cuir in Eagar
+    edit_files: Cuir Comhaid in Eagar
+    folder_contents_label: 'Ábhar an Fhillteáin:'
+    from_default_template: Ó Theimpléad Réamhshocraithe
+    from_default_template_title: Cruthaigh post nua ón teimpléad réamhshocraithe
+    from_selected_job: Ón bPost Roghnaithe
+    from_selected_job_title: Cóipeáil an post roghnaithe
+    from_specified_path: Ó Chonair Shonraithe
+    from_template: Ó Theimpléad
+    from_template_title: Cruthaigh post nua ó theimpléad a roghnaíonn tú
+    invalid_cluster_html: Níl an braisle bailí! Cuir <a href="#" id="edit-job-options-script-link">Roghanna Poist</a> in eagar chun braisle bailí a roghnú.
+    invalid_script_html: Níl an script bailí! Cuir <a href="#" id="edit-job-options-link">Roghanna Poist</a> in eagar chun script bailí a roghnú.
+    job_already_submitted: Tá an post curtha isteach cheana féin.
+    job_array_request_label: 'Iarratas ar Eagar Poist:'
+    job_attributes_heading_html: Tréithe Poist <strong>(Roghnach)</strong>
+    job_copied: Cóipeáladh an post go rathúil.
+    job_copy_failed: 'Theip ar chóipeáil an phoist: %{errors}'
+    job_created: Cruthaíodh an post go rathúil.
+    job_destroy_failed: 'Theip ar an bpost a scriosadh: %{errors}'
+    job_destroyed: Scriosadh Job go rathúil.
+    job_details: Sonraí Poist
+    job_directory_missing: Tá Eolaire Poist ar iarraidh!
+    job_name_label: 'Ainm na Poist:'
+    job_not_submitted: Níor cuireadh an post isteach.
+    job_stop_failed: 'Theip ar an bpost a stopadh: %{errors}'
+    job_stopped: Cuireadh stop leis an bpost go rathúil.
+    job_submit_failed: 'Theip ar an obair bhaisc a chur isteach:'
+    job_submitted: Cuireadh an post isteach go rathúil.
+    job_updated: Nuashonraíodh an post go rathúil.
+    loading: Ag luchtú
+    loading_job_info: Ag luchtú Faisnéise Poist
+    nav_help: Cabhair
+    nav_jobs: Poist
+    nav_menu_aria: Roghchlár Cumadóir Poist
+    nav_templates: Teimpléid
+    new_job: Post Nua
+    new_template: Teimpléad Nua
+    new_template_title: Cruthaigh teimpléad nua
+    no_clusters_alert: Níl aon óstach cumraithe ann a ligeann duit poist a chur isteach. Téigh i dteagmháil le riarthóir do chórais.
+    open_dir: Oscail an Eolaire
+    open_dir_in_editor: Oscail Eolaire san Eagarthóir Comhad
+    open_dir_in_file_manager: Oscail Eolaire i mBainisteoir Comhad
+    open_dir_in_terminal: Oscail Eolaire sa Chríochfort
+    open_editor: Oscail an tEagarthóir
+    open_selected_job_in_terminal: Oscail an Post Roghnaithe sa Chríochfort
+    open_selected_template_in_terminal: Oscail an Teimpléad Roghnaithe sa Chríochfort
+    open_template_dir_in_file_manager: Oscail Eolaire Teimpléid i mBainisteoir Comhad
+    open_terminal: Oscail an Teirminéal
+    open_xdmod: Oscail XDMoD
+    options_account_help: Is réimse roghnach é an cuntas. Mura socraítear é, féadfaidh an scagaire seolta an cuntas a shocrú go huathoibríoch.
+    options_account_title: Cuntas
+    options_array_help: Tá eagair poist roghnach. m.sh. 1-10
+    options_array_help_with_clusters: 'Is rogha iad eagair poist. Ní thacaíonn OnDemand le heagair poist faoi láthair do na braislí seo a leanas: %{cluster_list}.'
+    options_array_title: Sonraíocht eagar poist
+    options_cluster_title: Braisle
+    options_copy_environment: Cóipeáil an timpeallacht
+    options_errors: Le do thoil, socraigh na hearráidí thíos.
+    options_name_title: Ainm
+    options_script_help: Fágtar comhaid atá níos mó ná 65KB ar lár i réimse an script poist.
+    options_script_title: Sonraigh script poist
+    options_title: Roghanna Poist
+    other_valid_files: Comhad(anna) bailí eile
+    page_title: Cumadóir Poist - %{site}
+    path_to_source_heading_html: Cosán chuig an bhfoinse <strong>(Riachtanach)</strong>
+    reset: Athshocraigh
+    reset_template_fields_title: Athshocraigh réimsí go dtí an teimpléad réamhshocraithe
+    save: Sábháil
+    script_contents_label: 'Ábhar an scripte:'
+    script_location_label: 'Suíomh an scripte:'
+    script_name_form_label: 'Ainm an Scripte:'
+    script_name_label: 'Ainm an scripte:'
+    select_cluster_prompt: Roghnaigh braisle...
+    select_template_option: -- roghnaigh teimpléad --
+    selected_template_details: Sonraí Teimpléid Roghnaithe
+    show: Taispeáin
+    show_batch_host_label: 'Óstach baisce:'
+    show_dir_contents_label: 'Ábhar an Eolaire:'
+    show_name_label: 'Ainm:'
+    show_staged_dir_label: 'Stiúrthóir ar stáitse:'
+    showing_job_title: Ag Taispeáint Poist
+    skip_navigation: Léim an Nascleanúint
+    source_path_help: Cuir isteach an cosán chuig eolaire ar an gcóras comhad. Déanfar ábhar an chosáin seo a chóipeáil chuig sreabhadh oibre nua.
+    source_path_label: Cosán foinse
+    specify_job_host_and_script: Sonraigh Óstach Poist agus Script
+    stop: Stop
+    stop_job_title: Stop an Post
+    submit: Cuir isteach
+    submit_job_title: Cuir Post Isteach
+    submit_script_title: Cuir Script Isteach
+    submit_to_label: 'Cuir isteach chuig:'
+    suggested_files: Comhad(anna) molta
+    table_created: Cruthaithe
+    table_id: Aitheantas
+    table_source: Foinse
+    table_status: Stádas
+    template_create_error: earráid ag cruthú teimpléid
+    template_error_name_unique: ní mór a bheith uathúil.
+    template_error_path_directory: ní mór dó pointeáil chuig eolaire.
+    template_error_path_missing: níl ann.
+    template_errors_heading:
+      one: 'Chuir earráid %{count} cosc ar an teimpléad seo a shábháil:'
+      other: 'Chuir earráidí %{count} cosc ar an teimpléad seo a shábháil:'
+    template_label: 'Teimpléad:'
+    template_location_label: 'Suíomh an teimpléid:'
+    template_path_blank_help: Mura bhfágtar bán é, cuirfear script poist réamhshocraithe le do theimpléad nua.
+    template_path_label: Cosán (cruófar an teimpléad trí chomhaid a chóipeáil ón gcosán foinse seo)
+    templates_subtitle: Chun post nua a chruthú, roghnaigh teimpléad le cóipeáil, líon isteach an fhoirm ar dheis, agus cliceáil "Cruthaigh Post Nua".
+    title: Cumadóir Poist
+    toggle_navigation: Nascleanúint a scoránaigh
+    view_files: Féach ar Chomhaid
+    xdmod_url_warning_message: B’fhéidir nach mbeidh an post seo le feiceáil in Open XDMoD go dtí 24 uair an chloig tar éis an post a chríochnú.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

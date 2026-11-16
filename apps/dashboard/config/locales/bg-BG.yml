@@ -1,0 +1,1010 @@
+---
+bg-BG:
+  activemodel:
+    errors:
+      messages:
+        format: Форматът %{attribute} е невалиден или липсва
+        invalid: '%{attribute} е невалидно'
+        required: '%{attribute} е задължително'
+        used: '%{attribute} вече се използва'
+  dashboard:
+    account: Профил
+    actions: Действия
+    active_jobs: Активни работни места
+    active_jobs_close_details: Затвори панела с разширени подробности.
+    active_jobs_detail:
+      account: Профил
+      array_job_id: Идентификатор на задача за масив
+      array_task_id: Идентификатор на задача за масив
+      cluster: Клъстер
+      cluster_id: Идентификатор на клъстер
+      comment: Коментар
+      cpu_time: Процесорно време
+      cpu_used: Използван процесор
+      current_working_directory: Текуща работна директория
+      end_time: Краен час
+      exec_host: Изпълнителен хост
+      finish_time: Време за завършване
+      from_host: От хоста
+      gres: ГРЕС
+      group_list: Списък с групи
+      job_account: Служебен акаунт
+      job_checkpoint_attr: Атрибут на контролната точка за работа
+      job_checkpoint_interval: Интервал на контролната точка на задачата
+      job_deadline: Краен срок за работа
+      job_exec_file: Файл за изпълнение на задача
+      job_execution_time: Време за изпълнение на задачата
+      job_gid: GID на задачата
+      job_group: Работна група
+      job_id: Идентификационен номер на заданието
+      job_name: Име на заданието
+      job_priority: Приоритет на работата
+      job_restart: Рестартиране на задачата
+      job_script_file: Файл със скрипт за работа
+      job_script_size: Размер на скрипта за работа
+      job_share: Споделяне на работа
+      job_type: Вид работа
+      job_uid: UID на заданието
+      job_verify: Проверка на заданието
+      job_version: Версия на заданието
+      mem: Мем
+      memory: Памет
+      node_count: Брой възли
+      node_list: Списък с възли
+      nodes: Възли
+      none: Няма
+      notifications: Известия
+      partition: Преграда
+      pbs_id: Идентификационен номер на PBS
+      pids: PID-ове
+      ppn: ППН
+      project_name: Име на проекта
+      queue: Опашка
+      reason: Причина
+      reserve: Резерв
+      select: Изберете
+      start_time: Начален час
+      state: Щат
+      status: Статус
+      submission_time: Време за подаване
+      swap: Размяна
+      time_limit: Временно ограничение
+      time_used: Използвано време
+      total_cpus: Общо процесори
+      total_nodes: Общо възли
+      user: Потребител
+      virtual_memory: Виртуална памет
+      walltime: Време за стена
+      walltime_used: Използвано време на стената
+    active_jobs_filter_all: Всички работни места
+    active_jobs_filter_user: Вашите работни места
+    active_jobs_ganlia_CPU: Изображение на ганглии за процесора.
+    active_jobs_ganlia_load: Изображение на ганглии за средни стойности на системното натоварване.
+    active_jobs_ganlia_mem: Изображение на ганглии за използване на паметта.
+    active_jobs_ganlia_network: Изображение на ганглии за мрежово използване.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> виж всички (%{number_of_sessions})</a>
+    active_sessions_title: Активни интерактивни сесии
+    add: Добавяне
+    all_apps_table_app_column: Име
+    all_apps_table_category_column: Категория
+    all_apps_table_sub_category_column: Подкатегория
+    all_clusters: Всички клъстери
+    announcements_dismissible_button: Добре
+    announcements_parse_error: Грешка при синтактичния анализ на обявлението.
+    announcements_render_error: Не можа да се изобрази съобщението „%{name}“ поради грешка
+    announcements_required_button: Приемам
+    apps_setup_failure_html: '<h2>Възникна проблем при инициализирането на данните ви за това приложение.</h2>
+
+      <p class="lead">
+
+      На ваш собствен риск все още можете <a href="%{app_url}">да отворите приложението</a>
+
+      или просто да се върнете <a href="%{home_url}">връщане към таблото за управление</a>
+
+      </p>
+
+      <p>
+
+      Споделете това с разработчика на вашето приложение:
+
+      Скриптът за настройка на продукцията би трябвало да е идемпотентен и се изпълнява всеки път, когато потребителят отвори приложението през таблото за управление.</p>
+
+      <h4>Изключение: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Проследяване на стека:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Системни приложения
+    auto_log_location_title: Местоположение на дневника
+    back: Обратно
+    balance_additional_message: Помислете за заявка за допълнителни %{balanace_units}
+    balance_message: '%{units_balance} е %{value}'
+    balance_no_warnings: Няма проекти, които да са в рамките на прага за предупреждение за дневно салдо от %{threshold}.
+    balance_reload_message_html: Презаредете страницата, за да видите актуализирания баланс. Балансите се актуализират ежедневно.<br>Последната актуализация беше %{last_update}
+    balance_warning_prefix_html: '%{units_balance} предупреждение за'
+    batch_connect_active_sessions_aria: Активни сесии
+    batch_connect_app_version: 'версия: %{version}'
+    batch_connect_apps_menu_aria: Меню с интерактивни приложения
+    batch_connect_apps_menu_title: Интерактивни приложения
+    batch_connect_form_attr_cache_error: Не могат да се използват предварително кеширани стойности, вместо това се използват стойности по подразбиране. (%{error_message})
+    batch_connect_form_choose_template_name: Изберете име на шаблон
+    batch_connect_form_data_root: коренна директория с данни
+    batch_connect_form_dynamic_disclaimer: Следната форма може да се променя динамично при избиране на опции. Всички промени ще бъдат обявени и са обратими.
+    batch_connect_form_invalid: Във form.yml липсват опции в полето на формуляра %{id}.
+    batch_connect_form_launch: Стартиране
+    batch_connect_form_prefill: Използване на запазени настройки
+    batch_connect_form_prefill_error: Опа... Нещо не е наред с вашия шаблон
+    batch_connect_form_reset_resolution: Нулиране на резолюцията
+    batch_connect_form_resolution_height: Височина на резолюцията (пиксели)
+    batch_connect_form_resolution_width: Ширина на резолюцията (пиксели)
+    batch_connect_form_save: Запазване на настройките
+    batch_connect_form_save_new_template: запазете новите настройки
+    batch_connect_form_save_submit: Запазване на настройките и затваряне
+    batch_connect_form_select_template: изберете запазени настройки
+    batch_connect_form_session_data_html: '* Данните от сесията %{title} за тази сесия могат да бъдат достъпни под %{data_link_tag}.
+
+      '
+    batch_connect_form_template_name_label: име на настройката
+    batch_connect_form_type_new_name: Име на настройките на приложението
+    batch_connect_form_type_new_name_error: Моля, въведете валидно име, за да продължите
+    batch_connect_invalid_form_array: Елементът „form“ във form.yml не е масив
+    batch_connect_invalid_form_attributes: Елементът „attributes“ във form.yml не е карта
+    batch_connect_missing_cluster: 'Клъстерът никога не е бил зададен. Или го задайте във form.yml.erb с `cluster` или `form.cluster`, или
+
+      задайте `cluster` в submit.yml.erb.'
+    batch_connect_no_apps: Няма налични интерактивни приложения.
+    batch_connect_no_sessions: Нямате активни сесии.
+    batch_connect_sandbox: '[Пясъчник]'
+    batch_connect_sessions_cancel_confirm: Сигурен ли си?
+    batch_connect_sessions_cancel_full_title: Отмяна на %{title} сесия
+    batch_connect_sessions_cancel_title: Отказ
+    batch_connect_sessions_connect_to: Свържете се с %{app_title}
+    batch_connect_sessions_connection_render_error: Не може да се изобрази бутонът за връзка от view.html.erb поради грешка „%{error}“
+    batch_connect_sessions_data_html: 'Данните за сесията %{title} за тази сесия могат да бъдат достъпни
+
+      под %{data_link_tag}.
+
+      '
+    batch_connect_sessions_delete_confirm: Сигурен ли си?
+    batch_connect_sessions_delete_full_title: Изтриване на %{title} сесия
+    batch_connect_sessions_delete_hover: Изтриване на сесия
+    batch_connect_sessions_delete_title: Изтриване
+    batch_connect_sessions_edit_title: Редактирайте новото %{title} с параметрите на тази сесия
+    batch_connect_sessions_error_invalid_job_name_html: Ако изпращането на тази задача не е успешно поради невалидно име на задача, моля, помолете вашия администратор да конфигурира OnDemand, за да зададе променливата на средата OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Неуспешно подготвяне на шаблона със следната грешка:'
+    batch_connect_sessions_errors_submission: 'Изпращането на сесията не бе успешно поради следната грешка:'
+    batch_connect_sessions_native_vnc_tab: Инструкции за работа с оригинала
+    batch_connect_sessions_novnc_compression: Компресия
+    batch_connect_sessions_novnc_compression_help: от 1 (ниско) до 9 (високо)
+    batch_connect_sessions_novnc_launch: Стартиране %{app_title}
+    batch_connect_sessions_novnc_quality: Качество на изображението
+    batch_connect_sessions_novnc_quality_help: от 0 (ниско) до 9 (високо)
+    batch_connect_sessions_novnc_tab: noVNC връзка
+    batch_connect_sessions_novnc_view_only: Само преглед (линк за споделяне)
+    batch_connect_sessions_path_selector_forbidden_error: Нямате разрешение да изберете тази директория или файл.
+    batch_connect_sessions_relaunch_full_title: Рестартиране на %{title} сесия
+    batch_connect_sessions_relaunch_title: Рестартиране
+    batch_connect_sessions_staged_root: поетапно подготвена коренна директория
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} ядро'
+      other: '%{count} ядра'
+    batch_connect_sessions_stats_created_at: 'Създадено в:'
+    batch_connect_sessions_stats_expected_time: 'Очаквано начало:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Графичен процесор'
+      other: '%{count} Графични процесори'
+    batch_connect_sessions_stats_host: 'Домакин:'
+    batch_connect_sessions_stats_node_count:
+      one: Възел %{count}
+      other: '%{count} възли'
+    batch_connect_sessions_stats_session_dir_link_title: Отваряне на директорията на сесията за %{session_id}
+    batch_connect_sessions_stats_session_id: 'Идентификатор на сесия:'
+    batch_connect_sessions_stats_support_ticket: Проблеми с тази сесия?
+    batch_connect_sessions_stats_support_ticket_link_text: Изпращане на заявка за поддръжка
+    batch_connect_sessions_stats_time_remaining: 'Оставащо време:'
+    batch_connect_sessions_stats_time_requested: 'Заявено време:'
+    batch_connect_sessions_stats_time_used: 'Използвано време:'
+    batch_connect_sessions_stats_undetermined_host: Неопределен
+    batch_connect_sessions_status_bad: Сесията ви е в лошо състояние. Не се колебайте да се свържете с поддръжката за допълнителна информация.
+    batch_connect_sessions_status_blurb_cancel_failure: Неуспешно прекратяване на сесията.
+    batch_connect_sessions_status_blurb_cancel_success: Сесията беше успешно отменена.
+    batch_connect_sessions_status_blurb_create_success: Сесията беше създадена успешно.
+    batch_connect_sessions_status_blurb_delete_failure: Изтриването на сесията не бе успешно.
+    batch_connect_sessions_status_blurb_delete_success: Сесията беше успешно изтрита.
+    batch_connect_sessions_status_completed: За целите на отстраняването на грешки, тази карта ще бъде запазена още %{days} дни
+    batch_connect_sessions_status_missing_connection: 'В това приложение липсва информация, необходима за установяване на връзка. По-конкретно, липсва файлът view.html.erb. Моля, свържете се с екипа за поддръжка, ако видите това съобщение.
+
+      '
+    batch_connect_sessions_status_queued: Моля, бъдете търпеливи, тъй като вашата задача в момента е в опашка. Времето за изчакване зависи от броя на ядрата, както и от заявеното време.
+    batch_connect_sessions_status_starting: Вашата сесия започва в момента... Моля, бъдете търпеливи, тъй като този процес може да отнеме няколко минути.
+    batch_connect_sessions_word: Сесия
+    batch_connect_validation:
+      app_not_found: Това приложение не съществува в директорията „%{root}“
+      inaccessible_clusters: Това приложение изисква клъстери, които не съществуват или до които нямате достъп.
+      missing_form_file: Това приложение не предоставя файл с формуляр в директорията „%{root}“
+      missing_sub_app_form_file: Това приложение не предоставя файл с формуляр за подприложение в директорията „%{root}“
+      no_cluster_specified: Това приложение не посочва никакъв клъстер.
+    bc_saved_settings:
+      delete_confirm: Сигурен ли си?
+      delete_title: Изтриване на запазените настройки на %{settings_name}
+      deleted_message: Запазените настройки %{settings_name} са изтрити.
+      edit_title: Редактиране на запазените настройки на %{settings_name}
+      launch_title: Стартирайте %{app_title} с параметри %{settings_name}
+      missing_settings: Избраните запазени настройки не са намерени.
+      no_settings_title: Нямате запазени настройки.
+      outdated_message: Параметрите %{app_title} са се променили, откакто тези настройки са били създадени.
+      saved_message: Настройките на %{settings_name} са запазени
+      settings_values_label: Ценности
+      title: Запазени настройки
+    breadcrumb_aria: Навигационна троха
+    breadcrumbs_all_apps: Всички приложения
+    breadcrumbs_home: Дом
+    breadcrumbs_my_sessions: Моите интерактивни сесии
+    breadcrumbs_support_ticket: Заявка за поддръжка
+    browser_warning: OnDemand изисква по-нова версия на браузъра, който използвате. Текущите изисквания за браузъра включват IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Отказ
+    categories:
+      apps: Приложения
+      bioinformatics: Биоинформатика
+      clusters: Клъстери
+      data_science: Наука за данни
+      desktop: Настолен компютър
+      desktops: Настолни компютри
+      development: Развитие
+      external_apps: Външни приложения
+      files: Файлове
+      gateway_apps: Приложения на шлюза
+      guis: графични потребителски интерфейси
+      interactive_apps: Интерактивни приложения
+      jobs: Работа
+      machine_learning: Машинно обучение
+      mathematics: Математика
+      servers: Сървъри
+      utilities: Комунални услуги
+      virtual_desktop_interface: Интерфейс за виртуален работен плот
+      visualization: Визуализация
+    clear: Изчисти
+    close: Затвори
+    close_alert: Затворете това предупреждение.
+    close_notice: Затворете това известие.
+    cluster: Клъстер
+    copy: Копиране
+    copy_suffix: (Копие)
+    cpu_report: Доклад за процесора + %{node}
+    custom_pages:
+      invalid: 'Невалиден код на страницата: %{page}. Тази страница не е конфигурирана.'
+    date: Дата
+    delete: Изтриване
+    detailed_metrics: Подробни показатели
+    details: Детайли
+    development_apps_caption: Приложение за пясъчник
+    development_apps_category: Приложения за пясъчник
+    development_delete_app: Изтриване на приложение
+    development_edit_title: Редактиране на %{title}
+    development_launch_title: Стартиране %{title}
+    directory: Директория
+    edit: Редактиране
+    editor_default: По подразбиране
+    editor_font_size: Размер на шрифта
+    editor_key_bindings: Клавишни връзки
+    editor_theme: Тема
+    editor_theme_bright: Ярко
+    editor_theme_dark: Тъмно
+    editor_wrap: Увиване
+    error_details: 'Детайли:'
+    error_internal_body_html: Моля, опитайте отново след няколко минути. Ако продължавате да виждате тази грешка, моля, <a href="%{support_url}">свържете се с екипа за поддръжка</a>.
+    error_internal_title: Вътрешна грешка на сървъра
+    error_not_found_body: Страницата, която търсите, не съществува.
+    error_not_found_title: Не е намерено
+    favorites: Любими
+    file: Файл
+    file_editor: Редактор на файлове
+    file_quotas: Файлови квоти
+    files: Файлове
+    files_change_directory: Промяна на директорията
+    files_contents_of_directory: Съдържание на директорията %{path}
+    files_copy_move: Копиране/Преместване
+    files_copy_path: Копиране на пътя
+    files_directory_contents_aria: Съдържание на директорията
+    files_directory_download_error_modal_title: Директорията е твърде голяма за изтегляне
+    files_directory_download_unauthorized: Можете да изтеглите само файл или директория, до които имате достъп за четене и изпълнение
+    files_directory_size_calculation_error: Времето за изчакване при опит за определяне на размера на директорията изтече.
+    files_directory_size_calculation_timeout: Времето за изчакване при опит за определяне на размера на директорията изтече.
+    files_directory_size_unknown: 'Грешка със статус %{exit_code} при опит за определяне на размера на директорията: %{error}'
+    files_directory_too_large: Директорията е твърде голяма за изтегляне като zip архив. Директорията трябва да е по-малка от %{download_directory_size_limit} байта.
+    files_doesnt_exist: '%{path} не съществува.'
+    files_download: Изтегляне
+    files_download_not_enabled: Изтеглянето на файлове не е активирано на този сървър.
+    files_download_zip: Изтегляне като zip файл
+    files_exceeds_editor_limit: '%{path} надвишава лимита на редактора от %{limit}. Моля, изтеглете файла, за да го редактирате или видите локално.'
+    files_file_too_large: Файлът е твърде голям за изтегляне. Изтеглянията на файлове трябва да са по-малки от %{download_file_size_limit} байта.
+    files_go_up_directory: Нагоре по директорията
+    files_modified_at: Променено в
+    files_modify_aria: Промяна на файлове
+    files_new_directory: Нова директория
+    files_new_file: Нов файл
+    files_not_editable: '%{path} не е файл, който може да се редактира'
+    files_not_readable: Нямате достатъчни разрешения за четене на „%{path}“.
+    files_open_in_files_app: Отваряне в приложението „Файлове“
+    files_open_in_globus: Отворено в Globus
+    files_path_breadcrumbs_aria: Навигации за пътека
+    files_refresh: Опресняване
+    files_remote_dir_not_created: Не е създадена директория %{path}
+    files_remote_disabled: Поддръжката на отдалечени файлове не е активирана
+    files_remote_empty_dir_unsupported: Дистанционното управление не поддържа празни директории
+    files_remote_error_listing_remotes: 'Грешка при изброяване на дистанционни управления на Rclone: %{error}'
+    files_send_to_target_title_default: Изпращане на метаданните на избраните файлове към външното приложение
+    files_shell: Отваряне в терминала
+    files_shell_dropdown: Изберете клъстер за отваряне в терминала
+    files_title: Преглед на файлове
+    files_upload: Качване
+    footer_contribute: Допринесете в GitHub
+    footer_license: Известие за софтуерен лиценз
+    footer_open_source: Софтуер с отворен код.
+    footer_powered_by: Задвижвано от Open OnDemand
+    footer_version: 'Версия при поискване: %{version}'
+    home_directory: Начална директория
+    id: Идентификационен номер
+    import: Внос
+    job: Работа
+    job_info: Информация за работата
+    jobs_back_to_projects: Обратно към Проекти
+    jobs_clear_form_fields: Изчистване на полетата на формуляра
+    jobs_completed_jobs: Завършени задачи
+    jobs_create_blank_project: Създаване на нов проект
+    jobs_create_blank_workflow: Нов работен процес
+    jobs_create_template_project: Създаване на нов проект от шаблон
+    jobs_import_shared_project: Импортиране на споделен проект
+    jobs_launchers: Пускови установки
+    jobs_launchers_add_select_option: Добавяне на опция за избор %{name}
+    jobs_launchers_cannot_find: Не мога да намеря стартера %{id}
+    jobs_launchers_clone: Клониращ стартер %{name}
+    jobs_launchers_created: Стартовият панел е създаден успешно!
+    jobs_launchers_default_created: Към този проект беше добавен и „hello_world.sh“.
+    jobs_launchers_delete: Изтриване на стартера %{name}
+    jobs_launchers_delete_script_confirmation: Да се изтрие ли цялото съдържание на стартовия панел?
+    jobs_launchers_deleted: Стартовият панел е успешно изтрит!
+    jobs_launchers_edit: Формуляр за редактиране за стартера %{name}
+    jobs_launchers_edit_form_item: Редактиране на елемент от формуляра %{label}
+    jobs_launchers_editing: Редактиране на %{title}
+    jobs_launchers_fixed_field: Фиксирана стойност
+    jobs_launchers_fixed_field_help: Фиксиране на текущата стойност
+    jobs_launchers_max_value_label: Максимална стойност за числово поле %{label}
+    jobs_launchers_min_value_label: Минимална стойност за числово поле %{label}
+    jobs_launchers_name: Име на стартовия панел
+    jobs_launchers_new_field_select: Изберете елемент за добавяне към формуляра
+    jobs_launchers_not_found: Не мога да намеря стартера %{launcher_id}
+    jobs_launchers_preview_form_item: Преглед на елемента от формуляра %{label}
+    jobs_launchers_remove_form_item: Премахване на елемент от формуляра %{label}
+    jobs_launchers_remove_select_option: Премахване на опцията за избор %{name}
+    jobs_launchers_save_form: Запазване на формуляра
+    jobs_launchers_save_form_item: Запазване на промените в елемента от формуляра %{label}
+    jobs_launchers_show_form: Показване на формуляр за стартера %{name}
+    jobs_launchers_submit_launcher_title: Стартира скрипт с кеширани или стойности по подразбиране за стартера %{name}
+    jobs_launchers_submitted: Успешно подадена задача %{job_id}.
+    jobs_launchers_updated: Манифестът на стартовия панел е актуализиран!
+    jobs_native_dependency: . Задачата зависи от job-id%{dependency}
+    jobs_native_reason: заради „%{reason}“
+    jobs_native_state: Текущото състояние на задачата е „%{state}“
+    jobs_new_launcher: Нов стартер
+    jobs_new_project: Нов проект
+    jobs_project_cannot_find: 'Не може да се намери проект: %{project_id}'
+    jobs_project_clear_form_fields: Изчистване на полетата на формуляра
+    jobs_project_created: Проектът е създаден успешно!
+    jobs_project_delete_label: Изтриване на проект %{name}
+    jobs_project_delete_project_confirmation: Да се изтрие ли цялото съдържание на директорията на проекта?
+    jobs_project_deleted: Проектът е успешно изтрит!
+    jobs_project_description_placeholder: Описание на проекта
+    jobs_project_directory_error: Пътят към директорията на проекта не е зададен за този работен процес
+    jobs_project_directory_help_html: 'Оставете празно и ще бъде създадена нова директория. <br />Местоположение по подразбиране: %{root_directory}'
+    jobs_project_directory_placeholder: Абсолютен път към директорията на проекта
+    jobs_project_edit_label: Редактиране на проект %{name}
+    jobs_project_generic_error: 'Възникна грешка при обработката на вашата заявка: %{error}'
+    jobs_project_group_help: Уверете се, че сте избрали групата, която включва всички предвидени сътрудници. Ако това не е съвместен проект, се препоръчва групата по подразбиране.
+    jobs_project_group_owner: Група
+    jobs_project_imported: Проектът е успешно импортиран!
+    jobs_project_invalid_configuration_clusters: Необходим е HPC клъстер. Свържете се с вашия администратор, за да добавите такъв към системата.
+    jobs_project_invalid_configuration_scripts: За вашия проект е необходим изпълним скрипт. Качете скрипт, като използвате файловото приложение.
+    jobs_project_job_deleted: Заданието %{job_id} е успешно изтрито
+    jobs_project_job_not_deleted: Не може да се изтрие задачата %{job_id}
+    jobs_project_job_stopped: Успешно спряна задача %{job_id}
+    jobs_project_list_aria: Списък с проекти
+    jobs_project_manager: Мениджър на проекти
+    jobs_project_manifest_updated: Манифестът на проекта е актуализиран!
+    jobs_project_name_placeholder: Име на проекта
+    jobs_project_name_validation: Името на проекта може да съдържа само букви, цифри, тирета, долни черти и интервали
+    jobs_project_not_found: Не мога да намеря проект %{project_id}
+    jobs_project_open_label: Отвори проект %{name}
+    jobs_project_remove_label: Премахване на проект %{name}
+    jobs_project_removed: Проектът е премахнат от търсенето!
+    jobs_project_return_to_projects: Връщане към страницата с проекти
+    jobs_project_save_error: Манифестът не може да се запази в %{path}
+    jobs_project_save_project_title: Запазване на проекта
+    jobs_project_select_directory: Изберете директория на проекта
+    jobs_project_setgid_help: Оставянето на setgid отметнато гарантира, че файловете на проекта ще бъдат създадени с избраната група. Това не засяга проектите във вашата домашна директория.
+    jobs_project_validation_error: Невалидна заявка. Моля, прегледайте грешките по-долу.
+    jobs_return_to_projects: Връщане към страницата с проекти
+    jobs_save_project_title: Запазване на проекта
+    jobs_select_directory_placeholder: Кликнете върху проекта, за да го импортирате
+    jobs_toggle_details: Кликнете, за да превключите подробностите за заданието %{job_id}
+    jobs_workflow_add_launcher: Добавяне на стартер
+    jobs_workflow_canvas_aria: платно
+    jobs_workflow_clone: Клониране на работен процес %{name}
+    jobs_workflow_connect_launchers: Свържете лаунчери
+    jobs_workflow_created: Работният процес е създаден успешно!
+    jobs_workflow_delete_confirmation: Да се изтрие ли цялото съдържание на работния процес?
+    jobs_workflow_delete_edge: Изтриване на ръб
+    jobs_workflow_delete_edge_title: Изтриване на избрания ръб (Del/Backspace)
+    jobs_workflow_delete_launcher: Изтриване на стартовия панел
+    jobs_workflow_delete_launcher_title: Изтриване на избрания стартер (Del/Backspace)
+    jobs_workflow_delete_title: Изтриване на работен процес %{name}
+    jobs_workflow_deleted: Работният процес е успешно изтрит!
+    jobs_workflow_description_placeholder: Описание на работния процес
+    jobs_workflow_edit_settings: Промяна на настройките за работен процес %{name}
+    jobs_workflow_editing: 'Редактиране: %{name}'
+    jobs_workflow_enable_sync_key: Активиране на OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Работният процес е неуспешен с грешка %{error}
+    jobs_workflow_help: Щракнете върху заглавието, за да изберете и плъзнете. Свържете, като щракнете върху два стартера с избрано „Свързване на стартери“.
+    jobs_workflow_manifest_updated: Манифестът на работния процес е актуализиран!
+    jobs_workflow_missing_launchers: изберете поне %{count}
+    jobs_workflow_name_placeholder: Име на работния процес
+    jobs_workflow_name_validation: Името на работния процес може да съдържа само букви, цифри, тирета, долни черти и интервали
+    jobs_workflow_not_found: Не може да се намери работен процес %{workflow_id}
+    jobs_workflow_pick_launchers: Изберете пускови установки
+    jobs_workflow_show_graph: Отваряне на работния процес %{name} в графичен редактор
+    jobs_workflow_submitted: Работният процес е успешно изпратен!
+    jobs_workflow_sync_key_help: Когато е активирано, всеки стартер в този работен процес получава една и съща променлива на средата <code>OOD_WORKFLOW_SYNC_KEY</code> (произволен токен, уникален за всяко изпълнение на работен процес). Полезно за генериране на синхронизирани имена на файлове, заключващи файлове или споделени идентификатори между зависими задачи.
+    jobs_workflow_synchronization: Синхронизация
+    jobs_workflow_toolbar_aria: лентата с инструменти
+    jobs_workflow_zoom_controls: Контроли за мащабиране
+    jobs_workflow_zoom_in: Увеличаване
+    jobs_workflow_zoom_out: Намаляване на мащаба
+    jobs_workflow_zoom_reset: Нулиране на мащаба
+    jobs_workflows: Работни процеси
+    jobs_workflows_not_supported: Конфигурираният планировчик не поддържа работните потоци.
+    js:
+      active_jobs:
+        delete_aria: Изтриване на задача %{name} с идентификатор %{id}
+        delete_confirm: Сигурни ли сте, че искате да изтриете %{name} - %{id}
+        delete_title: Изтриване на задача
+        details_loaded: Списъкът с подробности за работата е зареден.
+        load_details_failed: Зареждането на подробностите за заданието не бе успешно.
+        remote_server_error: Възникна грешка при получаване на данни от отдалечения сървър.
+        request_failed_parse: Заявката за задачи е неуспешна поради грешка при синтактичния анализ на тялото.
+        request_failed_status: 'Заявката за работа е неуспешна със статус код: %{status}'
+        status_completed: Завършено
+        status_hold: Задръжте
+        status_queued: На опашка
+        status_running: Бягане
+        status_suspended: Спрено
+        status_undetermined: Неопределен
+        support_ticket_aria: Изпратете заявка за поддръжка за задача с идентификатор %{id}
+        support_ticket_title: Изпращане на заявка за поддръжка
+        toggle_details_aria: Включване/изключване на видимостта на заданието %{name} на %{cluster}
+      batch_connect:
+        allow_notifications: Моля, разрешете разрешения за известия в браузъра си, за да активирате известията за сесии.
+        invalid_prefill_value_html: 'Невалидна стойност: „%{value}“ за полето „%{field}“.<br>'
+        notification_permission_error: 'Грешка при заявка за разрешение за известия:'
+        resolution_reset: Разделителната способност е нулирана до %{width} с %{height} пиксела.
+        session_expires_warning: 'Внимание: %{title} (%{job_id}) изтича след ~%{minutes} минути!'
+        session_status_aria: '%{title} вече е %{status}.'
+        session_status_push: '%{title} (%{job_id}) вече е %{status}.'
+      common:
+        cancel: Отказ
+        close: Затвори
+        error: Грешка
+        loading: Зареждане...
+        ok: Добре
+      datatables:
+        all: Всички
+        filter_label: 'Филтър:'
+        invalid_date: Невалидна дата
+        rows_selected:
+          one: Избран е ред %{count}
+          other: Избрани са редове %{count}
+        showing_filtered_rows: Показване на %{display} от %{total} редове
+        showing_rows: Показване на редове %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: и
+        changed_help: Променен е помощният текст на %{widget} на %{help}
+        changed_label: Етикетът на %{widget} е променен на нов етикет %{label}
+        current_value: задайте текущата стойност на %{value}
+        hid_item: Скрит елемент от формуляра %{widget}
+        maximum_limit: максимален лимит до %{value}
+        minimum_limit: минимален лимит до %{value}
+        option_disabled: Опцията %{value} е деактивирана за %{widget}
+        option_enabled: Опцията %{value} е активирана за %{widget}
+        revealed_item: Разкрит елемент от формуляра %{widget}
+        selected_option_disabled: Избраната опция %{value} е деактивирана за %{widget}
+        set_limits: Задайте %{details} за %{widget}
+        set_value: Задайте %{widget} на стойност %{value}
+        widget_no_label: '%{type} без етикет'
+        widget_with_label: '%{type} с етикет %{label}'
+      editor:
+        save_error: 'Възникна грешка при опит за запазване на този файл!
+
+          %{error}'
+        unsaved_changes: Имате незапазени промени!
+      files:
+        action_delete: Изтриване
+        action_download: Изтегляне
+        action_edit: Редактиране
+        action_rename: Преименуване
+        action_view: Преглед
+        actions: Действия
+        cannot_navigate_file: Не може да се осъществи навигация до файл.
+        change_directory: Промяна на директорията
+        clipboard_description_html: 'Копирайте или преместете файловете по-долу от <code>%{from}</code> в текущата директория:'
+        contents_of_directory: Съдържание на директорията %{path}
+        copied_path: Пътят е копиран в клипборда!
+        copy: Копиране
+        create_directory_error: 'Възникна грешка при опит за създаване на нова директория: %{error}'
+        create_file_error: 'Възникна грешка при опит за създаване на нов файл: %{error}'
+        delete_confirm_text: 'Сигурни ли сте, че искате да изтриете файловете: %{files}'
+        delete_multiple_title: Delete %{count} selected files?
+        delete_single_title: Да се изтрие %{name}?
+        deleting_files: 'Изтриване на файлове...:'
+        directory: директория
+        directory_name_label: Име на директорията
+        download_error: 'Грешка при изтегляне: %{error}'
+        duplicate_files_warning: Открити са дублиращи се файлове. Качването на тези файлове ще презапише съществуващото съдържание.
+        file: файл
+        filename_invalid_chars: Името на файла не може да включва / или ..
+        filename_label: Име на файл
+        globus_open: Отворете текущата директория с Globus
+        globus_unavailable: Няма крайна точка на Globus, свързана с тази директория
+        illegal_slash_in_filename: Недопустим символ (/) не е разрешен в името на файла.
+        move: Преместване
+        navigated_to: навигирах до %{path}
+        new_directory_title: Нова директория
+        new_file_title: Нов файл
+        path_label: Път
+        poll_status_error: Операцията може да не се е осъществила. Неуспешно извличане на състоянието на файловата операция.
+        preparing_download_dir: 'подготовка за изтегляне на директорията: %{name}'
+        provide_absolute_pathname: Въведете абсолютен път
+        provide_directory_name: Въведете име на директория, което не съдържа / в него
+        provide_non_empty_filename: Въведете име на файл, което не е празно.
+        provide_rename_filename: Въведете име на файл, на което да се преименува това
+        rename_title: Преименуване
+        see_details: Вижте подробности
+        select_row: Изберете ред
+        select_to_copy_move: Изберете файл, файлове или директория за копиране или преместване. Не сте избрали „нищо“.
+        select_to_delete: Изберете файл, файлове или директория за изтриване. Не сте избрали „нищо“.
+        select_to_download: Изберете файл, файлове или директория за изтегляне. Не сте избрали нито един.
+        select_to_send: Изберете поне един файл или директория за изпращане.
+        send_failed: Изпращането на информация за файла не бе успешно.
+        sent_successfully: Информацията за избрания файл е изпратена успешно.
+        show_dotfiles: Показване на Dotfiles
+        show_owner_mode: Показване на собственика/режима
+        summary_copy_files: копиране на файлове
+        summary_move_files: преместване на файлове
+        summary_remove_files: премахване на файлове
+        summary_rename_file: преименуване на файл
+        token_missing_expired: Липсва или е изтекъл токенът на приложението. Започнете отново.
+        transfer_error: 'Възникна грешка при опит за %{summary}: %{error}'
+        upload_and_overwrite: Качване и презаписване
+        upload_count:
+          one: Качете файла %{count}
+          other: Качете %{count} файлове
+        upload_new_files: Качване на нови файлове
+        uppy_empty_dir_note: Празните директории ще бъдат включени в качването само когато качването на директории е инициирано чрез плъзгане и пускане. Това е така, защото API за файлове и записи в директории е достъпен само при събитие за пускане, а не по време на събитие за промяна на входа.
+      icon_picker:
+        icon_selected: Избрана е икона %{icon}
+        icon_sr: Икона %{name}
+      launcher_edit:
+        account_help: Профилът, с който ще бъде подадена задачата.
+        account_label: Профил
+        add_new_option: Добавяне на нова опция
+        cores_help: На колко ядра ще се изпълнява задачата.
+        cores_label: Ядра
+        env_var_help: Добавете променлива на средата.
+        env_var_key: 'Променлива на средата: %{name}'
+        env_var_label: Променлива на средата
+        hours_help: Колко дълго може да продължи работата.
+        hours_label: Часове
+        job_name_help: Името, което ще носи работата.
+        job_name_label: Име на заданието
+        log_location_help: Местоназначението на изхода от лога на заданието.
+        log_location_label: Местоположение на дневника
+        no_more_options: Няма повече опции
+        nodes_help: На колко възела ще се изпълни задачата.
+        nodes_label: Възли
+        queues_help: Коя опашка ще бъде подадена и от заданието.
+        queues_label: Опашки
+      module_browser:
+        copied: Копирано!
+        copy: Копиране
+        showing_results:
+          one: Показване на резултата %{count}
+          other: Показване на резултати от %{count}
+      nsf_access:
+        affected_resources: 'Засегнати ресурси: %{resources}'
+        read_more: Прочетете още
+        register_event: Регистрирайте се за това събитие
+      path_selector:
+        directory_loaded: Директорията е заредена с елементи от %{count}
+        invalid_regex: Регулярният израз, предоставен за този селектор на път, не се компилира
+        loading_directory: Зареждане на съдържанието на директорията
+        permission_denied_prefix: 'Разрешението е отказано:'
+      popovers:
+        ihpc_content: Интерактивната HPC сесия ви дава специален достъп до един или повече възли в клъстера. Това е подобно на интерактивна пакетна сесия с достъпен работен плот на основния възел. Използвайте това за тежки задачи, като например дългосрочни изчислителни задачи или когато имате нужда от специални ресурси.
+        vdi_content: VDI (интерфейс за виртуален работен плот) ви дава достъп до споделен възел от работния плот. Това е графичната версия на възел за вход. Използвайте го за леки задачи като достъп и преглед на файлове, изпращане на задания и за визуализации.
+      products:
+        fatal_error: Възникна фатална грешка
+        no_action: без действие
+      projects:
+        undetermined_size: Неопределен размер
+      support_ticket:
+        delete_attachment: Изтриване на прикачен файл
+        no_file_selected: Няма избран файл
+        selected_file: 'Избран файл: %{name} (%{size}).'
+        size_bytes: '%{size}байта'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Тази страница не може да се актуализира, защото вече не сте удостоверени. Моля, обновете страницата, за да влезете отново.
+        unexpected_error: На тази страница възникна неочаквана грешка. Моля, опреснете я.
+      utils:
+        loading: Зареждане.
+        loading_complete: Зареждането е завършено.
+        popup_blocked: Тази връзка е конфигурирана да се отваря в нов прозорец, но изглежда не се е отворила. Моля, деактивирайте блокирането на изскачащи прозорци за тази страница и опитайте отново.
+      workflows:
+        begin_from_launcher: Стартиране на работния процес от стартовата програма %{title}
+        bidirectional_not_allowed: Двупосочни ръбове не са разрешени.
+        cyclic_dependency: Добавянето на това предимство ще създаде циклична зависимост между лаунчерите.
+        edge_aria_label: Ръб от %{from} до %{to}
+        launcher_aria_label: 'Стартер: %{title}'
+        launcher_exists: Стартовата програма вече съществува, моля, изберете друга.
+        load_launcher_failed: Зареждането на HTML кода на стартовия панел не бе успешно. Моля, опитайте отново.
+        no_empty_cells: Няма налични празни клетки в мрежата!
+        save_failed: Запазването на работния процес не бе успешно. Проверете конзолата за подробности.
+        select_launcher: Моля, изберете стартер
+      xdmod:
+        analytics_toggle: Превключване на анализи
+        column_date: Дата
+        column_id: Идентификационен номер
+        column_name: Име
+        date_range: '%{from} до %{to}'
+        efficiency_report: '%{unit} Доклад за ефективност'
+        ensure_logged_in_html: '%{error} Моля, уверете се, че първо сте <a href="%{url}">влезли в Open XDMoD</a>, и след това опитайте отново.'
+        expand_analytics_title: Кликнете, за да разгънете аналитичната информация за заданието %{id} над тази таблица.
+        fetch_user_failed: Опитът за извличане на информация за текущия потребител от Open XDMoD е неуспешен.
+        idp_redirect_failed: 'Влизането не бе успешно: Пренасочването на IDP не бе успешно'
+        iframe_error: XDMoD Login iFrame на URL адрес %{url} публикува съобщение за грешка с информация %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} неефективно %{unit} </span> リーター %{total} общо %{unit}
+        invalid_job_data: Данните за заданието, върнати от заявката, са невалидни.
+        loading_caps: ЗАРЕЖДАНЕ...
+        login_page_load_failed: 'Влизането не бе успешно: Зареждането на страницата за вход в XDMoD не бе успешно.'
+        login_timeout: 'Влизането неуспешно: Време за изчакване за завършване на влизането е изтекло'
+        metric_cpu: Процесор
+        metric_mem: Мем
+        metric_walltime: Време за стена
+        no_data: Няма налични данни.
+        not_available: Няма данни
+        open_xdmod: Отворете XDMoD
+        percent_efficient: '%{percent}% ефективност'
+        percent_efficient_aria: процент ефективност
+        percent_inefficient: '%{percent}% неефективно'
+        percent_inefficient_aria: процент неефективност
+        recently_completed_jobs: Наскоро завършени задачи
+        unit_core_hours: основни часове
+        unit_core_hours_title: Основни часове
+        unit_jobs: работни места
+        unit_jobs_title: Работа
+    launch: Стартиране
+    load_report: Зареждане на отчет + %{node}
+    loading: Зареждане...
+    loading_short: Зареждане
+    locale_name: Български (България)
+    logo_alt_text: Добре дошли в Open OnDemand
+    logout_body_html: <strong>Трябва напълно да затворите браузъра си</strong>, за да се осъществи „излизане“. Ако след повторно отваряне на браузъра все още сте влезли, моля, изчистете „бисквитките“ си. Ако сте на Chromebook или Chromebox, ще трябва да рестартирате устройството си, за да „излезете от браузъра“ и по този начин да „излезете“.
+    logout_tip_html: '<strong>Съвет: Използването на прозорец „режим на частно сърфиране“</strong>, докато използвате OnDemand, е чудесен начин за справяне с „автоматичното излизане“, тъй като затварянето на прозореца на браузъра ще премахне всички свързани бисквитки и информация за сесията.'
+    logout_title: Все още не сте излезли от профила си
+    maximum: Максимално
+    mem_report: Отчет за паметта + %{node}
+    minimum: Минимум
+    mode: Режим
+    module_browser_available_modules: 'Налични модули:'
+    module_browser_copy_aria: Копиране на команда за зареждане за %{name}
+    module_browser_dependencies: 'Зависимости:'
+    module_browser_last_updated: 'Последна актуализация: %{last_updated}'
+    module_browser_load_command: 'Команда за зареждане:'
+    module_browser_search_label: Модули за търсене
+    module_browser_search_placeholder: Търсене по име на модул...
+    module_browser_select_version: (изберете версия)
+    module_browser_showing_results: Показване на резултати от %{count}
+    module_browser_title: Браузър на модули
+    module_browser_versions: Версии
+    motd_default_md: 'Разработването на Open OnDemand се подкрепя от [Националната научна фондация](https://www.nsf.gov/)
+
+      с номера на грантове [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) и
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Научете повече или се включете:
+
+
+      - [Дискурс](https://discourse.openondemand.org/)
+
+      - [Хранилище на Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [хранилище на ood-core](https://github.com/OSC/ood_core)
+
+      - [Документация](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD не беше анализиран или рендиран правилно: %{error_message}'
+    motd_no_messages: Няма нови съобщения.
+    motd_title: Послание на деня
+    name: Име
+    nav_all_apps: Всички приложения
+    nav_develop_docs: Документация за разработчици
+    nav_develop_my_sandbox_apps_dev: Моите приложения за пясъчник (разработка)
+    nav_develop_my_sandbox_apps_prod: Моите споделени приложения (продукционна версия)
+    nav_develop_title: Развиване
+    nav_help_change_password: Промяна на паролата за HPC
+    nav_help_custom: Персонализирана помощ за навигация
+    nav_help_docs: Онлайн документация
+    nav_help_support: Свържете се с поддръжката
+    nav_help_support_ticket: Изпращане на заявка за поддръжка
+    nav_help_title: Помощ
+    nav_help_two_factor: Конфигуриране на двуфакторно удостоверяване
+    nav_language: Език
+    nav_limit_caption: показва се %{subset_count} от %{total_count}
+    nav_logout: Изход
+    nav_main_menu: Главно меню
+    nav_restart_server: Рестартирайте уеб сървъра
+    nav_sessions: Моите интерактивни сесии
+    nav_toggle_navigation: Превключване на навигацията
+    nav_user: Влезли сте като %{username}
+    network_report: Мрежов отчет + %{node}
+    node: Възел
+    none: Няма
+    not_grouped: Други приложения
+    nsf_access_announcements: Съобщения за достъп до NSF
+    nsf_access_events: Събития на NSF ACCESS
+    nsf_access_outages: Прекъсвания на NSF ACCESS
+    ok: Добре
+    opens_in_new_tab: отваря се в нов раздел
+    output_location: 'Местоположение на изхода:'
+    owner: Собственик
+    page_actions_aria: Действия на страницата
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Параметри
+    path_selector_breadcrumb_aria: '%{title} Хлебна трохичка'
+    path_selector_caption: Изберете файл или директория, които да използвате във формуляра.
+    path_selector_default_popup_title: Изберете вашата работна директория
+    path_selector_home: дом
+    path_selector_parent_directory: родителска директория
+    permissions_created: Разрешението е създадено успешно.
+    permissions_destroyed: Разрешението беше успешно унищожено.
+    permissions_group_title: Разрешения за група
+    permissions_user_title: Потребителски разрешения
+    pinned_apps_caption_html: Препоръчано подмножество от <a href="%{all_apps_url}">всички налични приложения</a>
+    pinned_apps_category: Приложения
+    pinned_apps_title: Закачени приложения
+    products_created: Продуктът е създаден успешно.
+    products_git_commit_hint_html: Моля, добавете всички промени или необходимите файлове към <code>.gitignore</code>
+    products_git_staged: Поетапно
+    products_git_status: Състояние на Git
+    products_git_unstaged: Неигран
+    products_git_untracked: Непроследено
+    products_manifest_save_error: Не може да се запази манифестът на приложението в %{path}
+    products_ssh_key_created: SSH ключът беше успешно създаден.
+    products_ssh_key_exists: SSH ключът вече съществува
+    products_ssh_key_failed: 'SSH ключът не бе създаден: %{error}'
+    products_type_batch_connect: Приложение за групово свързване
+    products_type_passenger: Приложение за пътници
+    products_type_passenger_meteor: Приложение за пътнически метеор
+    products_type_passenger_node: Приложение за пътнически възел
+    products_type_passenger_rack: Приложение за пътнически багажник
+    products_type_passenger_rails: Приложение за пътнически железници
+    products_type_passenger_rails_sqlite: Приложение за пътнически железници с база данни SQLite
+    products_type_passenger_wsgi: Приложение за пътници WSGI
+    products_updated: Продуктът беше успешно актуализиран.
+    project: Проект
+    project_balances: Баланси по проекти
+    project_directory: Директория на проекти
+    project_zip_error_message: 'Грешка при създаването на ZIP файл: %{error}'
+    project_zip_success_message: 'Успех: project.zip е създаден във вашата директория на проекта.'
+    queue: Опашка
+    quota_additional_message: Помислете за изтриване или архивиране на файлове, за да освободите място на диска.
+    quota_block: Използва се %{used} от квота %{available}
+    quota_block_shared: (%{used_exclusive} са твои)
+    quota_file: Използване на %{used} файлове от квота %{available} файлове
+    quota_file_shared: (%{used_exclusive} файловете са ваши)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Презаредете страницата, за да видите актуализираната квота. Квотите се актуализират на всеки 5 минути.
+    quota_warning_prefix_html: Предупреждение за ограничение на квотата за
+    recently_used_apps_title: Наскоро използвани приложения
+    remove: Премахване
+    reset: Нулиране
+    restart_msg_html: 'Членството ви в групата се е променило, което се отразява на достъпа ви до приложенията. Таблото ви за управление би трябвало да се рестартира автоматично.
+
+      Ако не се рестартира, кликнете върху: <a href="%{restart_url}">рестартиране на уеб сървъра</a>.
+
+      '
+    restore: Възстановяване
+    root: Корен
+    save: Запазване
+    saved_settings_title: Запазени настройки
+    select: Изберете
+    select_all: Избери всички
+    select_path: Изберете път
+    select_path_for: '%{element} изберете път
+
+      '
+    settings_csrf_expired: Вашият токен за сигурност на сесията е изтекъл. Моля, опитайте действието си отново.
+    settings_invalid_request: Изпратени са невалидни настройки
+    settings_unprocessable_body_html: Сесията ви може да е изтекла или желаната от вас промяна е била отхвърлена. Моля, <a href="%{dashboard_url}">върнете се към таблото за управление</a> и опитайте отново.
+    settings_unprocessable_title: Сесията е изтекла или промяната е отхвърлена
+    settings_updated: Настройките са актуализирани
+    shared_apps_caption: Споделено от %{owner_title} (%{owner})
+    shared_apps_caption_short: Споделено от %{owner}
+    shared_apps_title: Споделени приложения
+    sharing_catalog_msg_html: <br>Подмножество от наличните приложения може да бъде видяно на %{catalog_link_tag}.
+    sharing_catalog_title: Каталог на приложенията
+    sharing_no_shared_apps_html: '<strong>Няма налични персонализирани споделени приложения.</strong>
+
+      '
+    sharing_support_msg_html: 'Ако не виждате приложението, което търсите, моля,
+
+      <a href="%{support_url}">свържете се с екипа за поддръжка</a>.
+
+      '
+    sharing_welcome_msg_html: 'Приложенията за достъп до клъстер са достъпни от падащите менюта в навигационната лента по-горе.
+
+      <br>Персонализирани споделени приложения са достъпни по-долу.
+
+      '
+    shell: Черупка
+    shell_app_title: '%{cluster_title} Достъп до Shell'
+    show: Покажи
+    size: Размер
+    skip_navigation: Пропускане на навигацията
+    smart_attributes:
+      account: Профил
+      auto_modules_none: Автоматични модули (не са посочени)
+      cluster: Клъстер
+      cores: Ядра
+      email_on_started: Бих искал/а да получа имейл, когато сесията започне
+      environment_variable: Променлива на средата
+      environment_variable_key: 'Променлива на средата: %{key}'
+      job_name: Име на заданието
+      module_version: Версия %{module}
+      num_cpus_single_node: Брой процесори на един възел
+      num_hours: Брой часове
+      num_nodes: Брой възли
+      num_processors: Брой процесори
+      partition: Преграда
+      qos: Качество на услугата (QoS)
+      queue: Опашка
+      script: Сценарий
+      vnc_idle_help: 'Изход, ако изминат # секунди без връзки с VNC viewer'
+      vnc_idle_label: Време за изчакване при неактивност
+      vnc_resolution_help: Разделителната способност се използва само от оригинални VNC връзки.
+      vnc_resolution_label: Резолюция
+    soft_tabs: Меки раздели
+    soft_tabs_info: Меките табулации са интервали във файла, а не действителни символи за табулация.
+    status: Статус
+    status_completed: Завършено
+    status_held: Задържан
+    status_hold: Задръжте
+    status_queued: На опашка
+    status_running: Бягане
+    status_starting: Стартиране
+    status_suspend: Спиране
+    status_suspended: Спрено
+    status_undetermined: Неопределен
+    stop: Спри
+    submit: Изпращане
+    submit_args: 'Изпращане на аргументи:'
+    support_ticket:
+      creation_success: 'Имейл с заявка за поддръжка, изпратен до: %{to}'
+      fields:
+        attachments: Прикачени файлове
+        cc: Копие на кредитната карта
+        description: Описание
+        email: Имейл
+        job_description: Описание на длъжността
+        session_description: Описание на сесията
+        subject: Тема
+        username: Потребителско име
+      generic_error: 'Възникна грешка при обработката на вашата заявка: %{error}'
+      header: Заявка за поддръжка
+      rt:
+        creation_success: 'Заявка за поддръжка, създадена в системата RequestTracker. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Заявка за поддръжка е създадена в ServiceNow. Номер: %{number}. Но не мога да добавя прикачени файлове.'
+        creation_success: 'Заявка за поддръжка, създадена в ServiceNow. Номер: %{number}'
+      submit: Изпращане на заявка за поддръжка
+      title: Заявка за поддръжка
+      validation:
+        attachments_items: Файловете %{id} са невалидни. Добавен е %{items}, максималният брой прикачени файлове е %{max}.
+        attachments_size: '%{id} са невалидни. Максималният размер на прикачения файл е %{max}'
+        email: Форматът %{id} е невалиден. Очаква се валиден имейл адрес.
+        items:
+          attachments_js: Не се допускат повече прикачени файлове
+        required: '%{id} е задължително'
+        size:
+          attachments_js: Максималният размер на прикачения файл е %{max}. Избраният размер на файла е %{size}
+      validation_error: Невалидна заявка. Моля, прегледайте съобщенията за грешки по-долу.
+    support_ticket_add_attachment: Добавяне на прикачен файл
+    support_ticket_attachments_help: Щракнете върху полето, за да прикачите файл. Снимките на екрана или други файлове могат да помогнат за отстраняване на проблема ви.
+    system_apps_caption: Системно инсталирано приложение
+    system_status_available: '%{name} Налично: %{count}'
+    system_status_cluster_title: '%{title} Състояние на клъстера'
+    system_status_gpus: Графични процесори
+    system_status_in_use: '%{percent} в употреба'
+    system_status_jobs_queued: Задачи в опашката
+    system_status_jobs_queued_count: '%{count} Задачи в опашката'
+    system_status_jobs_running: Изпълнявани задачи
+    system_status_jobs_running_count: '%{count} Задачите се изпълняват'
+    system_status_nodes: Възли
+    system_status_not_slurm: Информацията за клъстерите не е налична с %{scheduler}. В момента се поддържат само клъстери Slurm.
+    system_status_processors: Процесори
+    toggle_notifications: Превключване на известията
+    toggle_push_notifications: Превключване на push известия
+    type: Тип
+    undefined_title: Неопределено заглавие
+    unknown: Неизвестен
+    uppy:
+      strings:
+        addMore: Добави още
+        addMoreFiles: Добавяне на още файлове
+        addingMoreFiles: Добавяне на още файлове
+        back: Обратно
+        browseFiles: преглеждане на файлове
+        browseFolders: преглеждане на папки
+        cancel: Отказ
+        cancelUpload: Отмяна на качването
+        closeModal: Затвори модалния прозорец
+        complete: Завършено
+        dashboardTitle: Качване на файлове
+        dashboardWindowTitle: Прозорец за качване на файлове (Натиснете Escape, за да затворите)
+        done: Готово
+        dropHint: Пуснете файловете си тук
+        dropPasteBoth: Пуснете файлове тук, %{browseFiles} или %{browseFolders}
+        dropPasteFiles: Пуснете файлове тук или %{browseFiles}
+        dropPasteFolders: Пуснете файлове тук или %{browseFolders}
+        editFile: Редактиране на файл
+        editing: Редактиране на %{file}
+        emptyFolderAdded: Не бяха добавени файлове от празната папка
+        error: Грешка
+        exceedsSize: '%{file} надвишава максимално допустимия размер на %{size}'
+        failedToUpload: Качването на %{file} не бе успешно
+        folderAlreadyAdded: Папката „%{folder}“ вече е добавена
+        myDevice: Моето устройство
+        noDuplicates: Не може да се добави дублираният файл „%{fileName}“, той вече съществува
+        pause: Пауза
+        pauseUpload: Пауза на качването
+        paused: На пауза
+        removeFile: Премахване на файл
+        resume: Автобиография
+        resumeUpload: Възобновяване на качването
+        retry: Опитай отново
+        retryUpload: Повторен опит за качване
+        save: Запазване
+        saveChanges: Запазване на промените
+        showErrorDetails: Показване на подробности за грешката
+        upload: Качване
+        uploadComplete: Качването е завършено
+        uploadFailed: Качването не бе успешно
+        uploadPaused: Качването е на пауза
+        uploading: Качване
+        xTimeLeft: '%{time} остана'
+    user: Потребител
+    user_configuration:
+      support_ticket_error: support_ticket е неправилно конфигуриран. Моля, добавете backend имплементация в конфигурационния YAML файл.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand предоставя интегрирана, единна точка за достъп за всички ваши HPC ресурси.</p>
+
+      '

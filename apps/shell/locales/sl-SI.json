@@ -1,0 +1,18 @@
+{
+  "page_title": "Školjka - %{siteTitle}",
+  "menu_aria": "Meni lupine",
+  "host_label": "Gostitelj: %{host}",
+  "initial_directory": "Začetni imenik: %{dir}",
+  "themes_label": "Teme:",
+  "theme_default": "Privzeto",
+  "theme_bright": "Svetlo",
+  "theme_dark": "Temno",
+  "fonts_label": "Pisave:",
+  "leave_page_warning": "Če zapustite to stran, boste prekinili svojo terminalsko sejo.",
+  "websocket_failed": "Vzpostavitev spletne vtičnice ni uspela. Prepričajte se, da uporabljate brskalnik, ki podpira spletne vtičnice.",
+  "connection_terminated": "Vaša povezava z oddaljenim strežnikom je bila prekinjena.",
+  "auth_no_clusters": "Ni opredeljenih grozdov.",
+  "auth_invalid_origin": "Neveljaven izvor.",
+  "auth_bad_csrf": "Slab žeton CSRF.",
+  "auth_host_not_allowed": "Gostitelj »%{host}« ni naveden na seznamu dovoljenih ali v konfiguracijah gruče."
+}

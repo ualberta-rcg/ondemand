@@ -1,0 +1,1004 @@
+---
+sk-SK:
+  activemodel:
+    errors:
+      messages:
+        format: Formát %{attribute} je neplatný alebo chýba
+        invalid: '%{attribute} je neplatné'
+        required: Pole %{attribute} je povinné
+        used: '%{attribute} sa už používa'
+  dashboard:
+    account: Účet
+    actions: Akcie
+    active_jobs: Aktívne úlohy
+    active_jobs_close_details: Zatvoriť panel s rozšírenými podrobnosťami.
+    active_jobs_detail:
+      account: Účet
+      array_job_id: ID úlohy poľa
+      array_task_id: ID úlohy poľa
+      cluster: Klaster
+      cluster_id: ID klastra
+      comment: Komentár
+      cpu_time: Čas CPU
+      cpu_used: Použitý procesor
+      current_working_directory: Aktuálny pracovný adresár
+      end_time: Čas ukončenia
+      exec_host: Výkonný hostiteľ
+      finish_time: Čas ukončenia
+      from_host: Od hostiteľa
+      gres: GRES
+      group_list: Zoznam skupín
+      job_account: Účet práce
+      job_checkpoint_attr: Atribút kontrolného bodu úlohy
+      job_checkpoint_interval: Interval kontrolných bodov úlohy
+      job_deadline: Termín pre prácu
+      job_exec_file: Súbor spúšťania úlohy
+      job_execution_time: Čas vykonania úlohy
+      job_gid: GID úlohy
+      job_group: Pracovná skupina
+      job_id: ID úlohy
+      job_name: Názov úlohy
+      job_priority: Priorita úlohy
+      job_restart: Reštart úlohy
+      job_script_file: Súbor skriptu úlohy
+      job_script_size: Veľkosť skriptu úlohy
+      job_share: Zdieľanie práce
+      job_type: Typ úlohy
+      job_uid: UID úlohy
+      job_verify: Overenie úlohy
+      job_version: Verzia úlohy
+      mem: Pamäť
+      memory: Pamäť
+      node_count: Počet uzlov
+      node_list: Zoznam uzlov
+      nodes: Uzly
+      none: Žiadne
+      notifications: Upozornenia
+      partition: Priečka
+      pbs_id: ID PBS
+      pids: PID
+      ppn: PPN
+      project_name: Názov projektu
+      queue: Rad
+      reason: Dôvod
+      reserve: Rezerva
+      select: Vyberte
+      start_time: Čas začiatku
+      state: Štát
+      status: Stav
+      submission_time: Čas odoslania
+      swap: Výmena
+      time_limit: Časový limit
+      time_used: Použitý čas
+      total_cpus: Celkový počet CPU
+      total_nodes: Celkový počet uzlov
+      user: Používateľ
+      virtual_memory: Virtuálna pamäť
+      walltime: Walltime
+      walltime_used: Používané na stene
+    active_jobs_filter_all: Všetky pracovné ponuky
+    active_jobs_filter_user: Vaše pracovné ponuky
+    active_jobs_ganlia_CPU: Obrázok ganglií pre CPU.
+    active_jobs_ganlia_load: Obrázok ganglií pre priemerné zaťaženie systému.
+    active_jobs_ganlia_mem: Obrázok ganglií pre využitie pamäte.
+    active_jobs_ganlia_network: Obrázok ganglií pre sieťové použitie.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> zobraziť všetky (%{number_of_sessions})</a>
+    active_sessions_title: Aktívne interaktívne relácie
+    add: Pridať
+    all_apps_table_app_column: Meno
+    all_apps_table_category_column: Kategória
+    all_apps_table_sub_category_column: Podkategória
+    all_clusters: Všetky klastre
+    announcements_dismissible_button: V poriadku
+    announcements_parse_error: Chyba pri analýze oznámenia.
+    announcements_render_error: Oznámenie „%{name}“ sa nepodarilo vykresliť z dôvodu chyby
+    announcements_required_button: Prijať
+    apps_setup_failure_html: '<h2>Pri inicializácii údajov pre túto aplikáciu sa vyskytol problém.</h2>
+
+      <p class="lead">
+
+      Na vlastné riziko môžete aplikáciu stále <a href="%{app_url}">otvoriť</a>
+
+      alebo sa môžete jednoducho vrátiť <a href="%{home_url}">späť na ovládací panel</a>
+
+      </p>
+
+      <p>
+
+      Zdieľajte to s vývojárom vašej aplikácie: Nastavenie produkčného skriptu má byť idempotentné a spúšťa sa vždy, keď používateľ otvorí aplikáciu prostredníctvom ovládacieho panela.</p>
+
+      <h4>Výnimka: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Sledovanie zásobníka:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Systémové aplikácie
+    auto_log_location_title: Umiestnenie protokolu
+    back: Späť
+    balance_additional_message: Zvážte vyžiadanie dodatočných %{balanace_units}
+    balance_message: '%{units_balance} je %{value}'
+    balance_no_warnings: Žiadne projekty sa nenachádzajú v rámci prahovej hodnoty varovania pre denný zostatok %{threshold}.
+    balance_reload_message_html: Obnovte stránku a zobrazte aktualizovaný zostatok. Zostatky sa aktualizujú denne.<br>Posledná aktualizácia bola %{last_update}
+    balance_warning_prefix_html: '%{units_balance} varovanie pre'
+    batch_connect_active_sessions_aria: Aktívne relácie
+    batch_connect_app_version: 'verzia: %{version}'
+    batch_connect_apps_menu_aria: Menu interaktívnych aplikácií
+    batch_connect_apps_menu_title: Interaktívne aplikácie
+    batch_connect_form_attr_cache_error: Nie je možné použiť predtým uložené hodnoty z vyrovnávacej pamäte, namiesto toho sa používajú predvolené hodnoty. (%{error_message})
+    batch_connect_form_choose_template_name: Vyberte názov šablóny
+    batch_connect_form_data_root: koreňový adresár údajov
+    batch_connect_form_dynamic_disclaimer: Nasledujúci formulár sa môže dynamicky meniť pri výbere možností. Všetky zmeny budú oznámené a sú vratné.
+    batch_connect_form_invalid: V poli formulára %{id} súboru form.yml chýbajú možnosti.
+    batch_connect_form_launch: Spustenie
+    batch_connect_form_prefill: Použiť uložené nastavenia
+    batch_connect_form_prefill_error: Ups... Niečo nie je v poriadku s vašou šablónou
+    batch_connect_form_reset_resolution: Obnoviť rozlíšenie
+    batch_connect_form_resolution_height: Výška rozlíšenia (pixely)
+    batch_connect_form_resolution_width: Šírka rozlíšenia (pixely)
+    batch_connect_form_save: Uložiť nastavenia
+    batch_connect_form_save_new_template: uložiť nové nastavenia
+    batch_connect_form_save_submit: Uložiť nastavenia a zatvoriť
+    batch_connect_form_select_template: vyberte uložené nastavenia
+    batch_connect_form_session_data_html: '* Údaje relácie %{title} pre túto reláciu sú prístupné pod %{data_link_tag}.'
+    batch_connect_form_template_name_label: názov nastavenia
+    batch_connect_form_type_new_name: Názov nastavení aplikácie
+    batch_connect_form_type_new_name_error: Pre pokračovanie zadajte platné meno
+    batch_connect_invalid_form_array: Element „form“ vo formáte form.yml nie je pole
+    batch_connect_invalid_form_attributes: Element „attributes“ vo form.yml nie je mapa
+    batch_connect_missing_cluster: 'Klaster nebol nikdy nastavený. Nastavte ho buď v súbore form.yml.erb s `cluster` alebo `form.cluster`, alebo
+
+      nastavte `cluster` v súbore submit.yml.erb.'
+    batch_connect_no_apps: Nie sú k dispozícii žiadne interaktívne aplikácie.
+    batch_connect_no_sessions: Nemáte žiadne aktívne relácie.
+    batch_connect_sandbox: '[Piesočné prostredie]'
+    batch_connect_sessions_cancel_confirm: Si si istý/á?
+    batch_connect_sessions_cancel_full_title: Zrušiť %{title} reláciu
+    batch_connect_sessions_cancel_title: Zrušiť
+    batch_connect_sessions_connect_to: Pripojte sa k %{app_title}
+    batch_connect_sessions_connection_render_error: Tlačidlo pripojenia sa nedá zobraziť zo súboru view.html.erb kvôli chybe „%{error}“
+    batch_connect_sessions_data_html: 'Údaje relácie %{title} pre túto reláciu sú prístupné
+
+      pod %{data_link_tag}.
+
+      '
+    batch_connect_sessions_delete_confirm: Si si istý/á?
+    batch_connect_sessions_delete_full_title: Odstrániť reláciu %{title}
+    batch_connect_sessions_delete_hover: Odstrániť reláciu
+    batch_connect_sessions_delete_title: Odstrániť
+    batch_connect_sessions_edit_title: Upravte nový %{title} s parametrami tejto relácie
+    batch_connect_sessions_error_invalid_job_name_html: Ak sa odoslanie tejto úlohy nepodarilo z dôvodu neplatného názvu úlohy, požiadajte svojho administrátora o konfiguráciu OnDemand tak, aby nastavil premennú prostredia OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Nepodarilo sa pripraviť šablónu na prezenčnú fázu s nasledujúcou chybou:'
+    batch_connect_sessions_errors_submission: 'Odoslanie relácie zlyhalo s nasledujúcou chybou:'
+    batch_connect_sessions_native_vnc_tab: Natívne inštrukcie
+    batch_connect_sessions_novnc_compression: Kompresia
+    batch_connect_sessions_novnc_compression_help: 1 (nízka) až 9 (vysoká)
+    batch_connect_sessions_novnc_launch: Spustiť %{app_title}
+    batch_connect_sessions_novnc_quality: Kvalita obrazu
+    batch_connect_sessions_novnc_quality_help: 0 (nízka) až 9 (vysoká)
+    batch_connect_sessions_novnc_tab: Pripojenie noVNC
+    batch_connect_sessions_novnc_view_only: Iba zobraziť (odkaz na zdieľanie)
+    batch_connect_sessions_path_selector_forbidden_error: Nemáte povolenie na výber daného adresára alebo súboru.
+    batch_connect_sessions_relaunch_full_title: Znovu spustiť reláciu %{title}
+    batch_connect_sessions_relaunch_title: Znovu spustiť
+    batch_connect_sessions_staged_root: pripravený koreňový adresár
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} jadro'
+      other: '%{count} jadrá'
+    batch_connect_sessions_stats_created_at: 'Vytvorené v:'
+    batch_connect_sessions_stats_expected_time: 'Predpokladaný začiatok:'
+    batch_connect_sessions_stats_gpu_count:
+      one: Grafický procesor %{count}
+      other: Grafické procesory %{count}
+    batch_connect_sessions_stats_host: 'Hostiteľ:'
+    batch_connect_sessions_stats_node_count:
+      one: Uzol %{count}
+      other: Uzly %{count}
+    batch_connect_sessions_stats_session_dir_link_title: Otvoriť adresár relácie pre %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID relácie:'
+    batch_connect_sessions_stats_support_ticket: Problémy s touto reláciou?
+    batch_connect_sessions_stats_support_ticket_link_text: Odoslať tiket podpory
+    batch_connect_sessions_stats_time_remaining: 'Zostávajúci čas:'
+    batch_connect_sessions_stats_time_requested: 'Požadovaný čas:'
+    batch_connect_sessions_stats_time_used: 'Použitý čas:'
+    batch_connect_sessions_stats_undetermined_host: Neurčené
+    batch_connect_sessions_status_bad: Vaša relácia sa dostala do zlého stavu. Pre ďalšie informácie kontaktujte podporu.
+    batch_connect_sessions_status_blurb_cancel_failure: Nepodarilo sa zrušiť reláciu.
+    batch_connect_sessions_status_blurb_cancel_success: Relácia bola úspešne zrušená.
+    batch_connect_sessions_status_blurb_create_success: Relácia bola úspešne vytvorená.
+    batch_connect_sessions_status_blurb_delete_failure: Nepodarilo sa odstrániť reláciu.
+    batch_connect_sessions_status_blurb_delete_success: Relácia bola úspešne odstránená.
+    batch_connect_sessions_status_completed: Na účely ladenia bude táto karta uchovávaná ďalších %{days} dní
+    batch_connect_sessions_status_missing_connection: V tejto aplikácii chýbajú informácie potrebné na nadviazanie pripojenia. Konkrétne chýba súbor view.html.erb. Ak sa vám zobrazí táto správa, kontaktujte podporu.
+    batch_connect_sessions_status_queued: Prosím, buďte trpezliví, vaša úloha je momentálne v rade. Čakacia doba závisí od počtu jadier, ako aj od požadovaného času.
+    batch_connect_sessions_status_starting: Vaša relácia sa práve začína... Prosím, buďte trpezliví, pretože tento proces môže trvať niekoľko minút.
+    batch_connect_sessions_word: Relácia
+    batch_connect_validation:
+      app_not_found: Táto aplikácia neexistuje v adresári „%{root}“
+      inaccessible_clusters: Táto aplikácia vyžaduje klastre, ktoré neexistujú alebo ku ktorým nemáte prístup.
+      missing_form_file: Táto aplikácia neposkytuje súbor formulára v adresári „%{root}“
+      missing_sub_app_form_file: Táto aplikácia neposkytuje súbor formulára podaplikácie v adresári „%{root}“
+      no_cluster_specified: Táto aplikácia neurčuje žiadny klaster.
+    bc_saved_settings:
+      delete_confirm: Si si istý/á?
+      delete_title: Odstrániť uložené nastavenia %{settings_name}
+      deleted_message: Uložené nastavenia %{settings_name} boli odstránené.
+      edit_title: Upraviť uložené nastavenia %{settings_name}
+      launch_title: Spustiť %{app_title} s parametrami %{settings_name}
+      missing_settings: Vybrané uložené nastavenia sa nenašli.
+      no_settings_title: Nemáte žiadne uložené nastavenia.
+      outdated_message: Parametre %{app_title} sa od vytvorenia týchto nastavení zmenili.
+      saved_message: Nastavenia %{settings_name} boli uložené
+      settings_values_label: Hodnoty
+      title: Uložené nastavenia
+    breadcrumb_aria: Strúhanka
+    breadcrumbs_all_apps: Všetky aplikácie
+    breadcrumbs_home: Domov
+    breadcrumbs_my_sessions: Moje interaktívne stretnutia
+    breadcrumbs_support_ticket: Tiket podpory
+    browser_warning: OnDemand vyžaduje novšiu verziu prehliadača, ktorý používate. Aktuálne požiadavky na prehliadače zahŕňajú IE Edge, Firefox 19+, Chrome 34+ a Safari 8+.
+    cancel: Zrušiť
+    categories:
+      apps: Aplikácie
+      bioinformatics: Bioinformatika
+      clusters: Klastre
+      data_science: Dátová veda
+      desktop: Počítačová počítača
+      desktops: Stolné počítače
+      development: Vývoj
+      external_apps: Externé aplikácie
+      files: Súbory
+      gateway_apps: Aplikácie brány
+      guis: grafické používateľské rozhrania
+      interactive_apps: Interaktívne aplikácie
+      jobs: Pracovné miesta
+      machine_learning: Strojové učenie
+      mathematics: Matematika
+      servers: Servery
+      utilities: Verejné služby
+      virtual_desktop_interface: Rozhranie virtuálnej plochy
+      visualization: Vizualizácia
+    clear: Jasné
+    close: Zatvoriť
+    close_alert: Zatvoriť toto upozornenie.
+    close_notice: Zatvoriť toto oznámenie.
+    cluster: Klaster
+    copy: Kopírovať
+    copy_suffix: (Kópia)
+    cpu_report: Správa CPU + %{node}
+    custom_pages:
+      invalid: 'Neplatný kód stránky: %{page}. Táto stránka nebola nakonfigurovaná.'
+    date: Dátum
+    delete: Odstrániť
+    detailed_metrics: Podrobné metriky
+    details: Detaily
+    development_apps_caption: Aplikácia sandbox
+    development_apps_category: Sandboxové aplikácie
+    development_delete_app: Odstrániť aplikáciu
+    development_edit_title: Upraviť %{title}
+    development_launch_title: Spustiť %{title}
+    directory: Adresár
+    edit: Upraviť
+    editor_default: Predvolené
+    editor_font_size: Veľkosť písma
+    editor_key_bindings: Klávesové zväzky
+    editor_theme: Téma
+    editor_theme_bright: Jasný
+    editor_theme_dark: Tmavé
+    editor_wrap: Zabaliť
+    error_details: 'Podrobnosti:'
+    error_internal_body_html: Skúste to znova o chvíľu. Ak sa táto chyba bude naďalej zobrazovať, kontaktujte podporu <a href="%{support_url}">_.
+    error_internal_title: Interná chyba servera
+    error_not_found_body: Stránka, ktorú hľadáte, neexistuje.
+    error_not_found_title: Nenájdené
+    favorites: Obľúbené
+    file: Súbor
+    file_editor: Editor súborov
+    file_quotas: Kvóty súborov
+    files: Súbory
+    files_change_directory: Zmeniť adresár
+    files_contents_of_directory: Obsah adresára %{path}
+    files_copy_move: Kopírovať/Presunúť
+    files_copy_path: Kopírovať cestu
+    files_directory_contents_aria: Obsah adresára
+    files_directory_download_error_modal_title: Adresár je príliš veľký na stiahnutie
+    files_directory_download_unauthorized: Stiahnuť si môžete iba súbor alebo adresár, ku ktorému máte prístup na čítanie a spúšťanie.
+    files_directory_size_calculation_error: Časový limit pri pokuse o určenie veľkosti adresára.
+    files_directory_size_calculation_timeout: Časový limit pri pokuse o určenie veľkosti adresára.
+    files_directory_size_unknown: 'Chyba so stavom %{exit_code} pri pokuse o určenie veľkosti adresára: %{error}'
+    files_directory_too_large: Adresár je príliš veľký na stiahnutie ako zip súbor. Adresár by mal mať menej ako %{download_directory_size_limit} bajtov.
+    files_doesnt_exist: '%{path} neexistuje.'
+    files_download: Stiahnuť
+    files_download_not_enabled: Sťahovanie súborov nie je na tomto serveri povolené.
+    files_download_zip: Stiahnuť ako zip
+    files_exceeds_editor_limit: Súbor %{path} prekračuje limit editora %{limit}. Stiahnite si súbor, aby ste ho mohli upraviť alebo zobraziť lokálne.
+    files_file_too_large: Súbor je príliš veľký na stiahnutie. Stiahnuté súbory by mali mať menej ako %{download_file_size_limit} bajtov.
+    files_go_up_directory: Prejsť nahor v adresári
+    files_modified_at: Upravené o
+    files_modify_aria: Upraviť súbory
+    files_new_directory: Nový adresár
+    files_new_file: Nový súbor
+    files_not_editable: Súbor %{path} nie je možné upravovať
+    files_not_readable: Nemáte dostatočné oprávnenia na čítanie súboru „%{path}“.
+    files_open_in_files_app: Otvoriť v aplikácii Súbory
+    files_open_in_globus: Otvorené v Globuse
+    files_path_breadcrumbs_aria: Navigácia v ceste
+    files_refresh: Obnoviť
+    files_remote_dir_not_created: Nebol vytvorený adresár %{path}
+    files_remote_disabled: Podpora vzdialených súborov nie je povolená
+    files_remote_empty_dir_unsupported: Vzdialený prístup nepodporuje prázdne adresáre
+    files_remote_error_listing_remotes: 'Chyba pri vypisovaní diaľkových ovládačov Rclone: %{error}'
+    files_send_to_target_title_default: Odoslať metadáta vybraných súborov do externej aplikácie
+    files_shell: Otvoriť v termináli
+    files_shell_dropdown: Vyberte klaster, ktorý chcete otvoriť v termináli
+    files_title: Prehliadanie súborov
+    files_upload: Nahrať
+    footer_contribute: Prispejte na GitHub
+    footer_license: Oznámenie o licencii na softvér
+    footer_open_source: Softvér s otvoreným zdrojovým kódom.
+    footer_powered_by: Používa systém Open OnDemand
+    footer_version: 'Verzia na požiadanie: %{version}'
+    home_directory: Domovský adresár
+    id: Identifikácia
+    import: Importovať
+    job: Práca
+    job_info: Informácie o pracovnej ponuke
+    jobs_back_to_projects: Späť na projekty
+    jobs_clear_form_fields: Vymazať polia formulára
+    jobs_completed_jobs: Dokončené úlohy
+    jobs_create_blank_project: Vytvoriť nový projekt
+    jobs_create_blank_workflow: Nový pracovný postup
+    jobs_create_template_project: Vytvorenie nového projektu zo šablóny
+    jobs_import_shared_project: Importovať zdieľaný projekt
+    jobs_launchers: Odpaľovacie zariadenia
+    jobs_launchers_add_select_option: Pridať možnosť výberu %{name}
+    jobs_launchers_cannot_find: Nepodarilo sa nájsť spúšťač %{id}
+    jobs_launchers_clone: Spúšťač klonov %{name}
+    jobs_launchers_created: Spúšťač úspešne vytvorený!
+    jobs_launchers_default_created: Do tohto projektu bol pridaný aj súbor „hello_world.sh“.
+    jobs_launchers_delete: Odstrániť spúšťač %{name}
+    jobs_launchers_delete_script_confirmation: Odstrániť všetok obsah spúšťača?
+    jobs_launchers_deleted: Spúšťač bol úspešne odstránený!
+    jobs_launchers_edit: Upraviť formulár pre spúšťač %{name}
+    jobs_launchers_edit_form_item: Upraviť položku formulára %{label}
+    jobs_launchers_editing: Úprava %{title}
+    jobs_launchers_fixed_field: Pevná hodnota
+    jobs_launchers_fixed_field_help: Opraviť aktuálnu hodnotu
+    jobs_launchers_max_value_label: Maximálna hodnota pre číselné pole %{label}
+    jobs_launchers_min_value_label: Minimálna hodnota pre číselné pole %{label}
+    jobs_launchers_name: Názov spúšťača
+    jobs_launchers_new_field_select: Vyberte položku, ktorú chcete pridať do formulára
+    jobs_launchers_not_found: Nepodarilo sa nájsť spúšťač %{launcher_id}
+    jobs_launchers_preview_form_item: Náhľad položky formulára %{label}
+    jobs_launchers_remove_form_item: Odstrániť položku formulára %{label}
+    jobs_launchers_remove_select_option: Odstrániť možnosť výberu %{name}
+    jobs_launchers_save_form: Uložiť formulár
+    jobs_launchers_save_form_item: Uložiť zmeny v položke formulára %{label}
+    jobs_launchers_show_form: Zobraziť formulár pre spúšťač %{name}
+    jobs_launchers_submit_launcher_title: Spúšťací skript s hodnotami uloženými vo vyrovnávacej pamäti alebo predvolenými hodnotami pre spúšťač %{name}
+    jobs_launchers_submitted: Úloha %{job_id} bola úspešne odoslaná.
+    jobs_launchers_updated: Manifest spúšťača aktualizovaný!
+    jobs_native_dependency: Úloha závisí od job-id%{dependency}
+    jobs_native_reason: kvôli '%{reason}'
+    jobs_native_state: Aktuálny stav úlohy je '%{state}'
+    jobs_new_launcher: Nový spúšťač
+    jobs_new_project: Nový projekt
+    jobs_project_cannot_find: 'Nepodarilo sa nájsť projekt: %{project_id}'
+    jobs_project_clear_form_fields: Vymazať polia formulára
+    jobs_project_created: Projekt bol úspešne vytvorený!
+    jobs_project_delete_label: Odstrániť projekt %{name}
+    jobs_project_delete_project_confirmation: Odstrániť všetok obsah adresára projektu?
+    jobs_project_deleted: Projekt bol úspešne odstránený!
+    jobs_project_description_placeholder: Popis projektu
+    jobs_project_directory_error: Cesta k adresáru projektu nie je pre tento pracovný postup nastavená
+    jobs_project_directory_help_html: 'Ak necháte prázdne, vytvorí sa nový adresár. <br />Predvolené umiestnenie: %{root_directory}'
+    jobs_project_directory_placeholder: Absolútna cesta k adresáru projektu
+    jobs_project_edit_label: Upraviť projekt %{name}
+    jobs_project_generic_error: 'Pri spracovaní vašej požiadavky sa vyskytla chyba: %{error}'
+    jobs_project_group_help: Uistite sa, že ste vybrali skupinu, ktorá zahŕňa všetkých plánovaných spolupracovníkov. Ak nejde o kolaboratívny projekt, odporúča sa predvolená skupina.
+    jobs_project_group_owner: Skupina
+    jobs_project_imported: Projekt bol úspešne importovaný!
+    jobs_project_invalid_configuration_clusters: Vyžaduje sa klaster HPC. Ak chcete do systému pridať klaster, kontaktujte svojho správcu.
+    jobs_project_invalid_configuration_scripts: Pre váš projekt je potrebný spustiteľný skript. Nahrajte skript pomocou súborovej aplikácie.
+    jobs_project_job_deleted: Úloha %{job_id} bola úspešne odstránená
+    jobs_project_job_not_deleted: Úlohu nie je možné odstrániť %{job_id}
+    jobs_project_job_stopped: Úloha %{job_id} bola úspešne zastavená
+    jobs_project_list_aria: Zoznam projektov
+    jobs_project_manager: Projektový manažér
+    jobs_project_manifest_updated: Manifest projektu aktualizovaný!
+    jobs_project_name_placeholder: Názov projektu
+    jobs_project_name_validation: Názov projektu môže obsahovať iba písmená, číslice, pomlčky, podčiarkovníky a medzery
+    jobs_project_not_found: Nepodarilo sa nájsť projekt %{project_id}
+    jobs_project_open_label: Otvoriť projekt %{name}
+    jobs_project_remove_label: Odstrániť projekt %{name}
+    jobs_project_removed: Projekt bol odstránený z vyhľadávania!
+    jobs_project_return_to_projects: Späť na stránku projektov
+    jobs_project_save_error: Manifest sa nedá uložiť do %{path}
+    jobs_project_save_project_title: Uložiť projekt
+    jobs_project_select_directory: Vyberte adresár projektu
+    jobs_project_setgid_help: Ponechanie začiarknutého políčka setgid zabezpečí, že súbory projektu sa vytvoria s vybranou skupinou. Toto neovplyvní projekty vo vašom domovskom adresári.
+    jobs_project_validation_error: Neplatná požiadavka. Skontrolujte chyby uvedené nižšie.
+    jobs_return_to_projects: Späť na stránku projektov
+    jobs_save_project_title: Uložiť projekt
+    jobs_select_directory_placeholder: Kliknite na projekt pre import
+    jobs_toggle_details: Kliknutím zobrazíte podrobnosti o úlohe %{job_id}
+    jobs_workflow_add_launcher: Pridať spúšťač
+    jobs_workflow_canvas_aria: plátno
+    jobs_workflow_clone: Klonovať pracovný postup %{name}
+    jobs_workflow_connect_launchers: Pripojte spúšťače
+    jobs_workflow_created: Pracovný postup bol úspešne vytvorený!
+    jobs_workflow_delete_confirmation: Odstrániť všetok obsah pracovného postupu?
+    jobs_workflow_delete_edge: Odstrániť okraj
+    jobs_workflow_delete_edge_title: Odstrániť vybranú hranu (Del/Backspace)
+    jobs_workflow_delete_launcher: Odstrániť spúšťač
+    jobs_workflow_delete_launcher_title: Odstrániť vybraný spúšťač (Del/Backspace)
+    jobs_workflow_delete_title: Odstrániť pracovný postup %{name}
+    jobs_workflow_deleted: Pracovný postup bol úspešne odstránený!
+    jobs_workflow_description_placeholder: Popis pracovného postupu
+    jobs_workflow_edit_settings: Upraviť nastavenia pre pracovný postup %{name}
+    jobs_workflow_editing: 'Úprava: %{name}'
+    jobs_workflow_enable_sync_key: Povoliť OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Pracovný postup zlyhal s chybou %{error}
+    jobs_workflow_help: Kliknite na názov pre výber a potiahnutie. Prepojte kliknutím na dva spúšťače s vybratou možnosťou „Prepojiť spúšťače“.
+    jobs_workflow_manifest_updated: Manifest pracovného postupu aktualizovaný!
+    jobs_workflow_missing_launchers: vyberte aspoň %{count}
+    jobs_workflow_name_placeholder: Názov pracovného postupu
+    jobs_workflow_name_validation: Názov pracovného postupu môže obsahovať iba písmená, číslice, pomlčky, podčiarkovníky a medzery.
+    jobs_workflow_not_found: Nepodarilo sa nájsť pracovný postup %{workflow_id}
+    jobs_workflow_pick_launchers: Vyberte spúšťače
+    jobs_workflow_show_graph: Otvoriť pracovný postup %{name} v editore grafov
+    jobs_workflow_submitted: Pracovný postup bol úspešne odoslaný!
+    jobs_workflow_sync_key_help: Keď je povolené, každý spúšťač v tomto pracovnom postupe dostane rovnakú premennú prostredia <code>OOD_WORKFLOW_SYNC_KEY</code> (náhodný token jedinečný pre každé spustenie pracovného postupu). Užitočné na generovanie synchronizovaných názvov súborov, súborov zámkov alebo zdieľaných identifikátorov medzi závislými úlohami.
+    jobs_workflow_synchronization: Synchronizácia
+    jobs_workflow_toolbar_aria: panel s nástrojmi
+    jobs_workflow_zoom_controls: Ovládacie prvky priblíženia
+    jobs_workflow_zoom_in: Priblížiť
+    jobs_workflow_zoom_out: Oddialiť
+    jobs_workflow_zoom_reset: Obnoviť priblíženie
+    jobs_workflows: Pracovné postupy
+    jobs_workflows_not_supported: Nakonfigurovaný plánovač nepodporuje pracovné postupy.
+    js:
+      active_jobs:
+        delete_aria: Odstrániť úlohu %{name} s ID %{id}
+        delete_confirm: Naozaj chcete odstrániť %{name} - %{id}
+        delete_title: Odstrániť úlohu
+        details_loaded: Zoznam podrobností o úlohe bol načítaný.
+        load_details_failed: Nepodarilo sa načítať podrobnosti o úlohe.
+        remote_server_error: Pri načítavaní údajov zo vzdialeného servera sa vyskytla chyba.
+        request_failed_parse: Požiadavka na úlohy zlyhala z dôvodu chyby pri analýze tela.
+        request_failed_status: 'Žiadosť o úlohy zlyhala so stavovým kódom: %{status}'
+        status_completed: Dokončené
+        status_hold: Držať
+        status_queued: Zaradené do frontu
+        status_running: Beh
+        status_suspended: Pozastavené
+        status_undetermined: Neurčené
+        support_ticket_aria: Odoslať tiket podpory pre úlohu s ID %{id}
+        support_ticket_title: Odoslať tiket podpory
+        toggle_details_aria: Prepnúť viditeľnosť úlohy %{name} na %{cluster}
+      batch_connect:
+        allow_notifications: Pre aktiváciu upozornení na relácie povoľte vo svojom prehliadači povolenia na upozornenia.
+        invalid_prefill_value_html: 'Neplatná hodnota: „%{value}“ pre pole „%{field}“.<br>'
+        notification_permission_error: 'Chyba pri žiadosti o povolenie pri upozorneniach:'
+        resolution_reset: Rozlíšenie obnovené na %{width} o %{height} pixelov.
+        session_expires_warning: 'Upozornenie: Platnosť %{title} (%{job_id}) vyprší o ~%{minutes} minúty!'
+        session_status_aria: '%{title} je teraz %{status}.'
+        session_status_push: '%{title} (%{job_id}) je teraz %{status}.'
+      common:
+        cancel: Zrušiť
+        close: Zatvoriť
+        error: Chyba
+        loading: Načítava sa...
+        ok: V poriadku
+      datatables:
+        all: Všetky
+        filter_label: 'Filter:'
+        invalid_date: Neplatný dátum
+        rows_selected:
+          one: Vybratý riadok %{count}
+          other: Vybrané riadky %{count}
+        showing_filtered_rows: Zobrazuje sa %{display} z %{total} riadkov
+        showing_rows: Zobrazujú sa riadky %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: a
+        changed_help: Zmenený text nápovedy pre %{widget} na %{help}
+        changed_label: Zmenený štítok na %{widget} na nový štítok %{label}
+        current_value: nastaviť aktuálnu hodnotu na %{value}
+        hid_item: Skrytá položka formulára %{widget}
+        maximum_limit: maximálny limit na %{value}
+        minimum_limit: minimálny limit na %{value}
+        option_disabled: Možnosť %{value} je pre %{widget} zakázaná
+        option_enabled: Možnosť %{value} povolená pre %{widget}
+        revealed_item: Odhalená položka formulára %{widget}
+        selected_option_disabled: Vybraná možnosť %{value} je pre %{widget} zakázaná
+        set_limits: Nastaviť %{details} pre %{widget}
+        set_value: Nastavte %{widget} na hodnotu %{value}
+        widget_no_label: '%{type} bez označenia'
+        widget_with_label: '%{type} s označením %{label}'
+      editor:
+        save_error: 'Pri pokuse o uloženie tohto súboru sa vyskytla chyba!
+
+          %{error}'
+        unsaved_changes: Máte neuložené zmeny!
+      files:
+        action_delete: Odstrániť
+        action_download: Stiahnuť
+        action_edit: Upraviť
+        action_rename: Premenovať
+        action_view: Zobraziť
+        actions: Akcie
+        cannot_navigate_file: Nedá sa prejsť na súbor.
+        change_directory: Zmeniť adresár
+        clipboard_description_html: 'Skopírujte alebo presuňte nižšie uvedené súbory z <code>%{from}</code> do aktuálneho adresára:'
+        contents_of_directory: Obsah adresára %{path}
+        copied_path: Cesta do schránky bola skopírovaná!
+        copy: Kopírovať
+        create_directory_error: 'Pri pokuse o vytvorenie nového adresára sa vyskytla chyba: %{error}'
+        create_file_error: 'Pri pokuse o vytvorenie nového súboru sa vyskytla chyba: %{error}'
+        delete_confirm_text: 'Naozaj chcete odstrániť súbory: %{files}'
+        delete_multiple_title: Odstrániť vybrané súbory %{count}?
+        delete_single_title: Vymazať %{name}?
+        deleting_files: 'Mazanie súborov...:'
+        directory: adresár
+        directory_name_label: Názov adresára
+        download_error: 'Chyba pri sťahovaní: %{error}'
+        duplicate_files_warning: Boli identifikované duplicitné súbory. Nahraním týchto súborov sa prepíše existujúci obsah.
+        file: súbor
+        filename_invalid_chars: Názov súboru nemôže obsahovať / alebo ..
+        filename_label: Názov súboru
+        globus_open: Otvorte aktuálny adresár pomocou Globusu
+        globus_unavailable: K tomuto adresáru nie je priradený žiadny koncový bod Globus
+        illegal_slash_in_filename: V názve súboru nie je povolený neplatný znak (/).
+        move: Presunúť
+        navigated_to: presmerované na %{path}
+        new_directory_title: Nový adresár
+        new_file_title: Nový súbor
+        path_label: Cesta
+        poll_status_error: Operácia sa možno neuskutočnila. Nepodarilo sa načítať stav operácie so súborom.
+        preparing_download_dir: 'príprava na stiahnutie adresára: %{name}'
+        provide_absolute_pathname: Zadajte absolútnu cestu
+        provide_directory_name: Zadajte názov adresára, ktorý neobsahuje /
+        provide_non_empty_filename: Zadajte názov súboru, ktorý nie je prázdny.
+        provide_rename_filename: Zadajte názov súboru, na ktorý sa má toto premenovať
+        rename_title: Premenovať
+        see_details: Zobraziť podrobnosti
+        select_row: Vybrať riadok
+        select_to_copy_move: Vyberte súbor, súbory alebo adresár, ktoré chcete kopírovať alebo presunúť. Nevybrali ste žiadny.
+        select_to_delete: Vyberte súbor, súbory alebo adresár, ktoré chcete odstrániť. Nevybrali ste žiadny.
+        select_to_download: Vyberte súbor, súbory alebo adresár na stiahnutie. Nevybrali ste žiadny.
+        select_to_send: Vyberte aspoň jeden súbor alebo adresár na odoslanie.
+        send_failed: Nepodarilo sa odoslať informácie o súbore.
+        sent_successfully: Informácie o vybranom súbore boli úspešne odoslané.
+        show_dotfiles: Zobraziť Dotfiles
+        show_owner_mode: Zobraziť vlastníka/režim
+        summary_copy_files: kopírovať súbory
+        summary_move_files: presunúť súbory
+        summary_remove_files: odstrániť súbory
+        summary_rename_file: premenovať súbor
+        token_missing_expired: Chýba token aplikácie alebo jeho platnosť vypršala. Začať znova.
+        transfer_error: 'Pri pokuse o %{summary} sa vyskytla chyba: %{error}'
+        upload_and_overwrite: Nahrať a prepísať
+        upload_count:
+          one: Nahrať súbor %{count}
+          other: Nahrať súbory %{count}
+        upload_new_files: Nahrať nové súbory
+        uppy_empty_dir_note: Prázdne adresáre budú zahrnuté do nahrávania iba vtedy, keď sa nahrávanie adresára iniciuje metódou drag and drop. Je to preto, že rozhranie API pre súbory a položky adresára je dostupné iba pri udalosti presunutia, nie počas udalosti zmeny vstupu.
+      icon_picker:
+        icon_selected: Vybratá ikona %{icon}
+        icon_sr: Ikona %{name}
+      launcher_edit:
+        account_help: Účet, pomocou ktorého bude úloha odoslaná.
+        account_label: Účet
+        add_new_option: Pridať novú možnosť
+        cores_help: Na koľkých jadrách bude úloha bežať.
+        cores_label: Jadrá
+        env_var_help: Pridajte premennú prostredia.
+        env_var_key: 'Premenná prostredia: %{name}'
+        env_var_label: Premenná prostredia
+        hours_help: Ako dlho môže práca trvať.
+        hours_label: Hodiny
+        job_name_help: Názov, ktorý bude mať pracovná ponuka.
+        job_name_label: Názov úlohy
+        log_location_help: Cieľ výstupu protokolu úlohy.
+        log_location_label: Umiestnenie protokolu
+        no_more_options: Žiadne ďalšie možnosti
+        nodes_help: Na koľkých uzloch bude úloha spustená.
+        nodes_label: Uzly
+        queues_help: Ktorý front úloha tiež odošle.
+        queues_label: Fronty
+      module_browser:
+        copied: Skopírované!
+        copy: Kopírovať
+        showing_results:
+          one: Zobrazuje sa výsledok %{count}
+          other: Zobrazujú sa výsledky %{count}
+      nsf_access:
+        affected_resources: 'Dotknuté zdroje: %{resources}'
+        read_more: Čítať ďalej
+        register_event: Zaregistrujte sa na túto udalosť
+      path_selector:
+        directory_loaded: Adresár načítaný s položkami %{count}
+        invalid_regex: Regulárny výraz poskytnutý pre tento selektor cesty sa nekompiloval
+        loading_directory: Načítava sa obsah adresára
+        permission_denied_prefix: 'Povolenie zamietnuté:'
+      popovers:
+        ihpc_content: Interaktívna relácia HPC vám poskytuje vyhradený prístup k jednému alebo viacerým uzlom v klastri. Je to podobné interaktívnej dávkovej relácii s prístupnou pracovnou plochou na primárnom uzle. Použite to pre náročné úlohy, ako sú dlhotrvajúce výpočtové úlohy, alebo tam, kde potrebujete vyhradené zdroje.
+        vdi_content: VDI (Virtual Desktop Interface) vám poskytuje prístup k zdieľanému uzlu z počítača. Ide o grafickú verziu prihlasovacieho uzla. Používa sa na jednoduché úlohy, ako je prístup k súborom a ich zobrazenie, odosielanie úloh a vizualizácie.
+      products:
+        fatal_error: Vyskytla sa závažná chyba
+        no_action: žiadna akcia
+      projects:
+        undetermined_size: Neurčená veľkosť
+      support_ticket:
+        delete_attachment: Odstrániť prílohu
+        no_file_selected: Nie je vybraný žiadny súbor
+        selected_file: 'Vybraný súbor: %{name} (%{size}).'
+        size_bytes: '%{size}bajtov'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Túto stránku nie je možné aktualizovať, pretože už nie ste overený. Pre opätovné prihlásenie obnovte stránku.
+        unexpected_error: Na tejto stránke sa vyskytla neočakávaná chyba. Obnovte stránku.
+      utils:
+        loading: Načítava sa.
+        loading_complete: Načítavanie dokončené.
+        popup_blocked: Tento odkaz je nakonfigurovaný tak, aby sa otváral v novom okne, ale zdá sa, že sa neotvoril. Vypnite blokovanie vyskakovacích okien pre túto stránku a skúste to znova.
+      workflows:
+        begin_from_launcher: Spustenie pracovného postupu zo spúšťača %{title}
+        bidirectional_not_allowed: Obojsmerné hrany nie sú povolené.
+        cyclic_dependency: Pridanie tejto hrany vytvorí cyklickú závislosť medzi spúšťačmi.
+        edge_aria_label: Hrana z %{from} na %{to}
+        launcher_aria_label: 'Spúšťač: %{title}'
+        launcher_exists: Spúšťač už existuje, vyberte iný spúšťač.
+        load_launcher_failed: Nepodarilo sa načítať HTML kód spúšťača. Skúste to znova.
+        no_empty_cells: Žiadne prázdne bunky mriežky nie sú k dispozícii!
+        save_failed: Nepodarilo sa uložiť pracovný postup. Podrobnosti nájdete v konzole.
+        select_launcher: Vyberte spúšťač
+      xdmod:
+        analytics_toggle: Prepínač analytiky
+        column_date: Dátum
+        column_id: Identifikácia
+        column_name: Meno
+        date_range: '%{from} až %{to}'
+        efficiency_report: '%{unit} Správa o efektívnosti'
+        ensure_logged_in_html: '%{error} Najprv sa uistite, že ste <a href="%{url}">prihlásený/á do Open XDMoD</a> a potom to skúste znova.'
+        expand_analytics_title: Kliknutím rozbalíte analytické informácie o úlohe %{id} nad touto tabuľkou.
+        fetch_user_failed: Pokus o načítanie informácií o aktuálnom používateľovi z Open XDMoD zlyhal
+        idp_redirect_failed: 'Prihlásenie zlyhalo: Presmerovanie IDP zlyhalo'
+        iframe_error: Prihlásenie do XDMoD iFrame na URL %{url} odoslalo chybové hlásenie s informáciami %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} neefektívne %{unit} </span> リーター %{total} spolu %{unit}
+        invalid_job_data: Údaje o úlohe vrátené požiadavkou sú neplatné.
+        loading_caps: NAČÍTA SA...
+        login_page_load_failed: 'Prihlásenie zlyhalo: Nepodarilo sa načítať prihlasovaciu stránku XDMoD'
+        login_timeout: 'Prihlásenie zlyhalo: Časový limit čakania na dokončenie prihlásenia'
+        metric_cpu: Procesor
+        metric_mem: Pamäť
+        metric_walltime: Walltime
+        no_data: Nie sú k dispozícii žiadne údaje.
+        not_available: Neuvedené
+        open_xdmod: Otvorte XDMoD
+        percent_efficient: '%{percent}% účinnosť'
+        percent_efficient_aria: percento účinnosti
+        percent_inefficient: '%{percent}% neefektívne'
+        percent_inefficient_aria: percento neefektívnych
+        recently_completed_jobs: Nedávno dokončené úlohy
+        unit_core_hours: základné hodiny
+        unit_core_hours_title: Základné hodiny
+        unit_jobs: pracovné miesta
+        unit_jobs_title: Pracovné miesta
+    launch: Spustenie
+    load_report: Načítať správu + %{node}
+    loading: Načítava sa...
+    loading_short: Načítava sa
+    locale_name: Slovenčina (Slovensko)
+    logo_alt_text: Vitajte v Open OnDemand
+    logout_body_html: <strong>Aby ste sa mohli „odhlásiť“, musíte úplne zatvoriť prehliadač</strong>. Ak ste po opätovnom otvorení prehliadača stále prihlásení, vymažte súbory cookie. Ak používate Chromebook alebo Chromebox, budete musieť reštartovať zariadenie, aby ste „ukončili prehliadač“ a tým sa „odhlásili“.
+    logout_tip_html: '<strong>Tip: Používanie okna „súkromného prehliadania“</strong> počas používania služby OnDemand je skvelý spôsob, ako zvládnuť „automatické odhlásenie“, pretože zatvorením okna prehliadača sa odstránia všetky súvisiace súbory cookie a informácie o relácii.'
+    logout_title: Ešte nie ste odhlásený/á
+    maximum: Maximálne
+    mem_report: Správa o pamäti + %{node}
+    minimum: Minimálne
+    mode: Režim
+    module_browser_available_modules: 'Dostupné moduly:'
+    module_browser_copy_aria: Príkaz na načítanie kópie pre %{name}
+    module_browser_dependencies: 'Závislosti:'
+    module_browser_last_updated: 'Posledná aktualizácia: %{last_updated}'
+    module_browser_load_command: 'Príkaz na načítanie:'
+    module_browser_search_label: Vyhľadávacie moduly
+    module_browser_search_placeholder: Hľadať podľa názvu modulu...
+    module_browser_select_version: (vyberte verziu)
+    module_browser_showing_results: Zobrazujú sa výsledky %{count}
+    module_browser_title: Prehliadač modulov
+    module_browser_versions: Verzie
+    motd_default_md: 'Vývoj Open OnDemand je podporovaný prostredníctvom [Národnej vedeckej nadácie](https://www.nsf.gov/)
+
+      v rámci grantov s číslami [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) a
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Zistite viac alebo sa zapojte:
+
+
+      - [Diskusia](https://discourse.openondemand.org/)
+
+      - [Repozitár Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [Repozitár ood-core](https://github.com/OSC/ood_core)
+
+      - [Dokumentácia](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD nebol správne analyzovaný alebo vykreslený: %{error_message}'
+    motd_no_messages: Nie sú žiadne nové správy.
+    motd_title: Posolstvo dňa
+    name: Meno
+    nav_all_apps: Všetky aplikácie
+    nav_develop_docs: Dokumentácia pre vývojárov
+    nav_develop_my_sandbox_apps_dev: Moje aplikácie v sandboxe (vývoj)
+    nav_develop_my_sandbox_apps_prod: Moje zdieľané aplikácie (produkcia)
+    nav_develop_title: Rozvíjať
+    nav_help_change_password: Zmena hesla HPC
+    nav_help_custom: Vlastná pomoc s navigáciou
+    nav_help_docs: Online dokumentácia
+    nav_help_support: Kontaktovať podporu
+    nav_help_support_ticket: Odoslať tiket podpory
+    nav_help_title: Pomocník
+    nav_help_two_factor: Konfigurácia dvojfaktorového overovania
+    nav_language: Jazyk
+    nav_limit_caption: zobrazuje sa %{subset_count} z %{total_count}
+    nav_logout: Odhlásiť sa
+    nav_main_menu: Hlavné menu
+    nav_restart_server: Reštartujte webový server
+    nav_sessions: Moje interaktívne stretnutia
+    nav_toggle_navigation: Prepnúť navigáciu
+    nav_user: Prihlásený ako %{username}
+    network_report: Správa o sieti + %{node}
+    node: Uzol
+    none: Žiadne
+    not_grouped: Ďalšie aplikácie
+    nsf_access_announcements: Oznámenia NSF ACCESS
+    nsf_access_events: Podujatia NSF ACCESS
+    nsf_access_outages: Výpadky prístupu NSF
+    ok: V poriadku
+    opens_in_new_tab: otvorí sa v novom okne
+    output_location: 'Umiestnenie výstupu:'
+    owner: Majiteľ
+    page_actions_aria: Akcie na stránke
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametre
+    path_selector_breadcrumb_aria: '%{title} Navigácia'
+    path_selector_caption: Vyberte súbor alebo adresár, ktorý sa má použiť vo formulári.
+    path_selector_default_popup_title: Vyberte si pracovný adresár
+    path_selector_home: domov
+    path_selector_parent_directory: nadradený adresár
+    permissions_created: Povolenie bolo úspešne vytvorené.
+    permissions_destroyed: Povolenie bolo úspešne zničené.
+    permissions_group_title: Skupinové povolenia
+    permissions_user_title: Používateľské oprávnenia
+    pinned_apps_caption_html: Odporúčaná podmnožina <a href="%{all_apps_url}">všetkých dostupných aplikácií</a>
+    pinned_apps_category: Aplikácie
+    pinned_apps_title: Pripnuté aplikácie
+    products_created: Produkt bol úspešne vytvorený.
+    products_git_commit_hint_html: Prosím, potvrďte všetky zmeny alebo pridajte potrebné súbory do <code>.gitignore</code>
+    products_git_staged: Inscenované
+    products_git_status: Stav Gitu
+    products_git_unstaged: Nepripravené
+    products_git_untracked: Nesledované
+    products_manifest_save_error: Manifest aplikácie sa nedá uložiť do %{path}
+    products_ssh_key_created: SSH kľúč bol úspešne vytvorený.
+    products_ssh_key_exists: SSH kľúč už existuje
+    products_ssh_key_failed: 'Vytvorenie SSH kľúča zlyhalo: %{error}'
+    products_type_batch_connect: Aplikácia Dávkové pripojenie
+    products_type_passenger: Aplikácia pre cestujúcich
+    products_type_passenger_meteor: Aplikácia Meteor pre cestujúcich
+    products_type_passenger_node: Aplikácia Passenger Node
+    products_type_passenger_rack: Aplikácia pre cestujúcich na pulte
+    products_type_passenger_rails: Aplikácia pre osobné železnice
+    products_type_passenger_rails_sqlite: Aplikácia pre osobné železnice s databázou SQLite
+    products_type_passenger_wsgi: Aplikácia WSGI pre cestujúcich
+    products_updated: Produkt bol úspešne aktualizovaný.
+    project: Projekt
+    project_balances: Zostatky projektu
+    project_directory: Adresár projektov
+    project_zip_error_message: 'Chyba pri vytváraní ZIP súboru: %{error}'
+    project_zip_success_message: 'Úspech: súbor project.zip bol vytvorený vo vašom adresári projektu.'
+    queue: Rad
+    quota_additional_message: Zvážte odstránenie alebo archiváciu súborov, aby ste uvoľnili miesto na disku.
+    quota_block: Používa sa %{used} z kvóty %{available}
+    quota_block_shared: (%{used_exclusive} sú tvoje)
+    quota_file: Používanie súborov %{used} s kvótou súborov %{available}
+    quota_file_shared: (Súbory %{used_exclusive} sú vaše)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Pre zobrazenie aktualizovanej kvóty obnovte stránku. Kvóty sa aktualizujú každých 5 minút.
+    quota_warning_prefix_html: Upozornenie na limit kvóty pre
+    recently_used_apps_title: Nedávno použité aplikácie
+    remove: Odstrániť
+    reset: Obnoviť
+    restart_msg_html: 'Členstvo vo vašej skupine sa zmenilo, čo ovplyvnilo váš prístup k aplikáciám. Váš ovládací panel by sa mal automaticky reštartovať.
+
+      Ak sa tak nestane, kliknite na: <a href="%{restart_url}">reštartovať webový server</a>.
+
+      '
+    restore: Obnoviť
+    root: Koreň
+    save: Uložiť
+    saved_settings_title: Uložené nastavenia
+    select: Vyberte
+    select_all: Vybrať všetko
+    select_path: Vybrať cestu
+    select_path_for: '%{element} vyberte cestu
+
+      '
+    settings_csrf_expired: Platnosť vášho bezpečnostného tokenu relácie vypršala. Skúste akciu znova.
+    settings_invalid_request: Odoslané neplatné nastavenia
+    settings_unprocessable_body_html: Vaša relácia mohla vypršať alebo bola požadovaná zmena zamietnutá. Prosím, <a href="%{dashboard_url}">vráťte sa na ovládací panel</a> a skúste to znova.
+    settings_unprocessable_title: Platnosť relácie vypršala alebo zmena bola zamietnutá
+    settings_updated: Nastavenia boli aktualizované
+    shared_apps_caption: Zdieľané používateľom %{owner_title} (%{owner})
+    shared_apps_caption_short: Zdieľané používateľom %{owner}
+    shared_apps_title: Zdieľané aplikácie
+    sharing_catalog_msg_html: <br>Podmnožinu dostupných aplikácií si môžete pozrieť na %{catalog_link_tag}.
+    sharing_catalog_title: Katalóg aplikácií
+    sharing_no_shared_apps_html: '<strong>Nie sú k dispozícii žiadne vlastné zdieľané aplikácie.</strong>
+
+      '
+    sharing_support_msg_html: 'Ak nevidíte aplikáciu, ktorú hľadáte, prosím
+
+      <a href="%{support_url}">kontaktujte podporu</a>.
+
+      '
+    sharing_welcome_msg_html: 'Aplikácie pre prístup ku klastrom sú k dispozícii z rozbaľovacích ponúk v navigačnom paneli vyššie.
+
+      <br>Vlastné zdieľané aplikácie sú k dispozícii nižšie.
+
+      '
+    shell: Škrupina
+    shell_app_title: '%{cluster_title} Prístup k shellu'
+    show: Zobraziť
+    size: Veľkosť
+    skip_navigation: Preskočiť navigáciu
+    smart_attributes:
+      account: Účet
+      auto_modules_none: Automatické moduly (žiadne nie sú zadané)
+      cluster: Klaster
+      cores: Jadrá
+      email_on_started: Chcem dostať e-mail, keď sa začne stretnutie
+      environment_variable: Premenná prostredia
+      environment_variable_key: 'Premenná prostredia: %{key}'
+      job_name: Názov úlohy
+      module_version: Verzia %{module}
+      num_cpus_single_node: Počet CPU na jednom uzle
+      num_hours: Počet hodín
+      num_nodes: Počet uzlov
+      num_processors: Počet procesorov
+      partition: Priečka
+      qos: QoS
+      queue: Rad
+      script: Skript
+      vnc_idle_help: 'Ukončiť, ak uplynie # sekúnd bez pripojenia prehliadača VNC'
+      vnc_idle_label: Časový limit nečinnosti
+      vnc_resolution_help: Rozlíšenie používajú iba natívne VNC pripojenia.
+      vnc_resolution_label: Rozlíšenie
+    soft_tabs: Mäkké záložky
+    soft_tabs_info: Mäkké tabulátory sú medzery v súbore namiesto skutočných znakov tabulátora.
+    status: Stav
+    status_completed: Dokončené
+    status_held: Držané
+    status_hold: Držať
+    status_queued: Zaradené do frontu
+    status_running: Beh
+    status_starting: Spúšťanie
+    status_suspend: Pozastaviť
+    status_suspended: Pozastavené
+    status_undetermined: Neurčené
+    stop: Zastaviť
+    submit: Odoslať
+    submit_args: 'Odoslať argumenty:'
+    support_ticket:
+      creation_success: 'E-mail s požiadavkou o podporu odoslaný na adresu: %{to}'
+      fields:
+        attachments: Prílohy
+        cc: Kópia
+        description: Popis
+        email: E-mail
+        job_description: Popis práce
+        session_description: Popis relácie
+        subject: Predmet
+        username: Používateľské meno
+      generic_error: 'Pri spracovaní vašej požiadavky sa vyskytla chyba: %{error}'
+      header: Tiket podpory
+      rt:
+        creation_success: 'V systéme RequestTracker bol vytvorený tiket podpory. ID ticketu: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'V službe ServiceNow bol vytvorený tiket podpory. Číslo: %{number}. Prílohy sa však nepodarilo pridať.'
+        creation_success: 'Tiket podpory vytvorený v ServiceNow. Číslo: %{number}'
+      submit: Odoslať tiket podpory
+      title: Tiket podpory
+      validation:
+        attachments_items: The %{id} are invalid. %{items} added, maximum number of attachments is %{max}
+        attachments_size: Súbory %{id} sú neplatné. Maximálna veľkosť prílohy je %{max}.
+        email: Formát %{id} je neplatný. Očakáva sa platná e-mailová adresa.
+        items:
+          attachments_js: Žiadne ďalšie prílohy nie sú povolené
+        required: Pole %{id} je povinné.
+        size:
+          attachments_js: Maximálna veľkosť prílohy je %{max}. Vybraná veľkosť súboru je %{size}
+      validation_error: Neplatná požiadavka. Skontrolujte chybové hlásenia nižšie.
+    support_ticket_add_attachment: Pridať prílohu
+    support_ticket_attachments_help: Kliknite na políčko a priložte súbor. Snímky obrazovky alebo iné súbory vám môžu pomôcť pri riešení problému.
+    system_apps_caption: Aplikácia nainštalovaná systémom
+    system_status_available: '%{name} Dostupné: %{count}'
+    system_status_cluster_title: Stav klastra %{title}
+    system_status_gpus: GPU
+    system_status_in_use: Používa sa %{percent}
+    system_status_jobs_queued: Úlohy zaradené do frontu
+    system_status_jobs_queued_count: '%{count} Úlohy zaradené do frontu'
+    system_status_jobs_running: Spustené úlohy
+    system_status_jobs_running_count: '%{count} Spustené úlohy'
+    system_status_nodes: Uzly
+    system_status_not_slurm: Informácie o klastroch nie sú dostupné s %{scheduler}. Momentálne sú podporované iba klastre Slurm.
+    system_status_processors: Procesory
+    toggle_notifications: Prepnúť upozornenia
+    toggle_push_notifications: Prepnúť push notifikácie
+    type: Typ
+    undefined_title: Nedefinovaný názov
+    unknown: Neznámy
+    uppy:
+      strings:
+        addMore: Pridať viac
+        addMoreFiles: Pridať ďalšie súbory
+        addingMoreFiles: Pridávanie ďalších súborov
+        back: Späť
+        browseFiles: prehliadať súbory
+        browseFolders: prehliadať priečinky
+        cancel: Zrušiť
+        cancelUpload: Zrušiť nahrávanie
+        closeModal: Zatvoriť modálne okno
+        complete: Dokončené
+        dashboardTitle: Nahrávač súborov
+        dashboardWindowTitle: Okno na nahrávanie súborov (stlačte Escape pre zatvorenie)
+        done: Hotovo
+        dropHint: Sem vložte súbory
+        dropPasteBoth: Sem presuňte súbory, %{browseFiles} alebo %{browseFolders}
+        dropPasteFiles: Presuňte súbory sem alebo %{browseFiles}
+        dropPasteFolders: Presuňte súbory sem alebo %{browseFolders}
+        editFile: Upraviť súbor
+        editing: Úprava %{file}
+        emptyFolderAdded: Z prázdneho priečinka neboli pridané žiadne súbory
+        error: Chyba
+        exceedsSize: '%{file} prekračuje maximálnu povolenú veľkosť %{size}'
+        failedToUpload: Nepodarilo sa nahrať %{file}
+        folderAlreadyAdded: Priečinok „%{folder}“ už bol pridaný
+        myDevice: Moje zariadenie
+        noDuplicates: Duplicitný súbor „%{fileName}“ sa nedá pridať, už existuje.
+        pause: Pozastaviť
+        pauseUpload: Pozastaviť nahrávanie
+        paused: Pozastavené
+        removeFile: Odstrániť súbor
+        resume: Životopis
+        resumeUpload: Obnoviť nahrávanie
+        retry: Skúsiť znova
+        retryUpload: Znova skúsiť nahrať
+        save: Uložiť
+        saveChanges: Uložiť zmeny
+        showErrorDetails: Zobraziť podrobnosti o chybe
+        upload: Nahrať
+        uploadComplete: Nahrávanie dokončené
+        uploadFailed: Nahrávanie zlyhalo
+        uploadPaused: Nahrávanie pozastavené
+        uploading: Nahrávanie
+        xTimeLeft: '%{time} odišiel'
+    user: Používateľ
+    user_configuration:
+      support_ticket_error: Súbor support_ticket je nesprávne nakonfigurovaný. Pridajte implementáciu backendu do konfiguračného súboru YAML.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand poskytuje integrovaný, jednotný prístupový bod pre všetky vaše zdroje HPC.</p>
+
+      '

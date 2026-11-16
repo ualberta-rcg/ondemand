@@ -1,0 +1,134 @@
+---
+de-DE:
+  jobcomposer:
+    account_label: 'Konto:'
+    back: Zurück
+    cancel: Stornieren
+    close: Schließen
+    cluster_label: 'Cluster:'
+    confirm_delete: Bist du sicher?
+    confirm_delete_template: Sind Sie sicher, dass Sie dies löschen möchten?
+    copy_template: Vorlage kopieren
+    create_from_path_title: Erstellen Sie einen neuen Job aus einem Pfad
+    create_new_heading_html: Erstellen Sie ein neues "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Neuen Job erstellen
+    create_template: Vorlage erstellen
+    create_template_from_job_title: Vorlage aus ausgewähltem Auftrag erstellen
+    delete: Löschen
+    delete_job_title: Löschauftrag
+    deprecation_warning_html: Der Job Composer ist veraltet und wird in Open OnDemand 5.0 entfernt. Bitte übertragen Sie Ihre Jobs und Vorlagen in den <a href="%{projects_path}">Projektmanager</a>.
+    edit: Bearbeiten
+    edit_files: Dateien bearbeiten
+    folder_contents_label: 'Ordnerinhalt:'
+    from_default_template: Aus der Standardvorlage
+    from_default_template_title: Erstellen Sie einen neuen Auftrag anhand der Standardvorlage
+    from_selected_job: Aus der ausgewählten Stelle
+    from_selected_job_title: Kopieren Sie den ausgewählten Auftrag
+    from_specified_path: Vom angegebenen Pfad
+    from_template: Aus Vorlage
+    from_template_title: Erstellen Sie einen neuen Job anhand einer Vorlage Ihrer Wahl.
+    invalid_cluster_html: Der Cluster ist ungültig! Bearbeiten Sie <a href="#" id="edit-job-options-script-link">Job Options</a>, um einen gültigen Cluster auszuwählen.
+    invalid_script_html: Das Skript ist ungültig! Bearbeiten Sie <a href="#" id="edit-job-options-link">Job Options</a>, um ein gültiges Skript auszuwählen.
+    job_already_submitted: Der Auftrag wurde bereits eingereicht.
+    job_array_request_label: 'Job-Array-Anfrage:'
+    job_attributes_heading_html: Jobattribute <strong>(Optional)</strong>
+    job_copied: Der Auftrag wurde erfolgreich kopiert.
+    job_copy_failed: 'Auftrag konnte nicht kopiert werden: %{errors}'
+    job_created: Der Auftrag wurde erfolgreich erstellt.
+    job_destroy_failed: 'Der Auftrag konnte nicht gelöscht werden: %{errors}'
+    job_destroyed: Job wurde erfolgreich zerstört.
+    job_details: Stellenbeschreibung
+    job_directory_missing: Das Stellenverzeichnis fehlt!
+    job_name_label: 'Stellenbezeichnung:'
+    job_not_submitted: Der Auftrag wurde nicht übermittelt.
+    job_stop_failed: 'Der Job konnte nicht beendet werden: %{errors}'
+    job_stopped: Der Auftrag wurde erfolgreich beendet.
+    job_submit_failed: 'Batch-Auftrag konnte nicht übermittelt werden:'
+    job_submitted: Der Auftrag wurde erfolgreich übermittelt.
+    job_updated: Der Auftrag wurde erfolgreich aktualisiert.
+    loading: Laden
+    loading_job_info: Informationen zum Ladevorgang
+    nav_help: Helfen
+    nav_jobs: Jobs
+    nav_menu_aria: Job Composer Menü
+    nav_templates: Vorlagen
+    new_job: Neuer Job
+    new_template: Neue Vorlage
+    new_template_title: Neue Vorlage erstellen
+    no_clusters_alert: Es sind keine Hosts konfiguriert, die das Einreichen von Aufträgen ermöglichen. Bitte wenden Sie sich an Ihren Systemadministrator.
+    open_dir: Öffnen Sie das Verzeichnis
+    open_dir_in_editor: Verzeichnis im Dateieditor öffnen
+    open_dir_in_file_manager: Verzeichnis im Dateimanager öffnen
+    open_dir_in_terminal: Verzeichnis im Terminal öffnen
+    open_editor: Editor öffnen
+    open_selected_job_in_terminal: Ausgewählten Auftrag im Terminal öffnen
+    open_selected_template_in_terminal: Ausgewählte Vorlage im Terminal öffnen
+    open_template_dir_in_file_manager: Vorlagenverzeichnis im Dateimanager öffnen
+    open_terminal: Terminal öffnen
+    open_xdmod: Öffne XDMoD
+    options_account_help: Das Feld „Konto“ ist optional. Falls es nicht angegeben wird, kann es vom Absendefilter automatisch festgelegt werden.
+    options_account_title: Konto
+    options_array_help: Job-Arrays sind optional. z. B. 1-10
+    options_array_help_with_clusters: 'Job-Arrays sind optional. OnDemand unterstützt derzeit keine Job-Arrays für die Cluster: %{cluster_list}.
+
+
+      '
+    options_array_title: Job-Array-Spezifikation
+    options_cluster_title: Cluster
+    options_copy_environment: Kopierumgebung
+    options_errors: Bitte beheben Sie die folgenden Fehler.
+    options_name_title: Name
+    options_script_help: Dateien, die größer als 65 KB sind, werden im Jobskriptfeld nicht berücksichtigt.
+    options_script_title: Jobskript angeben
+    options_title: Joboptionen
+    other_valid_files: Andere gültige Datei(en)
+    page_title: Job Composer - %{site}
+    path_to_source_heading_html: Pfad zur Quelle <strong>(Erforderlich)</strong>
+    reset: Zurücksetzen
+    reset_template_fields_title: Felder auf Standardwerte zurücksetzen
+    save: Speichern
+    script_contents_label: 'Skriptinhalt:'
+    script_location_label: 'Speicherort des Skripts:'
+    script_name_form_label: 'Skriptname:'
+    script_name_label: 'Skriptname:'
+    select_cluster_prompt: Wählen Sie einen Cluster aus...
+    select_template_option: -- Vorlage auswählen --
+    selected_template_details: Details zur ausgewählten Vorlage
+    show: Zeigen
+    show_batch_host_label: 'Batch-Host:'
+    show_dir_contents_label: 'Verzeichnisinhalt:'
+    show_name_label: 'Name:'
+    show_staged_dir_label: 'Inszenierte Regie:'
+    showing_job_title: Job anzeigen
+    skip_navigation: Navigation überspringen
+    source_path_help: Geben Sie den Pfad zu einem Verzeichnis im Dateisystem ein. Der Inhalt dieses Pfades wird in einen neuen Workflow kopiert.
+    source_path_label: Quellpfad
+    specify_job_host_and_script: Jobhost und Skript angeben
+    stop: Stoppen
+    stop_job_title: Job stoppen
+    submit: Einreichen
+    submit_job_title: Job einreichen
+    submit_script_title: Skript einreichen
+    submit_to_label: 'Einreichen an:'
+    suggested_files: Empfohlene Datei(en)
+    table_created: Erstellt
+    table_id: AUSWEIS
+    table_source: Quelle
+    table_status: Status
+    template_create_error: Fehler beim Erstellen der Vorlage
+    template_error_name_unique: muss einzigartig sein.
+    template_error_path_directory: muss auf ein Verzeichnis verweisen.
+    template_error_path_missing: Existiert nicht.
+    template_errors_heading:
+      one: 'Der Fehler %{count} verhinderte das Speichern dieser Vorlage:'
+      other: '%{count}-Fehler haben das Speichern dieser Vorlage verhindert:'
+    template_label: 'Vorlage:'
+    template_location_label: 'Vorlagenspeicherort:'
+    template_path_blank_help: Wenn Sie dieses Feld leer lassen, wird Ihrem neuen Template ein Standard-Jobskript hinzugefügt.
+    template_path_label: Pfad (Die Vorlage wird durch Kopieren von Dateien aus diesem Quellpfad erstellt)
+    templates_subtitle: Um einen neuen Job zu erstellen, wählen Sie eine Vorlage zum Kopieren aus, füllen Sie das Formular auf der rechten Seite aus und klicken Sie auf „Neuen Job erstellen“.
+    title: Jobkomponist
+    toggle_navigation: Navigation umschalten
+    view_files: Dateien anzeigen
+    xdmod_url_warning_message: Dieser Auftrag wird möglicherweise erst 24 Stunden nach seiner Fertigstellung in Open XDMoD angezeigt.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

@@ -163,17 +163,80 @@ class AppLocaleSyncTest < ActiveSupport::TestCase
         translator:     ->(txt, loc, _src) { "[#{loc}] #{txt}" }
       )
       sync = AppLocaleSync.new(converter: converter)
-      sync.sync_app(dir, locales: %w[ja-JP])
+      sync.sync_app(dir, locales: %w[ko-KR])
 
-      ja_data = YAML.safe_load(File.read(File.join(locales_dir, 'ja-JP.yml')))['ja-JP']
-      # ja_JP lacks dashboard.smart_attributes in base OOD, so local_dict_lookup must NOT
+      ko_data = YAML.safe_load(File.read(File.join(locales_dir, 'ko-KR.yml')))['ko-KR']
+      # ko-KR is not in built-in dashboard.smart_attributes, so local_dict_lookup must NOT
       # return the :en fallback string and must delegate to @converter instead
-      assert_equal '[ja-JP] Number of hours',
-                   ja_data.dig('form', 'attributes', 'bc_num_hours', 'label')
-      assert_equal '[ja-JP] I would like to receive an email when the session starts',
-                   ja_data.dig('form', 'attributes', 'bc_email_on_started', 'label')
-      assert_equal '[ja-JP] Shared template email help.',
-                   ja_data.dig('form', 'attributes', 'bc_email_on_started', 'help')
+      assert_equal '[ko-KR] Number of hours',
+                   ko_data.dig('form', 'attributes', 'bc_num_hours', 'label')
+      assert_equal '[ko-KR] I would like to receive an email when the session starts',
+                   ko_data.dig('form', 'attributes', 'bc_email_on_started', 'label')
+      assert_equal '[ko-KR] Shared template email help.',
+                   ko_data.dig('form', 'attributes', 'bc_email_on_started', 'help')
+    end
+  end
+
+  test 'skips Lmod module/version options, syncs view strings, and auto-generates missing locale files' do
+    Dir.mktmpdir do |dir|
+      apps_root = File.join(dir, 'apps')
+      app_dir = File.join(apps_root, 'sample_app')
+      locales_out = File.join(dir, 'locales')
+      FileUtils.mkdir_p([File.join(app_dir, 'locales'), locales_out])
+
+      File.write(File.join(app_dir, 'manifest.yml'), "name: AFNI\ncategory: Bioinformatics\n")
+      File.write(
+        File.join(app_dir, 'form.yml'),
+        <<~YAML
+          ---
+          cluster: '*'
+          form:
+            - launch_app
+            - desktop
+          attributes:
+            launch_app:
+              widget: select
+              label: AFNI Version
+              options:
+                - ["afni 23.1.08", "afni/23.1.08"]
+            desktop:
+              widget: select
+              label: Desktop Environment
+              options:
+                - ["None", "none"]
+                - ["GNOME", "gnome"]
+        YAML
+      )
+      File.write(
+        File.join(app_dir, 'locales', 'en.yml'),
+        YAML.dump('en' => { 'view' => { 'connect_hint' => 'Open Tools -> Terminal for %{pkg}.' } })
+      )
+
+      en_src = File.join(dir, 'en.yml')
+      File.write(en_src, YAML.dump('en' => { 'dashboard' => { 'locale_name' => 'English', 'save' => 'Save' } }))
+
+      converter = OodLocaleConverter.new(
+        google_api_key: '',
+        translate_url:  '',
+        translator:     ->(txt, loc, _src) { "[#{loc}] #{txt}" }
+      )
+      sync = AppLocaleSync.new(converter: converter)
+
+      generated_dash = sync.sync_dashboard_locale('ko-KR', source_file: en_src, output_dir: locales_out)
+      assert File.file?(generated_dash)
+      dash_ko = YAML.safe_load(File.read(generated_dash))['ko-KR']
+      assert_equal '[ko-KR] Save', dash_ko.dig('dashboard', 'save')
+
+      ensured = sync.ensure_supported_locales!(locales: ['ko-KR', 'en-HG'], apps_dirs: [apps_root], output_dir: locales_out)
+      assert_equal 2, ensured[:apps].size
+
+      app_ko = YAML.safe_load(File.read(File.join(app_dir, 'locales', 'ko-KR.yml')))['ko-KR']
+      assert_nil app_ko.dig('form', 'attributes', 'launch_app', 'options')
+      assert_equal({ 'none' => '[ko-KR] None' }, app_ko.dig('form', 'attributes', 'desktop', 'options'))
+      assert_equal '[ko-KR] Open Tools -> Terminal for %{pkg}.', app_ko.dig('view', 'connect_hint')
+
+      assert_equal '[ko-KR] Open Tools -> Terminal for tidyverse.',
+                   LocalizedValue.app_view_translation(app_dir, 'connect_hint', locale: :'ko-KR', pkg: 'tidyverse')
     end
   end
 end

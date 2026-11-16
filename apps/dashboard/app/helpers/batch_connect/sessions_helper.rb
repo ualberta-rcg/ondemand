@@ -4,6 +4,7 @@
 # active batch connect sessions.
 module BatchConnect::SessionsHelper
 
+  # i18n-tasks-use t('dashboard.batch_connect_sessions_connect_to')
   def render_connection(session)
     if session.running?
       if session.view
@@ -11,7 +12,7 @@ module BatchConnect::SessionsHelper
       else
         if session.vnc?
           views = []
-          views << { title: I18n.t('dashboard.batch_connect_sessions_novnc_tab'),      partial: "novnc",      locals: { connect: session.connect, app_title: session.title } }
+          views << { title: I18n.t('dashboard.batch_connect_sessions_novnc_tab'),      partial: "novnc",      locals: { connect: session.connect, app_title: session.display_title } }
           views << { title: I18n.t('dashboard.batch_connect_sessions_native_vnc_tab'), partial: "native_vnc", locals: { connect: session.connect } } if ENV["ENABLE_NATIVE_VNC"]
         else
           views = { partial: "missing_connection" }
@@ -99,7 +100,7 @@ module BatchConnect::SessionsHelper
 
     user_context = session.user_context
     params = batch_connect_app.attributes.map{|attribute| ["batch_connect_session_context[#{attribute.id}]", user_context.fetch(attribute.id, nil)]}.to_h.compact
-    title = t('dashboard.batch_connect_sessions_relaunch_full_title', title: session.title)
+    title = t('dashboard.batch_connect_sessions_relaunch_full_title', title: session.display_title)
     button_to(
       batch_connect_session_contexts_path(token: batch_connect_app.token),
       method: :post,
@@ -115,7 +116,7 @@ module BatchConnect::SessionsHelper
   end
 
   def edit(session)
-    title = t('dashboard.batch_connect_sessions_edit_title', title: session.title)
+    title = t('dashboard.batch_connect_sessions_edit_title', title: session.display_title)
     button_to(
       new_batch_connect_session_context_path(token: session.token),
       method: :get,
@@ -139,7 +140,7 @@ module BatchConnect::SessionsHelper
   end
 
   def delete(session)
-    title = t('dashboard.batch_connect_sessions_delete_full_title', title: session.title)
+    title = t('dashboard.batch_connect_sessions_delete_full_title', title: session.display_title)
     button_to(
       batch_connect_session_path(session.id),
       method: :delete,
@@ -153,7 +154,7 @@ module BatchConnect::SessionsHelper
   end
 
   def cancel(session)
-    title = t('dashboard.batch_connect_sessions_cancel_full_title', title: session.title)
+    title = t('dashboard.batch_connect_sessions_cancel_full_title', title: session.display_title)
     button_to(
       batch_connect_cancel_session_path(session.id),
       method: :post,

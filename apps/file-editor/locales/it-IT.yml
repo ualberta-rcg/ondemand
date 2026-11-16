@@ -1,0 +1,5 @@
+---
+it-IT:
+  manifest:
+    name: osc-editor
+    description: Un editor di testo per file su sistemi OSC

@@ -1,0 +1,5 @@
+---
+en-GB:
+  manifest:
+    name: Active Jobs
+    description: View jobs currently running on available clusters configured for OnDemand.

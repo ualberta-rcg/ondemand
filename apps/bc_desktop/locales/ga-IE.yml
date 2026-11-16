@@ -1,0 +1,14 @@
+---
+ga-IE:
+  manifest:
+    name: Deasc
+    description: Seolfaidh an aip seo deasc idirghníomhach ar nód ríomhaireachta amháin nó níos mó. Beidh rochtain iomlán agat ar na hacmhainní a sholáthraíonn na nóid seo. Tá sé seo cosúil le post baisce idirghníomhach.
+  form:
+    attributes:
+      desktop:
+        label: Timpeallacht Deisce
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: CÓPRAÍ
+          xfce: Xfce

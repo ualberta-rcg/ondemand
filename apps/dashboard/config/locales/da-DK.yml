@@ -1,0 +1,972 @@
+---
+da-DK:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute}-formatet er ugyldigt eller mangler'
+        invalid: '%{attribute} er ugyldig'
+        required: '%{attribute} er påkrævet'
+        used: '%{attribute} er allerede brugt'
+  dashboard:
+    account: Konto
+    actions: Handlinger
+    active_jobs: Aktive job
+    active_jobs_close_details: Luk panelet med udvidede oplysninger.
+    active_jobs_detail:
+      account: Konto
+      array_job_id: Array-job-id
+      array_task_id: Arrayopgave-id
+      cluster: Klynge
+      cluster_id: Klynge-ID
+      comment: Kommentar
+      cpu_time: CPU-tid
+      cpu_used: CPU brugt
+      current_working_directory: Nuværende arbejdsmappe
+      end_time: Sluttidspunkt
+      exec_host: Exec-vært
+      finish_time: Sluttidspunkt
+      from_host: Fra vært
+      gres: GRES
+      group_list: Gruppeliste
+      job_account: Jobkonto
+      job_checkpoint_attr: Job Checkpoint Attr
+      job_checkpoint_interval: Interval for jobtjekpunkt
+      job_deadline: Jobfrist
+      job_exec_file: Job Exec-fil
+      job_execution_time: Jobudførelsestid
+      job_gid: Job-GID
+      job_group: Jobgruppe
+      job_id: Job-ID
+      job_name: Jobnavn
+      job_priority: Jobprioritet
+      job_restart: Genstart af job
+      job_script_file: Jobscriptfil
+      job_script_size: Størrelse på jobscript
+      job_share: Jobdeling
+      job_type: Jobtype
+      job_uid: Job-UID
+      job_verify: Jobbekræftelse
+      job_version: Jobversion
+      mem: Mem
+      memory: Hukommelse
+      node_count: Knudeantal
+      node_list: Nodeliste
+      nodes: Knuder
+      none: Ingen
+      notifications: Notifikationer
+      partition: Skillevæg
+      pbs_id: PBS-id
+      pids: PID'er
+      ppn: PPN
+      project_name: Projektnavn
+      queue: Kø
+      reason: Årsag
+      reserve: Reservere
+      select: Vælge
+      start_time: Starttidspunkt
+      state: Tilstand
+      status: Status
+      submission_time: Indsendelsestidspunkt
+      swap: Byt
+      time_limit: Tidsgrænse
+      time_used: Brugt tid
+      total_cpus: Samlede CPU'er
+      total_nodes: Samlede noder
+      user: Bruger
+      virtual_memory: Virtuel hukommelse
+      walltime: Vægtid
+      walltime_used: Brugt vægtid
+    active_jobs_filter_all: Alle job
+    active_jobs_filter_user: Dine job
+    active_jobs_ganlia_CPU: Ganglierbillede til CPU.
+    active_jobs_ganlia_load: Ganglierbillede for systembelastningsgennemsnit.
+    active_jobs_ganlia_mem: Ganglierbillede til hukommelsesbrug.
+    active_jobs_ganlia_network: Ganglierbillede til netværksbrug.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> se alle (%{number_of_sessions})</a>
+    active_sessions_title: Aktive interaktive sessioner
+    add: Tilføje
+    all_apps_table_app_column: Navn
+    all_apps_table_category_column: Kategori
+    all_apps_table_sub_category_column: Underkategori
+    all_clusters: Alle klynger
+    announcements_dismissible_button: Okay
+    announcements_parse_error: Fejl ved parsing af meddelelsen.
+    announcements_render_error: Kunne ikke gengive meddelelsen '%{name}' på grund af fejl
+    announcements_required_button: Acceptere
+    apps_setup_failure_html: "<h2>A problem occurred while initializing your data for this app.</h2>\n<p class=\"lead\">\n  At your own risk you can still <a href=\"%{app_url}\">open the app</a>\n  or you can just go <a href=\"%{home_url}\">back to the dashboard</a>\n</p>\n<p>\n  Share this with the developer of your app:\n  The setup production script is supposed to be idempotent and is run each time\n  the user opens the app through the dashboard.</p>\n<h4>Exception: %{exception_class}</h4>\n<pre>%{exception_message}</pre>\n<h4>Stack trace:</h4>\n<pre>%{exception_trace}</pre>\n"
+    apps_system_apps_title: Systemapps
+    auto_log_location_title: Logplacering
+    back: Tilbage
+    balance_additional_message: Overvej at anmode om yderligere %{balanace_units}
+    balance_message: '%{units_balance} er %{value}'
+    balance_no_warnings: Ingen projekter er inden for %{threshold} dages saldoadvarselstærsklen.
+    balance_reload_message_html: Genindlæs siden for at se den opdaterede saldo. Saldi opdateres dagligt. <br>Sidste opdatering var %{last_update}
+    balance_warning_prefix_html: '%{units_balance} advarsel for'
+    batch_connect_active_sessions_aria: Aktive sessioner
+    batch_connect_app_version: 'version: %{version}'
+    batch_connect_apps_menu_aria: Menuen for interaktive apps
+    batch_connect_apps_menu_title: Interaktive apps
+    batch_connect_form_attr_cache_error: Tidligere cachelagrede værdier kan ikke bruges, standardværdier bruges i stedet. (%{error_message})
+    batch_connect_form_choose_template_name: Vælg et skabelonnavn
+    batch_connect_form_data_root: data rodmappe
+    batch_connect_form_dynamic_disclaimer: Følgende formular kan ændres dynamisk, efterhånden som der vælges muligheder. Alle ændringer vil blive annonceret og kan fortrydes.
+    batch_connect_form_invalid: Form.yml mangler valgmuligheder i formularfeltet %{id}.
+    batch_connect_form_launch: Lancering
+    batch_connect_form_prefill: Brug gemte indstillinger
+    batch_connect_form_prefill_error: Ups... Der er noget galt med din skabelon
+    batch_connect_form_reset_resolution: Nulstil opløsning
+    batch_connect_form_resolution_height: Opløsningshøjde (pixels)
+    batch_connect_form_resolution_width: Opløsningsbredde (pixels)
+    batch_connect_form_save: Gem indstillinger
+    batch_connect_form_save_new_template: gem nye indstillinger
+    batch_connect_form_save_submit: Gem indstillinger og luk
+    batch_connect_form_select_template: vælg gemte indstillinger
+    batch_connect_form_session_data_html: '* %{title}-sessionsdataene for denne session kan tilgås under %{data_link_tag}.'
+    batch_connect_form_template_name_label: indstillingsnavn
+    batch_connect_form_type_new_name: Navn på appindstillinger
+    batch_connect_form_type_new_name_error: Indtast venligst et gyldigt navn for at fortsætte
+    batch_connect_invalid_form_array: '''form''-elementet i form.yml er ikke et array'
+    batch_connect_invalid_form_attributes: '''attributes''-elementet i form.yml er ikke et kort'
+    batch_connect_missing_cluster: 'Klyngen blev aldrig sat. Enten sat den i form.yml.erb med `cluster` eller `form.cluster` eller
+
+      sat `cluster` i submit.yml.erb.'
+    batch_connect_no_apps: Der er ingen tilgængelige interaktive apps.
+    batch_connect_no_sessions: Du har ingen aktive sessioner.
+    batch_connect_sandbox: '[Sandkasse]'
+    batch_connect_sessions_cancel_confirm: Er du sikker?
+    batch_connect_sessions_cancel_full_title: Annuller %{title}-session
+    batch_connect_sessions_cancel_title: Ophæve
+    batch_connect_sessions_connect_to: Forbind til %{app_title}
+    batch_connect_sessions_connection_render_error: Kan ikke gengive forbindelsesknappen fra view.html.erb på grund af fejlen '%{error}'
+    batch_connect_sessions_data_html: '%{title}-sessionsdataene for denne session kan tilgås under %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Er du sikker?
+    batch_connect_sessions_delete_full_title: Slet %{title}-session
+    batch_connect_sessions_delete_hover: Slet session
+    batch_connect_sessions_delete_title: Slet
+    batch_connect_sessions_edit_title: Rediger ny %{title} med disse sessionsparametre
+    batch_connect_sessions_error_invalid_job_name_html: Hvis dette job ikke kunne sendes på grund af et ugyldigt jobnavn, bedes du bede din administrator om at konfigurere OnDemand til at indstille miljøvariablen OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Kunne ikke stage skabelonen med følgende fejl:'
+    batch_connect_sessions_errors_submission: 'Kunne ikke sende sessionen med følgende fejl:'
+    batch_connect_sessions_native_vnc_tab: Indfødte instruktioner
+    batch_connect_sessions_novnc_compression: Kompression
+    batch_connect_sessions_novnc_compression_help: 1 (lav) til 9 (høj)
+    batch_connect_sessions_novnc_launch: Start %{app_title}
+    batch_connect_sessions_novnc_quality: Billedkvalitet
+    batch_connect_sessions_novnc_quality_help: 0 (lav) til 9 (høj)
+    batch_connect_sessions_novnc_tab: noVNC-forbindelse
+    batch_connect_sessions_novnc_view_only: Kun visning (delbart link)
+    batch_connect_sessions_path_selector_forbidden_error: Du har ikke tilladelse til at vælge den mappe eller fil.
+    batch_connect_sessions_relaunch_full_title: Genstart %{title}-session
+    batch_connect_sessions_relaunch_title: Genstart
+    batch_connect_sessions_staged_root: iscenesat rodmappe
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} kerne'
+      other: '%{count} kerner'
+    batch_connect_sessions_stats_created_at: 'Oprettet på:'
+    batch_connect_sessions_stats_expected_time: 'Forventet start:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPU''er'
+    batch_connect_sessions_stats_host: 'Vært:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count}-node'
+      other: '%{count} noder'
+    batch_connect_sessions_stats_session_dir_link_title: Åbn sessionsmappe for %{session_id}
+    batch_connect_sessions_stats_session_id: 'Sessions-ID:'
+    batch_connect_sessions_stats_support_ticket: Problemer med denne session?
+    batch_connect_sessions_stats_support_ticket_link_text: Indsend supportsag
+    batch_connect_sessions_stats_time_remaining: 'Resterende tid:'
+    batch_connect_sessions_stats_time_requested: 'Ønsket tid:'
+    batch_connect_sessions_stats_time_used: 'Brugt tid:'
+    batch_connect_sessions_stats_undetermined_host: Ubestemt
+    batch_connect_sessions_status_bad: Din session er gået i en dårlig tilstand. Du er velkommen til at kontakte support for yderligere information.
+    batch_connect_sessions_status_blurb_cancel_failure: Sessionen kunne ikke annulleres.
+    batch_connect_sessions_status_blurb_cancel_success: Sessionen blev annulleret.
+    batch_connect_sessions_status_blurb_create_success: Sessionen blev oprettet.
+    batch_connect_sessions_status_blurb_delete_failure: Kunne ikke slette sessionen.
+    batch_connect_sessions_status_blurb_delete_success: Sessionen blev slettet.
+    batch_connect_sessions_status_completed: Til fejlfinding vil dette kort blive opbevaret i %{days} dage mere
+    batch_connect_sessions_status_missing_connection: Denne app mangler de oplysninger, der kræves for at oprette en forbindelse. Mere specifikt mangler filen view.html.erb. Kontakt venligst support, hvis du ser denne meddelelse.
+    batch_connect_sessions_status_queued: Vær tålmodig, da dit job i øjeblikket står i kø. Ventetiden afhænger af antallet af kerner samt den ønskede tid.
+    batch_connect_sessions_status_starting: Din session starter i øjeblikket ... Vær tålmodig, da denne proces kan tage et par minutter.
+    batch_connect_sessions_word: Session
+    batch_connect_validation:
+      app_not_found: Denne app findes ikke i mappen '%{root}'
+      inaccessible_clusters: Denne app kræver klynger, der ikke findes, eller som du ikke har adgang til.
+      missing_form_file: Denne app leverer ikke en formularfil under mappen '%{root}'
+      missing_sub_app_form_file: Denne app leverer ikke en underappformularfil under mappen '%{root}'
+      no_cluster_specified: Denne app angiver ingen klynge.
+    bc_saved_settings:
+      delete_confirm: Er du sikker?
+      delete_title: Slet %{settings_name} gemte indstillinger
+      deleted_message: Gemte indstillinger %{settings_name} slettet.
+      edit_title: Rediger %{settings_name} gemte indstillinger
+      launch_title: Start %{app_title} med %{settings_name} parametre
+      missing_settings: Valgte gemte indstillinger blev ikke fundet.
+      no_settings_title: Du har ingen gemte indstillinger.
+      outdated_message: '%{app_title}-parametrene er ændret, siden disse indstillinger blev oprettet.'
+      saved_message: '%{settings_name} indstillinger gemt'
+      settings_values_label: Værdier
+      title: Gemte indstillinger
+    breadcrumb_aria: Brødkrumme
+    breadcrumbs_all_apps: Alle apps
+    breadcrumbs_home: Hjem
+    breadcrumbs_my_sessions: Mine interaktive sessioner
+    breadcrumbs_support_ticket: Supportanmodning
+    browser_warning: OnDemand kræver en nyere version af den browser, du bruger. Nuværende browserkrav inkluderer IE Edge, Firefox 19+, Chrome 34+ og Safari 8+.
+    cancel: Ophæve
+    categories:
+      apps: Apps
+      bioinformatics: Bioinformatik
+      clusters: Klynger
+      data_science: Datavidenskab
+      desktop: Skrivebord
+      desktops: Stationære computere
+      development: Udvikling
+      external_apps: Eksterne apps
+      files: Filer
+      gateway_apps: Gateway-apps
+      guis: GUI'er
+      interactive_apps: Interaktive apps
+      jobs: Job
+      machine_learning: Maskinlæring
+      mathematics: Matematik
+      servers: Servere
+      utilities: Forsyningsvirksomheder
+      virtual_desktop_interface: Virtuelt skrivebordsgrænseflade
+      visualization: Visualisering
+    clear: Klar
+    close: Tæt
+    close_alert: Luk denne alarm.
+    close_notice: Luk denne meddelelse.
+    cluster: Klynge
+    copy: Kopi
+    copy_suffix: (Kopi)
+    cpu_report: CPU-rapport + %{node}
+    custom_pages:
+      invalid: 'Ugyldig sidekode: %{page}. Denne side er ikke blevet konfigureret.'
+    date: Dato
+    delete: Slet
+    detailed_metrics: Detaljerede målinger
+    details: Detaljer
+    development_apps_caption: Sandkasse-app
+    development_apps_category: Sandkasse-apps
+    development_delete_app: Slet app
+    development_edit_title: Rediger %{title}
+    development_launch_title: Start %{title}
+    directory: Vejviser
+    edit: Redigere
+    editor_default: Misligholdelse
+    editor_font_size: Skriftstørrelse
+    editor_key_bindings: Tastebindinger
+    editor_theme: Tema
+    editor_theme_bright: Lys
+    editor_theme_dark: Mørk
+    editor_wrap: Indpakning
+    error_details: 'Detaljer:'
+    error_internal_body_html: Prøv igen om et par øjeblikke. Hvis du fortsætter med at se denne fejl, bedes du <a href="%{support_url}">kontakte support</a>.
+    error_internal_title: Intern serverfejl
+    error_not_found_body: Den side, du leder efter, findes ikke.
+    error_not_found_title: Ikke fundet
+    favorites: Favoritter
+    file: Fil
+    file_editor: Filredigeringsprogram
+    file_quotas: Filkvoter
+    files: Filer
+    files_change_directory: Skift mappe
+    files_contents_of_directory: Indhold af mappen %{path}
+    files_copy_move: Kopiér/Flyt
+    files_copy_path: Kopiér sti
+    files_directory_contents_aria: Indhold af mappen
+    files_directory_download_error_modal_title: Mappen er for stor til at downloade
+    files_directory_download_unauthorized: Du kan kun downloade en fil eller mappe, som du har læse- og udføreadgang til
+    files_directory_size_calculation_error: Timeout under forsøg på at bestemme mappestørrelsen.
+    files_directory_size_calculation_timeout: Timeout under forsøg på at bestemme mappestørrelsen.
+    files_directory_size_unknown: 'Fejl med status %{exit_code} ved forsøg på at bestemme mappestørrelsen: %{error}'
+    files_directory_too_large: Mappen er for stor til at kunne downloades som en zip-fil. Mappen skal være mindre end %{download_directory_size_limit} bytes.
+    files_doesnt_exist: '%{path} findes ikke.'
+    files_download: Download
+    files_download_not_enabled: Download af filer er ikke aktiveret på denne server.
+    files_download_zip: Download som zip
+    files_exceeds_editor_limit: '%{path} overskrider redigeringsgrænsen på %{limit}. Download venligst filen for at redigere eller se den lokalt.'
+    files_file_too_large: Filen er for stor til at downloade. Fildownloads skal være mindre end %{download_file_size_limit} bytes.
+    files_go_up_directory: Gå op i kataloget
+    files_modified_at: Ændret kl.
+    files_modify_aria: Rediger filer
+    files_new_directory: Ny mappe
+    files_new_file: Ny fil
+    files_not_editable: '%{path} er ikke en redigerbar fil'
+    files_not_readable: Du har ikke tilstrækkelige tilladelser til at læse '%{path}'.
+    files_open_in_files_app: Åbn i fil-appen
+    files_open_in_globus: Åben i Globus
+    files_path_breadcrumbs_aria: Sti-brødkrummer
+    files_refresh: Opfriske
+    files_remote_dir_not_created: Oprettede ikke mappen %{path}
+    files_remote_disabled: Fjernfilunderstøttelse er ikke aktiveret
+    files_remote_empty_dir_unsupported: Fjernbetjeningen understøtter ikke tomme mapper
+    files_remote_error_listing_remotes: 'Fejl ved liste over Rclone-fjernbetjeninger: %{error}'
+    files_send_to_target_title_default: Send metadata for valgte filer til den eksterne applikation
+    files_shell: Åbn i terminalen
+    files_shell_dropdown: Vælg klynge, der skal åbnes i terminalen
+    files_title: Filgennemgang
+    files_upload: Upload
+    footer_contribute: Bidrag på GitHub
+    footer_license: Meddelelse om softwarelicens
+    footer_open_source: Åben kildekode-software.
+    footer_powered_by: Drevet af Open OnDemand
+    footer_version: 'OnDemand-version: %{version}'
+    home_directory: Hjemmesidekatalog
+    id: ID
+    import: Importere
+    job: Job
+    job_info: Jobinfo
+    jobs_back_to_projects: Tilbage til Projekter
+    jobs_clear_form_fields: Ryd formularfelter
+    jobs_completed_jobs: Færdige job
+    jobs_create_blank_project: Opret et nyt projekt
+    jobs_create_blank_workflow: Ny arbejdsgang
+    jobs_create_template_project: Opret et nyt projekt fra en skabelon
+    jobs_import_shared_project: Importér et delt projekt
+    jobs_launchers: Launchere
+    jobs_launchers_add_select_option: Tilføj valgmulighed %{name}
+    jobs_launchers_cannot_find: Kan ikke finde launcheren %{id}
+    jobs_launchers_clone: Klonstarter %{name}
+    jobs_launchers_created: Launcheren er oprettet!
+    jobs_launchers_default_created: En 'hello_world.sh' blev også tilføjet til dette projekt.
+    jobs_launchers_delete: Slet launcher %{name}
+    jobs_launchers_delete_script_confirmation: Slet alt indhold af launcheren?
+    jobs_launchers_deleted: Launcheren er slettet!
+    jobs_launchers_edit: Rediger formular til launcher %{name}
+    jobs_launchers_edit_form_item: Rediger formularelement %{label}
+    jobs_launchers_editing: Redigering af %{title}
+    jobs_launchers_fixed_field: Fast værdi
+    jobs_launchers_fixed_field_help: Fastgør den aktuelle værdi
+    jobs_launchers_max_value_label: Maksimal værdi for talfeltet %{label}
+    jobs_launchers_min_value_label: Minimumsværdi for talfeltet %{label}
+    jobs_launchers_name: Launcher-navn
+    jobs_launchers_new_field_select: Vælg det element, der skal tilføjes til formularen
+    jobs_launchers_not_found: Kan ikke finde launcheren %{launcher_id}
+    jobs_launchers_preview_form_item: Forhåndsvisning af formularelement %{label}
+    jobs_launchers_remove_form_item: Fjern formularelement %{label}
+    jobs_launchers_remove_select_option: Fjern valgmulighed %{name}
+    jobs_launchers_save_form: Gem formular
+    jobs_launchers_save_form_item: Gem ændringer til formularelement %{label}
+    jobs_launchers_show_form: Vis formular for launcher %{name}
+    jobs_launchers_submit_launcher_title: Start script med cachelagrede værdier eller standardværdier for launcher %{name}
+    jobs_launchers_submitted: Job %{job_id} blev indsendt.
+    jobs_launchers_updated: Launcher-manifestet er opdateret!
+    jobs_native_dependency: Jobbet afhænger af job-id%{dependency}
+    jobs_native_reason: på grund af '%{reason}'
+    jobs_native_state: Aktuel jobstatus er '%{state}'
+    jobs_new_launcher: Ny launcher
+    jobs_new_project: Nyt projekt
+    jobs_project_cannot_find: 'Kan ikke finde projektet: %{project_id}'
+    jobs_project_clear_form_fields: Ryd formularfelter
+    jobs_project_created: Projektet er oprettet!
+    jobs_project_delete_label: Slet projekt %{name}
+    jobs_project_delete_project_confirmation: Slet alt indhold af projektmappen?
+    jobs_project_deleted: Projektet er slettet!
+    jobs_project_description_placeholder: Projektbeskrivelse
+    jobs_project_directory_error: Der er ikke angivet en sti til projektmappen for denne arbejdsgang
+    jobs_project_directory_help_html: 'Lad feltet stå tomt, og en ny mappe vil blive oprettet. <br />Standardplacering: %{root_directory}'
+    jobs_project_directory_placeholder: Absolut sti til projektmappen
+    jobs_project_edit_label: Rediger projekt %{name}
+    jobs_project_generic_error: 'Der opstod en fejl under behandlingen af din anmodning: %{error}'
+    jobs_project_group_help: Sørg for at vælge den gruppe, der inkluderer alle tiltænkte samarbejdspartnere. Hvis dette ikke er et samarbejdsprojekt, anbefales standardgruppen.
+    jobs_project_group_owner: Gruppe
+    jobs_project_imported: Projektet er importeret!
+    jobs_project_invalid_configuration_clusters: En HPC-klynge er påkrævet. Kontakt din administrator for at tilføje en til systemet.
+    jobs_project_invalid_configuration_scripts: Et eksekverbart script er påkrævet til dit projekt. Upload et script ved hjælp af filapplikationen.
+    jobs_project_job_deleted: Job %{job_id} blev slettet
+    jobs_project_job_not_deleted: Kan ikke slette jobbet %{job_id}
+    jobs_project_job_stopped: Jobbet er stoppet med succes %{job_id}
+    jobs_project_list_aria: Projektliste
+    jobs_project_manager: Projektleder
+    jobs_project_manifest_updated: Projektmanifest opdateret!
+    jobs_project_name_placeholder: Projektnavn
+    jobs_project_name_validation: Projektnavnet må kun indeholde bogstaver, cifre, bindestreger, understregninger og mellemrum
+    jobs_project_not_found: Kan ikke finde projekt %{project_id}
+    jobs_project_open_label: Åbn projekt %{name}
+    jobs_project_remove_label: Fjern projekt %{name}
+    jobs_project_removed: Projekt fjernet fra opslag!
+    jobs_project_return_to_projects: Tilbage til projektsiden
+    jobs_project_save_error: Kan ikke gemme manifestet til %{path}
+    jobs_project_save_project_title: Gem projekt
+    jobs_project_select_directory: Vælg projektmappe
+    jobs_project_setgid_help: Hvis setgid er markeret, sikrer det, at projektfiler oprettes med den valgte gruppe. Dette påvirker ikke projekter i din hjemmemappe.
+    jobs_project_validation_error: Ugyldig anmodning. Gennemgå venligst fejlene nedenfor
+    jobs_return_to_projects: Tilbage til projektsiden
+    jobs_save_project_title: Gem projekt
+    jobs_select_directory_placeholder: Klik på projektet for at importere
+    jobs_toggle_details: Klik for at slå detaljer til/fra for job %{job_id}
+    jobs_workflow_add_launcher: Tilføj launcher
+    jobs_workflow_canvas_aria: lærred
+    jobs_workflow_clone: Klon-arbejdsgang %{name}
+    jobs_workflow_connect_launchers: Forbind Launchers
+    jobs_workflow_created: Arbejdsgangen er oprettet!
+    jobs_workflow_delete_confirmation: Slet alt indhold af arbejdsgangen?
+    jobs_workflow_delete_edge: Slet kant
+    jobs_workflow_delete_edge_title: Slet den markerede kant (Del/Backspace)
+    jobs_workflow_delete_launcher: Slet launcher
+    jobs_workflow_delete_launcher_title: Slet den valgte launcher (Del/Backspace)
+    jobs_workflow_delete_title: Slet arbejdsgang %{name}
+    jobs_workflow_deleted: Arbejdsgangen er slettet!
+    jobs_workflow_description_placeholder: Beskrivelse af arbejdsgangen
+    jobs_workflow_edit_settings: Rediger indstillinger for arbejdsgang %{name}
+    jobs_workflow_editing: 'Redigering: %{name}'
+    jobs_workflow_enable_sync_key: Aktiver OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Arbejdsgangen mislykkedes med fejlen %{error}
+    jobs_workflow_help: Klik på titlen for at vælge og trække. Forbind ved at klikke på to launchere med 'Forbind launchere' valgt.
+    jobs_workflow_manifest_updated: Arbejdsgangsmanifest opdateret!
+    jobs_workflow_missing_launchers: vælg mindst %{count}
+    jobs_workflow_name_placeholder: Navn på arbejdsgang
+    jobs_workflow_name_validation: Navnet på arbejdsgangen må kun indeholde bogstaver, cifre, bindestreger, understregninger og mellemrum
+    jobs_workflow_not_found: Kan ikke finde arbejdsgangen %{workflow_id}
+    jobs_workflow_pick_launchers: Pick Launchers
+    jobs_workflow_show_graph: Åbn arbejdsgangen %{name} i grafeditoren
+    jobs_workflow_submitted: Arbejdsgangen er blevet indsendt!
+    jobs_workflow_sync_key_help: Når den er aktiveret, modtager hver launcher i denne arbejdsgang den samme <code>OOD_WORKFLOW_SYNC_KEY</code> miljøvariabel (et tilfældigt token, der er unikt for hver arbejdsgangskørsel). Nyttigt til at generere synkroniserede filnavne, låsefiler eller delte identifikatorer på tværs af afhængige job.
+    jobs_workflow_synchronization: Synkronisering
+    jobs_workflow_toolbar_aria: værktøjslinjen
+    jobs_workflow_zoom_controls: Zoomkontroller
+    jobs_workflow_zoom_in: Zoom ind
+    jobs_workflow_zoom_out: Zoom ud
+    jobs_workflow_zoom_reset: Nulstil zoom
+    jobs_workflows: Arbejdsgange
+    jobs_workflows_not_supported: Arbejdsgange understøttes ikke af den konfigurerede planlægger.
+    js:
+      active_jobs:
+        delete_aria: Slet job %{name} med ID %{id}
+        delete_confirm: Er du sikker på, at du vil slette %{name} - %{id}
+        delete_title: Slet job
+        details_loaded: Liste over joboplysninger er indlæst.
+        load_details_failed: Kunne ikke indlæse joboplysninger.
+        remote_server_error: Der opstod en fejl ved hentning af data fra den eksterne server.
+        request_failed_parse: Anmodning om job mislykkedes på grund af en fejl i brødtekstparsing.
+        request_failed_status: 'Anmodning om job mislykkedes med statuskode: %{status}'
+        status_completed: Færdiggjort
+        status_hold: Holde
+        status_queued: I kø
+        status_running: Løb
+        status_suspended: Suspenderet
+        status_undetermined: Ubestemt
+        support_ticket_aria: Indsend supportbillet til job med ID %{id}
+        support_ticket_title: Indsend supportsag
+        toggle_details_aria: Slå synlighed af job %{name} til/fra på %{cluster}
+      batch_connect:
+        allow_notifications: Giv venligst notifikationstilladelser i din browser for at aktivere sessionsalarmer.
+        invalid_prefill_value_html: 'Ugyldig værdi: "%{value}" for feltet "%{field}".<br>'
+        notification_permission_error: 'Fejl ved anmodning om tilladelse til notifikationer:'
+        resolution_reset: Opløsningen er nulstillet til %{width} med %{height} pixels.
+        session_expires_warning: 'Advarsel: %{title} (%{job_id}) udløber om ~%{minutes} minutter!'
+        session_status_aria: '%{title} er nu %{status}.'
+        session_status_push: '%{title} (%{job_id}) er nu %{status}.'
+      common:
+        cancel: Ophæve
+        close: Tæt
+        error: Fejl
+        loading: Indlæser...
+        ok: Okay
+      datatables:
+        all: Alle
+        filter_label: 'Filter:'
+        invalid_date: Ugyldig dato
+        rows_selected:
+          one: '%{count} række valgt'
+          other: '%{count} rækker valgt'
+        showing_filtered_rows: Viser %{display} af %{total} rækker
+        showing_rows: Viser %{display} rækker
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: og
+        changed_help: Ændrede hjælpetekst på %{widget} til %{help}
+        changed_label: Ændrede etiket på %{widget} til det nye etiket %{label}
+        current_value: Indstil den aktuelle værdi til %{value}
+        hid_item: Skjult formularelement %{widget}
+        maximum_limit: maksimal grænse til %{value}
+        minimum_limit: minimumsgrænse til %{value}
+        option_disabled: Valgmulighed %{value} deaktiveret for %{widget}
+        option_enabled: Valgmulighed %{value} aktiveret for %{widget}
+        revealed_item: Afsløret formularelement %{widget}
+        selected_option_disabled: Den valgte mulighed %{value} er deaktiveret for %{widget}
+        set_limits: Indstil %{details} til %{widget}
+        set_value: Sæt %{widget} til værdien %{value}
+        widget_no_label: '%{type} uden etiket'
+        widget_with_label: '%{type} med etiketten %{label}'
+      editor:
+        save_error: 'Der opstod en fejl under forsøget på at gemme denne fil!
+
+          %{error}'
+        unsaved_changes: Du har ikke-gemte ændringer!
+      files:
+        action_delete: Slet
+        action_download: Download
+        action_edit: Redigere
+        action_rename: Omdøb
+        action_view: Udsigt
+        actions: Handlinger
+        cannot_navigate_file: Kan ikke navigere til en fil.
+        change_directory: Skift mappe
+        clipboard_description_html: 'Kopiér eller flyt filerne nedenfor fra <code>%{from}</code> til den aktuelle mappe:'
+        contents_of_directory: Indhold af mappen %{path}
+        copied_path: Kopieret sti til udklipsholder!
+        copy: Kopi
+        create_directory_error: 'Der opstod en fejl under forsøg på at oprette en ny mappe: %{error}'
+        create_file_error: 'Der opstod en fejl under forsøg på at oprette en ny fil: %{error}'
+        delete_confirm_text: 'Er du sikker på, at du vil slette filerne: %{files}'
+        delete_multiple_title: Slet %{count} valgte filer?
+        delete_single_title: Slet %{name}?
+        deleting_files: 'Sletter filer...:'
+        directory: vejviser
+        directory_name_label: Katalognavn
+        download_error: 'Fejl under download: %{error}'
+        duplicate_files_warning: Der er identificeret duplikerede filer. Upload af disse filer vil overskrive eksisterende indhold.
+        file: fil
+        filename_invalid_chars: Filnavnet må ikke indeholde / eller ..
+        filename_label: Filnavn
+        globus_open: Åbn den aktuelle mappe med Globus
+        globus_unavailable: Intet Globus-slutpunkt tilknyttet denne mappe
+        illegal_slash_in_filename: Ulovligt tegn (/) er ikke tilladt i filnavn.
+        move: Flytte
+        navigated_to: navigerede til %{path}
+        new_directory_title: Ny mappe
+        new_file_title: Ny fil
+        path_label: Sti
+        poll_status_error: Handlingen er muligvis ikke udført. Status for filhandling kunne ikke hentes.
+        preparing_download_dir: 'Forbereder download af mappe: %{name}'
+        provide_absolute_pathname: Angiv et absolut stinavn
+        provide_directory_name: Angiv et mappenavn, der ikke indeholder /
+        provide_non_empty_filename: Angiv et filnavn, der ikke er tomt.
+        provide_rename_filename: Angiv et filnavn at omdøbe dette til
+        rename_title: Omdøb
+        see_details: Se detaljer
+        select_row: Vælg række
+        select_to_copy_move: Vælg en fil, filer eller mappe, der skal kopieres eller flyttes. Du har ikke valgt nogen.
+        select_to_delete: Vælg en fil, filer eller mappe, der skal slettes. Du har ikke valgt nogen.
+        select_to_download: Vælg en fil, filer eller mappe, der skal downloades. Du har ikke valgt nogen.
+        select_to_send: Vælg mindst én fil eller mappe, der skal sendes.
+        send_failed: Filoplysningerne kunne ikke sendes.
+        sent_successfully: Valgte filoplysninger blev sendt.
+        show_dotfiles: Vis punktfiler
+        show_owner_mode: Vis ejer/tilstand
+        summary_copy_files: kopiér filer
+        summary_move_files: flyt filer
+        summary_remove_files: fjern filer
+        summary_rename_file: omdøb fil
+        token_missing_expired: Applikationstoken mangler eller er udløbet. Start forfra.
+        transfer_error: 'Der opstod en fejl under forsøg på at %{summary}: %{error}'
+        upload_and_overwrite: Upload og overskriv
+        upload_count:
+          one: Upload %{count}-fil
+          other: Upload %{count} filer
+        upload_new_files: Upload nye filer
+        uppy_empty_dir_note: Tomme mapper vil kun blive inkluderet i uploaden, når en mappupload startes via træk og slip. Dette skyldes, at File and Directory Entries API'en kun er tilgængelig ved en slip-hændelse, ikke under en inputændringshændelse.
+      icon_picker:
+        icon_selected: '%{icon} ikon valgt'
+        icon_sr: '%{name} ikon'
+      launcher_edit:
+        account_help: Den konto, som jobbet skal indsendes med.
+        account_label: Konto
+        add_new_option: Tilføj ny mulighed
+        cores_help: Hvor mange kerner jobbet vil køre på.
+        cores_label: Kerner
+        env_var_help: Tilføj en miljøvariabel.
+        env_var_key: 'Miljøvariabel: %{name}'
+        env_var_label: Miljøvariabel
+        hours_help: Hvor længe jobbet kan vare.
+        hours_label: Timer
+        job_name_help: Det navn jobbet vil have.
+        job_name_label: Jobnavn
+        log_location_help: Destinationen for jobbets logoutput.
+        log_location_label: Logplacering
+        no_more_options: Ingen flere muligheder
+        nodes_help: Hvor mange noder jobbet vil køre på.
+        nodes_label: Knuder
+        queues_help: Hvilken kø jobbet vil sende.
+        queues_label: Køer
+      module_browser:
+        copied: Kopieret!
+        copy: Kopi
+        showing_results:
+          one: Viser %{count} resultat
+          other: Viser %{count} resultater
+      nsf_access:
+        affected_resources: 'Berørte ressourcer: %{resources}'
+        read_more: Læs mere
+        register_event: Tilmeld dig denne begivenhed
+      path_selector:
+        directory_loaded: Mappen er indlæst med %{count} elementer
+        invalid_regex: Det regulære udtryk, der er angivet for denne stivælger, blev ikke kompileret
+        loading_directory: Indlæser mappeindhold
+        permission_denied_prefix: 'Tilladelse nægtet:'
+      popovers:
+        ihpc_content: En interaktiv HPC-session giver dig dedikeret adgang til en eller flere noder i klyngen. Dette svarer til en interaktiv batchsession med et tilgængeligt skrivebord på den primære node. Brug dette til tunge opgaver såsom langvarige beregningsopgaver eller hvor du har brug for dedikerede ressourcer.
+        vdi_content: En VDI (Virtual Desktop Interface) giver dig adgang til en delt node fra skrivebordet. Dette er den grafiske version af en login-node. Brug den til lette opgaver som at få adgang til og se filer, sende job og visualiseringer.
+      products:
+        fatal_error: Der er opstået en fatal fejl
+        no_action: ingen handling
+      projects:
+        undetermined_size: Ubestemt størrelse
+      support_ticket:
+        delete_attachment: Slet vedhæftet fil
+        no_file_selected: Ingen fil valgt
+        selected_file: 'Valgt fil: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Denne side kan ikke opdateres, fordi du ikke længere er godkendt. Opdater siden for at logge ind igen.
+        unexpected_error: Der er opstået en uventet fejl på denne side. Opdater venligst siden.
+      utils:
+        loading: Indlæser.
+        loading_complete: Indlæsning fuldført.
+        popup_blocked: Dette link er konfigureret til at åbne i et nyt vindue, men det ser ikke ud til at være åbnet. Deaktiver venligst din popup-blokering for denne side, og prøv igen.
+      workflows:
+        begin_from_launcher: Start arbejdsgang fra launcher %{title}
+        bidirectional_not_allowed: Tovejskanter er ikke tilladt.
+        cyclic_dependency: Tilføjelse af denne fordel vil skabe en cyklisk afhængighed mellem launcherne.
+        edge_aria_label: Kant fra %{from} til %{to}
+        launcher_aria_label: 'Launcher: %{title}'
+        launcher_exists: Launcher findes allerede. Vælg venligst en anden launcher.
+        load_launcher_failed: Kunne ikke indlæse HTML-koden til launcheren. Prøv igen.
+        no_empty_cells: Ingen tomme gitterceller tilgængelige!
+        save_failed: Kunne ikke gemme arbejdsgangen. Se konsollen for detaljer.
+        select_launcher: Vælg venligst en launcher
+      xdmod:
+        analytics_toggle: Analytics-skift
+        column_date: Dato
+        column_id: ID
+        column_name: Navn
+        date_range: '%{from} til %{to}'
+        efficiency_report: '%{unit} Effektivitetsrapport'
+        ensure_logged_in_html: '%{error} Sørg for, at du er <a href="%{url}">logget ind på Open XDMoD først</a>, og prøv derefter igen.'
+        expand_analytics_title: Klik for at udvide analyseoplysningerne om job %{id} over denne tabel.
+        fetch_user_failed: Forsøg på at hente aktuelle brugeroplysninger fra Open XDMoD mislykkedes
+        idp_redirect_failed: 'Login mislykkedes: IDP-omdirigering mislykkedes'
+        iframe_error: XDMoD Login iFrame på URL %{url} sendte fejlmeddelelse med info %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} ineffektiv %{unit} </span> ⁄ %{total} i alt %{unit}
+        invalid_job_data: Jobdata returneret af anmodningen er ugyldige.
+        loading_caps: INDLÆSER...
+        login_page_load_failed: 'Login mislykkedes: Kunne ikke indlæse XDMoD-loginsiden'
+        login_timeout: 'Login mislykkedes: Timeout venter på, at login fuldføres'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Vægtid
+        no_data: Ingen data tilgængelige.
+        not_available: Ikke tilgængelig
+        open_xdmod: Åbn XDMoD
+        percent_efficient: '%{percent}% effektiv'
+        percent_efficient_aria: procent effektiv
+        percent_inefficient: '%{percent}% ineffektiv'
+        percent_inefficient_aria: procent ineffektiv
+        recently_completed_jobs: Nyligt afsluttede job
+        unit_core_hours: kernetimer
+        unit_core_hours_title: Kernetimer
+        unit_jobs: job
+        unit_jobs_title: Job
+    launch: Lancering
+    load_report: Indlæs rapport + %{node}
+    loading: Indlæser...
+    loading_short: Indlæser
+    locale_name: Dansk (Danmark)
+    logo_alt_text: Velkommen til Open OnDemand
+    logout_body_html: <strong>Du skal lukke din browser helt</strong> for at "log ud" kan ske. Hvis du stadig er logget ind efter at have genåbnet din browser, skal du rydde dine cookies. Hvis du bruger en Chromebook eller Chromebox, skal du genstarte din enhed for at "lukke browseren" og dermed "logge ud".
+    logout_tip_html: '<strong>Tip: Brug af et "privat browsing-tilstand"</strong>-vindue, mens du bruger OnDemand, er en god måde at håndtere "automatisk logout" på, da lukning af dit browservindue vil fjerne alle tilknyttede cookies og sessionsoplysninger.'
+    logout_title: Du er endnu ikke logget ud
+    maximum: Maksimum
+    mem_report: Hukommelsesrapport + %{node}
+    minimum: Minimum
+    mode: Mode
+    module_browser_available_modules: 'Tilgængelige moduler:'
+    module_browser_copy_aria: Kopiér indlæsningskommando for %{name}
+    module_browser_dependencies: 'Afhængigheder:'
+    module_browser_last_updated: 'Sidst opdateret: %{last_updated}'
+    module_browser_load_command: 'Indlæs kommando:'
+    module_browser_search_label: Søgemoduler
+    module_browser_search_placeholder: Søg efter modulnavn...
+    module_browser_select_version: (vælg version)
+    module_browser_showing_results: Viser %{count} resultater
+    module_browser_title: Modulbrowser
+    module_browser_versions: Versioner
+    motd_default_md: 'Udviklingen af Open OnDemand støttes gennem [National Science Foundation](https://www.nsf.gov/)
+
+      under bevillingsnumrene [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) og
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Lær mere eller bliv involveret:
+
+
+      - [Diskurs](https://discourse.openondemand.org/)
+
+      - [Open OnDemand-arkiv](https://github.com/OSC/ondemand)
+
+      - [ood-core-arkiv](https://github.com/OSC/ood_core)
+
+      - [Dokumentation](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD blev ikke parset eller gengivet korrekt: %{error_message}'
+    motd_no_messages: Der er ingen nye beskeder.
+    motd_title: Dagens besked
+    name: Navn
+    nav_all_apps: Alle apps
+    nav_develop_docs: Udviklerdokumentation
+    nav_develop_my_sandbox_apps_dev: Mine Sandbox-apps (udvikling)
+    nav_develop_my_sandbox_apps_prod: Mine delte apps (produktion)
+    nav_develop_title: Udvikle
+    nav_help_change_password: Skift HPC-adgangskode
+    nav_help_custom: Brugerdefineret navigationshjælp
+    nav_help_docs: Online dokumentation
+    nav_help_support: Kontakt support
+    nav_help_support_ticket: Indsend supportsag
+    nav_help_title: Hjælp
+    nav_help_two_factor: Konfigurer tofaktorgodkendelse
+    nav_language: Sprog
+    nav_limit_caption: viser %{subset_count} af %{total_count}
+    nav_logout: Log ud
+    nav_main_menu: Hovedmenu
+    nav_restart_server: Genstart webserveren
+    nav_sessions: Mine interaktive sessioner
+    nav_toggle_navigation: Skift navigation
+    nav_user: Logget ind som %{username}
+    network_report: Netværksrapport + %{node}
+    node: Knude
+    none: Ingen
+    not_grouped: Andre apps
+    nsf_access_announcements: NSF ACCESS-meddelelser
+    nsf_access_events: NSF ACCESS-begivenheder
+    nsf_access_outages: NSF ACCESS-afbrydelser
+    ok: Okay
+    opens_in_new_tab: åbner i en ny fane
+    output_location: 'Udgangsplacering:'
+    owner: Ejer
+    page_actions_aria: Sidehandlinger
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametre
+    path_selector_breadcrumb_aria: '%{title} Brødkrumme'
+    path_selector_caption: Vælg en fil eller mappe, der skal bruges i formularen.
+    path_selector_default_popup_title: Vælg din arbejdsmappe
+    path_selector_home: hjem
+    path_selector_parent_directory: overordnet mappe
+    permissions_created: Tilladelsen blev oprettet.
+    permissions_destroyed: Tilladelsen blev slettet.
+    permissions_group_title: Gruppetilladelser
+    permissions_user_title: Brugertilladelser
+    pinned_apps_caption_html: En fremhævet delmængde af <a href="%{all_apps_url}">alle tilgængelige apps</a>
+    pinned_apps_category: Apps
+    pinned_apps_title: Fastgjorte apps
+    products_created: Produktet blev oprettet.
+    products_git_commit_hint_html: Venligst foretag eventuelle ændringer eller tilføj nødvendige filer til <code>.gitignore</code>
+    products_git_staged: Iscenesat
+    products_git_status: Git-status
+    products_git_unstaged: Usceneseret
+    products_git_untracked: Ikke-sporet
+    products_manifest_save_error: Kan ikke gemme appmanifestet i %{path}
+    products_ssh_key_created: SSH-nøglen blev oprettet.
+    products_ssh_key_exists: SSH-nøglen findes allerede
+    products_ssh_key_failed: 'SSH-nøglen kunne ikke oprettes: %{error}'
+    products_type_batch_connect: Batch Connect-app
+    products_type_passenger: Passager-app
+    products_type_passenger_meteor: Passager Meteor-app
+    products_type_passenger_node: Passenger Node-appen
+    products_type_passenger_rack: Passagerstativ-app
+    products_type_passenger_rails: Passagertog-app
+    products_type_passenger_rails_sqlite: Passagertogsapp med SQLite-database
+    products_type_passenger_wsgi: Passager WSGI-app
+    products_updated: Produktet blev opdateret.
+    project: Projekt
+    project_balances: Projektsaldi
+    project_directory: Projektkatalog
+    project_zip_error_message: 'Fejl ved oprettelse af ZIP-fil: %{error}'
+    project_zip_success_message: 'Succes: project.zip er blevet oprettet i din projektmappe.'
+    queue: Kø
+    quota_additional_message: Overvej at slette eller arkivere filer for at frigøre diskplads.
+    quota_block: Brug af %{used} af kvoten %{available}
+    quota_block_shared: (%{used_exclusive} er din)
+    quota_file: Brug af %{used} filer med kvote %{available} filer
+    quota_file_shared: (%{used_exclusive} filerne er dine)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Genindlæs siden for at se den opdaterede kvote. Kvoterne opdateres hvert 5. minut.
+    quota_warning_prefix_html: Advarsel om kvotegrænse for
+    recently_used_apps_title: Nyligt brugte apps
+    remove: Fjerne
+    reset: Nulstil
+    restart_msg_html: 'Dit gruppemedlemskab er ændret, hvilket påvirker din adgang til apps. Dit dashboard burde genstarte automatisk.
+
+      Hvis det ikke sker, skal du klikke på: <a href="%{restart_url}">genstart webserver</a>.'
+    restore: Gendan
+    root: Rod
+    save: Spare
+    saved_settings_title: Gemte indstillinger
+    select: Vælge
+    select_all: Vælg alle
+    select_path: Vælg sti
+    select_path_for: '%{element} vælg sti'
+    settings_csrf_expired: Din sessionssikkerhedstoken er udløbet. Prøv venligst at gøre det igen.
+    settings_invalid_request: Ugyldige indstillinger indsendt
+    settings_unprocessable_body_html: Din session er muligvis udløbet, eller den ønskede ændring er blevet afvist. Gå venligst <a href="%{dashboard_url}">tilbage til dashboardet</a> og prøv igen.
+    settings_unprocessable_title: Session udløbet eller ændring afvist
+    settings_updated: Indstillinger opdateret
+    shared_apps_caption: Delt af %{owner_title} (%{owner})
+    shared_apps_caption_short: Delt af %{owner}
+    shared_apps_title: Delte apps
+    sharing_catalog_msg_html: <br>En delmængde af de tilgængelige apps kan ses på %{catalog_link_tag}.
+    sharing_catalog_title: App-katalog
+    sharing_no_shared_apps_html: <strong>Ingen brugerdefinerede delte apps tilgængelige.</strong>
+    sharing_support_msg_html: 'Hvis du ikke kan finde den app, du leder efter, bedes du
+
+      <a href="%{support_url}">kontakte support</a>.'
+    sharing_welcome_msg_html: 'Klyngeadgangsapplikationer er tilgængelige fra rullemenuerne i navigationslinjen ovenfor.
+
+
+      <br>Brugerdefinerede delte apps er tilgængelige nedenfor.
+
+
+      '
+    shell: Skal
+    shell_app_title: '%{cluster_title} Shell-adgang'
+    show: Vise
+    size: Størrelse
+    skip_navigation: Spring navigation over
+    smart_attributes:
+      account: Konto
+      auto_modules_none: Automoduler (ingen angivet)
+      cluster: Klynge
+      cores: Kerner
+      email_on_started: Jeg vil gerne modtage en e-mail, når sessionen starter
+      environment_variable: Miljøvariabel
+      environment_variable_key: 'Miljøvariabel: %{key}'
+      job_name: Jobnavn
+      module_version: '%{module} version'
+      num_cpus_single_node: Antal CPU'er på en enkelt node
+      num_hours: Antal timer
+      num_nodes: Antal noder
+      num_processors: Antal processorer
+      partition: Skillevæg
+      qos: QoS
+      queue: Kø
+      script: Manuskript
+      vnc_idle_help: 'Afslut hvis der går # sekunder uden VNC-viewerforbindelser'
+      vnc_idle_label: Timeout ved inaktivitet
+      vnc_resolution_help: Opløsning bruges kun af native VNC-forbindelser
+      vnc_resolution_label: Opløsning
+    soft_tabs: Bløde faner
+    soft_tabs_info: Bløde tabulatorer er mellemrum i filen i stedet for faktiske tabulatortegn.
+    status: Status
+    status_completed: Færdiggjort
+    status_held: Afholdt
+    status_hold: Holde
+    status_queued: I kø
+    status_running: Løb
+    status_starting: Starter
+    status_suspend: Suspendere
+    status_suspended: Suspenderet
+    status_undetermined: Ubestemt
+    stop: Stop
+    submit: Indsend
+    submit_args: 'Indsend argumenter:'
+    support_ticket:
+      creation_success: 'Supportbillet-e-mail sendt til: %{to}'
+      fields:
+        attachments: Vedhæftede filer
+        cc: Kreditkort
+        description: Beskrivelse
+        email: E-mail
+        job_description: Jobbeskrivelse
+        session_description: Sessionsbeskrivelse
+        subject: Emne
+        username: Brugernavn
+      generic_error: 'Der opstod en fejl under behandlingen af din anmodning: %{error}'
+      header: Supportanmodning
+      rt:
+        creation_success: 'Supportbillet oprettet i RequestTracker-systemet. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Supportbillet oprettet i ServiceNow. Nummer: %{number}. Men vedhæftede filer kan ikke tilføjes.'
+        creation_success: 'Supportbillet oprettet i ServiceNow. Nummer: %{number}'
+      submit: Indsend supportsag
+      title: Supportanmodning
+      validation:
+        attachments_items: '%{id} er ugyldige. %{items} tilføjet, maksimalt antal vedhæftede filer er %{max}'
+        attachments_size: '%{id} er ugyldige. Maksimal størrelse på vedhæftede filer er %{max}'
+        email: Formatet %{id} er ugyldigt. Forventede en gyldig e-mailadresse
+        items:
+          attachments_js: Ingen flere vedhæftede filer tilladt
+        required: '%{id} er påkrævet'
+        size:
+          attachments_js: Maksimal størrelse på vedhæftet fil er %{max}. Den valgte filstørrelse er %{size}
+      validation_error: Ugyldig anmodning. Gennemgå venligst fejlmeddelelserne nedenfor.
+    support_ticket_add_attachment: Tilføj vedhæftet fil
+    support_ticket_attachments_help: Klik på feltet for at vedhæfte en fil. Skærmbilleder eller andre filer kan hjælpe med at løse dit problem.
+    system_apps_caption: Systeminstalleret app
+    system_status_available: '%{name} Tilgængelig: %{count}'
+    system_status_cluster_title: '%{title} Klyngestatus'
+    system_status_gpus: GPU'er
+    system_status_in_use: '%{percent} i brug'
+    system_status_jobs_queued: Job i kø
+    system_status_jobs_queued_count: '%{count} Job i kø'
+    system_status_jobs_running: Job i gang
+    system_status_jobs_running_count: '%{count} Kørende job'
+    system_status_nodes: Knuder
+    system_status_not_slurm: Klyngeoplysninger er ikke tilgængelige med %{scheduler}. I øjeblikket understøttes kun Slurm-klynger.
+    system_status_processors: Processorer
+    toggle_notifications: Slå notifikationer til/fra
+    toggle_push_notifications: Slå push-notifikationer til/fra
+    type: Type
+    undefined_title: Udefineret titel
+    unknown: Ukendt
+    uppy:
+      strings:
+        addMore: Tilføj mere
+        addMoreFiles: Tilføj flere filer
+        addingMoreFiles: Tilføjelse af flere filer
+        back: Tilbage
+        browseFiles: gennemse filer
+        browseFolders: gennemse mapper
+        cancel: Ophæve
+        cancelUpload: Annuller upload
+        closeModal: Luk modal
+        complete: Komplet
+        dashboardTitle: Filuploader
+        dashboardWindowTitle: Filuploadervindue (tryk på escape for at lukke)
+        done: Færdig
+        dropHint: Slip dine filer her
+        dropPasteBoth: Slip filer her, %{browseFiles} eller %{browseFolders}
+        dropPasteFiles: Slip filer her eller %{browseFiles}
+        dropPasteFolders: Slip filer her eller %{browseFolders}
+        editFile: Rediger fil
+        editing: Redigering af %{file}
+        emptyFolderAdded: Der blev ikke tilføjet nogen filer fra den tomme mappe
+        error: Fejl
+        exceedsSize: '%{file} overstiger den maksimalt tilladte størrelse på %{size}'
+        failedToUpload: Kunne ikke uploade %{file}
+        folderAlreadyAdded: Mappen "%{folder}" er allerede tilføjet
+        myDevice: Min enhed
+        noDuplicates: Kan ikke tilføje duplikatfilen '%{fileName}', den findes allerede.
+        pause: Pause
+        pauseUpload: Pause upload
+        paused: Pausesat
+        removeFile: Fjern fil
+        resume: Genoptage
+        resumeUpload: CV-upload
+        retry: Prøv igen
+        retryUpload: Prøv at uploade igen
+        save: Spare
+        saveChanges: Gem ændringer
+        showErrorDetails: Vis fejloplysninger
+        upload: Upload
+        uploadComplete: Upload fuldført
+        uploadFailed: Upload mislykkedes
+        uploadPaused: Upload sat på pause
+        uploading: Uploader
+        xTimeLeft: '%{time} tilbage'
+    user: Bruger
+    user_configuration:
+      support_ticket_error: support_ticket er forkert konfigureret. Tilføj venligst en backend-implementering i YAML-konfigurationen.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand leverer et integreret, enkelt adgangspunkt til alle dine HPC-ressourcer.</p>
+
+      '

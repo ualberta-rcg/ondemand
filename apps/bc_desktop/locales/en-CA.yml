@@ -2,8 +2,7 @@
 en-CA:
   manifest:
     name: Desktop
-    description: 'This app will launch an interactive desktop on one or more compute
-      nodes. You
+    description: 'This app will launch an interactive desktop on one or more compute nodes. You
 
       will have full access to the resources these nodes provide. This is analogous
 

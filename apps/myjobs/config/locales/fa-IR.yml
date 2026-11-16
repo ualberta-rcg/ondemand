@@ -1,52 +1,133 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
+---
 fa-IR:
   jobcomposer:
-    skip_navigation: "پرش از پیمایش"
-    # Site specific translations
-    options_account_help:  "حساب اختیاری است. اگر تنظیم نشود، ممکن است فیلتر ارسال آن را به‌صورت خودکار تعیین کند."
+    account_label: 'حساب کاربری:'
+    back: برگشت
+    cancel: لغو
+    close: بستن
+    cluster_label: 'خوشه:'
+    confirm_delete: مطمئنی؟
+    confirm_delete_template: مطمئنی که می‌خوای اینو حذف کنی؟
+    copy_template: الگو را کپی کنید
+    create_from_path_title: ایجاد یک کار جدید از یک مسیر
+    create_new_heading_html: ایجاد یک "<span class="wrap-line" id="script-name-label">%{name}</span>" جدید
+    create_new_job: ایجاد شغل جدید
+    create_template: ایجاد الگو
+    create_template_from_job_title: ایجاد الگو از شغل انتخاب شده
+    delete: حذف
+    delete_job_title: حذف شغل
+    deprecation_warning_html: سازنده‌ی کار منسوخ شده است و در Open OnDemand 5.0 حذف خواهد شد. لطفاً کارها و قالب‌های خود را به <a href="%{projects_path}">مدیر پروژه</a> منتقل کنید.
+    edit: ویرایش
+    edit_files: ویرایش فایل‌ها
+    folder_contents_label: 'محتویات پوشه:'
+    from_default_template: از قالب پیش‌فرض
+    from_default_template_title: ایجاد یک کار جدید از قالب پیش‌فرض
+    from_selected_job: از شغل انتخاب شده
+    from_selected_job_title: کپی کردن شغل انتخاب شده
+    from_specified_path: از مسیر مشخص شده
+    from_template: از الگو
+    from_template_title: ایجاد یک شغل جدید از الگویی که انتخاب می‌کنید
+    invalid_cluster_html: خوشه معتبر نیست! برای انتخاب یک خوشه معتبر، <a href="#" id="edit-job-options-script-link">Job Options</a> را ویرایش کنید.
+    invalid_script_html: اسکریپت معتبر نیست! برای انتخاب یک اسکریپت معتبر، <a href="#" id="edit-job-options-link">Job Options</a> را ویرایش کنید.
+    job_already_submitted: شغل قبلاً ارسال شده است.
+    job_array_request_label: 'درخواست آرایه کار:'
+    job_attributes_heading_html: ویژگی‌های شغل <strong>(اختیاری)</strong>
+    job_copied: ایوب با موفقیت کپی شد.
+    job_copy_failed: 'کپی کردن کار ناموفق بود: %{errors}'
+    job_created: ایوب با موفقیت ایجاد شد.
+    job_destroy_failed: 'ایوب نابود نشد: %{errors}'
+    job_destroyed: ایوب با موفقیت نابود شد.
+    job_details: جزئیات شغل
+    job_directory_missing: فهرست مشاغل موجود نیست!
+    job_name_label: 'نام شغل:'
+    job_not_submitted: شغل ارسال نشده است.
+    job_stop_failed: 'متوقف کردن کار ناموفق بود: %{errors}'
+    job_stopped: ایوب با موفقیت متوقف شد.
+    job_submit_failed: 'ارسال کار دسته‌ای ناموفق بود:'
+    job_submitted: کار با موفقیت ارسال شد.
+    job_updated: کار با موفقیت به‌روزرسانی شد.
+    loading: بارگیری
+    loading_job_info: بارگیری اطلاعات شغلی
+    nav_help: کمک
+    nav_jobs: مشاغل
+    nav_menu_aria: منوی آهنگساز شغل
+    nav_templates: قالب‌ها
+    new_job: شغل جدید
+    new_template: قالب جدید
+    new_template_title: ایجاد یک الگوی جدید
+    no_clusters_alert: هیچ میزبان پیکربندی‌شده‌ای وجود ندارد که به شما امکان ارسال شغل را بدهد. لطفاً با مدیر سیستم خود تماس بگیرید.
+    open_dir: دایرکتوری را باز کنید
+    open_dir_in_editor: باز کردن دایرکتوری در ویرایشگر فایل
+    open_dir_in_file_manager: باز کردن دایرکتوری در فایل منیجر
+    open_dir_in_terminal: باز کردن دایرکتوری در ترمینال
+    open_editor: ویرایشگر را باز کنید
+    open_selected_job_in_terminal: باز کردن کار انتخاب شده در ترمینال
+    open_selected_template_in_terminal: باز کردن قالب انتخاب شده در ترمینال
+    open_template_dir_in_file_manager: باز کردن دایرکتوری قالب در مدیریت فایل
+    open_terminal: ترمینال را باز کنید
+    open_xdmod: باز کردن XDMoD
+    options_account_help: حساب اختیاری است. اگر تنظیم نشود، ممکن است فیلتر ارسال آن را به‌صورت خودکار تعیین کند.
+    options_account_title: حساب
+    options_array_help: آرایه‌های کار اختیاری هستند؛ برای نمونه ۱-۱۰
+    options_array_help_with_clusters: 'آرایه‌های کار اختیاری هستند. در حال حاضر، OnDemand از آرایه‌های کار برای کلاسترهای زیر پشتیبانی نمی‌کند: %{cluster_list}.
 
-    # General translations
-    options_account_title: "حساب"
-    options_array_help: "آرایه‌های کار اختیاری هستند؛ برای نمونه ۱-۱۰"
-    options_array_help_with_clusters: |
-      آرایه‌های کار اختیاری هستند. در حال حاضر، OnDemand از آرایه‌های کار برای کلاسترهای زیر پشتیبانی نمی‌کند: %{cluster_list}.
-    options_array_title: "مشخصات آرایه کار"
-    options_cluster_title: "کلاستر"
-    options_errors: "لطفاً خطاهای زیر را برطرف کنید."
-    options_name_title: "نام"
-    options_script_title: "اسکریپت کار را مشخص کنید"
-    options_script_help: "فایل‌های بزرگ‌تر از 65KB در فیلد اسکریپت کار نمایش داده نمی‌شوند"
-    options_title: "گزینه‌های کار"
-    options_copy_environment: "کپی کردن محیط"
-    xdmod_url_warning_message: "ممکن است این کار تا 24 ساعت پس از تکمیل آن در Open XDMoD نمایش داده نشود."
+      '
+    options_array_title: مشخصات آرایه کار
+    options_cluster_title: کلاستر
+    options_copy_environment: کپی کردن محیط
+    options_errors: لطفاً خطاهای زیر را برطرف کنید.
+    options_name_title: نام
+    options_script_help: فایل‌های بزرگ‌تر از 65KB در فیلد اسکریپت کار نمایش داده نمی‌شوند
+    options_script_title: اسکریپت کار را مشخص کنید
+    options_title: گزینه‌های کار
+    other_valid_files: سایر فایل‌های معتبر
+    page_title: آهنگساز شغل - %{site}
+    path_to_source_heading_html: مسیر منبع <strong>(الزامی)</strong>
+    reset: تنظیم مجدد
+    reset_template_fields_title: فیلدها را به پیش‌فرض قالب بازنشانی کنید
+    save: ذخیره
+    script_contents_label: 'محتویات اسکریپت:'
+    script_location_label: 'محل اسکریپت:'
+    script_name_form_label: 'نام اسکریپت:'
+    script_name_label: 'نام اسکریپت:'
+    select_cluster_prompt: انتخاب خوشه ...
+    select_template_option: -- یک الگو انتخاب کنید --
+    selected_template_details: جزئیات الگوی انتخاب شده
+    show: نمایش
+    show_batch_host_label: 'میزبان دسته‌ای:'
+    show_dir_contents_label: 'محتویات دایرکتوری:'
+    show_name_label: 'نام:'
+    show_staged_dir_label: 'کارگردانی صحنه‌ای:'
+    showing_job_title: نمایش شغل
+    skip_navigation: پرش از پیمایش
+    source_path_help: مسیر یک دایرکتوری در سیستم فایل را وارد کنید. محتویات این مسیر در یک گردش کار جدید کپی خواهد شد.
+    source_path_label: مسیر منبع
+    specify_job_host_and_script: میزبان و اسکریپت کار را مشخص کنید
+    stop: توقف
+    stop_job_title: کار را متوقف کنید
+    submit: ارسال
+    submit_job_title: ارسال شغل
+    submit_script_title: ارسال اسکریپت
+    submit_to_label: 'ارسال به:'
+    suggested_files: فایل(های) پیشنهادی
+    table_created: ایجاد شده
+    table_id: شناسه
+    table_source: منبع
+    table_status: وضعیت
+    template_create_error: خطا در ایجاد قالب
+    template_error_name_unique: باید منحصر به فرد باشد.
+    template_error_path_directory: باید به یک دایرکتوری اشاره کند.
+    template_error_path_missing: وجود ندارد.
+    template_errors_heading:
+      one: 'خطای %{count} مانع از ذخیره شدن این الگو شد:'
+      other: 'خطاهای %{count} مانع از ذخیره شدن این الگو شدند:'
+    template_label: 'الگو:'
+    template_location_label: 'محل قرارگیری الگو:'
+    template_path_blank_help: اگر خالی بماند، یک اسکریپت کار پیش‌فرض به الگوی جدید شما اضافه می‌شود.
+    template_path_label: مسیر (قالب با کپی کردن فایل‌ها از این مسیر منبع ایجاد خواهد شد)
+    templates_subtitle: برای ایجاد یک شغل جدید، یک الگو برای کپی انتخاب کنید، فرم سمت راست را پر کنید و روی «ایجاد شغل جدید» کلیک کنید.
+    title: آهنگساز شغل
+    toggle_navigation: تغییر ناوبری
+    view_files: مشاهده فایل‌ها
+    xdmod_url_warning_message: ممکن است این کار تا 24 ساعت پس از تکمیل آن در Open XDMoD نمایش داده نشود.
     xdmod_url_warning_message_seconds_after_job_completion: 86400

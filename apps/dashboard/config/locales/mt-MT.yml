@@ -1,0 +1,1003 @@
+---
+mt-MT:
+  activemodel:
+    errors:
+      messages:
+        format: Il-format %{attribute} mhux validu jew nieqes
+        invalid: '%{attribute} mhux validu'
+        required: '%{attribute} huwa meħtieġ'
+        used: '%{attribute} diġà qed jintuża'
+  dashboard:
+    account: Kont
+    actions: Azzjonijiet
+    active_jobs: Impjiegi Attivi
+    active_jobs_close_details: Agħlaq il-pannell tad-dettalji estiżi.
+    active_jobs_detail:
+      account: Kont
+      array_job_id: Id tax-Xogħol tal-Array
+      array_task_id: Id tal-Kompitu tal-Array
+      cluster: Raggruppament
+      cluster_id: Id tal-Klaster
+      comment: Kumment
+      cpu_time: Ħin tas-CPU
+      cpu_used: CPU Użat
+      current_working_directory: Direttorju tax-Xogħol Attwali
+      end_time: Ħin tat-Tmiem
+      exec_host: Ospitanti Eżekuttiv
+      finish_time: Ħin tat-Tmiem
+      from_host: Mill-Ospitanti
+      gres: GRES
+      group_list: Lista tal-Gruppi
+      job_account: Kont tax-Xogħol
+      job_checkpoint_attr: Attr tal-Punt ta' Kontroll tax-Xogħol
+      job_checkpoint_interval: Intervall tal-Punt ta' Kontroll tax-Xogħol
+      job_deadline: Skadenza tax-Xogħol
+      job_exec_file: Fajl Eżekuttiv tax-Xogħol
+      job_execution_time: Ħin tal-Eżekuzzjoni tax-Xogħol
+      job_gid: GID tax-Xogħol
+      job_group: Grupp tax-Xogħol
+      job_id: Id tax-Xogħol
+      job_name: Isem tax-Xogħol
+      job_priority: Prijorità tax-Xogħol
+      job_restart: Bidu mill-ġdid tax-Xogħol
+      job_script_file: Fajl tal-Iskript tax-Xogħol
+      job_script_size: Daqs tal-Iskript tax-Xogħol
+      job_share: Kondiviżjoni tax-Xogħol
+      job_type: Tip ta' Xogħol
+      job_uid: UID tax-Xogħol
+      job_verify: Verifika tax-Xogħol
+      job_version: Verżjoni tax-Xogħol
+      mem: Mem
+      memory: Memorja
+      node_count: Għadd ta' Nodi
+      node_list: Lista tan-Nodi
+      nodes: Nodi
+      none: Xejn
+      notifications: Notifiki
+      partition: Partizzjoni
+      pbs_id: Id tal-PBS
+      pids: PIDs
+      ppn: PPN
+      project_name: Isem tal-Proġett
+      queue: Kju
+      reason: Raġuni
+      reserve: Riżerva
+      select: Agħżel
+      start_time: Ħin tal-Bidu
+      state: Stat
+      status: Status
+      submission_time: Ħin tas-Sottomissjoni
+      swap: Skambju
+      time_limit: Limitu ta' Żmien
+      time_used: Ħin Użat
+      total_cpus: CPUs totali
+      total_nodes: Nodi Totali
+      user: Utent
+      virtual_memory: Memorja Virtwali
+      walltime: Walltime
+      walltime_used: Walltime Użat
+    active_jobs_filter_all: L-Impjiegi Kollha
+    active_jobs_filter_user: L-Impjiegi Tiegħek
+    active_jobs_ganlia_CPU: Immaġni tal-gangli għas-CPU.
+    active_jobs_ganlia_load: Immaġni tal-gangliji għall-medji tat-tagħbija tas-sistema.
+    active_jobs_ganlia_mem: Immaġni tal-gangli għall-użu tal-memorja.
+    active_jobs_ganlia_network: Immaġni tal-gangli għall-użu tan-netwerk.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> ara kollox (%{number_of_sessions})</a>
+    active_sessions_title: Sessjonijiet interattivi attivi
+    add: Żid
+    all_apps_table_app_column: Isem
+    all_apps_table_category_column: Kategorija
+    all_apps_table_sub_category_column: Sottokategorija
+    all_clusters: Il-Clusters Kollha
+    announcements_dismissible_button: OK
+    announcements_parse_error: Żball fl-analiżi tat-tħabbira.
+    announcements_render_error: Ma setax jiġi ppreżentat l-avviż '%{name}' minħabba żball
+    announcements_required_button: Aċċetta
+    apps_setup_failure_html: '<h2>Seħħet problema waqt l-inizjalizzazzjoni tad-dejta tiegħek għal din l-app.</h2>
+
+      <p class="lead">
+
+      Għar-riskju tiegħek xorta tista'' <a href="%{app_url}">tiftaħ l-app</a>
+
+      jew tista'' sempliċement tmur <a href="%{home_url}">lura għad-dashboard</a>
+
+      </p>
+
+      <p>
+
+      Aqsam dan mal-iżviluppatur tal-app tiegħek:
+
+      L-iskritt tal-produzzjoni tas-setup suppost ikun idempotenti u jitħaddem kull darba
+
+      li l-utent jiftaħ l-app permezz tad-dashboard.</p>
+
+      <h4>Eċċezzjoni: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Traċċa tal-munzell:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Applikazzjonijiet tas-Sistema
+    auto_log_location_title: Post tal-Lok
+    back: Lura
+    balance_additional_message: Ikkunsidra li titlob %{balanace_units} addizzjonali
+    balance_message: '%{units_balance} huwa %{value}'
+    balance_no_warnings: L-ebda proġett ma jinsab fil-limitu ta' twissija tal-bilanċ tal-ġurnata %{threshold}.
+    balance_reload_message_html: Erġa' ċċarġja l-paġna biex tara l-bilanċ aġġornat. Il-bilanċi jiġu aġġornati kuljum.<br>L-aħħar aġġornament kien %{last_update}
+    balance_warning_prefix_html: '%{units_balance} twissija għal'
+    batch_connect_active_sessions_aria: Sessjonijiet Attivi
+    batch_connect_app_version: 'verżjoni: %{version}'
+    batch_connect_apps_menu_aria: Menù tal-Applikazzjonijiet Interattivi
+    batch_connect_apps_menu_title: Applikazzjonijiet Interattivi
+    batch_connect_form_attr_cache_error: Ma jistgħux jintużaw valuri li kienu fil-cache qabel, minflok qed jintużaw id-defaults. (%{error_message})
+    batch_connect_form_choose_template_name: Agħżel isem ta' mudell
+    batch_connect_form_data_root: direttorju tal-għerq tad-dejta
+    batch_connect_form_dynamic_disclaimer: Il-formola li ġejja tista' tinbidel b'mod dinamiku hekk kif jintgħażlu l-għażliet. Il-bidliet kollha se jitħabbru u huma riversibbli.
+    batch_connect_form_invalid: Il-form.yml għandu għażliet neqsin fil-qasam tal-formola %{id}.
+    batch_connect_form_launch: Tnedija
+    batch_connect_form_prefill: Uża s-settings salvati
+    batch_connect_form_prefill_error: Ups... Xi ħaġa ħażina fit-template tiegħek
+    batch_connect_form_reset_resolution: Irrisettja r-Riżoluzzjoni
+    batch_connect_form_resolution_height: Għoli tar-riżoluzzjoni (pixels)
+    batch_connect_form_resolution_width: Wisa' tar-riżoluzzjoni (pixels)
+    batch_connect_form_save: Issejvja s-settings
+    batch_connect_form_save_new_template: issalva s-settings il-ġodda
+    batch_connect_form_save_submit: Issejvja s-settings u agħlaq
+    batch_connect_form_select_template: agħżel is-settings salvati
+    batch_connect_form_session_data_html: '* Id-dejta tas-sessjoni %{title} għal din is-sessjoni tista'' tiġi aċċessata
+
+      taħt %{data_link_tag}.'
+    batch_connect_form_template_name_label: isem tas-setting
+    batch_connect_form_type_new_name: Isem tas-settings tal-app
+    batch_connect_form_type_new_name_error: Jekk jogħġbok ittajpja isem validu biex tkompli
+    batch_connect_invalid_form_array: L-element 'form' f'form.yml mhuwiex Array
+    batch_connect_invalid_form_attributes: L-element 'attributi' f'form.yml mhuwiex Mappa
+    batch_connect_missing_cluster: Il-cluster qatt ma ġie ssettjat. Jew issettjah f'form.yml.erb b'`cluster` jew `form.cluster` jew issettja `cluster` f'submit.yml.erb.
+    batch_connect_no_apps: M'hemm l-ebda Applikazzjonijiet Interattivi disponibbli.
+    batch_connect_no_sessions: M'għandekx sessjonijiet attivi.
+    batch_connect_sandbox: '[Sandbox]'
+    batch_connect_sessions_cancel_confirm: Żgur/a?
+    batch_connect_sessions_cancel_full_title: Ikkanċella s-Sessjoni %{title}
+    batch_connect_sessions_cancel_title: Ikkanċella
+    batch_connect_sessions_connect_to: Qabbad ma' %{app_title}
+    batch_connect_sessions_connection_render_error: Ma tistax tirrendi l-buttuna tal-konnessjoni mill-view.html.erb minħabba l-iżball '%{error}'
+    batch_connect_sessions_data_html: 'Id-dejta tas-sessjoni %{title} għal din is-sessjoni tista'' tiġi aċċessata
+
+      taħt %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Żgur/a?
+    batch_connect_sessions_delete_full_title: Ħassar is-Sessjoni %{title}
+    batch_connect_sessions_delete_hover: Ħassar is-Sessjoni
+    batch_connect_sessions_delete_title: Ħassar
+    batch_connect_sessions_edit_title: Editja %{title} ġdid b'dawn il-parametri tas-sessjoni
+    batch_connect_sessions_error_invalid_job_name_html: Jekk dan ix-xogħol ma rnexxilux jiġi sottomess minħabba isem ta' xogħol invalidu, jekk jogħġbok staqsi lill-amministratur tiegħek biex jikkonfigura OnDemand biex jistabbilixxi l-varjabbli tal-ambjent OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Ma rnexxiex jiġi ppreżentat it-template bl-iżball li ġej:'
+    batch_connect_sessions_errors_submission: 'Ma rnexxilniex nissottomettu s-sessjoni bl-iżball li ġej:'
+    batch_connect_sessions_native_vnc_tab: Istruzzjonijiet Nattivi
+    batch_connect_sessions_novnc_compression: Kompressjoni
+    batch_connect_sessions_novnc_compression_help: 1 (baxx) sa 9 (għoli)
+    batch_connect_sessions_novnc_launch: Tnedija %{app_title}
+    batch_connect_sessions_novnc_quality: Kwalità tal-Immaġni
+    batch_connect_sessions_novnc_quality_help: 0 (baxx) sa 9 (għoli)
+    batch_connect_sessions_novnc_tab: Konnessjoni noVNC
+    batch_connect_sessions_novnc_view_only: Ara Biss (Link li Jista' Jkun Kondiviż)
+    batch_connect_sessions_path_selector_forbidden_error: M'għandekx permess tagħżel dak id-direttorju jew il-fajl.
+    batch_connect_sessions_relaunch_full_title: Erġa' tniedi s-Sessjoni %{title}
+    batch_connect_sessions_relaunch_title: Tnedija mill-ġdid
+    batch_connect_sessions_staged_root: direttorju ewlieni fi stadji
+    batch_connect_sessions_stats_core_count:
+      one: qalba %{count}
+      other: '%{count} qlub'
+    batch_connect_sessions_stats_created_at: 'Maħluq fi:'
+    batch_connect_sessions_stats_expected_time: 'Bidu mistenni:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPUs'
+    batch_connect_sessions_stats_host: 'Ospitanti:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} nodu'
+      other: '%{count} nodi'
+    batch_connect_sessions_stats_session_dir_link_title: Iftaħ id-direttorju tas-sessjoni għal %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID tas-Sessjoni:'
+    batch_connect_sessions_stats_support_ticket: Problemi b'din is-sessjoni?
+    batch_connect_sessions_stats_support_ticket_link_text: Ibgħat biljett ta' appoġġ
+    batch_connect_sessions_stats_time_remaining: 'Ħin li Fadal:'
+    batch_connect_sessions_stats_time_requested: 'Ħin Mitlub:'
+    batch_connect_sessions_stats_time_used: 'Ħin Użat:'
+    batch_connect_sessions_stats_undetermined_host: Mhux determinat
+    batch_connect_sessions_status_bad: Is-sessjoni tiegħek daħlet fi stat ħażin. Ħossok liberu li tikkuntattja l-appoġġ għal aktar informazzjoni.
+    batch_connect_sessions_status_blurb_cancel_failure: Ma rnexxiex tikkanċella s-sessjoni.
+    batch_connect_sessions_status_blurb_cancel_success: Is-sessjoni ġiet ikkanċellata b'suċċess.
+    batch_connect_sessions_status_blurb_create_success: Is-sessjoni nħolqot b'suċċess.
+    batch_connect_sessions_status_blurb_delete_failure: Ma rnexxiex titħassar is-sessjoni.
+    batch_connect_sessions_status_blurb_delete_success: Is-sessjoni tħassret b'suċċess.
+    batch_connect_sessions_status_completed: Għal skopijiet ta' debugging, din il-karta se tinżamm għal %{days} jiem oħra
+    batch_connect_sessions_status_missing_connection: Din l-app hija nieqsa mill-informazzjoni meħtieġa biex tiġi stabbilita konnessjoni. Speċifikament, il-fajl view.html.erb huwa nieqes. Jekk jogħġbok ikkuntattja l-appoġġ jekk tara dan il-messaġġ.
+    batch_connect_sessions_status_queued: 'Jekk jogħġbok ħu paċenzja għax ix-xogħol tiegħek bħalissa jinsab fil-kju. Il-ħin ta'' stennija jiddependi
+
+      min-numru ta'' cores kif ukoll mill-ħin mitlub.'
+    batch_connect_sessions_status_starting: Is-sessjoni tiegħek bħalissa qed tibda... Jekk jogħġbok ħu paċenzja għax dan il-proċess jista' jieħu ftit minuti.
+    batch_connect_sessions_word: Sessjoni
+    batch_connect_validation:
+      app_not_found: Din l-app ma teżistix taħt id-direttorju '%{root}'
+      inaccessible_clusters: Din l-app teħtieġ clusters li ma jeżistux jew li m'għandekx aċċess għalihom.
+      missing_form_file: Din l-app ma tipprovdix fajl ta' formola taħt id-direttorju '%{root}'
+      missing_sub_app_form_file: Din l-app ma tipprovdix fajl ta' formola ta' subapp taħt id-direttorju '%{root}'
+      no_cluster_specified: Din l-app ma tispeċifika l-ebda cluster.
+    bc_saved_settings:
+      delete_confirm: Żgur/a?
+      delete_title: Ħassar is-settings salvati ta' %{settings_name}
+      deleted_message: Is-settings salvati %{settings_name} tħassru.
+      edit_title: Editja s-settings salvati ta' %{settings_name}
+      launch_title: Niedi %{app_title} bil-parametri %{settings_name}
+      missing_settings: Is-settings salvati magħżula ma nstabux.
+      no_settings_title: M'għandekx settings salvati.
+      outdated_message: Il-parametri %{app_title} inbidlu minn meta nħolqu dawn is-settings.
+      saved_message: Is-settings tal-%{settings_name} ġew salvati
+      settings_values_label: Valuri
+      title: Settings Salvati
+    breadcrumb_aria: Frak tal-ħobż
+    breadcrumbs_all_apps: L-Apps Kollha
+    breadcrumbs_home: Dar
+    breadcrumbs_my_sessions: Is-Sessjonijiet Interattivi Tiegħi
+    breadcrumbs_support_ticket: Biljett ta' Appoġġ
+    browser_warning: OnDemand jeħtieġ verżjoni aktar ġdida tal-browser li qed tuża. Ir-rekwiżiti attwali tal-browser jinkludu IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Ikkanċella
+    categories:
+      apps: Applikazzjonijiet
+      bioinformatics: Bijoinformatika
+      clusters: Raggruppamenti
+      data_science: Xjenza tad-Data
+      desktop: Desktop
+      desktops: Desktops
+      development: Żvilupp
+      external_apps: Applikazzjonijiet Esterni
+      files: Fajls
+      gateway_apps: Applikazzjonijiet tal-Gateway
+      guis: GUIs
+      interactive_apps: Applikazzjonijiet Interattivi
+      jobs: Impjiegi
+      machine_learning: Tagħlim Awtomatiku
+      mathematics: Matematika
+      servers: Servers
+      utilities: Utilitajiet
+      virtual_desktop_interface: Interfaċċja tad-Desktop Virtwali
+      visualization: Viżwalizzazzjoni
+    clear: Ċar
+    close: Agħlaq
+    close_alert: Agħlaq din l-allert.
+    close_notice: Agħlaq dan l-avviż.
+    cluster: Raggruppament
+    copy: Kopja
+    copy_suffix: (Kopja)
+    cpu_report: Rapport tas-CPU + %{node}
+    custom_pages:
+      invalid: 'Kodiċi tal-paġna invalidu: %{page}. Din il-paġna ma ġietx ikkonfigurata'
+    date: Data
+    delete: Ħassar
+    detailed_metrics: Metriċi Dettaljati
+    details: Dettalji
+    development_apps_caption: Applikazzjoni Sandbox
+    development_apps_category: Applikazzjonijiet Sandbox
+    development_delete_app: Ħassar l-App
+    development_edit_title: Editja %{title}
+    development_launch_title: Tnedija %{title}
+    directory: Direttorju
+    edit: Editja
+    editor_default: Default
+    editor_font_size: Daqs tat-tipa
+    editor_key_bindings: Rabtiet taċ-Ċwievet
+    editor_theme: Tema
+    editor_theme_bright: Jgħajjat
+    editor_theme_dark: Dlam
+    editor_wrap: Kebbeb
+    error_details: 'Dettalji:'
+    error_internal_body_html: Jekk jogħġbok erġa' pprova fi ftit mumenti. Jekk tkompli tara dan l-iżball, jekk jogħġbok <a href="%{support_url}">ikkuntattja l-appoġġ</a>.
+    error_internal_title: Żball Intern tas-Server
+    error_not_found_body: Il-paġna li qed tfittex ma teżistix.
+    error_not_found_title: Ma nstabx
+    favorites: Favoriti
+    file: Fajl
+    file_editor: Editur tal-Fajls
+    file_quotas: Kwoti tal-Fajls
+    files: Fajls
+    files_change_directory: Ibdel id-direttorju
+    files_contents_of_directory: Kontenut tad-direttorju %{path}
+    files_copy_move: Ikkopja/Mexxi
+    files_copy_path: Ikkopja l-mogħdija
+    files_directory_contents_aria: Kontenut tad-direttorju
+    files_directory_download_error_modal_title: Direttorju kbir wisq biex jitniżżel
+    files_directory_download_unauthorized: Tista' tniżżel biss fajl jew direttorju li għandek aċċess għall-qari u l-eżekuzzjoni tiegħu.
+    files_directory_size_calculation_error: Skadenza waqt li kien qed jiġi ddeterminat id-daqs tad-direttorju.
+    files_directory_size_calculation_timeout: Skadenza waqt li kien qed jiġi ddeterminat id-daqs tad-direttorju.
+    files_directory_size_unknown: 'Żball bl-istatus %{exit_code} meta wieħed jipprova jiddetermina d-daqs tad-direttorju: %{error}'
+    files_directory_too_large: Id-direttorju huwa kbir wisq biex jitniżżel bħala zip. Id-direttorju għandu jkun inqas minn %{download_directory_size_limit} bytes.
+    files_doesnt_exist: '%{path} ma jeżistix.'
+    files_download: Niżżel
+    files_download_not_enabled: It-tniżżil ta' fajls mhux attivat fuq dan is-server.
+    files_download_zip: Niżżel bħala zip
+    files_exceeds_editor_limit: '%{path} jaqbeż il-limitu tal-editur ta'' %{limit}. Jekk jogħġbok niżżel il-fajl biex teditjah jew tarah lokalment.'
+    files_file_too_large: Il-fajl huwa kbir wisq biex jitniżżel. Il-fajls li jistgħu jitniżżlu għandhom ikunu inqas minn %{download_file_size_limit} bytes.
+    files_go_up_directory: Mur 'il fuq fid-direttorju
+    files_modified_at: Modifikat fi
+    files_modify_aria: Immodifika l-fajls
+    files_new_directory: Direttorju Ġdid
+    files_new_file: Fajl Ġdid
+    files_not_editable: '%{path} mhuwiex fajl editjabbli'
+    files_not_readable: M'għandekx permessi biżżejjed biex taqra '%{path}'.
+    files_open_in_files_app: Iftaħ fl-app tal-fajls
+    files_open_in_globus: Miftuħ f'Globus
+    files_path_breadcrumbs_aria: Frak tal-breadcrumbs tal-mogħdija
+    files_refresh: Aġġorna
+    files_remote_dir_not_created: Ma ħloqtx id-direttorju %{path}
+    files_remote_disabled: L-appoġġ għall-fajls remoti mhux attivat
+    files_remote_empty_dir_unsupported: Ir-remote ma jappoġġjax direttorji vojta
+    files_remote_error_listing_remotes: 'Żball fil-lista tar-remotes Rclone: %{error}'
+    files_send_to_target_title_default: Ibgħat il-metadata tal-fajls magħżula lill-applikazzjoni esterna
+    files_shell: Iftaħ fit-Terminal
+    files_shell_dropdown: Agħżel Cluster biex Tiftaħ fit-Terminal
+    files_title: Tiftix ta' fajls
+    files_upload: Tella'
+    footer_contribute: Ikkontribwixxi fuq GitHub
+    footer_license: Avviż dwar il-Liċenzja tas-Softwer
+    footer_open_source: Softwer b'sors miftuħ.
+    footer_powered_by: Imħaddem minn Open OnDemand
+    footer_version: 'Verżjoni OnDemand: %{version}'
+    home_directory: Direttorju tad-Dar
+    id: ID
+    import: Importazzjoni
+    job: Xogħol
+    job_info: Informazzjoni dwar ix-Xogħol
+    jobs_back_to_projects: Lura għall-Proġetti
+    jobs_clear_form_fields: Ċar l-oqsma tal-formola
+    jobs_completed_jobs: Xogħlijiet Kompluti
+    jobs_create_blank_project: Oħloq proġett ġdid
+    jobs_create_blank_workflow: Fluss tax-Xogħol Ġdid
+    jobs_create_template_project: Oħloq proġett ġdid minn mudell
+    jobs_import_shared_project: Importa proġett kondiviż
+    jobs_launchers: Lanċaturi
+    jobs_launchers_add_select_option: Żid l-għażla tal-għażla %{name}
+    jobs_launchers_cannot_find: Ma nistax insib il-lanċjatur %{id}
+    jobs_launchers_clone: Lanċjar tal-kloni %{name}
+    jobs_launchers_created: It-tnedija nħolqot b'suċċess!
+    jobs_launchers_default_created: '''Hello_world.sh'' ġie miżjud ukoll ma'' dan il-proġett.'
+    jobs_launchers_delete: Ħassar il-lanċjatur %{name}
+    jobs_launchers_delete_script_confirmation: Tħassar il-kontenut kollu tal-launcher?
+    jobs_launchers_deleted: Launcher imħassar b'suċċess!
+    jobs_launchers_edit: Formola tal-editjar għal-lanċjar %{name}
+    jobs_launchers_edit_form_item: Editja l-oġġett tal-formola %{label}
+    jobs_launchers_editing: Editjar ta' %{title}
+    jobs_launchers_fixed_field: Valur Fiss
+    jobs_launchers_fixed_field_help: Iffissa l-valur attwali
+    jobs_launchers_max_value_label: Valur massimu għall-qasam tan-numru %{label}
+    jobs_launchers_min_value_label: Valur minimu għall-qasam tan-numru %{label}
+    jobs_launchers_name: Isem tal-Lanċjar
+    jobs_launchers_new_field_select: Agħżel l-oġġett li trid iżżid mal-formola
+    jobs_launchers_not_found: Ma nistax insib il-Launcher %{launcher_id}
+    jobs_launchers_preview_form_item: Previżjoni tal-oġġett tal-formola %{label}
+    jobs_launchers_remove_form_item: Neħħi l-oġġett tal-formola %{label}
+    jobs_launchers_remove_select_option: Neħħi l-għażla tal-għażla %{name}
+    jobs_launchers_save_form: Issejvja l-formola
+    jobs_launchers_save_form_item: Issejvja l-bidliet fl-oġġett tal-formola %{label}
+    jobs_launchers_show_form: Uri l-formola għal-lanċjar %{name}
+    jobs_launchers_submit_launcher_title: Tnedija tal-iskript b'valuri fil-cache jew default għal-launcher %{name}
+    jobs_launchers_submitted: Xogħol sottomess b'suċċess %{job_id}.
+    jobs_launchers_updated: Il-manifest tal-lanċjar ġie aġġornat!
+    jobs_native_dependency: . Ix-xogħol jiddependi fuq l-id tax-xogħol%{dependency}
+    jobs_native_reason: minħabba '%{reason}'
+    jobs_native_state: L-istat attwali tax-xogħol huwa '%{state}'
+    jobs_new_launcher: Launcher Ġdid
+    jobs_new_project: Proġett Ġdid
+    jobs_project_cannot_find: 'Ma nistax insib il-proġett: %{project_id}'
+    jobs_project_clear_form_fields: Ċar l-oqsma tal-formola
+    jobs_project_created: Proġett maħluq b'suċċess!
+    jobs_project_delete_label: Ħassar il-proġett %{name}
+    jobs_project_delete_project_confirmation: Tħassar il-kontenut kollu tad-direttorju tal-proġett?
+    jobs_project_deleted: Il-proġett tħassar b'suċċess!
+    jobs_project_description_placeholder: Deskrizzjoni tal-proġett
+    jobs_project_directory_error: Il-mogħdija tad-direttorju tal-proġett mhix issettjata għal dan il-fluss tax-xogħol
+    jobs_project_directory_help_html: 'Ħalli vojt u se jinħoloq direttorju ġdid. <br />Post awtomatiku: %{root_directory}'
+    jobs_project_directory_placeholder: Mogħdija assoluta tad-direttorju tal-proġett
+    jobs_project_edit_label: Editja l-proġett %{name}
+    jobs_project_generic_error: 'Kien hemm żball fl-ipproċessar tat-talba tiegħek: %{error}'
+    jobs_project_group_help: Kun żgur li tagħżel il-grupp li jinkludi l-kollaboraturi kollha maħsuba. Jekk dan mhux proġett kollaborattiv, huwa rakkomandat il-grupp awtomatiku.
+    jobs_project_group_owner: Grupp
+    jobs_project_imported: Il-proġett ġie importat b'suċċess!
+    jobs_project_invalid_configuration_clusters: Huwa meħtieġ cluster tal-HPC. Ikkuntattja lill-amministratur tiegħek biex iżżid wieħed mas-sistema.
+    jobs_project_invalid_configuration_scripts: Huwa meħtieġ skript eżegwibbli għall-proġett tiegħek. Tella' skript billi tuża l-applikazzjoni tal-fajl.
+    jobs_project_job_deleted: Xogħol imħassar b'suċċess %{job_id}
+    jobs_project_job_not_deleted: Ma tistax tħassar ix-xogħol %{job_id}
+    jobs_project_job_stopped: Xogħol imwaqqaf b'suċċess %{job_id}
+    jobs_project_list_aria: Lista ta' proġetti
+    jobs_project_manager: Maniġer tal-Proġett
+    jobs_project_manifest_updated: Il-manifest tal-proġett ġie aġġornat!
+    jobs_project_name_placeholder: Isem tal-proġett
+    jobs_project_name_validation: L-isem tal-proġett jista' jkun fih biss ittri, ċifri, singijiet, underscores, u spazji
+    jobs_project_not_found: Ma nistax insib il-proġett %{project_id}
+    jobs_project_open_label: Iftaħ il-proġett %{name}
+    jobs_project_remove_label: Neħħi l-proġett %{name}
+    jobs_project_removed: Proġett imneħħi mit-tfittxija!
+    jobs_project_return_to_projects: Ritorn għall-paġna tal-proġetti
+    jobs_project_save_error: Ma tistax issalva l-manifest f'%{path}
+    jobs_project_save_project_title: Salva l-proġett
+    jobs_project_select_directory: Agħżel id-direttorju tal-proġett
+    jobs_project_setgid_help: Jekk tħalli setgid iċċekkjat, tiżgura li l-fajls tal-proġett jinħolqu mal-grupp magħżul. Dan ma jaffettwax proġetti fid-direttorju tad-dar tiegħek.
+    jobs_project_validation_error: Talba Invalida. Jekk jogħġbok irrevedi l-iżbalji hawn taħt
+    jobs_return_to_projects: Ritorn għall-paġna tal-proġetti
+    jobs_save_project_title: Salva l-proġett
+    jobs_select_directory_placeholder: Ikklikkja fuq il-proġett biex timportah
+    jobs_toggle_details: Ikklikkja biex taqleb id-dettalji għax-xogħol %{job_id}
+    jobs_workflow_add_launcher: Żid Launcher
+    jobs_workflow_canvas_aria: kanvas
+    jobs_workflow_clone: Fluss tax-xogħol tal-klonu %{name}
+    jobs_workflow_connect_launchers: Qabbad il-Launchers
+    jobs_workflow_created: Il-fluss tax-xogħol inħoloq b'suċċess!
+    jobs_workflow_delete_confirmation: Tħassar il-kontenut kollu tal-fluss tax-xogħol?
+    jobs_workflow_delete_edge: Ħassar it-Tarf
+    jobs_workflow_delete_edge_title: Ħassar it-tarf magħżul (Del/Backspace)
+    jobs_workflow_delete_launcher: Ħassar it-Tnedija
+    jobs_workflow_delete_launcher_title: Ħassar il-lanċjar magħżul (Del/Backspace)
+    jobs_workflow_delete_title: Ħassar il-fluss tax-xogħol %{name}
+    jobs_workflow_deleted: Il-fluss tax-xogħol tħassar b'suċċess!
+    jobs_workflow_description_placeholder: Deskrizzjoni tal-fluss tax-xogħol
+    jobs_workflow_edit_settings: Immodifika s-settings għall-fluss tax-xogħol %{name}
+    jobs_workflow_editing: 'Editjar: %{name}'
+    jobs_workflow_enable_sync_key: Ippermetti OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Il-fluss tax-xogħol falla bl-iżball %{error}
+    jobs_workflow_help: Ikklikkja t-titlu biex tagħżel u tkaxkar. Qabbad billi tikklikkja żewġ launchers b''Connect Launchers' magħżul.
+    jobs_workflow_manifest_updated: Il-manifest tal-fluss tax-xogħol ġie aġġornat!
+    jobs_workflow_missing_launchers: agħżel mill-inqas %{count}
+    jobs_workflow_name_placeholder: Isem tal-fluss tax-xogħol
+    jobs_workflow_name_validation: L-isem tal-fluss tax-xogħol jista' jkun fih biss ittri, ċifri, singijiet, underscores, u spazji
+    jobs_workflow_not_found: Ma nistax insib il-fluss tax-xogħol %{workflow_id}
+    jobs_workflow_pick_launchers: Agħżel Launchers
+    jobs_workflow_show_graph: Iftaħ il-fluss tax-xogħol %{name} fl-editur tal-grafika
+    jobs_workflow_submitted: Il-fluss tax-xogħol ġie sottomess b'suċċess!
+    jobs_workflow_sync_key_help: Meta jkun attivat, kull launcher f'dan il-fluss tax-xogħol jirċievi l-istess varjabbli tal-ambjent <code>OOD_WORKFLOW_SYNC_KEY</code> (token każwali uniku għal kull ġirja tal-fluss tax-xogħol). Utli għall-ġenerazzjoni ta' ismijiet ta' fajls sinkronizzati, fajls tal-illokkjar, jew identifikaturi kondiviżi bejn xogħlijiet dipendenti.
+    jobs_workflow_synchronization: Sinkronizzazzjoni
+    jobs_workflow_toolbar_aria: toolbar
+    jobs_workflow_zoom_controls: Kontrolli taż-żum
+    jobs_workflow_zoom_in: Iżżumja 'l ġewwa
+    jobs_workflow_zoom_out: Iżżumja 'l barra
+    jobs_workflow_zoom_reset: Irrisettja ż-żum
+    jobs_workflows: Flussi tax-xogħol
+    jobs_workflows_not_supported: Il-flussi tax-xogħol mhumiex appoġġjati mill-iskedatur ikkonfigurat.
+    js:
+      active_jobs:
+        delete_aria: Ħassar ix-xogħol %{name} bl-ID %{id}
+        delete_confirm: Żgur li trid tħassar %{name} - %{id}
+        delete_title: Ħassar ix-Xogħol
+        details_loaded: Il-lista tad-dettalji tax-xogħol ġiet mgħobbija.
+        load_details_failed: Ma rnexxiex jitgħabbew id-dettalji tax-xogħol.
+        remote_server_error: Kien hemm żball waqt li kienet qed tinkiseb id-dejta mis-server remot.
+        request_failed_parse: It-talba għal xogħlijiet falliet minħabba żball fl-analiżi tal-ġisem.
+        request_failed_status: 'It-talba għal xogħlijiet falliet bil-kodiċi tal-istatus: %{status}'
+        status_completed: Imlesta
+        status_hold: Żomm
+        status_queued: Fil-kju
+        status_running: Ġiri
+        status_suspended: Sospiż
+        status_undetermined: Mhux determinat
+        support_ticket_aria: Ibgħat biljett ta' appoġġ għal xogħol bl-ID %{id}
+        support_ticket_title: Ibgħat Ticket ta' Appoġġ
+        toggle_details_aria: Ibdel il-viżibilità tax-xogħol %{name} fuq %{cluster}
+      batch_connect:
+        allow_notifications: Jekk jogħġbok ħalli l-permessi tan-notifikazzjonijiet fil-brawżer tiegħek biex tippermetti allerti tas-sessjoni.
+        invalid_prefill_value_html: 'Valur invalidu: "%{value}" għall-qasam "%{field}".<br>'
+        notification_permission_error: 'Żball fit-talba għall-permess tan-notifika:'
+        resolution_reset: Ir-riżoluzzjoni ġiet resetjata għal %{width} b'%{height} pixels.
+        session_expires_warning: 'Twissija: %{title} (%{job_id}) jiskadi f''~%{minutes} minuti!'
+        session_status_aria: '%{title} issa huwa %{status}.'
+        session_status_push: '%{title} (%{job_id}) issa huwa %{status}.'
+      common:
+        cancel: Ikkanċella
+        close: Agħlaq
+        error: Żball
+        loading: Qed jitgħabba...
+        ok: OK
+      datatables:
+        all: Kollha
+        filter_label: 'Iffiltra:'
+        invalid_date: Data Invalida
+        rows_selected:
+          one: '%{count} ringiela magħżula'
+          other: '%{count} ringieli magħżula'
+        showing_filtered_rows: Qed jintwerew %{display} minn %{total} ringieli
+        showing_rows: Qed jintwerew ir-ringieli %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: u
+        changed_help: It-test tal-għajnuna fuq %{widget} inbidel għal %{help}
+        changed_label: It-tikketta fuq %{widget} ġiet mibdula għal tikketta ġdida %{label}
+        current_value: issettja l-valur attwali għal %{value}
+        hid_item: Oġġett tal-formola moħbi %{widget}
+        maximum_limit: limitu massimu għal %{value}
+        minimum_limit: limitu minimu għal %{value}
+        option_disabled: L-għażla %{value} diżattivata għal %{widget}
+        option_enabled: L-għażla %{value} attivata għal %{widget}
+        revealed_item: Oġġett tal-formola żvelat %{widget}
+        selected_option_disabled: L-għażla magħżula %{value} diżattivata għal %{widget}
+        set_limits: Issettja %{details} għal %{widget}
+        set_value: Issettja %{widget} għall-valur %{value}
+        widget_no_label: '%{type} mingħajr tikketta'
+        widget_with_label: '%{type} bit-tikketta %{label}'
+      editor:
+        save_error: 'Seħħ żball waqt li kien qed jipprova jsalva dan il-fajl!
+
+          %{error}'
+        unsaved_changes: Għandek bidliet mhux salvati!
+      files:
+        action_delete: Ħassar
+        action_download: Niżżel
+        action_edit: Editja
+        action_rename: Semmi mill-ġdid
+        action_view: Veduta
+        actions: Azzjonijiet
+        cannot_navigate_file: Ma nistax ninnaviga għal fajl.
+        change_directory: Ibdel id-Direttorju
+        clipboard_description_html: 'Ikkopja jew iċċaqlaq il-fajls t''hawn taħt minn <code>%{from}</code> għad-direttorju attwali:'
+        contents_of_directory: Kontenut tad-direttorju %{path}
+        copied_path: It-triq ġiet ikkupjata għall-clipboard!
+        copy: Kopja
+        create_directory_error: 'Seħħ żball meta ppruvajt noħloq direttorju ġdid: %{error}'
+        create_file_error: 'Seħħ żball meta ppruvajt noħloq fajl ġdid: %{error}'
+        delete_confirm_text: 'Żgur li trid tħassar il-fajls: %{files}'
+        delete_multiple_title: Tħassar il-fajls magħżula ta' %{count}?
+        delete_single_title: Tħassar %{name}?
+        deleting_files: 'Tħassir ta'' fajls...:'
+        directory: direttorju
+        directory_name_label: Isem tad-direttorju
+        download_error: 'Żball waqt it-tniżżil: %{error}'
+        duplicate_files_warning: Ġew identifikati fajls duplikati. It-tlugħ ta' dawn il-fajls se jissostitwixxi l-kontenut eżistenti.
+        file: fajl
+        filename_invalid_chars: L-isem tal-fajl ma jistax jinkludi / jew ..
+        filename_label: Isem tal-fajl
+        globus_open: Iftaħ id-direttorju kurrenti b'Globus
+        globus_unavailable: L-ebda endpoint Globus ma huwa assoċjat ma' dan id-direttorju
+        illegal_slash_in_filename: Karattru illegali (/) mhux permess fl-isem tal-fajl.
+        move: Mexxi
+        navigated_to: navigajt lejn %{path}
+        new_directory_title: Direttorju Ġdid
+        new_file_title: Fajl Ġdid
+        path_label: Mogħdija
+        poll_status_error: L-operazzjoni setgħet ma seħħitx. Ma rnexxiex jiġi rkuprat l-istatus tal-operazzjoni tal-fajl.
+        preparing_download_dir: 'qed nipprepara biex niżżel id-direttorju: %{name}'
+        provide_absolute_pathname: Ipprovdi isem tal-mogħdija assolut
+        provide_directory_name: Ipprovdi isem ta' direttorju li ma fihx /
+        provide_non_empty_filename: Ipprovdi isem ta' fajl mhux vojt.
+        provide_rename_filename: Ipprovdi isem tal-fajl biex tibdel l-isem tiegħu għalih
+        rename_title: Semmi mill-ġdid
+        see_details: Ara d-dettalji
+        select_row: Agħżel ringiela
+        select_to_copy_move: Agħżel fajl, fajls, jew direttorju biex tikkopja jew iċċaqlaq. Ma għażilt xejn.
+        select_to_delete: Agħżel fajl, fajls, jew direttorju biex tħassar. Ma għażilt xejn.
+        select_to_download: Agħżel fajl, fajls, jew direttorju biex tniżżel. Ma għażilt xejn.
+        select_to_send: Agħżel mill-inqas fajl jew direttorju wieħed biex tibgħatu.
+        send_failed: Ma rnexxiex tintbagħat l-informazzjoni tal-fajl.
+        sent_successfully: L-informazzjoni tal-fajl magħżul intbagħtet b'suċċess.
+        show_dotfiles: Uri Dotfiles
+        show_owner_mode: Uri s-Sid/Modalità
+        summary_copy_files: kopja l-fajls
+        summary_move_files: iċċaqlaq il-fajls
+        summary_remove_files: neħħi l-fajls
+        summary_rename_file: semmi mill-ġdid il-fajl
+        token_missing_expired: It-token tal-applikazzjoni huwa nieqes jew skada. Erġa' ibda.
+        transfer_error: 'Seħħ żball meta ppruvajt %{summary}: %{error}'
+        upload_and_overwrite: Tella' u Ikteb fuqha
+        upload_count:
+          one: Tella' l-fajl %{count}
+          other: Tella' l-fajls %{count}
+        upload_new_files: Tella' Fajls Ġodda
+        uppy_empty_dir_note: Direttorji vojta se jiġu inklużi fit-tlugħ biss meta tlugħ ta' direttorju jinbeda permezz ta' drag and drop. Dan għaliex il-File and Directory Entries API hija disponibbli biss waqt avveniment ta' tlugħ, mhux waqt avveniment ta' bidla fl-input.
+      icon_picker:
+        icon_selected: Ikona %{icon} magħżula
+        icon_sr: Ikona %{name}
+      launcher_edit:
+        account_help: Il-kont li bih se tiġi sottomessa x-xogħol.
+        account_label: Kont
+        add_new_option: Żid għażla ġdida
+        cores_help: Kemm-il core se jaħdem fuqhom ix-xogħol.
+        cores_label: Qlub
+        env_var_help: Żid varjabbli tal-ambjent.
+        env_var_key: 'Varjabbli tal-Ambjent: %{name}'
+        env_var_label: Varjabbli tal-Ambjent
+        hours_help: Kemm jista' jdum ix-xogħol.
+        hours_label: Sigħat
+        job_name_help: L-isem li se jkollu x-xogħol.
+        job_name_label: Isem tax-Xogħol
+        log_location_help: Id-destinazzjoni tal-output tal-log tax-xogħol.
+        log_location_label: Post tal-Lok
+        no_more_options: M'hemmx aktar għażliet
+        nodes_help: Kemm fuqhom se taħdem in-nodi x-xogħol.
+        nodes_label: Nodi
+        queues_help: Liema kju se jissottometti x-xogħol ukoll.
+        queues_label: Kjuwijiet
+      module_browser:
+        copied: Ikkupjat!
+        copy: Kopja
+        showing_results:
+          one: Qed jintwera r-riżultat ta' %{count}
+          other: Qed jintwerew ir-riżultati ta' %{count}
+      nsf_access:
+        affected_resources: 'Riżorsi Affettwati: %{resources}'
+        read_more: Aqra aktar
+        register_event: Irreġistra għal dan l-avveniment
+      path_selector:
+        directory_loaded: Direttorju mgħobbi b'oġġetti %{count}
+        invalid_regex: L-espressjoni regolari pprovduta għal dan is-selettur tal-mogħdija ma ġietx ikkumpilata
+        loading_directory: Qed jitgħabba l-kontenut tad-direttorju
+        permission_denied_prefix: 'Permess miċħud:'
+      popovers:
+        ihpc_content: Sessjoni HPC Interattiva tagħtik aċċess dedikat għal nodu wieħed jew aktar fuq il-klaster. Dan huwa simili għal sessjoni batch interattiva b'desktop aċċessibbli fuq in-nodu primarju. Uża dan għal xogħlijiet heavyweight bħal kompiti ta' komputazzjoni li jdumu ħafna jew fejn għandek bżonn riżorsi dedikati.
+        vdi_content: VDI (Virtual Desktop Interface) jagħtik aċċess għad-desktop għal node kondiviż. Din hija l-verżjoni grafika ta' node tal-login. Uża dan għal kompiti ħfief bħall-aċċess u l-wiri ta' fajls, is-sottomissjoni ta' xogħlijiet, u għal viżwalizzazzjonijiet.
+      products:
+        fatal_error: Seħħ żball fatali
+        no_action: l-ebda azzjoni
+      projects:
+        undetermined_size: Daqs mhux determinat
+      support_ticket:
+        delete_attachment: Ħassar l-anness
+        no_file_selected: L-ebda fajl ma ġie magħżul
+        selected_file: 'Fajl magħżul: %{name} (%{size}).'
+        size_bytes: '%{size}bytes'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Din il-paġna ma tistax tiġi aġġornata għax m'għadekx awtentikat/a. Jekk jogħġbok aġġorna l-paġna biex terġa' tidħol.
+        unexpected_error: Din il-paġna ltaqgħet ma' żball mhux mistenni. Jekk jogħġbok aġġorna l-paġna.
+      utils:
+        loading: Qed jitgħabba.
+        loading_complete: It-tagħbija tlestiet.
+        popup_blocked: Din il-link hija kkonfigurata biex tiftaħ f'tieqa ġdida, iżda ma tidhirx li nfetħet. Jekk jogħġbok iddiżattiva l-imblokkatur tal-popups għal din il-paġna u erġa' pprova.
+      workflows:
+        begin_from_launcher: Ibda l-fluss tax-xogħol mil-lanċjatur %{title}
+        bidirectional_not_allowed: It-truf bidirezzjonali mhumiex permessi.
+        cyclic_dependency: Iż-żieda ta' dan it-tarf se toħloq dipendenza ċiklika fost il-lanċaturi.
+        edge_aria_label: Tarf minn %{from} għal %{to}
+        launcher_aria_label: 'Lanċjatur: %{title}'
+        launcher_exists: Il-lanċjatur diġà jeżisti, jekk jogħġbok agħżel lanċjatur differenti
+        load_launcher_failed: Ma rnexxiex jitgħabba l-HTML tal-lanċjar. Jekk jogħġbok erġa' pprova.
+        no_empty_cells: M'hemm l-ebda ċelloli vojta tal-grilja disponibbli!
+        save_failed: Ma rnexxiex issalva l-fluss tax-xogħol. Iċċekkja l-console għad-dettalji.
+        select_launcher: Jekk jogħġbok agħżel launcher
+      xdmod:
+        analytics_toggle: Toggle tal-Analitika
+        column_date: Data
+        column_id: ID
+        column_name: Isem
+        date_range: '%{from} għal %{to}'
+        efficiency_report: '%{unit} Rapport tal-Effiċjenza'
+        ensure_logged_in_html: '%{error} Jekk jogħġbok kun żgur li int <a href="%{url}"> illoggjat f''Open XDMoD l-ewwel</a>, u mbagħad erġa'' pprova.'
+        expand_analytics_title: Ikklikkja biex tespandi l-informazzjoni analitika dwar ix-xogħol %{id} 'l fuq minn din it-tabella.
+        fetch_user_failed: It-tentattiv biex tinġabar l-informazzjoni tal-utent attwali minn Open XDMoD falla.
+        idp_redirect_failed: 'Il-login falla: Ir-ridirezzjoni tal-IDP falliet'
+        iframe_error: L-iFrame tal-Login tal-XDMoD fuq il-URL %{url} ippubblika messaġġ ta' żball bl-informazzjoni %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} ineffiċjenti %{unit} </span> ⁄ %{total} totali %{unit}
+        invalid_job_data: Id-dejta tax-xogħol li rritornat mit-talba mhijiex valida.
+        loading_caps: QED JIĠI TTGĦABBA...
+        login_page_load_failed: 'Il-login falla: Ma rnexxiex titgħabba l-paġna tal-login ta'' XDMoD'
+        login_timeout: 'Il-login falla: Skadenza tal-ħin biex il-login jitlesta'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Walltime
+        no_data: L-ebda dejta disponibbli.
+        not_available: Mhux Applikabbli
+        open_xdmod: Iftaħ XDMoD
+        percent_efficient: '%{percent}% effiċjenti'
+        percent_efficient_aria: perċentwal effiċjenti
+        percent_inefficient: '%{percent}% ineffiċjenti'
+        percent_inefficient_aria: perċentwal ineffiċjenti
+        recently_completed_jobs: Xogħlijiet Imlesta Riċentement
+        unit_core_hours: sigħat ewlenin
+        unit_core_hours_title: Sigħat Ewlenin
+        unit_jobs: impjiegi
+        unit_jobs_title: Impjiegi
+    launch: Tnedija
+    load_report: Rapport tat-Tagħbija + %{node}
+    loading: Qed jitgħabba...
+    loading_short: Tagħbija
+    locale_name: Malti (Malta)
+    logo_alt_text: Merħba f'Open OnDemand
+    logout_body_html: <strong>Trid tagħlaq il-browser tiegħek kompletament</strong> sabiex isseħħ il-"logout". Jekk wara li terġa' tiftaħ il-browser tiegħek xorta tkun illoggjat, jekk jogħġbok neħħi l-cookies tiegħek. Jekk qiegħed fuq Chromebook jew Chromebox, ikollok bżonn terġa' tibda t-tagħmir tiegħek sabiex "tagħlaq il-browser" u b'hekk "toħroġ".
+    logout_tip_html: '<strong>Suġġeriment: L-użu ta'' tieqa "private browsing mode"</strong> waqt li tuża OnDemand huwa mod tajjeb ħafna biex timmaniġġja l-"auto-logout", għax l-għeluq tat-tieqa tal-browser tiegħek se jneħħi l-cookies u l-informazzjoni tas-sessjoni kollha assoċjati.'
+    logout_title: Għadek m'intix illoggjat/a
+    maximum: Massimu
+    mem_report: Rapport tal-Memorja + %{node}
+    minimum: Minimu
+    mode: Modalità
+    module_browser_available_modules: 'Moduli disponibbli:'
+    module_browser_copy_aria: Kmand tat-tagħbija tal-kopja għal %{name}
+    module_browser_dependencies: 'Dipendenzi:'
+    module_browser_last_updated: 'Aġġornat l-aħħar: %{last_updated}'
+    module_browser_load_command: 'Kmand tat-tagħbija:'
+    module_browser_search_label: Moduli tat-Tiftix
+    module_browser_search_placeholder: Fittex skont l-isem tal-modulu...
+    module_browser_select_version: (agħżel verżjoni)
+    module_browser_showing_results: Qed jintwerew ir-riżultati ta' %{count}
+    module_browser_title: Browser tal-Moduli
+    module_browser_versions: Verżjonijiet
+    motd_default_md: 'L-iżvilupp ta'' Open OnDemand huwa appoġġjat permezz tal-[Fondazzjoni Nazzjonali tax-Xjenza](https://www.nsf.gov/)
+
+      taħt in-numri tal-għotjiet [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) u
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Tgħallem aktar jew involvi ruħek:
+
+
+      - [Diskors](https://discourse.openondemand.org/)
+
+      - [Repożitorju Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [repożitorju ood-core](https://github.com/OSC/ood_core)
+
+      - [Dokumentazzjoni](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'Il-MOTD ma ġiex analizzat jew irrendut b''mod korrett: %{error_message}'
+    motd_no_messages: M'hemm l-ebda messaġġi ġodda.
+    motd_title: Messaġġ tal-Jum
+    name: Isem
+    nav_all_apps: L-Apps Kollha
+    nav_develop_docs: Dokumentazzjoni tal-Iżviluppatur
+    nav_develop_my_sandbox_apps_dev: L-Applikazzjonijiet tas-Sandbox Tiegħi (Żvilupp)
+    nav_develop_my_sandbox_apps_prod: L-Applikazzjonijiet Kondiviżi Tiegħi (Produzzjoni)
+    nav_develop_title: Żviluppa
+    nav_help_change_password: Ibdel il-Password tal-HPC
+    nav_help_custom: Għajnuna tan-navigazzjoni apposta
+    nav_help_docs: Dokumentazzjoni Online
+    nav_help_support: Ikkuntattja l-Appoġġ
+    nav_help_support_ticket: Ibgħat Ticket ta' Appoġġ
+    nav_help_title: Għajnuna
+    nav_help_two_factor: Ikkonfigura l-Awtentikazzjoni b'Żewġ Fattori
+    nav_language: Lingwa
+    nav_limit_caption: juri %{subset_count} ta' %{total_count}
+    nav_logout: Oħroġ
+    nav_main_menu: Menù Prinċipali
+    nav_restart_server: Erġa' ibda s-Server tal-Web
+    nav_sessions: Is-Sessjonijiet Interattivi Tiegħi
+    nav_toggle_navigation: Aqleb in-navigazzjoni
+    nav_user: Illoggjat bħala %{username}
+    network_report: Rapport tan-Netwerk + %{node}
+    node: Nodu
+    none: Xejn
+    not_grouped: Applikazzjonijiet Oħra
+    nsf_access_announcements: Avviżi tal-NSF ACCESS
+    nsf_access_events: Avvenimenti tal-NSF ACCESS
+    nsf_access_outages: Interruzzjonijiet tal-AĊĊESS tal-NSF
+    ok: OK
+    opens_in_new_tab: jiftaħ f'tab ġdida
+    output_location: 'Post tal-Ħruġ:'
+    owner: Sid
+    page_actions_aria: Azzjonijiet tal-paġna
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametri
+    path_selector_breadcrumb_aria: '%{title} Frak tal-breadcrumb'
+    path_selector_caption: Agħżel fajl jew direttorju biex tużah fil-formola.
+    path_selector_default_popup_title: Agħżel id-Direttorju tax-Xogħol Tiegħek
+    path_selector_home: dar
+    path_selector_parent_directory: direttorju prinċipali
+    permissions_created: Il-permess inħoloq b'suċċess.
+    permissions_destroyed: Il-permess ġie meqrud b'suċċess.
+    permissions_group_title: Permessi tal-Grupp
+    permissions_user_title: Permessi tal-Utent
+    pinned_apps_caption_html: Subsett ewlieni ta' <a href="%{all_apps_url}">l-apps kollha disponibbli</a>
+    pinned_apps_category: Applikazzjonijiet
+    pinned_apps_title: Applikazzjonijiet Imwaħħlin
+    products_created: Il-prodott inħoloq b'suċċess.
+    products_git_commit_hint_html: Jekk jogħġbok ikkommetti kwalunkwe tibdil jew żid il-fajls meħtieġa ma' <code>.gitignore</code>
+    products_git_staged: Imtella' fi stadji
+    products_git_status: Status tal-Git
+    products_git_unstaged: Mhux imtella' f'fażijiet
+    products_git_untracked: Mhux Traċċat
+    products_manifest_save_error: Ma tistax issalva l-manifest tal-app f'%{path}
+    products_ssh_key_created: Iċ-ċavetta SSH inħolqot b'suċċess.
+    products_ssh_key_exists: Iċ-ċavetta SSH diġà teżisti
+    products_ssh_key_failed: 'Iċ-ċavetta SSH ma setgħetx tinħoloq: %{error}'
+    products_type_batch_connect: App tal-Konnessjoni tal-Lott
+    products_type_passenger: App tal-Passiġġieri
+    products_type_passenger_meteor: App tal-Meteor tal-Passiġġieri
+    products_type_passenger_node: App tan-Nodu tal-Passiġġieri
+    products_type_passenger_rack: App tal-Passiġġieri fuq l-Ixkaffa
+    products_type_passenger_rails: App tal-Ferroviji tal-Passiġġieri
+    products_type_passenger_rails_sqlite: App tal-Ferrovija tal-Passiġġieri b'database SQLite
+    products_type_passenger_wsgi: App WSGI tal-Passiġġieri
+    products_updated: Il-prodott ġie aġġornat b'suċċess.
+    project: Proġett
+    project_balances: Bilanċi tal-Proġett
+    project_directory: Direttorju tal-Proġett
+    project_zip_error_message: 'Żball fil-ħolqien tal-fajl ZIP: %{error}'
+    project_zip_success_message: 'Suċċess: project.zip inħoloq fid-direttorju tal-proġett tiegħek.'
+    queue: Kju
+    quota_additional_message: Ikkunsidra li tħassar jew tarkivja l-fajls biex tillibera l-ispazju fuq id-disk.
+    quota_block: Bl-użu ta' %{used} tal-kwota %{available}
+    quota_block_shared: (%{used_exclusive} huma tiegħek)
+    quota_file: L-użu ta' fajls %{used} ta' kwota %{available} fajls
+    quota_file_shared: (Il-fajls %{used_exclusive} huma tiegħek)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Erġa' ċċarġja l-paġna biex tara l-kwota aġġornata. Il-kwoti jiġu aġġornati kull 5 minuti.
+    quota_warning_prefix_html: Twissija dwar il-limitu tal-kwota għal
+    recently_used_apps_title: Applikazzjonijiet Użati Riċentement
+    remove: Neħħi
+    reset: Irrisettja
+    restart_msg_html: 'Is-sħubija fil-grupp tiegħek inbidlet, u dan jaffettwa l-aċċess tiegħek għall-apps. Id-dashboard tiegħek għandu jerġa'' jibda awtomatikament.
+
+      Jekk ma jagħmilx hekk, ikklikkja: <a href="%{restart_url}">erġa'' ibda s-server tal-web</a>.'
+    restore: Irrestawra
+    root: Għerq
+    save: Issejvja
+    saved_settings_title: Settings Salvati
+    select: Agħżel
+    select_all: Agħżel Kollox
+    select_path: Agħżel il-Mogħdija
+    select_path_for: '%{element} agħżel il-mogħdija
+
+      '
+    settings_csrf_expired: It-token tas-sigurtà tas-sessjoni tiegħek skada. Jekk jogħġbok erġa' pprova l-azzjoni tiegħek.
+    settings_invalid_request: Settings invalidi sottomessi
+    settings_unprocessable_body_html: Is-sessjoni tiegħek setgħet skadiet jew il-bidla li ridt ġiet miċħuda. Jekk jogħġbok <a href="%{dashboard_url}">erġa' lura għad-Dashboard</a> u erġa' pprova.
+    settings_unprocessable_title: Sessjoni Skaduta jew Bidla Miċħuda
+    settings_updated: Is-settings ġew aġġornati
+    shared_apps_caption: Maqsum minn %{owner_title} (%{owner})
+    shared_apps_caption_short: Maqsum minn %{owner}
+    shared_apps_title: Applikazzjonijiet Kondiviżi
+    sharing_catalog_msg_html: <br>Sottogrupp tal-apps disponibbli jista' jidher fuq %{catalog_link_tag}.
+    sharing_catalog_title: Katalgu tal-Applikazzjonijiet
+    sharing_no_shared_apps_html: '<strong>M''hemm l-ebda apps kondiviżi apposta disponibbli.</strong>
+
+      '
+    sharing_support_msg_html: 'Jekk ma tarax l-app li qed tfittex, jekk jogħġbok
+
+      <a href="%{support_url}">ikkuntattja l-appoġġ</a>.'
+    sharing_welcome_msg_html: 'Applikazzjonijiet għall-aċċess tal-klasters huma disponibbli mill-menus dropdown fin-navbar ta'' hawn fuq.
+
+
+      <br>Applikazzjonijiet kondiviżi apposta huma disponibbli hawn taħt.'
+    shell: Qoxra
+    shell_app_title: '%{cluster_title} Aċċess għall-Qoxra'
+    show: Uri
+    size: Daqs
+    skip_navigation: Aqbeż in-Navigazzjoni
+    smart_attributes:
+      account: Kont
+      auto_modules_none: Moduli awtomatiċi (l-ebda wieħed mogħti)
+      cluster: Raggruppament
+      cores: Qlub
+      email_on_started: Nixtieq nirċievi email meta tibda s-sessjoni
+      environment_variable: Varjabbli tal-Ambjent
+      environment_variable_key: 'Varjabbli tal-Ambjent: %{key}'
+      job_name: Isem tax-Xogħol
+      module_version: Verżjoni %{module}
+      num_cpus_single_node: Numru ta' CPUs fuq nodu wieħed
+      num_hours: Numru ta' sigħat
+      num_nodes: Numru ta' nodi
+      num_processors: Numru ta' proċessuri
+      partition: Partizzjoni
+      qos: QoS
+      queue: Kju
+      script: Skript
+      vnc_idle_help: 'Oħroġ jekk jgħaddu # sekondi mingħajr konnessjonijiet mal-VNC viewer'
+      vnc_idle_label: Ħin ta' skadenza għall-inattività
+      vnc_resolution_help: Ir-riżoluzzjoni tintuża biss minn konnessjonijiet VNC nattivi
+      vnc_resolution_label: Riżoluzzjoni
+    soft_tabs: Tabs rotob
+    soft_tabs_info: It-tabs rotob huma spazji fil-fajl minflok karattri tat-tab attwali.
+    status: Status
+    status_completed: Imlesta
+    status_held: Miżmum
+    status_hold: Żomm
+    status_queued: Fil-kju
+    status_running: Ġiri
+    status_starting: Bidu
+    status_suspend: Issospendi
+    status_suspended: Sospiż
+    status_undetermined: Mhux determinat
+    stop: Waqqaf
+    submit: Ibgħat
+    submit_args: 'Ibgħat l-Argumenti:'
+    support_ticket:
+      creation_success: 'Email tal-biljett tal-appoġġ mibgħuta lil: %{to}'
+      fields:
+        attachments: Annessi
+        cc: ĊK
+        description: Deskrizzjoni
+        email: Email
+        job_description: Deskrizzjoni tax-Xogħol
+        session_description: Deskrizzjoni tas-Sessjoni
+        subject: Suġġett
+        username: Isem tal-Utent
+      generic_error: 'Kien hemm żball fl-ipproċessar tat-talba tiegħek: %{error}'
+      header: Biljett ta' Appoġġ
+      rt:
+        creation_success: 'Biljett ta'' appoġġ maħluq fis-sistema RequestTracker. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Biljett ta'' appoġġ maħluq f''ServiceNow. Numru: %{number}. Iżda ma nistax inżid l-annessi.'
+        creation_success: 'Biljett ta'' appoġġ maħluq f''ServiceNow. Numru: %{number}'
+      submit: Ibgħat biljett ta' appoġġ
+      title: Biljett ta' Appoġġ
+      validation:
+        attachments_items: L-%{id} mhumiex validi. %{items} miżjud, l-għadd massimu ta' annessi huwa %{max}
+        attachments_size: L-%{id} mhumiex validi. Id-daqs massimu tal-annessi huwa %{max}
+        email: Il-format %{id} mhux validu. Kien mistenni indirizz elettroniku validu.
+        items:
+          attachments_js: M'hemmx aktar annessi permessi
+        required: L-%{id} huwa meħtieġ
+        size:
+          attachments_js: Id-daqs massimu tal-annessi huwa %{max}. Id-daqs tal-fajl magħżul huwa %{size}
+      validation_error: Talba Invalida. Jekk jogħġbok irrevedi l-messaġġi ta' żball hawn taħt
+    support_ticket_add_attachment: Żid anness
+    support_ticket_attachments_help: Ikklikkja l-kaxxa biex tehmeż fajl. Screenshots jew fajls oħra jistgħu jgħinuk issolvi l-problema tiegħek.
+    system_apps_caption: App Installata mis-Sistema
+    system_status_available: '%{name} Disponibbli: %{count}'
+    system_status_cluster_title: Status tal-Klaster %{title}
+    system_status_gpus: GPUs
+    system_status_in_use: '%{percent} qed jintuża'
+    system_status_jobs_queued: Xogħlijiet fil-Kju
+    system_status_jobs_queued_count: '%{count} Xogħlijiet fil-Kju'
+    system_status_jobs_running: Impjiegi li Jiġru
+    system_status_jobs_running_count: '%{count} Impjiegi Qed Jiġru'
+    system_status_nodes: Nodi
+    system_status_not_slurm: Cluster information is not available with %{scheduler}. Currently, only Slurm clusters are supported.
+    system_status_processors: Proċessuri
+    toggle_notifications: Ixgħel in-notifiki
+    toggle_push_notifications: Ixgħel in-notifiki push
+    type: Tip
+    undefined_title: Titlu Mhux Definit
+    unknown: Mhux magħruf
+    uppy:
+      strings:
+        addMore: Żid aktar
+        addMoreFiles: Żid aktar fajls
+        addingMoreFiles: Iż-żieda ta' aktar fajls
+        back: Lura
+        browseFiles: fittex il-fajls
+        browseFolders: fittex il-folders
+        cancel: Ikkanċella
+        cancelUpload: Ikkanċella t-tlugħ
+        closeModal: Agħlaq il-Modali
+        complete: Komplet
+        dashboardTitle: Min Itella' l-Fajls
+        dashboardWindowTitle: Tieqa tal-Uploader tal-Fajls (Agħfas escape biex tagħlaq)
+        done: Magħmul
+        dropHint: Poġġi l-fajls tiegħek hawn
+        dropPasteBoth: Poġġi l-fajls hawn, %{browseFiles} jew %{browseFolders}
+        dropPasteFiles: Poġġi l-fajls hawn jew %{browseFiles}
+        dropPasteFolders: Poġġi l-fajls hawn jew %{browseFolders}
+        editFile: Editja l-fajl
+        editing: Editjar ta' %{file}
+        emptyFolderAdded: Ma ġew miżjuda l-ebda fajls minn fowlder vojt
+        error: Żball
+        exceedsSize: '%{file} jaqbeż id-daqs massimu permess ta'' %{size}'
+        failedToUpload: Ma rnexxiex ittella' %{file}
+        folderAlreadyAdded: Il-fowlder "%{folder}" diġà ġie miżjud
+        myDevice: L-Apparat Tiegħi
+        noDuplicates: Ma nistax inżid il-fajl duplikat '%{fileName}', diġà jeżisti
+        pause: Pawża
+        pauseUpload: Pawża t-tlugħ
+        paused: Pawża
+        removeFile: Neħħi l-fajl
+        resume: Sommarju
+        resumeUpload: Kompli t-tlugħ mill-ġdid
+        retry: Erġa' pprova
+        retryUpload: Erġa' pprova ttella'
+        save: Issejvja
+        saveChanges: Salva l-bidliet
+        showErrorDetails: Uri d-dettalji tal-iżball
+        upload: Tella'
+        uploadComplete: It-tlugħ komplut
+        uploadFailed: It-tlugħ falla
+        uploadPaused: It-tlugħ imwaqqaf
+        uploading: Ittella'
+        xTimeLeft: '%{time} telaq'
+    user: Utent
+    user_configuration:
+      support_ticket_error: support_ticket mhux ikkonfigurat sew. Jekk jogħġbok żid implimentazzjoni backend fil-konfigurazzjoni YAML.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand jipprovdi punt ta'' aċċess integrat u uniku għar-riżorsi kollha tal-HPC tiegħek.</p>
+
+      '

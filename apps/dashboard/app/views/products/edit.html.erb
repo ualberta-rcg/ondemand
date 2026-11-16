@@ -14,11 +14,11 @@
   <%= render "form_manifest", f: f, product: @product %>
   <div class="row actions">
     <div class="col-md-12">
-      <%= f.submit 'Save', class: 'btn btn-primary float-end' %>
+      <%= f.submit t('dashboard.save'), class: 'btn btn-primary float-end' %>
     </div>
   </div>
 <% end %>
 
 <hr />
 
-<%= link_to 'Back', product_path(@product.name, type: @type), class: 'btn btn-default' %>
+<%= link_to t('dashboard.back'), product_path(@product.name, type: @type), class: 'btn btn-default' %>

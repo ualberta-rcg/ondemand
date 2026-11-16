@@ -1,0 +1,5 @@
+---
+en-CP:
+  manifest:
+    name: Live Icebreakers
+    description: View daemons currently running on available subnets configured for OnDemand.

@@ -151,6 +151,7 @@ en:
     batch_connect_sessions_cancel_confirm: Are you sure?
     batch_connect_sessions_cancel_full_title: Cancel %{title} Session
     batch_connect_sessions_cancel_title: Cancel
+    batch_connect_sessions_connect_to: Connect to %{app_title}
     batch_connect_sessions_connection_render_error: Cannot render the connection button from the view.html.erb because of error '%{error}'
     batch_connect_sessions_data_html: |
       The %{title} session data for this session can be accessed
@@ -167,16 +168,29 @@ en:
     batch_connect_sessions_errors_staging: 'Failed to stage the template with the following error:'
     batch_connect_sessions_errors_submission: 'Failed to submit session with the following error:'
     batch_connect_sessions_native_vnc_tab: Native Instructions
+    batch_connect_sessions_novnc_compression: Compression
+    batch_connect_sessions_novnc_compression_help: 1 (low) to 9 (high)
     batch_connect_sessions_novnc_launch: Launch %{app_title}
+    batch_connect_sessions_novnc_quality: Image Quality
+    batch_connect_sessions_novnc_quality_help: 0 (low) to 9 (high)
     batch_connect_sessions_novnc_tab: noVNC Connection
     batch_connect_sessions_novnc_view_only: View Only (Share-able Link)
     batch_connect_sessions_path_selector_forbidden_error: You do not have permission to select that directory or file.
     batch_connect_sessions_relaunch_full_title: Relaunch %{title} Session
     batch_connect_sessions_relaunch_title: Relaunch
     batch_connect_sessions_staged_root: staged root directory
+    batch_connect_sessions_stats_core_count:
+      one: "%{count} core"
+      other: "%{count} cores"
     batch_connect_sessions_stats_created_at: 'Created at:'
     batch_connect_sessions_stats_expected_time: 'Expected start:'
+    batch_connect_sessions_stats_gpu_count:
+      one: "%{count} GPU"
+      other: "%{count} GPUs"
     batch_connect_sessions_stats_host: 'Host:'
+    batch_connect_sessions_stats_node_count:
+      one: "%{count} node"
+      other: "%{count} nodes"
     batch_connect_sessions_stats_session_dir_link_title: Open session directory for %{session_id}
     batch_connect_sessions_stats_session_id: 'Session ID:'
     batch_connect_sessions_stats_support_ticket: Problems with this session?
@@ -253,6 +267,7 @@ en:
     close_notice: Close this notice.
     cluster: Cluster
     copy: Copy
+    copy_suffix: " (Copy)"
     cpu_report: CPU Report + %{node}
     custom_pages:
       invalid: 'Invalid page code: %{page}. This page has not been configured'
@@ -262,6 +277,9 @@ en:
     details: Details
     development_apps_caption: Sandbox App
     development_apps_category: Sandbox Apps
+    development_delete_app: Delete App
+    development_edit_title: Edit %{title}
+    development_launch_title: Launch %{title}
     directory: Directory
     edit: Edit
     editor_default: Default
@@ -346,10 +364,12 @@ en:
     jobs_launchers_deleted: Launcher successfully deleted!
     jobs_launchers_edit: Edit form for launcher %{name}
     jobs_launchers_edit_form_item: Edit form item %{label}
+    jobs_launchers_editing: Editing %{title}
     jobs_launchers_fixed_field: Fixed Value
     jobs_launchers_fixed_field_help: Fix current value
     jobs_launchers_max_value_label: Maximum value for number field %{label}
     jobs_launchers_min_value_label: Minimum value for number field %{label}
+    jobs_launchers_name: Launcher Name
     jobs_launchers_new_field_select: Select item to add to form
     jobs_launchers_not_found: Cannot find Launcher %{launcher_id}
     jobs_launchers_preview_form_item: Preview of form item %{label}
@@ -367,6 +387,7 @@ en:
     jobs_new_launcher: New Launcher
     jobs_new_project: New Project
     jobs_project_cannot_find: 'Cannot find project: %{project_id}'
+    jobs_project_clear_form_fields: Clear form fields
     jobs_project_created: Project successfully created!
     jobs_project_delete_label: Delete project %{name}
     jobs_project_delete_project_confirmation: Delete all contents of project directory?
@@ -394,7 +415,9 @@ en:
     jobs_project_open_label: Open project %{name}
     jobs_project_remove_label: Remove project %{name}
     jobs_project_removed: Project removed from lookup!
+    jobs_project_return_to_projects: Return to projects page
     jobs_project_save_error: Cannot save manifest to %{path}
+    jobs_project_save_project_title: Save project
     jobs_project_select_directory: Select project directory
     jobs_project_setgid_help: Leaving setgid checked ensures project files are created with the selected group. Does not affect projects in your home directory.
     jobs_project_validation_error: Invalid Request. Please review the errors below
@@ -738,6 +761,7 @@ en:
     page_actions_aria: Page actions
     page_title: "%{page} - %{site}"
     page_title_with_dir: "%{page} - %{site} - %{dir}"
+    parameters: Parameters
     path_selector_breadcrumb_aria: '%{title} Breadcrumb'
     path_selector_caption: Choose a file or directory to use in the form.
     path_selector_default_popup_title: Select Your Working Directory
@@ -814,6 +838,7 @@ en:
     sharing_welcome_msg_html: |
       Cluster access applications are available from the dropdown menus in the navbar above.
       <br>Custom shared apps are available below.
+    shell: Shell
     shell_app_title: "%{cluster_title} Shell Access"
     show: Show
     size: Size
@@ -852,6 +877,7 @@ en:
     status_suspend: Suspend
     status_suspended: Suspended
     status_undetermined: Undetermined
+    stop: Stop
     submit: Submit
     submit_args: 'Submit Args:'
     support_ticket:
@@ -872,6 +898,7 @@ en:
       servicenow:
         attachments_failure: 'Support ticket created in ServiceNow. Number: %{number}. But unable to add the attachments.'
         creation_success: 'Support ticket created in ServiceNow. Number: %{number}'
+      submit: Submit support ticket
       title: Support Ticket
       validation:
         attachments_items: The %{id} are invalid. %{items} added, maximum number of attachments is %{max}

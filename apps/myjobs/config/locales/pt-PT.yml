@@ -1,0 +1,133 @@
+---
+pt-PT:
+  jobcomposer:
+    account_label: 'Conta:'
+    back: Costas
+    cancel: Cancelar
+    close: Perto
+    cluster_label: 'Aglomeração:'
+    confirm_delete: Tem a certeza?
+    confirm_delete_template: Tem a certeza de que deseja eliminar isso?
+    copy_template: Copiar modelo
+    create_from_path_title: Criar um novo trabalho a partir de um caminho
+    create_new_heading_html: Criar novo "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Criar novo emprego
+    create_template: Criar modelo
+    create_template_from_job_title: Criar modelo a partir do trabalho selecionado
+    delete: Eliminar
+    delete_job_title: Apagar tarefa
+    deprecation_warning_html: O Job Composer está obsoleto e será removido no Open OnDemand 5.0. Transfira os seus trabalhos e modelos para o <a href="%{projects_path}">Project Manager</a>.
+    edit: Editar
+    edit_files: Editar ficheiros
+    folder_contents_label: 'Conteúdo da pasta:'
+    from_default_template: Do modelo padrão
+    from_default_template_title: Crie um novo trabalho a partir do modelo padrão.
+    from_selected_job: A partir do trabalho selecionado
+    from_selected_job_title: Copie o trabalho selecionado
+    from_specified_path: A partir do caminho especificado
+    from_template: A partir do modelo
+    from_template_title: Crie um novo trabalho a partir de um modelo à sua escolha.
+    invalid_cluster_html: O cluster não é válido! Edite <a href="#" id="edit-job-options-script-link">Opções de Tarefa</a> para selecionar um cluster válido.
+    invalid_script_html: O script não é válido! Edite <a href="#" id="edit-job-options-link">Opções de trabalho</a> para selecionar um script válido.
+    job_already_submitted: A solicitação já foi enviada.
+    job_array_request_label: 'Pedido de matriz de tarefas:'
+    job_attributes_heading_html: Atributos do Cargo <strong>(Opcional)</strong>
+    job_copied: O trabalho foi copiado com sucesso.
+    job_copy_failed: 'Falha ao copiar a tarefa: %{errors}'
+    job_created: O trabalho foi criado com sucesso.
+    job_destroy_failed: 'O trabalho não pôde ser destruído: %{errors}'
+    job_destroyed: Job foi destruído com sucesso.
+    job_details: Detalhes da vaga
+    job_directory_missing: O diretório de emprego está em falta!
+    job_name_label: 'Nome do cargo:'
+    job_not_submitted: A vaga não foi submetida.
+    job_stop_failed: 'A tarefa não pôde ser interrompida: %{errors}'
+    job_stopped: O trabalho foi interrompido com sucesso.
+    job_submit_failed: 'Falha ao enviar o trabalho em lote:'
+    job_submitted: O trabalho foi submetido com sucesso.
+    job_updated: A atualização do trabalho foi concluída com sucesso.
+    loading: Carregando
+    loading_job_info: Carregando informação sobre o trabalho
+    nav_help: Ajuda
+    nav_jobs: Empregos
+    nav_menu_aria: Menu do Compositor de Tarefas
+    nav_templates: Modelos
+    new_job: Novo emprego
+    new_template: Novo modelo
+    new_template_title: Criar um novo modelo
+    no_clusters_alert: Não existem hosts configurados que permitam o envio de trabalhos. Por favor contacte o administrador do sistema.
+    open_dir: Abrir diretório
+    open_dir_in_editor: Abrir diretório no editor de ficheiros
+    open_dir_in_file_manager: Abrir diretório no gestor de ficheiros
+    open_dir_in_terminal: Abrir diretório no terminal
+    open_editor: Abrir editor
+    open_selected_job_in_terminal: Abra a vaga selecionada no terminal.
+    open_selected_template_in_terminal: Abrir modelo selecionado no terminal
+    open_template_dir_in_file_manager: Abra o diretório de modelos no gestor de ficheiros.
+    open_terminal: Terminal aberto
+    open_xdmod: Abra o XDMoD
+    options_account_help: O campo "Conta" é opcional. Se não for preenchido, a conta pode ser definida automaticamente pelo filtro de envio.
+    options_account_title: Conta
+    options_array_help: 'Os arrays de tarefas são opcionais. Exemplo: 1-10'
+    options_array_help_with_clusters: 'Os conjuntos de tarefas são opcionais. O OnDemand não suporta atualmente conjuntos de tarefas para os clusters: %{cluster_list}.
+
+      '
+    options_array_title: Especificação da matriz de tarefas
+    options_cluster_title: Aglomeração
+    options_copy_environment: Ambiente de cópia
+    options_errors: Por favor, corrija os erros abaixo.
+    options_name_title: Nome
+    options_script_help: Os ficheiros maiores que 65 KB são omitidos no campo de script de trabalho.
+    options_script_title: Especifique o guião de trabalho.
+    options_title: Opções de emprego
+    other_valid_files: Outro(s) ficheiro(s) válido(s)
+    page_title: Compositor de Tarefas - %{site}
+    path_to_source_heading_html: Caminho para a fonte <strong>(Obrigatório)</strong>
+    reset: Reiniciar
+    reset_template_fields_title: Repor campos para o padrão do modelo
+    save: Guardar
+    script_contents_label: 'Conteúdo do guião:'
+    script_location_label: 'Localização do script:'
+    script_name_form_label: 'Nome do guião:'
+    script_name_label: 'Nome do script:'
+    select_cluster_prompt: Selecione um cluster...
+    select_template_option: -- seleccione um modelo --
+    selected_template_details: Detalhes do modelo selecionado
+    show: Espetáculo
+    show_batch_host_label: 'Anfitrião do lote:'
+    show_dir_contents_label: 'Conteúdo do diretório:'
+    show_name_label: 'Nome:'
+    show_staged_dir_label: 'Direção de cena:'
+    showing_job_title: Exibindo o trabalho
+    skip_navigation: Saltar navegação
+    source_path_help: Introduza o caminho para um diretório no sistema de ficheiros. O conteúdo deste caminho será copiado para um novo fluxo de trabalho.
+    source_path_label: Caminho de origem
+    specify_job_host_and_script: Especifique o host e o script da tarefa.
+    stop: Parar
+    stop_job_title: Pare o trabalho
+    submit: Submeter
+    submit_job_title: Enviar vaga
+    submit_script_title: Enviar roteiro
+    submit_to_label: 'Enviar para:'
+    suggested_files: Ficheiro(s) sugerido(s)
+    table_created: Criado
+    table_id: EU IA
+    table_source: Fonte
+    table_status: Estatuto
+    template_create_error: erro ao criar o modelo
+    template_error_name_unique: Deve ser único.
+    template_error_path_directory: Deve apontar para um diretório.
+    template_error_path_missing: Não existe.
+    template_errors_heading:
+      one: 'O erro %{count} impediu que este modelo fosse guardado:'
+      other: 'Os erros %{count} impediram que este modelo fosse guardado:'
+    template_label: 'Modelo:'
+    template_location_label: 'Localização do modelo:'
+    template_path_blank_help: Se for deixado em branco, será adicionado um script de trabalho padrão ao seu novo modelo.
+    template_path_label: Caminho (o modelo será criado copiando ficheiros deste caminho de origem)
+    templates_subtitle: Para criar uma nova vaga, selecione um modelo para copiar, preencha o formulário à direita e clique em "Criar nova vaga".
+    title: Compositor de emprego
+    toggle_navigation: Alternar navegação
+    view_files: Ver ficheiros
+    xdmod_url_warning_message: Esta tarefa pode não aparecer no Open XDMoD até 24 horas após a sua conclusão.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

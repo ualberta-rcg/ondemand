@@ -1,0 +1,18 @@
+{
+  "page_title": "Shell - %{siteTitle}",
+  "menu_aria": "Shell-menyn",
+  "host_label": "Värd: %{host}",
+  "initial_directory": "Ursprunglig katalog: %{dir}",
+  "themes_label": "Teman:",
+  "theme_default": "Standard",
+  "theme_bright": "Ljus",
+  "theme_dark": "Mörk",
+  "fonts_label": "Typsnitt:",
+  "leave_page_warning": "Om du lämnar den här sidan avslutas din terminalsession.",
+  "websocket_failed": "Misslyckades med att upprätta en WebSocket-anslutning. Se till att du använder en webbläsare som stöder WebSocket-anslutningar.",
+  "connection_terminated": "Din anslutning till fjärrservern har avslutats.",
+  "auth_no_clusters": "Inga kluster definierade.",
+  "auth_invalid_origin": "Ogiltigt ursprung.",
+  "auth_bad_csrf": "Felaktig CSRF-token.",
+  "auth_host_not_allowed": "Värden \"%{host}\" har inte angetts i tillåtelselistan eller klusterkonfigurationerna."
+}

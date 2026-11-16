@@ -1,0 +1,14 @@
+---
+hr-HR:
+  manifest:
+    name: Stolno računalo
+    description: Ova će aplikacija pokrenuti interaktivnu radnu površinu na jednom ili više računalnih čvorova. Imat ćete puni pristup resursima koje ti čvorovi pružaju. To je analogno interaktivnom batch zadatku.
+  form:
+    attributes:
+      desktop:
+        label: Okruženje radne površine
+        options:
+          gnome: Gnom
+          kde: KDE
+          mate: PARITI
+          xfce: Xfce

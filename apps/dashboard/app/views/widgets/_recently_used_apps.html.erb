@@ -16,7 +16,7 @@
               batch_connect_session_contexts_path(token: app.token),
               class: ['launcher-click', tile_data[:border_color]],
               params: params,
-              title: (displayable_settings?(app)? 'Parameters' : nil),
+              title: (displayable_settings?(app)? t('dashboard.parameters') : nil),
               data: {
                 method:       'post',
                 bs_content:   recent_settings(app),

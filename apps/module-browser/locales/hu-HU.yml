@@ -1,0 +1,5 @@
+---
+hu-HU:
+  manifest:
+    name: Modul böngésző
+    description: A modulokkal kapcsolatos részletes információkért böngésszen a klasztereken található modulok között.

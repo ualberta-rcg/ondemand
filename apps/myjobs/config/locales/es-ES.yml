@@ -1,0 +1,133 @@
+---
+es-ES:
+  jobcomposer:
+    account_label: 'Cuenta:'
+    back: Atrás
+    cancel: Cancelar
+    close: Cerca
+    cluster_label: 'Grupo:'
+    confirm_delete: ¿Está seguro?
+    confirm_delete_template: ¿Estás seguro de que quieres eliminar esto?
+    copy_template: Copiar plantilla
+    create_from_path_title: Crear un nuevo trabajo a partir de una ruta
+    create_new_heading_html: Crear nuevo "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Crear nuevo trabajo
+    create_template: Crear plantilla
+    create_template_from_job_title: Crear plantilla a partir del trabajo seleccionado
+    delete: Borrar
+    delete_job_title: Eliminar trabajo
+    deprecation_warning_html: The Job Composer is deprecated and will be removed in Open OnDemand 5.0. Please transfer your jobs and templates to the <a href="%{projects_path}">Project Manager</a>.
+    edit: Editar
+    edit_files: Editar archivos
+    folder_contents_label: 'Contenido de la carpeta:'
+    from_default_template: Desde la plantilla predeterminada
+    from_default_template_title: Crea un nuevo trabajo a partir de la plantilla predeterminada.
+    from_selected_job: De un trabajo seleccionado
+    from_selected_job_title: Copiar el trabajo seleccionado
+    from_specified_path: Desde la ruta especificada
+    from_template: Desde plantilla
+    from_template_title: Crea un nuevo trabajo a partir de una plantilla que elijas.
+    invalid_cluster_html: ¡El clúster no es válido! Edite <a href="#" id="edit-job-options-script-link">Job Options</a> para seleccionar un clúster válido.
+    invalid_script_html: ¡El script no es válido! Edite <a href="#" id="edit-job-options-link">Job Options</a> para seleccionar un script válido.
+    job_already_submitted: El trabajo ya ha sido enviado.
+    job_array_request_label: 'Solicitud de matriz de trabajos:'
+    job_attributes_heading_html: Atributos del puesto <strong>(Opcional)</strong>
+    job_copied: El trabajo se copió correctamente.
+    job_copy_failed: 'Error al copiar el trabajo: %{errors}'
+    job_created: El trabajo se creó correctamente.
+    job_destroy_failed: 'No se pudo destruir el trabajo: %{errors}'
+    job_destroyed: El trabajo fue destruido con éxito.
+    job_details: Detalles del trabajo
+    job_directory_missing: ¡Falta el directorio de empleos!
+    job_name_label: 'Nombre del puesto:'
+    job_not_submitted: El trabajo no ha sido enviado.
+    job_stop_failed: 'No se pudo detener el trabajo: %{errors}'
+    job_stopped: El trabajo se detuvo con éxito.
+    job_submit_failed: 'Error al enviar el trabajo por lotes:'
+    job_submitted: El trabajo se envió correctamente.
+    job_updated: El trabajo se actualizó correctamente.
+    loading: Cargando
+    loading_job_info: Cargando información del trabajo
+    nav_help: Ayuda
+    nav_jobs: Empleos
+    nav_menu_aria: Menú del compositor de trabajos
+    nav_templates: Plantillas
+    new_job: Nuevo trabajo
+    new_template: Nueva plantilla
+    new_template_title: Crear una nueva plantilla
+    no_clusters_alert: No hay hosts configurados que permitan enviar trabajos. Póngase en contacto con el administrador del sistema.
+    open_dir: Abrir directorio
+    open_dir_in_editor: Abrir directorio en el editor de archivos
+    open_dir_in_file_manager: Abrir directorio en el administrador de archivos
+    open_dir_in_terminal: Abrir directorio en la terminal
+    open_editor: Abrir editor
+    open_selected_job_in_terminal: Abrir el trabajo seleccionado en la terminal
+    open_selected_template_in_terminal: Abrir la plantilla seleccionada en la terminal.
+    open_template_dir_in_file_manager: Abrir el directorio de plantillas en el administrador de archivos.
+    open_terminal: Terminal abierto
+    open_xdmod: Abrir XDMoD
+    options_account_help: El campo "Cuenta" es opcional. Si no se especifica, el filtro de envío podría asignarle automáticamente la cuenta.
+    options_account_title: Cuenta
+    options_array_help: 'Las matrices de trabajos son opcionales. Por ejemplo: 1-10'
+    options_array_help_with_clusters: 'Las matrices de trabajos son opcionales. Actualmente, OnDemand no admite matrices de trabajos para el/los clúster(es): %{cluster_list}.
+
+      '
+    options_array_title: Especificación de la matriz de trabajo
+    options_cluster_title: Grupo
+    options_copy_environment: Entorno de copia
+    options_errors: Por favor, corrija los errores a continuación.
+    options_name_title: Nombre
+    options_script_help: Los archivos de más de 65 KB se omiten en el campo del script de trabajo.
+    options_script_title: Especificar el script de trabajo
+    options_title: Opciones de trabajo
+    other_valid_files: Otros archivos válidos
+    page_title: Compositor de trabajos - %{site}
+    path_to_source_heading_html: Ruta al origen <strong>(Obligatorio)</strong>
+    reset: Reiniciar
+    reset_template_fields_title: Restablecer campos a la plantilla predeterminada
+    save: Ahorrar
+    script_contents_label: 'Contenido del guion:'
+    script_location_label: 'Ubicación del script:'
+    script_name_form_label: 'Nombre del script:'
+    script_name_label: 'Nombre del script:'
+    select_cluster_prompt: Seleccione un clúster...
+    select_template_option: -- seleccionar una plantilla --
+    selected_template_details: Detalles de la plantilla seleccionada
+    show: Espectáculo
+    show_batch_host_label: 'Host de procesamiento por lotes:'
+    show_dir_contents_label: 'Contenido del directorio:'
+    show_name_label: 'Nombre:'
+    show_staged_dir_label: 'Director escenificado:'
+    showing_job_title: Mostrando trabajo
+    skip_navigation: Saltar navegación
+    source_path_help: Introduzca la ruta a un directorio en el sistema de archivos. El contenido de esta ruta se copiará a un nuevo flujo de trabajo.
+    source_path_label: Ruta de origen
+    specify_job_host_and_script: Especificar el host del trabajo y el script
+    stop: Detener
+    stop_job_title: Detener el trabajo
+    submit: Entregar
+    submit_job_title: Enviar solicitud de empleo
+    submit_script_title: Enviar script
+    submit_to_label: 'Enviar a:'
+    suggested_files: Archivo(s) sugerido(s)
+    table_created: Creado
+    table_id: IDENTIFICACIÓN
+    table_source: Fuente
+    table_status: Estado
+    template_create_error: error al crear la plantilla
+    template_error_name_unique: debe ser único.
+    template_error_path_directory: debe apuntar a un directorio.
+    template_error_path_missing: No existe.
+    template_errors_heading:
+      one: 'El error %{count} impidió que se guardara esta plantilla:'
+      other: 'Los errores %{count} impidieron que se guardara esta plantilla:'
+    template_label: 'Plantilla:'
+    template_location_label: 'Ubicación de la plantilla:'
+    template_path_blank_help: Si se deja en blanco, se agregará un script de trabajo predeterminado a su nueva plantilla.
+    template_path_label: Ruta (la plantilla se creará copiando archivos desde esta ruta de origen)
+    templates_subtitle: Para crear un nuevo puesto de trabajo, seleccione una plantilla para copiar, rellene el formulario de la derecha y haga clic en "Crear nuevo puesto de trabajo".
+    title: Compositor de trabajos
+    toggle_navigation: Alternar navegación
+    view_files: Ver archivos
+    xdmod_url_warning_message: Es posible que este trabajo no aparezca en Open XDMoD hasta 24 horas después de su finalización.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

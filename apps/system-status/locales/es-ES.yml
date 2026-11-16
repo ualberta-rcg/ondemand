@@ -1,0 +1,5 @@
+---
+es-ES:
+  manifest:
+    name: Estado del sistema
+    description: Aplicación de estado del sistema Open OnDemand

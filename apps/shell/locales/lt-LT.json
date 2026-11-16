@@ -1,0 +1,18 @@
+{
+  "page_title": "Apvalkalas - %{siteTitle}",
+  "menu_aria": "Apvalkalo meniu",
+  "host_label": "Pagrindinis kompiuteris: %{host}",
+  "initial_directory": "Pradinis katalogas: %{dir}",
+  "themes_label": "Temos:",
+  "theme_default": "Numatytasis",
+  "theme_bright": "Ryškus",
+  "theme_dark": "Tamsu",
+  "fonts_label": "Šriftai:",
+  "leave_page_warning": "Išėjus iš šio puslapio, jūsų terminalo sesija bus nutraukta.",
+  "websocket_failed": "Nepavyko užmegzti „websocket“ ryšio. Įsitikinkite, kad naudojate naršyklę, kuri palaiko „websocket“ ryšius.",
+  "connection_terminated": "Jūsų ryšys su nuotoliniu serveriu buvo nutrauktas.",
+  "auth_no_clusters": "Nėra apibrėžtų klasterių.",
+  "auth_invalid_origin": "Neteisinga kilmė.",
+  "auth_bad_csrf": "Neteisingas CSRF prieigos raktas.",
+  "auth_host_not_allowed": "Leidžiamųjų sąraše arba klasterio konfigūracijose nenurodytas pagrindinis kompiuteris „%{host}“."
+}

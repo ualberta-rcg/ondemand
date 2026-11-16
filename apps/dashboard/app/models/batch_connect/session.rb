@@ -88,7 +88,24 @@ module BatchConnect
     # Return the Batch Connect app from the session token
     # @return [BatchConnect::App]
     def app
-      @app ||= BatchConnect::App.from_token(self.token)
+      if @app.nil? || @app_locale != I18n.locale
+        @app_locale = I18n.locale
+        @app = BatchConnect::App.from_token(self.token)
+      end
+      @app
+    end
+
+    # Localized display title for the session in the current `I18n.locale`,
+    # falling back to the persisted `title` when `token` is blank, mocked, or invalid.
+    def display_title
+      real_app = token.present? ? app : nil
+      if real_app.is_a?(BatchConnect::App) && real_app.valid?
+        real_app.title.presence || title
+      else
+        title
+      end
+    rescue StandardError
+      title
     end
 
     # Attributes used for serialization

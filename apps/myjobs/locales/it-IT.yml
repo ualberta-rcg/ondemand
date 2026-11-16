@@ -1,0 +1,5 @@
+---
+it-IT:
+  manifest:
+    name: Compositore di lavori
+    description: Job Composer consente la creazione e l'invio di processi batch

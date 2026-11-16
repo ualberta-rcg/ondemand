@@ -1,5 +1,5 @@
 <%= button_to(
-  'Stop',
+  t('dashboard.stop'),
   project_stop_job_path(project_id: project_id, cluster: cluster, jobid: id),
   method: :post,
   data: { confirm: t('dashboard.batch_connect_sessions_delete_confirm') },

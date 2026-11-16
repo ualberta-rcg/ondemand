@@ -1,0 +1,5 @@
+---
+pt-PT:
+  manifest:
+    name: Navegador de módulos
+    description: Navegue pelos módulos nos clusters para obter informações detalhadas sobre os módulos.

@@ -1,0 +1,1002 @@
+---
+fi-FI:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute}-muoto on virheellinen tai puuttuu'
+        invalid: '%{attribute} on virheellinen'
+        required: '%{attribute} on pakollinen'
+        used: '%{attribute} on jo käytössä'
+  dashboard:
+    account: Tili
+    actions: Toiminnot
+    active_jobs: Aktiiviset työpaikat
+    active_jobs_close_details: Sulje laajennettu tietopaneeli.
+    active_jobs_detail:
+      account: Tili
+      array_job_id: Taulukon työtunnus
+      array_task_id: Taulukon tehtävätunnus
+      cluster: Klusteri
+      cluster_id: Klusterin tunnus
+      comment: Kommentti
+      cpu_time: Suorittimen aika
+      cpu_used: Käytetty suoritin
+      current_working_directory: Nykyinen työhakemisto
+      end_time: Päättymisaika
+      exec_host: Executive-isäntä
+      finish_time: Päättymisaika
+      from_host: Isännältä
+      gres: GRES
+      group_list: Ryhmäluettelo
+      job_account: Työtili
+      job_checkpoint_attr: Työn tarkistuspisteen attribuutti
+      job_checkpoint_interval: Työn tarkistuspisteiden väli
+      job_deadline: Työn määräaika
+      job_exec_file: Työn suoritustiedosto
+      job_execution_time: Työn suoritusaika
+      job_gid: Työn GID
+      job_group: Työryhmä
+      job_id: Työn tunnus
+      job_name: Työnimi
+      job_priority: Työn prioriteetti
+      job_restart: Työn uudelleenkäynnistys
+      job_script_file: Työskriptitiedosto
+      job_script_size: Työskriptin koko
+      job_share: Työn jakaminen
+      job_type: Työtyyppi
+      job_uid: Työn UID
+      job_verify: Työn vahvistus
+      job_version: Työversio
+      mem: Mem
+      memory: Muisti
+      node_count: Solmujen määrä
+      node_list: Solmuluettelo
+      nodes: Solmut
+      none: Ei mitään
+      notifications: Ilmoitukset
+      partition: Osio
+      pbs_id: PBS-tunnus
+      pids: PID-tunnukset
+      ppn: PPN-koodi
+      project_name: Projektin nimi
+      queue: Jonottaa
+      reason: Syy
+      reserve: Varata
+      select: Valitse
+      start_time: Aloitusaika
+      state: Osavaltio
+      status: Status
+      submission_time: Lähetysaika
+      swap: Vaihtaa
+      time_limit: Määräaika
+      time_used: Käytetty aika
+      total_cpus: Suorittimia yhteensä
+      total_nodes: Solmujen kokonaismäärä
+      user: Käyttäjä
+      virtual_memory: Virtuaalimuisti
+      walltime: Seinäaika
+      walltime_used: Käytetty seinäaika
+    active_jobs_filter_all: Kaikki työpaikat
+    active_jobs_filter_user: Työpaikkasi
+    active_jobs_ganlia_CPU: Ganglioiden kuva suorittimelle.
+    active_jobs_ganlia_load: Gangliakuva järjestelmän kuormituksen keskiarvoille.
+    active_jobs_ganlia_mem: Ganglioiden kuva muistin käyttöä varten.
+    active_jobs_ganlia_network: Ganglioiden kuva verkon käyttöön.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> näytä kaikki (%{number_of_sessions})</a>
+    active_sessions_title: Aktiiviset interaktiiviset istunnot
+    add: Lisätä
+    all_apps_table_app_column: Nimi
+    all_apps_table_category_column: Kategoria
+    all_apps_table_sub_category_column: Alaluokka
+    all_clusters: Kaikki klusterit
+    announcements_dismissible_button: OK
+    announcements_parse_error: Virhe jäsennettäessä ilmoitusta.
+    announcements_render_error: Ilmoitusta '%{name}' ei voitu renderöidä virheen vuoksi.
+    announcements_required_button: Hyväksyä
+    apps_setup_failure_html: '<h2>Sovelluksen tietojen alustamisessa tapahtui ongelma.</h2>
+
+      <p class="lead">
+
+      Omalla vastuullasi voit silti <a href="%{app_url}">avaaa sovelluksen</a>
+
+      tai voit vain palata <a href="%{home_url}">takaisin kojelautaan</a>
+
+      </p>
+
+      <p>
+
+      Jaa tämä sovelluksesi kehittäjän kanssa:
+
+      Asennuskomentosarjan on tarkoitus olla idempotentti ja se suoritetaan joka kerta, kun käyttäjä avaa sovelluksen kojelaudan kautta.</p>
+
+      <h4>Poikkeus: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Pino jälki:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Järjestelmäsovellukset
+    auto_log_location_title: Lokin sijainti
+    back: Takaisin
+    balance_additional_message: Harkitse lisätietojen pyytämistä %{balanace_units}
+    balance_message: '%{units_balance} on %{value}'
+    balance_no_warnings: Yksikään projekti ei ole %{threshold} päivän saldovaroituskynnyksen sisällä.
+    balance_reload_message_html: Lataa sivu uudelleen nähdäksesi päivitetyn saldon. Saldot päivitetään päivittäin.<br>Viimeisin päivitys oli %{last_update}
+    balance_warning_prefix_html: '%{units_balance} varoitus käyttäjälle'
+    batch_connect_active_sessions_aria: Aktiiviset istunnot
+    batch_connect_app_version: 'versio: %{version}'
+    batch_connect_apps_menu_aria: Interaktiivinen sovellusvalikko
+    batch_connect_apps_menu_title: Interaktiiviset sovellukset
+    batch_connect_form_attr_cache_error: Aiemmin välimuistissa olevia arvoja ei voida käyttää, käytetään oletusarvoja. (%{error_message})
+    batch_connect_form_choose_template_name: Valitse mallin nimi
+    batch_connect_form_data_root: datan juurihakemisto
+    batch_connect_form_dynamic_disclaimer: Seuraava lomake voi muuttua dynaamisesti vaihtoehtojen valinnan mukaan. Kaikista muutoksista ilmoitetaan ja ne ovat peruutettavissa.
+    batch_connect_form_invalid: Tiedoston form.yml-lomakekentästä %{id} puuttuu asetuksia.
+    batch_connect_form_launch: Käynnistää
+    batch_connect_form_prefill: Käytä tallennettuja asetuksia
+    batch_connect_form_prefill_error: Hups... Mallissasi on jotain vikaa.
+    batch_connect_form_reset_resolution: Palauta resoluutio
+    batch_connect_form_resolution_height: Resoluutio korkeus (pikseleinä)
+    batch_connect_form_resolution_width: Resoluutio leveys (pikseleinä)
+    batch_connect_form_save: Tallenna asetukset
+    batch_connect_form_save_new_template: tallenna uudet asetukset
+    batch_connect_form_save_submit: Tallenna asetukset ja sulje
+    batch_connect_form_select_template: valitse tallennetut asetukset
+    batch_connect_form_session_data_html: '* Tämän istunnon %{title}-istuntotiedot ovat käytettävissä
+
+      %{data_link_tag}-valikon kautta.'
+    batch_connect_form_template_name_label: asetuksen nimi
+    batch_connect_form_type_new_name: Sovellusasetusten nimi
+    batch_connect_form_type_new_name_error: Kirjoita kelvollinen nimi jatkaaksesi
+    batch_connect_invalid_form_array: form.yml-tiedoston 'form'-elementti ei ole taulukko
+    batch_connect_invalid_form_attributes: form.yml-tiedoston 'attributes'-elementti ei ole Map
+    batch_connect_missing_cluster: Klusteria ei koskaan asetettu. Aseta se joko form.yml.erb-tiedostoon arvolla `cluster` tai `form.cluster` tai aseta `cluster` tiedostoon submit.yml.erb.
+    batch_connect_no_apps: Interaktiivisia sovelluksia ei ole saatavilla.
+    batch_connect_no_sessions: Sinulla ei ole aktiivisia istuntoja.
+    batch_connect_sandbox: '[Hiekkalaatikko]'
+    batch_connect_sessions_cancel_confirm: Oletko varma?
+    batch_connect_sessions_cancel_full_title: Peruuta %{title}-istunto
+    batch_connect_sessions_cancel_title: Peruuttaa
+    batch_connect_sessions_connect_to: Yhdistä kohteeseen %{app_title}
+    batch_connect_sessions_connection_render_error: Yhteyspainiketta ei voida renderöidä view.html.erb-tiedostosta virheen '%{error}' vuoksi.
+    batch_connect_sessions_data_html: 'Tämän istunnon %{title}-istuntotietoihin pääsee käsiksi
+
+      %{data_link_tag}-kansion kautta.'
+    batch_connect_sessions_delete_confirm: Oletko varma?
+    batch_connect_sessions_delete_full_title: Poista %{title}-istunto
+    batch_connect_sessions_delete_hover: Poista istunto
+    batch_connect_sessions_delete_title: Poistaa
+    batch_connect_sessions_edit_title: Muokkaa uutta %{title}-tiedostoa näillä istuntoparametreilla
+    batch_connect_sessions_error_invalid_job_name_html: Jos tämän työn lähettäminen epäonnistui virheellisen työnimen vuoksi, pyydä järjestelmänvalvojaa määrittämään OnDemand asettamaan ympäristömuuttuja OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Mallipohjan valmistelu epäonnistui seuraavan virheen vuoksi:'
+    batch_connect_sessions_errors_submission: 'Istunnon lähettäminen epäonnistui seuraavan virheen vuoksi:'
+    batch_connect_sessions_native_vnc_tab: Natiiviohjeet
+    batch_connect_sessions_novnc_compression: Puristus
+    batch_connect_sessions_novnc_compression_help: 1 (matala) - 9 (korkea)
+    batch_connect_sessions_novnc_launch: Käynnistä %{app_title}
+    batch_connect_sessions_novnc_quality: Kuvanlaatu
+    batch_connect_sessions_novnc_quality_help: 0 (matala) - 9 (korkea)
+    batch_connect_sessions_novnc_tab: noVNC-yhteys
+    batch_connect_sessions_novnc_view_only: Vain katseluoikeus (jaettava linkki)
+    batch_connect_sessions_path_selector_forbidden_error: Sinulla ei ole oikeutta valita kyseistä hakemistoa tai tiedostoa.
+    batch_connect_sessions_relaunch_full_title: Käynnistä %{title}-istunto uudelleen
+    batch_connect_sessions_relaunch_title: Uudelleenkäynnistys
+    batch_connect_sessions_staged_root: vaiheistettu juurihakemisto
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} ydin'
+      other: '%{count} ytimet'
+    batch_connect_sessions_stats_created_at: 'Luotu:'
+    batch_connect_sessions_stats_expected_time: 'Odotettu aloitus:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Näytönohjain'
+      other: '%{count} Näytönohjaimet'
+    batch_connect_sessions_stats_host: 'Isäntä:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} solmu'
+      other: '%{count} solmut'
+    batch_connect_sessions_stats_session_dir_link_title: Avaa istuntohakemisto kohteelle %{session_id}
+    batch_connect_sessions_stats_session_id: 'Istunnon tunnus:'
+    batch_connect_sessions_stats_support_ticket: Ongelmia tämän istunnon kanssa?
+    batch_connect_sessions_stats_support_ticket_link_text: Lähetä tukipyyntö
+    batch_connect_sessions_stats_time_remaining: 'Jäljellä oleva aika:'
+    batch_connect_sessions_stats_time_requested: 'Pyydetty aika:'
+    batch_connect_sessions_stats_time_used: 'Käytetty aika:'
+    batch_connect_sessions_stats_undetermined_host: Määrittelemätön
+    batch_connect_sessions_status_bad: Istuntosi on viallisessa tilassa. Ota yhteyttä tukeen saadaksesi lisätietoja.
+    batch_connect_sessions_status_blurb_cancel_failure: Istunnon peruuttaminen epäonnistui.
+    batch_connect_sessions_status_blurb_cancel_success: Istunto peruutettiin onnistuneesti.
+    batch_connect_sessions_status_blurb_create_success: Istunto luotiin onnistuneesti.
+    batch_connect_sessions_status_blurb_delete_failure: Istunnon poistaminen epäonnistui.
+    batch_connect_sessions_status_blurb_delete_success: Istunto poistettiin onnistuneesti.
+    batch_connect_sessions_status_completed: Virheenkorjaustarkoituksiin tätä korttia säilytetään %{days} päivää lisää.
+    batch_connect_sessions_status_missing_connection: Tältä sovellukselta puuttuu yhteyden muodostamiseen tarvittavia tietoja. Tarkemmin sanottuna tiedosto view.html.erb puuttuu. Ota yhteyttä tukeen, jos näet tämän viestin.
+    batch_connect_sessions_status_queued: Ole kärsivällinen, sillä työsi on tällä hetkellä jonossa. Odotusaika riippuu ytimien lukumäärästä sekä pyydetystä ajasta.
+    batch_connect_sessions_status_starting: Istuntosi on alkamassa... Ole kärsivällinen, sillä tämä prosessi voi kestää muutaman minuutin.
+    batch_connect_sessions_word: Istunto
+    batch_connect_validation:
+      app_not_found: Tätä sovellusta ei ole hakemistossa '%{root}'
+      inaccessible_clusters: Tämä sovellus vaatii klustereita, joita ei ole olemassa tai joihin sinulla ei ole käyttöoikeutta.
+      missing_form_file: Tämä sovellus ei toimita lomaketiedostoa hakemistoon '%{root}'
+      missing_sub_app_form_file: Tämä sovellus ei toimita alisovelluslomaketiedostoa hakemistoon '%{root}'.
+      no_cluster_specified: Tämä sovellus ei määritä mitään klusteria.
+    bc_saved_settings:
+      delete_confirm: Oletko varma?
+      delete_title: Poista %{settings_name} tallennetut asetukset
+      deleted_message: Tallennetut asetukset %{settings_name} poistettu.
+      edit_title: Muokkaa %{settings_name} tallennettuja asetuksia
+      launch_title: Käynnistä %{app_title} parametreilla %{settings_name}
+      missing_settings: Valittuja tallennettuja asetuksia ei löytynyt.
+      no_settings_title: Sinulla ei ole tallennettuja asetuksia.
+      outdated_message: '%{app_title}-parametrit ovat muuttuneet näiden asetusten luomisen jälkeen.'
+      saved_message: '%{settings_name} asetukset tallennettu'
+      settings_values_label: Arvot
+      title: Tallennetut asetukset
+    breadcrumb_aria: Navigointipolku
+    breadcrumbs_all_apps: Kaikki sovellukset
+    breadcrumbs_home: Kotiin
+    breadcrumbs_my_sessions: Interaktiiviset istunnot
+    breadcrumbs_support_ticket: Tukipyyntö
+    browser_warning: OnDemand vaatii käyttämäsi selaimen uudemman version. Nykyiset selainvaatimukset ovat IE Edge, Firefox 19+, Chrome 34+ ja Safari 8+.
+    cancel: Peruuttaa
+    categories:
+      apps: Sovellukset
+      bioinformatics: Bioinformatiikka
+      clusters: Klusterit
+      data_science: Tietojenkäsittelytiede
+      desktop: Työpöytä
+      desktops: Pöytätietokoneet
+      development: Kehitys
+      external_apps: Ulkoiset sovellukset
+      files: Tiedostot
+      gateway_apps: Gateway-sovellukset
+      guis: Käyttöliittymät
+      interactive_apps: Interaktiiviset sovellukset
+      jobs: Työpaikat
+      machine_learning: Koneoppiminen
+      mathematics: Matematiikka
+      servers: Palvelimet
+      utilities: Apuohjelmat
+      virtual_desktop_interface: Virtuaalinen työpöytäliittymä
+      visualization: Visualisointi
+    clear: Tyhjennä
+    close: Lähellä
+    close_alert: Sulje tämä hälytys.
+    close_notice: Sulje tämä ilmoitus.
+    cluster: Klusteri
+    copy: Kopioida
+    copy_suffix: (Kopio)
+    cpu_report: CPU-raportti + %{node}
+    custom_pages:
+      invalid: 'Virheellinen sivukoodi: %{page}. Tätä sivua ei ole määritetty.'
+    date: Päivämäärä
+    delete: Poistaa
+    detailed_metrics: Yksityiskohtaiset mittarit
+    details: Tiedot
+    development_apps_caption: Sandbox-sovellus
+    development_apps_category: Sandbox-sovellukset
+    development_delete_app: Poista sovellus
+    development_edit_title: Muokkaa %{title}
+    development_launch_title: Käynnistä %{title}
+    directory: Hakemisto
+    edit: Muokata
+    editor_default: Oletus
+    editor_font_size: Fonttikoko
+    editor_key_bindings: Näppäinsidokset
+    editor_theme: Teema
+    editor_theme_bright: Kirkas
+    editor_theme_dark: Tumma
+    editor_wrap: Kääri
+    error_details: 'Tiedot:'
+    error_internal_body_html: Yritä uudelleen hetken kuluttua. Jos näet tämän virheen edelleen, <a href="%{support_url}">ota yhteyttä tukeen</a>.
+    error_internal_title: Sisäinen palvelinvirhe
+    error_not_found_body: Etsimääsi sivua ei ole olemassa.
+    error_not_found_title: Ei löytynyt
+    favorites: Suosikit
+    file: Tiedosto
+    file_editor: Tiedostoeditori
+    file_quotas: Tiedostokiintiöt
+    files: Tiedostot
+    files_change_directory: Vaihda hakemistoa
+    files_contents_of_directory: Hakemiston %{path} sisältö
+    files_copy_move: Kopioi/Siirrä
+    files_copy_path: Kopioi polku
+    files_directory_contents_aria: Hakemiston sisältö
+    files_directory_download_error_modal_title: Hakemisto on liian suuri ladattavaksi
+    files_directory_download_unauthorized: Voit ladata vain tiedoston tai hakemiston, johon sinulla on luku- ja suoritusoikeudet.
+    files_directory_size_calculation_error: Aikakatkaisu yritettäessä määrittää hakemiston kokoa.
+    files_directory_size_calculation_timeout: Aikakatkaisu yritettäessä määrittää hakemiston kokoa.
+    files_directory_size_unknown: 'Virhe tilassa %{exit_code} yritettäessä määrittää hakemiston kokoa: %{error}'
+    files_directory_too_large: Hakemisto on liian suuri ladattavaksi zip-tiedostona. Hakemiston tulisi olla alle %{download_directory_size_limit} tavua.
+    files_doesnt_exist: '%{path} ei ole olemassa.'
+    files_download: Lataa
+    files_download_not_enabled: Tiedostojen lataaminen ei ole käytössä tällä palvelimella.
+    files_download_zip: Lataa zip-tiedostona
+    files_exceeds_editor_limit: '%{path} ylittää editorin rajan %{limit}. Lataa tiedosto muokataksesi sitä tai tarkastellaksesi sitä paikallisesti.'
+    files_file_too_large: Tiedosto on liian suuri ladattavaksi. Tiedoston latausten tulisi olla alle %{download_file_size_limit} tavua.
+    files_go_up_directory: Siirry hakemistoon ylöspäin
+    files_modified_at: Muokattu klo
+    files_modify_aria: Tiedostojen muokkaaminen
+    files_new_directory: Uusi hakemisto
+    files_new_file: Uusi tiedosto
+    files_not_editable: '%{path} ei ole muokattava tiedosto'
+    files_not_readable: Sinulla ei ole riittäviä oikeuksia lukea tiedostoa '%{path}'.
+    files_open_in_files_app: Avaa tiedostoissa -sovelluksessa
+    files_open_in_globus: Avaa Globuksessa
+    files_path_breadcrumbs_aria: Polun navigointipolut
+    files_refresh: Päivitä
+    files_remote_dir_not_created: Hakemistoa %{path} ei luotu
+    files_remote_disabled: Etätiedostojen tuki ei ole käytössä
+    files_remote_empty_dir_unsupported: Etäkäyttöjärjestelmä ei tue tyhjiä hakemistoja
+    files_remote_error_listing_remotes: 'Virhe Rclone-etäsäätimien listauksessa: %{error}'
+    files_send_to_target_title_default: Lähetä valittujen tiedostojen metatiedot ulkoiseen sovellukseen
+    files_shell: Avaa Päätteessä
+    files_shell_dropdown: Valitse avattava klusteri päätteessä
+    files_title: Tiedostojen selaaminen
+    files_upload: Lataa
+    footer_contribute: Osallistu GitHubissa
+    footer_license: Ohjelmistolisenssi-ilmoitus
+    footer_open_source: Avoimen lähdekoodin ohjelmisto.
+    footer_powered_by: Open OnDemandin tarjoamana
+    footer_version: 'OnDemand-versio: %{version}'
+    home_directory: Kotihakemisto
+    id: Henkilöllisyystodistus
+    import: Tuoda
+    job: Job
+    job_info: Työtiedot
+    jobs_back_to_projects: Takaisin projekteihin
+    jobs_clear_form_fields: Tyhjennä lomakekentät
+    jobs_completed_jobs: Valmiit työt
+    jobs_create_blank_project: Luo uusi projekti
+    jobs_create_blank_workflow: Uusi työnkulku
+    jobs_create_template_project: Luo uusi projekti mallipohjasta
+    jobs_import_shared_project: Tuo jaettu projekti
+    jobs_launchers: Kantoraketit
+    jobs_launchers_add_select_option: Lisää valintavaihtoehto %{name}
+    jobs_launchers_cannot_find: Käynnistysohjelmaa %{id} ei löydy
+    jobs_launchers_clone: Kloonien laukaisin %{name}
+    jobs_launchers_created: Käynnistysohjelma luotu onnistuneesti!
+    jobs_launchers_default_created: Tähän projektiin lisättiin myös 'hello_world.sh'.
+    jobs_launchers_delete: Poista käynnistysohjelma %{name}
+    jobs_launchers_delete_script_confirmation: Poistetaanko kaikki käynnistysohjelman sisältö?
+    jobs_launchers_deleted: Käynnistysohjelman poisto onnistui!
+    jobs_launchers_edit: Muokkaa käynnistysohjelman %{name} lomaketta
+    jobs_launchers_edit_form_item: Muokkaa lomakekohtaa %{label}
+    jobs_launchers_editing: Muokataan %{title}
+    jobs_launchers_fixed_field: Kiinteä arvo
+    jobs_launchers_fixed_field_help: Korjaa nykyinen arvo
+    jobs_launchers_max_value_label: Numerokentän %{label} enimmäisarvo
+    jobs_launchers_min_value_label: Numerokentän %{label} vähimmäisarvo
+    jobs_launchers_name: Käynnistysohjelman nimi
+    jobs_launchers_new_field_select: Valitse lomakkeeseen lisättävä kohde
+    jobs_launchers_not_found: Käynnistysohjelmaa %{launcher_id} ei löydy
+    jobs_launchers_preview_form_item: Lomakekohteen %{label} esikatselu
+    jobs_launchers_remove_form_item: Poista lomakekohta %{label}
+    jobs_launchers_remove_select_option: Poista valinta %{name}
+    jobs_launchers_save_form: Tallenna lomake
+    jobs_launchers_save_form_item: Tallenna muutokset lomakekohtaan %{label}
+    jobs_launchers_show_form: Näytä lomake käynnistysohjelmalle %{name}
+    jobs_launchers_submit_launcher_title: Käynnistysskripti välimuistissa olevilla tai oletusarvoilla käynnistysohjelmalle %{name}
+    jobs_launchers_submitted: Työ %{job_id} lähetetty onnistuneesti.
+    jobs_launchers_updated: Käynnistysohjelman manifesti päivitetty!
+    jobs_native_dependency: Työ riippuu työtunnuksesta job-id%{dependency}
+    jobs_native_reason: koska '%{reason}'
+    jobs_native_state: Työn nykyinen tila on '%{state}'
+    jobs_new_launcher: Uusi käynnistysohjelma
+    jobs_new_project: Uusi projekti
+    jobs_project_cannot_find: 'Projektia ei löydy: %{project_id}'
+    jobs_project_clear_form_fields: Tyhjennä lomakekentät
+    jobs_project_created: Projekti luotu onnistuneesti!
+    jobs_project_delete_label: Poista projekti %{name}
+    jobs_project_delete_project_confirmation: Poistetaanko projektihakemiston kaikki sisältö?
+    jobs_project_deleted: Projekti poistettu onnistuneesti!
+    jobs_project_description_placeholder: Projektin kuvaus
+    jobs_project_directory_error: Projektin hakemistopolkua ei ole asetettu tälle työnkululle
+    jobs_project_directory_help_html: 'Jätä tyhjäksi, niin uusi hakemisto luodaan. <br />Oletussijainti: %{root_directory}'
+    jobs_project_directory_placeholder: Projektihakemiston absoluuttinen polku
+    jobs_project_edit_label: Muokkaa projektia %{name}
+    jobs_project_generic_error: 'Pyyntösi käsittelyssä tapahtui virhe: %{error}'
+    jobs_project_group_help: Varmista, että valitset ryhmän, joka sisältää kaikki tarkoitetut yhteistyökumppanit. Jos kyseessä ei ole yhteistyöprojekti, oletusryhmää suositellaan.
+    jobs_project_group_owner: Ryhmä
+    jobs_project_imported: Projekti tuotu onnistuneesti!
+    jobs_project_invalid_configuration_clusters: HPC-klusteri vaaditaan. Ota yhteyttä järjestelmänvalvojaan lisätäksesi sellaisen järjestelmään.
+    jobs_project_invalid_configuration_scripts: Projektiisi tarvitaan suoritettava skripti. Lataa skripti tiedostosovelluksen avulla.
+    jobs_project_job_deleted: Työ %{job_id} poistettu onnistuneesti
+    jobs_project_job_not_deleted: Työtä %{job_id} ei voida poistaa
+    jobs_project_job_stopped: Työ %{job_id} pysäytetty onnistuneesti
+    jobs_project_list_aria: Projektiluettelo
+    jobs_project_manager: Projektipäällikkö
+    jobs_project_manifest_updated: Projektiluettelo päivitetty!
+    jobs_project_name_placeholder: Projektin nimi
+    jobs_project_name_validation: Projektin nimi saa sisältää vain kirjaimia, numeroita, viivoja, alaviivoja ja välilyöntejä
+    jobs_project_not_found: Projektia %{project_id} ei löydy
+    jobs_project_open_label: Avaa projekti %{name}
+    jobs_project_remove_label: Poista projekti %{name}
+    jobs_project_removed: Projekti poistettu hausta!
+    jobs_project_return_to_projects: Palaa projektisivulle
+    jobs_project_save_error: Manifestia ei voida tallentaa kansioon %{path}
+    jobs_project_save_project_title: Tallenna projekti
+    jobs_project_select_directory: Valitse projektihakemisto
+    jobs_project_setgid_help: Jos setgid on valittuna, projektitiedostot luodaan valitun ryhmän kanssa. Tämä ei vaikuta kotihakemistosi projekteihin.
+    jobs_project_validation_error: Virheellinen pyyntö. Tarkista alla olevat virheet.
+    jobs_return_to_projects: Palaa projektisivulle
+    jobs_save_project_title: Tallenna projekti
+    jobs_select_directory_placeholder: Napsauta projektia tuodaksesi sen
+    jobs_toggle_details: Napsauta nähdäksesi työtehtävän %{job_id} tiedot
+    jobs_workflow_add_launcher: Lisää käynnistysohjelma
+    jobs_workflow_canvas_aria: kangas
+    jobs_workflow_clone: Kloonaa työnkulku %{name}
+    jobs_workflow_connect_launchers: Yhdistä käynnistysohjelmat
+    jobs_workflow_created: Työnkulku luotu onnistuneesti!
+    jobs_workflow_delete_confirmation: Poistetaanko työnkulun kaikki sisältö?
+    jobs_workflow_delete_edge: Poista reuna
+    jobs_workflow_delete_edge_title: Poista valittu reuna (Del/Backspace)
+    jobs_workflow_delete_launcher: Poista käynnistysohjelma
+    jobs_workflow_delete_launcher_title: Poista valittu käynnistysohjelma (Del/Backspace)
+    jobs_workflow_delete_title: Poista työnkulku %{name}
+    jobs_workflow_deleted: Työnkulku poistettu onnistuneesti!
+    jobs_workflow_description_placeholder: Työnkulun kuvaus
+    jobs_workflow_edit_settings: Muokkaa työnkulun %{name} asetuksia
+    jobs_workflow_editing: 'Muokkaus: %{name}'
+    jobs_workflow_enable_sync_key: Ota käyttöön OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Työnkulku epäonnistui virheen %{error} vuoksi
+    jobs_workflow_help: Valitse otsikkoa napsauttamalla ja vedä. Yhdistä napsauttamalla kahta käynnistysohjelmaa, kun "Yhdistä käynnistysohjelmat" on valittuna.
+    jobs_workflow_manifest_updated: Työnkulun luettelo päivitetty!
+    jobs_workflow_missing_launchers: valitse vähintään %{count}
+    jobs_workflow_name_placeholder: Työnkulun nimi
+    jobs_workflow_name_validation: Työnkulun nimi saa sisältää vain kirjaimia, numeroita, viivoja, alaviivoja ja välilyöntejä
+    jobs_workflow_not_found: Työnkulkua %{workflow_id} ei löydy
+    jobs_workflow_pick_launchers: Valitse käynnistysohjelmat
+    jobs_workflow_show_graph: Avaa työnkulku %{name} graafieditorissa
+    jobs_workflow_submitted: Työnkulku lähetetty onnistuneesti!
+    jobs_workflow_sync_key_help: Kun tämä on käytössä, jokainen tämän työnkulun käynnistysohjelma saa saman <code>OOD_WORKFLOW_SYNC_KEY</code> -ympäristömuuttujan (satunnainen tunnus, joka on yksilöllinen jokaiselle työnkulun suorituskerralle). Hyödyllinen synkronoitujen tiedostonimien, lukitustiedostojen tai jaettujen tunnisteiden luomiseen riippuvaisten töiden välillä.
+    jobs_workflow_synchronization: Synkronointi
+    jobs_workflow_toolbar_aria: työkalupalkki
+    jobs_workflow_zoom_controls: Zoomaussäätimet
+    jobs_workflow_zoom_in: Lähennä
+    jobs_workflow_zoom_out: Loitonna
+    jobs_workflow_zoom_reset: Palauta zoomaus
+    jobs_workflows: Työnkulut
+    jobs_workflows_not_supported: Määritetty ajoitustoiminto ei tue työnkulkuja.
+    js:
+      active_jobs:
+        delete_aria: Poista työ %{name}, jonka tunnus on %{id}
+        delete_confirm: Oletko varma, että haluat poistaa %{name} - %{id}?
+        delete_title: Poista työ
+        details_loaded: Työtietojen luettelo ladattu.
+        load_details_failed: Työn tietojen lataaminen epäonnistui.
+        remote_server_error: Tietojen noutamisessa etäpalvelimelta tapahtui virhe.
+        request_failed_parse: Työpyyntö epäonnistui rungon jäsennysvirheen vuoksi.
+        request_failed_status: 'Työpyyntö epäonnistui tilakoodilla: %{status}'
+        status_completed: Valmis
+        status_hold: Pidä
+        status_queued: Jonossa
+        status_running: Juoksu
+        status_suspended: Keskeytetty
+        status_undetermined: Määrittelemätön
+        support_ticket_aria: Lähetä tukipyyntö työlle, jonka tunnus on %{id}
+        support_ticket_title: Lähetä tukipyyntö
+        toggle_details_aria: Työn %{name} näkyvyys päälle/pois päältä työssä %{cluster}
+      batch_connect:
+        allow_notifications: Salli ilmoitusoikeudet selaimessasi ottaaksesi istuntoilmoitukset käyttöön.
+        invalid_prefill_value_html: 'Virheellinen arvo: "%{value}" kentässä "%{field}".<br>'
+        notification_permission_error: 'Virhe ilmoituslupaa pyydettäessä:'
+        resolution_reset: Resoluutio palautettiin arvoon %{width} %{height} pikselillä.
+        session_expires_warning: 'Varoitus: %{title} (%{job_id}) vanhenee ~%{minutes} minuutin kuluttua!'
+        session_status_aria: '%{title} on nyt %{status}.'
+        session_status_push: '%{title} (%{job_id}) on nyt %{status}.'
+      common:
+        cancel: Peruuttaa
+        close: Lähellä
+        error: Virhe
+        loading: Ladataan...
+        ok: OK
+      datatables:
+        all: Kaikki
+        filter_label: 'Suodattaa:'
+        invalid_date: Virheellinen päivämäärä
+        rows_selected:
+          one: '%{count} rivi valittu'
+          other: '%{count} riviä valittu'
+        showing_filtered_rows: Näytetään %{display} / %{total} riviä
+        showing_rows: Näytetään %{display} riviä
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: ja
+        changed_help: Muutettu ohjeteksti %{widget}:ssa tekstiksi %{help}
+        changed_label: Muutettu tunniste %{widget}:ssa uuteen tunnisteeseen %{label}
+        current_value: aseta nykyinen arvo arvoon %{value}
+        hid_item: Piilotettu lomakekohta %{widget}
+        maximum_limit: enimmäisraja %{value}
+        minimum_limit: vähimmäisraja %{value}
+        option_disabled: Vaihtoehto %{value} poistettu käytöstä kohteelle %{widget}
+        option_enabled: Vaihtoehto %{value} käytössä kohteelle %{widget}
+        revealed_item: Paljastettu lomakekohta %{widget}
+        selected_option_disabled: Valittu vaihtoehto %{value} poistettu käytöstä käyttäjälle %{widget}
+        set_limits: Aseta %{details} arvolle %{widget}
+        set_value: Aseta %{widget} arvoksi %{value}
+        widget_no_label: '%{type} ilman otsikkoa'
+        widget_with_label: '%{type} tunnisteella %{label}'
+      editor:
+        save_error: 'Tiedoston tallentamisessa tapahtui virhe!
+
+          %{error}'
+        unsaved_changes: Sinulla on tallentamattomia muutoksia!
+      files:
+        action_delete: Poistaa
+        action_download: Lataa
+        action_edit: Muokata
+        action_rename: Nimeä uudelleen
+        action_view: Näytä
+        actions: Toiminnot
+        cannot_navigate_file: Tiedostoon ei voi siirtyä.
+        change_directory: Vaihda hakemistoa
+        clipboard_description_html: 'Kopioi tai siirrä alla olevat tiedostot hakemistosta <code>%{from}</code> nykyiseen hakemistoon:'
+        contents_of_directory: Hakemiston %{path} sisältö
+        copied_path: Polku kopioitu leikepöydälle!
+        copy: Kopioida
+        create_directory_error: 'Virhe uutta hakemistoa luotaessa: %{error}'
+        create_file_error: 'Virhe uutta tiedostoa luotaessa: %{error}'
+        delete_confirm_text: 'Haluatko varmasti poistaa tiedostot: %{files}'
+        delete_multiple_title: Poistetaanko %{count} valitut tiedostot?
+        delete_single_title: Poistetaanko %{name}?
+        deleting_files: 'Tiedostojen poistaminen...:'
+        directory: hakemisto
+        directory_name_label: Hakemiston nimi
+        download_error: 'Virhe latauksessa: %{error}'
+        duplicate_files_warning: Kaksoiskappaleita tunnistettu. Näiden tiedostojen lataaminen korvaa olemassa olevan sisällön.
+        file: tiedosto
+        filename_invalid_chars: Tiedoston nimi ei saa sisältää /- tai ..
+        filename_label: Tiedostonimi
+        globus_open: Avaa nykyinen hakemisto Globus-ohjelmalla
+        globus_unavailable: Tähän hakemistoon ei liity Globus-päätepistettä
+        illegal_slash_in_filename: Tiedostonimessä ei saa olla virheellistä merkkiä (/).
+        move: Liikkua
+        navigated_to: navigoitu kohteeseen %{path}
+        new_directory_title: Uusi hakemisto
+        new_file_title: Uusi tiedosto
+        path_label: Polku
+        poll_status_error: Toimintoa ei ehkä ole suoritettu. Tiedoston operaation tilan hakeminen epäonnistui.
+        preparing_download_dir: 'Valmistellaan lataamaan hakemistoa: %{name}'
+        provide_absolute_pathname: Anna absoluuttinen polkunimi
+        provide_directory_name: Anna hakemiston nimi, jossa ei ole /-merkkiä
+        provide_non_empty_filename: Anna tiedostonimi, joka ei ole tyhjä.
+        provide_rename_filename: Anna tiedostonimi, jolla voit nimetä tämän uudelleen
+        rename_title: Nimeä uudelleen
+        see_details: Katso tiedot
+        select_row: Valitse rivi
+        select_to_copy_move: Valitse kopioitava tai siirrettävä tiedosto, tiedostoja tai hakemisto. Et ole valinnut yhtäkään.
+        select_to_delete: Valitse poistettava tiedosto, tiedostoja tai hakemisto. Et ole valinnut yhtäkään.
+        select_to_download: Valitse ladattava tiedosto, tiedostoja tai hakemisto. Et ole valinnut yhtäkään.
+        select_to_send: Valitse lähetettäväksi vähintään yksi tiedosto tai hakemisto.
+        send_failed: Tiedostotietojen lähettäminen epäonnistui.
+        sent_successfully: Valitun tiedoston tiedot lähetetty onnistuneesti.
+        show_dotfiles: Näytä pistetiedostot
+        show_owner_mode: Näytä omistaja/tila
+        summary_copy_files: kopioi tiedostoja
+        summary_move_files: siirrä tiedostoja
+        summary_remove_files: poista tiedostoja
+        summary_rename_file: nimeä tiedosto uudelleen
+        token_missing_expired: Sovellustunnus puuttuu tai on vanhentunut. Aloita alusta.
+        transfer_error: 'Virhe yritettäessä %{summary}: %{error}'
+        upload_and_overwrite: Lataa ja korvaa
+        upload_count:
+          one: Lähetä %{count}-tiedosto
+          other: Lähetä %{count} tiedostoa
+        upload_new_files: Lataa uusia tiedostoja
+        uppy_empty_dir_note: Tyhjät hakemistot sisällytetään lataukseen vain, kun hakemiston lataus aloitetaan vetämällä ja pudottamalla. Tämä johtuu siitä, että tiedosto- ja hakemistomerkintöjen API on käytettävissä vain pudotustapahtumassa, ei syötteen muutostapahtuman aikana.
+      icon_picker:
+        icon_selected: '%{icon} -kuvake valittu'
+        icon_sr: '%{name} kuvake'
+      launcher_edit:
+        account_help: Tili, jolla työ lähetetään.
+        account_label: Tili
+        add_new_option: Lisää uusi vaihtoehto
+        cores_help: Kuinka monella ytimellä työ suoritetaan.
+        cores_label: Ytimet
+        env_var_help: Lisää ympäristömuuttuja.
+        env_var_key: 'Ympäristömuuttuja: %{name}'
+        env_var_label: Ympäristömuuttuja
+        hours_help: Kuinka kauan työ voi jatkua.
+        hours_label: Tunnit
+        job_name_help: Työn nimi tulee olemaan.
+        job_name_label: Työnimi
+        log_location_help: Työn lokitulosteen kohde.
+        log_location_label: Lokin sijainti
+        no_more_options: Ei enää vaihtoehtoja
+        nodes_help: Kuinka monessa solmussa työ suoritetaan.
+        nodes_label: Solmut
+        queues_help: Minkä jonon työ myös lähettää.
+        queues_label: Jonot
+      module_browser:
+        copied: Kopioitu!
+        copy: Kopioida
+        showing_results:
+          one: Näytetään %{count} tulos
+          other: Näytetään %{count} tulosta
+      nsf_access:
+        affected_resources: 'Vaikutuskohteena olevat resurssit: %{resources}'
+        read_more: Lue lisää
+        register_event: Rekisteröidy tähän tapahtumaan
+      path_selector:
+        directory_loaded: Hakemisto ladattu %{count} kohteella
+        invalid_regex: Tälle polunvalitsimelle annettu säännöllinen lauseke ei kääntynyt
+        loading_directory: Ladataan hakemiston sisältöä
+        permission_denied_prefix: 'Lupa evätty:'
+      popovers:
+        ihpc_content: Vuorovaikutteinen HPC-istunto antaa sinulle erillisen käyttöoikeuden yhteen tai useampaan klusterin solmuun. Tämä on samanlaista kuin vuorovaikutteinen eräistunto, jossa on käytettävissä oleva työpöytä ensisijaisella solmulla. Käytä tätä raskaisiin töihin, kuten pitkään suoritettaviin laskentatehtäviin tai tilanteisiin, joissa tarvitset erillisiä resursseja.
+        vdi_content: VDI (Virtual Desktop Interface) antaa sinulle työpöytäyhteyden jaettuun solmuun. Tämä on kirjautumissolmun graafinen versio. Käytä tätä kevyisiin tehtäviin, kuten tiedostojen käyttämiseen ja katseluun, töiden lähettämiseen ja visualisointeihin.
+      products:
+        fatal_error: Kohtalokas virhe on tapahtunut
+        no_action: ei toimintaa
+      projects:
+        undetermined_size: Määrittämätön koko
+      support_ticket:
+        delete_attachment: Poista liite
+        no_file_selected: Ei valittua tiedostoa
+        selected_file: 'Valittu tiedosto: %{name} (%{size}).'
+        size_bytes: '%{size}tavua'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Tätä sivua ei voida päivittää, koska et ole enää todennettu. Päivitä sivu kirjautuaksesi takaisin sisään.
+        unexpected_error: Tällä sivulla on tapahtunut odottamaton virhe. Päivitä sivu.
+      utils:
+        loading: Ladataan.
+        loading_complete: Lataus valmis.
+        popup_blocked: Tämä linkki on määritetty avautumaan uuteen ikkunaan, mutta se ei näytä avautuneen. Poista ponnahdusikkunoiden esto käytöstä tällä sivulla ja yritä uudelleen.
+      workflows:
+        begin_from_launcher: Aloita työnkulku käynnistysohjelmasta %{title}
+        bidirectional_not_allowed: Kaksisuuntaiset reunat eivät ole sallittuja.
+        cyclic_dependency: Tämän reunan lisääminen luo syklisen riippuvuuden kantoraketien välille.
+        edge_aria_label: Reuna kohdasta %{from} kohtaan %{to}
+        launcher_aria_label: 'Käynnistysohjelma: %{title}'
+        launcher_exists: Käynnistysohjelma on jo olemassa, valitse toinen käynnistysohjelma
+        load_launcher_failed: Käynnistysohjelman HTML-koodin lataaminen epäonnistui. Yritä uudelleen.
+        no_empty_cells: Ei tyhjiä ruudukkosoluja saatavilla!
+        save_failed: Työnkulun tallentaminen epäonnistui. Tarkista lisätietoja konsolista.
+        select_launcher: Valitse käynnistysohjelma
+      xdmod:
+        analytics_toggle: Analytiikan vaihto
+        column_date: Päivämäärä
+        column_id: Henkilöllisyystodistus
+        column_name: Nimi
+        date_range: '%{from} - %{to}'
+        efficiency_report: '%{unit} Tehokkuusraportti'
+        ensure_logged_in_html: '%{error} Varmista, että olet <a href="%{url}">kirjautunut sisään Open XDMoD:iin ensin</a> ja yritä sitten uudelleen.'
+        expand_analytics_title: Napsauta laajentaaksesi työtehtävän %{id} analytiikkatietoja tämän taulukon yläpuolella.
+        fetch_user_failed: Nykyisen käyttäjän tietojen hakeminen Open XDMoD:sta epäonnistui.
+        idp_redirect_failed: 'Kirjautuminen epäonnistui: IDP-uudelleenohjaus epäonnistui'
+        iframe_error: XDMoD-kirjautumisen iFrame URL-osoitteessa %{url} lähetti virheilmoituksen tiedoilla %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} tehoton %{unit} </span> & %{total} yhteensä %{unit}
+        invalid_job_data: Pyynnön palauttamat työtiedot ovat virheelliset.
+        loading_caps: LADATAAN...
+        login_page_load_failed: 'Kirjautuminen epäonnistui: XDMoD-kirjautumissivun lataaminen epäonnistui'
+        login_timeout: 'Kirjautuminen epäonnistui: Aikakatkaisu odotettaessa kirjautumisen valmistumista'
+        metric_cpu: Suoritin
+        metric_mem: Mem
+        metric_walltime: Seinäaika
+        no_data: Ei tietoja saatavilla.
+        not_available: Ei saatavilla
+        open_xdmod: Avaa XDMoD
+        percent_efficient: '%{percent}% tehokas'
+        percent_efficient_aria: prosenttia tehokas
+        percent_inefficient: '%{percent}% tehotonta'
+        percent_inefficient_aria: tehotonta prosenttia
+        recently_completed_jobs: Äskettäin valmistuneet työt
+        unit_core_hours: ydintunnit
+        unit_core_hours_title: Ydintunnit
+        unit_jobs: työpaikat
+        unit_jobs_title: Työpaikat
+    launch: Käynnistää
+    load_report: Lataa raportti + %{node}
+    loading: Ladataan...
+    loading_short: Ladataan
+    locale_name: Suomi (Suomi)
+    logo_alt_text: Tervetuloa Open OnDemandiin
+    logout_body_html: <strong>Sinun on suljettava selain kokonaan</strong>, jotta uloskirjautuminen onnistuu. Jos olet edelleen kirjautuneena sisään selaimen uudelleenavaamisen jälkeen, tyhjennä evästeet. Jos käytät Chromebookia tai Chromeboxia, sinun on käynnistettävä laite uudelleen sulkeaksesi selaimen ja kirjautuaksesi ulos.
+    logout_tip_html: '<strong>Vinkki: "Yksityisen selaustilan"</strong> käyttäminen OnDemand-palvelua käytettäessä on hyvä tapa hallita "automaattista uloskirjautumista", koska selainikkunan sulkeminen poistaa kaikki siihen liittyvät evästeet ja istuntotiedot.'
+    logout_title: Et ole vielä kirjautunut ulos
+    maximum: Maksimi
+    mem_report: Muistiraportti + %{node}
+    minimum: Minimi
+    mode: Tila
+    module_browser_available_modules: 'Saatavilla olevat moduulit:'
+    module_browser_copy_aria: Kopioi latauskomento kohteelle %{name}
+    module_browser_dependencies: 'Riippuvuudet:'
+    module_browser_last_updated: 'Viimeksi päivitetty: %{last_updated}'
+    module_browser_load_command: 'Lataa komento:'
+    module_browser_search_label: Hakumoduulit
+    module_browser_search_placeholder: Hae moduulin nimellä...
+    module_browser_select_version: (valitse versio)
+    module_browser_showing_results: Näytetään %{count} tulosta
+    module_browser_title: Moduulien selain
+    module_browser_versions: Versiot
+    motd_default_md: 'Open OnDemand -kehitystä tukee [National Science Foundation](https://www.nsf.gov/)
+
+      apurahanumeroilla [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) ja
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Lue lisää tai osallistu:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
+      - [Open OnDemand -arkisto](https://github.com/OSC/ondemand)
+
+      - [ood-core-arkisto](https://github.com/OSC/ood_core)
+
+      - [Dokumentaatio](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD-tiedostoa ei jäsennetty tai se ei renderöity oikein: %{error_message}'
+    motd_no_messages: Ei uusia viestejä.
+    motd_title: Päivän viesti
+    name: Nimi
+    nav_all_apps: Kaikki sovellukset
+    nav_develop_docs: Kehittäjädokumentaatio
+    nav_develop_my_sandbox_apps_dev: Omat hiekkalaatikkosovellukset (kehitys)
+    nav_develop_my_sandbox_apps_prod: Jaetut sovellukseni (tuotantoversio)
+    nav_develop_title: Kehittää
+    nav_help_change_password: Vaihda HPC-salasana
+    nav_help_custom: Navigointiohjeen mukauttaminen
+    nav_help_docs: Verkkodokumentaatio
+    nav_help_support: Ota yhteyttä tukeen
+    nav_help_support_ticket: Lähetä tukipyyntö
+    nav_help_title: Auttaa
+    nav_help_two_factor: Kaksivaiheisen todennuksen määrittäminen
+    nav_language: Kieli
+    nav_limit_caption: näytetään %{subset_count} / %{total_count}
+    nav_logout: Kirjaudu ulos
+    nav_main_menu: Päävalikko
+    nav_restart_server: Käynnistä web-palvelin uudelleen
+    nav_sessions: Interaktiiviset istunnot
+    nav_toggle_navigation: Valikko
+    nav_user: Kirjautunut sisään nimellä %{username}
+    network_report: Verkkoraportti + %{node}
+    node: Solmu
+    none: Ei mitään
+    not_grouped: Muut sovellukset
+    nsf_access_announcements: NSF ACCESS -ilmoitukset
+    nsf_access_events: NSF ACCESS -tapahtumat
+    nsf_access_outages: NSF:n käyttökatkokset
+    ok: OK
+    opens_in_new_tab: avautuu uuteen välilehteen
+    output_location: 'Tulostuspaikka:'
+    owner: Omistaja
+    page_actions_aria: Sivutoiminnot
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametrit
+    path_selector_breadcrumb_aria: '%{title} Navigointipolku'
+    path_selector_caption: Valitse lomakkeessa käytettävä tiedosto tai hakemisto.
+    path_selector_default_popup_title: Valitse työhakemistosi
+    path_selector_home: kotiin
+    path_selector_parent_directory: päähakemisto
+    permissions_created: Käyttöoikeus luotiin onnistuneesti.
+    permissions_destroyed: Käyttöoikeus on poistettu onnistuneesti.
+    permissions_group_title: Ryhmän käyttöoikeudet
+    permissions_user_title: Käyttäjäoikeudet
+    pinned_apps_caption_html: Esittelyssä osa <a href="%{all_apps_url}">kaikkien saatavilla olevien sovellusten</a> joukosta
+    pinned_apps_category: Sovellukset
+    pinned_apps_title: Kiinnitetyt sovellukset
+    products_created: Tuote luotiin onnistuneesti.
+    products_git_commit_hint_html: Vahvista muutokset tai lisää tarvittavat tiedostot tiedostoon <code>.gitignore</code>
+    products_git_staged: Lavastettu
+    products_git_status: Gitin tila
+    products_git_unstaged: Lavastamaton
+    products_git_untracked: Seuraamaton
+    products_manifest_save_error: Sovellusluetteloa ei voida tallentaa kansioon %{path}
+    products_ssh_key_created: SSH-avain luotiin onnistuneesti.
+    products_ssh_key_exists: SSH-avain on jo olemassa
+    products_ssh_key_failed: 'SSH-avaimen luonti epäonnistui: %{error}'
+    products_type_batch_connect: Eräyhteyssovellus
+    products_type_passenger: Matkustajasovellus
+    products_type_passenger_meteor: Matkustaja Meteor -sovellus
+    products_type_passenger_node: Matkustajasolmu-sovellus
+    products_type_passenger_rack: Matkustajan telinesovellus
+    products_type_passenger_rails: Passenger Rails -sovellus
+    products_type_passenger_rails_sqlite: Passenger Rails -sovellus SQLite-tietokannalla
+    products_type_passenger_wsgi: Matkustaja WSGI -sovellus
+    products_updated: Tuote päivitettiin onnistuneesti.
+    project: Projekti
+    project_balances: Projektin saldot
+    project_directory: Projektihakemisto
+    project_zip_error_message: 'Virhe ZIP-tiedoston luomisessa: %{error}'
+    project_zip_success_message: 'Onnistui: project.zip on luotu projektihakemistoosi.'
+    queue: Jonottaa
+    quota_additional_message: Harkitse tiedostojen poistamista tai arkistointia levytilan vapauttamiseksi.
+    quota_block: Käytetään %{used} kiintiöstä %{available}
+    quota_block_shared: (%{used_exclusive} ovat sinun)
+    quota_file: Käytetään %{used} tiedostoa kiintiöstä %{available} tiedostoa
+    quota_file_shared: (%{used_exclusive} tiedostot ovat sinun)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Lataa sivu uudelleen nähdäksesi päivitetyn kiintiön. Kiintiöt päivittyvät 5 minuutin välein.
+    quota_warning_prefix_html: Kiintiörajoitusvaroitus kohteelle
+    recently_used_apps_title: Äskettäin käytetyt sovellukset
+    remove: Poistaa
+    reset: Nollaa
+    restart_msg_html: 'Ryhmäsi jäsenyys on muuttunut, mikä vaikuttaa sovellusten käyttöoikeuksiisi. Kojelaudan pitäisi käynnistyä uudelleen automaattisesti.
+
+
+      Jos se ei käynnisty uudelleen, napsauta: <a href="%{restart_url}">käynnistä web-palvelin uudelleen</a>.'
+    restore: Palauttaa
+    root: Juuri
+    save: Tallentaa
+    saved_settings_title: Tallennetut asetukset
+    select: Valitse
+    select_all: Valitse kaikki
+    select_path: Valitse polku
+    select_path_for: '%{element} valitse polku
+
+      '
+    settings_csrf_expired: Istuntosi suojaustunnus on vanhentunut. Yritä uudelleen.
+    settings_invalid_request: Virheelliset asetukset lähetetty
+    settings_unprocessable_body_html: Istuntosi on saattanut vanhentua tai haluamasi muutos on hylätty. Palaa <a href="%{dashboard_url}">hallintapaneeliin</a> ja yritä uudelleen.
+    settings_unprocessable_title: Istunto vanhentunut tai muutos hylätty
+    settings_updated: Asetukset päivitetty
+    shared_apps_caption: Jakanut %{owner_title} (%{owner})
+    shared_apps_caption_short: Jakanut %{owner}
+    shared_apps_title: Jaetut sovellukset
+    sharing_catalog_msg_html: <br>Osa saatavilla olevista sovelluksista on nähtävissä %{catalog_link_tag}-sivustolla.
+    sharing_catalog_title: Sovellusluettelo
+    sharing_no_shared_apps_html: '<strong>Ei saatavilla olevia mukautettuja jaettuja sovelluksia.</strong>
+
+      '
+    sharing_support_msg_html: 'Jos et löydä etsimääsi sovellusta,
+
+      <a href="%{support_url}">ota yhteyttä tukeen</a>.
+
+      '
+    sharing_welcome_msg_html: 'Klusterikäyttösovellukset ovat käytettävissä yllä olevan navigointipalkin alasvetovalikoista.
+
+
+      Mukautetut jaetut sovellukset ovat saatavilla alla.'
+    shell: Kuori
+    shell_app_title: '%{cluster_title} Shell-käyttöoikeus'
+    show: Show
+    size: Koko
+    skip_navigation: Ohita navigointi
+    smart_attributes:
+      account: Tili
+      auto_modules_none: Automaattiset moduulit (ei annettu)
+      cluster: Klusteri
+      cores: Ytimet
+      email_on_started: Haluan saada sähköpostin, kun istunto alkaa
+      environment_variable: Ympäristömuuttuja
+      environment_variable_key: 'Ympäristömuuttuja: %{key}'
+      job_name: Työnimi
+      module_version: '%{module} versio'
+      num_cpus_single_node: Yksittäisen solmun suorittimien lukumäärä
+      num_hours: Tuntien lukumäärä
+      num_nodes: Solmujen lukumäärä
+      num_processors: Suorittimien lukumäärä
+      partition: Osio
+      qos: QoS
+      queue: Jonottaa
+      script: Skripti
+      vnc_idle_help: 'Poistu, jos # sekuntia kuluu ilman VNC-katseluohjelmien yhteyksiä'
+      vnc_idle_label: Lepotilan aikakatkaisu
+      vnc_resolution_help: Resoluutiota käyttävät vain natiivit VNC-yhteydet
+      vnc_resolution_label: Resoluutio
+    soft_tabs: Pehmeät välilehdet
+    soft_tabs_info: Pehmeät sarkaimet ovat tiedostossa välilyöntejä varsinaisten sarkainmerkkien sijaan.
+    status: Status
+    status_completed: Valmis
+    status_held: Pidetty
+    status_hold: Pidä
+    status_queued: Jonossa
+    status_running: Juoksu
+    status_starting: Aloittaminen
+    status_suspend: Keskeyttää
+    status_suspended: Keskeytetty
+    status_undetermined: Määrittelemätön
+    stop: Stop
+    submit: Lähetä
+    submit_args: 'Lähetä argumentit:'
+    support_ticket:
+      creation_success: 'Tukipyyntösähköposti lähetetty osoitteeseen: %{to}'
+      fields:
+        attachments: Liitteet
+        cc: CC
+        description: Kuvaus
+        email: Sähköposti
+        job_description: Työkuvaus
+        session_description: Istunnon kuvaus
+        subject: Aihe
+        username: Käyttäjätunnus
+      generic_error: 'Pyyntösi käsittelyssä tapahtui virhe: %{error}'
+      header: Tukipyyntö
+      rt:
+        creation_success: 'Tukipyyntö luotu RequestTracker-järjestelmässä. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Tukipyyntö luotu ServiceNow''ssa. Numero: %{number}. Liitteitä ei kuitenkaan voitu lisätä.'
+        creation_success: 'Tukipyyntö luotu ServiceNow''ssa. Numero: %{number}'
+      submit: Lähetä tukipyyntö
+      title: Tukipyyntö
+      validation:
+        attachments_items: '%{id} ovat virheellisiä. %{items} lisätty, liitteiden enimmäismäärä on %{max}'
+        attachments_size: '%{id} ovat virheellisiä. Liitteen enimmäiskoko on %{max}'
+        email: Muoto %{id} on virheellinen. Odotettiin kelvollista sähköpostiosoitetta.
+        items:
+          attachments_js: Ei enää liitteitä sallittu
+        required: '%{id} on pakollinen'
+        size:
+          attachments_js: Liitteen enimmäiskoko on %{max}. Valittu tiedostokoko on %{size}
+      validation_error: Virheellinen pyyntö. Tarkista alla olevat virheilmoitukset.
+    support_ticket_add_attachment: Lisää liite
+    support_ticket_attachments_help: Liitä tiedosto napsauttamalla ruutua. Kuvakaappaukset tai muut tiedostot voivat auttaa ongelman vianmäärityksessä.
+    system_apps_caption: Järjestelmään asennettu sovellus
+    system_status_available: '%{name} Saatavilla: %{count}'
+    system_status_cluster_title: '%{title} Klusterin tila'
+    system_status_gpus: Näytönohjaimet
+    system_status_in_use: '%{percent} käytössä'
+    system_status_jobs_queued: Jonossa olevat työt
+    system_status_jobs_queued_count: '%{count} Jonossa olevat työt'
+    system_status_jobs_running: Työt käynnissä
+    system_status_jobs_running_count: '%{count} Käynnissä olevat työt'
+    system_status_nodes: Solmut
+    system_status_not_slurm: Klusteritietoja ei ole saatavilla %{scheduler}-komennolla. Tällä hetkellä vain Slurm-klustereita tuetaan.
+    system_status_processors: prosessorit
+    toggle_notifications: Ilmoitukset päälle/pois
+    toggle_push_notifications: Push-ilmoitukset päälle/pois
+    type: Tyyppi
+    undefined_title: Määrittelemätön otsikko
+    unknown: Tuntematon
+    uppy:
+      strings:
+        addMore: Lisää lisää
+        addMoreFiles: Lisää tiedostoja
+        addingMoreFiles: Lisää tiedostoja
+        back: Takaisin
+        browseFiles: selaa tiedostoja
+        browseFolders: selaa kansioita
+        cancel: Peruuttaa
+        cancelUpload: Peruuta lähetys
+        closeModal: Sulje modaaliikkuna
+        complete: Täydellinen
+        dashboardTitle: Tiedoston lataaja
+        dashboardWindowTitle: Tiedoston latausikkuna (sulje painamalla Esc-näppäintä)
+        done: Tehty
+        dropHint: Pudota tiedostosi tähän
+        dropPasteBoth: Pudota tiedostot tähän, %{browseFiles} tai %{browseFolders}
+        dropPasteFiles: Pudota tiedostot tähän tai %{browseFiles}
+        dropPasteFolders: Pudota tiedostot tähän tai %{browseFolders}
+        editFile: Muokkaa tiedostoa
+        editing: Muokataan %{file}
+        emptyFolderAdded: Tyhjästä kansiosta ei lisätty tiedostoja
+        error: Virhe
+        exceedsSize: '%{file} ylittää sallitun enimmäiskoon %{size}'
+        failedToUpload: Tiedoston %{file} lataaminen epäonnistui
+        folderAlreadyAdded: Kansio "%{folder}" on jo lisätty.
+        myDevice: Laitteeni
+        noDuplicates: Kaksoiskappaletta '%{fileName}' ei voida lisätä, se on jo olemassa.
+        pause: Tauko
+        pauseUpload: Keskeytä lataus
+        paused: Keskeytetty
+        removeFile: Poista tiedosto
+        resume: Jatkaa
+        resumeUpload: Jatka latausta
+        retry: Yritä uudelleen
+        retryUpload: Yritä latausta uudelleen
+        save: Tallentaa
+        saveChanges: Tallenna muutokset
+        showErrorDetails: Näytä virheen tiedot
+        upload: Lataa
+        uploadComplete: Lataus valmis
+        uploadFailed: Lataus epäonnistui
+        uploadPaused: Lataus keskeytetty
+        uploading: Lähetetään
+        xTimeLeft: '%{time} jäljellä'
+    user: Käyttäjä
+    user_configuration:
+      support_ticket_error: support_ticket on määritetty väärin. Lisää taustajärjestelmän toteutus YAML-konfiguraatioon.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand tarjoaa integroidun, yhden tukiaseman kaikille HPC-resursseillesi.</p>
+
+      '

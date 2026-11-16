@@ -1,0 +1,18 @@
+{
+  "page_title": "Apvalks — %{siteTitle}",
+  "menu_aria": "Čaulas izvēlne",
+  "host_label": "Resursdators: %{host}",
+  "initial_directory": "Sākotnējā direktorijs: %{dir}",
+  "themes_label": "Tēmas:",
+  "theme_default": "Noklusējuma",
+  "theme_bright": "Spilgts",
+  "theme_dark": "Tumšs",
+  "fonts_label": "Fonti:",
+  "leave_page_warning": "Atstājot šo lapu, jūsu termināļa sesija tiks pārtraukta.",
+  "websocket_failed": "Neizdevās izveidot tīmekļa ligzdas savienojumu. Pārliecinieties, vai izmantojat pārlūkprogrammu, kas atbalsta tīmekļa ligzdas savienojumus.",
+  "connection_terminated": "Jūsu savienojums ar attālo serveri ir pārtraukts.",
+  "auth_no_clusters": "Nav definētu klasteru.",
+  "auth_invalid_origin": "Nederīga izcelsme.",
+  "auth_bad_csrf": "Nederīgs CSRF marķieris.",
+  "auth_host_not_allowed": "Resursdators \"%{host}\" nav norādīts atļaušanas sarakstā vai klastera konfigurācijās."
+}

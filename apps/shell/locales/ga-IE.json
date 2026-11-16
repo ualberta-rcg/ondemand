@@ -1,0 +1,18 @@
+{
+  "page_title": "Sliogán - %{siteTitle}",
+  "menu_aria": "Roghchlár Shell",
+  "host_label": "Óstach: %{host}",
+  "initial_directory": "Eolaire tosaigh: %{dir}",
+  "themes_label": "Téamaí:",
+  "theme_default": "Réamhshocrú",
+  "theme_bright": "Geal",
+  "theme_dark": "Dorcha",
+  "fonts_label": "Clónna:",
+  "leave_page_warning": "Má fhágann tú an leathanach seo, cuirfear deireadh le do sheisiún críochfoirt.",
+  "websocket_failed": "Theip ar nasc gréasáin a bhunú. Bí cinnte go bhfuil tú ag úsáid brabhsálaí a thacaíonn le naisc gréasáin.",
+  "connection_terminated": "Tá deireadh curtha le do nasc leis an bhfreastalaí cianda.",
+  "auth_no_clusters": "Gan aon chnuasach sainmhínithe.",
+  "auth_invalid_origin": "Bunús Neamhbhailí.",
+  "auth_bad_csrf": "Comhartha CSRF lochtach.",
+  "auth_host_not_allowed": "Níl an t-óstach \"%{host}\" sonraithe sa liosta ceadanna ná i gcumraíochtaí an chnuasaigh."
+}

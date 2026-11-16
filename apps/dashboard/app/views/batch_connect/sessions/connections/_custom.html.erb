@@ -1,6 +1,12 @@
 <%=
-  begin 
-    OodAppkit.markdown.render(ERB.new(view, trim_mode: "-").result(connect.instance_eval { binding })).html_safe 
+  begin
+    ctx = connect.dup
+    if local_assigns[:session]
+      ctx.session ||= local_assigns[:session]
+      ctx.app_title ||= local_assigns[:session].display_title
+    end
+    ctx.csp_nonce ||= content_security_policy_nonce if respond_to?(:content_security_policy_nonce)
+    OodAppkit.markdown.render(ERB.new(view, trim_mode: "-").result(ctx.instance_eval { binding })).html_safe
   rescue StandardError, Exception => e
     Rails.logger.info("did not render correct connection view.html.erb because of error #{e}:#{e.message}")
     render(partial: '/batch_connect/sessions/connections/error', locals: { error: e })

@@ -1,0 +1,5 @@
+---
+pt-PT:
+  manifest:
+    name: Estado do sistema
+    description: A aplicação Open OnDemand para verificar o estado do sistema

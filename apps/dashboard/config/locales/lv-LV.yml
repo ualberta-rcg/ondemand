@@ -1,0 +1,1008 @@
+---
+lv-LV:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute} formāts nav derīgs vai trūkst'
+        invalid: '%{attribute} nav derīgs'
+        required: '%{attribute} ir obligāts'
+        used: '%{attribute} jau tiek izmantots'
+  dashboard:
+    account: Konts
+    actions: Darbības
+    active_jobs: Aktīvie darbi
+    active_jobs_close_details: Aizvērt paplašināto informācijas paneli.
+    active_jobs_detail:
+      account: Konts
+      array_job_id: Masīva uzdevuma ID
+      array_task_id: Masīva uzdevuma ID
+      cluster: Klasteris
+      cluster_id: Klastera ID
+      comment: Komentārs
+      cpu_time: CPU laiks
+      cpu_used: Izmantotais centrālais procesors
+      current_working_directory: Pašreizējā darba direktorijs
+      end_time: Beigu laiks
+      exec_host: Izpilddirektors
+      finish_time: Beigu laiks
+      from_host: No saimnieka
+      gres: GRES
+      group_list: Grupu saraksts
+      job_account: Darba konts
+      job_checkpoint_attr: Darba kontrolpunkta atribūts
+      job_checkpoint_interval: Darba kontrolpunkta intervāls
+      job_deadline: Darba termiņš
+      job_exec_file: Darba izpildes fails
+      job_execution_time: Darba izpildes laiks
+      job_gid: Darba GID
+      job_group: Darba grupa
+      job_id: Darba ID
+      job_name: Amata nosaukums
+      job_priority: Darba prioritāte
+      job_restart: Darba atsākšana
+      job_script_file: Darba skripta fails
+      job_script_size: Darba skripta lielums
+      job_share: Darba koplietošana
+      job_type: Darba veids
+      job_uid: Darba UID
+      job_verify: Darba pārbaude
+      job_version: Darba versija
+      mem: Atmiņa
+      memory: Atmiņa
+      node_count: Mezglu skaits
+      node_list: Mezglu saraksts
+      nodes: Mezgli
+      none: Neviens
+      notifications: Paziņojumi
+      partition: Starpsiena
+      pbs_id: PBS ID
+      pids: PID
+      ppn: PPN
+      project_name: Projekta nosaukums
+      queue: Rinda
+      reason: Iemesls
+      reserve: Rezerve
+      select: Atlasīt
+      start_time: Sākuma laiks
+      state: Štats
+      status: Statuss
+      submission_time: Iesniegšanas laiks
+      swap: Apmainīt
+      time_limit: Laika ierobežojums
+      time_used: Izmantotais laiks
+      total_cpus: Kopējais centrālo procesoru skaits
+      total_nodes: Kopējais mezglu skaits
+      user: Lietotājs
+      virtual_memory: Virtuālā atmiņa
+      walltime: Sienas laiks
+      walltime_used: Izmantotais Walltime
+    active_jobs_filter_all: Visas vakances
+    active_jobs_filter_user: Jūsu darbi
+    active_jobs_ganlia_CPU: Gangliju attēls centrālajam procesoram.
+    active_jobs_ganlia_load: Gangliju attēls sistēmas slodzes vidējiem rādītājiem.
+    active_jobs_ganlia_mem: Gangliju attēls atmiņas izmantošanai.
+    active_jobs_ganlia_network: Gangliju attēls tīkla lietošanai.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> skatīt visus (%{number_of_sessions})</a>
+    active_sessions_title: Aktīvas interaktīvas sesijas
+    add: Pievienot
+    all_apps_table_app_column: Vārds
+    all_apps_table_category_column: Kategorija
+    all_apps_table_sub_category_column: Apakškategorija
+    all_clusters: Visi klasteri
+    announcements_dismissible_button: Labi
+    announcements_parse_error: Kļūda, analizējot paziņojumu.
+    announcements_render_error: Nevarēja atveidot paziņojumu '%{name}' kļūdas dēļ.
+    announcements_required_button: Pieņemt
+    apps_setup_failure_html: '<h2>Radās problēma, inicializējot datus šai lietotnei.</h2>
+
+      <p class="lead">
+
+      Uz savu atbildību jūs joprojām varat <a href="%{app_url}">atvērt lietotni</a>
+
+      vai arī varat vienkārši <a href="%{home_url}">atgriezties informācijas panelī</a>
+
+      </p>
+
+      <p>
+
+      Kopīgojiet šo informāciju ar savas lietotnes izstrādātāju:
+
+      Iestatīšanas ražošanas skriptam ir jābūt idempotentam un tas tiek palaists katru reizi, kad lietotājs atver lietotni, izmantojot informācijas paneli.</p>
+
+      <h4>Izņēmums: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Stack izsekošana:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Sistēmas lietotnes
+    auto_log_location_title: Žurnāla atrašanās vieta
+    back: Atpakaļ
+    balance_additional_message: Apsveriet iespēju pieprasīt papildu %{balanace_units}
+    balance_message: '%{units_balance} ir %{value}'
+    balance_no_warnings: Neviens projekts neatrodas %{threshold} dienu atlikuma brīdinājuma slieksnī.
+    balance_reload_message_html: 'Atkārtoti ielādējiet lapu, lai skatītu atjaunināto atlikumu. Atlikumi tiek atjaunināti katru dienu.<br>Pēdējoreiz atjaunināts: %{last_update}'
+    balance_warning_prefix_html: '%{units_balance} brīdinājums par'
+    batch_connect_active_sessions_aria: Aktīvās sesijas
+    batch_connect_app_version: 'versija: %{version}'
+    batch_connect_apps_menu_aria: Interaktīvo lietotņu izvēlne
+    batch_connect_apps_menu_title: Interaktīvas lietotnes
+    batch_connect_form_attr_cache_error: Nevar izmantot iepriekš kešatmiņā saglabātās vērtības, tā vietā tiek izmantotas noklusējuma vērtības. (%{error_message})
+    batch_connect_form_choose_template_name: Izvēlieties veidnes nosaukumu
+    batch_connect_form_data_root: datu saknes direktorijs
+    batch_connect_form_dynamic_disclaimer: Šī veidlapa var dinamiski mainīties, atlasot opcijas. Visas izmaiņas tiks paziņotas un ir atgriezeniskas.
+    batch_connect_form_invalid: Formas laukā %{id} trūkst opciju failā form.yml.
+    batch_connect_form_launch: Palaišana
+    batch_connect_form_prefill: Izmantot saglabātos iestatījumus
+    batch_connect_form_prefill_error: Ups... Kaut kas nav kārtībā ar jūsu veidni.
+    batch_connect_form_reset_resolution: Atiestatīt izšķirtspēju
+    batch_connect_form_resolution_height: Izšķirtspējas augstums (pikseļi)
+    batch_connect_form_resolution_width: Izšķirtspējas platums (pikseļi)
+    batch_connect_form_save: Saglabāt iestatījumus
+    batch_connect_form_save_new_template: saglabāt jaunos iestatījumus
+    batch_connect_form_save_submit: Saglabāt iestatījumus un aizvērt
+    batch_connect_form_select_template: atlasīt saglabātos iestatījumus
+    batch_connect_form_session_data_html: '* Šīs sesijas %{title} sesijas datiem var piekļūt
+
+      sadaļā %{data_link_tag}.
+
+      '
+    batch_connect_form_template_name_label: iestatījuma nosaukums
+    batch_connect_form_type_new_name: Lietotnes iestatījumu nosaukums
+    batch_connect_form_type_new_name_error: Lūdzu, ievadiet derīgu vārdu, lai turpinātu.
+    batch_connect_invalid_form_array: Form.yml elements 'form' nav masīvs
+    batch_connect_invalid_form_attributes: Form.yml elements “attributes” nav Map
+    batch_connect_missing_cluster: Klasteris nekad netika iestatīts. Vai nu iestatiet to form.yml.erb failā ar `cluster` vai `form.cluster`, vai arī iestatiet `cluster` failā submit.yml.erb.
+    batch_connect_no_apps: Nav pieejamu interaktīvu lietotņu.
+    batch_connect_no_sessions: Jums nav aktīvu sesiju.
+    batch_connect_sandbox: '[Smilškaste]'
+    batch_connect_sessions_cancel_confirm: Vai esi pārliecināts?
+    batch_connect_sessions_cancel_full_title: Atcelt %{title} sesiju
+    batch_connect_sessions_cancel_title: Atcelt
+    batch_connect_sessions_connect_to: Izveidot savienojumu ar %{app_title}
+    batch_connect_sessions_connection_render_error: Nevar atveidot savienojuma pogu no view.html.erb kļūdas '%{error}' dēļ.
+    batch_connect_sessions_data_html: 'Šīs sesijas %{title} sesijas datiem var piekļūt
+
+      sadaļā %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Vai esi pārliecināts?
+    batch_connect_sessions_delete_full_title: Dzēst %{title} sesiju
+    batch_connect_sessions_delete_hover: Dzēst sesiju
+    batch_connect_sessions_delete_title: Dzēst
+    batch_connect_sessions_edit_title: Rediģēt jaunu %{title} ar šīs sesijas parametriem
+    batch_connect_sessions_error_invalid_job_name_html: Ja šo uzdevumu neizdevās iesniegt nederīga uzdevuma nosaukuma dēļ, lūdzu, lūdziet administratoram konfigurēt OnDemand, lai iestatītu vides mainīgo OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Neizdevās sagatavot veidni, radās šāda kļūda:'
+    batch_connect_sessions_errors_submission: 'Neizdevās iesniegt sesiju ar šādu kļūdu:'
+    batch_connect_sessions_native_vnc_tab: Vietējās instrukcijas
+    batch_connect_sessions_novnc_compression: Kompresija
+    batch_connect_sessions_novnc_compression_help: 1 (zems) līdz 9 (augsts)
+    batch_connect_sessions_novnc_launch: Palaist %{app_title}
+    batch_connect_sessions_novnc_quality: Attēla kvalitāte
+    batch_connect_sessions_novnc_quality_help: 0 (zems) līdz 9 (augsts)
+    batch_connect_sessions_novnc_tab: bez VNC savienojuma
+    batch_connect_sessions_novnc_view_only: Tikai skatīšana (kopīgojama saite)
+    batch_connect_sessions_path_selector_forbidden_error: Jums nav atļaujas atlasīt šo direktoriju vai failu.
+    batch_connect_sessions_relaunch_full_title: Atkārtoti palaist %{title} sesiju
+    batch_connect_sessions_relaunch_title: Atkārtota palaišana
+    batch_connect_sessions_staged_root: pakāpeniska saknes direktorijs
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} kodols'
+      other: '%{count} kodoli'
+    batch_connect_sessions_stats_created_at: 'Izveidots:'
+    batch_connect_sessions_stats_expected_time: 'Paredzētais sākums:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} Grafiskā karte'
+      other: '%{count} grafiskie procesori'
+    batch_connect_sessions_stats_host: 'Saimnieks:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} mezgls'
+      other: '%{count} mezgli'
+    batch_connect_sessions_stats_session_dir_link_title: Atvērt sesijas direktoriju %{session_id}
+    batch_connect_sessions_stats_session_id: 'Sesijas ID:'
+    batch_connect_sessions_stats_support_ticket: Problēmas ar šo sesiju?
+    batch_connect_sessions_stats_support_ticket_link_text: Iesniegt atbalsta pieprasījumu
+    batch_connect_sessions_stats_time_remaining: 'Atlikušais laiks:'
+    batch_connect_sessions_stats_time_requested: 'Pieprasītais laiks:'
+    batch_connect_sessions_stats_time_used: 'Izmantotais laiks:'
+    batch_connect_sessions_stats_undetermined_host: Nenoteikts
+    batch_connect_sessions_status_bad: Jūsu sesija ir nonākusi nepareizā stāvoklī. Lai iegūtu plašāku informāciju, sazinieties ar atbalsta dienestu.
+    batch_connect_sessions_status_blurb_cancel_failure: Neizdevās atcelt sesiju.
+    batch_connect_sessions_status_blurb_cancel_success: Sesija tika veiksmīgi atcelta.
+    batch_connect_sessions_status_blurb_create_success: Sesija tika veiksmīgi izveidota.
+    batch_connect_sessions_status_blurb_delete_failure: Neizdevās dzēst sesiju.
+    batch_connect_sessions_status_blurb_delete_success: Sesija tika veiksmīgi izdzēsta.
+    batch_connect_sessions_status_completed: Kļūdu novēršanas nolūkos šī karte tiks saglabāta vēl %{days} dienas.
+    batch_connect_sessions_status_missing_connection: Šai lietotnei trūkst informācijas, kas nepieciešama savienojuma izveidei. Konkrēti, trūkst faila view.html.erb. Lūdzu, sazinieties ar atbalsta dienestu, ja redzat šo ziņojumu.
+    batch_connect_sessions_status_queued: Lūdzu, esiet pacietīgi, jo jūsu uzdevums pašlaik atrodas rindā. Gaidīšanas laiks ir atkarīgs no kodolu skaita, kā arī no pieprasītā laika.
+    batch_connect_sessions_status_starting: Jūsu sesija pašlaik sākas... Lūdzu, esiet pacietīgi, jo šis process var aizņemt dažas minūtes.
+    batch_connect_sessions_word: Sesija
+    batch_connect_validation:
+      app_not_found: Šī lietotne nepastāv direktorijā '%{root}'.
+      inaccessible_clusters: Šai lietotnei ir nepieciešami klasteri, kuru nav vai kuriem jums nav piekļuves.
+      missing_form_file: Šī lietotne nenodrošina veidlapas failu direktorijā '%{root}'.
+      missing_sub_app_form_file: Šī lietotne nenodrošina apakšlietotnes veidlapas failu direktorijā '%{root}'.
+      no_cluster_specified: Šī lietotne nenorāda nevienu klasteri.
+    bc_saved_settings:
+      delete_confirm: Vai esi pārliecināts?
+      delete_title: Dzēst %{settings_name} saglabātos iestatījumus
+      deleted_message: Saglabātie iestatījumi %{settings_name} dzēsti.
+      edit_title: Rediģēt %{settings_name} saglabātos iestatījumus
+      launch_title: Palaist %{app_title} ar %{settings_name} parametriem
+      missing_settings: Atlasītie saglabātie iestatījumi nav atrasti.
+      no_settings_title: Jums nav saglabātu iestatījumu.
+      outdated_message: Kopš šo iestatījumu izveides %{app_title} parametri ir mainījušies.
+      saved_message: '%{settings_name} iestatījumi saglabāti'
+      settings_values_label: Vērtības
+      title: Saglabātie iestatījumi
+    breadcrumb_aria: Navigācija
+    breadcrumbs_all_apps: Visas lietotnes
+    breadcrumbs_home: Sākums
+    breadcrumbs_my_sessions: Manas interaktīvās sesijas
+    breadcrumbs_support_ticket: Atbalsta pieprasījums
+    browser_warning: OnDemand ir nepieciešama jaunāka pārlūkprogrammas versija. Pašreizējās pārlūkprogrammas prasības ietver IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
+    cancel: Atcelt
+    categories:
+      apps: Lietotnes
+      bioinformatics: Bioinformātika
+      clusters: Klasteri
+      data_science: Datu zinātne
+      desktop: Darbvirsma
+      desktops: Galddatori
+      development: Attīstība
+      external_apps: Ārējās lietotnes
+      files: Faili
+      gateway_apps: Gateway lietotnes
+      guis: GUI
+      interactive_apps: Interaktīvas lietotnes
+      jobs: Darbs
+      machine_learning: Mašīnmācīšanās
+      mathematics: Matemātika
+      servers: Serveri
+      utilities: Komunālie pakalpojumi
+      virtual_desktop_interface: Virtuālās darbvirsmas saskarne
+      visualization: Vizualizācija
+    clear: Skaidrs
+    close: Aizvērt
+    close_alert: Aizvērt šo brīdinājumu.
+    close_notice: Aizvērt šo paziņojumu.
+    cluster: Klasteris
+    copy: Kopēt
+    copy_suffix: (Kopija)
+    cpu_report: CPU ziņojums + %{node}
+    custom_pages:
+      invalid: 'Nederīgs lapas kods: %{page}. Šī lapa nav konfigurēta.'
+    date: Datums
+    delete: Dzēst
+    detailed_metrics: Detalizēta metrika
+    details: Sīkāka informācija
+    development_apps_caption: Smilškastes lietotne
+    development_apps_category: Smilškastes lietotnes
+    development_delete_app: Dzēst lietotni
+    development_edit_title: Rediģēt %{title}
+    development_launch_title: Palaist %{title}
+    directory: Katalogs
+    edit: Rediģēt
+    editor_default: Noklusējuma
+    editor_font_size: Fonta lielums
+    editor_key_bindings: Taustiņu piesaistes
+    editor_theme: Tēma
+    editor_theme_bright: Spilgts
+    editor_theme_dark: Tumšs
+    editor_wrap: Aptinums
+    error_details: 'Sīkāka informācija:'
+    error_internal_body_html: Lūdzu, mēģiniet vēlreiz pēc brīža. Ja joprojām redzat šo kļūdu, lūdzu, <a href="%{support_url}">sazinieties ar atbalsta dienestu</a>.
+    error_internal_title: Iekšēja servera kļūda
+    error_not_found_body: Lapa, kuru meklējat, neeksistē.
+    error_not_found_title: Nav atrasts
+    favorites: Izlase
+    file: Fails
+    file_editor: Failu redaktors
+    file_quotas: Failu kvotas
+    files: Faili
+    files_change_directory: Mainīt direktoriju
+    files_contents_of_directory: Kataloga %{path} saturs
+    files_copy_move: Kopēt/Pārvietot
+    files_copy_path: Kopēt ceļu
+    files_directory_contents_aria: Kataloga saturs
+    files_directory_download_error_modal_title: Katalogs ir pārāk liels, lai lejupielādētu
+    files_directory_download_unauthorized: Jūs varat lejupielādēt tikai failu vai direktoriju, kuram jums ir lasīšanas un izpildes piekļuve.
+    files_directory_size_calculation_error: Iestājās taimauts, mēģinot noteikt direktorija lielumu.
+    files_directory_size_calculation_timeout: Iestājās taimauts, mēģinot noteikt direktorija lielumu.
+    files_directory_size_unknown: 'Kļūda ar statusu %{exit_code}, mēģinot noteikt direktorijas lielumu: %{error}'
+    files_directory_too_large: Katalogs ir pārāk liels, lai to lejupielādētu kā zip failu. Kataloga lielumam jābūt mazākam par %{download_directory_size_limit} baitiem.
+    files_doesnt_exist: '%{path} neeksistē.'
+    files_download: Lejupielādēt
+    files_download_not_enabled: Šajā serverī failu lejupielāde nav iespējota.
+    files_download_zip: Lejupielādēt kā zip failu
+    files_exceeds_editor_limit: '%{path} pārsniedz redaktora ierobežojumu %{limit}. Lūdzu, lejupielādējiet failu, lai to rediģētu vai skatītu lokāli.'
+    files_file_too_large: Fails ir pārāk liels, lai to lejupielādētu. Lejupielādēto failu lielumam jābūt mazākam par %{download_file_size_limit} baitiem.
+    files_go_up_directory: Iet uz augšu direktorijā
+    files_modified_at: Modificēts plkst.
+    files_modify_aria: Modificēt failus
+    files_new_directory: Jauns direktorijs
+    files_new_file: Jauns fails
+    files_not_editable: '%{path} nav rediģējams fails'
+    files_not_readable: Jums nav pietiekamu atļauju, lai lasītu '%{path}'.
+    files_open_in_files_app: Atvērt failu lietotnē
+    files_open_in_globus: Atvērt pakalpojumā Globus
+    files_path_breadcrumbs_aria: Ceļa pārvietošanas navigācija
+    files_refresh: Atsvaidzināt
+    files_remote_dir_not_created: Nav izveidots direktorijs %{path}
+    files_remote_disabled: Attālo failu atbalsts nav iespējots
+    files_remote_empty_dir_unsupported: Attālā ierīce neatbalsta tukšus direktorijus
+    files_remote_error_listing_remotes: 'Kļūda, norādot Rclone tālvadības pultis: %{error}'
+    files_send_to_target_title_default: Nosūtīt atlasīto failu metadatus ārējai lietojumprogrammai
+    files_shell: Atvērt terminālī
+    files_shell_dropdown: Atlasiet klasteri, ko atvērt terminālī
+    files_title: Failu pārlūkošana
+    files_upload: Augšupielādēt
+    footer_contribute: Piedalīties vietnē GitHub
+    footer_license: Programmatūras licences paziņojums
+    footer_open_source: Atvērtā pirmkoda programmatūra.
+    footer_powered_by: Darbojas ar Open OnDemand
+    footer_version: 'Pēc pieprasījuma versija: %{version}'
+    home_directory: Mājas direktorijs
+    id: ID
+    import: Importēt
+    job: Darbs
+    job_info: Darba informācija
+    jobs_back_to_projects: Atpakaļ pie projektiem
+    jobs_clear_form_fields: Notīrīt veidlapas laukus
+    jobs_completed_jobs: Pabeigtie darbi
+    jobs_create_blank_project: Izveidot jaunu projektu
+    jobs_create_blank_workflow: Jauna darbplūsma
+    jobs_create_template_project: Izveidojiet jaunu projektu no veidnes
+    jobs_import_shared_project: Koplietojama projekta importēšana
+    jobs_launchers: Palaišanas ierīces
+    jobs_launchers_add_select_option: Pievienot atlases opciju %{name}
+    jobs_launchers_cannot_find: Nevar atrast palaidēju %{id}
+    jobs_launchers_clone: Klonu palaišanas programma %{name}
+    jobs_launchers_created: Palaišanas programma veiksmīgi izveidota!
+    jobs_launchers_default_created: Šim projektam tika pievienots arī fails “hello_world.sh”.
+    jobs_launchers_delete: Dzēst palaidēju %{name}
+    jobs_launchers_delete_script_confirmation: Vai dzēst visu palaišanas programmas saturu?
+    jobs_launchers_deleted: Palaišanas programma veiksmīgi izdzēsta!
+    jobs_launchers_edit: Rediģēt veidlapu palaišanas programmai %{name}
+    jobs_launchers_edit_form_item: Rediģēt veidlapas vienumu %{label}
+    jobs_launchers_editing: Rediģē %{title}
+    jobs_launchers_fixed_field: Fiksēta vērtība
+    jobs_launchers_fixed_field_help: Fiksēt pašreizējo vērtību
+    jobs_launchers_max_value_label: Skaitļu lauka %{label} maksimālā vērtība
+    jobs_launchers_min_value_label: Minimālā vērtība skaitļu laukam %{label}
+    jobs_launchers_name: Palaišanas programmas nosaukums
+    jobs_launchers_new_field_select: Atlasiet vienumu, ko pievienot veidlapai
+    jobs_launchers_not_found: Nevar atrast palaidēju %{launcher_id}
+    jobs_launchers_preview_form_item: Veidlapas elementa %{label} priekšskatījums
+    jobs_launchers_remove_form_item: Noņemt veidlapas vienumu %{label}
+    jobs_launchers_remove_select_option: Noņemt atlases opciju %{name}
+    jobs_launchers_save_form: Saglabāt veidlapu
+    jobs_launchers_save_form_item: Saglabāt izmaiņas veidlapas vienumā %{label}
+    jobs_launchers_show_form: Rādīt palaišanas programmas %{name} veidlapu
+    jobs_launchers_submit_launcher_title: Palaišanas skripts ar kešatmiņā saglabātām vai noklusējuma vērtībām palaišanas programmai %{name}
+    jobs_launchers_submitted: Darbs %{job_id} veiksmīgi iesniegts.
+    jobs_launchers_updated: Palaišanas programmas manifests ir atjaunināts!
+    jobs_native_dependency: Darbs ir atkarīgs no job-id%{dependency}
+    jobs_native_reason: dēļ '%{reason}'
+    jobs_native_state: Pašreizējais darba statuss ir '%{state}'
+    jobs_new_launcher: Jauns palaidējs
+    jobs_new_project: Jauns projekts
+    jobs_project_cannot_find: 'Nevar atrast projektu: %{project_id}'
+    jobs_project_clear_form_fields: Notīrīt veidlapas laukus
+    jobs_project_created: Projekts veiksmīgi izveidots!
+    jobs_project_delete_label: Dzēst projektu %{name}
+    jobs_project_delete_project_confirmation: Vai dzēst visu projekta direktorijas saturu?
+    jobs_project_deleted: Projekts veiksmīgi izdzēsts!
+    jobs_project_description_placeholder: Projekta apraksts
+    jobs_project_directory_error: Šai darbplūsmai nav iestatīts projekta direktorija ceļš
+    jobs_project_directory_help_html: 'Atstājiet tukšu, un tiks izveidota jauna direktorijs. <br />Noklusējuma atrašanās vieta: %{root_directory}'
+    jobs_project_directory_placeholder: Projekta direktorijas absolūtais ceļš
+    jobs_project_edit_label: Rediģēt projektu %{name}
+    jobs_project_generic_error: 'Apstrādājot jūsu pieprasījumu, radās kļūda: %{error}'
+    jobs_project_group_help: Noteikti izvēlieties grupu, kurā ir iekļauti visi paredzētie līdzstrādnieki. Ja šis nav sadarbības projekts, ieteicams izmantot noklusējuma grupu.
+    jobs_project_group_owner: Grupa
+    jobs_project_imported: Projekts veiksmīgi importēts!
+    jobs_project_invalid_configuration_clusters: Nepieciešams HPC klasteris. Sazinieties ar administratoru, lai to pievienotu sistēmai.
+    jobs_project_invalid_configuration_scripts: Jūsu projektam ir nepieciešams izpildāms skripts. Augšupielādējiet skriptu, izmantojot failu lietojumprogrammu.
+    jobs_project_job_deleted: Darbs %{job_id} veiksmīgi izdzēsts
+    jobs_project_job_not_deleted: Nevar izdzēst darbu %{job_id}
+    jobs_project_job_stopped: Uzdevums %{job_id} veiksmīgi apturēts
+    jobs_project_list_aria: Projektu saraksts
+    jobs_project_manager: Projektu vadītājs
+    jobs_project_manifest_updated: Projekta manifests atjaunināts!
+    jobs_project_name_placeholder: Projekta nosaukums
+    jobs_project_name_validation: Projekta nosaukumā drīkst būt tikai burti, cipari, domuzīmes, pasvītras un atstarpes.
+    jobs_project_not_found: Nevar atrast projektu %{project_id}
+    jobs_project_open_label: Atvērt projektu %{name}
+    jobs_project_remove_label: Noņemt projektu %{name}
+    jobs_project_removed: Projekts noņemts no meklēšanas!
+    jobs_project_return_to_projects: Atgriezties projektu lapā
+    jobs_project_save_error: Nevar saglabāt manifestu mapē %{path}
+    jobs_project_save_project_title: Saglabāt projektu
+    jobs_project_select_directory: Atlasiet projekta direktoriju
+    jobs_project_setgid_help: Atstājot “setgid” atzīmētu, projekta faili tiek izveidoti ar atlasīto grupu. Tas neietekmē projektus jūsu mājas direktorijā.
+    jobs_project_validation_error: Nederīgs pieprasījums. Lūdzu, pārskatiet tālāk norādītās kļūdas.
+    jobs_return_to_projects: Atgriezties projektu lapā
+    jobs_save_project_title: Saglabāt projektu
+    jobs_select_directory_placeholder: Noklikšķiniet uz projekta, lai importētu
+    jobs_toggle_details: Noklikšķiniet, lai pārslēgtu informāciju par darbu %{job_id}
+    jobs_workflow_add_launcher: Pievienot palaidēju
+    jobs_workflow_canvas_aria: audekls
+    jobs_workflow_clone: Klonēt darbplūsmu %{name}
+    jobs_workflow_connect_launchers: Savienot palaišanas programmas
+    jobs_workflow_created: Darbplūsma veiksmīgi izveidota!
+    jobs_workflow_delete_confirmation: Vai dzēst visu darbplūsmas saturu?
+    jobs_workflow_delete_edge: Dzēst malu
+    jobs_workflow_delete_edge_title: Dzēst atlasīto malu (Del/Backspace)
+    jobs_workflow_delete_launcher: Dzēst palaidēju
+    jobs_workflow_delete_launcher_title: Dzēst atlasīto palaišanas programmu (Del/Backspace)
+    jobs_workflow_delete_title: Dzēst darbplūsmu %{name}
+    jobs_workflow_deleted: Darbplūsma veiksmīgi izdzēsta!
+    jobs_workflow_description_placeholder: Darbplūsmas apraksts
+    jobs_workflow_edit_settings: Mainiet darbplūsmas %{name} iestatījumus
+    jobs_workflow_editing: 'Rediģēšana: %{name}'
+    jobs_workflow_enable_sync_key: Iespējot OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Darbplūsma neizdevās ar kļūdu %{error}
+    jobs_workflow_help: Noklikšķiniet uz virsraksta, lai atlasītu un vilktu. Savienojiet, noklikšķinot uz diviem palaidējiem, kad ir atlasīta opcija “Savienot palaidējus”.
+    jobs_workflow_manifest_updated: Darbplūsmas manifests atjaunināts!
+    jobs_workflow_missing_launchers: atlasiet vismaz %{count}
+    jobs_workflow_name_placeholder: Darbplūsmas nosaukums
+    jobs_workflow_name_validation: Darbplūsmas nosaukumā drīkst būt tikai burti, cipari, domuzīmes, pasvītras un atstarpes.
+    jobs_workflow_not_found: Nevar atrast darbplūsmu %{workflow_id}
+    jobs_workflow_pick_launchers: Izvēlieties palaišanas programmas
+    jobs_workflow_show_graph: Atveriet darbplūsmu %{name} grafika redaktorā
+    jobs_workflow_submitted: Darbplūsma veiksmīgi iesniegta!
+    jobs_workflow_sync_key_help: Ja šī opcija ir iespējota, katrs palaidējs šajā darbplūsmā saņem vienu un to pašu <code>OOD_WORKFLOW_SYNC_KEY</code> vides mainīgo (nejaušs marķieris, kas ir unikāls katrai darbplūsmas palaišanai). Noderīgi sinhronizētu failu nosaukumu, bloķēšanas failu vai koplietotu identifikatoru ģenerēšanai atkarīgajos darbos.
+    jobs_workflow_synchronization: Sinhronizācija
+    jobs_workflow_toolbar_aria: rīkjosla
+    jobs_workflow_zoom_controls: Tālummaiņas vadīklas
+    jobs_workflow_zoom_in: Tuvināt
+    jobs_workflow_zoom_out: Tālināt
+    jobs_workflow_zoom_reset: Atiestatīt tālummaiņu
+    jobs_workflows: Darbplūsmas
+    jobs_workflows_not_supported: Konfigurētais plānotājs neatbalsta darbplūsmas.
+    js:
+      active_jobs:
+        delete_aria: Dzēst darbu %{name} ar ID %{id}
+        delete_confirm: Vai tiešām vēlaties dzēst %{name} - %{id}?
+        delete_title: Dzēst darbu
+        details_loaded: Darba informācijas saraksts ir ielādēts.
+        load_details_failed: Neizdevās ielādēt darba informāciju.
+        remote_server_error: Iegūstot datus no attālā servera, radās kļūda.
+        request_failed_parse: Darbu pieprasījums neizdevās pamatteksta parsēšanas kļūdas dēļ.
+        request_failed_status: 'Darbu pieprasījums neizdevās ar statusa kodu: %{status}'
+        status_completed: Pabeigts
+        status_hold: Turiet
+        status_queued: Rindā
+        status_running: Skriešana
+        status_suspended: Apturēta darbība
+        status_undetermined: Nenoteikts
+        support_ticket_aria: Iesniegt atbalsta pieprasījumu darbam ar ID %{id}
+        support_ticket_title: Iesniegt atbalsta pieprasījumu
+        toggle_details_aria: Pārslēgt darba %{name} redzamību vietnē %{cluster}
+      batch_connect:
+        allow_notifications: Lūdzu, atļaujiet paziņojumu atļaujas savā pārlūkprogrammā, lai iespējotu sesijas brīdinājumus.
+        invalid_prefill_value_html: 'Nederīga vērtība: "%{value}" laukam "%{field}".<br>'
+        notification_permission_error: 'Kļūda, pieprasot paziņojumu atļauju:'
+        resolution_reset: Izšķirtspēja atiestatīta uz %{width} par %{height} pikseļiem.
+        session_expires_warning: 'Brīdinājums: %{title} (%{job_id}) derīguma termiņš beidzas pēc ~%{minutes} minūtēm!'
+        session_status_aria: '%{title} tagad ir %{status}.'
+        session_status_push: '%{title} (%{job_id}) tagad ir %{status}.'
+      common:
+        cancel: Atcelt
+        close: Aizvērt
+        error: Kļūda
+        loading: Notiek ielāde...
+        ok: Labi
+      datatables:
+        all: Visi
+        filter_label: 'Filtrs:'
+        invalid_date: Nederīgs datums
+        rows_selected:
+          one: '%{count} rinda atlasīta'
+          other: Atlasītas %{count} rindas
+        showing_filtered_rows: Rāda %{display} no %{total} rindām
+        showing_rows: Rāda %{display} rindas
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: un
+        changed_help: Palīdzības teksts %{widget} ir mainīts uz %{help}
+        changed_label: Mainīta etiķete uz %{widget} uz jaunu etiķeti %{label}
+        current_value: iestatīt pašreizējo vērtību uz %{value}
+        hid_item: Paslēpts veidlapas elements %{widget}
+        maximum_limit: maksimālais ierobežojums līdz %{value}
+        minimum_limit: minimālais limits līdz %{value}
+        option_disabled: Opcija %{value} ir atspējota %{widget}.
+        option_enabled: Opcija %{value} ir iespējota %{widget}
+        revealed_item: Atklātā veidlapas vienība %{widget}
+        selected_option_disabled: Atlasītā opcija %{value} ir atspējota lietotājam %{widget}.
+        set_limits: Iestatiet %{details} priekš %{widget}
+        set_value: Iestatiet %{widget} uz vērtību %{value}
+        widget_no_label: '%{type} bez etiķetes'
+        widget_with_label: '%{type} ar etiķeti %{label}'
+      editor:
+        save_error: 'Mēģinot saglabāt šo failu, radās kļūda!
+
+          %{error}'
+        unsaved_changes: Jums ir nesaglabātas izmaiņas!
+      files:
+        action_delete: Dzēst
+        action_download: Lejupielādēt
+        action_edit: Rediģēt
+        action_rename: Pārdēvēt
+        action_view: Skatīt
+        actions: Darbības
+        cannot_navigate_file: Nevar pāriet uz failu.
+        change_directory: Mainīt direktoriju
+        clipboard_description_html: 'Kopējiet vai pārvietojiet tālāk norādītos failus no <code>%{from}</code> uz pašreizējo direktoriju:'
+        contents_of_directory: Kataloga %{path} saturs
+        copied_path: Ceļš nokopēts uz starpliktuvi!
+        copy: Kopēt
+        create_directory_error: 'Kļūda, mēģinot izveidot jaunu direktoriju: %{error}'
+        create_file_error: 'Kļūda, mēģinot izveidot jaunu failu: %{error}'
+        delete_confirm_text: 'Vai tiešām vēlaties dzēst failus: %{files}?'
+        delete_multiple_title: Vai dzēst %{count} atlasītos failus?
+        delete_single_title: Dzēst %{name}?
+        deleting_files: 'Failu dzēšana...:'
+        directory: direktorijs
+        directory_name_label: Kataloga nosaukums
+        download_error: 'Kļūda lejupielādes laikā: %{error}'
+        duplicate_files_warning: Atrasti dublēti faili. Augšupielādējot šos failus, tiks pārrakstīts esošais saturs.
+        file: fails
+        filename_invalid_chars: Faila nosaukumā nedrīkst būt iekļauts / vai ..
+        filename_label: Faila nosaukums
+        globus_open: Atveriet pašreizējo direktoriju, izmantojot Globus
+        globus_unavailable: Ar šo direktoriju nav saistīts neviens Globus galapunkts.
+        illegal_slash_in_filename: Faila nosaukumā nav atļauts izmantot nepareizu rakstzīmi (/).
+        move: Pārvietot
+        navigated_to: pārvietots uz %{path}
+        new_directory_title: Jauns direktorijs
+        new_file_title: Jauns fails
+        path_label: Ceļš
+        poll_status_error: Iespējams, darbība nenotika. Neizdevās izgūt faila darbības statusu.
+        preparing_download_dir: 'Gatavošanās lejupielādēt direktoriju: %{name}'
+        provide_absolute_pathname: Norādiet absolūtu ceļa nosaukumu
+        provide_directory_name: Norādiet direktorijas nosaukumu, kurā nav / simbola
+        provide_non_empty_filename: Norādiet netukšu faila nosaukumu.
+        provide_rename_filename: Norādiet faila nosaukumu, lai to pārdēvētu
+        rename_title: Pārdēvēt
+        see_details: Skatīt sīkāku informāciju
+        select_row: Atlasīt rindu
+        select_to_copy_move: Atlasiet failu, failus vai direktoriju, ko kopēt vai pārvietot. Jūs neesat atlasījis nevienu.
+        select_to_delete: Atlasiet failu, failus vai direktoriju, ko dzēst. Jūs neesat atlasījis nevienu.
+        select_to_download: Atlasiet failu, failus vai direktoriju lejupielādei. Jūs neesat atlasījis nevienu.
+        select_to_send: Atlasiet vismaz vienu failu vai direktoriju nosūtīšanai.
+        send_failed: Neizdevās nosūtīt faila informāciju.
+        sent_successfully: Atlasītā faila informācija ir veiksmīgi nosūtīta.
+        show_dotfiles: Rādīt punktu failus
+        show_owner_mode: Rādīt īpašnieku/režīmu
+        summary_copy_files: kopēt failus
+        summary_move_files: pārvietot failus
+        summary_remove_files: noņemt failus
+        summary_rename_file: pārdēvēt failu
+        token_missing_expired: Trūkst lietojumprogrammas žetona vai tas ir beidzies. Sāciet vēlreiz.
+        transfer_error: 'Kļūda, mēģinot %{summary}: %{error}'
+        upload_and_overwrite: Augšupielādēt un pārrakstīt
+        upload_count:
+          one: Augšupielādēt %{count} failu
+          other: Augšupielādēt %{count} failus
+        upload_new_files: Augšupielādēt jaunus failus
+        uppy_empty_dir_note: Tukši direktoriji tiks iekļauti augšupielādē tikai tad, ja direktorija augšupielāde tiks uzsākta, izmantojot vilkšanas un nomešanas funkciju. Tas ir tāpēc, ka failu un direktoriju ierakstu API ir pieejams tikai nomešanas notikuma laikā, nevis ievades maiņas notikuma laikā.
+      icon_picker:
+        icon_selected: '%{icon} ikona atlasīta'
+        icon_sr: '%{name} ikona'
+      launcher_edit:
+        account_help: Konts, ar kuru tiks iesniegts darbs.
+        account_label: Konts
+        add_new_option: Pievienot jaunu opciju
+        cores_help: Cik kodolos darbs tiks darbināts.
+        cores_label: Serdes
+        env_var_help: Pievienojiet vides mainīgo.
+        env_var_key: 'Vides mainīgais: %{name}'
+        env_var_label: Vides mainīgais
+        hours_help: Cik ilgi darbs var ilgt.
+        hours_label: Stundas
+        job_name_help: Darba nosaukums būs.
+        job_name_label: Amata nosaukums
+        log_location_help: Darba žurnāla izvades galamērķis.
+        log_location_label: Žurnāla atrašanās vieta
+        no_more_options: Vairs nav iespēju
+        nodes_help: Cik mezglos darbs tiks izpildīts.
+        nodes_label: Mezgli
+        queues_help: Kuru rindu darbs arī iesniegs.
+        queues_label: Rindas
+      module_browser:
+        copied: Nokopēts!
+        copy: Kopēt
+        showing_results:
+          one: Rāda %{count} rezultātu
+          other: Rāda %{count} rezultātus
+      nsf_access:
+        affected_resources: 'Ietekmētie resursi: %{resources}'
+        read_more: Lasīt vairāk
+        register_event: Reģistrēties šim pasākumam
+      path_selector:
+        directory_loaded: Katalogs ielādēts ar %{count} vienumiem
+        invalid_regex: Šim ceļa atlasītājam norādītā regulārā izteiksme netika kompilēta.
+        loading_directory: Notiek direktorija satura ielāde
+        permission_denied_prefix: 'Atļauja liegta:'
+      popovers:
+        ihpc_content: Interaktīva HPC sesija sniedz jums īpašu piekļuvi vienam vai vairākiem mezgliem klasterī. Tas ir līdzīgi interaktīvai pakešveida sesijai ar pieejamu darbvirsmu primārajā mezglā. Izmantojiet to lieliem uzdevumiem, piemēram, ilgstošiem skaitļošanas uzdevumiem vai gadījumiem, kad nepieciešami īpaši resursi.
+        vdi_content: VDI (virtuālās darbvirsmas saskarne) nodrošina piekļuvi koplietojamam mezglam no darbvirsmas. Šī ir pieteikšanās mezgla grafiskā versija. Izmantojiet to viegliem uzdevumiem, piemēram, piekļuvei failiem un to skatīšanai, uzdevumu iesniegšanai un vizualizācijām.
+      products:
+        fatal_error: Radusies fatāla kļūda
+        no_action: nekādas darbības
+      projects:
+        undetermined_size: Nenoteikts izmērs
+      support_ticket:
+        delete_attachment: Dzēst pielikumu
+        no_file_selected: Nav atlasīts fails
+        selected_file: 'Atlasītais fails: %{name} (%{size}).'
+        size_bytes: '%{size}baiti'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Šo lapu nevar atjaunināt, jo jūs vairs neesat autentificēts. Lūdzu, atsvaidziniet lapu, lai atkal pieteiktos.
+        unexpected_error: Šajā lapā radās negaidīta kļūda. Lūdzu, atsvaidziniet lapu.
+      utils:
+        loading: Notiek ielāde.
+        loading_complete: Ielāde pabeigta.
+        popup_blocked: Šī saite ir konfigurēta atvēršanai jaunā logā, bet šķiet, ka tā nav atvērta. Lūdzu, atspējojiet uznirstošo logu bloķētāju šai lapai un mēģiniet vēlreiz.
+      workflows:
+        begin_from_launcher: Sāciet darbplūsmu no palaidēja %{title}
+        bidirectional_not_allowed: Divvirzienu malas nav atļautas.
+        cyclic_dependency: Pievienojot šo malu, starp palaišanas programmām tiks izveidota cikliska atkarība.
+        edge_aria_label: Mala no %{from} līdz %{to}
+        launcher_aria_label: 'Palaišanas programma: %{title}'
+        launcher_exists: Palaišanas programma jau pastāv, lūdzu, atlasiet citu palaišanas programmu
+        load_launcher_failed: Neizdevās ielādēt palaišanas programmas HTML. Lūdzu, mēģiniet vēlreiz.
+        no_empty_cells: Nav pieejamas tukšas režģa šūnas!
+        save_failed: Neizdevās saglabāt darbplūsmu. Sīkāku informāciju skatiet konsolē.
+        select_launcher: Lūdzu, atlasiet palaišanas programmu
+      xdmod:
+        analytics_toggle: Analītikas pārslēgšana
+        column_date: Datums
+        column_id: ID
+        column_name: Vārds
+        date_range: '%{from} līdz %{to}'
+        efficiency_report: '%{unit} Efektivitātes ziņojums'
+        ensure_logged_in_html: '%{error} Lūdzu, pārliecinieties, ka esat <a href="%{url}">vispirms pieteicies pakalpojumā Open XDMoD</a> un pēc tam mēģiniet vēlreiz.'
+        expand_analytics_title: Noklikšķiniet, lai izvērstu analītikas informāciju par darbu %{id} virs šīs tabulas.
+        fetch_user_failed: Neizdevās ielādēt pašreizējā lietotāja informāciju no Open XDMoD.
+        idp_redirect_failed: 'Pieteikšanās neizdevās: IDP pāradresācija neizdevās'
+        iframe_error: XDMoD pieteikšanās iFrame vietnē URL %{url} publicēja kļūdas ziņojumu ar informāciju %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} neefektīvi %{unit} </span> &%{total} kopā %{unit}
+        invalid_job_data: Pieprasījuma atgrieztie darba dati nav derīgi.
+        loading_caps: NOTIEK IELĀDE...
+        login_page_load_failed: 'Pieteikšanās neizdevās: Neizdevās ielādēt XDMoD pieteikšanās lapu.'
+        login_timeout: 'Pieteikšanās neizdevās: taimauts, gaidot pieteikšanās pabeigšanu'
+        metric_cpu: Centrālais procesors
+        metric_mem: Atmiņa
+        metric_walltime: Sienas laiks
+        no_data: Dati nav pieejami.
+        not_available: Nav pieejams
+        open_xdmod: Atvērt XDMoD
+        percent_efficient: '%{percent}% efektīvs'
+        percent_efficient_aria: efektīva procentos
+        percent_inefficient: '%{percent}% neefektīvi'
+        percent_inefficient_aria: neefektīva procentos
+        recently_completed_jobs: Nesen pabeigtie darbi
+        unit_core_hours: pamatstundas
+        unit_core_hours_title: Galvenās stundas
+        unit_jobs: darbavietas
+        unit_jobs_title: Darbs
+    launch: Palaišana
+    load_report: Ielādēt atskaiti + %{node}
+    loading: Notiek ielāde...
+    loading_short: Ielādēšana
+    locale_name: Latviešu (Latvija)
+    logo_alt_text: Laipni lūdzam Open OnDemand platformā
+    logout_body_html: <strong>Lai atteiktos, jums ir pilnībā jāaizver pārlūkprogramma</strong>. Ja pēc pārlūkprogrammas atkārtotas atvēršanas joprojām esat pieteicies, lūdzu, notīriet sīkfailus. Ja izmantojat Chromebook vai Chromebox datoru, jums būs jāpārstartē ierīce, lai “izietu no pārlūkprogrammas” un tādējādi “atteiktos”.
+    logout_tip_html: <strong>Padoms. Izmantojot OnDemand, loga "privātā pārlūkošanas režīma"</strong> izmantošana ir lielisks veids, kā pārvaldīt "automātisko atteikšanos", jo, aizverot pārlūkprogrammas logu, tiks noņemtas visas saistītās sīkdatnes un sesijas informācija.
+    logout_title: Jūs vēl neesat izrakstījies
+    maximum: Maksimālais
+    mem_report: Atmiņas ziņojums + %{node}
+    minimum: Minimums
+    mode: Režīms
+    module_browser_available_modules: 'Pieejamie moduļi:'
+    module_browser_copy_aria: Kopēt ielādes komandu %{name}
+    module_browser_dependencies: 'Atkarības:'
+    module_browser_last_updated: 'Pēdējoreiz atjaunināts: %{last_updated}'
+    module_browser_load_command: 'Ielādēt komandu:'
+    module_browser_search_label: Meklēšanas moduļi
+    module_browser_search_placeholder: Meklēt pēc moduļa nosaukuma...
+    module_browser_select_version: (izvēlieties versiju)
+    module_browser_showing_results: Rāda %{count} rezultātus
+    module_browser_title: Moduļu pārlūks
+    module_browser_versions: Versijas
+    motd_default_md: 'Open OnDemand izstrādi atbalsta [Nacionālais zinātnes fonds](https://www.nsf.gov/)
+
+      saskaņā ar dotāciju numuriem [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) un
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Uzziniet vairāk vai iesaistieties:
+
+
+      - [Diskurss](https://discourse.openondemand.org/)
+
+      - [Open OnDemand repozitorijs](https://github.com/OSC/ondemand)
+
+      - [ood-core repozitorijs](https://github.com/OSC/ood_core)
+
+      - [Dokumentācija](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD netika parsēts vai pareizi atveidots: %{error_message}'
+    motd_no_messages: Nav jaunu ziņojumu.
+    motd_title: Dienas vēstījums
+    name: Vārds
+    nav_all_apps: Visas lietotnes
+    nav_develop_docs: Izstrādātāja dokumentācija
+    nav_develop_my_sandbox_apps_dev: Manas smilškastes lietotnes (izstrāde)
+    nav_develop_my_sandbox_apps_prod: Manas koplietotās lietotnes (produkcija)
+    nav_develop_title: Attīstīt
+    nav_help_change_password: Mainīt HPC paroli
+    nav_help_custom: Pielāgota navigācijas palīdzība
+    nav_help_docs: Tiešsaistes dokumentācija
+    nav_help_support: Sazinieties ar atbalsta dienestu
+    nav_help_support_ticket: Iesniegt atbalsta pieprasījumu
+    nav_help_title: Palīdzība
+    nav_help_two_factor: Divfaktoru autentifikācijas konfigurēšana
+    nav_language: Valoda
+    nav_limit_caption: rāda %{subset_count} no %{total_count}
+    nav_logout: Izrakstīties
+    nav_main_menu: Galvenā izvēlne
+    nav_restart_server: Restartējiet tīmekļa serveri
+    nav_sessions: Manas interaktīvās sesijas
+    nav_toggle_navigation: Pārslēgt navigāciju
+    nav_user: Pieteicies kā %{username}
+    network_report: Tīkla ziņojums + %{node}
+    node: Mezgls
+    none: Neviens
+    not_grouped: Citas lietotnes
+    nsf_access_announcements: NSF ACCESS paziņojumi
+    nsf_access_events: NSF ACCESS pasākumi
+    nsf_access_outages: NSF piekļuves pārtraukumi
+    ok: Labi
+    opens_in_new_tab: atveras jaunā cilnē
+    output_location: 'Izvades vieta:'
+    owner: Īpašnieks
+    page_actions_aria: Lapas darbības
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametri
+    path_selector_breadcrumb_aria: '%{title} Navigācija'
+    path_selector_caption: Izvēlieties failu vai direktoriju, ko izmantot formā.
+    path_selector_default_popup_title: Izvēlieties savu darba direktoriju
+    path_selector_home: mājas
+    path_selector_parent_directory: vecāku direktorijs
+    permissions_created: Atļauja tika veiksmīgi izveidota.
+    permissions_destroyed: Atļauja tika veiksmīgi iznīcināta.
+    permissions_group_title: Grupas atļaujas
+    permissions_user_title: Lietotāja atļaujas
+    pinned_apps_caption_html: Piedāvātā <a href="%{all_apps_url}">visu pieejamo lietotņu</a> apakškopa
+    pinned_apps_category: Lietotnes
+    pinned_apps_title: Piespraustās lietotnes
+    products_created: Produkts ir veiksmīgi izveidots.
+    products_git_commit_hint_html: Lūdzu, apstiprinājiet visas izmaiņas vai pievienojiet nepieciešamos failus failam <code>.gitignore</code>
+    products_git_staged: Iestudēts
+    products_git_status: Git statuss
+    products_git_unstaged: Neiestudēts
+    products_git_untracked: Neizsekots
+    products_manifest_save_error: Nevar saglabāt lietotnes manifestu %{path}
+    products_ssh_key_created: SSH atslēga ir veiksmīgi izveidota.
+    products_ssh_key_exists: SSH atslēga jau pastāv
+    products_ssh_key_failed: 'Neizdevās izveidot SSH atslēgu: %{error}'
+    products_type_batch_connect: Lietotne Batch Connect
+    products_type_passenger: Pasažieru lietotne
+    products_type_passenger_meteor: Pasažieru Meteor lietotne
+    products_type_passenger_node: Pasažieru mezgla lietotne
+    products_type_passenger_rack: Pasažieru bagāžnieka lietotne
+    products_type_passenger_rails: Pasažieru vilcienu lietotne
+    products_type_passenger_rails_sqlite: Passenger Rails lietotne ar SQLite datubāzi
+    products_type_passenger_wsgi: Pasažieru WSGI lietotne
+    products_updated: Produkts ir veiksmīgi atjaunināts.
+    project: Projekts
+    project_balances: Projekta atlikumi
+    project_directory: Projektu direktorijs
+    project_zip_error_message: 'Kļūda, veidojot ZIP failu: %{error}'
+    project_zip_success_message: 'Veiksmīgi: jūsu projekta direktorijā ir izveidots fails project.zip.'
+    queue: Rinda
+    quota_additional_message: Apsveriet failu dzēšanu vai arhivēšanu, lai atbrīvotu vietu diskā.
+    quota_block: Izmantojot %{used} no kvotas %{available}
+    quota_block_shared: (%{used_exclusive} ir jūsu)
+    quota_file: Izmantojot %{used} failus no kvotas %{available} failiem
+    quota_file_shared: (%{used_exclusive} faili ir jūsu)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Atkārtoti ielādējiet lapu, lai skatītu atjaunināto kvotu. Kvotas tiek atjauninātas ik pēc 5 minūtēm.
+    quota_warning_prefix_html: Kvotas ierobežojuma brīdinājums
+    recently_used_apps_title: Nesen izmantotās lietotnes
+    remove: Noņemt
+    reset: Atiestatīt
+    restart_msg_html: 'Jūsu grupas dalība ir mainījusies, kas ietekmē jūsu piekļuvi lietotnēm. Jūsu informācijas panelim vajadzētu restartēties automātiski.
+
+
+      Ja tas tā nenotiek, noklikšķiniet uz: <a href="%{restart_url}">restartēt tīmekļa serveri</a>.'
+    restore: Atjaunot
+    root: Sakne
+    save: Saglabāt
+    saved_settings_title: Saglabātie iestatījumi
+    select: Atlasīt
+    select_all: Atlasīt visu
+    select_path: Izvēlieties ceļu
+    select_path_for: '%{element} atlasīt ceļu
+
+      '
+    settings_csrf_expired: Jūsu sesijas drošības tokena derīguma termiņš ir beidzies. Lūdzu, mēģiniet vēlreiz.
+    settings_invalid_request: Iesniegtie iestatījumi nav derīgi
+    settings_unprocessable_body_html: Iespējams, jūsu sesija ir beigusies vai vēlamās izmaiņas ir noraidītas. Lūdzu, <a href="%{dashboard_url}">atgriezieties vadības panelī</a> un mēģiniet vēlreiz.
+    settings_unprocessable_title: Sesija ir beigusies vai izmaiņas ir noraidītas
+    settings_updated: Iestatījumi atjaunināti
+    shared_apps_caption: Kopīgoja %{owner_title} (%{owner})
+    shared_apps_caption_short: Kopīgots ar %{owner}
+    shared_apps_title: Koplietotās lietotnes
+    sharing_catalog_msg_html: '<br>Pieejamo lietotņu apakškopu var apskatīt vietnē %{catalog_link_tag}.
+
+      '
+    sharing_catalog_title: Lietotņu katalogs
+    sharing_no_shared_apps_html: '<strong>Nav pieejamas pielāgotas koplietojamas lietotnes.</strong>
+
+      '
+    sharing_support_msg_html: 'Ja neatrodat meklēto lietotni, lūdzu,
+
+      <a href="%{support_url}">sazinieties ar atbalsta dienestu</a>.
+
+      '
+    sharing_welcome_msg_html: 'Klastera piekļuves lietojumprogrammas ir pieejamas nolaižamajās izvēlnēs navigācijas joslā augšpusē.
+
+
+      <br>Pielāgotas koplietotās lietotnes ir pieejamas zemāk.
+
+      '
+    shell: Apvalks
+    shell_app_title: '%{cluster_title} Čaula piekļuve'
+    show: Rādīt
+    size: Izmērs
+    skip_navigation: Izlaist navigāciju
+    smart_attributes:
+      account: Konts
+      auto_modules_none: Auto moduļi (nav norādīti)
+      cluster: Klasteris
+      cores: Serdes
+      email_on_started: Es vēlētos saņemt e-pastu, kad sesija sākas
+      environment_variable: Vides mainīgais
+      environment_variable_key: 'Vides mainīgais: %{key}'
+      job_name: Amata nosaukums
+      module_version: '%{module} versija'
+      num_cpus_single_node: CPU skaits vienā mezglā
+      num_hours: Stundu skaits
+      num_nodes: Mezglu skaits
+      num_processors: Procesoru skaits
+      partition: Starpsiena
+      qos: QoS
+      queue: Rinda
+      script: Skripts
+      vnc_idle_help: 'Iziet, ja paiet # sekundes bez VNC skatītāja savienojuma'
+      vnc_idle_label: Dīkstāves taimauts
+      vnc_resolution_help: Izšķirtspēju izmanto tikai vietējie VNC savienojumi.
+      vnc_resolution_label: Izšķirtspēja
+    soft_tabs: Mīkstās cilnes
+    soft_tabs_info: Mīkstās tabulēšanas rakstzīmes ir atstarpes failā, nevis faktiskās tabulēšanas rakstzīmes.
+    status: Statuss
+    status_completed: Pabeigts
+    status_held: Notika
+    status_hold: Turiet
+    status_queued: Rindā
+    status_running: Skriešana
+    status_starting: Sākot
+    status_suspend: Apturēt
+    status_suspended: Apturēta darbība
+    status_undetermined: Nenoteikts
+    stop: Apstāties
+    submit: Iesniegt
+    submit_args: 'Iesniegt argumentus:'
+    support_ticket:
+      creation_success: 'Atbalsta pieprasījuma e-pasts nosūtīts uz: %{to}'
+      fields:
+        attachments: Pielikumi
+        cc: Kredītkarte
+        description: Apraksts
+        email: E-pasts
+        job_description: Darba apraksts
+        session_description: Sesijas apraksts
+        subject: Tēma
+        username: Lietotājvārds
+      generic_error: 'Apstrādājot jūsu pieprasījumu, radās kļūda: %{error}'
+      header: Atbalsta pieprasījums
+      rt:
+        creation_success: 'Atbalsta pieprasījums izveidots RequestTracker sistēmā. Biļetes ID: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Pakalpojumā ServiceNow izveidots atbalsta pieprasījums. Numurs: %{number}. Taču pielikumus nevar pievienot.'
+        creation_success: 'Atbalsta pieprasījums izveidots pakalpojumā ServiceNow. Numurs: %{number}'
+      submit: Iesniegt atbalsta pieprasījumu
+      title: Atbalsta pieprasījums
+      validation:
+        attachments_items: '%{id} nav derīgi. %{items} ir pievienots, maksimālais pielikumu skaits ir %{max}.'
+        attachments_size: '%{id} nav derīgi. Maksimālais pielikuma lielums ir %{max}'
+        email: Formāts %{id} nav derīgs. Tika gaidīta derīga e-pasta adrese.
+        items:
+          attachments_js: Vairāk pielikumu nav atļauts
+        required: '%{id} ir obligāts'
+        size:
+          attachments_js: Maksimālais pielikuma lielums ir %{max}. Atlasītā faila lielums ir %{size}.
+      validation_error: Nederīgs pieprasījums. Lūdzu, pārskatiet tālāk norādītos kļūdu ziņojumus.
+    support_ticket_add_attachment: Pievienot pielikumu
+    support_ticket_attachments_help: Noklikšķiniet uz lodziņa, lai pievienotu failu. Ekrānuzņēmumi vai citi faili var palīdzēt novērst problēmu.
+    system_apps_caption: Sistēmas instalētā lietotne
+    system_status_available: '%{name} Pieejams: %{count}'
+    system_status_cluster_title: '%{title} Klastera statuss'
+    system_status_gpus: Grafiskās procesoras
+    system_status_in_use: '%{percent} tiek lietots'
+    system_status_jobs_queued: Rindā ievietotie darbi
+    system_status_jobs_queued_count: '%{count} Rindā ievietotie darbi'
+    system_status_jobs_running: Darbi darbojas
+    system_status_jobs_running_count: '%{count} Darbi darbojas'
+    system_status_nodes: Mezgli
+    system_status_not_slurm: Klastera informācija nav pieejama, izmantojot %{scheduler}. Pašlaik tiek atbalstīti tikai Slurm klasteri.
+    system_status_processors: Procesori
+    toggle_notifications: Pārslēgt paziņojumus
+    toggle_push_notifications: Pārslēgt push paziņojumus
+    type: Tips
+    undefined_title: Nenoteikts nosaukums
+    unknown: Nezināms
+    uppy:
+      strings:
+        addMore: Pievienot vēl
+        addMoreFiles: Pievienot vēl failus
+        addingMoreFiles: Pievienojot vēl failus
+        back: Atpakaļ
+        browseFiles: pārlūkot failus
+        browseFolders: pārlūkot mapes
+        cancel: Atcelt
+        cancelUpload: Atcelt augšupielādi
+        closeModal: Aizvērt modālo logu
+        complete: Pabeigts
+        dashboardTitle: Failu augšupielādētājs
+        dashboardWindowTitle: Failu augšupielādētāja logs (nospiediet taustiņu Esc, lai aizvērtu)
+        done: Pabeigts
+        dropHint: Ievietojiet failus šeit
+        dropPasteBoth: Iemet failus šeit, %{browseFiles} vai %{browseFolders}
+        dropPasteFiles: Iemet failus šeit vai %{browseFiles}
+        dropPasteFolders: Iemet failus šeit vai %{browseFolders}
+        editFile: Rediģēt failu
+        editing: Rediģē %{file}
+        emptyFolderAdded: No tukšas mapes netika pievienoti faili
+        error: Kļūda
+        exceedsSize: '%{file} pārsniedz maksimāli atļauto izmēru %{size}'
+        failedToUpload: Neizdevās augšupielādēt %{file}
+        folderAlreadyAdded: Mape "%{folder}" jau ir pievienota.
+        myDevice: Mana ierīce
+        noDuplicates: Nevar pievienot dublikātu '%{fileName}', tas jau pastāv.
+        pause: Pauze
+        pauseUpload: Pārtraukt augšupielādi
+        paused: Apturēts
+        removeFile: Noņemt failu
+        resume: CV
+        resumeUpload: Atsākt augšupielādi
+        retry: Mēģināt vēlreiz
+        retryUpload: Mēģināt augšupielādēt vēlreiz
+        save: Saglabāt
+        saveChanges: Saglabāt izmaiņas
+        showErrorDetails: Rādīt kļūdas informāciju
+        upload: Augšupielādēt
+        uploadComplete: Augšupielāde pabeigta
+        uploadFailed: Augšupielāde neizdevās
+        uploadPaused: Augšupielāde ir apturēta
+        uploading: Augšupielāde
+        xTimeLeft: '%{time} pa kreisi'
+    user: Lietotājs
+    user_configuration:
+      support_ticket_error: support_ticket ir nepareizi konfigurēts. Lūdzu, pievienojiet aizmugursistēmas ieviešanu YAML konfigurācijā.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand nodrošina integrētu, vienotu piekļuves punktu visiem jūsu HPC resursiem.</p>
+
+      '

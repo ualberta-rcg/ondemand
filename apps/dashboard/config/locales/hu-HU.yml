@@ -1,0 +1,998 @@
+---
+hu-HU:
+  activemodel:
+    errors:
+      messages:
+        format: '%{attribute} formátum érvénytelen vagy hiányzik'
+        invalid: '%{attribute} érvénytelen'
+        required: '%{attribute} kitöltése kötelező'
+        used: '%{attribute} már használatban van'
+  dashboard:
+    account: Fiók
+    actions: Műveletek
+    active_jobs: Aktív állások
+    active_jobs_close_details: Bővített részletek panel bezárása
+    active_jobs_detail:
+      account: Fiók
+      array_job_id: Tömbfeladat-azonosító
+      array_task_id: Tömbfeladat-azonosító
+      cluster: Fürt
+      cluster_id: Klaszter azonosítója
+      comment: Megjegyzés
+      cpu_time: CPU-idő
+      cpu_used: CPU-használat
+      current_working_directory: Aktuális munkakönyvtár
+      end_time: Befejezési idő
+      exec_host: Végrehajtó gazda
+      finish_time: Befejezési idő
+      from_host: A gazdagéptől
+      gres: GRES
+      group_list: Csoportlista
+      job_account: Állásfiók
+      job_checkpoint_attr: Munkaellenőrzési pont attribútum
+      job_checkpoint_interval: Feladat-ellenőrzési intervallum
+      job_deadline: Munkahatáridő
+      job_exec_file: Job Exe fájl
+      job_execution_time: Feladat végrehajtási ideje
+      job_gid: Munka GID
+      job_group: Munkacsoport
+      job_id: Munkaazonosító
+      job_name: Munka neve
+      job_priority: Munka prioritása
+      job_restart: Munka újraindítása
+      job_script_file: Munkaszkriptfájl
+      job_script_size: Munkaszkript mérete
+      job_share: Állásmegosztás
+      job_type: Munkatípus
+      job_uid: Munka UID
+      job_verify: Munka ellenőrzése
+      job_version: Munka verziója
+      mem: Mem
+      memory: Memória
+      node_count: Csomópontok száma
+      node_list: Csomópontlista
+      nodes: Csomópontok
+      none: Egyik sem
+      notifications: Értesítések
+      partition: Partíció
+      pbs_id: PBS-azonosító
+      pids: PID-ek
+      ppn: PPN
+      project_name: Projekt neve
+      queue: Sorban
+      reason: Ok
+      reserve: Tartalék
+      select: Válasszon
+      start_time: Kezdési idő
+      state: Állami
+      status: Állapot
+      submission_time: Beküldési idő
+      swap: Csere
+      time_limit: Időkorlát
+      time_used: Felhasznált idő
+      total_cpus: Összes CPU
+      total_nodes: Összes csomópont
+      user: Felhasználó
+      virtual_memory: Virtuális memória
+      walltime: Falidő
+      walltime_used: Használt Walltime
+    active_jobs_filter_all: Minden állás
+    active_jobs_filter_user: Az Ön állásai
+    active_jobs_ganlia_CPU: Ganglion kép CPU-hoz.
+    active_jobs_ganlia_load: Ganglion kép a rendszer terhelési átlagaihoz.
+    active_jobs_ganlia_mem: Ganglionok képe a memóriahasználathoz.
+    active_jobs_ganlia_network: Ganglion kép hálózati használatra.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> összes megtekintése (%{number_of_sessions})</a>
+    active_sessions_title: Aktív interaktív foglalkozások
+    add: Hozzáadás
+    all_apps_table_app_column: Név
+    all_apps_table_category_column: Kategória
+    all_apps_table_sub_category_column: Alkategória
+    all_clusters: Minden klaszter
+    announcements_dismissible_button: RENDBEN
+    announcements_parse_error: Hiba a bejelentés elemzése során.
+    announcements_render_error: A(z) „%{name}” bejelentést hiba miatt nem sikerült megjeleníteni.
+    announcements_required_button: Elfogadás
+    apps_setup_failure_html: '<h2>Probléma merült fel az alkalmazás adatainak inicializálása során.</h2>
+
+      <p class="lead">
+
+      Saját felelősségére továbbra is <a href="%{app_url}">megnyithatja az alkalmazást</a>
+
+      vagy egyszerűen <a href="%{home_url}">visszamehet az irányítópultra</a>
+
+      </p>
+
+      <p>
+
+      Oszd meg ezt az alkalmazásod fejlesztőjével:
+
+      A telepítő éles szkriptnek idempotensnek kell lennie, és minden alkalommal lefut, amikor a felhasználó megnyitja az alkalmazást az irányítópulton keresztül.</p>
+
+      <h4>Kivétel: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Stack nyomkövetés:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Rendszeralkalmazások
+    auto_log_location_title: Napló helye
+    back: Vissza
+    balance_additional_message: Fontolja meg további %{balanace_units} kérését
+    balance_message: '%{units_balance} jelenlegi neve %{value}'
+    balance_no_warnings: Egyik projekt sincs a %{threshold} napos egyenlegfigyelmeztetési küszöbértéken belül.
+    balance_reload_message_html: 'Töltse újra az oldalt a frissített egyenleg megtekintéséhez. Az egyenlegek naponta frissülnek.<br>Utolsó frissítés: %{last_update}'
+    balance_warning_prefix_html: '%{units_balance} figyelmeztetés a következőhöz:'
+    batch_connect_active_sessions_aria: Aktív munkamenetek
+    batch_connect_app_version: 'verzió: %{version}'
+    batch_connect_apps_menu_aria: Interaktív alkalmazások menüje
+    batch_connect_apps_menu_title: Interaktív alkalmazások
+    batch_connect_form_attr_cache_error: Nem használhatók a korábban gyorsítótárazott értékek, ehelyett az alapértelmezett értékeket használjuk. (%{error_message})
+    batch_connect_form_choose_template_name: Válasszon egy sablonnevet
+    batch_connect_form_data_root: adat gyökérkönyvtár
+    batch_connect_form_dynamic_disclaimer: A következő űrlap dinamikusan változhat a kiválasztott opciók függvényében. Minden változást bejelentünk, és azok visszafordíthatók.
+    batch_connect_form_invalid: A form.yml fájlban hiányoznak a %{id} űrlapmező opciói.
+    batch_connect_form_launch: Dob
+    batch_connect_form_prefill: Mentett beállítások használata
+    batch_connect_form_prefill_error: Hoppá... Valami nincs rendben a sablonoddal
+    batch_connect_form_reset_resolution: Felbontás visszaállítása
+    batch_connect_form_resolution_height: Felbontás magassága (pixel)
+    batch_connect_form_resolution_width: Felbontás szélessége (pixel)
+    batch_connect_form_save: Beállítások mentése
+    batch_connect_form_save_new_template: új beállítások mentése
+    batch_connect_form_save_submit: Beállítások mentése és bezárás
+    batch_connect_form_select_template: mentett beállítások kiválasztása
+    batch_connect_form_session_data_html: '* Az ehhez a munkamenethez tartozó %{title} munkamenet-adatok az %{data_link_tag} alatt érhetők el.'
+    batch_connect_form_template_name_label: beállítás neve
+    batch_connect_form_type_new_name: Alkalmazásbeállítások neve
+    batch_connect_form_type_new_name_error: A folytatáshoz adjon meg egy érvényes nevet
+    batch_connect_invalid_form_array: A form.yml fájlban található „form” elem nem tömb
+    batch_connect_invalid_form_attributes: A form.yml fájlban található „attributes” elem nem Map
+    batch_connect_missing_cluster: A klaszter soha nem lett beállítva. Vagy a form.yml.erb fájlban állítsd be `cluster` vagy `form.cluster` értékkel, vagy állítsd be `cluster` értékkel a submit.yml.erb fájlban.
+    batch_connect_no_apps: Nincsenek elérhető interaktív alkalmazások.
+    batch_connect_no_sessions: Nincsenek aktív munkamenetei.
+    batch_connect_sandbox: '[Tanári környezet]'
+    batch_connect_sessions_cancel_confirm: Biztos vagy benne?
+    batch_connect_sessions_cancel_full_title: '%{title} munkamenet megszakítása'
+    batch_connect_sessions_cancel_title: Mégsem
+    batch_connect_sessions_connect_to: 'Csatlakozás ehhez: %{app_title}'
+    batch_connect_sessions_connection_render_error: 'A view.html.erb fájlból nem lehet megjeleníteni a kapcsolat gombot a következő hiba miatt: ''%{error}'''
+    batch_connect_sessions_data_html: 'Az ehhez a munkamenethez tartozó %{title} munkamenet-adatok
+
+      az %{data_link_tag} alatt érhetők el.'
+    batch_connect_sessions_delete_confirm: Biztos vagy benne?
+    batch_connect_sessions_delete_full_title: '%{title} munkamenet törlése'
+    batch_connect_sessions_delete_hover: Munkamenet törlése
+    batch_connect_sessions_delete_title: Töröl
+    batch_connect_sessions_edit_title: Szerkeszd az új %{title} fájlt ezzel a munkamenet-paraméterrel
+    batch_connect_sessions_error_invalid_job_name_html: Ha a feladat elküldése érvénytelen feladatnév miatt sikertelen, kérje meg a rendszergazdát, hogy konfigurálja az OnDemand szolgáltatást az OOD_JOB_NAME_ILLEGAL_CHARS környezeti változó beállításához.
+    batch_connect_sessions_errors_staging: 'A sablon előkészítése a következő hibával nem sikerült:'
+    batch_connect_sessions_errors_submission: 'A munkamenet elküldése sikertelen a következő hiba miatt:'
+    batch_connect_sessions_native_vnc_tab: Natív utasítások
+    batch_connect_sessions_novnc_compression: Tömörítés
+    batch_connect_sessions_novnc_compression_help: 1 (alacsony) - 9 (magas)
+    batch_connect_sessions_novnc_launch: Indítsd el a %{app_title}-t
+    batch_connect_sessions_novnc_quality: Képminőség
+    batch_connect_sessions_novnc_quality_help: 0 (alacsony) - 9 (magas)
+    batch_connect_sessions_novnc_tab: nincs VNC kapcsolat
+    batch_connect_sessions_novnc_view_only: Csak megtekintés (megosztható link)
+    batch_connect_sessions_path_selector_forbidden_error: Nincs jogosultsága az adott könyvtár vagy fájl kiválasztására.
+    batch_connect_sessions_relaunch_full_title: '%{title} munkamenet újraindítása'
+    batch_connect_sessions_relaunch_title: Újraindítás
+    batch_connect_sessions_staged_root: előkészített gyökérkönyvtár
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} mag'
+      other: '%{count} magok'
+    batch_connect_sessions_stats_created_at: 'Létrehozva:'
+    batch_connect_sessions_stats_expected_time: 'Várható kezdés:'
+    batch_connect_sessions_stats_gpu_count:
+      one: '%{count} GPU'
+      other: '%{count} GPU-k'
+    batch_connect_sessions_stats_host: 'Házigazda:'
+    batch_connect_sessions_stats_node_count:
+      one: '%{count} csomópont'
+      other: '%{count} csomópontok'
+    batch_connect_sessions_stats_session_dir_link_title: Munkamenet-könyvtár megnyitása a(z) %{session_id} számára
+    batch_connect_sessions_stats_session_id: 'Munkamenet-azonosító:'
+    batch_connect_sessions_stats_support_ticket: Problémák vannak ezzel a munkamenettel?
+    batch_connect_sessions_stats_support_ticket_link_text: Támogatási jegy beküldése
+    batch_connect_sessions_stats_time_remaining: 'Hátralévő idő:'
+    batch_connect_sessions_stats_time_requested: 'Kért időpont:'
+    batch_connect_sessions_stats_time_used: 'Felhasznált idő:'
+    batch_connect_sessions_stats_undetermined_host: Meghatározatlan
+    batch_connect_sessions_status_bad: A munkameneted hibás állapotba került. További információért fordulj az ügyfélszolgálathoz.
+    batch_connect_sessions_status_blurb_cancel_failure: Nem sikerült megszakítani a munkamenetet.
+    batch_connect_sessions_status_blurb_cancel_success: A munkamenet sikeresen lemondva.
+    batch_connect_sessions_status_blurb_create_success: A munkamenet sikeresen létrehozva.
+    batch_connect_sessions_status_blurb_delete_failure: Nem sikerült törölni a munkamenetet.
+    batch_connect_sessions_status_blurb_delete_success: A munkamenet sikeresen törölve.
+    batch_connect_sessions_status_completed: Hibakeresési célokból ezt a kártyát még %{days} napig megőrizzük.
+    batch_connect_sessions_status_missing_connection: Ebből az alkalmazásból hiányoznak a kapcsolat létrehozásához szükséges információk. Pontosabban, a view.html.erb fájl hiányzik. Kérjük, vegye fel a kapcsolatot az ügyfélszolgálattal, ha ezt az üzenetet látja.
+    batch_connect_sessions_status_queued: Kérjük, legyen türelmes, mivel a feladata jelenleg sorban áll. A várakozási idő a magok számától és a kért időtől függ.
+    batch_connect_sessions_status_starting: A munkameneted jelenleg elindul... Kérjük, légy türelmes, mert ez a folyamat eltarthat néhány percig.
+    batch_connect_sessions_word: Ülés
+    batch_connect_validation:
+      app_not_found: Ez az alkalmazás nem létezik a(z) „%{root}” könyvtárban.
+      inaccessible_clusters: Ehhez az alkalmazáshoz olyan klaszterekre van szükség, amelyek nem léteznek, vagy amelyekhez nincs hozzáférésed.
+      missing_form_file: Ez az alkalmazás nem biztosít űrlapfájlt a(z) „%{root}” könyvtárban.
+      missing_sub_app_form_file: Ez az alkalmazás nem biztosít alalkalmazás-űrlapfájlt a(z) „%{root}” könyvtárban.
+      no_cluster_specified: Ez az alkalmazás nem ad meg semmilyen klasztert.
+    bc_saved_settings:
+      delete_confirm: Biztos vagy benne?
+      delete_title: '%{settings_name} mentett beállítások törlése'
+      deleted_message: A mentett beállítások (%{settings_name}) törölve.
+      edit_title: '%{settings_name} mentett beállítások szerkesztése'
+      launch_title: Indítsd el a %{app_title} függvényt %{settings_name} paraméterekkel
+      missing_settings: A kiválasztott mentett beállítások nem találhatók.
+      no_settings_title: Nincsenek mentett beállításaid.
+      outdated_message: A(z) %{app_title} paraméterek megváltoztak ezen beállítások létrehozása óta.
+      saved_message: '%{settings_name} beállítások mentve'
+      settings_values_label: Értékek
+      title: Mentett beállítások
+    breadcrumb_aria: Navigációs morzsa
+    breadcrumbs_all_apps: Minden alkalmazás
+    breadcrumbs_home: Otthon
+    breadcrumbs_my_sessions: Interaktív foglalkozásaim
+    breadcrumbs_support_ticket: Támogatási jegy
+    browser_warning: 'Az OnDemand használatához a használt böngésző újabb verziójára van szükség. A jelenlegi böngészőkövetelmények a következők: IE Edge, Firefox 19+, Chrome 34+, Safari 8+.'
+    cancel: Mégsem
+    categories:
+      apps: Alkalmazások
+      bioinformatics: Bioinformatika
+      clusters: Klaszterek
+      data_science: Adattudomány
+      desktop: Asztali
+      desktops: Asztali számítógépek
+      development: Fejlesztés
+      external_apps: Külső alkalmazások
+      files: Fájlok
+      gateway_apps: Gateway alkalmazások
+      guis: grafikus felhasználói felületek
+      interactive_apps: Interaktív alkalmazások
+      jobs: Állások
+      machine_learning: Gépi tanulás
+      mathematics: Matematika
+      servers: Szerverek
+      utilities: Közművek
+      virtual_desktop_interface: Virtuális asztali felület
+      visualization: Megjelenítés
+    clear: Világos
+    close: Közeli
+    close_alert: Zárja be ezt a riasztást.
+    close_notice: Zárja be ezt az értesítést.
+    cluster: Fürt
+    copy: Másolat
+    copy_suffix: (Másolat)
+    cpu_report: CPU-jelentés + %{node}
+    custom_pages:
+      invalid: 'Érvénytelen oldalkód: %{page}. Ez az oldal nincs konfigurálva.'
+    date: Dátum
+    delete: Töröl
+    detailed_metrics: Részletes mutatók
+    details: Részletek
+    development_apps_caption: Sandbox alkalmazás
+    development_apps_category: Sandbox alkalmazások
+    development_delete_app: Alkalmazás törlése
+    development_edit_title: Szerkesztés %{title}
+    development_launch_title: Indítsd el a %{title}-t
+    directory: Címtár
+    edit: Szerkesztés
+    editor_default: Alapértelmezett
+    editor_font_size: Betűméret
+    editor_key_bindings: Billentyűparancsok
+    editor_theme: Téma
+    editor_theme_bright: Fényes
+    editor_theme_dark: Sötét
+    editor_wrap: Betakar
+    error_details: 'Részletek:'
+    error_internal_body_html: Kérjük, próbálja újra néhány perc múlva. Ha továbbra is ezt a hibát látja, kérjük, <a href="%{support_url}">lépjen kapcsolatba az ügyfélszolgálattal</a>.
+    error_internal_title: Belső szerverhiba
+    error_not_found_body: A keresett oldal nem létezik.
+    error_not_found_title: Nem található
+    favorites: Kedvencek
+    file: Fájl
+    file_editor: Fájlszerkesztő
+    file_quotas: Fájlkvóták
+    files: Fájlok
+    files_change_directory: Könyvtár módosítása
+    files_contents_of_directory: A %{path} könyvtár tartalma
+    files_copy_move: Másolás/Áthelyezés
+    files_copy_path: Útvonal másolása
+    files_directory_contents_aria: Könyvtár tartalma
+    files_directory_download_error_modal_title: A könyvtár túl nagy a letöltéshez
+    files_directory_download_unauthorized: Csak olyan fájlt vagy könyvtárat tölthetsz le, amelyhez olvasási és végrehajtási hozzáférésed van.
+    files_directory_size_calculation_error: Időtúllépés történt a könyvtár méretének meghatározása közben.
+    files_directory_size_calculation_timeout: Időtúllépés történt a könyvtár méretének meghatározása közben.
+    files_directory_size_unknown: '%{exit_code} állapotú hiba a következő könyvtár méretének meghatározásakor: %{error}'
+    files_directory_too_large: A könyvtár túl nagy a zip fájlként való letöltéshez. A könyvtár méretének kisebbnek kell lennie, mint %{download_directory_size_limit} bájt.
+    files_doesnt_exist: '%{path} nem létezik.'
+    files_download: Letöltés
+    files_download_not_enabled: A fájlok letöltése nincs engedélyezve ezen a szerveren.
+    files_download_zip: Letöltés zip formátumban
+    files_exceeds_editor_limit: A(z) %{path} fájl meghaladja a %{limit} szerkesztői korlátját. Kérjük, töltse le a fájlt szerkesztéshez vagy helybeni megtekintéshez.
+    files_file_too_large: A fájl túl nagy a letöltéshez. A letöltött fájlok mérete nem haladhatja meg a %{download_file_size_limit} bájtot.
+    files_go_up_directory: Ugrás fel a könyvtárba
+    files_modified_at: 'Módosítva ekkor:'
+    files_modify_aria: Fájlok módosítása
+    files_new_directory: Új könyvtár
+    files_new_file: Új fájl
+    files_not_editable: A(z) %{path} nem szerkeszthető fájl.
+    files_not_readable: Nincs elegendő jogosultsága a(z) '%{path}' olvasásához.
+    files_open_in_files_app: Megnyitás a Fájlok alkalmazásban
+    files_open_in_globus: Megnyitás a Globusban
+    files_path_breadcrumbs_aria: Útvonal morzsa
+    files_refresh: Frissítés
+    files_remote_dir_not_created: Nem jött létre a %{path} könyvtár
+    files_remote_disabled: Távoli fájltámogatás nincs engedélyezve
+    files_remote_empty_dir_unsupported: A távoli nem támogatja az üres könyvtárakat
+    files_remote_error_listing_remotes: 'Hiba az Rclone távirányítók listázásakor: %{error}'
+    files_send_to_target_title_default: Kiválasztott fájlok metaadatainak küldése külső alkalmazásnak
+    files_shell: Megnyitás a Terminálban
+    files_shell_dropdown: Válassza ki a terminálban megnyitni kívánt fürtöt
+    files_title: Fájlböngészés
+    files_upload: Feltöltés
+    footer_contribute: Közreműködés a GitHubon
+    footer_license: Szoftverlicenc-közlemény
+    footer_open_source: Nyílt forráskódú szoftver.
+    footer_powered_by: Az Open OnDemand biztosítja
+    footer_version: 'Igény szerinti verzió: %{version}'
+    home_directory: Kezdőlap
+    id: azonosító
+    import: Importálás
+    job: Munka
+    job_info: Munkaadatok
+    jobs_back_to_projects: Vissza a projektekhez
+    jobs_clear_form_fields: Űrlapmezők törlése
+    jobs_completed_jobs: Befejezett munkák
+    jobs_create_blank_project: Új projekt létrehozása
+    jobs_create_blank_workflow: Új munkafolyamat
+    jobs_create_template_project: Új projekt létrehozása sablonból
+    jobs_import_shared_project: Megosztott projekt importálása
+    jobs_launchers: Indítók
+    jobs_launchers_add_select_option: Hozzáadás kiválasztási lehetőség %{name}
+    jobs_launchers_cannot_find: Nem található az indítóprogram %{id}
+    jobs_launchers_clone: Klónindító %{name}
+    jobs_launchers_created: Indító sikeresen létrehozva!
+    jobs_launchers_default_created: Egy 'hello_world.sh' fájlt is hozzáadtunk ehhez a projekthez.
+    jobs_launchers_delete: Indító törlése %{name}
+    jobs_launchers_delete_script_confirmation: Törli az indító összes tartalmát?
+    jobs_launchers_deleted: Az indítóprogram sikeresen törölve!
+    jobs_launchers_edit: Űrlap szerkesztése az %{name} indítóhoz
+    jobs_launchers_edit_form_item: Űrlapelem szerkesztése %{label}
+    jobs_launchers_editing: '%{title} szerkesztése'
+    jobs_launchers_fixed_field: Fix érték
+    jobs_launchers_fixed_field_help: Aktuális érték rögzítése
+    jobs_launchers_max_value_label: A számmező maximális értéke %{label}
+    jobs_launchers_min_value_label: A számmező minimális értéke %{label}
+    jobs_launchers_name: Indító neve
+    jobs_launchers_new_field_select: Válasszon ki egy elemet az űrlaphoz való hozzáadáshoz
+    jobs_launchers_not_found: Nem található az Indító %{launcher_id}
+    jobs_launchers_preview_form_item: Az űrlapelem %{label} előnézete
+    jobs_launchers_remove_form_item: '%{label} űrlapelem eltávolítása'
+    jobs_launchers_remove_select_option: A %{name} kijelölt opció eltávolítása
+    jobs_launchers_save_form: Űrlap mentése
+    jobs_launchers_save_form_item: Változások mentése az %{label} űrlapelemhez
+    jobs_launchers_show_form: Űrlap megjelenítése az %{name} indítóhoz
+    jobs_launchers_submit_launcher_title: Indítószkript gyorsítótárolt vagy alapértelmezett értékekkel az %{name} indítóhoz
+    jobs_launchers_submitted: Sikeresen elküldve a(z) %{job_id} munkakört.
+    jobs_launchers_updated: Indító manifeszt frissítve!
+    jobs_native_dependency: A feladat a job-id%{dependency} azonosítótól függ.
+    jobs_native_reason: '''%{reason}'' miatt'
+    jobs_native_state: 'A jelenlegi feladat állapota: ''%{state}'''
+    jobs_new_launcher: Új indító
+    jobs_new_project: Új projekt
+    jobs_project_cannot_find: 'A projekt nem található: %{project_id}'
+    jobs_project_clear_form_fields: Űrlapmezők törlése
+    jobs_project_created: Projekt sikeresen létrehozva!
+    jobs_project_delete_label: '%{name} projekt törlése'
+    jobs_project_delete_project_confirmation: Törli a projektkönyvtár összes tartalmát?
+    jobs_project_deleted: Projekt sikeresen törölve!
+    jobs_project_description_placeholder: Projekt leírása
+    jobs_project_directory_error: A projektkönyvtár elérési útja nincs beállítva ehhez a munkafolyamathoz
+    jobs_project_directory_help_html: 'Hagyja üresen, és egy új könyvtár jön létre. <br />Alapértelmezett hely: %{root_directory}'
+    jobs_project_directory_placeholder: Projektkönyvtár abszolút elérési útja
+    jobs_project_edit_label: '%{name} projekt szerkesztése'
+    jobs_project_generic_error: 'Hiba történt a kérésed feldolgozása során: %{error}'
+    jobs_project_group_help: Győződjön meg róla, hogy azt a csoportot választja, amely az összes tervezett együttműködőt tartalmazza. Ha ez nem együttműködésen alapuló projekt, akkor az alapértelmezett csoport ajánlott.
+    jobs_project_group_owner: Csoport
+    jobs_project_imported: Projekt sikeresen importálva!
+    jobs_project_invalid_configuration_clusters: HPC-klaszter szükséges. Forduljon a rendszergazdához, ha hozzá szeretne adni egyet a rendszerhez.
+    jobs_project_invalid_configuration_scripts: A projekthez futtatható szkriptre van szükség. Töltsön fel egy szkriptet a fájlkezelő alkalmazás segítségével.
+    jobs_project_job_deleted: 'A munkakört sikeresen töröltük: %{job_id}'
+    jobs_project_job_not_deleted: 'Nem lehet törölni a következő feladatot: %{job_id}'
+    jobs_project_job_stopped: A feladat sikeresen leállítva %{job_id}
+    jobs_project_list_aria: Projektlista
+    jobs_project_manager: Projektmenedzser
+    jobs_project_manifest_updated: Projekt manifeszt frissítve!
+    jobs_project_name_placeholder: Projekt neve
+    jobs_project_name_validation: A projekt neve csak betűket, számjegyeket, kötőjeleket, aláhúzásjeleket és szóközöket tartalmazhat.
+    jobs_project_not_found: A(z) %{project_id} projekt nem található.
+    jobs_project_open_label: Nyissa meg a %{name} projektet
+    jobs_project_remove_label: '%{name} projekt eltávolítása'
+    jobs_project_removed: Projekt eltávolítva a keresésből!
+    jobs_project_return_to_projects: Vissza a projektek oldalára
+    jobs_project_save_error: 'A jegyzékfájlt nem lehet menteni ide: %{path}'
+    jobs_project_save_project_title: Projekt mentése
+    jobs_project_select_directory: Projektkönyvtár kiválasztása
+    jobs_project_setgid_help: A setgid bejelölésével biztosítható, hogy a projektfájlok a kiválasztott csoporttal legyenek létrehozva. Ez nem befolyásolja a saját könyvtáradban található projekteket.
+    jobs_project_validation_error: Érvénytelen kérés. Kérjük, tekintse át az alábbi hibákat.
+    jobs_return_to_projects: Vissza a projektek oldalára
+    jobs_save_project_title: Projekt mentése
+    jobs_select_directory_placeholder: Kattintson a projektre az importáláshoz
+    jobs_toggle_details: Kattintson a %{job_id} munkakör részleteinek megtekintéséhez
+    jobs_workflow_add_launcher: Indító hozzáadása
+    jobs_workflow_canvas_aria: vászon
+    jobs_workflow_clone: Klónozási munkafolyamat %{name}
+    jobs_workflow_connect_launchers: Csatlakoztassa az indítókat
+    jobs_workflow_created: Munkafolyamat sikeresen létrehozva!
+    jobs_workflow_delete_confirmation: Törli a munkafolyamat összes tartalmát?
+    jobs_workflow_delete_edge: Él törlése
+    jobs_workflow_delete_edge_title: Kijelölt él törlése (Del/Backspace)
+    jobs_workflow_delete_launcher: Indító törlése
+    jobs_workflow_delete_launcher_title: Kijelölt indító törlése (Del/Backspace)
+    jobs_workflow_delete_title: Munkafolyamat törlése %{name}
+    jobs_workflow_deleted: Munkafolyamat sikeresen törölve!
+    jobs_workflow_description_placeholder: Munkafolyamat leírása
+    jobs_workflow_edit_settings: A %{name} munkafolyamat beállításainak módosítása
+    jobs_workflow_editing: 'Szerkesztés: %{name}'
+    jobs_workflow_enable_sync_key: OOD_WORKFLOW_SYNC_KEY engedélyezése
+    jobs_workflow_failed: A munkafolyamat %{error} hibával meghiúsult.
+    jobs_workflow_help: Kattintson a címre a kiválasztáshoz és húzáshoz. Csatlakoztassa két indító ikonra kattintva, miközben a „Indító ikonok csatlakoztatása” opció van kiválasztva.
+    jobs_workflow_manifest_updated: Munkafolyamat-jegyzék frissítve!
+    jobs_workflow_missing_launchers: válasszon ki legalább %{count}-t
+    jobs_workflow_name_placeholder: Munkafolyamat neve
+    jobs_workflow_name_validation: A munkafolyamat neve csak betűket, számjegyeket, kötőjeleket, aláhúzásjeleket és szóközöket tartalmazhat.
+    jobs_workflow_not_found: Nem található a %{workflow_id} munkafolyamat
+    jobs_workflow_pick_launchers: Válasszon indítóprogramokat
+    jobs_workflow_show_graph: Nyissa meg a %{name} munkafolyamatot a grafikonszerkesztőben
+    jobs_workflow_submitted: Munkafolyamat sikeresen elküldve!
+    jobs_workflow_sync_key_help: Ha engedélyezve van, a munkafolyamat minden indítója ugyanazt az <code>OOD_WORKFLOW_SYNC_KEY</code> környezeti változót kapja (egy véletlenszerű tokent, amely minden munkafolyamat-futtatáshoz egyedi). Hasznos szinkronizált fájlnevek, zárolási fájlok vagy megosztott azonosítók generálásához a függő feladatok között.
+    jobs_workflow_synchronization: Szinkronizálás
+    jobs_workflow_toolbar_aria: eszköztár
+    jobs_workflow_zoom_controls: Nagyítási vezérlők
+    jobs_workflow_zoom_in: Nagyítás
+    jobs_workflow_zoom_out: Kicsinyítés
+    jobs_workflow_zoom_reset: Nagyítás visszaállítása
+    jobs_workflows: Munkafolyamatok
+    jobs_workflows_not_supported: A konfigurált ütemező nem támogatja a munkafolyamatokat.
+    js:
+      active_jobs:
+        delete_aria: '%{name} feladat törlése, %{id} azonosítóval'
+        delete_confirm: Biztosan törölni szeretné a(z) %{name} - %{id} fájlokat?
+        delete_title: Feladat törlése
+        details_loaded: Munkaköri adatok listája betöltve.
+        load_details_failed: Nem sikerült betölteni a munkakör részleteit.
+        remote_server_error: Hiba történt az adatok távoli szerverről való lekérésekor.
+        request_failed_parse: A feladatokra vonatkozó kérés törzselemzési hiba miatt sikertelen.
+        request_failed_status: 'A feladatokra vonatkozó kérelem sikertelen volt, állapotkód: %{status}'
+        status_completed: Befejezve
+        status_hold: Tart
+        status_queued: Sorban álló
+        status_running: Futás
+        status_suspended: Felfüggesztett
+        status_undetermined: Meghatározatlan
+        support_ticket_aria: Támogatási jegy beküldése a %{id} azonosítójú munkához
+        support_ticket_title: Támogatási jegy beküldése
+        toggle_details_aria: '%{name} munka láthatóságának ki-/bekapcsolása a %{cluster} munkakörben'
+      batch_connect:
+        allow_notifications: Kérjük, engedélyezze az értesítéseket a böngészőjében a munkamenet-értesítések engedélyezéséhez.
+        invalid_prefill_value_html: 'Érvénytelen érték: "%{value}" a(z) "%{field}" mezőben.<br>'
+        notification_permission_error: 'Hiba az értesítési engedély kérésekor:'
+        resolution_reset: A felbontás visszaállítva %{width} értékre %{height} képponttal.
+        session_expires_warning: 'Figyelmeztetés: %{title} (%{job_id}) ~%{minutes} perc múlva lejár!'
+        session_status_aria: '%{title} mostantól %{status}.'
+        session_status_push: '%{title} (%{job_id}) mostantól %{status}.'
+      common:
+        cancel: Mégsem
+        close: Közeli
+        error: Hiba
+        loading: Terhelés...
+        ok: RENDBEN
+      datatables:
+        all: Minden
+        filter_label: 'Szűrő:'
+        invalid_date: Érvénytelen dátum
+        rows_selected:
+          one: '%{count} sor kiválasztva'
+          other: '%{count} sor kiválasztva'
+        showing_filtered_rows: '%{display} / %{total} sor megjelenítése'
+        showing_rows: '%{display} sor megjelenítése'
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: és
+        changed_help: A %{widget} súgószövege %{help}-ra módosult.
+        changed_label: A(z) %{widget} címkéjét az új %{label} címkére módosítottuk.
+        current_value: állítsa az aktuális értéket %{value}-ra
+        hid_item: 'Űrlapelem elrejtve: %{widget}'
+        maximum_limit: maximális korlát %{value}
+        minimum_limit: minimális limit %{value}
+        option_disabled: A %{value} opció letiltva a %{widget} számára
+        option_enabled: '%{value} opció engedélyezve a %{widget} számára'
+        revealed_item: Feltárt űrlapelem %{widget}
+        selected_option_disabled: A kiválasztott %{value} opció letiltva a %{widget} számára
+        set_limits: '%{details} beállítása %{widget} számára'
+        set_value: Állítsa az %{widget} értékét %{value} értékre
+        widget_no_label: '%{type} címke nélkül'
+        widget_with_label: '%{type} %{label} címkével'
+      editor:
+        save_error: 'Hiba történt a fájl mentése közben!
+
+          %{error}'
+        unsaved_changes: Vannak mentetlen módosításaid!
+      files:
+        action_delete: Töröl
+        action_download: Letöltés
+        action_edit: Szerkesztés
+        action_rename: Átnevezés
+        action_view: Kilátás
+        actions: Műveletek
+        cannot_navigate_file: Nem lehet egy fájlhoz navigálni.
+        change_directory: Könyvtár módosítása
+        clipboard_description_html: 'Másolja vagy helyezze át az alábbi fájlokat a <code>%{from}</code> könyvtárból az aktuális könyvtárba:'
+        contents_of_directory: A %{path} könyvtár tartalma
+        copied_path: Útvonal másolva a vágólapra!
+        copy: Másolat
+        create_directory_error: 'Hiba történt az új könyvtár létrehozásakor: %{error}'
+        create_file_error: 'Hiba történt az új fájl létrehozásakor: %{error}'
+        delete_confirm_text: 'Biztosan törölni szeretné a következő fájlokat: %{files}'
+        delete_multiple_title: Törli a %{count} kiválasztott fájlokat?
+        delete_single_title: Törölni a(z) %{name} fájlt?
+        deleting_files: 'Fájlok törlése...:'
+        directory: könyvtár
+        directory_name_label: Könyvtár neve
+        download_error: 'Hiba a letöltés során: %{error}'
+        duplicate_files_warning: Ismétlődő fájlok azonosítva. Ezen fájlok feltöltése felülírja a meglévő tartalmat.
+        file: fájl
+        filename_invalid_chars: A fájlnév nem tartalmazhat / vagy .. karaktert.
+        filename_label: Fájlnév
+        globus_open: Nyissa meg az aktuális könyvtárat a Globus segítségével
+        globus_unavailable: Nincs ehhez a könyvtárhoz társítva Globus végpont
+        illegal_slash_in_filename: Érvénytelen karakter (/) nem megengedett a fájlnévben.
+        move: Mozog
+        navigated_to: 'navigálva ide: %{path}'
+        new_directory_title: Új könyvtár
+        new_file_title: Új fájl
+        path_label: Útvonal
+        poll_status_error: Lehetséges, hogy a művelet nem történt meg. Nem sikerült lekérni a fájlművelet állapotát.
+        preparing_download_dir: 'A következő könyvtár letöltésének előkészítése: %{name}'
+        provide_absolute_pathname: Adjon meg egy abszolút elérési utat
+        provide_directory_name: Adjon meg egy olyan könyvtárnevet, amelyben nincs / karakter
+        provide_non_empty_filename: Adjon meg egy nem üres fájlnevet.
+        provide_rename_filename: Adjon meg egy fájlnevet az átnevezéshez
+        rename_title: Átnevezés
+        see_details: Részletek megtekintése
+        select_row: Sor kiválasztása
+        select_to_copy_move: Jelöljön ki egy, több fájlt vagy könyvtárat a másoláshoz vagy áthelyezéshez. Egyet sem jelölt ki.
+        select_to_delete: Jelöljön ki egy, több fájlt vagy könyvtárat a törléshez. Egyet sem jelölt ki.
+        select_to_download: Válasszon ki egy, több fájlt vagy könyvtárat a letöltéshez. Egyet sem választott ki.
+        select_to_send: Válasszon ki legalább egy fájlt vagy könyvtárat a küldéshez.
+        send_failed: Nem sikerült elküldeni a fájlinformációkat.
+        sent_successfully: A kiválasztott fájl adatai sikeresen elküldve.
+        show_dotfiles: Pontfájlok megjelenítése
+        show_owner_mode: Tulajdonos/Mód megjelenítése
+        summary_copy_files: fájlok másolása
+        summary_move_files: fájlok áthelyezése
+        summary_remove_files: fájlok eltávolítása
+        summary_rename_file: fájl átnevezése
+        token_missing_expired: Alkalmazástoken hiányzik vagy lejárt. Kezdje újra.
+        transfer_error: 'Hiba történt a(z) %{summary} parancs futtatásának megkísérlésekor: %{error}'
+        upload_and_overwrite: Feltöltés és felülírás
+        upload_count:
+          one: '%{count} fájl feltöltése'
+          other: '%{count} fájlok feltöltése'
+        upload_new_files: Új fájlok feltöltése
+        uppy_empty_dir_note: Az üres könyvtárak csak akkor kerülnek be a feltöltésbe, ha a könyvtár feltöltését húzással kezdeményezik. Ez azért van, mert a Fájl- és Könyvtárbejegyzések API csak ejtési esemény esetén érhető el, bemenetváltozási esemény során nem.
+      icon_picker:
+        icon_selected: '%{icon} ikon kiválasztva'
+        icon_sr: '%{name} ikon'
+      launcher_edit:
+        account_help: A fiók, amellyel a munka be lesz nyújtva.
+        account_label: Fiók
+        add_new_option: Új opció hozzáadása
+        cores_help: Hány magon fog futni a feladat.
+        cores_label: Magok
+        env_var_help: Adjon hozzá egy környezeti változót.
+        env_var_key: 'Környezeti változó: %{name}'
+        env_var_label: Környezeti változó
+        hours_help: Meddig futhat a munka.
+        hours_label: Órák
+        job_name_help: A munkakör neve.
+        job_name_label: Munka neve
+        log_location_help: A feladat naplókimenetének célja.
+        log_location_label: Napló helye
+        no_more_options: Nincs több lehetőség
+        nodes_help: Hány csomóponton fog futni a feladat.
+        nodes_label: Csomópontok
+        queues_help: Melyik várólistát fogja a feladat elküldeni.
+        queues_label: Várólisták
+      module_browser:
+        copied: Másolva!
+        copy: Másolat
+        showing_results:
+          one: '%{count} találat megjelenítése'
+          other: '%{count} találat megjelenítése'
+      nsf_access:
+        affected_resources: 'Érintett erőforrások: %{resources}'
+        read_more: További információ
+        register_event: Regisztrálj erre az eseményre
+      path_selector:
+        directory_loaded: A könyvtár %{count} elemekkel van feltöltve
+        invalid_regex: Az útvonalválasztóhoz megadott reguláris kifejezés nem fordult le.
+        loading_directory: Könyvtár tartalmának betöltése
+        permission_denied_prefix: 'Engedély megtagadva:'
+      popovers:
+        ihpc_content: Egy interaktív HPC-munkamenet dedikált hozzáférést biztosít a fürt egy vagy több csomópontjához. Ez hasonló egy interaktív kötegelt munkamenethez, amelyhez egy hozzáférhető asztal tartozik az elsődleges csomóponton. Használja ezt nagy teljesítményű feladatokhoz, például hosszan futó számítási feladatokhoz, vagy ahol dedikált erőforrásokra van szüksége.
+        vdi_content: A VDI (Virtual Desktop Interface) asztali hozzáférést biztosít egy megosztott csomóponthoz. Ez a bejelentkezési csomópont grafikus változata. Használja könnyű feladatokhoz, például fájlok eléréséhez és megtekintéséhez, feladatok beküldéséhez és vizualizációkhoz.
+      products:
+        fatal_error: Végzetes hiba történt
+        no_action: nincs intézkedés
+      projects:
+        undetermined_size: Meghatározatlan méret
+      support_ticket:
+        delete_attachment: Melléklet törlése
+        no_file_selected: Nincs kiválasztott fájl
+        selected_file: 'Kiválasztott fájl: %{name} (%{size}).'
+        size_bytes: '%{size}bájt'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Ez az oldal nem frissíthető, mert már nem vagy hitelesítve. Kérjük, frissítsd az oldalt az újbóli bejelentkezéshez.
+        unexpected_error: Váratlan hiba történt ezen az oldalon. Kérjük, frissítse az oldalt.
+      utils:
+        loading: Terhelés.
+        loading_complete: A betöltés befejeződött.
+        popup_blocked: Ez a link úgy van beállítva, hogy új ablakban nyíljon meg, de úgy tűnik, mégsem nyílt meg. Kérjük, tiltsa le a felugró ablakok blokkolását ezen az oldalon, és próbálja újra.
+      workflows:
+        begin_from_launcher: Munkafolyamat indítása az %{title} indítóból
+        bidirectional_not_allowed: Kétirányú élek nem megengedettek.
+        cyclic_dependency: Ennek az élnek a hozzáadása ciklikus függőséget hoz létre az indítók között.
+        edge_aria_label: Él %{from}-tól %{to}-ig
+        launcher_aria_label: 'Indító: %{title}'
+        launcher_exists: Az indító már létezik, kérjük, válasszon egy másik indítót.
+        load_launcher_failed: Nem sikerült betölteni az indító HTML-kódját. Próbáld újra.
+        no_empty_cells: Nincsenek üres rácscellák!
+        save_failed: Nem sikerült menteni a munkafolyamatot. A részletekért tekintse meg a konzolt.
+        select_launcher: Válasszon egy indítót
+      xdmod:
+        analytics_toggle: Analytics váltás
+        column_date: Dátum
+        column_id: azonosító
+        column_name: Név
+        date_range: '%{from} - %{to}'
+        efficiency_report: '%{unit} Hatékonysági jelentés'
+        ensure_logged_in_html: '%{error} Kérjük, először <a href="%{url}">jelentkezz be az Open XDMoD-ba</a>, majd próbáld újra.'
+        expand_analytics_title: Kattintson ide a %{id} munkakörre vonatkozó analitikai információk kibontásához a táblázat felett.
+        fetch_user_failed: Nem sikerült lekérni az aktuális felhasználói információkat az Open XDMoD-ból.
+        idp_redirect_failed: 'Bejelentkezés sikertelen: IDP átirányítás sikertelen'
+        iframe_error: Az XDMoD bejelentkezési iFrame a %{url} URL-címen hibaüzenetet küldött a %{info} információkkal.
+        inefficient_of_total_html: <span class="text-danger">%{bad} nem hatékony %{unit} </span> & %{total} összesen %{unit}
+        invalid_job_data: A kérés által visszaadott munkaadat érvénytelen.
+        loading_caps: TERHELÉS...
+        login_page_load_failed: 'Bejelentkezés sikertelen: Nem sikerült betölteni az XDMoD bejelentkezési oldalát'
+        login_timeout: 'Bejelentkezés sikertelen: Időtúllépés a bejelentkezés befejezésére várva'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Falidő
+        no_data: Nincsenek elérhető adatok.
+        not_available: Nem alkalmazható
+        open_xdmod: Nyissa meg az XDMoD-t
+        percent_efficient: '%{percent}%-ban hatékony'
+        percent_efficient_aria: százalékos hatékonyság
+        percent_inefficient: '%{percent}%-ban nem hatékony'
+        percent_inefficient_aria: százalékban nem hatékony
+        recently_completed_jobs: Legutóbb befejezett munkák
+        unit_core_hours: törzsórák
+        unit_core_hours_title: Alapvető órák
+        unit_jobs: munkahelyek
+        unit_jobs_title: Állások
+    launch: Dob
+    load_report: Jelentés betöltése + %{node}
+    loading: Terhelés...
+    loading_short: Terhelés
+    locale_name: Magyar (Magyarország)
+    logo_alt_text: Üdvözöljük az Open OnDemand-ban
+    logout_body_html: <strong>A kijelentkezéshez teljesen ki kell lépnie a böngészőjéből</strong>. Ha a böngésző újranyitása után továbbra is bejelentkezve van, kérjük, törölje a sütiket. Ha Chromebookot vagy Chromeboxot használ, újra kell indítania az eszközét a böngészőből való kilépéshez és így a kijelentkezéshez.
+    logout_tip_html: '<strong>Tipp: Az „automatikus kijelentkezés” kezelésére nagyszerű módja az „privát böngészési mód”</strong> ablak használata OnDemand használata közben, mivel a böngészőablak bezárásával az összes kapcsolódó süti és munkamenet-információ törlődik.'
+    logout_title: Még nem vagy kijelentkezve
+    maximum: Maximális
+    mem_report: Memóriajelentés + %{node}
+    minimum: Minimális
+    mode: Mód
+    module_browser_available_modules: 'Elérhető modulok:'
+    module_browser_copy_aria: '%{name} betöltési parancsának másolása'
+    module_browser_dependencies: 'Függőségek:'
+    module_browser_last_updated: 'Utolsó frissítés: %{last_updated}'
+    module_browser_load_command: 'Parancs betöltése:'
+    module_browser_search_label: Keresési modulok
+    module_browser_search_placeholder: Keresés modulnév alapján...
+    module_browser_select_version: (válasszon verziót)
+    module_browser_showing_results: '%{count} találat megjelenítése'
+    module_browser_title: Modul böngésző
+    module_browser_versions: Verziók
+    motd_default_md: 'Az Open OnDemand fejlesztését a [National Science Foundation](https://www.nsf.gov/) támogatja a [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) és [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) pályázati számok alatt.
+
+
+      Tudjon meg többet vagy vegyen részt:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
+      - [Open OnDemand repository](https://github.com/OSC/ondemand)
+
+      - [ood-core repository](https://github.com/OSC/ood_core)
+
+      - [Documentation](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'A MOTD nem lett helyesen elemezve vagy megjelenítve: %{error_message}'
+    motd_no_messages: Nincsenek új üzenetek.
+    motd_title: A nap üzenete
+    name: Név
+    nav_all_apps: Minden alkalmazás
+    nav_develop_docs: Fejlesztői dokumentáció
+    nav_develop_my_sandbox_apps_dev: Saját Sandbox alkalmazások (Fejlesztés)
+    nav_develop_my_sandbox_apps_prod: Megosztott alkalmazásaim (éles verzió)
+    nav_develop_title: Fejlesztés
+    nav_help_change_password: HPC jelszó módosítása
+    nav_help_custom: Navigációs súgó egyéni
+    nav_help_docs: Online dokumentáció
+    nav_help_support: Kapcsolatfelvétel az ügyfélszolgálattal
+    nav_help_support_ticket: Támogatási jegy beküldése
+    nav_help_title: Segítség
+    nav_help_two_factor: Kétfaktoros hitelesítés konfigurálása
+    nav_language: Nyelv
+    nav_limit_caption: '%{subset_count} / %{total_count} megjelenítése'
+    nav_logout: Kijelentkezés
+    nav_main_menu: Főmenü
+    nav_restart_server: Webkiszolgáló újraindítása
+    nav_sessions: Interaktív foglalkozásaim
+    nav_toggle_navigation: Navigáció váltása
+    nav_user: Bejelentkezve %{username} néven
+    network_report: Hálózati jelentés + %{node}
+    node: Csomópont
+    none: Egyik sem
+    not_grouped: Egyéb alkalmazások
+    nsf_access_announcements: NSF ACCESS bejelentések
+    nsf_access_events: NSF ACCESS események
+    nsf_access_outages: NSF HOZZÁFÉRÉSI LEÁLLÁSOK
+    ok: RENDBEN
+    opens_in_new_tab: új lapon nyílik meg
+    output_location: 'Kimeneti hely:'
+    owner: Tulajdonos
+    page_actions_aria: Oldalműveletek
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Paraméterek
+    path_selector_breadcrumb_aria: '%{title} Navigációs morzsa'
+    path_selector_caption: Válasszon ki egy fájlt vagy könyvtárat az űrlapon való használathoz.
+    path_selector_default_popup_title: Válassza ki a munkakönyvtárát
+    path_selector_home: otthon
+    path_selector_parent_directory: szülőkönyvtár
+    permissions_created: Az engedély sikeresen létrehozva.
+    permissions_destroyed: Az engedély sikeresen törölve.
+    permissions_group_title: Csoportengedélyek
+    permissions_user_title: Felhasználói jogosultságok
+    pinned_apps_caption_html: Az <a href="%{all_apps_url}">összes elérhető alkalmazás</a> kiemelt részhalmaza
+    pinned_apps_category: Alkalmazások
+    pinned_apps_title: Rögzített alkalmazások
+    products_created: A termék sikeresen létrehozva.
+    products_git_commit_hint_html: Kérjük, véglegesítse a módosításokat, vagy adja hozzá a szükséges fájlokat a <code>.gitignore</code> fájlhoz.
+    products_git_staged: Színpadra állított
+    products_git_status: Git állapota
+    products_git_unstaged: Színpadra nem került
+    products_git_untracked: Nem követett
+    products_manifest_save_error: 'Az alkalmazás manifesztjét nem lehet menteni ide: %{path}'
+    products_ssh_key_created: Az SSH-kulcs sikeresen létrehozva.
+    products_ssh_key_exists: SSH-kulcs már létezik
+    products_ssh_key_failed: 'SSH kulcs létrehozása sikertelen: %{error}'
+    products_type_batch_connect: Kötegelt csatlakozási alkalmazás
+    products_type_passenger: Utasalkalmazás
+    products_type_passenger_meteor: Utas Meteor alkalmazás
+    products_type_passenger_node: Utascsomópont alkalmazás
+    products_type_passenger_rack: Utasállvány alkalmazás
+    products_type_passenger_rails: Személyszállító vasúti alkalmazás
+    products_type_passenger_rails_sqlite: Személyszállító vasúti alkalmazás SQLite adatbázissal
+    products_type_passenger_wsgi: Utas WSGI alkalmazás
+    products_updated: A termék frissítése sikeresen megtörtént.
+    project: Projekt
+    project_balances: Projektegyenlegek
+    project_directory: Projektkönyvtár
+    project_zip_error_message: 'Hiba a ZIP fájl létrehozásakor: %{error}'
+    project_zip_success_message: 'Siker: a project.zip fájl létrejött a projektkönyvtárában.'
+    queue: Sorban
+    quota_additional_message: Fontolja meg fájlok törlését vagy archiválását a lemezterület felszabadítása érdekében.
+    quota_block: '%{used} felhasználása a %{available} kvótából'
+    quota_block_shared: (%{used_exclusive} a tiéd)
+    quota_file: '%{used} fájlok használata a kvótából %{available} fájlok'
+    quota_file_shared: (%{used_exclusive} fájlok a tiéd)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Töltsd újra az oldalt a frissített kvóta megtekintéséhez. A kvóták 5 percenként frissülnek.
+    quota_warning_prefix_html: 'Kvótakorlátra vonatkozó figyelmeztetés ehhez:'
+    recently_used_apps_title: Legutóbb használt alkalmazások
+    remove: Eltávolítás
+    reset: Visszaállítás
+    restart_msg_html: 'A csoporttagságod megváltozott, ami befolyásolja az alkalmazásokhoz való hozzáférésedet. Az irányítópultnak automatikusan újra kell indulnia.
+
+
+      Ha ez nem történik meg, kattints a következőre: <a href="%{restart_url}">webszerver újraindítása</a>.'
+    restore: Visszaállítás
+    root: Gyökér
+    save: Megtakarítás
+    saved_settings_title: Mentett beállítások
+    select: Válasszon
+    select_all: Összes kijelölése
+    select_path: Útvonal kiválasztása
+    select_path_for: '%{element} útvonal kiválasztása
+
+      '
+    settings_csrf_expired: A munkamenet biztonsági tokenje lejárt. Próbálja újra a műveletet.
+    settings_invalid_request: Érvénytelen beállítások elküldve
+    settings_unprocessable_body_html: Lehetséges, hogy a munkamenete lejárt, vagy a kívánt módosítást elutasították. Kérjük, <a href="%{dashboard_url}">térjen vissza az Irányítópultra</a>, és próbálja újra.
+    settings_unprocessable_title: Lejárt munkamenet vagy a módosítás elutasítva
+    settings_updated: Beállítások frissítve
+    shared_apps_caption: 'Megosztotta: %{owner_title} (%{owner})'
+    shared_apps_caption_short: 'Megosztotta: %{owner}'
+    shared_apps_title: Megosztott alkalmazások
+    sharing_catalog_msg_html: '<br>Az elérhető alkalmazások egy része megtekinthető az %{catalog_link_tag} oldalon.
+
+      '
+    sharing_catalog_title: Alkalmazáskatalógus
+    sharing_no_shared_apps_html: '<strong>Nincsenek elérhető egyéni megosztott alkalmazások.</strong>
+
+      '
+    sharing_support_msg_html: 'Ha nem találja a keresett alkalmazást, kérjük,
+
+      <a href="%{support_url}">lépjen kapcsolatba az ügyfélszolgálattal</a>.
+
+      '
+    sharing_welcome_msg_html: 'A klaszterhozzáférési alkalmazások a fenti navigációs sáv legördülő menüiből érhetők el.
+
+
+      Az egyéni megosztott alkalmazások az alábbiakban érhetők el.'
+    shell: Héj
+    shell_app_title: '%{cluster_title} Héjhozzáférés'
+    show: Megmutat
+    size: Méret
+    skip_navigation: Navigáció kihagyása
+    smart_attributes:
+      account: Fiók
+      auto_modules_none: Autómodulok (nincs megadva)
+      cluster: Fürt
+      cores: Magok
+      email_on_started: Szeretnék e-mailben értesítést kapni a foglalkozás kezdetéről
+      environment_variable: Környezeti változó
+      environment_variable_key: 'Környezeti változó: %{key}'
+      job_name: Munka neve
+      module_version: '%{module} verzió'
+      num_cpus_single_node: CPU-k száma egyetlen csomóponton
+      num_hours: Órák száma
+      num_nodes: Csomópontok száma
+      num_processors: Processzorok száma
+      partition: Partíció
+      qos: QoS
+      queue: Sorban
+      script: Forgatókönyv
+      vnc_idle_help: 'Kilépés, ha # másodperc telik el VNC-megjelenítőkapcsolat nélkül'
+      vnc_idle_label: Üresjárati időtúllépés
+      vnc_resolution_help: A felbontást csak a natív VNC-kapcsolatok használják.
+      vnc_resolution_label: Felbontás
+    soft_tabs: Puha fülek
+    soft_tabs_info: A lebegő tabulátorok szóközök a fájlban, nem pedig tényleges tabulátor karakterek.
+    status: Állapot
+    status_completed: Befejezve
+    status_held: Tartott
+    status_hold: Tart
+    status_queued: Sorban álló
+    status_running: Futás
+    status_starting: Kezdés
+    status_suspend: Felfüggesztés
+    status_suspended: Felfüggesztett
+    status_undetermined: Meghatározatlan
+    stop: Stop
+    submit: Küldés
+    submit_args: 'Argumentumok beküldése:'
+    support_ticket:
+      creation_success: 'Támogatási jegy e-mail elküldve a következő címre: %{to}'
+      fields:
+        attachments: Mellékletek
+        cc: CC
+        description: Leírás
+        email: Email
+        job_description: Munkaköri leírás
+        session_description: Munkamenet leírása
+        subject: Téma
+        username: Felhasználónév
+      generic_error: 'Hiba történt a kérésed feldolgozása során: %{error}'
+      header: Támogatási jegy
+      rt:
+        creation_success: 'Támogatási jegy létrehozva a RequestTracker rendszerben. TicketId: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Létrehozva egy támogatási jegy a ServiceNow-ban. Szám: %{number}. De nem sikerült hozzáadni a mellékleteket.'
+        creation_success: 'Támogatási jegy létrehozva a ServiceNow-ban. Szám: %{number}'
+      submit: Támogatási jegy beküldése
+      title: Támogatási jegy
+      validation:
+        attachments_items: A(z) %{id} érvénytelen. %{items} hozzáadva, a mellékletek maximális száma %{max}.
+        attachments_size: A(z) %{id} érvénytelen. A melléklet maximális mérete %{max}
+        email: A(z) %{id} formátum érvénytelen. Érvényes e-mail címet várt.
+        items:
+          attachments_js: Több melléklet nem engedélyezett
+        required: A %{id} megadása kötelező
+        size:
+          attachments_js: A melléklet maximális mérete %{max}. A kiválasztott fájl mérete %{size}.
+      validation_error: Érvénytelen kérés. Kérjük, tekintse át az alábbi hibaüzeneteket.
+    support_ticket_add_attachment: Melléklet hozzáadása
+    support_ticket_attachments_help: Kattintson a mezőre egy fájl csatolásához. A képernyőképek vagy más fájlok segíthetnek a probléma elhárításában.
+    system_apps_caption: Rendszertelepített alkalmazás
+    system_status_available: '%{name} Elérhető: %{count}'
+    system_status_cluster_title: '%{title} Klaszter állapota'
+    system_status_gpus: GPU-k
+    system_status_in_use: '%{percent} használatban van'
+    system_status_jobs_queued: Várakozó feladatok
+    system_status_jobs_queued_count: '%{count} Sorban lévő feladatok'
+    system_status_jobs_running: Futó munkák
+    system_status_jobs_running_count: '%{count} Futó feladatok'
+    system_status_nodes: Csomópontok
+    system_status_not_slurm: A klaszterinformációk nem érhetők el a %{scheduler} esetében. Jelenleg csak a Slurm klaszterek támogatottak.
+    system_status_processors: processzorok
+    toggle_notifications: Értesítések be- és kikapcsolása
+    toggle_push_notifications: Push értesítések be-/kikapcsolása
+    type: Típus
+    undefined_title: Meghatározatlan cím
+    unknown: Ismeretlen
+    uppy:
+      strings:
+        addMore: Továbbiak hozzáadása
+        addMoreFiles: További fájlok hozzáadása
+        addingMoreFiles: További fájlok hozzáadása
+        back: Vissza
+        browseFiles: fájlok böngészése
+        browseFolders: mappák böngészése
+        cancel: Mégsem
+        cancelUpload: Feltöltés megszakítása
+        closeModal: Modális ablak bezárása
+        complete: Teljes
+        dashboardTitle: Fájlfeltöltő
+        dashboardWindowTitle: Fájlfeltöltő ablak (A bezáráshoz nyomja meg az Esc billentyűt)
+        done: Kész
+        dropHint: Dobd ide a fájljaidat
+        dropPasteBoth: Húzd ide a fájlokat, %{browseFiles} vagy %{browseFolders}
+        dropPasteFiles: Húzd ide a fájlokat, vagy %{browseFiles}
+        dropPasteFolders: Húzd ide a fájlokat, vagy %{browseFolders}
+        editFile: Fájl szerkesztése
+        editing: '%{file} szerkesztése'
+        emptyFolderAdded: Nem kerültek hozzáadásra fájlok az üres mappából
+        error: Hiba
+        exceedsSize: '%{file} meghaladja a maximálisan megengedett %{size} méretet'
+        failedToUpload: Nem sikerült feltölteni a(z) %{file} fájlt
+        folderAlreadyAdded: A(z) „%{folder}” mappa már hozzáadva lett.
+        myDevice: Saját eszköz
+        noDuplicates: A(z) „%{fileName}” duplikált fájl nem adható hozzá, már létezik.
+        pause: Szünet
+        pauseUpload: Feltöltés szüneteltetése
+        paused: Szüneteltetett
+        removeFile: Fájl eltávolítása
+        resume: Önéletrajz
+        resumeUpload: Feltöltés folytatása
+        retry: Újrapróbálkozás
+        retryUpload: Feltöltés újrapróbálása
+        save: Megtakarítás
+        saveChanges: Változtatások mentése
+        showErrorDetails: Hiba részleteinek megjelenítése
+        upload: Feltöltés
+        uploadComplete: Feltöltés befejezve
+        uploadFailed: Feltöltés sikertelen
+        uploadPaused: Feltöltés szünetel
+        uploading: Feltöltés folyamatban
+        xTimeLeft: '%{time} maradt'
+    user: Felhasználó
+    user_configuration:
+      support_ticket_error: A support_ticket hibásan van konfigurálva. Kérjük, adjon hozzá egy háttérbeli implementációt a YAML konfigurációban.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand integrált, egyetlen hozzáférési pontot biztosít az összes HPC-erőforrásához.</p>
+
+      '

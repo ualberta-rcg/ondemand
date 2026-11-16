@@ -1,0 +1,14 @@
+---
+cs-CZ:
+  manifest:
+    name: Počítač
+    description: Tato aplikace spustí interaktivní plochu na jednom nebo více výpočetních uzlech. Budete mít plný přístup k prostředkům, které tyto uzly poskytují. Je to analogické s interaktivní dávkovou úlohou.
+  form:
+    attributes:
+      desktop:
+        label: Prostředí pracovní plochy
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: KAMARÁD
+          xfce: Xfce

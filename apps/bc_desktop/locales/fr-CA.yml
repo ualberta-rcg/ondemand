@@ -2,8 +2,7 @@
 fr-CA:
   manifest:
     name: Bureau interactif
-    description: 'Cette application lance un bureau interactif sur un ou plusieurs
-      nœuds de calcul.
+    description: 'Cette application lance un bureau interactif sur un ou plusieurs nœuds de calcul.
 
       Vous aurez un accès complet aux ressources offertes par ces nœuds, de façon
 

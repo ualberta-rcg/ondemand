@@ -114,6 +114,21 @@ export class Localizer {
                 this.language = supportedLanguages[j];
                 return;
             }
+
+            // Third pass: sibling regional fallback when no bare primary pack exists (e.g. pt-PT -> pt_BR)
+            for (let j = 0; j < supportedLanguages.length; j++) {
+                const supLang = supportedLanguages[j]
+                    .toLowerCase()
+                    .replace("_", "-")
+                    .split("-");
+
+                if (userLang[0] !== supLang[0]) {
+                    continue;
+                }
+
+                this.language = supportedLanguages[j];
+                return;
+            }
         }
     }
 

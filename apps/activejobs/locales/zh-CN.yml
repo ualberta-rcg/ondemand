@@ -1,0 +1,5 @@
+---
+zh-CN:
+  manifest:
+    name: 活跃职位
+    description: 查看当前在已配置为按需服务的可用集群上运行的作业。

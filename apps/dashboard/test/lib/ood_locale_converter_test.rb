@@ -116,4 +116,18 @@ class OodLocaleConverterTest < ActiveSupport::TestCase
       end
     end
   end
+
+  test 'offline styled locales en-GB, en-HG, and en-CP work without external API credentials' do
+    offline = OodLocaleConverter.new(google_api_key: '', translate_url: '')
+    assert offline.available_for?('en-GB')
+    assert offline.available_for?('en-HG')
+    assert offline.available_for?('en-CP')
+
+    assert_equal 'Session was successfully cancelled.',
+                 offline.convert_text('Session was successfully canceled.', target_locale: 'en-GB')
+    assert_equal 'Beam Aboard %{app_title}',
+                 offline.convert_text('Connect to %{app_title}', target_locale: 'en-HG')
+    assert_equal 'Jack Into %{app_title}',
+                 offline.convert_text('Connect to %{app_title}', target_locale: 'en-CP')
+  end
 end

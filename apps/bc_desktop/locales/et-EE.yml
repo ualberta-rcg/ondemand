@@ -1,0 +1,14 @@
+---
+et-EE:
+  manifest:
+    name: Lauaarvuti
+    description: See rakendus käivitab interaktiivse töölaua ühel või mitmel arvutussõlmel. Teil on täielik juurdepääs nende sõlmede pakutavatele ressurssidele. See on analoogne interaktiivse partiitööga.
+  form:
+    attributes:
+      desktop:
+        label: Töölauakeskkond
+        options:
+          gnome: GNOME
+          kde: KDE
+          mate: MATE
+          xfce: Xfce

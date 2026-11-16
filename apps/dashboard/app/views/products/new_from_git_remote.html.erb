@@ -8,10 +8,10 @@
     <%= render "form_git", f: f, type: @type, product: @product %>
     <%= render "form_reset_git", product: @product if @type == :dev%>
     <div class="actions">
-      <%= f.submit 'Submit' %>
+      <%= f.submit t('dashboard.submit') %>
     </div>
 <% end %>
 
 <hr />
 
-<%= link_to 'Back', products_path, class: 'btn btn-default' %>
+<%= link_to t('dashboard.back'), products_path, class: 'btn btn-default' %>

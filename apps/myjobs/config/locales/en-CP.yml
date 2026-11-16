@@ -1,0 +1,133 @@
+---
+en-CP:
+  jobcomposer:
+    account_label: 'Account:'
+    back: Delta Back
+    cancel: Zero Out
+    close: Close
+    cluster_label: 'Subnet:'
+    confirm_delete: Zero this out for real, choom?
+    confirm_delete_template: Are you certain you want to delete this?
+    copy_template: Copy Template
+    create_from_path_title: Create a new daemon from a path
+    create_new_heading_html: Create New "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Create New Daemon
+    create_template: Create Template
+    create_template_from_job_title: Create template from selected daemon
+    delete: Flatline
+    delete_job_title: Delete Daemon
+    deprecation_warning_html: The Daemon Composer is deprecated and will be removed in Open OnDemand 5.0. Please transfer your daemons and templates to the <a href="%{projects_path}">Project Manager</a>.
+    edit: Edit
+    edit_files: Edit Datashards
+    folder_contents_label: 'Folder Contents:'
+    from_default_template: From Default Template
+    from_default_template_title: Create a new daemon from the default template
+    from_selected_job: From Selected Daemon
+    from_selected_job_title: Copy the selected daemon
+    from_specified_path: From Specified Path
+    from_template: From Template
+    from_template_title: Create a new daemon from a template you choose
+    invalid_cluster_html: Subnet is not valid! Edit <a href="#" id="edit-job-options-script-link">Job Options</a> to select a valid subnet.
+    invalid_script_html: Script is not valid! Edit <a href="#" id="edit-job-options-link">Job Options</a> to select a valid script.
+    job_already_submitted: Daemon has already been submitted.
+    job_array_request_label: 'Daemon Array Request:'
+    job_attributes_heading_html: Daemon Attributes <strong>(Optional)</strong>
+    job_copied: Daemon was successfully copied.
+    job_copy_failed: 'Daemon failed to be copied: %{errors}'
+    job_created: Daemon was successfully created.
+    job_destroy_failed: 'Daemon failed to be destroyed: %{errors}'
+    job_destroyed: Daemon was successfully destroyed.
+    job_details: Daemon Details
+    job_directory_missing: Daemon Directory is missing!
+    job_name_label: 'Daemon Name:'
+    job_not_submitted: Daemon has not been submitted.
+    job_stop_failed: 'Daemon failed to be stopped: %{errors}'
+    job_stopped: Daemon was successfully stopped.
+    job_submit_failed: 'Failed to submit batch daemon:'
+    job_submitted: Daemon was successfully submitted.
+    job_updated: Daemon was successfully updated.
+    loading: Loading
+    loading_job_info: Loading Daemon Information
+    nav_help: Fixer Uplink
+    nav_jobs: Daemon Runs
+    nav_menu_aria: Daemon Composer Menu
+    nav_templates: Templates
+    new_job: New Daemon
+    new_template: New Template
+    new_template_title: Create a new template
+    no_clusters_alert: There are no configured hosts that allow you to submit daemons. Please contact your system administrator.
+    open_dir: Open Dir
+    open_dir_in_editor: Open Directory in File Editor
+    open_dir_in_file_manager: Open Directory in File Manager
+    open_dir_in_terminal: Open Directory in Terminal
+    open_editor: Open Editor
+    open_selected_job_in_terminal: Open Selected Daemon in the Terminal
+    open_selected_template_in_terminal: Open Selected Template in the Terminal
+    open_template_dir_in_file_manager: Open Template Directory in File Manager
+    open_terminal: Open Terminal
+    open_xdmod: Open XDMoD
+    options_account_help: Account is an optional field. If not set, the account may be auto-set by the submit filter.
+    options_account_title: Account
+    options_array_help: Daemon arrays are optional. e.g. 1-10
+    options_array_help_with_clusters: 'Daemon arrays are optional. OnDemand does not currently support daemon arrays for the subnets(s): %{cluster_list}.
+
+      '
+    options_array_title: Daemon array specification
+    options_cluster_title: Subnet
+    options_copy_environment: Copy environment
+    options_errors: Please fix the errors below.
+    options_name_title: Name
+    options_script_help: Datashards larger than 65KB are omitted for the daemon script field
+    options_script_title: Specify daemon script
+    options_title: Daemon Options
+    other_valid_files: Other valid file(s)
+    page_title: Daemon Composer - %{site}
+    path_to_source_heading_html: Path to source <strong>(Required)</strong>
+    reset: Wipe Buffer
+    reset_template_fields_title: Reset fields to template default
+    save: Burn to Shard
+    script_contents_label: 'Script contents:'
+    script_location_label: 'Script location:'
+    script_name_form_label: 'Script Name:'
+    script_name_label: 'Script name:'
+    select_cluster_prompt: Select a subnet...
+    select_template_option: -- select a template --
+    selected_template_details: Selected Template Details
+    show: Show
+    show_batch_host_label: 'Batch host:'
+    show_dir_contents_label: 'Directory Contents:'
+    show_name_label: 'Name:'
+    show_staged_dir_label: 'Staged Dir:'
+    showing_job_title: Showing Daemon
+    skip_navigation: Skip Navigation
+    source_path_help: Enter the path to a directory on the file system. The contents of this path will be copied to a new workflow.
+    source_path_label: Source path
+    specify_job_host_and_script: Specify Daemon Host and Script
+    stop: Kill Daemon
+    stop_job_title: Stop Daemon
+    submit: Breach & Upload
+    submit_job_title: Submit Daemon
+    submit_script_title: Submit Script
+    submit_to_label: 'Submit to:'
+    suggested_files: Suggested file(s)
+    table_created: Created
+    table_id: ID
+    table_source: Source
+    table_status: Status
+    template_create_error: error creating template
+    template_error_name_unique: must be unique.
+    template_error_path_directory: must point to a directory.
+    template_error_path_missing: does not exist.
+    template_errors_heading:
+      one: '%{count} error prohibited this template from being saved:'
+      other: '%{count} errors prohibited this template from being saved:'
+    template_label: 'Template:'
+    template_location_label: 'Template location:'
+    template_path_blank_help: If left blank, a default daemon script will be added to your new template.
+    template_path_label: Path (the template will be created by copying files from this source path)
+    templates_subtitle: To create a new daemon, select a template to copy, fill out the form to the right, and click "Create New Daemon".
+    title: Daemon Compiler
+    toggle_navigation: Toggle navigation
+    view_files: View Datashards
+    xdmod_url_warning_message: This daemon may not appear in Open XDMoD until 24 hours after the completion of the daemon.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

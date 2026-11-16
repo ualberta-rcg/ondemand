@@ -75,7 +75,17 @@ describe('Shell i18n utilities', () => {
             'accept-language': 'fr-FR,fr;q=0.9,en;q=0.8',
           },
         })
+      ).toBe('fr-FR');
+
+      process.env.OOD_SUPPORTED_LOCALES = 'en-CA,fr-CA';
+      expect(
+        i18n.resolveLocale({
+          headers: {
+            'accept-language': 'fr-CH,fr;q=0.9,en;q=0.8',
+          },
+        })
       ).toBe('fr-CA');
+      delete process.env.OOD_SUPPORTED_LOCALES;
 
       process.env.OOD_LOCALE = 'fa_IR';
       expect(i18n.resolveLocale({ headers: {} })).toBe('fa-IR');

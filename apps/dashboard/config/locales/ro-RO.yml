@@ -1,0 +1,1002 @@
+---
+ro-RO:
+  activemodel:
+    errors:
+      messages:
+        format: Formatul %{attribute} este invalid sau lipsește
+        invalid: '%{attribute} este invalid'
+        required: '%{attribute} este obligatoriu'
+        used: '%{attribute} este deja folosit'
+  dashboard:
+    account: Cont
+    actions: Acțiuni
+    active_jobs: Locuri de muncă active
+    active_jobs_close_details: Închideți panoul cu detalii extinse.
+    active_jobs_detail:
+      account: Cont
+      array_job_id: ID-ul lucrării matrice
+      array_task_id: ID-ul activității matrice
+      cluster: Cluster
+      cluster_id: ID-ul clusterului
+      comment: Comentariu
+      cpu_time: Timp CPU
+      cpu_used: CPU utilizat
+      current_working_directory: Directorul de lucru curent
+      end_time: Ora de încheiere
+      exec_host: Gazdă executivă
+      finish_time: Ora de finalizare
+      from_host: De la gazdă
+      gres: GRES
+      group_list: Listă de grupuri
+      job_account: Cont de job
+      job_checkpoint_attr: Punct de control al jobului Atr
+      job_checkpoint_interval: Intervalul punctelor de control ale lucrării
+      job_deadline: Termen limită pentru job
+      job_exec_file: Fișierul de execuție a lucrării
+      job_execution_time: Timpul de execuție a lucrării
+      job_gid: GID-ul jobului
+      job_group: Grup de locuri de muncă
+      job_id: ID-ul jobului
+      job_name: Numele postului
+      job_priority: Prioritate job
+      job_restart: Repornire lucrare
+      job_script_file: Fișier script de job
+      job_script_size: Dimensiunea scriptului de lucru
+      job_share: Partajare locuri de muncă
+      job_type: Tipul de job
+      job_uid: UID-ul lucrării
+      job_verify: Verificare job
+      job_version: Versiunea lucrării
+      mem: Mem
+      memory: Memorie
+      node_count: Număr de noduri
+      node_list: Listă de noduri
+      nodes: Noduri
+      none: Nici unul
+      notifications: Notificări
+      partition: Partiție
+      pbs_id: ID-ul PBS
+      pids: PID-uri
+      ppn: PPN
+      project_name: Numele proiectului
+      queue: Coadă
+      reason: Motiv
+      reserve: Rezervaţie
+      select: Selecta
+      start_time: Ora de începere
+      state: Stat
+      status: Stare
+      submission_time: Timpul de trimitere
+      swap: Schimb
+      time_limit: Limită de timp
+      time_used: Timp utilizat
+      total_cpus: Total procesoare
+      total_nodes: Total noduri
+      user: Utilizator
+      virtual_memory: Memorie virtuală
+      walltime: Walltime
+      walltime_used: Walltime Folosit
+    active_jobs_filter_all: Toate locurile de muncă
+    active_jobs_filter_user: Locurile tale de muncă
+    active_jobs_ganlia_CPU: Imagine ganglionară pentru CPU.
+    active_jobs_ganlia_load: Imagine cu ganglioni pentru mediile de încărcare a sistemului.
+    active_jobs_ganlia_mem: Imagine cu ganglioni pentru utilizarea memoriei.
+    active_jobs_ganlia_network: Imagine cu ganglioni pentru utilizare în rețea.
+    active_sessions_caption_html: <a href="%{all_sessions_url}"> vezi tot (%{number_of_sessions})</a>
+    active_sessions_title: Sesiuni interactive active
+    add: Adăuga
+    all_apps_table_app_column: Nume
+    all_apps_table_category_column: Categorie
+    all_apps_table_sub_category_column: Subcategorie
+    all_clusters: Toate clusterele
+    announcements_dismissible_button: Bine
+    announcements_parse_error: Eroare la analizarea anunțului.
+    announcements_render_error: Nu s-a putut reda anunțul „%{name}” din cauza unei erori
+    announcements_required_button: Accepta
+    apps_setup_failure_html: '<h2>A apărut o problemă la inițializarea datelor pentru această aplicație.</h2>
+
+      <p class="lead">
+
+      Pe propriul risc, puteți în continuare <a href="%{app_url}">deschide aplicația</a>
+
+      sau puteți pur și simplu să vă întoarceți <a href="%{home_url}">la tabloul de bord</a>
+
+      </p>
+
+      <p>
+
+      Distribuiți acest lucru cu dezvoltatorul aplicației dvs.:
+
+      Scriptul de configurare a producției ar trebui să fie idempotent și este rulat de fiecare dată
+
+      când utilizatorul deschide aplicația prin intermediul tabloului de bord.</p>
+
+      <h4>Excepție: %{exception_class}</h4>
+
+      <pre>%{exception_message}</pre>
+
+      <h4>Urmărirea stivei:</h4>
+
+      <pre>%{exception_trace}</pre>
+
+      '
+    apps_system_apps_title: Aplicații de sistem
+    auto_log_location_title: Locația jurnalului
+    back: Spate
+    balance_additional_message: Luați în considerare solicitarea de %{balanace_units} suplimentar
+    balance_message: '%{units_balance} este %{value}'
+    balance_no_warnings: Niciun proiect nu se încadrează în pragul de avertizare pentru soldul zilnic %{threshold}.
+    balance_reload_message_html: Reîncărcați pagina pentru a vedea soldul actualizat. Soldurile sunt actualizate zilnic.<br>Ultima actualizare a fost %{last_update}
+    balance_warning_prefix_html: '%{units_balance} avertisment pentru'
+    batch_connect_active_sessions_aria: Sesiuni active
+    batch_connect_app_version: 'versiune: %{version}'
+    batch_connect_apps_menu_aria: Meniu de aplicații interactive
+    batch_connect_apps_menu_title: Aplicații interactive
+    batch_connect_form_attr_cache_error: Nu se pot utiliza valorile memorate anterior în cache, se utilizează în schimb valorile implicite. (%{error_message})
+    batch_connect_form_choose_template_name: Alegeți un nume de șablon
+    batch_connect_form_data_root: directorul rădăcină de date
+    batch_connect_form_dynamic_disclaimer: Următorul formular se poate modifica dinamic pe măsură ce opțiunile sunt selectate. Toate modificările vor fi anunțate și sunt reversibile.
+    batch_connect_form_invalid: Fișierul form.yml are opțiuni lipsă în câmpul de formular %{id}.
+    batch_connect_form_launch: Lansa
+    batch_connect_form_prefill: Folosește setările salvate
+    batch_connect_form_prefill_error: Oops... Ceva este în neregulă cu șablonul tău
+    batch_connect_form_reset_resolution: Resetare rezoluție
+    batch_connect_form_resolution_height: Înălțimea rezoluției (pixeli)
+    batch_connect_form_resolution_width: Lățimea rezoluției (pixeli)
+    batch_connect_form_save: Salvați setările
+    batch_connect_form_save_new_template: salvați noile setări
+    batch_connect_form_save_submit: Salvați setările și închideți
+    batch_connect_form_select_template: selectați setările salvate
+    batch_connect_form_session_data_html: '* Datele sesiunii %{title} pentru această sesiune pot fi accesate
+
+      sub %{data_link_tag}.
+
+      '
+    batch_connect_form_template_name_label: nume setare
+    batch_connect_form_type_new_name: Numele setărilor aplicației
+    batch_connect_form_type_new_name_error: Vă rugăm să introduceți un nume valid pentru a continua
+    batch_connect_invalid_form_array: Elementul „form” din form.yml nu este un array
+    batch_connect_invalid_form_attributes: Elementul „attributes” din form.yml nu este o hartă
+    batch_connect_missing_cluster: Clusterul nu a fost niciodată configurat. Fie setați-l în form.yml.erb cu `cluster` sau `form.cluster`, fie setați `cluster` în submit.yml.erb.
+    batch_connect_no_apps: Nu există aplicații interactive disponibile.
+    batch_connect_no_sessions: Nu aveți sesiuni active.
+    batch_connect_sandbox: '[Sandbox]'
+    batch_connect_sessions_cancel_confirm: Ești sigur/ă?
+    batch_connect_sessions_cancel_full_title: Anulează sesiunea %{title}
+    batch_connect_sessions_cancel_title: Anula
+    batch_connect_sessions_connect_to: Conectează-te la %{app_title}
+    batch_connect_sessions_connection_render_error: Nu se poate reda butonul de conectare din fișierul view.html.erb din cauza erorii „%{error}”
+    batch_connect_sessions_data_html: 'Datele sesiunii %{title} pentru această sesiune pot fi accesate
+
+      sub %{data_link_tag}.'
+    batch_connect_sessions_delete_confirm: Ești sigur/ă?
+    batch_connect_sessions_delete_full_title: Ștergeți sesiunea %{title}
+    batch_connect_sessions_delete_hover: Șterge sesiunea
+    batch_connect_sessions_delete_title: Şterge
+    batch_connect_sessions_edit_title: Editați noul %{title} cu acești parametri de sesiune
+    batch_connect_sessions_error_invalid_job_name_html: Dacă această lucrare nu a putut fi trimisă din cauza unui nume de lucrare nevalid, vă rugăm să solicitați administratorului să configureze OnDemand pentru a seta variabila de mediu OOD_JOB_NAME_ILLEGAL_CHARS.
+    batch_connect_sessions_errors_staging: 'Nu s-a putut pregăti șablonul, cu următoarea eroare:'
+    batch_connect_sessions_errors_submission: 'Sesiunea nu a putut fi trimisă, cu următoarea eroare:'
+    batch_connect_sessions_native_vnc_tab: Instrucțiuni native
+    batch_connect_sessions_novnc_compression: Comprimare
+    batch_connect_sessions_novnc_compression_help: 1 (scăzut) până la 9 (ridicat)
+    batch_connect_sessions_novnc_launch: Lansează %{app_title}
+    batch_connect_sessions_novnc_quality: Calitatea imaginii
+    batch_connect_sessions_novnc_quality_help: 0 (scăzut) până la 9 (ridicat)
+    batch_connect_sessions_novnc_tab: Conexiune noVNC
+    batch_connect_sessions_novnc_view_only: Doar vizualizare (link partajabil)
+    batch_connect_sessions_path_selector_forbidden_error: Nu aveți permisiunea de a selecta directorul sau fișierul respectiv.
+    batch_connect_sessions_relaunch_full_title: Relansați sesiunea %{title}
+    batch_connect_sessions_relaunch_title: Relansare
+    batch_connect_sessions_staged_root: directorul rădăcină în etape
+    batch_connect_sessions_stats_core_count:
+      one: '%{count} nucleu'
+      other: nuclee %{count}
+    batch_connect_sessions_stats_created_at: 'Creat la:'
+    batch_connect_sessions_stats_expected_time: 'Început preconizat:'
+    batch_connect_sessions_stats_gpu_count:
+      one: GPU-ul %{count}
+      other: GPU-uri %{count}
+    batch_connect_sessions_stats_host: 'Gazdă:'
+    batch_connect_sessions_stats_node_count:
+      one: Nodul %{count}
+      other: Noduri %{count}
+    batch_connect_sessions_stats_session_dir_link_title: Deschide directorul de sesiune pentru %{session_id}
+    batch_connect_sessions_stats_session_id: 'ID sesiune:'
+    batch_connect_sessions_stats_support_ticket: Probleme cu această sesiune?
+    batch_connect_sessions_stats_support_ticket_link_text: Trimiteți un tichet de asistență
+    batch_connect_sessions_stats_time_remaining: 'Timp rămas:'
+    batch_connect_sessions_stats_time_requested: 'Timp solicitat:'
+    batch_connect_sessions_stats_time_used: 'Timp utilizat:'
+    batch_connect_sessions_stats_undetermined_host: Nedeterminat
+    batch_connect_sessions_status_bad: Sesiunea dvs. a intrat într-o stare proastă. Nu ezitați să contactați serviciul de asistență pentru informații suplimentare.
+    batch_connect_sessions_status_blurb_cancel_failure: Nu s-a putut anula sesiunea.
+    batch_connect_sessions_status_blurb_cancel_success: Sesiunea a fost anulată cu succes.
+    batch_connect_sessions_status_blurb_create_success: Sesiunea a fost creată cu succes.
+    batch_connect_sessions_status_blurb_delete_failure: Ștergerea sesiunii a eșuat.
+    batch_connect_sessions_status_blurb_delete_success: Sesiunea a fost ștearsă cu succes.
+    batch_connect_sessions_status_completed: În scopuri de depanare, acest card va fi păstrat încă %{days} zile.
+    batch_connect_sessions_status_missing_connection: Această aplicație are lipsă de informațiile necesare pentru a stabili o conexiune. Mai exact, fișierul view.html.erb lipsește. Vă rugăm să contactați asistența dacă vedeți acest mesaj.
+    batch_connect_sessions_status_queued: Vă rugăm să aveți răbdare, deoarece jobul dumneavoastră se află în coadă. Timpul de așteptare depinde de numărul de nuclee, precum și de timpul solicitat.
+    batch_connect_sessions_status_starting: Sesiunea dvs. începe în prezent... Vă rugăm să aveți răbdare, deoarece acest proces poate dura câteva minute.
+    batch_connect_sessions_word: Sesiune
+    batch_connect_validation:
+      app_not_found: Această aplicație nu există în directorul „%{root}”
+      inaccessible_clusters: Această aplicație necesită clustere care nu există sau la care nu aveți acces.
+      missing_form_file: Această aplicație nu furnizează un fișier formular în directorul „%{root}”
+      missing_sub_app_form_file: Această aplicație nu furnizează un fișier formular de subaplicație în directorul „%{root}”
+      no_cluster_specified: Această aplicație nu specifică niciun cluster.
+    bc_saved_settings:
+      delete_confirm: Ești sigur/ă?
+      delete_title: Ștergeți setările salvate %{settings_name}
+      deleted_message: Setările salvate %{settings_name} au fost șterse.
+      edit_title: Editați setările salvate %{settings_name}
+      launch_title: Lansează %{app_title} cu parametrii %{settings_name}
+      missing_settings: Setările salvate selectate nu au fost găsite.
+      no_settings_title: Nu aveți setări salvate.
+      outdated_message: Parametrii %{app_title} s-au modificat de la crearea acestor setări.
+      saved_message: Setările %{settings_name} au fost salvate
+      settings_values_label: Valori
+      title: Setări salvate
+    breadcrumb_aria: Breadcrumb
+    breadcrumbs_all_apps: Toate aplicațiile
+    breadcrumbs_home: Acasă
+    breadcrumbs_my_sessions: Sesiunile mele interactive
+    breadcrumbs_support_ticket: Tichet de asistență
+    browser_warning: OnDemand necesită o versiune mai nouă a browserului pe care îl utilizați. Cerințele actuale ale browserului includ IE Edge, Firefox 19+, Chrome 34+ și Safari 8+.
+    cancel: Anula
+    categories:
+      apps: Aplicații
+      bioinformatics: Bioinformatică
+      clusters: Clusterele
+      data_science: Știința datelor
+      desktop: Desktop
+      desktops: Desktopuri
+      development: Dezvoltare
+      external_apps: Aplicații externe
+      files: Fișiere
+      gateway_apps: Aplicații Gateway
+      guis: Interfețe grafice
+      interactive_apps: Aplicații interactive
+      jobs: Locuri de muncă
+      machine_learning: Învățare automată
+      mathematics: Matematică
+      servers: Servere
+      utilities: Utilități
+      virtual_desktop_interface: Interfață desktop virtuală
+      visualization: Vizualizare
+    clear: Clar
+    close: Aproape
+    close_alert: Închideți această alertă.
+    close_notice: Închideți această notificare.
+    cluster: Cluster
+    copy: Copie
+    copy_suffix: (Copie)
+    cpu_report: Raport CPU + %{node}
+    custom_pages:
+      invalid: 'Cod de pagină nevalid: %{page}. Această pagină nu a fost configurată.'
+    date: Data
+    delete: Şterge
+    detailed_metrics: Metrici detaliate
+    details: Detalii
+    development_apps_caption: Aplicație Sandbox
+    development_apps_category: Aplicații Sandbox
+    development_delete_app: Șterge aplicația
+    development_edit_title: Editare %{title}
+    development_launch_title: Lansează %{title}
+    directory: Director
+    edit: Edita
+    editor_default: Implicit
+    editor_font_size: Dimensiunea fontului
+    editor_key_bindings: Legături de taste
+    editor_theme: Temă
+    editor_theme_bright: Luminos
+    editor_theme_dark: Întuneric
+    editor_wrap: Înfășurare
+    error_details: 'Detalii:'
+    error_internal_body_html: Vă rugăm să încercați din nou peste câteva momente. Dacă această eroare persistă, vă rugăm să <a href="%{support_url}"> contactați serviciul de asistență</a>.
+    error_internal_title: Internal Server Error
+    error_not_found_body: Pagina pe care o căutați nu există.
+    error_not_found_title: Nu a fost găsit
+    favorites: Favorite
+    file: Fişier
+    file_editor: Editor de fișiere
+    file_quotas: Cote de fișiere
+    files: Fișiere
+    files_change_directory: Schimbați directorul
+    files_contents_of_directory: Conținutul directorului %{path}
+    files_copy_move: Copiere/Mutare
+    files_copy_path: Copiați calea
+    files_directory_contents_aria: Conținutul directorului
+    files_directory_download_error_modal_title: Directorul este prea mare pentru descărcare
+    files_directory_download_unauthorized: Puteți descărca doar un fișier sau un director la care aveți acces de citire și executare.
+    files_directory_size_calculation_error: A expirat timpul încercării de a determina dimensiunea directorului.
+    files_directory_size_calculation_timeout: A expirat timpul încercării de a determina dimensiunea directorului.
+    files_directory_size_unknown: 'Eroare cu starea %{exit_code} la încercarea de a determina dimensiunea directorului: %{error}'
+    files_directory_too_large: Directorul este prea mare pentru a fi descărcat ca fișier zip. Directorul ar trebui să aibă mai puțin de %{download_directory_size_limit} octeți.
+    files_doesnt_exist: '%{path} nu există.'
+    files_download: Descărcare
+    files_download_not_enabled: Descărcarea fișierelor nu este activată pe acest server.
+    files_download_zip: Descărcați ca fișier zip
+    files_exceeds_editor_limit: '%{path} depășește limita de editori de %{limit}. Vă rugăm să descărcați fișierul pentru a-l edita sau a-l vizualiza local.'
+    files_file_too_large: Fișierul este prea mare pentru descărcare. Descărcările de fișiere ar trebui să aibă mai puțin de %{download_file_size_limit} octeți.
+    files_go_up_directory: Mergi în directorul superior
+    files_modified_at: Modificat la
+    files_modify_aria: Modificați fișierele
+    files_new_directory: Director nou
+    files_new_file: Fișier nou
+    files_not_editable: '%{path} nu este un fișier editabil'
+    files_not_readable: Nu aveți suficiente permisiuni pentru a citi „%{path}”.
+    files_open_in_files_app: Deschide în aplicația Fișiere
+    files_open_in_globus: Deschis în Globus
+    files_path_breadcrumbs_aria: Peisaj de navigare al căii
+    files_refresh: Reîmprospăta
+    files_remote_dir_not_created: Directorul %{path} nu a fost creat.
+    files_remote_disabled: Suportul pentru fișiere la distanță nu este activat
+    files_remote_empty_dir_unsupported: Remote nu acceptă directoare goale
+    files_remote_error_listing_remotes: 'Eroare la listarea telecomenzilor Rclone: %{error}'
+    files_send_to_target_title_default: Trimiteți metadatele fișierelor selectate către aplicația externă
+    files_shell: Deschide în Terminal
+    files_shell_dropdown: Selectați clusterul pentru a-l deschide în terminal
+    files_title: Răsfoirea fișierelor
+    files_upload: Încărcare
+    footer_contribute: Contribuie pe GitHub
+    footer_license: Notificare privind licența software
+    footer_open_source: Software cu sursă deschisă.
+    footer_powered_by: Susținut de Open OnDemand
+    footer_version: 'Versiune la cerere: %{version}'
+    home_directory: Director principal
+    id: ID-ul
+    import: Import
+    job: Post
+    job_info: Informații despre job
+    jobs_back_to_projects: Înapoi la Proiecte
+    jobs_clear_form_fields: Ștergeți câmpurile formularului
+    jobs_completed_jobs: Lucrări finalizate
+    jobs_create_blank_project: Creați un proiect nou
+    jobs_create_blank_workflow: Flux de lucru nou
+    jobs_create_template_project: Creați un proiect nou dintr-un șablon
+    jobs_import_shared_project: Importați un proiect partajat
+    jobs_launchers: Lansatoare
+    jobs_launchers_add_select_option: Adăugați opțiunea de selectare %{name}
+    jobs_launchers_cannot_find: Nu se poate găsi lansatorul %{id}
+    jobs_launchers_clone: Lansator de clone %{name}
+    jobs_launchers_created: Lansatorul a fost creat cu succes!
+    jobs_launchers_default_created: Un fișier „hello_world.sh” a fost adăugat și acestui proiect.
+    jobs_launchers_delete: Ștergeți lansatorul %{name}
+    jobs_launchers_delete_script_confirmation: Ștergeți tot conținutul lansatorului?
+    jobs_launchers_deleted: Lansatorul a fost șters cu succes!
+    jobs_launchers_edit: Formular de editare pentru lansator %{name}
+    jobs_launchers_edit_form_item: Editați elementul formularului %{label}
+    jobs_launchers_editing: Editare %{title}
+    jobs_launchers_fixed_field: Valoare fixă
+    jobs_launchers_fixed_field_help: Fixează valoarea curentă
+    jobs_launchers_max_value_label: Valoare maximă pentru câmpul numeric %{label}
+    jobs_launchers_min_value_label: Valoare minimă pentru câmpul numeric %{label}
+    jobs_launchers_name: Numele lansatorului
+    jobs_launchers_new_field_select: Selectați elementul de adăugat la formular
+    jobs_launchers_not_found: Nu se poate găsi lansatorul %{launcher_id}
+    jobs_launchers_preview_form_item: Previzualizare a elementului de formular %{label}
+    jobs_launchers_remove_form_item: Eliminați elementul formularului %{label}
+    jobs_launchers_remove_select_option: Eliminați opțiunea de selectare %{name}
+    jobs_launchers_save_form: Salvați formularul
+    jobs_launchers_save_form_item: Salvați modificările aduse elementului de formular %{label}
+    jobs_launchers_show_form: Afișează formularul pentru lansatorul %{name}
+    jobs_launchers_submit_launcher_title: Lansează scriptul cu valorile din cache sau implicite pentru lansatorul %{name}
+    jobs_launchers_submitted: Lucrul %{job_id} a fost trimis cu succes.
+    jobs_launchers_updated: Manifestul lansatorului a fost actualizat!
+    jobs_native_dependency: . Jobul depinde de id-ul jobului%{dependency}
+    jobs_native_reason: din cauza lui '%{reason}'
+    jobs_native_state: Starea curentă a jobului este „%{state}”
+    jobs_new_launcher: Lansator nou
+    jobs_new_project: Proiect nou
+    jobs_project_cannot_find: 'Nu se poate găsi proiectul: %{project_id}'
+    jobs_project_clear_form_fields: Ștergeți câmpurile formularului
+    jobs_project_created: Proiect creat cu succes!
+    jobs_project_delete_label: Ștergeți proiectul %{name}
+    jobs_project_delete_project_confirmation: Ștergeți tot conținutul directorului proiectului?
+    jobs_project_deleted: Proiectul a fost șters cu succes!
+    jobs_project_description_placeholder: Descrierea proiectului
+    jobs_project_directory_error: Calea directorului proiectului nu este setată pentru acest flux de lucru
+    jobs_project_directory_help_html: 'Lăsați câmpul gol și va fi creat un director nou. <br />Locație implicită: %{root_directory}'
+    jobs_project_directory_placeholder: Calea absolută a directorului proiectului
+    jobs_project_edit_label: Editați proiectul %{name}
+    jobs_project_generic_error: 'A apărut o eroare la procesarea solicitării dvs.: %{error}'
+    jobs_project_group_help: Asigurați-vă că alegeți grupul care îi include pe toți colaboratorii vizați. Dacă acesta nu este un proiect de colaborare, se recomandă grupul implicit.
+    jobs_project_group_owner: Grup
+    jobs_project_imported: Proiectul a fost importat cu succes!
+    jobs_project_invalid_configuration_clusters: Este necesar un cluster HPC. Contactați administratorul pentru a adăuga unul la sistem.
+    jobs_project_invalid_configuration_scripts: Este necesar un script executabil pentru proiectul tău. Încarcă un script folosind aplicația de fișiere.
+    jobs_project_job_deleted: Lucrul %{job_id} a fost șters cu succes
+    jobs_project_job_not_deleted: Nu se poate șterge jobul %{job_id}
+    jobs_project_job_stopped: Lucrul a fost oprit cu succes %{job_id}
+    jobs_project_list_aria: Lista de proiecte
+    jobs_project_manager: Manager de proiect
+    jobs_project_manifest_updated: Manifestul proiectului a fost actualizat!
+    jobs_project_name_placeholder: Numele proiectului
+    jobs_project_name_validation: Numele proiectului poate conține doar litere, cifre, cratime, sublinieri și spații
+    jobs_project_not_found: Nu se poate găsi proiectul %{project_id}
+    jobs_project_open_label: Deschide proiectul %{name}
+    jobs_project_remove_label: Eliminați proiectul %{name}
+    jobs_project_removed: Proiect eliminat din căutare!
+    jobs_project_return_to_projects: Reveniți la pagina proiectelor
+    jobs_project_save_error: Nu se poate salva manifestul în %{path}
+    jobs_project_save_project_title: Salvați proiectul
+    jobs_project_select_directory: Selectați directorul proiectului
+    jobs_project_setgid_help: Dacă se bifează setgid, se asigură că fișierele proiectului sunt create cu grupul selectat. Nu afectează proiectele din directorul principal.
+    jobs_project_validation_error: Cerere nevalidă. Vă rugăm să verificați erorile de mai jos.
+    jobs_return_to_projects: Reveniți la pagina proiectelor
+    jobs_save_project_title: Salvați proiectul
+    jobs_select_directory_placeholder: Faceți clic pe proiect pentru a importa
+    jobs_toggle_details: Faceți clic pentru a comuta detaliile pentru jobul %{job_id}
+    jobs_workflow_add_launcher: Adăugați lansatorul
+    jobs_workflow_canvas_aria: pânză
+    jobs_workflow_clone: Flux de lucru clonat %{name}
+    jobs_workflow_connect_launchers: Lansatoare Connect
+    jobs_workflow_created: Flux de lucru creat cu succes!
+    jobs_workflow_delete_confirmation: Ștergeți tot conținutul fluxului de lucru?
+    jobs_workflow_delete_edge: Ștergeți marginea
+    jobs_workflow_delete_edge_title: Șterge marginea selectată (Del/Backspace)
+    jobs_workflow_delete_launcher: Ștergeți lansatorul
+    jobs_workflow_delete_launcher_title: Ștergeți lansatorul selectat (Del/Backspace)
+    jobs_workflow_delete_title: Ștergeți fluxul de lucru %{name}
+    jobs_workflow_deleted: Fluxul de lucru a fost șters cu succes!
+    jobs_workflow_description_placeholder: Descrierea fluxului de lucru
+    jobs_workflow_edit_settings: Modificați setările pentru fluxul de lucru %{name}
+    jobs_workflow_editing: 'Editare: %{name}'
+    jobs_workflow_enable_sync_key: Activează OOD_WORKFLOW_SYNC_KEY
+    jobs_workflow_failed: Fluxul de lucru a eșuat cu eroarea %{error}
+    jobs_workflow_help: Faceți clic pe titlu pentru a selecta și a trage. Conectați-vă făcând clic pe două lansatoare cu opțiunea „Conectați lansatoarele” selectată.
+    jobs_workflow_manifest_updated: Manifestul fluxului de lucru a fost actualizat!
+    jobs_workflow_missing_launchers: selectați cel puțin %{count}
+    jobs_workflow_name_placeholder: Numele fluxului de lucru
+    jobs_workflow_name_validation: Numele fluxului de lucru poate conține doar litere, cifre, cratime, sublinieri și spații
+    jobs_workflow_not_found: Nu se poate găsi fluxul de lucru %{workflow_id}
+    jobs_workflow_pick_launchers: Lansatoare de alegeri
+    jobs_workflow_show_graph: Deschideți fluxul de lucru %{name} în editorul grafic
+    jobs_workflow_submitted: Fluxul de lucru a fost trimis cu succes!
+    jobs_workflow_sync_key_help: Când este activată, fiecare program de lansare din acest flux de lucru primește aceeași variabilă de mediu <code>OOD_WORKFLOW_SYNC_KEY</code> (un token aleatoriu unic pentru fiecare rulare a fluxului de lucru). Utilă pentru generarea de nume de fișiere sincronizate, fișiere de blocare sau identificatori partajați între joburi dependente.
+    jobs_workflow_synchronization: Sincronizare
+    jobs_workflow_toolbar_aria: bara de instrumente
+    jobs_workflow_zoom_controls: Comenzi de zoom
+    jobs_workflow_zoom_in: Măriți
+    jobs_workflow_zoom_out: Micșorare
+    jobs_workflow_zoom_reset: Resetare zoom
+    jobs_workflows: Fluxuri de lucru
+    jobs_workflows_not_supported: Fluxurile de lucru nu sunt acceptate de planificatorul configurat.
+    js:
+      active_jobs:
+        delete_aria: Ștergeți jobul %{name} cu ID-ul %{id}
+        delete_confirm: Sigur vrei să ștergi %{name} - %{id}?
+        delete_title: Ștergeți lucrarea
+        details_loaded: Lista cu detalii despre job a fost încărcată.
+        load_details_failed: Nu s-au putut încărca detaliile jobului.
+        remote_server_error: A apărut o eroare la preluarea datelor de la serverul la distanță.
+        request_failed_parse: Cererea de joburi a eșuat din cauza unei erori de analiză corporală.
+        request_failed_status: 'Cererea de joburi a eșuat cu codul de stare: %{status}'
+        status_completed: Finalizat
+        status_hold: Așteptați
+        status_queued: În coadă
+        status_running: Funcţionare
+        status_suspended: Suspendat
+        status_undetermined: Nedeterminat
+        support_ticket_aria: Trimiteți un tichet de asistență pentru jobul cu ID-ul %{id}
+        support_ticket_title: Trimiteți un tichet de asistență
+        toggle_details_aria: Comutare vizibilitate a jobului %{name} pe %{cluster}
+      batch_connect:
+        allow_notifications: Vă rugăm să acordați permisiuni de notificare în browser pentru a activa alertele de sesiune.
+        invalid_prefill_value_html: 'Valoare nevalidă: „%{value}” pentru câmpul „%{field}”.<br>'
+        notification_permission_error: 'Eroare la solicitarea permisiunii de notificare:'
+        resolution_reset: Rezoluția a fost resetată la %{width} cu %{height} pixeli.
+        session_expires_warning: 'Atenție: %{title} (%{job_id}) expiră în ~%{minutes} minute!'
+        session_status_aria: '%{title} este acum %{status}.'
+        session_status_push: '%{title} (%{job_id}) este acum %{status}.'
+      common:
+        cancel: Anula
+        close: Aproape
+        error: Eroare
+        loading: Încărcare...
+        ok: Bine
+      datatables:
+        all: Toate
+        filter_label: 'Filtra:'
+        invalid_date: Dată nevalidă
+        rows_selected:
+          one: Rândul %{count} selectat
+          other: '%{count} rânduri selectate'
+        showing_filtered_rows: Se afișează %{display} din rândurile %{total}
+        showing_rows: Se afișează rândurile %{display}
+        status_summary: '%{showing} - %{selected}'
+      dynamic_forms:
+        and_separator: și
+        changed_help: Textul de ajutor pentru %{widget} a fost schimbat în %{help}
+        changed_label: Eticheta de pe %{widget} a fost schimbată cu noua etichetă %{label}
+        current_value: setează valoarea curentă la %{value}
+        hid_item: Elementul formularului a fost ascuns %{widget}
+        maximum_limit: limită maximă la %{value}
+        minimum_limit: limită minimă la %{value}
+        option_disabled: Opțiunea %{value} dezactivată pentru %{widget}
+        option_enabled: Opțiunea %{value} este activată pentru %{widget}
+        revealed_item: Element de formular dezvăluit %{widget}
+        selected_option_disabled: Opțiunea selectată %{value} a fost dezactivată pentru %{widget}
+        set_limits: Setați %{details} pentru %{widget}
+        set_value: Setați %{widget} la valoarea %{value}
+        widget_no_label: '%{type} fără etichetă'
+        widget_with_label: '%{type} cu eticheta %{label}'
+      editor:
+        save_error: 'A apărut o eroare la încercarea de salvare a acestui fișier!
+
+          %{error}'
+        unsaved_changes: Aveți modificări nesalvate!
+      files:
+        action_delete: Şterge
+        action_download: Descărcare
+        action_edit: Edita
+        action_rename: Redenumire
+        action_view: Vedere
+        actions: Acțiuni
+        cannot_navigate_file: Nu se poate naviga la un fișier.
+        change_directory: Schimbare director
+        clipboard_description_html: 'Copiați sau mutați fișierele de mai jos din <code>%{from}</code> în directorul curent:'
+        contents_of_directory: Conținutul directorului %{path}
+        copied_path: Calea a fost copiată în clipboard!
+        copy: Copie
+        create_directory_error: 'A apărut o eroare la încercarea de creare a unui director nou: %{error}'
+        create_file_error: 'A apărut o eroare la încercarea de creare a fișierului nou: %{error}'
+        delete_confirm_text: 'Sigur doriți să ștergeți fișierele: %{files}?'
+        delete_multiple_title: Ștergeți fișierele selectate %{count}?
+        delete_single_title: Ștergeți %{name}?
+        deleting_files: 'Ștergerea fișierelor...:'
+        directory: director
+        directory_name_label: Numele directorului
+        download_error: 'Eroare la descărcare: %{error}'
+        duplicate_files_warning: Fișiere duplicate identificate. Încărcarea acestor fișiere va suprascrie conținutul existent.
+        file: fişier
+        filename_invalid_chars: Numele fișierului nu poate include / sau ..
+        filename_label: Nume de fișier
+        globus_open: Deschideți directorul curent cu Globus
+        globus_unavailable: Niciun punct final Globus asociat cu acest director
+        illegal_slash_in_filename: Caracterul ilegal (/) nu este permis în numele fișierului.
+        move: Mişcare
+        navigated_to: a navigat către %{path}
+        new_directory_title: Director nou
+        new_file_title: Fișier nou
+        path_label: Cale
+        poll_status_error: Este posibil ca operațiunea să nu fi avut loc. Nu s-a putut recupera starea operațiunii fișierului.
+        preparing_download_dir: 'se pregătește descărcarea directorului: %{name}'
+        provide_absolute_pathname: Furnizați o cale absolută
+        provide_directory_name: Furnizați un nume de director care nu conține /
+        provide_non_empty_filename: Furnizați un nume de fișier care să nu fie gol.
+        provide_rename_filename: Furnizați un nume de fișier pentru a redenumi acesta
+        rename_title: Redenumire
+        see_details: Vedeți detaliile
+        select_row: Selectați rândul
+        select_to_copy_move: Selectați un fișier, fișiere sau un director pentru a le copia sau muta. Nu ați selectat niciunul.
+        select_to_delete: Selectați un fișier, fișiere sau director pentru a-l șterge. Nu ați selectat niciunul.
+        select_to_download: Selectați un fișier, fișiere sau director pentru descărcare. Nu ați selectat niciunul.
+        select_to_send: Selectați cel puțin un fișier sau director pentru trimitere.
+        send_failed: Nu s-au putut trimite informațiile despre fișier.
+        sent_successfully: Informațiile despre fișierul selectat au fost trimise cu succes.
+        show_dotfiles: Afișați fișierele Dotfile
+        show_owner_mode: Afișați proprietarul/modul
+        summary_copy_files: copierea fișierelor
+        summary_move_files: mutați fișierele
+        summary_remove_files: elimina fișierele
+        summary_rename_file: redenumiți fișierul
+        token_missing_expired: Tokenul aplicației lipsește sau a expirat. Începeți din nou.
+        transfer_error: 'A apărut o eroare la încercarea de a %{summary}: %{error}'
+        upload_and_overwrite: Încărcare și suprascriere
+        upload_count:
+          one: Încărcați fișierul %{count}
+          other: Încărcați fișierele %{count}
+        upload_new_files: Încărcați fișiere noi
+        uppy_empty_dir_note: Directoarele goale vor fi incluse în încărcare numai atunci când o încărcare de directoare este inițiată prin drag and drop. Acest lucru se datorează faptului că API-ul File and Directory Inscriptions este disponibil numai la un eveniment de plasare, nu în timpul unui eveniment de modificare a intrării.
+      icon_picker:
+        icon_selected: Pictogramă %{icon} selectată
+        icon_sr: Pictogramă %{name}
+      launcher_edit:
+        account_help: Contul cu care va fi trimisă lucrarea.
+        account_label: Cont
+        add_new_option: Adăugați o nouă opțiune
+        cores_help: Pe câte nuclee va rula jobul.
+        cores_label: Nuclee
+        env_var_help: Adăugați o variabilă de mediu.
+        env_var_key: 'Variabilă de mediu: %{name}'
+        env_var_label: Variabilă de mediu
+        hours_help: Cât timp poate dura lucrarea.
+        hours_label: Ore
+        job_name_help: Numele pe care îl va avea jobul.
+        job_name_label: Numele postului
+        log_location_help: Destinația ieșirii jurnalului jobului.
+        log_location_label: Locația jurnalului
+        no_more_options: Nu mai există opțiuni
+        nodes_help: Pe câte noduri va rula jobul.
+        nodes_label: Noduri
+        queues_help: Și în ce coadă va fi trimisă lucrarea.
+        queues_label: Cozi
+      module_browser:
+        copied: Copiat!
+        copy: Copie
+        showing_results:
+          one: Se afișează rezultatul %{count}
+          other: Se afișează rezultatele %{count}
+      nsf_access:
+        affected_resources: 'Resurse afectate: %{resources}'
+        read_more: Citeşte mai mult
+        register_event: Înregistrează-te pentru acest eveniment
+      path_selector:
+        directory_loaded: Director încărcat cu elemente %{count}
+        invalid_regex: Expresia regulată furnizată pentru acest selector de cale nu s-a compilat.
+        loading_directory: Se încarcă conținutul directorului
+        permission_denied_prefix: 'Acces refuzat: '
+      popovers:
+        ihpc_content: O sesiune HPC interactivă vă oferă acces dedicat la unul sau mai multe noduri din cluster. Aceasta este similară cu o sesiune interactivă în lot, cu un desktop accesibil pe nodul principal. Folosiți această opțiune pentru sarcini grele, cum ar fi sarcini de calcul de lungă durată sau acolo unde aveți nevoie de resurse dedicate.
+        vdi_content: O interfață VDI (Virtual Desktop Interface) vă oferă acces desktop la un nod partajat. Aceasta este versiunea grafică a unui nod de conectare. Folosiți-o pentru sarcini ușoare, cum ar fi accesarea și vizualizarea fișierelor, trimiterea de joburi și pentru vizualizări.
+      products:
+        fatal_error: A apărut o eroare fatală
+        no_action: nicio acțiune
+      projects:
+        undetermined_size: Dimensiune nedeterminată
+      support_ticket:
+        delete_attachment: Ștergeți atașamentul
+        no_file_selected: Niciun fișier selectat
+        selected_file: 'Fișier selectat: %{name} (%{size}).'
+        size_bytes: '%{size}octeți'
+        size_kb: '%{size}KB'
+        size_mb: '%{size}MB'
+      turbo_shim:
+        unauthenticated: Această pagină nu se poate actualiza deoarece nu mai sunteți autentificat. Vă rugăm să actualizați pagina pentru a vă conecta din nou.
+        unexpected_error: Această pagină a întâmpinat o eroare neașteptată. Vă rugăm să reîmprospătați pagina.
+      utils:
+        loading: Încărcare.
+        loading_complete: Încărcare completă.
+        popup_blocked: Acest link este configurat să se deschidă într-o fereastră nouă, dar se pare că nu s-a deschis. Vă rugăm să dezactivați blocarea ferestrelor pop-up pentru această pagină și să încercați din nou.
+      workflows:
+        begin_from_launcher: Începeți fluxul de lucru din programul de lansare %{title}
+        bidirectional_not_allowed: Nu sunt permise muchii bidirecționale.
+        cyclic_dependency: Adăugarea acestei avantaje va crea o dependență ciclică între lansatoare.
+        edge_aria_label: Muchie de la %{from} la %{to}
+        launcher_aria_label: 'Lansator: %{title}'
+        launcher_exists: Lansatorul există deja, vă rugăm să selectați un alt lansator
+        load_launcher_failed: Nu s-a putut încărca HTML-ul lansatorului. Vă rugăm să încercați din nou.
+        no_empty_cells: Nu sunt disponibile celule goale în grilă!
+        save_failed: Fluxul de lucru nu a putut fi salvat. Consultați consola pentru detalii.
+        select_launcher: Selectați un lansator
+      xdmod:
+        analytics_toggle: Comutare analiză
+        column_date: Data
+        column_id: ID-ul
+        column_name: Nume
+        date_range: '%{from} către %{to}'
+        efficiency_report: Raport de eficiență %{unit}
+        ensure_logged_in_html: '%{error} Asigurați-vă că sunteți <a href="%{url}">conectat la Open XDMoD mai întâi</a> și apoi încercați din nou.'
+        expand_analytics_title: Faceți clic pentru a extinde informațiile analitice despre jobul %{id} deasupra acestui tabel.
+        fetch_user_failed: Încercarea de a prelua informațiile curente despre utilizatorul din Open XDMoD a eșuat.
+        idp_redirect_failed: 'Conectare eșuată: Redirecționarea IDP a eșuat'
+        iframe_error: iFrame-ul de conectare XDMoD la adresa URL %{url} a postat un mesaj de eroare cu informațiile %{info}
+        inefficient_of_total_html: <span class="text-danger">%{bad} ineficient %{unit} </span> ⁄ %{total} total %{unit}
+        invalid_job_data: Datele de job returnate de solicitare sunt nevalide.
+        loading_caps: ÎNCĂRCARE...
+        login_page_load_failed: 'Conectare eșuată: Nu s-a putut încărca pagina de conectare XDMoD'
+        login_timeout: 'Conectare eșuată: Expirare timp de așteptare pentru finalizarea conectării'
+        metric_cpu: CPU
+        metric_mem: Mem
+        metric_walltime: Walltime
+        no_data: Nu sunt disponibile date.
+        not_available: N / A
+        open_xdmod: Deschide XDMoD
+        percent_efficient: '%{percent}% eficiență'
+        percent_efficient_aria: procent de eficiență
+        percent_inefficient: '%{percent}% ineficient'
+        percent_inefficient_aria: procent ineficient
+        recently_completed_jobs: Locuri de muncă finalizate recent
+        unit_core_hours: ore de bază
+        unit_core_hours_title: Ore de bază
+        unit_jobs: locuri de muncă
+        unit_jobs_title: Locuri de muncă
+    launch: Lansa
+    load_report: Încărcare raport + %{node}
+    loading: Încărcare...
+    loading_short: Încărcare
+    locale_name: Română (România)
+    logo_alt_text: Bun venit la Open OnDemand
+    logout_body_html: <strong>Trebuie să închideți complet browserul</strong> pentru ca procesul de „deconectare” să aibă loc. Dacă după redeschiderea browserului sunteți încă conectat, vă rugăm să ștergeți modulele cookie. Dacă utilizați un Chromebook sau un Chromebox, va trebui să reporniți dispozitivul pentru a „închide browserul” și, prin urmare, a vă „deconecta”.
+    logout_tip_html: '<strong>Sfat: Utilizarea unei ferestre „mod de navigare privată”</strong> în timp ce utilizați OnDemand este o modalitate excelentă de a gestiona „deconectarea automată”, deoarece închiderea ferestrei browserului va elimina toate cookie-urile asociate și informațiile despre sesiune.'
+    logout_title: Nu ești încă deconectat/ă
+    maximum: Maxim
+    mem_report: Raport de memorie + %{node}
+    minimum: Minim
+    mode: Mod
+    module_browser_available_modules: 'Module disponibile:'
+    module_browser_copy_aria: Comanda de încărcare pentru copierea comenzii %{name}
+    module_browser_dependencies: 'Dependențe:'
+    module_browser_last_updated: 'Ultima actualizare: %{last_updated}'
+    module_browser_load_command: 'Comandă de încărcare:'
+    module_browser_search_label: Module de căutare
+    module_browser_search_placeholder: Căutare după numele modulului...
+    module_browser_select_version: (selectați versiunea)
+    module_browser_showing_results: Se afișează rezultatele %{count}
+    module_browser_title: Navigator de module
+    module_browser_versions: Versiuni
+    motd_default_md: 'Dezvoltarea Open OnDemand este susținută prin intermediul [Fundației Naționale pentru Știință](https://www.nsf.gov/)
+
+      prin granturile numere [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) și
+
+      [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725).
+
+
+      Aflați mai multe sau implicați-vă:
+
+
+      - [Discourse](https://discourse.openondemand.org/)
+
+      - [Depozit Open OnDemand](https://github.com/OSC/ondemand)
+
+      - [Depozit ood-core](https://github.com/OSC/ood_core)
+
+      - [Documentație](https://osc.github.io/ood-documentation/latest/)
+
+      '
+    motd_erb_render_error: 'MOTD nu a fost analizat sau redat corect: %{error_message}'
+    motd_no_messages: Nu există mesaje noi.
+    motd_title: Mesajul zilei
+    name: Nume
+    nav_all_apps: Toate aplicațiile
+    nav_develop_docs: Documentație pentru dezvoltatori
+    nav_develop_my_sandbox_apps_dev: Aplicațiile mele Sandbox (Dezvoltare)
+    nav_develop_my_sandbox_apps_prod: Aplicațiile mele partajate (Producție)
+    nav_develop_title: Dezvolta
+    nav_help_change_password: Schimbați parola HPC
+    nav_help_custom: Ajutor de navigare personalizat
+    nav_help_docs: Documentație online
+    nav_help_support: Contactați asistența
+    nav_help_support_ticket: Trimiteți un tichet de asistență
+    nav_help_title: Ajutor
+    nav_help_two_factor: Configurați autentificarea cu doi factori
+    nav_language: Limbă
+    nav_limit_caption: se afișează %{subset_count} din %{total_count}
+    nav_logout: Deconectare
+    nav_main_menu: Meniu principal
+    nav_restart_server: Reporniți serverul web
+    nav_sessions: Sesiunile mele interactive
+    nav_toggle_navigation: Comutare navigare
+    nav_user: Conectat ca %{username}
+    network_report: Raport de rețea + %{node}
+    node: Nodul
+    none: Nici unul
+    not_grouped: Alte aplicații
+    nsf_access_announcements: Anunțuri NSF ACCESS
+    nsf_access_events: Evenimente NSF ACCESS
+    nsf_access_outages: Întreruperi ale serviciului NSF ACCESS
+    ok: Bine
+    opens_in_new_tab: se deschide într-o filă nouă
+    output_location: 'Locația de ieșire:'
+    owner: Proprietar
+    page_actions_aria: Acțiuni pe pagină
+    page_title: '%{page} - %{site}'
+    page_title_with_dir: '%{page} - %{site} - %{dir}'
+    parameters: Parametri
+    path_selector_breadcrumb_aria: '%{title} Breadcrumb'
+    path_selector_caption: Alegeți un fișier sau un director de utilizat în formular.
+    path_selector_default_popup_title: Selectați directorul de lucru
+    path_selector_home: acasă
+    path_selector_parent_directory: directorul părinte
+    permissions_created: Permisiunea a fost creată cu succes.
+    permissions_destroyed: Permisiunea a fost distrusă cu succes.
+    permissions_group_title: Permisiuni de grup
+    permissions_user_title: Permisiuni utilizator
+    pinned_apps_caption_html: Un subset recomandat al <a href="%{all_apps_url}">tuturor aplicațiilor disponibile</a>
+    pinned_apps_category: Aplicații
+    pinned_apps_title: Aplicații fixate
+    products_created: Produsul a fost creat cu succes.
+    products_git_commit_hint_html: Vă rugăm să confirmați orice modificări sau să adăugați fișierele necesare în <code>.gitignore</code>
+    products_git_staged: pus în scenă
+    products_git_status: Starea Git
+    products_git_unstaged: Neprezentat
+    products_git_untracked: Neurmărit
+    products_manifest_save_error: Nu se poate salva manifestul aplicației în %{path}
+    products_ssh_key_created: Cheia SSH a fost creată cu succes.
+    products_ssh_key_exists: Cheia SSH există deja
+    products_ssh_key_failed: 'Cheia SSH nu a putut fi creată: %{error}'
+    products_type_batch_connect: Aplicația Batch Connect
+    products_type_passenger: Aplicația pentru pasageri
+    products_type_passenger_meteor: Aplicația Meteor pentru pasageri
+    products_type_passenger_node: Aplicația Nod Pasager
+    products_type_passenger_rack: Aplicația Rack pentru pasageri
+    products_type_passenger_rails: Aplicația Pasager Rails
+    products_type_passenger_rails_sqlite: Aplicație pentru căi ferate de pasageri cu bază de date SQLite
+    products_type_passenger_wsgi: Aplicația WSGI pentru pasageri
+    products_updated: Produsul a fost actualizat cu succes.
+    project: Proiect
+    project_balances: Solduri de proiect
+    project_directory: Directorul de proiect
+    project_zip_error_message: 'Eroare la crearea fișierului ZIP: %{error}'
+    project_zip_success_message: 'Succes: fișierul project.zip a fost creat în directorul proiectului.'
+    queue: Coadă
+    quota_additional_message: Luați în considerare ștergerea sau arhivarea fișierelor pentru a elibera spațiu pe disc.
+    quota_block: Folosind %{used} din cota %{available}
+    quota_block_shared: (%{used_exclusive} sunt ai tăi)
+    quota_file: Utilizarea fișierelor %{used} cu cotă %{available}
+    quota_file_shared: (Fișierele %{used_exclusive} sunt ale tale)
+    quota_message: '%{quota}. %{additional_message}'
+    quota_reload_message: Reîncărcați pagina pentru a vedea cota actualizată. Cotele sunt actualizate la fiecare 5 minute.
+    quota_warning_prefix_html: Avertisment privind limita de cotă pentru
+    recently_used_apps_title: Aplicații utilizate recent
+    remove: Elimina
+    reset: Resetare
+    restart_msg_html: 'Apartenența la grupul dvs. s-a modificat, ceea ce vă afectează accesul la aplicații. Tabloul de bord ar trebui să repornească automat.
+
+
+      Dacă nu repornește, faceți clic pe: <a href="%{restart_url}">reporniți serverul web</a>.'
+    restore: Restabili
+    root: Rădăcină
+    save: Salva
+    saved_settings_title: Setări salvate
+    select: Selecta
+    select_all: Selectați tot
+    select_path: Selectați calea
+    select_path_for: '%{element} selectați calea
+
+      '
+    settings_csrf_expired: Tokenul de securitate al sesiunii a expirat. Vă rugăm să încercați din nou acțiunea.
+    settings_invalid_request: Setări nevalide trimise
+    settings_unprocessable_body_html: Este posibil ca sesiunea dvs. să fi expirat sau modificarea dorită să fi fost respinsă. Vă rugăm să <a href="%{dashboard_url}">reveniți la Panoul de control</a> și să încercați din nou.
+    settings_unprocessable_title: Sesiune expirată sau modificare respinsă
+    settings_updated: Setările au fost actualizate
+    shared_apps_caption: Distribuit de %{owner_title} (%{owner})
+    shared_apps_caption_short: Distribuit de %{owner}
+    shared_apps_title: Aplicații partajate
+    sharing_catalog_msg_html: <br>Un subset al aplicațiilor disponibile poate fi vizualizat pe %{catalog_link_tag}.
+    sharing_catalog_title: Catalogul de aplicații
+    sharing_no_shared_apps_html: <strong>Nu sunt disponibile aplicații personalizate partajate.</strong>
+    sharing_support_msg_html: 'Dacă nu găsiți aplicația pe care o căutați, vă rugăm să
+
+      <a href="%{support_url}">contactați serviciul de asistență</a>.'
+    sharing_welcome_msg_html: 'Aplicațiile de acces la cluster sunt disponibile din meniurile derulante din bara de navigare de mai sus.
+
+
+      <br>Aplicațiile partajate personalizate sunt disponibile mai jos.'
+    shell: Coajă
+    shell_app_title: '%{cluster_title} Shell Access'
+    show: Spectacol
+    size: Dimensiune
+    skip_navigation: Sari peste navigare
+    smart_attributes:
+      account: Cont
+      auto_modules_none: Module automate (nu este specificat niciunul)
+      cluster: Cluster
+      cores: Nuclee
+      email_on_started: Aș dori să primesc un e-mail când începe sesiunea
+      environment_variable: Variabilă de mediu
+      environment_variable_key: 'Variabilă de mediu: %{key}'
+      job_name: Numele postului
+      module_version: Versiunea %{module}
+      num_cpus_single_node: Numărul de procesoare pe un singur nod
+      num_hours: Număr de ore
+      num_nodes: Numărul de noduri
+      num_processors: Numărul de procesoare
+      partition: Partiție
+      qos: QoS
+      queue: Coadă
+      script: Script
+      vnc_idle_help: 'Ieșire dacă trec # secunde fără nicio conexiune la vizualizatorul VNC'
+      vnc_idle_label: Timp de așteptare pentru inactivitate
+      vnc_resolution_help: Rezoluția este utilizată doar de conexiunile VNC native
+      vnc_resolution_label: Rezoluţie
+    soft_tabs: File moi
+    soft_tabs_info: Tabulările software sunt spații în fișier în loc de caractere de tabulare propriu-zise.
+    status: Stare
+    status_completed: Finalizat
+    status_held: A avut loc
+    status_hold: Așteptați
+    status_queued: În coadă
+    status_running: Funcţionare
+    status_starting: Pornire
+    status_suspend: Suspenda
+    status_suspended: Suspendat
+    status_undetermined: Nedeterminat
+    stop: Stop
+    submit: Trimite
+    submit_args: 'Trimiteți argumente:'
+    support_ticket:
+      creation_success: 'E-mailul pentru tichetul de asistență a fost trimis la: %{to}'
+      fields:
+        attachments: Atașamente
+        cc: CC
+        description: Descriere
+        email: E-mail
+        job_description: Descrierea postului
+        session_description: Descrierea sesiunii
+        subject: Subiect
+        username: Nume de utilizator
+      generic_error: 'A apărut o eroare la procesarea solicitării dvs.: %{error}'
+      header: Tichet de asistență
+      rt:
+        creation_success: 'Tichet de asistență creat în sistemul RequestTracker. ID-ul tichetului: %{ticket_id}'
+      servicenow:
+        attachments_failure: 'Tichet de asistență creat în ServiceNow. Număr: %{number}. Dar nu se pot adăuga atașamentele.'
+        creation_success: 'Tichet de asistență creat în ServiceNow. Număr: %{number}'
+      submit: Trimiteți un tichet de asistență
+      title: Tichet de asistență
+      validation:
+        attachments_items: '%{id} sunt invalide. %{items} a fost adăugat, numărul maxim de atașamente este %{max}.'
+        attachments_size: '%{id} sunt invalide. Dimensiunea maximă a atașamentului este %{max}'
+        email: Formatul %{id} este invalid. Se aștepta o adresă de e-mail validă.
+        items:
+          attachments_js: Nu mai sunt permise atașamente
+        required: '%{id} este obligatoriu'
+        size:
+          attachments_js: Dimensiunea maximă a atașamentului este %{max}. Dimensiunea fișierului selectat este %{size}.
+      validation_error: Cerere nevalidă. Vă rugăm să consultați mesajele de eroare de mai jos.
+    support_ticket_add_attachment: Adăugați atașament
+    support_ticket_attachments_help: Bifați caseta pentru a atașa un fișier. Capturile de ecran sau alte fișiere vă pot ajuta să depanați problema.
+    system_apps_caption: Aplicație instalată de sistem
+    system_status_available: '%{name} Disponibil: %{count}'
+    system_status_cluster_title: '%{title} Starea clusterului'
+    system_status_gpus: GPU-uri
+    system_status_in_use: '%{percent} în uz'
+    system_status_jobs_queued: Locuri de muncă în coadă
+    system_status_jobs_queued_count: '%{count} Joburi în coadă'
+    system_status_jobs_running: Locuri de muncă care rulează
+    system_status_jobs_running_count: '%{count} Lucrări în desfășurare'
+    system_status_nodes: Noduri
+    system_status_not_slurm: Informațiile despre cluster nu sunt disponibile cu %{scheduler}. În prezent, sunt acceptate doar clustere Slurm.
+    system_status_processors: Procesoare
+    toggle_notifications: Comutare notificări
+    toggle_push_notifications: Comutare notificări push
+    type: Tip
+    undefined_title: Titlu nedefinit
+    unknown: Necunoscut
+    uppy:
+      strings:
+        addMore: Adăugați mai multe
+        addMoreFiles: Adăugați mai multe fișiere
+        addingMoreFiles: Adăugarea mai multor fișiere
+        back: Spate
+        browseFiles: răsfoiește fișierele
+        browseFolders: răsfoiește folderele
+        cancel: Anula
+        cancelUpload: Anulează încărcarea
+        closeModal: Închideți modalul
+        complete: Complet
+        dashboardTitle: Încărcător de fișiere
+        dashboardWindowTitle: Fereastra Încărcător fișiere (Apăsați tasta Escape pentru a închide)
+        done: Făcut
+        dropHint: Plasați fișierele aici
+        dropPasteBoth: Plasați fișierele aici, %{browseFiles} sau %{browseFolders}
+        dropPasteFiles: Plasați fișierele aici sau %{browseFiles}
+        dropPasteFolders: Plasați fișierele aici sau %{browseFolders}
+        editFile: Editați fișierul
+        editing: Editare %{file}
+        emptyFolderAdded: Nu au fost adăugate fișiere dintr-un folder gol
+        error: Eroare
+        exceedsSize: '%{file} depășește dimensiunea maximă permisă de %{size}'
+        failedToUpload: Nu s-a putut încărca %{file}
+        folderAlreadyAdded: Folderul „%{folder}” a fost deja adăugat
+        myDevice: Dispozitivul meu
+        noDuplicates: Nu se poate adăuga fișierul duplicat „%{fileName}”, acesta există deja.
+        pause: Pauză
+        pauseUpload: Întrerupeți încărcarea
+        paused: Întrerupt
+        removeFile: Eliminați fișierul
+        resume: Relua
+        resumeUpload: Reluați încărcarea
+        retry: Reîncercați
+        retryUpload: Reîncercați încărcarea
+        save: Salva
+        saveChanges: Salvați modificările
+        showErrorDetails: Afișați detaliile erorii
+        upload: Încărcare
+        uploadComplete: Încărcare finalizată
+        uploadFailed: Încărcarea a eșuat
+        uploadPaused: Încărcarea a fost întreruptă
+        uploading: Încărcare
+        xTimeLeft: '%{time} a rămas'
+    user: Utilizator
+    user_configuration:
+      support_ticket_error: Fișierul support_ticket este configurat greșit. Vă rugăm să adăugați o implementare backend în fișierul YAML de configurare.
+    welcome_html: '%{logo_img_tag}
+
+      <p class="lead">OnDemand oferă un punct de acces unic și integrat pentru toate resursele HPC.</p>
+
+      '

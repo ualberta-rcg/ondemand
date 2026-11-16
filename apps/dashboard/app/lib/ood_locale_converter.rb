@@ -5,15 +5,101 @@ require 'json'
 require 'net/http'
 require 'uri'
 
-# Admin CLI helper for converting Open OnDemand app YAML strings and MOTD files
-# into static on-disk locale files (`<app>/locales/<locale>.yml` and `motd.<locale>`).
-#
-# Never invoked during live user PUN web requests: translations are materialized
-# once as static files on disk via `rake ood:locales:sync_apps` / `ood:locales:sync_motd`.
+# Admin CLI & auto-generation helper for converting Open OnDemand YAML catalogs,
+# app manifests/forms, and MOTD files into static on-disk locale files
+# (`config/locales/<locale>.yml`, `<app>/locales/<locale>.yml`, and `motd.<locale>`).
 class OodLocaleConverter
   TOKEN_PREFIX = '__OODTOK'
   TOKEN_SUFFIX = '__'
   DEFAULT_TRANSLATE_ENV = 'translate.env'
+  OFFLINE_STYLED_LOCALES = %w[en-gb en-hg en-cp].freeze
+
+  EN_GB_SPELLINGS = [
+    [/\bCanceled\b/, 'Cancelled'],
+    [/\bcanceled\b/, 'cancelled'],
+    [/\bCanceling\b/, 'Cancelling'],
+    [/\bcanceling\b/, 'cancelling'],
+    [/\bFavorites\b/, 'Favourites'],
+    [/\bfavorites\b/, 'favourites'],
+    [/\bFavorite\b/, 'Favourite'],
+    [/\bfavorite\b/, 'favourite'],
+    [/\bInitialize\b/, 'Initialise'],
+    [/\binitialize\b/, 'initialise'],
+    [/\bInitializing\b/, 'Initialising'],
+    [/\binitializing\b/, 'initialising'],
+    [/\bInitialized\b/, 'Initialised'],
+    [/\binitialized\b/, 'initialised'],
+    [/\bCustomize\b/, 'Customise'],
+    [/\bcustomize\b/, 'customise'],
+    [/\bCustomizing\b/, 'Customising'],
+    [/\bcustomizing\b/, 'customising'],
+    [/\bSynchronize\b/, 'Synchronise'],
+    [/\bsynchronize\b/, 'synchronise'],
+    [/\bOrganization\b/, 'Organisation'],
+    [/\borganization\b/, 'organisation'],
+    [/\bColor\b/, 'Colour'],
+    [/\bcolor\b/, 'colour'],
+    [/\bBehavior\b/, 'Behaviour'],
+    [/\bbehavior\b/, 'behaviour'],
+    [/\bAnalyze\b/, 'Analyse'],
+    [/\banalyze\b/, 'analyse']
+  ].freeze
+
+  EN_HG_TERMS = [
+    [/\bSupport Ticket\b/, 'Sub-Etha Distress Flare'],
+    [/\bsupport ticket\b/, 'Sub-Etha distress flare'],
+    [/\bInteractive Apps\b/, 'Improbability Engines'],
+    [/\bInteractive Desktop\b/, 'Heart of Gold Bridge'],
+    [/\bActive Jobs\b/, 'Deep Thought Computations'],
+    [/\bJob Composer\b/, 'Computation Composer'],
+    [/\bMy Interactive Sessions\b/, 'Active Improbability Voyages'],
+    [/\bClusters\b/, 'Galactic Sectors'],
+    [/\bCluster\b/, 'Galactic Sector'],
+    [/\bcluster\b/, 'galactic sector'],
+    [/\bShell Access\b/, 'Sub-Etha Terminal'],
+    [/\bFiles\b/, 'Guide Entries'],
+    [/\bDashboard\b/, 'The Guide'],
+    [/\bLog Out\b/, 'So Long & Thanks'],
+    [/\bLaunch\b/, 'Engage Improbability Drive:'],
+    [/\bConnect to\b/, 'Beam Aboard'],
+    [/\bSubmit\b/, 'Transmit (42)'],
+    [/\bDelete\b/, 'Vogon-Demolish'],
+    [/\bCancel\b/, 'Abort Trajectory'],
+    [/\bError\b/, 'Mildly Alarming Improbability'],
+    [/\bWarning\b/, "Don't Panic"],
+    [/\bLoading\b/, 'Consulting Deep Thought'],
+    [/\bRunning\b/, 'Computing 42'],
+    [/\bQueued\b/, 'In Vogon Queue'],
+    [/\bCompleted\b/, 'Mostly Harmless (Done)']
+  ].freeze
+
+  EN_CP_TERMS = [
+    [/\bSupport Ticket\b/, 'Fixer Trauma Ping'],
+    [/\bsupport ticket\b/, 'Fixer trauma ping'],
+    [/\bInteractive Apps\b/, 'Cyberdeck Daemons'],
+    [/\bInteractive Desktop\b/, 'Netrunner Rig'],
+    [/\bActive Jobs\b/, 'Live Icebreakers'],
+    [/\bJob Composer\b/, 'Daemon Compiler'],
+    [/\bMy Interactive Sessions\b/, 'Active Netdives'],
+    [/\bClusters\b/, 'Mainframe Subnets'],
+    [/\bCluster\b/, 'Subnet'],
+    [/\bcluster\b/, 'subnet'],
+    [/\bShell Access\b/, 'Black-ICE Console'],
+    [/\bFiles\b/, 'Datashards'],
+    [/\bDashboard\b/, 'Cyberdeck HUD'],
+    [/\bLog Out\b/, 'Jack Out'],
+    [/\bLaunch\b/, 'Breach & Spin Up'],
+    [/\bConnect to\b/, 'Jack Into'],
+    [/\bSubmit\b/, 'Upload Daemon'],
+    [/\bDelete\b/, 'Flatline'],
+    [/\bCancel\b/, 'Zero Out'],
+    [/\bError\b/, 'Black-ICE Glitch'],
+    [/\bWarning\b/, 'Relic Malfunction'],
+    [/\bLoading\b/, 'Jacking In'],
+    [/\bRunning\b/, 'Burning Chrome'],
+    [/\bQueued\b/, 'Staged in Buffer'],
+    [/\bCompleted\b/, 'Preem (Done)']
+  ].freeze
 
   def self.load_translate_env(path = nil)
     env_file = path.presence || ENV['OOD_TRANSLATE_ENV_FILE'].presence || default_translate_env_path
@@ -65,15 +151,87 @@ class OodLocaleConverter
     !@translator.nil? || !@google_api_key.empty? || !@translate_url.empty?
   end
 
+  def offline_styled_locale?(target_locale)
+    OFFLINE_STYLED_LOCALES.include?(target_locale.to_s.tr('_', '-').downcase)
+  end
+
+  def available_for?(target_locale)
+    offline_styled_locale?(target_locale) || available?
+  end
+
   # Convert a Markdown, ERB, HTML, or plain string while preserving fenced/inline
   # code, ERB `<% ... %>` tags, HTML tags, `%{var}` interpolations, and link URLs.
   def convert_text(text, target_locale:, source_locale: 'en')
-    return text if text.nil? || !available?
+    return text if text.nil? || !available_for?(target_locale)
 
     str = text.to_s
     return str if str.strip.empty?
-    return str if same_primary_language?(source_locale, target_locale)
+    return str if same_unmodified_language?(source_locale, target_locale)
 
+    working, tokens = protect_tokens(str, target_locale: target_locale, source_locale: source_locale)
+    translated = translate_raw(working, target_locale: target_locale, source_locale: source_locale)
+    return str if translated.nil?
+
+    restore_tokens(translated, tokens)
+  end
+
+  # Batch-convert an Array of strings, preserving all placeholders and HTML/code tokens.
+  def convert_texts(texts, target_locale:, source_locale: 'en', batch_size: 80)
+    list = Array(texts)
+    return list if list.empty? || !available_for?(target_locale)
+    return list.map(&:to_s) if same_unmodified_language?(source_locale, target_locale)
+
+    if offline_styled_locale?(target_locale) || @translator || !@translate_url.empty?
+      return list.map { |t| convert_text(t, target_locale: target_locale, source_locale: source_locale) }
+    end
+
+    prepared = list.map do |item|
+      s = item.to_s
+      if s.strip.empty?
+        [s, nil, []]
+      else
+        working, toks = protect_tokens(s, target_locale: target_locale, source_locale: source_locale, translate_links: false)
+        [s, working, toks]
+      end
+    end
+
+    results = Array.new(prepared.size)
+    non_empty_indices = prepared.each_index.select { |i| !prepared[i][1].nil? }
+
+    non_empty_indices.each_slice(batch_size) do |slice_idxs|
+      batch_inputs = slice_idxs.map { |i| prepared[i][1] }
+      batch_outputs = translate_batch_via_google(batch_inputs, target_locale: target_locale, source_locale: source_locale)
+      slice_idxs.each_with_index do |orig_idx, pos|
+        orig_str, _working, toks = prepared[orig_idx]
+        raw_out = batch_outputs && batch_outputs[pos]
+        results[orig_idx] = raw_out ? restore_tokens(raw_out, toks) : orig_str
+      end
+    end
+
+    prepared.each_index do |i|
+      results[i] = prepared[i][0] if results[i].nil?
+    end
+    results
+  end
+
+  # Convert MOTD content while preserving all 6 Open OnDemand MOTD formats:
+  # `plaintext`, `markdown`, `markdown_erb`, `text_erb`, `osc`, and `rss`.
+  def convert_motd(content, target_locale:, source_locale: 'en', format: ENV['MOTD_FORMAT'])
+    return content if content.nil? || !available_for?(target_locale)
+
+    case format.to_s.strip.downcase
+    when 'osc'
+      convert_osc_motd(content, target_locale: target_locale, source_locale: source_locale)
+    when 'rss'
+      convert_rss_motd(content, target_locale: target_locale, source_locale: source_locale)
+    else
+      convert_text(content, target_locale: target_locale, source_locale: source_locale)
+    end
+  end
+
+  private
+
+  def protect_tokens(str, target_locale:, source_locale:, translate_links: true)
     tokens = []
     stash = lambda do |raw|
       idx = tokens.length
@@ -82,13 +240,10 @@ class OodLocaleConverter
     end
 
     working = str.dup
-    # 1. Fenced code blocks (```...``` or ~~~...~~~)
     working.gsub!(/(?:```[\s\S]*?```|~~~[\s\S]*?~~~)/) { |m| stash.call(m) }
-    # 2. ERB tags (<% ... %>) for markdown_erb / text_erb safety
     working.gsub!(/<%[\s\S]*?%>/) { |m| stash.call(m) }
-    # 3. Inline code spans (`...`)
     working.gsub!(/`[^`\n]+`/) { |m| stash.call(m) }
-    # 4. Markdown reference link definitions (`[ref]: https://...`) + `[ref]` usages
+
     ref_ids = []
     working.gsub!(/^(\s*\[([^\[\]\n]+)\]:\s*\S+[^\n]*)/) do
       full_def = Regexp.last_match(1)
@@ -97,54 +252,31 @@ class OodLocaleConverter
     end
     ref_ids.uniq.each do |ref_id|
       working.gsub!(/\[#{Regexp.escape(ref_id)}\](?![\(\[:])/) do
-        translated_label = translate_protected_segment(ref_id, target_locale: target_locale, source_locale: source_locale)
-        if translated_label == ref_id
-          stash.call("[#{ref_id}]")
+        if translate_links
+          translated_label = translate_protected_segment(ref_id, target_locale: target_locale, source_locale: source_locale)
+          translated_label == ref_id ? stash.call("[#{ref_id}]") : stash.call("[#{translated_label}][#{ref_id}]")
         else
-          stash.call("[#{translated_label}][#{ref_id}]")
+          stash.call("[#{ref_id}]")
         end
       end
     end
-    # 5. Markdown inline links `[label](url)`: translate prose `label`, protect `(url)`
+
     working.gsub!(/\[([^\[\]\n]+)\](\([^\)\s]+(?:\s+"[^"]*")?\))/) do
       label = Regexp.last_match(1)
       url_part = Regexp.last_match(2)
-      if label.match?(%r{\Ahttps?://}i) || label.include?(TOKEN_PREFIX)
+      if !translate_links || label.match?(%r{\Ahttps?://}i) || label.include?(TOKEN_PREFIX)
         stash.call("[#{label}]#{url_part}")
       else
         translated_label = translate_protected_segment(label, target_locale: target_locale, source_locale: source_locale)
         stash.call("[#{translated_label}]#{url_part}")
       end
     end
-    # 6. HTML tags (<tag ...>)
+
     working.gsub!(/<\/?[a-zA-Z][^>\n]*>/) { |m| stash.call(m) }
-    # 7. Rails I18n placeholders (%{var}) and raw URLs
     working.gsub!(/%\{[a-zA-Z0-9_]+\}/) { |m| stash.call(m) }
     working.gsub!(%r{https?://[^\s<>)\]]+}) { |m| stash.call(m) }
-
-    translated = translate_raw(working, target_locale: target_locale, source_locale: source_locale)
-    return str if translated.nil?
-
-    restore_tokens(translated, tokens)
+    [working, tokens]
   end
-
-  # Convert MOTD content while preserving all 6 Open OnDemand MOTD formats:
-  # `plaintext`, `markdown`, `markdown_erb`, `text_erb`, `osc`, and `rss`.
-  def convert_motd(content, target_locale:, source_locale: 'en', format: ENV['MOTD_FORMAT'])
-    return content if content.nil? || !available?
-
-    case format.to_s.strip.downcase
-    when 'osc'
-      convert_osc_motd(content, target_locale: target_locale, source_locale: source_locale)
-    when 'rss'
-      convert_rss_motd(content, target_locale: target_locale, source_locale: source_locale)
-    else
-      # Covers plaintext, markdown, markdown_erb, and text_erb (ERB tags & Markdown protected)
-      convert_text(content, target_locale: target_locale, source_locale: source_locale)
-    end
-  end
-
-  private
 
   def translate_protected_segment(segment, target_locale:, source_locale:)
     seg_tokens = []
@@ -159,7 +291,6 @@ class OodLocaleConverter
 
   def restore_tokens(text, tokens)
     result = text.dup
-    # Allow minor whitespace/case adjustments around token markers from MT engines
     tokens.each_with_index do |original, idx|
       pattern = /__\s*OODTOK\s*#{idx}\s*__/i
       result.gsub!(pattern) { original }
@@ -168,7 +299,6 @@ class OodLocaleConverter
   end
 
   def convert_osc_motd(content, target_locale:, source_locale:)
-    # Preserve `******` section dividers and `YYYY/MM/DD\n--- Title\nBody` structure
     parts = content.to_s.split(/^(\*+)\s*$/)
     parts.map do |chunk|
       if chunk.match?(/\A\*+\z/)
@@ -187,7 +317,6 @@ class OodLocaleConverter
   end
 
   def convert_rss_motd(content, target_locale:, source_locale:)
-    # Translate only <title> and <description> inner text/CDATA; keep XML tags, <link>, <pubDate>, <guid> untouched
     content.to_s.gsub(/<(title|description)>([\s\S]*?)<\/\1>/i) do
       tag  = Regexp.last_match(1)
       body = Regexp.last_match(2)
@@ -203,10 +332,24 @@ class OodLocaleConverter
     end
   end
 
-  def same_primary_language?(src, dst)
+  def same_unmodified_language?(src, dst)
     s = src.to_s.tr('_', '-').downcase
     d = dst.to_s.tr('_', '-').downcase
-    s == d || (s.split('-').first == 'en' && d.split('-').first == 'en')
+    return true if s == d
+    return false if offline_styled_locale?(d)
+
+    s.split('-').first == 'en' && d.split('-').first == 'en'
+  end
+
+  def apply_offline_style(text, target_locale)
+    tag = target_locale.to_s.tr('_', '-').downcase
+    rules = case tag
+            when 'en-gb' then EN_GB_SPELLINGS
+            when 'en-hg' then EN_HG_TERMS
+            when 'en-cp' then EN_CP_TERMS
+            else []
+            end
+    rules.reduce(text.dup) { |acc, (pat, rep)| acc.gsub(pat, rep) }
   end
 
   def api_lang_code(locale)
@@ -216,6 +359,7 @@ class OodLocaleConverter
   end
 
   def translate_raw(text, target_locale:, source_locale:)
+    return apply_offline_style(text, target_locale) if offline_styled_locale?(target_locale)
     return @translator.call(text, target_locale.to_s, source_locale.to_s) if @translator
 
     if !@translate_url.empty?
@@ -229,17 +373,24 @@ class OodLocaleConverter
   end
 
   def translate_via_google(text, target_locale:, source_locale:)
+    out = translate_batch_via_google([text], target_locale: target_locale, source_locale: source_locale)
+    out&.first
+  end
+
+  def translate_batch_via_google(texts, target_locale:, source_locale:)
     uri = URI('https://translation.googleapis.com/language/translate/v2')
     uri.query = URI.encode_www_form(key: @google_api_key)
     payload = {
-      q:      text,
+      q:      texts,
       source: api_lang_code(source_locale),
       target: api_lang_code(target_locale),
       format: 'text'
     }
     res = post_json(uri, payload)
-    raw = res&.dig('data', 'translations', 0, 'translatedText')
-    raw ? CGI.unescapeHTML(raw) : nil
+    items = res&.dig('data', 'translations')
+    return nil unless items.is_a?(Array) && items.size == texts.size
+
+    items.map { |entry| entry['translatedText'] ? CGI.unescapeHTML(entry['translatedText']) : nil }
   end
 
   def translate_via_endpoint(text, target_locale:, source_locale:)
@@ -258,7 +409,7 @@ class OodLocaleConverter
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = (uri.scheme == 'https')
     http.open_timeout = 10
-    http.read_timeout = 20
+    http.read_timeout = 30
     req = Net::HTTP::Post.new(uri.request_uri, 'Content-Type' => 'application/json')
     req.body = JSON.generate(payload)
     resp = http.request(req)

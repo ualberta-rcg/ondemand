@@ -1,0 +1,5 @@
+---
+hr-HR:
+  manifest:
+    name: Aktivni poslovi
+    description: Pogledajte poslove koji se trenutno izvode na dostupnim klasterima konfiguriranim za OnDemand.

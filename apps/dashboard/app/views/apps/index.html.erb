@@ -20,7 +20,7 @@ locals: {
       <th scope="col"><%= t('dashboard.all_apps_table_category_column') %></th>
       <th scope="col"><%= t('dashboard.all_apps_table_sub_category_column') %></th>
       <%- @metadata_columns.each do |column| -%>
-      <th scope="col"><%= column.to_s.titleize %></th>
+      <th scope="col"><%= t("dashboard.all_apps_table_metadata_columns.#{column.to_s.parameterize(separator: '_')}", default: column.to_s.titleize) %></th>
       <%- end -%>
     </tr>
   </thead>

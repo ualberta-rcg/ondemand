@@ -1,0 +1,5 @@
+---
+it-IT:
+  manifest:
+    name: App File
+    description: L'app Apri file su richiesta

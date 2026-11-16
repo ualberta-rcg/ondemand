@@ -1,38 +1,133 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 zh-CN:
   jobcomposer:
-    # Site specific translations
-    options_account_help:  "帐户是一个可选字段。 如果未设置，则可以通过提交过滤器自动设置帐户。"
+    account_label: 帐户：
+    back: 后退
+    cancel: 取消
+    close: 关闭
+    cluster_label: 簇：
+    confirm_delete: 你确定吗？
+    confirm_delete_template: 您确定要删除此内容吗？
+    copy_template: 复制模板
+    create_from_path_title: 从某个路径创建新工作
+    create_new_heading_html: 创建新的“<span class="wrap-line" id="script-name-label">%{name}</span>”
+    create_new_job: 创建新职位
+    create_template: 创建模板
+    create_template_from_job_title: 从选定的作业创建模板
+    delete: 删除
+    delete_job_title: 删除职位
+    deprecation_warning_html: 作业编辑器已弃用，将在 Open OnDemand 5.0 中移除。请将您的作业和模板转移到 <a href="%{projects_path}">项目管理器</a>。
+    edit: 编辑
+    edit_files: 编辑文件
+    folder_contents_label: 文件夹内容：
+    from_default_template: 来自默认模板
+    from_default_template_title: 使用默认模板创建新职位
+    from_selected_job: 从选定的职位
+    from_selected_job_title: 复制所选作业
+    from_specified_path: 从指定路径
+    from_template: 从模板
+    from_template_title: 从您选择的模板创建新职位
+    invalid_cluster_html: 集群无效！请编辑 <a href="#" id="edit-job-options-script-link">作业选项</a> 以选择有效的集群。
+    invalid_script_html: 脚本无效！请编辑 <a href="#" id="edit-job-options-link">Job Options</a> 以选择有效的脚本。
+    job_already_submitted: 职位申请已提交。
+    job_array_request_label: 作业数组请求：
+    job_attributes_heading_html: 工作属性 <strong>（可选）</strong>
+    job_copied: 作业已成功复制。
+    job_copy_failed: 复制作业失败：%{errors}
+    job_created: 任务创建成功。
+    job_destroy_failed: 作业销毁失败：%{errors}
+    job_destroyed: 工作任务已被成功摧毁。
+    job_details: 职位详情
+    job_directory_missing: 职位目录缺失！
+    job_name_label: 职位名称：
+    job_not_submitted: 职位尚未提交。
+    job_stop_failed: 任务停止失败：%{errors}
+    job_stopped: 任务已成功停止。
+    job_submit_failed: 批处理作业提交失败：
+    job_submitted: 申请已成功提交。
+    job_updated: 作业已成功更新。
+    loading: 加载中
+    loading_job_info: 正在加载职位信息
+    nav_help: 帮助
+    nav_jobs: 工作机会
+    nav_menu_aria: 作业编辑器菜单
+    nav_templates: 模板
+    new_job: 新工作
+    new_template: 新模板
+    new_template_title: 创建新模板
+    no_clusters_alert: 没有已配置的主机允许您提交作业。请联系您的系统管理员。
+    open_dir: 打开目录
+    open_dir_in_editor: 在文件编辑器中打开目录
+    open_dir_in_file_manager: 在文件管理器中打开目录
+    open_dir_in_terminal: 在终端中打开目录
+    open_editor: 打开编辑器
+    open_selected_job_in_terminal: 在终端打开选定的职位
+    open_selected_template_in_terminal: 在终端中打开选定的模板
+    open_template_dir_in_file_manager: 在文件管理器中打开模板目录
+    open_terminal: 打开终端
+    open_xdmod: 打开 XDMoD
+    options_account_help: 帐户是一个可选字段。 如果未设置，则可以通过提交过滤器自动设置帐户。
+    options_account_title: 账户
+    options_array_help: 作业数组是可选的。例如：1-10
+    options_array_help_with_clusters: '作业数组是可选的。 OnDemand当前不支持集群的作业阵列： %{cluster_list}.
 
-    # General translations
-    options_account_title: "账户"
-    options_array_help: "作业数组是可选的。例如：1-10"
-    options_array_help_with_clusters: |
-      作业数组是可选的。 OnDemand当前不支持集群的作业阵列： %{cluster_list}.
-    options_array_title: "作业阵列规格"
-    options_cluster_title: "集群"
-    options_errors: "请修复以下错误："
-    options_name_title: "名称"
-    options_script_title: "指定作业脚本"
-    options_script_help: "作业脚本字段将忽略大于65KB的文件"
-    options_title: "作业选项"
+      '
+    options_array_title: 作业阵列规格
+    options_cluster_title: 集群
+    options_copy_environment: 复制环境
+    options_errors: 请修复以下错误：
+    options_name_title: 名称
+    options_script_help: 作业脚本字段将忽略大于65KB的文件
+    options_script_title: 指定作业脚本
+    options_title: 作业选项
+    other_valid_files: 其他有效文件
+    page_title: 作业编辑器 - %{site}
+    path_to_source_heading_html: 源路径 <strong>（必需）</strong>
+    reset: 重置
+    reset_template_fields_title: 重置字段为模板默认值
+    save: 节省
+    script_contents_label: 脚本内容：
+    script_location_label: 脚本位置：
+    script_name_form_label: 脚本名称：
+    script_name_label: 脚本名称：
+    select_cluster_prompt: 选择一个集群...
+    select_template_option: -- 选择模板 --
+    selected_template_details: 所选模板详情
+    show: 展示
+    show_batch_host_label: 批处理主机：
+    show_dir_contents_label: 目录内容：
+    show_name_label: 姓名：
+    show_staged_dir_label: 舞台导演：
+    showing_job_title: 显示职位
+    skip_navigation: 跳过导航
+    source_path_help: 输入文件系统中目录的路径。该路径下的内容将被复制到新的工作流中。
+    source_path_label: 源路径
+    specify_job_host_and_script: 指定作业主机和脚本
+    stop: 停止
+    stop_job_title: 停止工作
+    submit: 提交
+    submit_job_title: 提交职位
+    submit_script_title: 提交脚本
+    submit_to_label: 提交至：
+    suggested_files: 建议文件
+    table_created: 创建
+    table_id: ID
+    table_source: 来源
+    table_status: 地位
+    template_create_error: 创建模板时出错
+    template_error_name_unique: 必须是独一无二的。
+    template_error_path_directory: 必须指向一个目录。
+    template_error_path_missing: 不存在。
+    template_errors_heading:
+      one: '%{count} 错误导致此模板无法保存：'
+      other: '%{count} 错误导致此模板无法保存：'
+    template_label: 模板：
+    template_location_label: 模板位置：
+    template_path_blank_help: 如果留空，则会将默认作业脚本添加到您的新模板中。
+    template_path_label: 路径（模板将通过从此源路径复制文件来创建）
+    templates_subtitle: 要创建新职位，请选择要复制的模板，填写右侧的表格，然后单击“创建新职位”。
+    title: 作业编写器
+    toggle_navigation: 切换导航
+    view_files: 查看文件
+    xdmod_url_warning_message: 该任务可能要到任务完成后 24 小时才会出现在 Open XDMoD 中。
+    xdmod_url_warning_message_seconds_after_job_completion: 86400

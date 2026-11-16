@@ -1,0 +1,5 @@
+---
+sv-SE:
+  manifest:
+    name: Aktiva jobb
+    description: Visa jobb som för närvarande körs på tillgängliga kluster som konfigurerats för OnDemand.

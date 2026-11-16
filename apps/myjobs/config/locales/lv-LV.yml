@@ -1,0 +1,131 @@
+---
+lv-LV:
+  jobcomposer:
+    account_label: 'Konts:'
+    back: Atpakaļ
+    cancel: Atcelt
+    close: Aizvērt
+    cluster_label: 'Klasteris:'
+    confirm_delete: Vai esi pārliecināts?
+    confirm_delete_template: Vai tiešām vēlaties to dzēst?
+    copy_template: Kopēt veidni
+    create_from_path_title: Izveidot jaunu darbu no ceļa
+    create_new_heading_html: Izveidot jaunu "<span class="wrap-line" id="script-name-label">%{name}</span>"
+    create_new_job: Izveidot jaunu darbu
+    create_template: Izveidot veidni
+    create_template_from_job_title: Izveidot veidni no atlasītā darba
+    delete: Dzēst
+    delete_job_title: Dzēst darbu
+    deprecation_warning_html: Darba redaktors ir novecojis un tiks noņemts versijā Open OnDemand 5.0. Lūdzu, pārsūtiet savus darbus un veidnes uz <a href="%{projects_path}">Project Manager</a>.
+    edit: Rediģēt
+    edit_files: Rediģēt failus
+    folder_contents_label: 'Mapes saturs:'
+    from_default_template: No noklusējuma veidnes
+    from_default_template_title: Izveidot jaunu darbu no noklusējuma veidnes
+    from_selected_job: No atlasītā darba
+    from_selected_job_title: Kopēt atlasīto darbu
+    from_specified_path: No norādītā ceļa
+    from_template: No veidnes
+    from_template_title: Izveidojiet jaunu darbu no izvēlētas veidnes
+    invalid_cluster_html: Klasteris nav derīgs! Rediģējiet <a href="#" id="edit-job-options-script-link">Job Options</a>, lai atlasītu derīgu klasteri.
+    invalid_script_html: Skripts nav derīgs! Rediģējiet <a href="#" id="edit-job-options-link">Job Options</a>, lai atlasītu derīgu skriptu.
+    job_already_submitted: Darbs jau ir iesniegts.
+    job_array_request_label: 'Darba masīva pieprasījums:'
+    job_attributes_heading_html: Darba atribūti <strong>(pēc izvēles)</strong>
+    job_copied: Darbs tika veiksmīgi nokopēts.
+    job_copy_failed: 'Neizdevās nokopēt uzdevumu: %{errors}'
+    job_created: Darbs tika veiksmīgi izveidots.
+    job_destroy_failed: 'Neizdevās iznīcināt uzdevumu: %{errors}'
+    job_destroyed: Darbs tika veiksmīgi iznīcināts.
+    job_details: Darba informācija
+    job_directory_missing: Trūkst darba direktorijas!
+    job_name_label: 'Amata nosaukums:'
+    job_not_submitted: Darbs nav iesniegts.
+    job_stop_failed: 'Neizdevās apturēt darbu: %{errors}'
+    job_stopped: Darbs tika veiksmīgi apturēts.
+    job_submit_failed: 'Neizdevās iesniegt partijas darbu:'
+    job_submitted: Darbs ir veiksmīgi iesniegts.
+    job_updated: Darbs tika veiksmīgi atjaunināts.
+    loading: Ielādēšana
+    loading_job_info: Darba informācijas ielāde
+    nav_help: Palīdzība
+    nav_jobs: Darbs
+    nav_menu_aria: Darba sastādītāja izvēlne
+    nav_templates: Veidnes
+    new_job: Jauns darbs
+    new_template: Jauna veidne
+    new_template_title: Izveidot jaunu veidni
+    no_clusters_alert: Nav konfigurētu resursdatoru, kas ļautu iesniegt darbus. Lūdzu, sazinieties ar sistēmas administratoru.
+    open_dir: Atvērt direktoriju
+    open_dir_in_editor: Atvērt direktoriju failu redaktorā
+    open_dir_in_file_manager: Atvērt direktoriju failu pārvaldniekā
+    open_dir_in_terminal: Atvērt direktoriju terminālī
+    open_editor: Atvērt redaktoru
+    open_selected_job_in_terminal: Atvērt atlasīto darbu terminālī
+    open_selected_template_in_terminal: Atvērt atlasīto veidni terminālī
+    open_template_dir_in_file_manager: Atvērt veidņu direktoriju failu pārvaldniekā
+    open_terminal: Atvērt termināli
+    open_xdmod: Atvērt XDMoD
+    options_account_help: Konts ir neobligāts lauks. Ja tas nav iestatīts, iesniegšanas filtrs var iestatīt kontu automātiski.
+    options_account_title: Konts
+    options_array_help: Darba masīvi nav obligāti, piemēram, 1–10.
+    options_array_help_with_clusters: 'Darba masīvi nav obligāti. OnDemand pašlaik neatbalsta darba masīvus klasteriem: %{cluster_list}.'
+    options_array_title: Darba masīva specifikācija
+    options_cluster_title: Klasteris
+    options_copy_environment: Kopēt vidi
+    options_errors: Lūdzu, izlabojiet tālāk norādītās kļūdas.
+    options_name_title: Vārds
+    options_script_help: Darba skripta laukā faili, kas lielāki par 65 KB, netiek iekļauti.
+    options_script_title: Norādiet darba skriptu
+    options_title: Darba iespējas
+    other_valid_files: Citi derīgi faili
+    page_title: Darba sastādītājs — %{site}
+    path_to_source_heading_html: Ceļš uz avotu <strong>(obligāti)</strong>
+    reset: Atiestatīt
+    reset_template_fields_title: Atiestatīt laukus uz veidnes noklusējuma vērtībām
+    save: Saglabāt
+    script_contents_label: 'Skripta saturs:'
+    script_location_label: 'Skripta atrašanās vieta:'
+    script_name_form_label: 'Skripta nosaukums:'
+    script_name_label: 'Skripta nosaukums:'
+    select_cluster_prompt: Atlasiet klasteri...
+    select_template_option: -- atlasīt veidni --
+    selected_template_details: Atlasītās veidnes informācija
+    show: Rādīt
+    show_batch_host_label: 'Partijas resursdators:'
+    show_dir_contents_label: 'Kataloga saturs:'
+    show_name_label: 'Vārds:'
+    show_staged_dir_label: 'Iestudējuma režisors:'
+    showing_job_title: Rāda darbu
+    skip_navigation: Izlaist navigāciju
+    source_path_help: Ievadiet ceļu uz direktoriju failu sistēmā. Šī ceļa saturs tiks kopēts uz jaunu darbplūsmu.
+    source_path_label: Avota ceļš
+    specify_job_host_and_script: Norādiet darba resursdatoru un skriptu
+    stop: Apstāties
+    stop_job_title: Apturēt darbu
+    submit: Iesniegt
+    submit_job_title: Iesniegt darbu
+    submit_script_title: Iesniegt skriptu
+    submit_to_label: 'Iesniegt uz:'
+    suggested_files: Ieteiktais(-ie) fails(-i)
+    table_created: Izveidots
+    table_id: ID
+    table_source: Avots
+    table_status: Statuss
+    template_create_error: kļūda, veidojot veidni
+    template_error_name_unique: jābūt unikālam.
+    template_error_path_directory: jānorāda uz direktoriju.
+    template_error_path_missing: neeksistē.
+    template_errors_heading:
+      one: '%{count} kļūda neļāva saglabāt šo veidni:'
+      other: '%{count} kļūdas neļāva saglabāt šo veidni:'
+    template_label: 'Veidne:'
+    template_location_label: 'Veidnes atrašanās vieta:'
+    template_path_blank_help: Ja atstāsiet tukšu, jūsu jaunajai veidnei tiks pievienots noklusējuma darba skripts.
+    template_path_label: Ceļš (veidne tiks izveidota, kopējot failus no šī avota ceļa)
+    templates_subtitle: Lai izveidotu jaunu darbu, atlasiet kopējamo veidni, aizpildiet veidlapu labajā pusē un noklikšķiniet uz "Izveidot jaunu darbu".
+    title: Darba sastādītājs
+    toggle_navigation: Pārslēgt navigāciju
+    view_files: Skatīt failus
+    xdmod_url_warning_message: Šis darbs var neparādīties Open XDMoD 24 stundas pēc tā pabeigšanas.
+    xdmod_url_warning_message_seconds_after_job_completion: 86400
