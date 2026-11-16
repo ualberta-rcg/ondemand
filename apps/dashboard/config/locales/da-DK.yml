@@ -10,7 +10,7 @@ da-DK:
   dashboard:
     account: Konto
     actions: Handlinger
-    active_jobs: Aktive job
+    active_jobs: Aktive jobs
     active_jobs_close_details: Luk panelet med udvidede oplysninger.
     active_jobs_detail:
       account: Konto
@@ -210,7 +210,7 @@ da-DK:
       title: Gemte indstillinger
     breadcrumb_aria: Brødkrumme
     breadcrumbs_all_apps: Alle apps
-    breadcrumbs_home: Hjem
+    breadcrumbs_home: Startside
     breadcrumbs_my_sessions: Mine interaktive sessioner
     breadcrumbs_support_ticket: Supportanmodning
     browser_warning: OnDemand kræver en nyere version af den browser, du bruger. Nuværende browserkrav inkluderer IE Edge, Firefox 19+, Chrome 34+ og Safari 8+.
@@ -221,14 +221,14 @@ da-DK:
       clusters: Klynger
       data_science: Datavidenskab
       desktop: Skrivebord
-      desktops: Stationære computere
+      desktops: Skrivebord
       development: Udvikling
       external_apps: Eksterne apps
       files: Filer
       gateway_apps: Gateway-apps
       guis: GUI'er
-      interactive_apps: Interaktive apps
-      jobs: Job
+      interactive_apps: Interaktive applikationer
+      jobs: Jobs
       machine_learning: Maskinlæring
       mathematics: Matematik
       servers: Servere
@@ -381,7 +381,7 @@ da-DK:
     jobs_project_job_not_deleted: Kan ikke slette jobbet %{job_id}
     jobs_project_job_stopped: Jobbet er stoppet med succes %{job_id}
     jobs_project_list_aria: Projektliste
-    jobs_project_manager: Projektleder
+    jobs_project_manager: Projektstyring
     jobs_project_manifest_updated: Projektmanifest opdateret!
     jobs_project_name_placeholder: Projektnavn
     jobs_project_name_validation: Projektnavnet må kun indeholde bogstaver, cifre, bindestreger, understregninger og mellemrum

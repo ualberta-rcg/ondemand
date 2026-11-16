@@ -1,7 +1,7 @@
 ---
 zh-CN:
   manifest:
-    name: 桌面
+    name: 交互式桌面
     description: '此应用程序将在一个或多个计算节点上启动交互式桌面。
 
 

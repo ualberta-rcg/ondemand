@@ -10,7 +10,7 @@ lv-LV:
   dashboard:
     account: Konts
     actions: Darbības
-    active_jobs: Aktīvie darbi
+    active_jobs: Aktīvie uzdevumi
     active_jobs_close_details: Aizvērt paplašināto informācijas paneli.
     active_jobs_detail:
       account: Konts
@@ -249,14 +249,14 @@ lv-LV:
       clusters: Klasteri
       data_science: Datu zinātne
       desktop: Darbvirsma
-      desktops: Galddatori
+      desktops: Darbvirsma
       development: Attīstība
       external_apps: Ārējās lietotnes
       files: Faili
       gateway_apps: Gateway lietotnes
       guis: GUI
-      interactive_apps: Interaktīvas lietotnes
-      jobs: Darbs
+      interactive_apps: Interaktīvās lietotnes
+      jobs: Uzdevumi
       machine_learning: Mašīnmācīšanās
       mathematics: Matemātika
       servers: Serveri
@@ -409,7 +409,7 @@ lv-LV:
     jobs_project_job_not_deleted: Nevar izdzēst darbu %{job_id}
     jobs_project_job_stopped: Uzdevums %{job_id} veiksmīgi apturēts
     jobs_project_list_aria: Projektu saraksts
-    jobs_project_manager: Projektu vadītājs
+    jobs_project_manager: Projektu pārvaldnieks
     jobs_project_manifest_updated: Projekta manifests atjaunināts!
     jobs_project_name_placeholder: Projekta nosaukums
     jobs_project_name_validation: Projekta nosaukumā drīkst būt tikai burti, cipari, domuzīmes, pasvītras un atstarpes.

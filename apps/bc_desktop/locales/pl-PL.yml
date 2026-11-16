@@ -1,7 +1,7 @@
 ---
 pl-PL:
   manifest:
-    name: Pulpit
+    name: Pulpit interaktywny
     description: 'Ta aplikacja uruchomi interaktywny pulpit na jednym lub kilku węzłach obliczeniowych. Będziesz mieć pełny dostęp do zasobów udostępnianych przez te węzły. Jest to analogiczne do interaktywnego zadania wsadowego.
 
       '

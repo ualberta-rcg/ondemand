@@ -1,5 +1,5 @@
 ---
 ro-RO:
   manifest:
-    name: Compositor de locuri de muncă
+    name: Compozitor de joburi
     description: Composerul de joburi permite crearea și trimiterea de joburi în lot

@@ -1,7 +1,7 @@
 ---
 es-ES:
   manifest:
-    name: De oficina
+    name: Escritorio interactivo
     description: Esta aplicación iniciará un escritorio interactivo en uno o más nodos de computación. Tendrás acceso completo a los recursos que estos nodos proporcionan. Esto es similar a un trabajo por lotes interactivo.
   form:
     attributes:

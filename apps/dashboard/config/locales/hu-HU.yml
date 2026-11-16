@@ -10,7 +10,7 @@ hu-HU:
   dashboard:
     account: Fiók
     actions: Műveletek
-    active_jobs: Aktív állások
+    active_jobs: Aktív feladatok
     active_jobs_close_details: Bővített részletek panel bezárása
     active_jobs_detail:
       account: Fiók
@@ -234,7 +234,7 @@ hu-HU:
       title: Mentett beállítások
     breadcrumb_aria: Navigációs morzsa
     breadcrumbs_all_apps: Minden alkalmazás
-    breadcrumbs_home: Otthon
+    breadcrumbs_home: Kezdőlap
     breadcrumbs_my_sessions: Interaktív foglalkozásaim
     breadcrumbs_support_ticket: Támogatási jegy
     browser_warning: 'Az OnDemand használatához a használt böngésző újabb verziójára van szükség. A jelenlegi böngészőkövetelmények a következők: IE Edge, Firefox 19+, Chrome 34+, Safari 8+.'
@@ -244,15 +244,15 @@ hu-HU:
       bioinformatics: Bioinformatika
       clusters: Klaszterek
       data_science: Adattudomány
-      desktop: Asztali
-      desktops: Asztali számítógépek
+      desktop: Asztal
+      desktops: Asztal
       development: Fejlesztés
       external_apps: Külső alkalmazások
       files: Fájlok
       gateway_apps: Gateway alkalmazások
       guis: grafikus felhasználói felületek
       interactive_apps: Interaktív alkalmazások
-      jobs: Állások
+      jobs: Feladatok
       machine_learning: Gépi tanulás
       mathematics: Matematika
       servers: Szerverek
@@ -405,7 +405,7 @@ hu-HU:
     jobs_project_job_not_deleted: 'Nem lehet törölni a következő feladatot: %{job_id}'
     jobs_project_job_stopped: A feladat sikeresen leállítva %{job_id}
     jobs_project_list_aria: Projektlista
-    jobs_project_manager: Projektmenedzser
+    jobs_project_manager: Projektkezelő
     jobs_project_manifest_updated: Projekt manifeszt frissítve!
     jobs_project_name_placeholder: Projekt neve
     jobs_project_name_validation: A projekt neve csak betűket, számjegyeket, kötőjeleket, aláhúzásjeleket és szóközöket tartalmazhat.
@@ -710,7 +710,7 @@ hu-HU:
     module_browser_search_placeholder: Keresés modulnév alapján...
     module_browser_select_version: (válasszon verziót)
     module_browser_showing_results: '%{count} találat megjelenítése'
-    module_browser_title: Modul böngésző
+    module_browser_title: Modulböngésző
     module_browser_versions: Verziók
     motd_default_md: 'Az Open OnDemand fejlesztését a [National Science Foundation](https://www.nsf.gov/) támogatja a [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) és [1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) pályázati számok alatt.
 

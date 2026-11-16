@@ -10,7 +10,7 @@ de-DE:
   dashboard:
     account: Konto
     actions: Aktionen
-    active_jobs: Aktive Stellenangebote
+    active_jobs: Aktive Jobs
     active_jobs_close_details: Erweitertes Detailfenster schließen.
     active_jobs_detail:
       account: Konto
@@ -265,7 +265,7 @@ de-DE:
       title: Gespeicherte Einstellungen
     breadcrumb_aria: Brotkrumen
     breadcrumbs_all_apps: Alle Apps
-    breadcrumbs_home: Heim
+    breadcrumbs_home: Startseite
     breadcrumbs_my_sessions: Meine interaktiven Sitzungen
     breadcrumbs_support_ticket: Support-Ticket
     browser_warning: 'OnDemand erfordert eine neuere Version Ihres Browsers. Aktuelle Browservoraussetzungen sind: Internet Explorer Edge, Firefox 19+, Chrome 34+ und Safari 8+.'
@@ -276,13 +276,13 @@ de-DE:
       clusters: Cluster
       data_science: Datenwissenschaft
       desktop: Desktop
-      desktops: Desktop-Computer
+      desktops: Desktop
       development: Entwicklung
       external_apps: Externe Apps
       files: Dateien
       gateway_apps: Gateway-Apps
       guis: GUIs
-      interactive_apps: Interaktive Apps
+      interactive_apps: Interaktive Anwendungen
       jobs: Jobs
       machine_learning: Maschinelles Lernen
       mathematics: Mathematik
@@ -436,7 +436,7 @@ de-DE:
     jobs_project_job_not_deleted: Auftrag %{job_id} kann nicht gelöscht werden
     jobs_project_job_stopped: Job %{job_id} erfolgreich beendet
     jobs_project_list_aria: Projektliste
-    jobs_project_manager: Projektmanager
+    jobs_project_manager: Projektverwaltung
     jobs_project_manifest_updated: Projektmanifest aktualisiert!
     jobs_project_name_placeholder: Projektname
     jobs_project_name_validation: Der Projektname darf nur Buchstaben, Ziffern, Bindestriche, Unterstriche und Leerzeichen enthalten.

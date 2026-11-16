@@ -1,5 +1,5 @@
 {
-  "page_title": "Školjka - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Izbornik ljuske",
   "host_label": "Domaćin: %{host}",
   "initial_directory": "Početni direktorij: %{dir}",

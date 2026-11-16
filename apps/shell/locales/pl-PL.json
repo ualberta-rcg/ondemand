@@ -1,5 +1,5 @@
 {
-  "page_title": "Muszla - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Menu powłoki",
   "host_label": "Gospodarz: %{host}",
   "initial_directory": "Katalog początkowy: %{dir}",

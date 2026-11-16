@@ -1,5 +1,5 @@
 ---
 nl-NL:
   manifest:
-    name: osc-editor
+    name: Bestandseditor
     description: Een teksteditor voor bestanden op OSC-systemen.

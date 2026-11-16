@@ -1,5 +1,5 @@
 {
-  "page_title": "Apvalkalas - %{siteTitle}",
+  "page_title": "Terminalas (Shell) - %{siteTitle}",
   "menu_aria": "Apvalkalo meniu",
   "host_label": "Pagrindinis kompiuteris: %{host}",
   "initial_directory": "Pradinis katalogas: %{dir}",

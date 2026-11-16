@@ -16,7 +16,7 @@ it-IT:
     create_template_from_job_title: Crea un modello dal lavoro selezionato
     delete: Eliminare
     delete_job_title: Elimina lavoro
-    deprecation_warning_html: Il Job Composer è obsoleto e verrà rimosso in Open OnDemand 5.0. Si prega di trasferire i job e i modelli al Project Manager <a href="%{projects_path}">OODTOK1__.
+    deprecation_warning_html: Il Job Composer è obsoleto e verrà rimosso in Open OnDemand 5.0. Si prega di trasferire i job e i modelli al Project Manager <a href="%{projects_path}"></a>.
     edit: Modificare
     edit_files: Modifica file
     folder_contents_label: 'Contenuto della cartella:'

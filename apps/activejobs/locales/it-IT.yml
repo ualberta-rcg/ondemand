@@ -1,5 +1,5 @@
 ---
 it-IT:
   manifest:
-    name: Offerte di lavoro attive
+    name: Job attivi
     description: Visualizza i processi attualmente in esecuzione sui cluster disponibili configurati per OnDemand.

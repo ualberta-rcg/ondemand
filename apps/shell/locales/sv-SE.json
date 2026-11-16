@@ -1,5 +1,5 @@
 {
-  "page_title": "Shell - %{siteTitle}",
+  "page_title": "Terminal (Shell) - %{siteTitle}",
   "menu_aria": "Shell-menyn",
   "host_label": "Värd: %{host}",
   "initial_directory": "Ursprunglig katalog: %{dir}",

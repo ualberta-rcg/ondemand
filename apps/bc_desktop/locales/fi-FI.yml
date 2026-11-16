@@ -1,7 +1,7 @@
 ---
 fi-FI:
   manifest:
-    name: Työpöytä
+    name: Vuorovaikutteinen työpöytä
     description: Tämä sovellus käynnistää interaktiivisen työpöydän yhdellä tai useammalla laskentakeskuksella. Sinulla on täysi pääsy näiden keskuksien tarjoamiin resursseihin. Tämä on analogista interaktiivisen eräajon kanssa.
   form:
     attributes:

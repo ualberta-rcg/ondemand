@@ -1,7 +1,7 @@
 ---
 hu-HU:
   manifest:
-    name: Asztali
+    name: Interaktív asztal
     description: Ez az alkalmazás egy interaktív asztalt indít el egy vagy több számítási csomóponton. Teljes hozzáférésed lesz a csomópontok által biztosított erőforrásokhoz. Ez hasonló egy interaktív kötegelt feladathoz.
   form:
     attributes:

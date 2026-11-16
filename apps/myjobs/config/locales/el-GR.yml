@@ -27,8 +27,8 @@ el-GR:
     from_specified_path: Από καθορισμένη διαδρομή
     from_template: Από το πρότυπο
     from_template_title: Δημιουργήστε μια νέα εργασία από ένα πρότυπο που επιλέγετε
-    invalid_cluster_html: Το σύμπλεγμα δεν είναι έγκυρο! Επεξεργαστείτε το <a href="#" id="edit-job-options-script-link">Επιλογές εργασίας_OODTOK1__ για να επιλέξετε ένα έγκυρο σύμπλεγμα.
-    invalid_script_html: Το σενάριο δεν είναι έγκυρο! Επεξεργαστείτε τις <a href="#" id="edit-job-options-link">Επιλογές εργασίας_OODTOK1__ για να επιλέξετε ένα έγκυρο σενάριο.
+    invalid_cluster_html: Το σύμπλεγμα δεν είναι έγκυρο! Επεξεργαστείτε το <a href="#" id="edit-job-options-script-link">Επιλογές εργασίας</a> για να επιλέξετε ένα έγκυρο σύμπλεγμα.
+    invalid_script_html: Το σενάριο δεν είναι έγκυρο! Επεξεργαστείτε τις <a href="#" id="edit-job-options-link">Επιλογές εργασίας</a> για να επιλέξετε ένα έγκυρο σενάριο.
     job_already_submitted: Η εργασία έχει ήδη υποβληθεί.
     job_array_request_label: 'Αίτημα πίνακα εργασίας:'
     job_attributes_heading_html: Χαρακτηριστικά εργασίας <strong> (Προαιρετικά)</strong>

@@ -16,7 +16,7 @@ ro-RO:
     create_template_from_job_title: Creați un șablon din jobul selectat
     delete: Şterge
     delete_job_title: Ștergeți lucrarea
-    deprecation_warning_html: Composerul de joburi este depreciat și va fi eliminat în Open OnDemand 5.0. Vă rugăm să transferați joburile și șabloanele către Managerul de proiect <a href="%{projects_path}">_OODTOK1__.
+    deprecation_warning_html: Composerul de joburi este depreciat și va fi eliminat în Open OnDemand 5.0. Vă rugăm să transferați joburile și șabloanele către Managerul de proiect <a href="%{projects_path}"></a>.
     edit: Edita
     edit_files: Editați fișierele
     folder_contents_label: 'Conținutul folderului:'

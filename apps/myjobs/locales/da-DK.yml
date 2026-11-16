@@ -1,5 +1,5 @@
 ---
 da-DK:
   manifest:
-    name: Jobkomponist
+    name: Jobgenerator
     description: Job Composer tillader oprettelse og afsendelse af batchjob

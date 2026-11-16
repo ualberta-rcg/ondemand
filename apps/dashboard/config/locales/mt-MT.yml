@@ -10,7 +10,7 @@ mt-MT:
   dashboard:
     account: Kont
     actions: Azzjonijiet
-    active_jobs: Impjiegi Attivi
+    active_jobs: Xogħlijiet Attivi
     active_jobs_close_details: Agħlaq il-pannell tad-dettalji estiżi.
     active_jobs_detail:
       account: Kont
@@ -240,7 +240,7 @@ mt-MT:
       title: Settings Salvati
     breadcrumb_aria: Frak tal-ħobż
     breadcrumbs_all_apps: L-Apps Kollha
-    breadcrumbs_home: Dar
+    breadcrumbs_home: Paġna Ewlenija
     breadcrumbs_my_sessions: Is-Sessjonijiet Interattivi Tiegħi
     breadcrumbs_support_ticket: Biljett ta' Appoġġ
     browser_warning: OnDemand jeħtieġ verżjoni aktar ġdida tal-browser li qed tuża. Ir-rekwiżiti attwali tal-browser jinkludu IE Edge, Firefox 19+, Chrome 34+, Safari 8+.
@@ -248,17 +248,17 @@ mt-MT:
     categories:
       apps: Applikazzjonijiet
       bioinformatics: Bijoinformatika
-      clusters: Raggruppamenti
+      clusters: Klasters
       data_science: Xjenza tad-Data
       desktop: Desktop
-      desktops: Desktops
+      desktops: Desktop
       development: Żvilupp
       external_apps: Applikazzjonijiet Esterni
       files: Fajls
       gateway_apps: Applikazzjonijiet tal-Gateway
       guis: GUIs
       interactive_apps: Applikazzjonijiet Interattivi
-      jobs: Impjiegi
+      jobs: Xogħlijiet
       machine_learning: Tagħlim Awtomatiku
       mathematics: Matematika
       servers: Servers
@@ -411,7 +411,7 @@ mt-MT:
     jobs_project_job_not_deleted: Ma tistax tħassar ix-xogħol %{job_id}
     jobs_project_job_stopped: Xogħol imwaqqaf b'suċċess %{job_id}
     jobs_project_list_aria: Lista ta' proġetti
-    jobs_project_manager: Maniġer tal-Proġett
+    jobs_project_manager: Maniġer tal-Proġetti
     jobs_project_manifest_updated: Il-manifest tal-proġett ġie aġġornat!
     jobs_project_name_placeholder: Isem tal-proġett
     jobs_project_name_validation: L-isem tal-proġett jista' jkun fih biss ittri, ċifri, singijiet, underscores, u spazji
@@ -716,7 +716,7 @@ mt-MT:
     module_browser_search_placeholder: Fittex skont l-isem tal-modulu...
     module_browser_select_version: (agħżel verżjoni)
     module_browser_showing_results: Qed jintwerew ir-riżultati ta' %{count}
-    module_browser_title: Browser tal-Moduli
+    module_browser_title: Brawżer tal-Moduli
     module_browser_versions: Verżjonijiet
     motd_default_md: 'L-iżvilupp ta'' Open OnDemand huwa appoġġjat permezz tal-[Fondazzjoni Nazzjonali tax-Xjenza](https://www.nsf.gov/)
 

@@ -10,7 +10,7 @@ fa-IR:
   dashboard:
     account: حساب کاربری
     actions: اقدامات
-    active_jobs: مشاغل فعال
+    active_jobs: کارهای فعال
     active_jobs_close_details: بستن پنل جزئیات تکمیلی.
     active_jobs_detail:
       account: حساب کاربری
@@ -222,7 +222,7 @@ fa-IR:
       title: تنظیمات ذخیره‌شده
     breadcrumb_aria: خرده نان
     breadcrumbs_all_apps: همه برنامه‌ها
-    breadcrumbs_home: خانه
+    breadcrumbs_home: صفحه اصلی
     breadcrumbs_my_sessions: نشست‌های تعاملی من
     breadcrumbs_support_ticket: درخواست پشتیبانی
     browser_warning: OnDemand به نسخه جدیدتری از مرورگری که استفاده می‌کنید نیاز دارد. الزامات فعلی مرورگر شامل IE Edge، Firefox 19+، Chrome 34+، Safari 8+ است.
@@ -232,15 +232,15 @@ fa-IR:
       bioinformatics: بیوانفورماتیک
       clusters: خوشه‌ها
       data_science: علم داده
-      desktop: دسکتاپ
-      desktops: دسکتاپ‌ها
+      desktop: میزکار
+      desktops: میزکار
       development: توسعه
       external_apps: برنامه‌های خارجی
       files: فایل‌ها
       gateway_apps: اپلیکیشن‌های گیت‌وی
       guis: رابط‌های کاربری گرافیکی
       interactive_apps: برنامه‌های تعاملی
-      jobs: مشاغل
+      jobs: کارهای محاسباتی
       machine_learning: یادگیری ماشین
       mathematics: ریاضیات
       servers: سرورها
@@ -393,7 +393,7 @@ fa-IR:
     jobs_project_job_not_deleted: کار %{job_id} حذف نشد
     jobs_project_job_stopped: کار %{job_id} با موفقیت متوقف شد
     jobs_project_list_aria: فهرست پروژه‌ها
-    jobs_project_manager: مدیر پروژه
+    jobs_project_manager: مدیریت پروژه‌ها
     jobs_project_manifest_updated: مانیفست پروژه به‌روزرسانی شد!
     jobs_project_name_placeholder: نام پروژه
     jobs_project_name_validation: نام پروژه فقط می‌تواند شامل حروف، رقم، خط تیره، زیرخط و فاصله باشد
@@ -698,7 +698,7 @@ fa-IR:
     module_browser_search_placeholder: جستجو بر اساس نام ماژول ...
     module_browser_select_version: (نسخه را انتخاب کنید)
     module_browser_showing_results: نمایش نتایج %{count}
-    module_browser_title: مرورگر ماژول
+    module_browser_title: مرورگر ماژول‌ها
     module_browser_versions: نسخه‌ها
     motd_default_md: "توسعه Open OnDemand از طریق [بنیاد ملی علوم](https://www.nsf.gov/)\nتحت شماره‌های کمک‌هزینه [1534949](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1534949) و\n[1835725](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1835725) پشتیبانی می‌شود.\n برای کسب اطلاعات بیشتر یا مشارکت:\n - [Discourse](https://discourse.openondemand.org/)\n- [مخزن Open OnDemand](https://github.com/OSC/ondemand)\n- [مخزن ood-core](https://github.com/OSC/ood_core)\n- [مستندات](https://osc.github.io/ood-documentation/latest/)\n"
     motd_erb_render_error: 'پیام روز به‌درستی تجزیه یا نمایش داده نشد: %{error_message}'

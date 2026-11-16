@@ -1,7 +1,7 @@
 ---
 pt-PT:
   manifest:
-    name: Área de trabalho
+    name: Ambiente de trabalho interativo
     description: 'Esta aplicação iniciará uma área de trabalho interativa num ou mais nós de computação. Você
 
       terá acesso total aos recursos fornecidos por esses nós. Isto é análogo

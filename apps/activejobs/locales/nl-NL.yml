@@ -1,5 +1,5 @@
 ---
 nl-NL:
   manifest:
-    name: Actieve vacatures
+    name: Actieve taken
     description: Bekijk de taken die momenteel worden uitgevoerd op beschikbare clusters die zijn geconfigureerd voor OnDemand.

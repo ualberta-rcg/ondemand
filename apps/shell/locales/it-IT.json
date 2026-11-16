@@ -1,5 +1,5 @@
 {
-  "page_title": "Shell - %{siteTitle}",
+  "page_title": "Terminale (Shell) - %{siteTitle}",
   "menu_aria": "Menu Shell",
   "host_label": "Presentatore: %{host}",
   "initial_directory": "Cartella iniziale: %{dir}",

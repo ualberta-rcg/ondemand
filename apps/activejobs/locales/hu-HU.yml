@@ -1,5 +1,5 @@
 ---
 hu-HU:
   manifest:
-    name: Aktív állások
+    name: Aktív feladatok
     description: Tekintse meg az OnDemandhoz konfigurált elérhető fürtökön jelenleg futó feladatokat.
