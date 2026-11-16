@@ -175,7 +175,16 @@ cs-CZ:
     batch_connect_sessions_error_invalid_job_name_html: Pokud se odeslání této úlohy nepodařilo z důvodu neplatného názvu úlohy, požádejte prosím svého administrátora o konfiguraci OnDemand a nastavení proměnné prostředí OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Nepodařilo se připravit šablonu, došlo k následující chybě:'
     batch_connect_sessions_errors_submission: 'Odeslání relace se nezdařilo s následující chybou:'
+    batch_connect_sessions_native_vnc_connect_client_html: Otevřete VNC klienta a připojte se k %{target} v rámci klienta.
+    batch_connect_sessions_native_vnc_download_viewer_html: Stáhněte si libovolný prohlížeč VNC, %{realvnc_link} je dobrá volba.
+    batch_connect_sessions_native_vnc_mac_code: 'Pro navázání VNC připojení použijte níže uvedený kód:'
+    batch_connect_sessions_native_vnc_open_terminal: Otevření okna terminálu
+    batch_connect_sessions_native_vnc_password: 'Použijte heslo VNC:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Zkopírujte/vložte do terminálu pro vytvoření SSH tunelu:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Zkopírujte/vložte do terminálu a nahraďte %{ssh_host} platným přihlašovacím serverem HPC pro vytvoření SSH tunelu:'
     batch_connect_sessions_native_vnc_tab: Nativní instrukce
+    batch_connect_sessions_native_vnc_unsupported: V současné době nepodporujeme dokumentaci pro připojení k relaci VNC s nativním klientem pro váš operační systém.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Pro terminály ve Windows můžete použít: distribuce %{powershell_link}, %{putty_link} a %{wsl_link}'
     batch_connect_sessions_novnc_compression: Komprese
     batch_connect_sessions_novnc_compression_help: 1 (nízká) až 9 (vysoká)
     batch_connect_sessions_novnc_launch: Spustit %{app_title}

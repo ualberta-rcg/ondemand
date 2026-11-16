@@ -173,7 +173,16 @@ et-EE:
     batch_connect_sessions_error_invalid_job_name_html: Kui selle töö esitamine ebaõnnestus sobimatu töönime tõttu, paluge administraatoril OnDemandi konfigureerida nii, et see määraks keskkonnamuutuja OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Malli ettevalmistamine ebaõnnestus järgmise veaga:'
     batch_connect_sessions_errors_submission: 'Seansi esitamine ebaõnnestus järgmise veaga:'
+    batch_connect_sessions_native_vnc_connect_client_html: Ava VNC klient ja loo kliendi sees ühendus saidiga %{target}
+    batch_connect_sessions_native_vnc_download_viewer_html: Laadige alla ükskõik milline VNC-vaatur, %{realvnc_link} on hea valik.
+    batch_connect_sessions_native_vnc_mac_code: 'VNC-ühenduse loomiseks kasutage allolevat koodi:'
+    batch_connect_sessions_native_vnc_open_terminal: Ava terminaliaken
+    batch_connect_sessions_native_vnc_password: 'Kasutage VNC parooli:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'SSH tunneli loomiseks kopeeri/kleepi oma terminalis:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopeeri/kleebi see oma terminalis ja asenda %{ssh_host} kehtiva HPC sisselogimisserveriga, et luua SSH tunnel:'
     batch_connect_sessions_native_vnc_tab: Natiivsed juhised
+    batch_connect_sessions_native_vnc_unsupported: Me ei toeta hetkel dokumentatsiooni VNC-seansiga ühenduse loomiseks teie operatsioonisüsteemi natiivse kliendiga.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Windowsi terminalide jaoks saate kasutada: %{powershell_link}, %{putty_link} ja %{wsl_link} distributsioone.'
     batch_connect_sessions_novnc_compression: Kokkusurumine
     batch_connect_sessions_novnc_compression_help: 1 (madal) kuni 9 (kõrge)
     batch_connect_sessions_novnc_launch: Käivita %{app_title}

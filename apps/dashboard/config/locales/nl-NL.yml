@@ -168,7 +168,16 @@ nl-NL:
       '
     batch_connect_sessions_errors_staging: 'Het klaarzetten van de sjabloon is mislukt vanwege de volgende fout:'
     batch_connect_sessions_errors_submission: 'Het verzenden van de sessie is mislukt met de volgende foutmelding:'
+    batch_connect_sessions_native_vnc_connect_client_html: Open een VNC-client en maak verbinding met %{target} binnen de client.
+    batch_connect_sessions_native_vnc_download_viewer_html: Download een VNC-viewer, %{realvnc_link} is een goede optie.
+    batch_connect_sessions_native_vnc_mac_code: 'Gebruik de onderstaande code om de VNC-verbinding tot stand te brengen:'
+    batch_connect_sessions_native_vnc_open_terminal: Open een terminalvenster
+    batch_connect_sessions_native_vnc_password: 'Gebruik het VNC-wachtwoord:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Kopieer/plak dit in je terminal om de SSH-tunnel tot stand te brengen:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopieer/plak dit in je terminal en vervang %{ssh_host} door een geldige HPC-aanmeldingsserver om de SSH-tunnel tot stand te brengen:'
     batch_connect_sessions_native_vnc_tab: Instructies van de moedertaal
+    batch_connect_sessions_native_vnc_unsupported: We bieden momenteel geen documentatie voor het verbinden met een VNC-sessie met een native client voor uw besturingssysteem.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Voor terminals in Windows kunt u de volgende distributies gebruiken: %{powershell_link}, %{putty_link} en %{wsl_link}.'
     batch_connect_sessions_novnc_compression: Compressie
     batch_connect_sessions_novnc_compression_help: 1 (laag) tot 9 (hoog)
     batch_connect_sessions_novnc_launch: Lancering %{app_title}

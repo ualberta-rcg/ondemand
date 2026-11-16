@@ -192,7 +192,16 @@ de-DE:
       '
     batch_connect_sessions_errors_staging: 'Das Bereitstellen der Vorlage ist mit folgendem Fehler fehlgeschlagen:'
     batch_connect_sessions_errors_submission: 'Die Sitzung konnte mit folgendem Fehler nicht übermittelt werden:'
+    batch_connect_sessions_native_vnc_connect_client_html: Öffnen Sie einen VNC-Client und verbinden Sie sich innerhalb des Clients mit %{target}.
+    batch_connect_sessions_native_vnc_download_viewer_html: Laden Sie einen beliebigen VNC-Viewer herunter, %{realvnc_link} ist eine gute Option.
+    batch_connect_sessions_native_vnc_mac_code: 'Verwenden Sie den folgenden Code, um die VNC-Verbindung herzustellen:'
+    batch_connect_sessions_native_vnc_open_terminal: Öffnen Sie ein Terminalfenster
+    batch_connect_sessions_native_vnc_password: 'Verwenden Sie das VNC-Passwort:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Zum Herstellen des SSH-Tunnels kopieren Sie bitte Folgendes in Ihr Terminal:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopieren Sie dies in Ihr Terminal und ersetzen Sie %{ssh_host} durch einen gültigen HPC-Login-Server, um den SSH-Tunnel herzustellen:'
     batch_connect_sessions_native_vnc_tab: Native Instructions
+    batch_connect_sessions_native_vnc_unsupported: Wir bieten derzeit keine Dokumentation für die Verbindung zu einer VNC-Sitzung mit einem nativen Client für Ihr Betriebssystem an.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Für Terminals unter Windows können Sie die folgenden Distributionen verwenden: %{powershell_link}, %{putty_link} und %{wsl_link}.'
     batch_connect_sessions_novnc_compression: Kompression
     batch_connect_sessions_novnc_compression_help: 1 (niedrig) bis 9 (hoch)
     batch_connect_sessions_novnc_launch: Starte %{app_title}

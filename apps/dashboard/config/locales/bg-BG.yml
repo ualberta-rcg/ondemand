@@ -177,7 +177,16 @@ bg-BG:
     batch_connect_sessions_error_invalid_job_name_html: Ако изпращането на тази задача не е успешно поради невалидно име на задача, моля, помолете вашия администратор да конфигурира OnDemand, за да зададе променливата на средата OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Неуспешно подготвяне на шаблона със следната грешка:'
     batch_connect_sessions_errors_submission: 'Изпращането на сесията не бе успешно поради следната грешка:'
+    batch_connect_sessions_native_vnc_connect_client_html: Отворете VNC клиент и се свържете с %{target} в него
+    batch_connect_sessions_native_vnc_download_viewer_html: Изтеглете произволен VNC прегледник, %{realvnc_link} е добър вариант.
+    batch_connect_sessions_native_vnc_mac_code: 'Използвайте кода по-долу, за да установите VNC връзка:'
+    batch_connect_sessions_native_vnc_open_terminal: Отваряне на терминален прозорец
+    batch_connect_sessions_native_vnc_password: 'Използвайте VNC паролата:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Копирайте/поставете в терминала си, за да установите SSH тунела:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Копирайте/поставете в терминала си и заменете %{ssh_host} с валиден HPC сървър за вход, за да установите SSH тунел:'
     batch_connect_sessions_native_vnc_tab: Инструкции за работа с оригинала
+    batch_connect_sessions_native_vnc_unsupported: В момента не поддържаме документация за свързване към VNC сесия с нативен клиент за вашата операционна система.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'За терминали в Windows можете да използвате: дистрибуции %{powershell_link}, %{putty_link} и %{wsl_link}'
     batch_connect_sessions_novnc_compression: Компресия
     batch_connect_sessions_novnc_compression_help: от 1 (ниско) до 9 (високо)
     batch_connect_sessions_novnc_launch: Стартиране %{app_title}

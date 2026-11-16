@@ -147,7 +147,16 @@ da-DK:
     batch_connect_sessions_error_invalid_job_name_html: Hvis dette job ikke kunne sendes på grund af et ugyldigt jobnavn, bedes du bede din administrator om at konfigurere OnDemand til at indstille miljøvariablen OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Kunne ikke stage skabelonen med følgende fejl:'
     batch_connect_sessions_errors_submission: 'Kunne ikke sende sessionen med følgende fejl:'
+    batch_connect_sessions_native_vnc_connect_client_html: Åbn en VNC-klient og opret forbindelse til %{target} i klienten
+    batch_connect_sessions_native_vnc_download_viewer_html: Download en hvilken som helst VNC-viewer, %{realvnc_link} er en god mulighed.
+    batch_connect_sessions_native_vnc_mac_code: 'Brug koden nedenfor til at oprette VNC-forbindelsen:'
+    batch_connect_sessions_native_vnc_open_terminal: Åbn et terminalvindue
+    batch_connect_sessions_native_vnc_password: 'Brug VNC-adgangskoden:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Kopier/indsæt i din terminal for at etablere SSH-tunnelen:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Kopiér/indsæt i din terminal og erstat %{ssh_host} med en gyldig HPC-loginserver for at etablere SSH-tunnelen:'
     batch_connect_sessions_native_vnc_tab: Indfødte instruktioner
+    batch_connect_sessions_native_vnc_unsupported: Vi understøtter i øjeblikket ikke dokumentation for at oprette forbindelse til en VNC-session med en native klient til dit operativsystem.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Til terminaler i Windows kan du bruge: %{powershell_link}, %{putty_link} og %{wsl_link} distributioner'
     batch_connect_sessions_novnc_compression: Kompression
     batch_connect_sessions_novnc_compression_help: 1 (lav) til 9 (høj)
     batch_connect_sessions_novnc_launch: Start %{app_title}

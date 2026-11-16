@@ -155,7 +155,16 @@ ja_JP:
       '
     batch_connect_sessions_errors_staging: 次のエラーでテンプレートのステージングに失敗しました：
     batch_connect_sessions_errors_submission: 次のエラーでセッションの送信に失敗しました：
+    batch_connect_sessions_native_vnc_connect_client_html: VNCクライアントを開き、クライアント内で%{target}に接続します。
+    batch_connect_sessions_native_vnc_download_viewer_html: VNCビューアをダウンロードしてください。%{realvnc_link}は良い選択肢です。
+    batch_connect_sessions_native_vnc_mac_code: VNC接続を確立するには、以下のコードを使用してください。
+    batch_connect_sessions_native_vnc_open_terminal: ターミナルウィンドウを開く
+    batch_connect_sessions_native_vnc_password: VNCパスワードを使用してください：
+    batch_connect_sessions_native_vnc_ssh_tunnel: SSHトンネルを確立するには、ターミナルに以下の内容をコピー＆ペーストしてください。
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: ターミナルにコピー＆ペーストし、%{ssh_host} を有効な HPC ログイン サーバーに置き換えて SSH トンネルを確立してください。
     batch_connect_sessions_native_vnc_tab: ネイティブの指示
+    batch_connect_sessions_native_vnc_unsupported: 現在、お客様のオペレーティングシステム用のネイティブクライアントを使用してVNCセッションに接続するためのドキュメントは提供しておりません。
+    batch_connect_sessions_native_vnc_windows_terminals_html: Windowsのターミナルでは、%{powershell_link}、%{putty_link}、%{wsl_link}のディストリビューションを使用できます。
     batch_connect_sessions_novnc_compression: 圧縮
     batch_connect_sessions_novnc_compression_help: 1（低）～9（高）
     batch_connect_sessions_novnc_launch: '%{app_title}を起動'

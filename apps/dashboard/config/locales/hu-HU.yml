@@ -171,7 +171,16 @@ hu-HU:
     batch_connect_sessions_error_invalid_job_name_html: Ha a feladat elküldése érvénytelen feladatnév miatt sikertelen, kérje meg a rendszergazdát, hogy konfigurálja az OnDemand szolgáltatást az OOD_JOB_NAME_ILLEGAL_CHARS környezeti változó beállításához.
     batch_connect_sessions_errors_staging: 'A sablon előkészítése a következő hibával nem sikerült:'
     batch_connect_sessions_errors_submission: 'A munkamenet elküldése sikertelen a következő hiba miatt:'
+    batch_connect_sessions_native_vnc_connect_client_html: Nyiss meg egy VNC klienst, és csatlakozz a %{target}-hoz a kliensen belül.
+    batch_connect_sessions_native_vnc_download_viewer_html: Tölts le bármilyen VNC-megjelenítőt, az %{realvnc_link} egy jó választás.
+    batch_connect_sessions_native_vnc_mac_code: 'Használja az alábbi kódot a VNC kapcsolat létrehozásához:'
+    batch_connect_sessions_native_vnc_open_terminal: Nyisson meg egy terminálablakot
+    batch_connect_sessions_native_vnc_password: 'Használja a VNC jelszót:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Másold/illeszd be a terminálba az SSH alagút létrehozásához:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Másold ki/illeszd be a terminálodba, és cseréld le az %{ssh_host} részt egy érvényes HPC bejelentkezési szerverre az SSH alagút létrehozásához:'
     batch_connect_sessions_native_vnc_tab: Natív utasítások
+    batch_connect_sessions_native_vnc_unsupported: Jelenleg nem támogatjuk a dokumentációt egy VNC-munkamenethez való csatlakozáshoz az operációs rendszer natív kliensével.
+    batch_connect_sessions_native_vnc_windows_terminals_html: 'Windows terminálokhoz a következő disztribúciókat használhatod: %{powershell_link}, %{putty_link} és %{wsl_link}.'
     batch_connect_sessions_novnc_compression: Tömörítés
     batch_connect_sessions_novnc_compression_help: 1 (alacsony) - 9 (magas)
     batch_connect_sessions_novnc_launch: Indítsd el a %{app_title}-t

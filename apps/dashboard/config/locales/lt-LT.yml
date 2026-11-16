@@ -175,7 +175,16 @@ lt-LT:
     batch_connect_sessions_error_invalid_job_name_html: Jei šios užduoties nepavyko pateikti dėl neteisingo užduoties pavadinimo, paprašykite administratoriaus sukonfigūruoti „OnDemand“ taip, kad būtų nustatytas aplinkos kintamasis OOD_JOB_NAME_ILLEGAL_CHARS.
     batch_connect_sessions_errors_staging: 'Nepavyko paruošti šablono, įvyko ši klaida:'
     batch_connect_sessions_errors_submission: 'Nepavyko pateikti sesijos. Pateikta ši klaida:'
+    batch_connect_sessions_native_vnc_connect_client_html: Atidarykite VNC klientą ir prisijunkite prie %{target} kliento viduje
+    batch_connect_sessions_native_vnc_download_viewer_html: Atsisiųskite bet kurią VNC peržiūros programą, %{realvnc_link} yra geras pasirinkimas.
+    batch_connect_sessions_native_vnc_mac_code: 'Norėdami užmegzti VNC ryšį, naudokite toliau pateiktą kodą:'
+    batch_connect_sessions_native_vnc_open_terminal: Atidaryti terminalo langą
+    batch_connect_sessions_native_vnc_password: 'Naudokite VNC slaptažodį:'
+    batch_connect_sessions_native_vnc_ssh_tunnel: 'Nukopijuokite / įklijuokite terminale, kad sukurtumėte SSH tunelį:'
+    batch_connect_sessions_native_vnc_ssh_tunnel_replace_html: 'Nukopijuokite / įklijuokite terminale ir pakeiskite %{ssh_host} galiojančiu HPC prisijungimo serveriu, kad sukurtumėte SSH tunelį:'
     batch_connect_sessions_native_vnc_tab: Gimtosios instrukcijos
+    batch_connect_sessions_native_vnc_unsupported: Šiuo metu nepalaikome dokumentacijos, skirtos prisijungti prie VNC sesijos naudojant jūsų operacinei sistemai skirtą vietinį klientą.
+    batch_connect_sessions_native_vnc_windows_terminals_html: '„Windows“ terminaluose galite naudoti: %{powershell_link}, %{putty_link} ir %{wsl_link} distribucijas.'
     batch_connect_sessions_novnc_compression: Suspaudimas
     batch_connect_sessions_novnc_compression_help: 1 (žemas) – 9 (aukštas)
     batch_connect_sessions_novnc_launch: Paleisti %{app_title}
