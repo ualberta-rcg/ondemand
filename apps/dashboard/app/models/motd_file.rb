@@ -88,7 +88,7 @@ class MotdFile
       hit = candidates.find { |c| File.file?(c) && File.readable?(c) }
       return hit if hit
 
-      if primary.present?
+      if primary.present? && primary != 'en'
         regional = Dir.glob(File.join(base_path, "{motd.,}#{primary}[-_]*")).sort.find do |c|
           File.file?(c) && File.readable?(c)
         end
@@ -118,7 +118,7 @@ class MotdFile
     hit = candidates.find { |c| File.file?(c) && File.readable?(c) }
     return hit if hit
 
-    if primary.present?
+    if primary.present? && primary != 'en'
       pattern = has_fmt_ext ? File.join(dir, "#{stem}.#{primary}[-_]*#{ext}") : File.join(dir, "#{base}.#{primary}[-_]*")
       regional = Dir.glob(pattern).sort.find do |c|
         !c.end_with?('.sha256') && File.file?(c) && File.readable?(c)
